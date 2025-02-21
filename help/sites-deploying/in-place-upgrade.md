@@ -1,40 +1,40 @@
 ---
 title: Utföra en uppgradering på plats
-description: Lär dig hur du uppgraderar till AEM 6.5 på plats.
+description: Lär dig hur du uppgraderar till AEM 6.5 LTS på plats.
 topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
-# Utföra en uppgradering på plats{#performing-an-in-place-upgrade}
+# Utföra en uppgradering på plats {#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
->Här beskrivs uppgraderingsproceduren för AEM 6.5. Om du har en installation som distribueras till en programserver läser du [Uppgradera steg för programserverinstallationer](/help/sites-deploying/app-server-upgrade.md).
+>På den här sidan beskrivs uppgraderingsproceduren för AEM 6.5 LTS. Om du har en installation som distribueras till en programserver läser du [Uppgradera steg för programserverinstallationer](/help/sites-deploying/app-server-upgrade.md).
 
 ## Steg före uppgradering {#pre-upgrade-steps}
 
-Innan du utför uppgraderingen måste du utföra flera steg. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) och [Underhållsaktiviteter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Kontrollera dessutom att datorn uppfyller kraven för den nya versionen av AEM. Se hur Mönsteravkännare kan hjälpa dig att beräkna uppgraderingens komplexitet och se även avsnittet Uppgraderingsomfång och Krav i [Planera din uppgradering](/help/sites-deploying/upgrade-planning.md) för mer information.
+Innan du utför uppgraderingen måste du utföra flera steg. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) och [Underhållsaktiviteter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Kontrollera dessutom att datorn uppfyller kraven för AEM 6.5 LTS. Se hur Analyzer kan hjälpa dig att uppskatta uppgraderingens komplexitet och se även avsnittet Upgrade Scope och Requirements i [Planera din uppgradering](/help/sites-deploying/upgrade-planning.md) för mer information.
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Krav för migrering {#migration-prerequisites}
 
-* **Minimikrav för Java-version:** Migreringsverktyget fungerar bara med Java-version 7 och senare. Observera att för AEM 6.3 och senare är Oracle JRE 8 och IBM JRE 7 och 8 de enda versionerna som stöds.
-
-* **Uppgraderad instans:** Om du uppgraderar från en version **som är äldre än 5.6** bör du kontrollera att du har utfört en uppgradering på plats till AEM 6.0 enligt anvisningarna i version 6.0 av uppgraderingsdokumentationen.
+* **Minimikrav på Java-version:** Kontrollera att du har Oracle JRE 17 installerat på datorn.
 
 ## Förberedelse av filen AEM Quickstart jar {#prep-quickstart-file}
 
-1. Stoppa instansen om den körs.
+1. Stoppa instansen om den körs
 
-1. Hämta den nya AEM jar-filen och använd den för att ersätta den gamla filen utanför mappen `crx-quickstart`.
+1. Hämta den nya AEM 6.5 LTS jar-filen och använd den för att ersätta den gamla filen utanför mappen `crx-quickstart`
+
+1. Gör en säkerhetskopia av filen `sling.properties` (finns vanligtvis i `crx-quickstart/conf/`) och ta sedan bort den
 
 1. Packa upp den nya snabbstartsburken genom att köra:
 
@@ -42,40 +42,44 @@ Innan du utför uppgraderingen måste du utföra flera steg. Mer information fin
    java -Xmx4096m -jar aem-quickstart.jar -unpack
    ```
 
-## Migrering av innehållsdatabas {#content-repository-migration}
+1. Uppackningskommandot genererar en ny `sling.properties`-fil under mappen `crx-quickstart/conf/`. Du kan nu använda dina anpassade ändringar på den nyligen genererade `sling.properties`-filen.
 
-Migreringen krävs inte om du uppgraderar från AEM 6.3. För versioner som är äldre än 6.3 har Adobe ett verktyg som kan användas för att migrera databasen till den nya versionen av Oak Segment tar i AEM 6.3. Det ingår som en del av snabbstartspaketet och är obligatoriskt för alla uppgraderingar som ska använda tarMK. Uppgraderingar för miljöer där MongoMK används kräver inte databasmigrering. Mer information om fördelarna med det nya segmenttjärformatet finns i [Vanliga frågor om att migrera till Oak segmenttjära](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+<!-- Alexandru: drafting temporarily
 
-Den faktiska migreringen utförs med AEM snabbstartsjar-standardfil, som körs med ett nytt `-x crx2oak`-alternativ som kör crx2oak-verktyget för att förenkla uppgraderingen och göra den mer robust.
+## Content Repository Migration {#content-repository-migration}
+
+This migration is not required if you are upgrading from AEM 6.3. For versions older than 6.3, Adobe provides a tool that can be used to migrate the repository to the new version of the Oak Segment Tar present in AEM 6.3. It is provided as part of the quickstart package and is mandatory for any upgrades that will be using TarMK. Upgrades for environments that are using MongoMK do not require repository migration. For more information on what the benefits of the new Segment Tar format are, see the [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+
+The actual migration is performed using the standard AEM quickstart jar file, executed with a new `-x crx2oak` option which executes the crx2oak tool to simplify the upgrade and make it more robust.
 
 >[!NOTE]
 >
->Om du utför Innehållsmigrering för TjärMK-databas med hjälp av tillägget CRX2Oak QuickStart kan du ta bort runmode för **samplingsinnehåll** genom att lägga till följande på migreringskommandoraden:
+>If you are performing TarMK repository content migration using the CRX2Oak Quickstart extension, you might remove the **samplecontent** runmode by adding the following to the migration command line:
 >
 >* `--promote-runmode nosamplecontent`
 >
 
-Använd följande kommando för att bestämma vilket kommando du ska köra:
+To determine the command that you should run, use the following command:
 
 ```shell
 java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<YOUR_PROFILE>> <<ADDITIONAL_FLAGS>>
 ```
 
-Där `<<YOUR_PROFILE>>` och `<<ADDITIONAL_FLAGS>>` ersätts med profilen och flaggorna i följande tabell:
+Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profile and flags listed in the following table:
 
 <table>
  <tbody>
   <tr>
    <td><strong>Source Repository</strong></td>
-   <td><strong>Måldatabas</strong></td>
-   <td><strong>Profil</strong></td>
-   <td><strong>Ytterligare flaggor</strong><br /> </td>
+   <td><strong>Target Repository</strong></td>
+   <td><strong>Profile</strong></td>
+   <td><strong>Additional Flags</strong><br /> </td>
   </tr>
   <tr>
-   <td>crx2 eller tarMK med <code>FileDataStore</code></td>
-   <td>tarMK</td>
+   <td>crx2 or TarMK with <code>FileDataStore</code></td>
+   <td>TarMK</td>
    <td>segment-fds</td>
-   <td>Se avsnittet Felsökning nedan</td>
+   <td>See Troubleshooting section below</td>
   </tr>
   <tr>
    <td>crx2</td>
@@ -84,71 +88,73 @@ Där `<<YOUR_PROFILE>>` och `<<ADDITIONAL_FLAGS>>` ersätts med profilen och fla
    <td><code>-T mongo-uri=mongo://mongo-host:mongo-port -T mongo-db=mongo-database-name</code></td>
   </tr>
   <tr>
-   <td>tarMK eller crx2 med <code>S3DataStore</code></td>
-   <td>tarMK</td>
+   <td>TarMK or crx2 with <code>S3DataStore</code></td>
+   <td>TarMK</td>
    <td>segment-custom-ds</td>
-   <td>Se avsnittet Felsökning nedan</td>
+   <td>See Troubleshooting section below</td>
   </tr>
   <tr>
-   <td>tarMK utan datastore</td>
-   <td>tarMK</td>
+   <td>TarMK with no datastore</td>
+   <td>TarMK</td>
    <td>segment-no-ds</td>
    <td> </td>
   </tr>
   <tr>
    <td>MongoMK</td>
    <td>MongoMK</td>
-   <td>Ingen migrering behövs</td>
+   <td>No migration is needed</td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-**Var:**
+**Where:**
 
-* `mongo-host` är MongoDB-server-IP (till exempel 127.0.0.1)
+* `mongo-host` is the MongoDB server IP (for example, 127.0.0.1)
 
-* `mongo-port` är MongoDB-serverporten (till exempel: 27017)
+* `mongo-port` is the MongoDB server port (for example: 27017)
 
-* `mongo-database-name` representerar namnet på databasen (till exempel: aem-author)
+* `mongo-database-name` represents the name of the database (for example: aem-author)
 
-**Du kan också behöva ytterligare växlar för följande scenarier:**
+**You may also require additional switches for the following scenarios:**
 
-* Om du utför uppgraderingen på en Windows-dator där Java-minnesmappningen inte hanteras korrekt lägger du till parametern `--disable-mmap` i kommandot.
+* If you are performing the upgrade on a Windows system where Java memory mapping is not handled correctly, add the `--disable-mmap` parameter to the command.
 
-Mer information om hur du använder crx2oak-verktyget finns i Använda [CRX2Oak-migreringsverktyget](/help/sites-deploying/using-crx2oak.md). JAR-hjälpfilen för crx2oak kan vid behov uppgraderas manuellt genom att manuellt ersätta den med senare versioner efter att snabbstarten har packats upp. Sökvägen i installationsmappen för AEM är: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. Den senaste versionen av migreringsverktyget för CRX2Oak finns att hämta från Adobe-databasen på: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
+For additional instructions on using the crx2oak tool, see Using the [CRX2Oak Migration Tool](/help/sites-deploying/using-crx2oak.md). The crx2oak helper JAR can be manually upgraded if needed, by manually replacing it with newer versions after unpacking the quickstart. Its location in the AEM installation folder is: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. The newest version of the CRX2Oak migration tool is available for download from the Adobe Repository at: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
-Om migreringen har slutförts avslutas verktyget med en avslutningskod på noll. Kontrollera dessutom om det finns WARN- och ERROR-meddelanden i filen `upgrade.log`, som finns under `crx-quickstart/logs` i AEM installationskatalog, eftersom dessa kan tyda på icke-allvarliga fel som uppstod under migreringen.
+If the migration has completed successfully, the tool will exit with an exit code of zero. Additionally, check for WARN and ERROR messages in the `upgrade.log` file, located under `crx-quickstart/logs` in the AEM installation directory, as these could indicate non-fatal errors that occurred during the migration.
 
-Kontrollera konfigurationsfilerna under mappen `crx-quickstart/install`. Om en migrering var nödvändig kommer dessa att uppdateras för att återspegla måldatabasen.
+Check the configuration files beneath `crx-quickstart/install` folder. If a migration was necessary these will be updated to reflect the target repository.
 
-**En anteckning om datalager:**
+**A note on datastores:**
 
-Även om `FileDataStore` är det nya standardvärdet för AEM 6.3-installationer krävs inte att ett externt datalager används. Även om du bör använda ett externt datalager som bästa praxis för produktionsdistributioner är det inte en förutsättning för uppgradering. På grund av den komplexitet som redan finns när du uppgraderar AEM rekommenderar Adobe att du utför uppgraderingen utan att behöva göra en datalagringsmigrering. Om du vill kan du utföra en datalagermigrering efteråt som en separat åtgärd.
+While `FileDataStore` is the new default for AEM 6.3 installations, using an external datastore is not required. While using an external datastore is recommended as a best practice for production deployments, it is not a prerequisite to upgrade. Due to the complexity already present in upgrading AEM, Adobe recommends performing the upgrade without doing a datastore migration. If desired, a datastore migration can be executed afterwards as a separate effort.
 
-## Felsöka migreringsproblem {#troubleshooting-migration-issues}
+## Troubleshooting Migration Issues {#troubleshooting-migration-issues}
 
-Hoppa över det här avsnittet om du uppgraderar från 6.3. De tillhandahållna crx2oak-profilerna bör tillgodose behoven hos de flesta kunder, men det finns tillfällen då ytterligare parametrar behövs. Om ett fel inträffar under migreringen kan det finnas aspekter av miljön som kräver ytterligare konfigurationsalternativ. I så fall kommer du förmodligen att få följande fel:
+Skip this section if you are upgrading from 6.3. While the provided crx2oak profiles should meet the needs of most customers, there are times when additional parameters will be necessary. If you run into an error during your migration, it is possible that there are aspects of your environment that require additional configuration options to be provided. If so, you will likely encounter the following error:
 
-**Kontrollpunkter kopieras inte eftersom inget externt datalager har angetts. Detta resulterar i att hela databasen indexeras om första gången du startar. Använd —skip-checkpoints för att framtvinga migreringen eller läs https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration för mer information.**
+**Checkpoints are not copied, because no external datastore has been specified. This will result in the full repository reindexing on the first start. Use --skip-checkpoints to force the migration or see https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration for more info.**
 
-Av någon anledning behöver migreringsprocessen åtkomst till binärfiler i datalagret och kan inte hitta den. Om du vill ange din datalagerkonfiguration inkluderar du följande flaggor i delen `<<ADDITIONAL_FLAGS>>` av ditt migreringskommando:
+For some reason, the migration process needs access to binaries in the datastore and is unable to find it. To specify your datastore configuration, include the following flags in the `<<ADDITIONAL_FLAGS>>` portion of your migration command:
 
-**För S3-datalager:**
+**For S3 datastores:**
 
 ```shell
 --src-s3config=/path/to/SharedS3DataStore.config --src-s3datastore=/path/to/datastore
 ```
 
-Där `/path/to/SharedS3DataStore.config` representerar sökvägen till S3-datalagrets konfigurationsfil och `/path/to/datastore` representerar sökvägen till S3-datalagret.
+Where `/path/to/SharedS3DataStore.config` represents the path to your S3 datastore config file and `/path/to/datastore` represents the path to your S3 datastore.
 
-**För fildatalager:**
+**For File datastores:**
 
 ```shell
 --src-datastore=/path/to/datastore
 ```
 
-Där `/path/to/datastore` representerar sökvägen till din File DataStore.
+Where `/path/to/datastore` represents the path to your File Datastore.
+
+-->
 
 ## Utföra uppgraderingen {#performing-the-upgrade}
 
@@ -156,17 +162,22 @@ Där `/path/to/datastore` representerar sökvägen till din File DataStore.
 
 1. Ta bort alla tecken under `crx-quickstart/install` som är associerade med en tidigare version av S3-anslutningen.
 
-1. Hämta den senaste versionen av 1.10.x S3-anslutningen från [https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Hämta den senaste versionen av 1.60.2 S3-anslutningen från [https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) <!-- Alexandru: this is a stub link for now -->
 
-1. Extrahera paketet till en tillfällig mapp och kopiera innehållet i `jcr_root/libs/system/install` till mappen `crx-quickstart/install`.
+1. Extrahera S3-kopplingen (version 1.60.2) och kopiera innehållet i följande mappar under `crx-quickstart/install` enligt följande:
+
+   1. Kopiera `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` under `crx-quickstart/install/1`
+   1. Kopiera `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` under `crx-quickstart/install/15`
+
+Starta nu AEM-instansen med det nya kommandot som bestäms med hjälp av informationen under avsnittet [Kontrollera rätt startkommando för uppgradering](#determining-the-correct-upgrade-start-command).
 
 ### Kontrollera rätt startkommando för uppgradering {#determining-the-correct-upgrade-start-command}
 
-För att kunna genomföra uppgraderingen är det viktigt att du startar AEM med filen jar för att ta fram instansen. Om du vill uppgradera till 6.5 kan du läsa andra alternativ för innehållsomstrukturering och migrering i [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) som du kan välja med uppgraderingskommandot.
-
->[!IMPORTANT]
+>[!NOTE]
 >
->Om du kör Oracle Java 11 (eller i allmänhet versioner av Java nyare än 8) måste ytterligare växlar läggas till på kommandoraden när du startar AEM. Mer information finns i [Java 11 Considerations](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Stöd för vissa av Java 8/11-argumenten har tagits bort i Java 17, se Java arguments-överväganden för AEM 6.5 LTS (link stub).
+
+För att kunna genomföra uppgraderingen är det viktigt att du startar AEM med filen jar för att ta fram instansen.
 
 Observera att uppgraderingen inte startar när AEM startas från startskriptet. De flesta kunder börjar använda AEM med startskriptet och har anpassat det här startskriptet för att inkludera växlar för miljökonfigurationer som minnesinställningar, säkerhetscertifikat osv. Därför rekommenderar Adobe att du följer den här proceduren för att fastställa rätt uppgraderingskommando:
 
@@ -185,7 +196,7 @@ Observera att uppgraderingen inte startar när AEM startas från startskriptet. 
 1. Ändra kommandot genom att ersätta sökvägen till den befintliga burken ( `crx-quickstart/app/aem-quickstart*.jar` i det här fallet) med den nya burken som är jämställd med mappen `crx-quickstart`. Om du använder vårt tidigare kommando som exempel blir vårt kommando:
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.6.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    Detta säkerställer att alla korrekta minnesinställningar, anpassade körningslägen och andra miljöparametrar används för uppgraderingen. När uppgraderingen har slutförts kan instansen startas från startskriptet vid framtida starter.

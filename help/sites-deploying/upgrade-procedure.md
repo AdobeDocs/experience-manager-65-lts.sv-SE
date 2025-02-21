@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ Den topologi som antas för det här avsnittet består av ett MongoMK Author-klu
 
 ![mongo-Secondaries](assets/mongo-secondaries.jpg)
 
-1. Skapa nya 6.5 Author-instanser som är anslutna till den uppgraderade Mongo-instansen.
+1. Skapa nya 6.5.2025 Author-instanser som är anslutna till den uppgraderade Mongo-instansen.
 
 1. Återskapa de MongoDB-noder som tagits bort från klustret.
 
