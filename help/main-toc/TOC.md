@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Läs Adobe Experience Manager 6.5-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
 breadcrumb-title: Användarhandbok
 user-guide-title: AEM 6.5
-source-git-commit: 72bf54362948b6429627466111a088bcebfd2a2b
+source-git-commit: 0f125455f975417590e7481e2d34da372d5428c2
 workflow-type: tm+mt
 source-wordcount: '7022'
 ht-degree: 1%
@@ -782,7 +782,7 @@ ht-degree: 1%
       + [Designer FormCalc-referens](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [Använda klottersignaturer i HTML5-formulär](/help/forms/using/scribble-signature.md)
       + [Ändra sidans nollinnehåll i Designer](/help/forms/using/changing-page-zero-content-designer.md)
-      + [Bästa metoder för hjälpmedel]{#accessibility-best-practices}
+      + Bästa praxis för hjälpmedel {#accessibility-best-practices}
          + [Introduktion](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Bästa tillvägagångssätt för att skapa formulär](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [Tekniker för att testa formulärtillgänglighet](/help/forms/using/techniques-for-testing-form-accessibility.md)
