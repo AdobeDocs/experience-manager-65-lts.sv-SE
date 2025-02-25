@@ -1,7 +1,7 @@
 ---
 title: Aktuell versionsinformation för Adobe Experience Manager 6.5 LTS
 description: Detta är den aktuella versionsinformationen för Adobe Experience Manager 6.5 LTS.
-source-git-commit: e062ab3ff820c85ebcbd0052c28e9e719222154f
+source-git-commit: 37dca00eef6918b1a0d3a56c87e0859fbc062e03
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 |---|---|
 | Version | 6,5 LTS |
 | Typ | Större release |
-| Allmänt tillgänglighetsdatum | 28 februari 2025 |
+| Allmänt tillgänglighetsdatum | 7 mars 2025 |
 
 ## Nyheter {#what-s-new}
 
