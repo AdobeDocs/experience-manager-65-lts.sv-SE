@@ -1,13 +1,13 @@
 ---
-source-git-commit: 61cbd7d51fc0c434adde7f805c37b81c81ad2bfb
+source-git-commit: 8c01084831774686c0b02578dfd03e159ce01b50
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
 
 ---
-# Adobe Experience Manager 6.5 2025 - dokumentation
+# Adobe Experience Manager 6.5 LTS Documentation
 
-Det här är arkivet för Adobe Experience Manager 6.5 2025-dokumentation. Denna dokumentation beskriver installation, administration, redigering och anpassning av AEM 6.5 2025.
+Det här är databasen för Adobe Experience Manager 6.5 LTS-dokumentation. Denna dokumentation beskriver installation, administration, redigering och anpassning av AEM 6.5 LTS.
 
 Dina bidrag till dokumentationen är välkomna. Se följande resurser:
 

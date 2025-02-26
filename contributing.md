@@ -1,13 +1,13 @@
 ---
-source-git-commit: 0deac9cb7fb13c6fec515739168eb2dbfd9a58c7
+source-git-commit: dc9fe33c0b32fe8bd11ddbf8d25339a6a2003857
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
-# Bidra till Adobe Experience Manager 6.6 Documentation
+# Bidra till Adobe Experience Manager 6.5 LTS Documentation
 
-Tack för att du har valt att delta i Adobe Experience Manager 6.6-dokumentationen! Dokumentationsgruppen välkomnar bidrag från hela läsarcommunityn och från andra Adobe-anställda.
+Tack för att du väljer att delta i Adobe Experience Manager 6.5 LTS-dokumentationen! Dokumentationsgruppen välkomnar bidrag från hela läsarcommunityn och från andra Adobe-anställda.
 
 I den här filen beskrivs hur du kan bidra och de riktlinjer som ska följas när du gör dina bidrag visas.
 
