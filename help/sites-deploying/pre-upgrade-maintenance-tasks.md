@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 108e1b3d840287e3d694242d934d0fbe4606801c
+source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1187'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,6 @@ Innan du påbörjar uppgraderingen är det viktigt att du följer dessa underhå
 * [Generera filen quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Konfigurera rensning av arbetsflöde och granskningslogg](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Installera, konfigurera och köra uppgifter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
-* [Inaktivera anpassade inloggningsmoduler](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [Ta bort uppdateringar från katalogen /install](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
 * [Stoppa alla väntelägesförekomster i kallt läge](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
 * [Inaktivera anpassade schemalagda jobb](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
@@ -146,6 +145,10 @@ Inaktivera alla schemalagda OSGi-jobb som ingår i programkoden.
 >Detta steg är endast nödvändigt för bensinanläggningar
 
 Om du använder tarMK bör du köra Revision Cleanup offline innan du uppgraderar. Detta gör att databasmigreringssteget och efterföljande uppgraderingsuppgifter körs mycket snabbare och hjälper till att säkerställa att rensning av onlineändringar kan utföras korrekt när uppgraderingen har slutförts. Information om hur du kör rensning av offlineredigering finns i [Utför rensning av offlineredigering](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+
+## Kör skräpinsamling för datastore {#execute-datastore-garbage-collection}
+
+När du har kört revisionsrensning på CRX3-instanser bör du köra Datastore Garbage Collection för att ta bort alla blobbar som inte refereras i datalagret. Instruktioner finns i dokumentationen om [skräpinsamlingen för datalagret](/help/sites-administering/data-store-garbage-collection.md).
 
 ## Rotera loggfiler {#rotate-log-files}
 
