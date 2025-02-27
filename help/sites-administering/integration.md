@@ -8,9 +8,9 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 0%
 * [Integrera med Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md)
 * [Integrera med tredjepartstjänster](/help/sites-administering/third-party-services.md)
 * [Analyser med externa leverantörer](/help/sites-administering/external-providers.md)
-* [Katalogproducent](/help/sites-administering/catalog-producer.md)
 * [Förstå, använda och strukturera smarta taggar](/help/assets/enhanced-smart-tags.md)
 
 Följande information finns om hur du integrerar AEM med andra tjänster från Adobe eller tredje part:

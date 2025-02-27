@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -61,13 +61,6 @@ I följande tabell visas en översikt över problem som administratörer kan fel
  </tbody>
 </table>
 
-## Installationsproblem {#installation-issues}
-
-Mer information om följande felsökningsscenarier finns i [Vanliga installationsproblem](/help/sites-deploying/troubleshooting.md#common-installation-issues):
-
-* Att dubbelklicka på Quickstart-behållaren har ingen effekt och JAR-filen har ingen effekt med ett annat program (t.ex. arkivhanteraren).
-* Program som körs på CRX orsakar fel av typen slut på minne.
-* Välkomstskärmen i AEM visas inte i webbläsaren när du har dubbelklickat på AEM Quickstart.
 
 ## Metoder för felsökningsanalys {#methods-for-troubleshooting-analysis}
 

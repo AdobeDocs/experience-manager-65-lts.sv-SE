@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1759'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ När du har lärt dig grunderna hittar du mer avancerad och detaljerad informati
 * [Rekommenderade distributioner](/help/sites-deploying/recommended-deploys.md)
 * [Anpassad fristående installation](/help/sites-deploying/custom-standalone-install.md)
 * [Installation av programserver](/help/sites-deploying/application-server-install.md)
-* [Felsökning](/help/sites-deploying/troubleshooting.md)
 * [Kommandoradens start och stopp](/help/sites-deploying/command-line-start-and-stop.md)
 * [Konfigurerar](/help/sites-deploying/configuring.md)
 * [Uppgradera till AEM 6.5](/help/sites-deploying/upgrade.md)
@@ -295,7 +294,6 @@ Ovanstående avsnitt bör ge dig en god förståelse för grunderna i AEM-instal
 * [Rekommenderade distributioner](/help/sites-deploying/recommended-deploys.md)
 * [Anpassad fristående installation](/help/sites-deploying/custom-standalone-install.md)
 * [Installation av programserver](/help/sites-deploying/application-server-install.md)
-* [Felsökning](/help/sites-deploying/troubleshooting.md)
 * [Kommandoradens start och stopp](/help/sites-deploying/command-line-start-and-stop.md)
 * [Konfigurerar](/help/sites-deploying/configuring.md)
 * [Uppgradera till AEM 6.5](/help/sites-deploying/upgrade.md)
