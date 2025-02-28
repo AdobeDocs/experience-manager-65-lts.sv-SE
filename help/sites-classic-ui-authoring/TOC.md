@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: Adobe Experience Manager
-sub-product: Adobe Experience Manager 6.5 2025
+sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
-user-guide-description: Läs Adobe Experience Manager 6.5 2025-dokumentationen och lär dig hur det fungerar och vad programmet kan göra för dig.
+user-guide-description: Läs Adobe Experience Manager 6.5 LTS-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
 breadcrumb-title: Användarhandbok
-user-guide-title: AEM 6.5 2025
+user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%

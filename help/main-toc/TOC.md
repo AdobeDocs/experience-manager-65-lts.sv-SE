@@ -1,20 +1,20 @@
 ---
 cloud: Experience Cloud
 product: Adobe Experience Manager
-sub-product: Adobe Experience Manager 6.5
+sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
-user-guide-description: Läs Adobe Experience Manager 6.5-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
+user-guide-description: Läs Adobe Experience Manager 6.5 LTS-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
 breadcrumb-title: Användarhandbok
-user-guide-title: AEM 6.5
-source-git-commit: 1d306a12ebff41e5f31e5b7fbe8086cd2e657500
+user-guide-title: AEM 6.5 LTS
+source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
 workflow-type: tm+mt
-source-wordcount: '7019'
+source-wordcount: '7020'
 ht-degree: 1%
 
 ---
 
 
-# Adobe Experience Manager 6.5 - dokumentation {#content}
+# Adobe Experience Manager 6.5 LTS Documentation {#content}
 
 + Versionsinformation {#release-notes}
    + [Versionsinformation](/help/release-notes/release-notes.md)
@@ -44,7 +44,7 @@ ht-degree: 1%
    + [Hantera GDPR-begäranden för AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)
    + [Huvudvy för behörighetshantering](/help/sites-administering/touch-ui-principal-view.md)
    + [Innehållsdispositionsfilter](/help/sites-administering/content-disposition-filter.md)
-   + [Mappning av anpassade användargrupper i AEM 6.5](/help/sites-administering/cug-mapping.md)
+   + [Mappning av anpassad användargrupp](/help/sites-administering/cug-mapping.md)
    + [Stöd för samma webbplats-cookie](/help/sites-administering/same-site-cookie-support.md)
    + [Borttagning av JWT-autentiseringsuppgifter i Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Konfigurera IMS-integreringar för AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
@@ -1424,7 +1424,7 @@ ht-degree: 1%
       + Introduktion till AEM-plattformen {#introduction}
          + [Introduktion till AEM Platform](/help/sites-deploying/platform.md)
          + [Tekniska krav](/help/sites-deploying/technical-requirements.md)
-         + [Lagringselement i AEM 6.5](/help/sites-deploying/storage-elements-in-aem-6.md)
+         + [Lagringselement i AEM](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [AEM med MongoDB](/help/sites-deploying/aem-with-mongodb.md)
       + Distribuerar AEM {#deploying}
          + [Driftsättning och underhåll](/help/sites-deploying/deploy.md)
@@ -1436,7 +1436,7 @@ ht-degree: 1%
          + [Revision Cleanup](/help/sites-deploying/revision-cleanup.md)
          + [Oak Queries and Indexing](/help/sites-deploying/queries-and-indexing.md)
          + [Så här kör du AEM med TARMK Cold Standby](/help/sites-deploying/tarmk-cold-standby.md)
-         + [Stöd för RDBMS i AEM 6.5](/help/sites-deploying/rdbms-support-in-aem.md)
+         + [Stöd för RDBMS i AEM](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Indexering via Oak-runda JAR](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Oak-run.jar - Exempel på indexering](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Felsöka Oak-index](/help/sites-deploying/troubleshooting-oak-indexes.md)
@@ -1462,11 +1462,11 @@ ht-degree: 1%
          + [Assets Performance Guide](/help/sites-deploying/assets-performance-sizing.md)
          + [Instruktionsartiklar för konfiguration](/help/sites-deploying/ht-deploy.md)
          + [Konfigurerar webbkonsolen](/help/sites-deploying/configuring-web-console.md)
-      + Uppgraderar till AEM 6.5 {#upgrading}
-         + [Uppgradera till AEM 6.5](/help/sites-deploying/upgrade.md)
+      + Uppgraderar till AEM 6.5 LTS {#upgrading}
+         + [Uppgradera till AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [Planera din uppgradering](/help/sites-deploying/upgrade-planning.md)
          + [Utvärdera uppgraderingskomplexiteten med mönsteravkännaren](/help/sites-deploying/pattern-detector.md)
-         + [Bakåtkompatibilitet i AEM 6.5](/help/sites-deploying/backward-compatibility.md)
+         + [Bakåtkompatibilitet i AEM 6.5 LTS](/help/sites-deploying/backward-compatibility.md)
          + [Uppgraderingsförfarande](/help/sites-deploying/upgrade-procedure.md)
          + [Utföra en uppgradering på plats](/help/sites-deploying/in-place-upgrade.md)
          + [Använda omindexering offline för att minska driftstoppen under en uppgradering](/help/sites-deploying/upgrade-offline-reindexing.md)
