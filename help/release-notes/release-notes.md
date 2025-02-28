@@ -1,9 +1,9 @@
 ---
 title: Aktuell versionsinformation för Adobe Experience Manager 6.5 LTS
 description: Detta är den aktuella versionsinformationen för Adobe Experience Manager 6.5 LTS.
-source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
+source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '796'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,6 @@ Hitta den fullständiga matrisen med plattformar som stöds, inklusive supportni
 >
 >Java™ 17 rekommenderas för AEM 6.5 LTS.
 
-
 ## Föråldrade och borttagna funktioner {#deprecated-and-removed-features}
 
 Adobe utvärderar ständigt produktfunktioner för att så småningom förnya eller ersätta äldre funktioner med modernare alternativ för att förbättra det totala kundvärdet, alltid med noggrant övervägande av bakåtkompatibilitet.
@@ -92,6 +91,7 @@ I det här avsnittet listas funktioner som har tagits bort från AEM 6.5 LTS. Ti
 | Screens | Screens stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Assets | `dam-pim` och `dam-rating` stöds inte eftersom paket är beroende av sociala medier. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` har tagits bort. | Använd den alternativa API `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` som har lagts till. | 6,5 LTS GA |
+| Portal | AEM Portal Director stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Granit | Paketet `com.adobe.granite.socketio` har tagits bort. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Granit | `com.adobe.granite.crx-explorer` stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Granit | `crx2oak` stöds inte. | Välj relevant version av [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
@@ -104,7 +104,6 @@ I det här avsnittet listas funktioner som har tagits bort från AEM 6.5 LTS. Ti
 | Öppna Source | `javax.mail` paket exporteras från paketet `com.sun.javax.mail`. | Ingen ändring krävs. | 6,5 LTS GA |
 | Öppna Source | `org.apache.jackrabbit.api` paket exporteras nu från paketet `org.apache.jackrabbit.oak-jackrabbit-api`. | Ingen ändring krävs. | 6,5 LTS GA |
 | Öppna Source | `com.github.jknack.handlebars` stöds inte | Välj relevant [version](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
-
 
 ## Begränsade webbplatser{#restricted-sites}
 
