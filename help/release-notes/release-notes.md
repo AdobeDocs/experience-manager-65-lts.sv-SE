@@ -1,9 +1,9 @@
 ---
 title: Aktuell versionsinformation för Adobe Experience Manager 6.5 LTS
 description: Detta är den aktuella versionsinformationen för Adobe Experience Manager 6.5 LTS.
-source-git-commit: baa7e84c30117645d6a2e4ef8d8e182a9dd73321
+source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '783'
 ht-degree: 4%
 
 ---
@@ -37,17 +37,13 @@ Quickstart använder Eclipse Jetty 11.0.x som servermotor.
 * För optimala prestanda bör du åsidosätta GC-standardvärden med andra värden. Mer information finns i avsnittet [Installera och uppdatera](/help/sites-deploying/custom-standalone-install.md).
 * Java™ 17-underhållsuppdateringar distribueras av Adobe för kundanvändning i AEM-relaterade projekt, när de inte är tillgängliga för allmänheten från Oracle.
 
-#### Java™ Development {#java-development}
+#### Paketering med Uberjar {#uber-jar-packaging}
 
-* Det finns nu [två versioner av Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), en rekommenderad version med publika gränssnitt som inte har markerats för borttagning, och en version som bara innehåller gränssnitt som har markerats för borttagning.
+* Det finns en liten skillnad i förpackningen till AEM 6.5 LTS. Mer information [finns i](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version-update-the-aem-uber-jar-version).
 
 #### Uppgradera {#upgrade}
 
 * Mer information om uppgraderingsproceduren finns i [uppgraderingsdokumentationen](/help/sites-deploying/upgrade.md).
-
-#### Databas {#repository}
-
-* Grunden till Adobe Experience Manager 6.5 LTS bygger vidare på uppdaterade versioner av det OSGi-baserade ramverket (Apache Sling och Apache Felix) och Java™ Content Repository: Apache Jackrabbit Oak 1.68.0.
 
 ## Installera och uppdatera {#install-update}
 
@@ -98,13 +94,17 @@ I det här avsnittet listas funktioner som har tagits bort från AEM 6.5 LTS. Ti
 | Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` har tagits bort. | Använd den alternativa API `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` som har lagts till. | 6,5 LTS GA |
 | Granit | Paketet `com.adobe.granite.socketio` har tagits bort. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Granit | `com.adobe.granite.crx-explorer` stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
+| Granit | `crx2oak` stöds inte. | Välj relevant version av [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
+| Adobe | `com.adobe.cq.cq-searchpromote-integration` stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Guava | Alla guava-beroenden har nu tagits bort i AEM och därför ingår inte paketet `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` i AEM. | Kunderna kan själva lägga till guava om de är beroende av guava eller ersätta guava-kod med java-samlingar eller andra alternativ om det är möjligt. | 6,5 LTS GA |
 | We.Retail | Exempelsajten för webben stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Öppna Source | Paketet `oak-solr-osgi` stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Öppna Source | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` och `org.apache.sling.atom.taglib` stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
-| Öppna Source | `org.apache.commons.io packages` exporteras nu från `org.apache.commons.commons-io`. | Ingen ändring krävs. | 6,5 LTS GA |
+| Öppna Source | `org.apache.commons.io` paket exporteras nu från `org.apache.commons.commons-io`. | Ingen ändring krävs. | 6,5 LTS GA |
 | Öppna Source | `javax.mail` paket exporteras från paketet `com.sun.javax.mail`. | Ingen ändring krävs. | 6,5 LTS GA |
 | Öppna Source | `org.apache.jackrabbit.api` paket exporteras nu från paketet `org.apache.jackrabbit.oak-jackrabbit-api`. | Ingen ändring krävs. | 6,5 LTS GA |
+| Öppna Source | `com.github.jknack.handlebars` stöds inte | Välj relevant [version](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
+
 
 ## Begränsade webbplatser{#restricted-sites}
 
