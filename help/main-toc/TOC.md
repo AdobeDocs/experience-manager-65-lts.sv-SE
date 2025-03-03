@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Läs Adobe Experience Manager 6.5 LTS-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
 breadcrumb-title: Användarhandbok
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
+source-git-commit: fe361e43288ad0242faa1d82af086aee9fc7804b
 workflow-type: tm+mt
-source-wordcount: '7020'
+source-wordcount: '7044'
 ht-degree: 1%
 
 ---
@@ -1472,12 +1472,15 @@ ht-degree: 1%
          + [Använda omindexering offline för att minska driftstoppen under en uppgradering](/help/sites-deploying/upgrade-offline-reindexing.md)
          + [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
          + [Använda migreringsverktyget för CRX2Oak](/help/sites-deploying/using-crx2oak.md)
+         + [AEM 6.5 till AEM 6.5 LTS Content Migration Using Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
          + [Underhållsaktiviteter före uppgraderingen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
          + [Kontrollera och felsök efter uppgradering](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Uppgraderar Forms för anpassad sökning](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Hållbara uppgraderingar](/help/sites-deploying/sustainable-upgrades.md)
          + [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md)
          + [Uppgradera steg för programserverinstallationer](/help/sites-deploying/app-server-upgrade.md)
+         + [Uppgradera steg för programserverinstallationer (WLP)](/help/sites-deploying/app-server-upgrade-wlp.md)
+         + [Uppgradera steg för programserverinstallationer (Tomcat)](/help/sites-deploying/app-server-upgrade-tomcat.md)
          + [Lista över föråldrade paket som avinstallerats efter uppgraderingen](/help/sites-deploying/obsolete-bundles.md)
       + Bästa praxis {#practices}
          + [Distribuera bästa praxis](/help/sites-deploying/best-practices.md)
