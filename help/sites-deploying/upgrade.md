@@ -9,9 +9,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: 598d6eecbdd3887c41a36a14daa215e2e8e6e09a
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!NOTE]
 >Uppgraderingen till AEM 6.5 LTS stöds från de senaste 6 servicepaketen.
 
-Detta avsnitt handlar om uppgradering av en AEM-installation till AEM 6.5:
+Detta avsnitt omfattar uppgradering av en AEM-installation till AEM 6.5 LTS:
 
 <!-- Alexandru: drafting for now 
 
@@ -50,31 +50,6 @@ För att underlätta referensen till de AEM-instanser som ingår i dessa procedu
 
 ### Uppdateringar {#updates}
 
-Nedan följer viktiga ändringar av anmärkningar under de senaste versionerna av AEM:
+Foundation layer har nu stöd för Java 17, som innehåller de senaste open-source-paketen från Apache Sling, Felix och Jackrabbit Oak. Dessutom har förpackningen till AEM 6.5 LTS uber-burken ändrats. Dessutom har några äldre funktioner tagits bort från AEM 6.5 LTS. Mer information finns i [Versionsinformation](/help/release-notes/release-notes.md#whats-new-what-s-new) och [Lista över föråldrade paket som avinstallerats efter uppgraderingen](/help/sites-deploying/obsolete-bundles.md)
 
-1. Foundation-lagret har uppgraderats för att stödja Java 17 (som omfattar lager med öppen källkod från Apache Sling, Apache Felix och Apache Jackrabbit Oak)
-
-1. AEM 6.5 LTS jar-paketet har nu stöd för specifikationer för Jarkarta Servlet API:er 5 och krigsförpackningar kan distribueras till serverbehållare som implementerar specifikationer för Jakarta Servlet API 5/6
-
-1. Förpackningen av AEM 6.5 LTS uber-jar har ändrats. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md).
-
-### Äldre funktioner/artefakter har tagits bort {#removed-legacy-features-artifacts}
-
-Följande äldre lösningar har tagits bort från AEM 6.5 LTS. Mer information finns i TBD: link to release notes and [List of Obsolete Bundles Uninstalled After the Upgrade](/help/sites-deploying/obsolete-bundles.md) (på engelska)
-
-1. Social
-1. Commerce
-1. Screens
-1. Vi-butik
-1. Integration av sökning och marknadsföring
-
-**Borttagna artefakter**
-
-1. CRX-explorer
-1. Crx2oak
-1. Google guava (borttaget på grund av säkerhetsluckor)
-1. Abdera-parser (borttagen på grund av säkerhetsluckor)
-1. jdom (`org.apache.servicemix.bundles.jdom`) (borttagen på grund av säkerhetsluckor)
-1. `com.github.jknack.handlebars` (borttagen på grund av säkerhetsproblem)
-
-AEM 6.5 LTS har ett starkt fokus på bakåtkompatibilitet för funktioner och levereras med ett analysverktyg. Se [Utvärdera uppgraderingskomplexiteten med AEM Analyzer](/help/sites-deploying/pattern-detector.md) för en bedömning av komplexiteten när du börjar planera för uppgraderingen. Mer information om vad mer som har ändrats finns i den fullständiga versionsinformationen här. TBD: Länk till versionsinformation om AEM 6.5 LTS
+AEM 6.5 LTS har ett starkt fokus på bakåtkompatibilitet för funktioner och levereras med ett analysverktyg. Se [Utvärdera uppgraderingskomplexiteten med AEM Analyzer](/help/sites-deploying/pattern-detector.md) för en bedömning av komplexiteten när du börjar [planera för uppgraderingen](/help/sites-deploying/upgrade-planning.md).
