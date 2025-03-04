@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ee5f1f68f6f961ba0a18296eaf198ebe8671b226
+source-git-commit: 09b297721b08ef428f1ac8a26fec38d5a8bd34fd
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -20,28 +20,24 @@ ht-degree: 0%
 
 ## Bokför uppgraderingskontroller {#post-upgrade-checks}
 
-Efter [lokal uppgradering](/help/sites-deploying/in-place-upgrade.md) ska följande aktiviteter utföras för att slutföra uppgraderingen. Man antar att AEM har startats med 6.5.2025-behållaren och att den uppgraderade kodbasen har driftsatts.
+Efter [lokal uppgradering](/help/sites-deploying/in-place-upgrade.md) ska följande aktiviteter utföras för att slutföra uppgraderingen. Vi antar att AEM har startats med AEM 6.5 LTS jar och att den uppgraderade kodbasen har distribuerats.
 
-* [Verifiera loggar för uppgraderingen](#main-pars-header-290365562)
+* [Verifiera loggar för uppgraderingen](#verify-logs-for-upgrade-success)
 
-* [Verifiera OSGi Bundles](#main-pars-header-1637350649)
+* [Verifiera OSGi Bundles](#verify-osgi-bundles)
 
-* [Verifiera Oak-version](#main-pars-header-1293049773)
+* [Verifiera Oak-version](#verify-oak-version)
 
-* [Granska mappen PreUpgradeBackup](#main-pars-header-988995987)
+* [Inledande validering av sidor](#initial-validation-of-pages)
 
-* [Inledande validering av sidor](#main-pars-header-20827371)
-* [Använd AEM Service Pack](#main-pars-header-215142387)
+* [Verifiera planerade underhållskonfigurationer](#verify-scheduled-maintenance-configurations)
 
-* [Migrera AEM-funktioner](#main-pars-header-1434457709)
+* [Aktivera replikeringsagenter](#enable-replication-agents)
 
-* [Verifiera planerade underhållskonfigurationer](#main-pars-header-1552730183)
+* [Aktivera anpassade schemalagda jobb](#enable-custom-scheduled-jobs)
 
-* [Aktivera replikeringsagenter](#main-pars-header-823243751)
+* [Kör testplan](#execute-test-plan)
 
-* [Aktivera anpassade schemalagda jobb](#main-pars-header-244535083)
-
-* [Kör testplan](#main-pars-header-1167972233)
 
 ### Verifiera loggar för lyckad uppgradering {#verify-logs-for-upgrade-success}
 
@@ -68,7 +64,7 @@ Navigera till OSGi-konsolen `/system/console/bundles` och kontrollera om några 
 
 ### Verifiera Oak-version {#verify-oak-version}
 
-Efter uppgraderingen bör du kontrollera att Oak-versionen har uppdaterats till **1.68.0**. Kontrollera Oak-versionen genom att navigera till OSGi-konsolen och titta på den version som är kopplad till Oak-paket: Oak Core, Oak Commons, Oak Segment tar.
+Efter uppgraderingen bör du se att Oak-versionen har uppdaterats till **1.68.1-B002**. Kontrollera Oak-versionen genom att navigera till OSGi-konsolen och titta på den version som är kopplad till Oak-paket: Oak Core, Oak Commons, Oak Segment tar.
 
 ### Inledande validering av sidor {#initial-validation-of-pages}
 
@@ -88,10 +84,6 @@ Om du använder ett fildatalager måste du se till att aktiviteten Skräpinsamli
 
 Om du använder MongoMK eller det nya StjärmMK-segmentformatet kontrollerar du att aktiviteten Revision Clean Up (Revision Clean Up) är aktiverad och läggs till i listan Daily Maintenance (Dagligt underhåll). Instruktioner beskrivs under [Revision Cleanup](/help/sites-deploying/revision-cleanup.md).
 
-### Kör testplan {#execute-test-plan}
-
-Kör detaljerad testplan mot [uppgraderingskod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) enligt avsnittet **Testprocedur**.
-
 ### Aktivera replikeringsagenter {#enable-replication-agents}
 
 När publiceringsmiljön har uppgraderats och validerats aktiverar du replikeringsagenter i redigeringsmiljön. Kontrollera att agenter kan ansluta till respektive publiceringsinstanser. Mer information om ordningen för händelser finns i [Uppgraderingsprocedur](/help/sites-deploying/upgrade-procedure.md).
@@ -100,19 +92,21 @@ När publiceringsmiljön har uppgraderats och validerats aktiverar du replikerin
 
 Alla schemalagda jobb som en del av kodbasen kan nu aktiveras.
 
-## Analysera problem med uppgraderingen {#analyzing-issues-with-upgrade}
+### Kör testplan {#execute-test-plan}
 
-Det här avsnittet innehåller några felscenarier som kan uppstå under uppgraderingsprocessen till AEM 6.5.2025.
+Kör detaljerad testplan enligt definitionen i [Uppgradera kod och anpassningar under avsnittet **Testprocedur**](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure).
 
-Dessa scenarier bör hjälpa till att hitta orsaken till uppgraderingsrelaterade problem och bör hjälpa till att identifiera projekt- eller produktspecifika problem.
+## Analysera problem med uppgraderingen {#analyzing-issues-with-the-upgrade}
 
-### Paket och paket kunde inte uppdateras  {#packages-and-bundles-fail-to-update-}
+Det här avsnittet innehåller några problemscenarier som man kan ställas inför vid uppgradering till AEM 6.5 LTS.
+
+### Paket och paket kunde inte uppdateras  {#packages-and-bundles-fail-to-update}
 
 Om paketen inte installeras under uppgraderingen kommer de paket de innehåller inte heller att uppdateras. Den här kategorin av problem orsakas av felkonfigurering av datalagret. De visas också som **ERROR**- och **WARN**-meddelanden i error.log. Eftersom standardinloggningen i de flesta fall kan misslyckas kan du använda CRXDE direkt för att undersöka och hitta konfigurationsproblemen.
 
 ### Uppgraderingen kördes inte {#the-upgrade-did-not-run}
 
-Innan du startar förberedelsestegen måste du först köra instansen **source** genom att köra den med kommandot Java™ -jar aem-quickstart.jar. Detta krävs för att säkerställa att filen quickstart.properties genereras korrekt. Om den saknas fungerar inte uppgraderingen. Du kan också kontrollera om filen finns genom att titta under `crx-quickstart/conf` i källinstansens installationsmapp. När AEM startar uppgraderingen måste den också köras med kommandot Java™ -jar aem-quickstart.jar. AEM startas inte i uppgraderingsläge när du startar från ett startskript.
+Innan du startar förberedelsestegen måste du först köra **source**-instansen genom att köra den med kommandot `java -jar aem-quickstart.jar`. Detta krävs för att säkerställa att filen quickstart.properties genereras korrekt. Om den saknas fungerar inte uppgraderingen. Du kan också kontrollera om filen finns genom att titta under `crx-quickstart/conf` i källinstansens installationsmapp. När du startar AEM för att starta uppgraderingen måste den dessutom köras med kommandot `java -jar <aem-quickstart-6.5-LTS.jar>`. AEM startas inte i uppgraderingsläge när du startar från ett startskript.
 
 ### Vissa AEM Bundles växlar inte till det aktiva läget {#some-aem-bundles-are-not-switching-to-the-active-state}
 
@@ -120,13 +114,13 @@ Om det inte finns några paket som kan startas kontrollerar du om det finns någ
 
 Om det här problemet uppstår men baseras på en misslyckad paketinstallation som ledde till att paket inte uppgraderas, kommer de att anses vara inkompatibla för den nya versionen. Mer information om hur du felsöker detta finns i **Paket och paket som inte kan uppdateras** ovan.
 
-Vi rekommenderar också att du jämför paketlistan för en ny instans av AEM 6.5.2025 med den uppgraderade instansen för att identifiera de paket som inte uppgraderats. Detta ger en närmare beskrivning av vad du ska söka efter i `error.log`.
+Vi rekommenderar också att du jämför paketlistan för en ny AEM 6.5 LTS-instans med den uppgraderade instansen för att identifiera de paket som inte uppgraderats. Detta ger en närmare beskrivning av vad du ska söka efter i `error.log`.
 
 ### Anpassade paket växlar inte till aktivt läge {#custom-bundles-not-switching-to-the-active-state}
 
-Om dina anpassade paket inte växlar till det aktiva läget är det troligtvis så att det finns kod som inte importerar ändrings-API. Detta leder ofta till missnöjda beroenden.
+Om dina anpassade paket inte växlar till det aktiva läget är det troligtvis så att det finns kod som inte importerar ändrat API. Detta leder ofta till missnöjda beroenden.
 
-Det är också bäst att kontrollera om den ändring som orsakade problemet var nödvändig och återställa den om så inte är fallet. Kontrollera också om versionsökningen av paketexporten har ökat mer än nödvändigt efter strikt semantisk versionshantering.
+Det är också bäst att kontrollera om den ändring som orsakade problemet var nödvändig och återställa om så inte är fallet. Kontrollera också om versionsökningen av paketexporten har ökat mer än nödvändigt efter strikt semantisk versionshantering.
 
 ### Analyserar error.log och upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
@@ -150,4 +144,4 @@ I ett fåtal fall kan fel också hittas i WARN-meddelanden eftersom det kan finn
 
 ### Kontakta Adobe Support {#contacting-adobe-support}
 
-Om du har gått igenom råden på den här sidan och fortfarande ser problem kontaktar du Adobe Support. Om du vill ge så mycket information som möjligt till den supporttekniker som arbetar med ditt ärende måste du inkludera filen upgrade.log från uppgraderingen.
+Om du har gått igenom råden på den här sidan och fortfarande ser problem kontaktar du Adobe Support. Om du vill ge så mycket information som möjligt till den supporttekniker som arbetar med ditt ärende måste du inkludera filerna `error.log` och `upgrade.log` från din uppgradering.
