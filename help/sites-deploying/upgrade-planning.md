@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ AEM uppgraderingsprocess måste noggrant hanteras i planerings-, analys- och kö
 >
 >Uppgraderingen till AEM 6.5 LTS stöds från de senaste 6 servicepaketen
 
-Det är viktigt att du kör ett operativsystem som stöds, Java™-miljön, httpd och Dispatcher-versionen. Mer information finns i TBD: link to technical requirements of AEM 6.5 LTS. Uppgradering av dessa komponenter måste ingå i din uppgraderingsplan och bör ske innan du uppgraderar AEM.
+Det är viktigt att du kör ett operativsystem som stöds, Java™-miljön, httpd och Dispatcher-versionen. Mer information finns i de [tekniska kraven för AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). Uppgradering av dessa komponenter måste ingå i din uppgraderingsplan och bör ske innan du uppgraderar AEM.
 
 <!-- Alexandru: drafting for now
 
@@ -106,15 +106,15 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 ### Skapa en testplan {#creating-a-test-plan}
 
-Varje kunds implementering av AEM är unik och har anpassats för att uppfylla deras affärskrav. Därför är det viktigt att fastställa alla anpassningar som har gjorts i systemet så att de kan inkluderas i en testplan. Testplanen kommer att driva den QA-process som Adobe utför på den uppgraderade instansen.
+Varje kunds implementering av AEM är unik och har anpassats för att uppfylla deras affärskrav. Därför är det viktigt att fastställa alla anpassningar som har gjorts i systemet så att de kan inkluderas i en testplan.
 
 Den exakta produktionsmiljön måste dupliceras och testning bör utföras på den efter uppgraderingen för att säkerställa att alla program och anpassad kod fortfarande fungerar som de ska. Regress all anpassning och kör prestanda, inläsning och säkerhetstestning. När du organiserar din testplan måste du ta med alla anpassningar som har gjorts i systemet, förutom de användargränssnitt och arbetsflöden som används i de dagliga åtgärderna. Dessa kan omfatta anpassade OSGI-tjänster och -servrar, integrering med Adobe Experience Cloud, integrering med tredje part via AEM-anslutningar, anpassade tredjepartsintegreringar, anpassade komponenter och mallar, anpassade gränssnittsövertäckningar i AEM samt anpassade arbetsflöden. Dessutom bör anpassade frågor fortfarande testas för att säkerställa att deras index fortsätter att fungera effektivt efter uppgraderingen.
 
 ### Utvärderar uppgraderingskomplexitet {#assessing-upgrade-complexity}
 
-På grund av det stora utbudet av anpassningar som Adobe-kunder använder i sina AEM-miljöer är det viktigt att lägga lite tid på att avgöra hur stor arbetsinsatsen ska vara i uppgraderingen. Med Analyzer för AEM kan du bedöma hur komplicerad uppgraderingen är.
+På grund av det stora utbudet av anpassningar som Adobe-kunder använder i sina AEM-miljöer är det viktigt att lägga lite tid på att avgöra hur stor arbetsinsatsen ska vara i uppgraderingen. [AEM Analyzer för AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) kan hjälpa dig att bedöma uppgraderingens komplexitet.
 
-AEM Analyer för AEM 6.5 LTS bör ge en korrekt uppskattning av vad man kan förvänta sig under en uppgradering i de flesta fall. För mer komplexa anpassningar och distributioner där du har inkompatibla ändringar kan du uppgradera en utvecklingsinstans till AEM 6.5 LTS enligt instruktionerna i [Utföra en lokal uppgradering](/help/sites-deploying/in-place-upgrade.md). När det är klart utför du några högnivåröktester på den här miljön. Målet med denna övning är inte att göra en omfattande inventering av testfall och göra en formell inventering av defekter, utan att ge oss en ungefärlig uppskattning av mängden arbete som krävs för att uppgradera koden för 6.5 LTS-kompatibilitet. I kombination med AEM analyzer och de arkitektoniska förändringar som fastställdes i föregående avsnitt, kan en grov uppskattning ges till projektledningsteamet för planering av uppgraderingen.
+[AEM Analyer för AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) bör ge en korrekt uppskattning av vad du kan förvänta dig under en uppgradering i de flesta fall. För mer komplexa anpassningar och distributioner där du har inkompatibla ändringar kan du uppgradera en utvecklingsinstans till AEM 6.5 LTS enligt instruktionerna i [Utföra en lokal uppgradering](/help/sites-deploying/in-place-upgrade.md). När det är klart utför du några högnivåröktester på den här miljön. Målet med denna övning är inte att göra en omfattande inventering av testfall och göra en formell inventering av defekter, utan att ge oss en ungefärlig uppskattning av mängden arbete som krävs för att uppgradera koden för AEM 6.5 LTS-kompatibilitet. I kombination med [AEM analyzer](/help/sites-deploying/pattern-detector.md) och de arkitektoniska ändringar som bestämdes i föregående avsnitt kan en grov uppskattning ges till projekthanteringsteamet för planering av uppgraderingen.
 
 ### Bygga Runbook för uppgradering och återställning {#building-the-upgrade-and-rollback-runbook}
 
@@ -128,7 +128,7 @@ Adobe har tillhandahållit uppgraderings- och återställningsprocedurer i [uppg
 
 ### Utveckla en Upgrade Plan {#developing-an-upgrade-plan}
 
-Utdata från tidigare övningar kan användas för att bygga en uppgraderingsplan som täcker de förväntade tidslinjerna för test- eller utvecklingsarbete, utbildning och faktiskt utförande av uppgraderingen.
+Utdata från tidigare övningar kan användas för att bygga en uppgraderingsplan som täcker de förväntade tidslinjerna för test- eller utvecklingsarbetet och det faktiska uppgraderingskörningen.
 
 <!--Alexandru: drafting for now
 
