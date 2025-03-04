@@ -5,9 +5,9 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,23 @@ ht-degree: 0%
 
 ## Steg före uppgradering {#pre-upgrade-steps}
 
-Innan du utför uppgraderingen måste du utföra flera steg. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) och [Underhållsaktiviteter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Kontrollera dessutom att datorn uppfyller kraven för AEM 6.5 LTS. Se hur Analyzer kan hjälpa dig att uppskatta uppgraderingens komplexitet och se även avsnittet Upgrade Scope och Requirements i [Planera din uppgradering](/help/sites-deploying/upgrade-planning.md) för mer information.
+Innan du utför uppgraderingen måste du utföra flera steg. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) och [Underhållsaktiviteter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Kontrollera dessutom att datorn uppfyller [kraven för AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) och se [planeringshänsyn](/help/sites-deploying/upgrade-planning.md) samt hur [Analyzer](/help/sites-deploying/pattern-detector.md) kan hjälpa dig att beräkna komplexiteten.
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Krav för migrering {#migration-prerequisites}
 
-* **Minimikrav på Java-version:** Kontrollera att du har Oracle JRE 17 installerat på datorn.
+* **Minimikrav på Java-version:** Kontrollera att Oracle Java™ 17 är installerat på datorn.
 
 ## Förberedelse av filen AEM Quickstart jar {#prep-quickstart-file}
 
+1. Ladda ned nya AEM 6.5 LTS jar-filen
+
+1. [Kontrollera rätt startkommando för uppgradering](/help/sites-deploying/in-place-upgrade.md#determining-the-correct-upgrade-start-command-determining-the-correct-upgrade-start-command)
+
 1. Stoppa instansen om den körs
 
-1. Hämta den nya AEM 6.5 LTS jar-filen och använd den för att ersätta den gamla filen utanför mappen `crx-quickstart`
+1. Använd nya AEM 6.5 LTS jar för att ersätta den gamla utanför mappen `crx-quickstart`
 
 1. Gör en säkerhetskopia av filen `sling.properties` (finns vanligtvis i `crx-quickstart/conf/`) och ta sedan bort den
 
@@ -175,7 +179,7 @@ Starta nu AEM-instansen med det nya kommandot som bestäms med hjälp av informa
 
 >[!NOTE]
 >
->Stöd för vissa av Java 8/11-argumenten har tagits bort i Java 17, se Java arguments-överväganden för AEM 6.5 LTS (link stub).
+>Stöd för vissa Java 8/11-argument har tagits bort i Java 17, se [Oracle Java™ 17-dokument](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) och [Java&amp;trade arguments-överväganden för AEM 6.5 LTS](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 För att kunna genomföra uppgraderingen är det viktigt att du startar AEM med filen jar för att ta fram instansen.
 
@@ -193,10 +197,10 @@ Observera att uppgraderingen inte startar när AEM startas från startskriptet. 
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. Ändra kommandot genom att ersätta sökvägen till den befintliga burken ( `crx-quickstart/app/aem-quickstart*.jar` i det här fallet) med den nya burken som är jämställd med mappen `crx-quickstart`. Om du använder vårt tidigare kommando som exempel blir vårt kommando:
+1. Ändra kommandot genom att ersätta sökvägen till den befintliga burken ( `crx-quickstart/app/aem-quickstart*.jar` i det här fallet) med den nya AEM 6.5 LTS-burken som är jämställd med mappen `crx-quickstart`. Om du använder vårt tidigare kommando som exempel blir vårt kommando:
 
    ```shell
-   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.6.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar <AEM-6.5-LTS.jar> -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    Detta säkerställer att alla korrekta minnesinställningar, anpassade körningslägen och andra miljöparametrar används för uppgraderingen. När uppgraderingen har slutförts kan instansen startas från startskriptet vid framtida starter.
