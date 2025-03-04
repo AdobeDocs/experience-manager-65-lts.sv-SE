@@ -9,7 +9,7 @@ feature: Brand Portal
 role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 3%
@@ -76,11 +76,11 @@ Vi rekommenderar att du använder AEM 6.5 för att skapa en AEM Author-instans. 
 
 * Om du är Adobe partner kan du använda [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) för att begära AEM 6.5.
 
-När du har hämtat AEM finns instruktioner om hur du konfigurerar en AEM Author-instans i [Distribuera och underhålla](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/deploy.html#default-local-install).
+När du har hämtat AEM finns instruktioner om hur du konfigurerar en AEM Author-instans i [Distribuera och underhålla](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html#default-local-install).
 
 ### Hämta och installera AEM senaste Service Pack {#servicepack}
 
-Detaljerade instruktioner finns i den aktuella [AEM 6.5 Service Pack-versionsinformationen](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/release-notes.html).
+Detaljerade instruktioner finns i den aktuella [AEM 6.5 Service Pack-versionsinformationen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
 
 **Kontakta Adobe kundsupport** om du inte hittar det senaste AEM-paketet eller Service Pack.
 
@@ -122,11 +122,11 @@ Utför följande steg i den angivna sekvensen för att konfigurera Experience Ma
 
 #### Konfigurera OAuth-autentiseringsuppgifterna i Adobe Developer Console {#config-oauth}
 
-[Konfigurera OAuth-autentiseringsuppgifterna i Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) och välj Brand Portal API.
+[Konfigurera OAuth-autentiseringsuppgifterna i Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) och välj Brand Portal API.
 
 #### Skapa ny Adobe IMS-integrering med OAuth {#create-ims-account-configuration}
 
-[Skapa en ny Adobe IMS-integrering med OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) och välj Brand Portal i listrutan.
+[Skapa en ny Adobe IMS-integrering med OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) och välj Brand Portal i listrutan.
 
 #### Konfigurera molntjänst {#configure-cloud-service}
 

@@ -6,7 +6,7 @@ topic-tags: author
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -36,11 +36,11 @@ Resurserna i den här tabellen kan hjälpa dig att lära dig mer om och komma ig
   </tr>
   <tr>
    <td><p>Allmän information om AEM Forms och hur det integreras med andra Adobe-produkter</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms - översikt</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms - översikt</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>All tillgänglig dokumentation för AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms-dokumentation</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms-dokumentation</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Lappa uppdateringar, tekniska anteckningar och ytterligare information om den här produktversionen</p> </td>
@@ -190,7 +190,7 @@ Om du vill använda Workbench måste du ha en instans av AEM Forms igång, vanli
 
 ### Konfigurera timeout-inställningar {#configuring-timeout-settings}
 
-Workbench gör som standard en timeout efter två timmar, oavsett aktivitet eller inaktivitet. Mer information om hur du redigerar timeout-inställningen finns i&quot;Konfigurera användarhantering > Konfigurera avancerade systemattribut&quot; i hjälpen för <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">administrationskonsolen</a>.
+Workbench gör som standard en timeout efter två timmar, oavsett aktivitet eller inaktivitet. Mer information om hur du redigerar timeout-inställningen finns i&quot;Konfigurera användarhantering > Konfigurera avancerade systemattribut&quot; i hjälpen för <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">administrationskonsolen</a>.
 
 ### Konfigurera Workbench för anslutning via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

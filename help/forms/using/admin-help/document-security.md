@@ -9,7 +9,7 @@ docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3219'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Dokumentsäkerheten säkerställer att bara behöriga användare kan använda di
 * Adobe PDF-filer
 * Microsoft® Word, Excel och PowerPoint
 
-Mer information om hur profiler skyddar filtyper som stöds finns i [mer dokumentsäkerhetsinformation](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/use-document-security/document-security-offerings.html?lang=en).
+Mer information om hur profiler skyddar filtyper som stöds finns i [mer dokumentsäkerhetsinformation](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en).
 
 Med dokumentsäkerhet kan du enkelt skapa, lagra och använda fördefinierade sekretessinställningar i dina dokument. För att förhindra att information sprids utanför räckhåll kan du också övervaka och styra hur mottagarna använder dokumenten när du har distribuerat dem.
 

@@ -6,7 +6,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%
@@ -175,4 +175,4 @@ Om en användare saknar de nödvändiga AEM-formulären och CQ-behörigheterna o
 
 CQ har en mekanism som åsidosätter standardhanteraren 404 jsp.
 
-Mer information om hur du anpassar felhanteringssidan finns i [Anpassa sidor som visas av felhanteraren](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html?lang=en) i Adobe Experience Manager-dokumentationen.
+Mer information om hur du anpassar felhanteringssidan finns i [Anpassa sidor som visas av felhanteraren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) i Adobe Experience Manager-dokumentationen.

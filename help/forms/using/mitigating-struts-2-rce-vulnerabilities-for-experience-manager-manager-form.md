@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -31,9 +31,9 @@ I följande tabell visas upplösning för alla påverkade versioner:
 
 | Frigör | Aktuell version | Användaråtgärd |
 |---|---|---|
-| Experience Manager 6.5 Forms on JEE | 6.5.19.0 | [Installera den senaste Service Pack-versionen](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
-| Experience Manager 6.5 Forms on JEE | 6.5.13.0 - 6.5.18.0 | Använd någon av följande metoder: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Installera den senaste Service Pack-versionen </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Använd manuell begränsning </a> |
-| Experience Manager 6.5 Forms on JEE | 6.5 - 6.5.12.0 | [Installera den senaste Service Pack-versionen](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **OBS!** AEM Forms stöder för närvarande versionerna 6.5.13.0 till 6.5.19.0. Om du använder en äldre version rekommenderar vi att du uppgraderar till 6.5.13.0 eller en senare version. Anvisningar om hur du installerar AEM 6.5.13.0 eller senare finns i versionsinformationen. |
+| Experience Manager 6.5 Forms on JEE | 6.5.19.0 | [Installera den senaste Service Pack-versionen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
+| Experience Manager 6.5 Forms on JEE | 6.5.13.0 - 6.5.18.0 | Använd någon av följande metoder: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Installera den senaste Service Pack-versionen </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Använd manuell begränsning </a> |
+| Experience Manager 6.5 Forms on JEE | 6.5 - 6.5.12.0 | [Installera den senaste Service Pack-versionen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **OBS!** AEM Forms stöder för närvarande versionerna 6.5.13.0 till 6.5.19.0. Om du använder en äldre version rekommenderar vi att du uppgraderar till 6.5.13.0 eller en senare version. Anvisningar om hur du installerar AEM 6.5.13.0 eller senare finns i versionsinformationen. |
 
 ### Använd manuella begränsningssteg {#use-manual-mitigation-steps}
 

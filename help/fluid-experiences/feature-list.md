@@ -5,7 +5,7 @@ index: n
 feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Adobe Experience Manager Fluid Experiences bygger på de kraftfulla funktionerna i AEM Sites, AEM Dynamic Media och AEM Assets och ger en robust lösning för leverans av headless-material.
 
-AEM Fluid Experiences skiljer sig från klassiska AEM genom att endast använda headless-produkter. Framtagning och leverans av rubrikinnehåll och AEM starkt stöd för hybridanvändning finns för [AEM Sites-, Assets- och Dynamic Media-lösningarna.](https://experienceleague.adobe.com/docs/experience-manager-65-2025/user-guide/home.html)
+AEM Fluid Experiences skiljer sig från klassiska AEM genom att endast använda headless-produkter. Framtagning och leverans av rubrikinnehåll och AEM starkt stöd för hybridanvändning finns för [AEM Sites-, Assets- och Dynamic Media-lösningarna.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/user-guide/home.html)
 
 I följande tabeller definieras funktionerna i AEM Fluid Experiences och länken till relevant supportdokumentation.
 

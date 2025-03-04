@@ -10,7 +10,7 @@ kt: 4933
 thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Sökmotoroptimering (SEO) har blivit en viktig fråga för många marknadsförare. Därför måste SEO-frågor behandlas i många AEM-projekt. Mer information finns i [Bästa metoder för SEO- och URL-hantering](https://experienceleague.adobe.com/docs/experience-manager-65-2025/managing/managing-further-reference/seo-and-url-management.html).
+>Sökmotoroptimering (SEO) har blivit en viktig fråga för många marknadsförare. Därför måste SEO-frågor behandlas i många AEM-projekt. Mer information finns i [Bästa metoder för SEO- och URL-hantering](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html).
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) innehåller avancerade konfigurationer för att anpassa URL:er för produkt- och kategorisidor. Många implementeringar anpassar dessa URL:er för sökmotoroptimering (SEO). Följande video visar hur du konfigurerar tjänsten `UrlProvider` och funktionerna i [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) för att anpassa URL:er för produkt- och kategorisidor.
 
@@ -109,5 +109,5 @@ Projektet [Venias referensarkiv](https://github.com/adobe/aem-cif-guides-venia) 
 ## Ytterligare resurser
 
 * [Referensarkiv för Venedig](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM-resursmappning](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/resource-mapping.html)
+* [AEM-resursmappning](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
 * [Kopplingsmappningar](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

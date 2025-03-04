@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 238ff31ed4e5e833a14cb64e3eae75377038a857
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2852'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Implementera följande uppgifter om du vill konfigurera Experience Manager Asset
 
 1. Om du vill mappa Creative Cloud-licensierade användare till Experience Manager-användare hanterar du [åtkomstkontrollen](#user-access).
 
-1. Skapa [anpassat frågeindex](#create-custom-index), konfigurera [FPO-återgivningar](/help/assets/configure-fpo-renditions.md) för InDesign, konfigurera [Adobe Stock-integrering](/help/assets/aem-assets-adobe-stock.md) och konfigurera [visuell eller liknande sökning](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+1. Skapa [anpassat frågeindex](#create-custom-index), konfigurera [FPO-återgivningar](/help/assets/configure-fpo-renditions.md) för InDesign, konfigurera [Adobe Stock-integrering](/help/assets/aem-assets-adobe-stock.md) och konfigurera [visuell eller liknande sökning](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Förutsättningar och stöd för olika funktioner {#prerequisites}
 
@@ -242,7 +242,7 @@ I Experience Manager 6.4 och Experience Manager 6.5 kan administratörer konfigu
 
 Konfigurationen är användbar för företagsanvändare och marknadsförare, till exempel för att skapa ett anpassat arbetsflöde i några specifika mappar. Anta att alla resurser från en reklambyrås foton kan vara vattenstämplade eller att alla resurser som överförts av en frilansare kan bearbetas för att skapa specifika renderingar.
 
-Mer information och information om Experience Manager-konfiguration finns i [autokörningsarbetsflöde för resurser](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
+Mer information och information om Experience Manager-konfiguration finns i [autokörningsarbetsflöde för resurser](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
 
 
 ## Skapa ett anpassat index i Experience Manager 6.4.x {#create-custom-index}
@@ -260,7 +260,7 @@ Experience Manager innehåller index som används för frågor. Skapa följande 
 
 ## Konfigurera visuell sökning eller likhetssökning {#configure-visual-similarity-search}
 
-Med funktionen för visuell sökning kan du söka efter visuellt liknande resurser i AEM Assets-databasen med hjälp av panelen Adobe Asset Link. Funktionen är tillgänglig i version 6.5.0 eller senare och endast indexerade resurser söks igenom. Mer information finns i [Konfigurera visuell sökning](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+Med funktionen för visuell sökning kan du söka efter visuellt liknande resurser i AEM Assets-databasen med hjälp av panelen Adobe Asset Link. Funktionen är tillgänglig i version 6.5.0 eller senare och endast indexerade resurser söks igenom. Mer information finns i [Konfigurera visuell sökning](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Generera renderingar endast för placering för Adobe InDesign {#fpo-renditions}
 

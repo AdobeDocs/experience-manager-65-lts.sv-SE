@@ -4,7 +4,7 @@ description: Konfigurera OAuth2-baserad autentisering för Microsoft&reg (Forms 
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 0%
@@ -150,7 +150,7 @@ Konfigurera nu e-posttjänsten på den senaste JEE-servern genom att logga in p�
 
    >[!NOTE]
    >
-   > [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service) om du vill veta mer om aktivitetsmeddelanden.
+   > [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service) om du vill veta mer om aktivitetsmeddelanden.
 
 ## Konfigurera e-postslutpunkt {#configure_email_endpoint}
 
@@ -164,7 +164,7 @@ Konfigurera nu e-posttjänsten på den senaste JEE-servern genom att logga in p�
 
    >[!NOTE]
    >
-   > Om du vill ha mer information om hur du konfigurerar e-postslutpunkter klickar du på [Konfigurera en e-postslutpunkt](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Om du vill ha mer information om hur du konfigurerar e-postslutpunkter klickar du på [Konfigurera en e-postslutpunkt](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Felsökning {#troubleshooting}
 

@@ -8,7 +8,7 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: eff477824f2d1e5dfe5417835e8ced4b7eb85a0f
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Nedan beskrivs de viktigaste aspekterna, medan följande sidor innehåller mer i
 >
 >* Delta i arbetsflöden, se [Använda arbetsflöden](/help/sites-authoring/workflows.md).
 >* Administrera arbetsflöden och arbetsflödesinstanser, se [Administrera arbetsflöden](/help/sites-administering/workflows.md).
->* En communityartikel från början till slut finns i [Ändra Digital Assets med Adobe Experience Manager-arbetsflöden.](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html)
+>* En communityartikel från början till slut finns i [Ändra Digital Assets med Adobe Experience Manager-arbetsflöden.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)
 >* Se [Ask the AEM Experts Webinar on Workflows](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Ändringar av platserna för information finns i [Bästa praxis för arbetsflöde - Platser](/help/sites-developing/workflows-best-practices.md#locations).
 >

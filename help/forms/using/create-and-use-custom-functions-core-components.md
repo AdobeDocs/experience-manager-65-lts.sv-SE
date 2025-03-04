@@ -5,7 +5,7 @@ keywords: Lägg till en anpassad funktion, använd en anpassad funktion, skapa e
 content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3377'
 ht-degree: 0%
@@ -571,7 +571,7 @@ Låt oss förhandsgranska formuläret för att se hur de anpassade funktionerna 
 
 >[!NOTE]
 >
-> Du kan referera till följande [anpassade funktionsmapp](/help/forms/using/assets/customfunctions.zip). Hämta och installera den här mappen i din AEM-instans med [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/sites/administering/contentmanagement/package-manager).
+> Du kan referera till följande [anpassade funktionsmapp](/help/forms/using/assets/customfunctions.zip). Hämta och installera den här mappen i din AEM-instans med [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Stöd för asynkrona funktioner i anpassade funktioner {#support-of-async-functions}
 

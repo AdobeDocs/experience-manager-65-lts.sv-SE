@@ -8,7 +8,7 @@ docset: aem65
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 3%
@@ -36,7 +36,7 @@ AEM Forms har verktyg för blanketthantering som inte bara gör det möjligt att
 
 >[!NOTE]
 >
->Den adaptiva Forms-funktionen, som finns i [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/deploy.html), är endast avsedd för utforsknings- och utvärderingsändamål. För produktion krävs en giltig licens för AEM Forms, eftersom Adaptive Forms-funktionaliteten kräver rätt licensiering.
+>Den adaptiva Forms-funktionen, som finns i [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html), är endast avsedd för utforsknings- och utvärderingsändamål. För produktion krävs en giltig licens för AEM Forms, eftersom Adaptive Forms-funktionaliteten kräver rätt licensiering.
 
 ![AEM-formulärfunktioner](do-not-localize/4th-draft-updated.gif)
 

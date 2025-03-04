@@ -4,7 +4,7 @@ description: Steg för integrering av Salesforce med AEM Forms med OAuth 2.0-kli
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 1%
@@ -69,4 +69,4 @@ Innan du anger kommunikation mellan ett Salesforce-program och en AEM-miljö:
 1. Klicka på **[!UICONTROL Test Connection]**.
 1. Om anslutningen lyckas klickar du på knappen **[!UICONTROL Create]**.
 
-Nu kan du [skapa formulärdatamodellen](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/form-data-model/create-form-data-models.html?lang=en) för att integrera den konfigurerade datakällan med din adaptiva Forms.
+Nu kan du [skapa formulärdatamodellen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/form-data-model/create-form-data-models.html?lang=en) för att integrera den konfigurerade datakällan med din adaptiva Forms.

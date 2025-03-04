@@ -4,7 +4,7 @@ description: AEM Forms Server börjar bearbeta dokumenten redan innan alla tjän
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 0%
@@ -26,4 +26,4 @@ Lösningen gäller AEM Forms på JEE Server och AEM Forms på OSGi Server.
 
 ## Lösning {#solution}
 
-Lös problemet genom att lägga till argumentet `Dcom.adobe.livecycle.dsc.deferServiceStart=true` i [batchfilen](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) när servern startas.
+Lös problemet genom att lägga till argumentet `Dcom.adobe.livecycle.dsc.deferServiceStart=true` i [batchfilen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) när servern startas.

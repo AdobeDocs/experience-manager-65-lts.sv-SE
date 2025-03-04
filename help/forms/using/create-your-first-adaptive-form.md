@@ -4,7 +4,7 @@ description: Lär dig skapa interaktiva och responsiva blanketter i affärsklass
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 9bb44a58e919fd038c83cab89620256501137bef
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Webbplatsen körs på Adobe Experience Manager (AEM) och använder AEM [!DNL For
 
 ### Förutsättning {#prerequisite}
 
-* Konfigurera en [AEM-författarinstans](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
+* Konfigurera en [AEM-författarinstans](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installera [AEM Forms-tillägget](../../forms/using/installing-configuring-aem-forms-osgi.md) på författarinstansen.
 * Hämta JDBC-databasdrivrutin (JAR-fil) från databasprovidern. Exemplen i självstudien är baserade på databasen [!DNL MySQL] och använder databasdrivrutinen [!DNL Oracle's] [MySQL JDBC ](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

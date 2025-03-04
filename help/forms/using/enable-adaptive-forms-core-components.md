@@ -5,7 +5,7 @@ keywords: Aktivera kärnkomponenter, kärnkomponenter adaptiva Forms, kärnkompo
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 8efb1eb0b4a69cf59fa5853aa335dbf3d6061185
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Den här artikeln innehåller detaljerade anvisningar om hur du konfigurerar och
 
 Innan du aktiverar adaptiva Forms Core-komponenter i en AEM 6.5 Forms-miljö:
 
-* [Uppgradera till AEM 6.5 Forms Service Pack 16 (6.5.16.0) eller senare](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [Uppgradera till AEM 6.5 Forms Service Pack 16 (6.5.16.0) eller senare](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html).
 
 * Installera den senaste versionen av [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -130,7 +130,7 @@ Så här skapar du ett AEM Archetype 41- eller [senare](https://github.com/adobe
 
    När AEM Archetype-projektet har byggts skapas ett AEM Package. Paketet finns i [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip
 
-1. Använd [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html?lang=en) för att distribuera [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip-paketet på alla Author- och Publish-instanser.
+1. Använd [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en) för att distribuera [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip-paketet på alla Author- och Publish-instanser.
 
 >[!NOTE]
 >

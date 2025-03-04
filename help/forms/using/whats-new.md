@@ -7,7 +7,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Vad ingår i Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
 
-Experience Manager 6.5.19.0 innehåller nya funktioner, viktiga förbättringar som kunderna efterfrågat, felkorrigeringar, prestanda, stabilitet och säkerhetsförbättringar som har släppts sedan den första tillgängligheten av 6.5 i april 2019. [Installera detta Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html) på Experience Manager 6.5.
+Experience Manager 6.5.19.0 innehåller nya funktioner, viktiga förbättringar som kunderna efterfrågat, felkorrigeringar, prestanda, stabilitet och säkerhetsförbättringar som har släppts sedan den första tillgängligheten av 6.5 i april 2019. [Installera detta Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html) på Experience Manager 6.5.
 
 ### Nya funktioner
 
@@ -60,12 +60,12 @@ XMLFM:s 64-bitarsarkitektur ger bättre prestanda, skalbarhet och förbättrad m
 
 ## Felkorrigeringar
 
-Versionen innehåller även korrigeringar för över 20 kundrapporterade problem. En detaljerad lista över korrigeringar som ingår i Service Pack finns i [versionsinformation](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/release-notes.html?lang=en#forms-6519)
+Versionen innehåller även korrigeringar för över 20 kundrapporterade problem. En detaljerad lista över korrigeringar som ingår i Service Pack finns i [versionsinformation](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html?lang=en#forms-6519)
 
 
 ## Installera Service Pack
 
-Service Pack innehåller nya funktioner och felkorrigeringar för både AEM Forms på JEE och AEM Forms på OSGi. Installationsanvisningarna har ändrats jämfört med tidigare Service Pack. Installationsanvisningar finns i [Installationsanvisningar för AEM Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+Service Pack innehåller nya funktioner och felkorrigeringar för både AEM Forms på JEE och AEM Forms på OSGi. Installationsanvisningarna har ändrats jämfört med tidigare Service Pack. Installationsanvisningar finns i [Installationsanvisningar för AEM Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
 
 
 

@@ -8,7 +8,7 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Så här skapar du interaktiv kommunikation från poster som sparats i en JSON-f
    1. Ange **[!UICONTROL Name]** och fysisk **[!UICONTROL Path]** för mappen. Exempel: `c:\batchprocessing`.
    1. Välj alternativet **[!UICONTROL Service]** i fältet **[!UICONTROL Process File Using]**.
    1. Välj tjänsten **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** i fältet **[!UICONTROL Service Name]**.
-   1. Ange en **[!UICONTROL Output File Pattern]**. Till exempel anger %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) att den bevakade mappen kan hitta indatafiler i en undermapp till mappen Bevakade mappar\indata.
+   1. Ange en **[!UICONTROL Output File Pattern]**. Till exempel anger %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) att den bevakade mappen kan hitta indatafiler i en undermapp till mappen Bevakade mappar\indata.
 1. Konfigurera avancerade parametrar:
    1. Öppna fliken **[!UICONTROL Advanced]** och lägg till följande anpassade egenskaper:
 
@@ -146,7 +146,7 @@ Du kombinerar data (poster) som sparats i en extern datakälla med en interaktiv
    1. Ange **[!UICONTROL Name]** och fysisk **[!UICONTROL Path]** för mappen. Exempel: `c:\batchprocessing`.
    1. Välj alternativet **[!UICONTROL Service]** i fältet **[!UICONTROL Process File Using]**.
    1. Välj tjänsten **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** i fältet **[!UICONTROL Service Name]**.
-   1. Ange en **[!UICONTROL Output File Pattern]**. Till exempel anger %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) att den bevakade mappen kan hitta indatafiler i en undermapp till mappen Bevakade mappar\indata.
+   1. Ange en **[!UICONTROL Output File Pattern]**. Till exempel anger %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) att den bevakade mappen kan hitta indatafiler i en undermapp till mappen Bevakade mappar\indata.
 1. Konfigurera avancerade parametrar:
    1. Öppna fliken **[!UICONTROL Advanced]** och lägg till följande anpassade egenskaper:
 
@@ -362,4 +362,4 @@ Förutom att spara data i filsystemet kan du lagra JSON-filer i CRX-databasen, f
 
 >[!NOTE]
 >
->Endast CRX-protokoll är aktiverat som standard. Information om hur du aktiverar andra protokoll som stöds finns i [Konfigurera förifyllningstjänsten med Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Endast CRX-protokoll är aktiverat som standard. Information om hur du aktiverar andra protokoll som stöds finns i [Konfigurera förifyllningstjänsten med Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

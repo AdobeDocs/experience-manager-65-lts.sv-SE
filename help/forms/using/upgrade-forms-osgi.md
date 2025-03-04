@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade
-source-git-commit: 68dec4a149ea13b25766ad721ebd7bf1177b0970
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Gör följande för att uppgradera från AEM 6.3 Forms eller AEM 6.4 Forms till 
       1. Välj **[!UICONTROL Forms]** i listrutan **[!UICONTROL Solution]**.
       1. Välj version och typ för paketet. Du kan också använda alternativet **[!UICONTROL Search Downloads]** för att filtrera resultaten.
    1. Välj det paketnamn som gäller för ditt operativsystem, välj **[!UICONTROL Accept EULA Terms]** och välj **[!UICONTROL Download]**.
-   1. Öppna [Pakethanteraren](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html) och klicka på **[!UICONTROL Upload Package]** för att överföra paketet.
+   1. Öppna [Pakethanteraren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) och klicka på **[!UICONTROL Upload Package]** för att överföra paketet.
    1. Markera paketet och klicka på **[!UICONTROL Install]**.
 
       Du kan också hämta paketet med hjälp av den direktlänk som finns i artikeln [AEM Forms-utgåvor](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .

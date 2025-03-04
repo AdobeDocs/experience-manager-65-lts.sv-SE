@@ -6,7 +6,7 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 0%
@@ -104,9 +104,9 @@ Formulärmallarna kan också laddas upp från adaptiva formulärpaket som skapat
 
 * Körningsläget **nosample content** rekommenderas endast för författaren och inte för publiceringsnoderna.
 * Redigering av resurser som anpassningsbara formulär, teman, mallar eller molnkonfigurationer utförs endast via redigeringsnoder, som kan publiceras på de konfigurerade publiceringsnoderna.
-Mer information finns i [Publicera och avpublicera formulär och dokument](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+Mer information finns i [Publicera och avpublicera formulär och dokument](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
 * Forms-tilläggspaket krävs för redigering och publicering för att dokumenttjänståtgärderna ska kunna hanteras. Det kan därför anses vara ett beroende.
-Om du bara vill ha Forms-relaterade exempelmallar, teman och DOR-paket kan du hämta dem från [aemforms-references-*-paket](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+Om du bara vill ha Forms-relaterade exempelmallar, teman och DOR-paket kan du hämta dem från [aemforms-references-*-paket](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
 
 Mer information finns i [Introduktion till redigering av adaptiva formulär](/help/forms/using/introduction-forms-authoring.md).
 
@@ -328,7 +328,7 @@ Nedan beskrivs några tips om hur du konfigurerar AEM för att förbättra prest
 
 * Aktivera HTML via webbserverkomprimeringsmodulen. Mer information finns i [Prestandajustering av AEM Forms-server](/help/forms/using/performance-tuning-aem-forms.md).
 * Öka antalet anrop per begäran för stora formulär. Se [Optimera prestanda för stora och komplexa formulär](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
-* Skapa [anpassade felsidor som visas av felhanteraren](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html).
+* Skapa [anpassade felsidor som visas av felhanteraren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html).
 * Säker AEM Forms-server.
 
    * Använd körningsläget `nosamplecontent` för att kontrollera att det inte finns något exempelinnehåll och exempelanvändare distribuerade på produktionsservern. Se [Köra AEM i produktionsklart läge](/help/sites-administering/production-ready.md).

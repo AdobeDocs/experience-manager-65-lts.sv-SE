@@ -8,7 +8,7 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1888'
 ht-degree: 0%
@@ -146,7 +146,7 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
 1. Öppna **[!UICONTROL Forms Common Configuration Service].**
 1. I fältet **[!UICONTROL Allow]** **select** Alla användare - Alla användare, anonyma eller inloggade, kan förhandsgranska bilagor, verifiera och signera formulär och klicka på **[!UICONTROL Save].** Författarinstansen är konfigurerad att använda [!DNL Adobe Sign].
 1. Publicera konfigurationen.
-1. Använd [replikering](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/replication.html) om du vill skapa en identisk konfiguration för motsvarande publiceringsinstanser.
+1. Använd [replikering](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/replication.html) om du vill skapa en identisk konfiguration för motsvarande publiceringsinstanser.
 
 [!DNL Adobe Sign] är nu integrerat med AEM [!DNL Forms] och klart att användas i anpassningsbara formulär. Om du vill [använda Adobe Sign-tjänsten i ett adaptivt formulär](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form) anger du den konfigurationsbehållare som skapas ovan i adaptiva formuläregenskaper.
 
@@ -261,7 +261,7 @@ Representanten genererar och delar uppgifter med dig. I nästa avsnitt använder
 1. I fältet **[!UICONTROL Allow]** **select** Alla användare - Alla användare, anonyma eller inloggade, kan förhandsgranska bilagor, verifiera och signera formulär och klicka på **[!UICONTROL Save].** Författarinstansen är konfigurerad att använda [!DNL Adobe Sign].
 
 1. Publicera konfigurationen.
-1. Använd [replikering](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/replication.html) om du vill skapa en identisk konfiguration för motsvarande publiceringsinstanser.
+1. Använd [replikering](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/replication.html) om du vill skapa en identisk konfiguration för motsvarande publiceringsinstanser.
 
 Nu kan du [använda Adobe Acrobat Sign-fält i ett adaptivt formulär](working-with-adobe-sign.md) eller [AEM Workflow](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Se till att du lägger till konfigurationsbehållaren som används för Cloud Service-konfigurationen i alla adaptiva Forms som aktiveras för [!DNL Adobe Acrobat Sign]. Du kan ange en konfigurationsbehållare bland egenskaperna för ett adaptivt formulär.
 

@@ -8,7 +8,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -149,8 +149,8 @@ En arbetsflödesmodellägare kan inte visa objekt som är relaterade till AEM Wo
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Skapa ett egenskapsindex och ange det till true](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Skapa ett egenskapsindex och ange det till true](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index).
 
 1. När du har konfigurerat index i CRX DE eller distribuerat via ett paket indexerar [om databasen](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
-https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/queries-and-indexing.html
+https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html

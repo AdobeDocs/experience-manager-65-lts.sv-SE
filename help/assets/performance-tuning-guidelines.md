@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2662'
 ht-degree: 0%
@@ -242,7 +242,7 @@ När du replikerar resurser till ett stort antal publiceringsinstanser, till exe
 
 ## Sökindex {#search-indexes}
 
-Installera [de senaste Service Packs](/help/release-notes/release-notes.md) och prestandarelaterade snabbkorrigeringar eftersom de ofta innehåller uppdateringar av systemindex. Se [tips för prestandajustering](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/administer/performance-tuning-guidelines.html?lang=en) för vissa indexoptimeringar.
+Installera [de senaste Service Packs](/help/release-notes/release-notes.md) och prestandarelaterade snabbkorrigeringar eftersom de ofta innehåller uppdateringar av systemindex. Se [tips för prestandajustering](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/administer/performance-tuning-guidelines.html?lang=en) för vissa indexoptimeringar.
 
 Skapa anpassade index för frågor som du kör ofta. Mer information finns i [metod för att analysera långsamma frågor](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) och [skapa anpassade index](/help/sites-deploying/queries-and-indexing.md). Mer information om bästa praxis för frågor och index finns i [Bästa praxis för frågor och indexering](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

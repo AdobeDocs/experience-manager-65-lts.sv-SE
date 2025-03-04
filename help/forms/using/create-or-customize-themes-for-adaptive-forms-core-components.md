@@ -8,7 +8,7 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1933'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Att anpassa ett tema avser processen att ändra och anpassa utseendet på ett te
 
 * Installera den senaste versionen av [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven är ett automatiserat byggverktyg som ofta används för Java™-projekt. Genom att installera den senaste versionen får du de beroenden du behöver för att anpassa temat.
 
-* Lär dig skapa ett [klientbibliotek i Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/introduction/clientlibs.html). AEM tillhandahåller klientbibliotek, som gör att du kan lagra din klientkod i databasen, ordna den i kategorier och definiera när och hur varje kodkategori ska skickas till klienten.
+* Lär dig skapa ett [klientbibliotek i Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html). AEM tillhandahåller klientbibliotek, som gör att du kan lagra din klientkod i databasen, ordna den i kategorier och definiera när och hur varje kodkategori ska skickas till klienten.
 
 * Installera en vanlig textredigerare. Exempel: Microsoft® Visual Studio Code. Med en vanlig textredigerare som Microsoft® Visual Studio Code får du en användarvänlig miljö där du kan redigera och ändra temafiler.
 
