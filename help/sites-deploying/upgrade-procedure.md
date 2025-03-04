@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
+source-git-commit: ae78421de75518894f3996829e554acd9003a6d1
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,6 @@ Den topologi som antas för det här avsnittet består av ett MongoMK Author-klu
 1. Starta om den primära författaren för att säkerställa att den startar om ordentligt.
 1. Inaktivera replikeringsagenter på den primära författaren.
 1. Kör [underhållsaktiviteter som är före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) på den primära författarinstansen.
-1. Uppgradera vid behov MongoDB på den primära Mongo-instansen till version 3.2 med WiredTiger.
 
 ### Uppgraderingskörning {#Upgrade-execution-1}
 
@@ -114,7 +113,7 @@ Den topologi som antas för det här avsnittet består av ett MongoMK Author-klu
 
 ![mongo-Secondaries](assets/mongo-secondaries.jpg)
 
-1. Skapa nya 6.5.2025 Author-instanser som är anslutna till den uppgraderade Mongo-instansen.
+1. Skapa nya instanser av AEM 6.5 LTS Author, anslutna till den uppgraderade Mongo-instansen.
 
 1. Återskapa de MongoDB-noder som tagits bort från klustret.
 
