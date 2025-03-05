@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
+source-git-commit: b7304709729915dbcc27533caf88b61cd5657a2c
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,15 @@ Innan du påbörjar uppgraderingen är det viktigt att du följer dessa underhå
 * [Kör rensning av offlineredigering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [Kör skräpinsamling för datastore](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
 * [Uppgradera databasschemat om det behövs](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#upgradethedatabaseschemaifneeded)
-* [Ta bort användare som kan tyda på en uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
-
 * [Rotera loggfiler](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## Indexdefinitioner {#index-definitions}
 
-Se till att du har installerat de indexdefinitioner som krävs och som släppts med AEM 6.5 Service Pack som ingår i AEM Service Pack 2 (se [AEM 6.5 Service Pack versionsinformation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes) för mer information).
+Se till att du har installerat de indexdefinitioner som krävs och som lanserats med AEM 6.5 Service Pack fram till AEM Service Pack 22 som minimum. (Mer information finns i [Versionsinformation för AEM 6.5 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes)).
 
 ## Se till att det finns tillräckligt med diskutrymme {#ensure-sufficient-disk-space}
 
-När du utför uppgraderingen måste du utföra en databasmigrering, utöver content and code upgrade-aktiviteterna. Migreringen skapar en kopia av databasen i det nya segmenttjärformatet. Därför behöver du tillräckligt med diskutrymme för att behålla en andra, eventuellt större, version av databasen.
+Kontrollera att det finns tillräckligt med diskutrymme när du kör uppgraderingen.
 
 ## Fullständig säkerhetskopiering av AEM {#fully-back-up-aem}
 
@@ -56,7 +54,6 @@ När AEM startas från jar-filen skapas en `quickstart.properties`-fil under `cr
 
 Aktiviteterna `WorkflowPurgeTask` och `com.day.cq.audit.impl.AuditLogMaintenanceTask` kräver separata OSGi-konfigurationer och kan inte fungera utan dem. Om de inte fungerar när en uppgift körs före uppgraderingen är det mest troligt att konfigurationer saknas. Se därför till att du lägger till OSGi-konfigurationer för dessa uppgifter eller tar bort dem helt och hållet från listan över uppgifter som ska optimeras före uppgraderingen om du inte vill köra dem. Dokumentation om hur du konfigurerar rensningsaktiviteter för arbetsflöden finns på [Administrera arbetsflödesinstanser](/help/sites-administering/workflows-administering.md) och konfigurationen av underhållsaktiviteter för granskningsloggar finns på [Underhåll för granskningslogg i AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Mer information om rensning av arbetsflödes- och granskningslogg på CQ 5.6 och rensning av granskningslogg på AEM 6.0 finns i [Rensa arbetsflödes- och granskningsnoder](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
 ## Installera, konfigurera och köra uppgifter före uppgradering {#install-configure-run-pre-upgrade-tasks}
 
@@ -144,7 +141,7 @@ Inaktivera alla schemalagda OSGi-jobb som ingår i programkoden.
 >
 >Detta steg är endast nödvändigt för bensinanläggningar
 
-Om du använder tarMK bör du köra Revision Cleanup offline innan du uppgraderar. Detta gör att databasmigreringssteget och efterföljande uppgraderingsuppgifter körs mycket snabbare och hjälper till att säkerställa att rensning av onlineändringar kan utföras korrekt när uppgraderingen har slutförts. Information om hur du kör rensning av offlineredigering finns i [Utför rensning av offlineredigering](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+Om du använder tarMK bör du köra Revision Cleanup offline innan du uppgraderar. Detta gör att databasmigreringssteget och efterföljande uppgraderingsuppgifter körs mycket snabbare och hjälper till att säkerställa att rensning av onlineändringar kan utföras korrekt när uppgraderingen har slutförts. Information om hur du kör rensning av offlineredigering finns i [Utför rensning av offlineredigering](/help/sites-deploying/revision-cleanup.md#revision-cleanuprevision-cleanup).
 
 ## Kör skräpinsamling för datastore {#execute-datastore-garbage-collection}
 
