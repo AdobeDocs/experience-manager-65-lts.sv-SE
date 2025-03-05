@@ -1,15 +1,14 @@
 ---
 title: Metadata-scheman definierar layouten för metadataegenskapssida
 description: Metadata-schemat definierar layouten för egenskapssidan och de metadataegenskaper som visas för resurser. Lär dig hur du skapar anpassade metadatamatcheman, redigerar metadatamatchema och hur du använder metadatamatchema på resurser.
-contentOwner: AG
 mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: c62ad80108619063025772cd991848a3f7d76be8
 workflow-type: tm+mt
-source-wordcount: '3408'
+source-wordcount: '3425'
 ht-degree: 5%
 
 ---
@@ -89,21 +88,21 @@ Du kan redigera ett nyligen tillagt eller befintligt metadatchemaformulär. Meta
 Fliken **[!UICONTROL Build Form]** visar formulärobjekt som du använder i ditt schemaformulär. Fliken **[!UICONTROL Settings]** innehåller attributen för varje objekt som du väljer på fliken **[!UICONTROL Build Form]**. I följande tabell visas de formulärobjekt som är tillgängliga på fliken **[!UICONTROL Build Form]**:
 
 | Komponentnamn | Beskrivning |
-| -------------------------------- | ----------------------------------------------------------------------------------- |
-| [!UICONTROL Section Header] | Lägg till en avsnittsrubrik för en lista med gemensamma komponenter. |
-| [!UICONTROL Single Line Text] | Lägg till en textegenskap för en rad. Den lagras som en sträng. |
-| [!UICONTROL Multi Value Text] | Lägg till en textegenskap med flera värden. Den lagras som en strängarray. |
-| [!UICONTROL Number] | Lägg till en sifferkomponent. |
-| [!UICONTROL Date] | Lägg till en datumkomponent. |
-| [!UICONTROL Dropdown] | Lägg till en listruta. |
-| [!UICONTROL Standard Tags] | Lägg till en tagg. |
-| [!UICONTROL Smart Tags] | Förbättra sökfunktionerna genom att automatiskt lägga till metadatataggar. |
-| [!UICONTROL Hidden Field] | Lägg till ett dolt fält. Den skickas som en POST-parameter när resursen sparas. |
-| [!UICONTROL Asset Referenced By] | Lägg till den här komponenten för att visa en lista över resurser som resursen refererar till. |
-| [!UICONTROL Asset Referencing] | Lägg till om du vill visa en lista med resurser som refererar till resursen. |
-| [!UICONTROL Products References] | Lägg till om du vill visa listan över produkter som är länkade till resursen. |
-| [!UICONTROL Asset Rating] | Lägg till för att visa alternativ för att klassificera resursen. |
-| [!UICONTROL Contextual Metadata] | Lägg till för att styra visningen av andra metadataflikar på egenskapssidan för resurser. |
+|----|----|
+| **[!UICONTROL Section Header]** | Lägg till en avsnittsrubrik för en lista med gemensamma komponenter. |
+| **[!UICONTROL Single Line Text]** | Lägg till en textegenskap för en rad. Den lagras som en sträng. |
+| **[!UICONTROL Multi ValueText]** | Lägg till en textegenskap med flera värden. Den lagras som en strängarray. |
+| **[!UICONTROL Number]** | Lägg till en sifferkomponent. |
+| **[!UICONTROL Date]** | Lägg till en datumkomponent. |
+| **[!UICONTROL Dropdown]** | Lägg till en listruta. |
+| **[!UICONTROL Standard Tags]** | Lägg till en tagg. Administratörer kan behöva ändra sökvägsvärdet. `/etc/tags/mac/<tenant_id>/<custom_tag_namespace>`, om de publicerar metadatamatchemaformuläret från Experience Manager Assets, där sökvägen inte innehåller klientinformation, till exempel `/etc/tags/<custom_tag_namespace>`. |
+| **[!UICONTROL Smart Tags]** | Automatiskt identifierade taggar om du har köpt och konfigurerat tillägget Experience Manager Assets smarta taggar. |
+| **[!UICONTROL Hidden Field]** | Lägg till ett dolt fält. Den skickas som en POST-parameter när resursen sparas. |
+| **[!UICONTROL Asset Referenced By]** | Lägg till den här komponenten för att visa en lista över resurser som resursen refererar till. |
+| **[!UICONTROL Asset Referencing]** | Lägg till om du vill visa en lista med resurser som refererar till resursen. |
+| **[!UICONTROL Contextual Metadata]** | Lägg till för att styra visningen av andra metadataflikar på egenskapssidan för resurser. |
+
+<!--| **[!UICONTROL Asset Rating]** |  Average rating of an asset added from Experience Manager Assets before it is published to Brand Portal. |-->
 
 #### Redigera metadatakomponenten {#edit-the-metadata-component}
 
