@@ -9,7 +9,7 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -112,9 +112,9 @@ Den exakta produktionsmiljön måste dupliceras och testning bör utföras på d
 
 ### Utvärderar uppgraderingskomplexitet {#assessing-upgrade-complexity}
 
-På grund av det stora utbudet av anpassningar som Adobe-kunder använder i sina AEM-miljöer är det viktigt att lägga lite tid på att avgöra hur stor arbetsinsatsen ska vara i uppgraderingen. [AEM Analyzer för AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) kan hjälpa dig att bedöma uppgraderingens komplexitet.
+På grund av det stora utbudet av anpassningar som Adobe-kunder använder i sina AEM-miljöer är det viktigt att lägga lite tid på att avgöra hur stor arbetsinsatsen ska vara i uppgraderingen. [AEM Analyzer för AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md) kan hjälpa dig att bedöma uppgraderingens komplexitet.
 
-[AEM Analyer för AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) bör ge en korrekt uppskattning av vad du kan förvänta dig under en uppgradering i de flesta fall. För mer komplexa anpassningar och distributioner där du har inkompatibla ändringar kan du uppgradera en utvecklingsinstans till AEM 6.5 LTS enligt instruktionerna i [Utföra en lokal uppgradering](/help/sites-deploying/in-place-upgrade.md). När det är klart utför du några högnivåröktester på den här miljön. Målet med denna övning är inte att göra en omfattande inventering av testfall och göra en formell inventering av defekter, utan att ge oss en ungefärlig uppskattning av mängden arbete som krävs för att uppgradera koden för AEM 6.5 LTS-kompatibilitet. I kombination med [AEM analyzer](/help/sites-deploying/pattern-detector.md) och de arkitektoniska ändringar som bestämdes i föregående avsnitt kan en grov uppskattning ges till projekthanteringsteamet för planering av uppgraderingen.
+[AEM Analyer för AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) bör ge en korrekt uppskattning av vad du kan förvänta dig under en uppgradering i de flesta fall. För mer komplexa anpassningar och distributioner där du har inkompatibla ändringar kan du uppgradera en utvecklingsinstans till AEM 6.5 LTS enligt instruktionerna i [Utföra en lokal uppgradering](/help/sites-deploying/in-place-upgrade.md). När det är klart utför du några högnivåröktester på den här miljön. Målet med denna övning är inte att göra en omfattande inventering av testfall och göra en formell inventering av defekter, utan att ge oss en ungefärlig uppskattning av mängden arbete som krävs för att uppgradera koden för AEM 6.5 LTS-kompatibilitet. I kombination med [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) och de arkitektoniska ändringar som bestämdes i föregående avsnitt kan en grov uppskattning ges till projekthanteringsteamet för planering av uppgraderingen.
 
 ### Bygga Runbook för uppgradering och återställning {#building-the-upgrade-and-rollback-runbook}
 

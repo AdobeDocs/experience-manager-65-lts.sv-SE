@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
+source-git-commit: da061097fd57135bde149b41a12ab78cad5761d6
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ När man planerar en uppgradering måste man undersöka och åtgärda följande 
 
 ## Ökning {#overview}
 
-1. **AEM Analyzer** - Kör AEM Analyzer enligt definitionen på sidan [Utvärderar uppgraderingskomplexiteten med AEM Analyzer](/help/sites-deploying/pattern-detector.md). Du får en AEM Analyzer-rapport som innehåller mer information om områden som måste åtgärdas utöver de otillgängliga API:erna/paketen i målversionen av AEM. AEM Analyzer-rapporten ger dig en indikation på eventuella inkompatibiliteter i koden. Om det inte finns någon är din distribution AEM 6.5 LTS-kompatibel. Du kan fortfarande välja att utveckla AEM 6.5 LTS, men du behöver det inte bara för att bibehålla kompatibiliteten.
-1. **Utveckla kodbas för 6.5 LTS**- Skapa en dedikerad gren eller databas för kodbasen för AEM-målversionen. Använd information från kompatibilitet före uppgradering för att planera områden med kod att uppdatera.
-1. **Kompilera med 6.5 LTS Uber jar** - Uppdatera källkodsbaserade POM så att de pekar på AEM 6.5 LTS uber jar och kompilera kod mot den.
-1. **Distribuera till 6.5 LTS-miljö** - en ren instans av AEM 6.5 LTS (författare + publicering) bör konfigureras i en Dev/QA-miljö. Uppdaterad kodbas och ett representativt urval av innehåll (från aktuell produktion) bör distribueras.
-1. **QA-validering och felkorrigering** - QA ska validera programmet både i Author- och Publish-instanser av AEM 6.5 LTS. Alla buggar som hittas ska vara åtgärdade och implementerade i AEM 6.5 LTS-kodbasen. Upprepa Dev-Cycle tills alla fel är åtgärdade.
+1. **AEM Analyzer** - Kör AEM Analyzer enligt beskrivningen i uppgraderingsplaneringen och beskrivs i detalj på sidan [Utvärdera uppgraderingskomplexiteten med AEM Analyzer](/help/sites-deploying/aem-analyzer.md). Du får en AEM Analyzer-rapport som innehåller mer information om områden som måste åtgärdas utöver de otillgängliga API:erna/paketen i målversionen av AEM. AEM Analyzer-rapporten ger dig en indikation på eventuella inkompatibiliteter i koden. Om det inte finns någon är din distribution redan 6.5 LTS-kompatibel. Du kan fortfarande välja att skapa nya funktioner för 6.5 LTS, men du behöver dem inte bara för att bibehålla kompatibiliteten.
+1. **Utveckla kodbas för 6.5 LTS**- Skapa en dedikerad gren eller databas för kodbasen för målversionen. Använd information från Kompatibilitet före uppgradering för att planera områden med kod att uppdatera.
+1. **Kompilera med 6.5 LTS Uber jar** - Uppdatera källkodens POM till 6.5.2025 uber jar och kompilera kod mot den.
+1. **Distribuera till 6.5 LTS-miljö** - en ren instans av AEM 6.5 LTS (författare + publicering) bör ställas upp i en Dev/QA-miljö. Uppdaterad kodbas och ett representativt urval av innehåll (från aktuell produktion) bör distribueras.
+1. **QA-validering och felkorrigering** - QA ska validera programmet både på författarinstansen och publiceringsinstansen av 6.5.2025. Eventuella buggar som hittas ska vara åtgärdade och implementerade i 6.5 LTS-kodbasen. Upprepa Dev-Cycle tills alla fel är åtgärdade.
 
 Innan du fortsätter med en uppgradering bör du ha en stabil programkodbas som har testats noggrant mot AEM 6.5 LTS.
 

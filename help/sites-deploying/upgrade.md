@@ -9,7 +9,7 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 598d6eecbdd3887c41a36a14daa215e2e8e6e09a
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -52,4 +52,4 @@ För att underlätta referensen till de AEM-instanser som ingår i dessa procedu
 
 Foundation layer har nu stöd för Java 17, som innehåller de senaste open-source-paketen från Apache Sling, Felix och Jackrabbit Oak. Dessutom har förpackningen till AEM 6.5 LTS uber-burken ändrats. Dessutom har några äldre funktioner tagits bort från AEM 6.5 LTS. Mer information finns i [Versionsinformation](/help/release-notes/release-notes.md#whats-new-what-s-new) och [Lista över föråldrade paket som avinstallerats efter uppgraderingen](/help/sites-deploying/obsolete-bundles.md)
 
-AEM 6.5 LTS har ett starkt fokus på bakåtkompatibilitet för funktioner och levereras med ett analysverktyg. Se [Utvärdera uppgraderingskomplexiteten med AEM Analyzer](/help/sites-deploying/pattern-detector.md) för en bedömning av komplexiteten när du börjar [planera för uppgraderingen](/help/sites-deploying/upgrade-planning.md).
+AEM 6.5 LTS har ett starkt fokus på bakåtkompatibilitet för funktioner och levereras med ett analysverktyg. Se [Utvärdera uppgraderingskomplexiteten med AEM Analyzer](/help/sites-deploying/aem-analyzer.md) för en bedömning av komplexiteten när du börjar [planera för uppgraderingen](/help/sites-deploying/upgrade-planning.md).
