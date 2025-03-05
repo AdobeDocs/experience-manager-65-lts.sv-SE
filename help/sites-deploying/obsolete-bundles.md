@@ -8,7 +8,7 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 34693070f2fcb5b468c72118cd5d5fc26d6d9dd0
+source-git-commit: 5b31b74b89334efcae647c216d2ae2be35545b22
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Lista över föråldrade paket som avinstallerats efter uppgraderingen{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
-När du uppgraderar till AEM 6.5.2025 avinstalleras följande paket automatiskt, beroende på vilken version av AEM 6.5-tjänsten som uppgraderingen gjordes från:
+När du uppgraderar till AEM 6.5 LTS avinstalleras följande paket automatiskt, beroende på vilken version av AEM 6.5-tjänsten som uppgraderingen gjordes i:
 
 * com.adobe.cq.social.cq-social-activitystreams
 * com.adobe.cq.social.cq-social-as-provider
@@ -95,7 +95,7 @@ När du uppgraderar till AEM 6.5.2025 avinstalleras följande paket automatiskt,
 * org.apache.jackrabbit.oak-solr-osgi
 * com.adobe.cq.cq-searchpromote-integration
 
-Följande paket ingår inte i en ny instans av AEM 6.5.2025. Efter uppgraderingen kan du hitta dessa paket i icke-aktiva lägen. De kan tas bort manuellt:
+Följande paket ingår inte i en ny AEM 6.5 LTS-instans. Efter uppgraderingen kan du hitta dessa paket i icke-aktiva lägen. De kan tas bort manuellt:
 
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
