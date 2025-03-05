@@ -4,7 +4,7 @@ description: Lär dig hur du migrerar innehåll från AEM 6.5 till AEM 6.5 LTS m
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8798c608ea168d753be2a08b25a0d0d344b0fef6
+source-git-commit: ef25b11163ca727a9fa99799b713085e594ff520
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
@@ -20,9 +20,9 @@ Det här dokumentet innehåller en omfattande guide för uppgradering av Adobe E
 
 Kontrollera att följande krav är uppfyllda innan du startar migreringen:
 
-1. Java-kompatibilitet: AEM 6.5 LTS måste installeras och konfigureras för att köras med Java 17. Starta AEM-instansen när du har konfigurerat den och kontrollera att alla paket är aktiva och körs utan problem
+1. Java-kompatibilitet: AEM 6.5 LTS måste installeras och konfigureras för att köras med Java™ 17. Starta AEM-instansen när du har konfigurerat den och kontrollera att alla paket är aktiva och körs utan problem
 1. Systemresurser: Se till att det finns tillräckligt med diskutrymme och minne för att hantera båda databaserna under migreringsprocessen
-1. Oak-uppgraderingsverktyg: Hämta `oak-upgrade` jar från [Maven-databasen](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade). Kontrollera att versionen överensstämmer med den ekkärnversion som används i AEM 6.5 LTS. Oak-uppgraderingsverktyget kan köras i Oracle Java 11 eller senare
+1. Oak-uppgraderingsverktyg: Hämta `oak-upgrade` jar från [Maven-databasen](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade). Kontrollera att versionen överensstämmer med den ekkärnversion som används i AEM 6.5 LTS. Oak-uppgraderingsverktyget kan köras i Oracle® Java™ 11 eller senare
 
 ## Steg för steg-migreringsprocess {#step-by-step-migration-process}
 
