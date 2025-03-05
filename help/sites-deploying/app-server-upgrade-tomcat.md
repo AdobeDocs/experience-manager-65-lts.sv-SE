@@ -4,9 +4,9 @@ description: Lär dig hur du uppgraderar instanser av AEM som distribueras via T
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8798c608ea168d753be2a08b25a0d0d344b0fef6
+source-git-commit: a8367ff25591c6ea7916aab17e733605ec3f59c8
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -15,22 +15,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->På den här sidan beskrivs uppgraderingsproceduren för AEM 6.5 LTS-kriget mot Tomcat.
+>På den här sidan beskrivs uppgraderingsproceduren för AEM 6.5 LTS på Tomcat.
 
 ## Steg före uppgradering {#pre-upgrade-steps}
 
-Innan du utför uppgraderingen måste du utföra flera steg. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) och [Underhållsaktiviteter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Kontrollera dessutom att datorn uppfyller kraven för AEM 6.5 LTS. Se hur Analyzer kan hjälpa dig att uppskatta hur komplicerad din uppgradering är och se även en plan för uppgraderingen (mer information finns i [Planera din uppgradering](/help/sites-deploying/upgrade-planning.md)).
+Innan du utför uppgraderingen måste du utföra flera steg. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) och [Underhållsaktiviteter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Kontrollera dessutom att datorn uppfyller [kraven för AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) och se [planeringshänsyn](/help/sites-deploying/upgrade-planning.md) samt hur [Analyzer](/help/sites-deploying/pattern-detector.md) kan hjälpa dig att beräkna komplexiteten.
+
 
 ### Krav för migrering {#migration-prerequisites}
 
-* **Minimikrav på Java-version**: Kontrollera att du har installerat IBM Sumeru JRE 17 på Tomcat-servern.
+* **Minimikrav på Java-version**: Kontrollera att du har installerat Oracle® JRE 17 på Tomcat-servern.
 * **Tomcat-server**: Den version av Tomcat-servern som krävs för 6.5 LTS är **11.0.x**.
 
 ### Utföra uppgraderingen {#performing-the-upgrade}
 
 I alla exemplen i den här proceduren används Tomcat som Application Server och du antyder att du har en fungerande version av AEM som redan är distribuerad. Proceduren är avsedd att dokumentera uppgraderingar som utförts från AEM version **6.5** till **6.5 LTS**.
 
-1. Om AEM 6.5 redan är distribuerat kontrollerar du att paketen fungerar korrekt genom att gå till: *`https://<serveraddress:port>/cq/system/console/bundles`*
+1. Om AEM 6.5 redan är distribuerat kontrollerar du att paketen fungerar korrekt genom att gå till: *`https://<serveraddress:port>/system/console/bundles`*
 1. Stoppa sedan AEM 6.5. Detta kan du göra från Tomcat App Manager på: *`https://<serveraddress:port>/manager/html`*
 1. Kontrollera att du har slutfört [föruppgraderingsaktiviteterna](#pre-upgrade-steps), som säkerhetskopiering av AEM 6.5-servern, innan du utför någon uppgraderingsaktivitet
 1. Installera Java 17 och kontrollera att det är korrekt installerat genom att köra kommandot:
@@ -40,21 +41,21 @@ I alla exemplen i den här proceduren används Tomcat som Application Server och
    ```
 
 1. Konfigurera en AEM 6.5 LTS-kompatibel Tomcat-server
-1. Granska startparametrarna för AEM-servern och se till att uppdatera parametrarna enligt systemkraven. Mer information finns i [Anpassad fristående installation](/help/sites-deploying/custom-standalone-install.md)
+1. Granska startparametrarna för AEM-servern och se till att uppdatera parametrarna enligt systemkraven. Mer information finns i [Java 17 Considerations](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)
 1. Driftsätt 6.5 LTS-kriget på Tomcat-servern med Java 17 och starta AEM 6.5 LTS Tomcat-servern genom att köra:
 
    ```
    $CATALINA_HOME/bin/catalina.sh start
    ```
 
-1. När AEM är igång kontrollerar du att alla paket är i körläge genom att gå till: *`https://<serveraddress:port>/cq/system/console/bundles*`
-1. Stoppa nu AEM 6.5 LTS Tomcat-servern. I de flesta fall kan du göra detta genom att köra skriptet `./catalina.sh` genom att köra det här kommandot från terminalen:
+1. När AEM är igång kontrollerar du att alla paket är i körläge genom att gå till: *`https://<serveraddress:port>/cq/system/console/bundles`*
+1. Stoppa AEM 6.5 LTS Tomcat-servern. I de flesta fall kan du göra detta genom att köra skriptet `./catalina.sh` genom att köra det här kommandot från terminalen:
 
    ```
    $CATALINA_HOME/bin/catalina.sh stop
    ```
 
-1. Migrera nu innehåll från AEM 6.5 till AEM 6.5 LTS med den här självstudiekursen: [AEM 6.5 till AEM 6.5 LTS Content Migration Using Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
+1. Migrera nu ditt innehåll från AEM 6.5 till AEM 6.5 LTS genom att följa stegen här: [AEM 6.5 till AEM 6.5 LTS Content Migration Using Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
 1. När innehållet har migrerats använder du eventuella anpassade ändringar som krävs i filen `sling.properties`
 1. Starta AEM 6.5 LTS Tomcat-servern genom att köra:
 
@@ -67,7 +68,7 @@ I alla exemplen i den här proceduren används Tomcat som Application Server och
 
 ## Distribuera uppgraderad kodbas {#deploy-upgraded-codebase}
 
-När uppgraderingsprocessen på plats har slutförts ska den uppdaterade kodbasen distribueras. Steg för att uppdatera kodbasen så att den fungerar i målversionen av AEM finns på sidan [Uppgraderingskod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md).
+När uppgraderingen är klar ska den uppdaterade kodbasen distribueras. Steg för att uppdatera kodbasen så att den fungerar i målversionen av AEM finns på sidan [Uppgraderingskod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md).
 
 ## Genomför kontroller och felsökning efter uppgraderingen {#perform-post-upgrade-checks-and-troubleshooting}
 
