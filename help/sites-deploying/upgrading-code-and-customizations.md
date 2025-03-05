@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 168e9f5865d20a53f9abed4bb90aceae9a1c7b6a
+source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,15 @@ ht-degree: 0%
 När man planerar en uppgradering måste man undersöka och åtgärda följande områden i en implementering.
 
 * [Uppgradera kodbasen](#upgrade-code-base)
-* [Justera med 6.5-databasstruktur](#align-repository-structure)
-* [AEM Customization](#aem-customizations)
 * [Testförfarande](#testing-procedure)
 
 ## Ökning {#overview}
 
-1. **AEM Analyzer** - Kör AEM Analyzer enligt beskrivningen i uppgraderingsplaneringen och beskrivs i detalj på sidan [Utvärdera uppgraderingskomplexiteten med AEM Analyzer](/help/sites-deploying/pattern-detector.md). Du får en AEM Analyzer-rapport som innehåller mer information om områden som måste åtgärdas utöver de otillgängliga API:erna/paketen i målversionen av AEM. PAEM Analyzer-rapporten ger dig en indikation på eventuella inkompatibiliteter i koden. Om det inte finns någon är din distribution redan 6.5 LTS-kompatibel. Du kan fortfarande välja att skapa nya funktioner för 6.5 LTS, men du behöver dem inte bara för att bibehålla kompatibiliteten.
-
-1. **Utveckla kodbas för 6.5 LTS**- Skapa en dedikerad gren eller databas för kodbasen för målversionen. Använd information från Kompatibilitet före uppgradering för att planera områden med kod att uppdatera.
-1. **Kompilera med 6.5 LTS Uber jar** - Uppdatera källkodens POM till 6.5.2025 uber jar och kompilera kod mot den.
-1. **Distribuera till 6.5 LTS-miljö** - en ren instans av AEM 6.5 LTS (författare + publicering) bör ställas upp i en Dev/QA-miljö. Uppdaterad kodbas och ett representativt urval av innehåll (från aktuell produktion) bör distribueras.
-1. **QA-validering och felkorrigering** - QA ska validera programmet både på författarinstansen och publiceringsinstansen av 6.5.2025. Eventuella buggar som hittas ska vara åtgärdade och implementerade i 6.5 LTS-kodbasen. Upprepa Dev-Cycle tills alla fel är åtgärdade.
+1. **AEM Analyzer** - Kör AEM Analyzer enligt definitionen på sidan [Utvärderar uppgraderingskomplexiteten med AEM Analyzer](/help/sites-deploying/pattern-detector.md). Du får en AEM Analyzer-rapport som innehåller mer information om områden som måste åtgärdas utöver de otillgängliga API:erna/paketen i målversionen av AEM. AEM Analyzer-rapporten ger dig en indikation på eventuella inkompatibiliteter i koden. Om det inte finns någon är din distribution AEM 6.5 LTS-kompatibel. Du kan fortfarande välja att utveckla AEM 6.5 LTS, men du behöver det inte bara för att bibehålla kompatibiliteten.
+1. **Utveckla kodbas för 6.5 LTS**- Skapa en dedikerad gren eller databas för kodbasen för AEM-målversionen. Använd information från kompatibilitet före uppgradering för att planera områden med kod att uppdatera.
+1. **Kompilera med 6.5 LTS Uber jar** - Uppdatera källkodsbaserade POM så att de pekar på AEM 6.5 LTS uber jar och kompilera kod mot den.
+1. **Distribuera till 6.5 LTS-miljö** - en ren instans av AEM 6.5 LTS (författare + publicering) bör konfigureras i en Dev/QA-miljö. Uppdaterad kodbas och ett representativt urval av innehåll (från aktuell produktion) bör distribueras.
+1. **QA-validering och felkorrigering** - QA ska validera programmet både i Author- och Publish-instanser av AEM 6.5 LTS. Alla buggar som hittas ska vara åtgärdade och implementerade i AEM 6.5 LTS-kodbasen. Upprepa Dev-Cycle tills alla fel är åtgärdade.
 
 Innan du fortsätter med en uppgradering bör du ha en stabil programkodbas som har testats noggrant mot AEM 6.5 LTS.
 
@@ -61,23 +58,22 @@ AEM Uber jar innehåller alla AEM API:er som ett enda beroende i Maven-projektet
 >
 >Det finns en viss skillnad i hur AEM 6.5 och AEM 6.5 LTS Uber Jars paketeras. Se avsnittet nedan:
 
-**För AEM 6.5.x finns det två typer av Uber Jars**
+**Uber Jars för AEM 6.5**
 
-1. `uber-jar-6.5.x.jar` - Innehåller alla offentliga API:er för AEM 6.5.x
-1. `uber-jar-6.5.x-apis-with-deprecations.jar` - Innehåller både publika API:er och inaktuella API:er från AEM 6.5.x.
+1. `uber-jar-6.5.x.jar` - Innehåller alla offentliga API:er för AEM 6.5.
+1. `uber-jar-6.5.x-apis-with-deprecations.jar` - Innehåller både publika API:er och inaktuella API:er från AEM 6.5.
 
-**Uber Jars för AEM 6.5.2025.x**
+**Uber Jars för AEM 6.5 LTS**
 
-För AEM 6.5.2025.x finns det ytterligare två typer av Uber Jars:
+För AEM 6.5 LTS finns det ytterligare två typer av Uber Jars:
 
-1. `uber-jar-6.5.2025.x.jar` - Innehåller alla offentliga API:er för AEM 6.5.2025.x.
-1. `uber-jar-6.5.2025.x-deprecated.jar` - Inkluderar endast inaktuella API:er från AEM 6.5.2025.x
+1. `uber-jar-6.6.x-apis.jar` - Innehåller alla publika API:er för AEM 6.5 LTS.
+1. `uber-jar-6.6.x-deprecated-apis.jar` - Inkluderar endast inaktuella API:er från AEM 6.5 LTS.
 
-**Viktig skillnad: AEM 6.5.x vs. AEM 6.5.2025.x Uber Jars**
+**Viktig skillnad: AEM 6.5 vs. AEM 6.5 LTS Uber Jars**
 
-* Om både publika och inaktuella API:er behövs i AEM 6.5.x kan du använda en enda behållare, `uber-jar-6.5.x-apis-with-deprecations.jar`, i `pom.xml`-filen.
-* Om du behöver både publika och inaktuella API:er i AEM 6.5.2025.x måste du inkludera två separata anrop, `uber-jar-6.5.2025.x.jar` för publika API:er och `uber-jar-6.5.2025.x-deprecated.jar` för inaktuella API:er.
-* Om du behöver både publika och inaktuella API:er i AEM 6.5.2025.x måste du inkludera två separata anrop, `uber-jar-6.5.2025.x.jar` för publika API:er och `uber-jar-6.5.2025.x-deprecated.jar` för inaktuella API:er.
+* Om både publika och inaktuella API:er behövs i AEM 6.5 kan du använda en enda behållare, `uber-jar-6.5.x-apis-with-deprecations.jar`, i `pom.xml`-filen.
+* Om du behöver både publika och inaktuella API:er i AEM 6.5 LTS måste du inkludera två separata anrop, `uber-jar-6.6.x-apis.jar` för publika API:er och `uber-jar-6.6.x-deprecated-apis.jar` för inaktuella API:er.
 
 **Maven-koordinater för borttagna API:er Jar**
 
@@ -93,7 +89,7 @@ För AEM 6.5.2025.x finns det ytterligare två typer av Uber Jars:
 
 ### Utvecklaranteckningar {#developer-notes}
 
-* AEM 6.5.2025 innehåller inte Google guava-bibliotek som är körklart. Den version som krävs kan installeras enligt behov.
+* AEM 6.5 LTS innehåller inte Google guava-bibliotek som är körklart. Den version som krävs kan installeras enligt önskemål.
 * Sling XSS-paket använder nu Java HTML Sanitizer-biblioteket, och metoden `XSSAPI#filterHTML()` bör användas för att återge HTML-innehåll på ett säkert sätt och inte för att skicka data till andra API:er.
 
 ## Testförfarande {#testing-procedure}
@@ -102,7 +98,7 @@ En omfattande testplan bör utarbetas för testning av uppgraderingar. Testning 
 
 ### Testa uppgraderingsproceduren {#testing-upgrade-procedure}
 
-Uppgraderingsproceduren som beskrivs här bör testas i Dev- och QA-miljöer så som de beskrivs i din anpassade körbok (se [Planera din uppgradering](/help/sites-deploying/upgrade-planning.md)). Uppgraderingsproceduren bör upprepas tills alla steg har dokumenterats i uppgraderingsboken och uppgraderingsprocessen är smidig
+Uppgraderingsproceduren som beskrivs här bör testas i Dev- och QA-miljöer så som de beskrivs i din anpassade körbok (se [Planera din uppgradering](/help/sites-deploying/upgrade-planning.md)). Uppgraderingsproceduren bör upprepas tills alla steg har dokumenterats i uppgraderingsboken och uppgraderingsprocessen är smidig.
 
 ### Implementeringstestområden  {#implementation-test-areas-}
 
