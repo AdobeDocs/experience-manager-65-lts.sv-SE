@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 7b6b02fd-fcb2-45ae-a239-e0c68de2bcbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ I avsnitten nedan listas de scenarier där kunderna måste (eller i vissa fall i
 
 **Åtgärd**: Migrera konfigurationen eftersom AEM nu har stöd för OAuth-autentiseringsuppgifter.
 
-**Relevanta AEM-versioner**: Adobe Managed Services (Service Pack 21 och senare).
+**Relevanta AEM-versioner**: Adobe Managed Services.
 
 AEM-kunder använder AEM för att konfigurera integreringar med alla andra Adobe-lösningar. Exempel: Adobe Target, Adobe Analytics med flera.
 
@@ -44,6 +44,6 @@ Mer information om hur du gör det finns i [Konfigurera IMS-integreringar för A
 
 **Åtgärd**: Bekräfta när dessa kan migreras från JWT till OAuth-autentiseringsuppgifter.
 
-**Relevanta AEM-versioner**: Adobe Managed Services (Service Pack 21 och senare).
+**Relevanta AEM-versioner**: Adobe Managed Services.
 
 Kunder skapar Adobe Developer Console-projekt så att de kan anropa [Cloud Manager API:er](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). Autentiseringsuppgifterna i Adobe Developer-projektet ska migreras till autentiseringstypen OAuth Server-to-Server innan de inaktuella JWT-autentiseringsuppgifterna går ut i januari 2025.

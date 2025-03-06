@@ -1,17 +1,13 @@
 ---
 title: Generera arkivdokument för anpassningsbara formulär
 description: Beskriver hur du kan generera en urkund (DoR) för anpassade formulär.
-content-type: reference
-topic-tags: adaptive_forms, develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4154'
+source-wordcount: '4130'
 ht-degree: 0%
 
 ---
@@ -31,11 +27,6 @@ ht-degree: 0%
 Efter att ha skickat in ett formulär vill era kunder vanligtvis registrera, i utskrift eller i dokumentformat, den information de har fyllt i formuläret för framtida referens. Detta kallas för ett urkunder.
 
 I den här artikeln beskrivs hur du kan generera ett postdokument för Adaptiv Forms eller Adaptiv formulärfragment.
-
->[!NOTE]
->
-> Stödet för att anpassa dina adaptiva formulärfragment och fälten i den adaptiva formulärredigeraren introducerades med AEM 6.5 Forms Service Pack 19 (6.5.19.0).
-
 
 >[!NOTE]
 >

@@ -1,18 +1,13 @@
 ---
 title: Leverera dynamiska medieresurser
 description: Lär dig hur du levererar mediematerial för dynamiska medier, som video och bilder, till dina webbsidor.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -42,9 +37,7 @@ Mer information finns i följande avsnitt:
 * [Länka URL:er till ditt webbprogram](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Leverera optimerade bilder för en responsiv webbplats](/help/assets/responsive-site.md)
 * [HTTP2-leverans av innehåll](/help/assets/http2.md)
-* [Gör CDN-cachen ogiltig med Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Använd regeluppsättningar för att omforma URL:er](/help/assets/using-rulesets-to-transform-urls.md)
-
 
 ## HTTP/2-leverans av Dynamic Media-resurser {#http-delivery-of-dynamic-media-assets}
 

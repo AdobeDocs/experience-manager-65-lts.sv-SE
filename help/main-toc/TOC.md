@@ -6,13 +6,12 @@ solution-title: Experience Cloud
 user-guide-description: Läs Adobe Experience Manager 6.5 LTS-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
 breadcrumb-title: Användarhandbok
 user-guide-title: AEM 6.5 LTS
-source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '7052'
+source-wordcount: '6816'
 ht-degree: 1%
 
 ---
-
 
 # Adobe Experience Manager 6.5 LTS Documentation {#content}
 
@@ -305,7 +304,6 @@ ht-degree: 1%
       + [Publicera Dynamic Media-resurser](/help/assets/publishing-dynamicmedia-assets.md)
       + [Arbeta med selektiv publicering i Dynamic Media](/help/assets/selective-publishing.md)
       + [Gör CDN-cachen ogiltig via Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-      + [Invalidera CDN-cachen med Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
       + [Installera funktionspaket 18912 för migrering av gruppresurser](/help/assets/bulk-ingest-migrate.md)
       + [Arbeta med väljare](/help/assets/working-with-selectors.md)
    + Utöka Assets {#extending}
@@ -445,20 +443,7 @@ ht-degree: 1%
          + [Installera och konfigurera ett Forms-centrerat arbetsflöde i OSGi](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
          + [Installera och konfigurera interaktiv kommunikation](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md)
          + [Installera och konfigurera tjänsten för automatisk formulärkonvertering](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
-      + Installera AEM Forms på JEE {#jee-installation}
-         + [Plattformar som stöds för AEM-formulär på JEE](/help/forms/using/aem-forms-jee-supported-platforms.md)
-         + [Installera och distribuera AEM Forms på JEE med JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
-         + [Installera och konfigurera AEM Forms Document Security-servern](/help/forms/using/installing-and-configuring-the-document-security-server.md)
-         + [Förbereder installation av AEM Forms (en server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
-         + [Installera och distribuera Adobe Experience Manager Forms på JEE för JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-         + [Installera och distribuera Adobe Experience Manager-formulär på JEE för WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-         + [Installera och distribuera AEM Forms på JEE för WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
-         + [Installera AEM Forms Workbench](/help/forms/using/install-workbench.md)
-         + [Installera och konfigurera Designer](/help/forms/using/installing-configuring-designer.md)
-         + [Förbereder installation av AEM Forms (serverkluster)](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
-         + [Konfigurerar Adobe Experience Manager Forms på JEE i JBoss-kluster](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
-         + [Konfigurerar Adobe Experience Manager Forms på JEE i WebSphere-kluster](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
-         + [Konfigurerar Adobe Experience Manager Forms på JEE i WebLogic-kluster](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
+      + [Installera och konfigurera Designer](/help/forms/using/installing-configuring-designer.md)
       + Konfigurera AEM Forms {#configure-aem-forms}
          + [Prestandajustering av AEM Forms-server](/help/forms/using/performance-tuning-aem-forms.md)
          + [Konfigurera cacheminne för adaptiva formulär](/help/forms/using/configure-adaptive-forms-cache.md)
@@ -471,17 +456,10 @@ ht-degree: 1%
    + Uppgradera AEM Forms {#upgrade-aem-forms}
       + [Tillgängliga uppgraderingssökvägar](/help/forms/using/upgrade.md)
       + Uppgradera AEM Forms på OSGi {#aem-forms-osgi-upgrade}
-         + [Uppgradera till AEM 6.5-formulär på OSGi](/help/forms/using/upgrade-forms-osgi.md)
+         + [Uppgradera till AEM 6.5 LTS-formulär på OSGi](/help/forms/using/upgrade-forms-osgi.md)
          + [Installera kompatibilitetspaket](/help/forms/using/compatibility-package.md)
          + [Migrera AEM Forms-resurser och -dokument](/help/forms/using/migration-utility.md)
-      + Uppgradera AEM Forms på JEE {#aem-forms-jee-upgrade}
-         + [Förbereder uppgradering av AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
-         + [Checklista och planering för uppgradering av Adobe Experience Manager Forms på JEE](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
       + [Uppgradera till AEM 6.5-formulär på JEE](/help/forms/using/upgrade-forms-jee.md)
-      + [Uppgraderar till Adobe Experience Manager Forms på JEE för JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-      + [Uppgraderar till AEM Forms på JEE för JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
-      + [Uppgraderar till Adobe Experience Manager Forms i JEE för WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-      + [Uppgraderar till Adobe Experience Manager Forms i JEE för WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
    + Hantera AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms on OSGi Groups and Privileges](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Skapa nya mappar för att kategorisera formulär](/help/forms/using/creating-new-folders-categorize-forms.md)
@@ -809,7 +787,6 @@ ht-degree: 1%
          + [Visa och förstå transaktionsrapporter](/help/forms/using/viewing-and-understanding-transaction-reports.md)
          + [Lista över fakturerbara API:er för AEM Forms i OSGi](/help/forms/using/transaction-reports-billable-apis.md)
          + [Registrera en transaktion för anpassade implementeringar](/help/forms/using/record-transaction-custom-implementation.md)
-      + Transaktionsrapporter för AEM Forms på JEE {#transaction-reports-jee}
          + [Aktivera och visa transaktionsrapporter](/help/forms/using/transaction-report-overview-jee.md)
          + [Lista över fakturerbara API:er för AEM Forms i JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
          + [Registrera en transaktion för anpassade komponent-API:er](/help/forms/using/record-transaction-custom-component-jee.md)
@@ -1099,12 +1076,8 @@ ht-degree: 1%
       + [Det går inte att konvertera Word- eller Excel-filen till PDF på Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [Det går inte att öppna XFA-baserad PDF forms i Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer eller Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [Det går inte att återställa CRX-databasen](/help/forms/using/restore-crx-repository.md)
-      + [Fel som inte är tillgängliga för tjänsten efter installation av AEM 6.5.15.0 Service Pack](/help/forms/using/aem-service-pack-installation-solution.md)
-      + [Installationsproblem för AEM Forms JEE 6.5.15.0 Service Pack i JBoss Linux-miljö](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [Bearbetar dokument även om AEM Forms-servern inte är helt igång](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Det går inte att använda utdatatjänsten, Forms-tjänsten eller DoR-tjänsten (Document of Record)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
-      + [Minska STORLEK 2 RCE-sårbarhet för Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [Det gick inte att säkerhetskopiera databasen under uppgradering till 6.5.12.0 för MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [Det går inte att skriva ut ett stort antal PDF-filer på WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Starta om AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [Tjänsten PaperCapture kan inte utföra OCR på PDF-filer](/help/forms/using/papercapture-service-resolution.md)

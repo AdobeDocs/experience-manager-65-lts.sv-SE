@@ -9,9 +9,9 @@ role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
 exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,11 @@ ht-degree: 0%
 Dynamiska mediefiler cachas av CDN (Content Delivery Network) för snabb leverans till dina kunder. När du uppdaterar resurserna vill du dock att ändringarna ska börja gälla omedelbart på webbplatsen. Genom att rensa eller göra CDN-cachen ogiltig kan du snabbt uppdatera resurser som levereras av Dynamic Media. I stället för att vänta på att cachen ska förfalla med ett TTL-värde (Time To Live) (standard är tio timmar) kan du skicka en begäran från Dynamic Media om att cachen ska förfalla inom några minuter.
 
 
-
->[!IMPORTANT]
->
->Följande steg gäller endast för Dynamic Media - Scene7-läge i Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) eller senare. CDN-funktionen kräver också att du använder det färdiga CDN som medföljer Adobe Experience Manager - Dynamic Media. Andra anpassade CDN stöds inte med den här funktionen.<br>Om du använder Dynamic Media i Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) eller tidigare, följer du stegen i [Invalidera CDN-cachen med Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md).
-
-<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
-
 **Gör ditt CDN-cachelagrade innehåll för dynamiska medieresurser ogiltigt:**
 
 *Del 1 av 2: Skapa en mall för CDN-invalidering*
 
-1. I Experience Manager 6.5.6 eller senare går du till **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]**.
+1. Navigera till **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]**.
 
    ![CDN-verifieringsfunktion](/help/assets/assets-dm/cdn-invalidation-template2.png)
 

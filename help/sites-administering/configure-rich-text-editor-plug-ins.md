@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4376'
+source-wordcount: '4366'
 ht-degree: 0%
 
 ---
@@ -285,10 +285,6 @@ Ange sedan platserna för de formatmallar som du vill referera till:
 ### Konfigurera RTE för optimala ordbrytningar på japanska {#jpwordwrap}
 
 Författare som använder AEM för att skapa japanskt språkinnehåll kan använda ett format på tecken för att undvika radbrytningar där ingen radbrytning behövs. Detta gör att författare kan låta meningarna brytas vid den önskade positionen. Formatet för den här funktionen baseras på CSS-klassen som är fördefinierad i CSS-formatmallen.
-
->[!NOTE]
->
->Den här funktionen kräver minst AEM 6.5 Service Pack 1.
 
 Så här skapar du det format som författare kan använda på japansk text:
 

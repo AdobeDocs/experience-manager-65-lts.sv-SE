@@ -10,9 +10,9 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '664'
 ht-degree: 3%
 
 ---
@@ -68,11 +68,11 @@ Du behöver följande för att konfigurera AEM Assets med varumärkesportalen:
 
 [Hämta och installera den senaste versionen av AEM Service Pack](#servicepack)
 
-### Hämta och installera AEM 6.5 {#aemquickstart}
+### Ladda ned och installera AEM 6.5 LTS {#aemquickstart}
 
-Vi rekommenderar att du använder AEM 6.5 för att skapa en AEM Author-instans. Om du inte har AEM igång kan du ladda ned det från följande platser:
+Vi rekommenderar att du har AEM 6.5 LTS för att skapa en AEM Author-instans. Om du inte har AEM igång kan du ladda ned det från följande platser:
 
-* Om du redan är AEM-kund hämtar du AEM 6.5 från [Adobe Licensing-webbplatsen](https://licensing.adobe.com).
+* Om du redan är AEM-kund hämtar du AEM 6.5 LTS från [Adobe Licensing-webbplatsen](https://licensing.adobe.com).
 
 * Om du är Adobe partner kan du använda [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) för att begära AEM 6.5.
 
@@ -80,7 +80,7 @@ När du har hämtat AEM finns instruktioner om hur du konfigurerar en AEM Author
 
 ### Hämta och installera AEM senaste Service Pack {#servicepack}
 
-Detaljerade instruktioner finns i den aktuella [AEM 6.5 Service Pack-versionsinformationen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
+Detaljerade instruktioner finns i den aktuella [AEM 6.5 LTS Service Pack-versionsinformationen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
 
 **Kontakta Adobe kundsupport** om du inte hittar det senaste AEM-paketet eller Service Pack.
 

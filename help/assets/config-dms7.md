@@ -1,19 +1,14 @@
 ---
 title: Konfigurera dynamiska media - Scene7-läge
 description: Lär dig konfigurera läget Dynamic Media - Scene7.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '6120'
+source-wordcount: '6104'
 ht-degree: 1%
 
 ---
@@ -132,7 +127,7 @@ Mer information finns i [Installera funktionspaket 18912 för migrering av grupp
 
    * **[!UICONTROL Publishing Assets]** - Du kan välja mellan följande tre alternativ:
       * **[!UICONTROL Immediately]** betyder att när resurser överförs, importeras resurserna och URL/Embed anges omedelbart. Ingen användaråtgärd krävs för att publicera resurser.
-      * **[!UICONTROL Upon Activation]** betyder att du måste publicera resursen explicit innan en URL/Embed-länk anges.<br><!-- CQDOC-17478, Added March 9, 2021-->Från och med Experience Manager 6.5.8 återspeglar Experience Manager Publish-instansen korrekta värden för dynamiska mediametadata, som `dam:scene7Domain` och `dam:scene7FileStatus` i **[!UICONTROL Upon Activation]** publiceringsläge. Installera Service Pack 8 och starta sedan om Experience Manager om du vill aktivera den här funktionen. Gå till Sling Config Manager. Hitta konfigurationen för `Scene7ActivationJobConsumer Component` eller skapa en ny). Markera kryssrutan **[!UICONTROL Replicate Metadata after Dynamic Media publishing]** och välj sedan **[!UICONTROL Save]**.
+      * **[!UICONTROL Upon Activation]** betyder att du måste publicera resursen explicit innan en URL/Embed-länk anges.<br><!-- CQDOC-17478, Added March 9, 2021-->Från och med Experience Manager 6.5.8 återspeglar Experience Manager Publish-instansen korrekta värden för dynamiska mediametadata, som `dam:scene7Domain` och `dam:scene7FileStatus` i **[!UICONTROL Upon Activation]** publiceringsläge. Gå till Sling Config Manager. Hitta konfigurationen för `Scene7ActivationJobConsumer Component` eller skapa en ny). Markera kryssrutan **[!UICONTROL Replicate Metadata after Dynamic Media publishing]** och välj sedan **[!UICONTROL Save]**.
 
         ![Kryssrutan Replikera metadata efter publicering av dynamiska media](assets-dm/replicate-metadata-setting.png)
 
@@ -250,7 +245,7 @@ I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av res
 
 Om du tänker använda den här funktionen bör du vara medveten om följande krav och punkter:
 
-* Du måste köra Experience Manager 6.5 med Service Pack 6.5.4.0 eller senare i läget Dynamic Media - Scene7.
+* Du måste köra Experience Manager 6.5 LTS i läget Dynamic Media - Scene7.
 * Den här stora överföringsfunktionen stöds bara för [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html)-kunder.
 * Kontrollera att din Experience Manager-instans är konfigurerad med Amazon S3 eller Microsoft® Azure Blob Storage.
 
