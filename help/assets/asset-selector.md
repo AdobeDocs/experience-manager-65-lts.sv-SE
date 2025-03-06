@@ -6,7 +6,8 @@ feature: Asset Management,Metadata,Search
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9ee9e034-ac69-4c3b-b050-7e829c830bcd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 2%

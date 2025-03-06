@@ -5,7 +5,8 @@ keywords: Lägg till en anpassad funktion, använd en anpassad funktion, skapa e
 content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3377'
 ht-degree: 0%

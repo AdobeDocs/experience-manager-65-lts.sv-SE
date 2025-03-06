@@ -4,7 +4,8 @@ description: Lär dig hur du kan återställa en skadad CRX-databas.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 716d8eb2-2010-4d55-b8fe-bd4f6f256a4d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%

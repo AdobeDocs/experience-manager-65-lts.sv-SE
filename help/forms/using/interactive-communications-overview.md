@@ -7,13 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 047437c4-f642-4b77-b5e8-ab2aa34a83e5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 3%
 
 ---
-
 
 # Översikt över interaktiv kommunikation {#interactive-communications-overview}
 

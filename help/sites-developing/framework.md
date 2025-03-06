@@ -9,13 +9,13 @@ docset: aem65
 feature: Developing,Tagging
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: bc00baf14235e6b77fe79ea7a8e149c6d69b10b5
+exl-id: 5d1c2c73-c457-49dc-b519-eba5ad9d5722
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
 
 ---
-
 
 # AEM Tagging Framework {#aem-tagging-framework}
 

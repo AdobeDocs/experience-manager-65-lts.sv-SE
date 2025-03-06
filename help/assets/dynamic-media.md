@@ -8,7 +8,8 @@ content-type: reference
 role: User, Admin
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 195c097b-787a-44a2-aa4f-a9f8ccf93e3d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 2%

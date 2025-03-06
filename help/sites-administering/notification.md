@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 8ed6afaa78f8f916b15977dda339cb4a3ae934b0
+exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurerar e-postmeddelande{#configuring-email-notification}
 

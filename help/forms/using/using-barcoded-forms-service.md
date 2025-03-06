@@ -8,7 +8,8 @@ docset: aem65
 feature: Document Services,Assembler,Barcoded Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f823d240-88c7-4357-9dbb-6cc069451721
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%

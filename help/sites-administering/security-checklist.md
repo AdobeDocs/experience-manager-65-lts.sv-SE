@@ -9,7 +9,8 @@ docset: aem65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: 1d011ae238f213459c97e921740db10640935022
+exl-id: 9b957118-2a21-4e2b-a575-6518d5dba54f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2958'
 ht-degree: 0%

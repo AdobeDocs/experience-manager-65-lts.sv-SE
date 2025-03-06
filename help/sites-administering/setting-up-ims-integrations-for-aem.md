@@ -3,7 +3,8 @@ title: Konfigurera IMS-integreringar för AEM
 description: Lär dig hur du konfigurerar IMS-integreringar för AEM
 feature: Security
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%

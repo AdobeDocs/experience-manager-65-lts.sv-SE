@@ -4,7 +4,8 @@ description: Lär dig hur du använder Document Services API:er för att digital
 feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 5c6fa5ae-ac28-4d92-9123-f4f1404bdc4f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '6439'
 ht-degree: 0%
@@ -5123,5 +5124,3 @@ void tag(File inputFile) throws Exception
     }
 }
 ```
-
-

@@ -4,7 +4,8 @@ description: Dokumentation Journeys innehåller en berättande struktur i AEM-do
 solution: Experience Manager, Experience Manager Sites
 role: Admin, Architect,Data Architect,Developer,User,Leader
 feature: Administering
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5de9469f-b92f-42f6-a187-0c6835ad972c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 0%

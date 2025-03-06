@@ -9,7 +9,8 @@ docset: aem65
 feature: Brand Portal
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b67df215-6ef9-461a-bfb8-f5b5ece8451b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 20%

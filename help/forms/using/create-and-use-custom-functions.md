@@ -3,7 +3,8 @@ title: Skapa och lägga till anpassade funktioner i ett adaptivt formulär
 description: AEM Forms stöder anpassade funktioner som gör att användare kan skapa och använda sina egna funktioner i regelredigeraren.
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 0%

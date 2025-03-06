@@ -9,7 +9,8 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 654cf0fc-1a80-4764-8ce7-22d060e1f61a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 5%

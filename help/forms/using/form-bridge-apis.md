@@ -7,7 +7,8 @@ topic-tags: developer-reference
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 46a0ca88-0014-400f-b56f-30afb847e30f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 0%

@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 852aaf6e-acf3-4224-bf4c-c0913110abd4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 2%
 
 ---
-
 
 # Arbeta med uppgifter {#working-with-tasks}
 

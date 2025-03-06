@@ -9,13 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 0%
 
 ---
-
 
 # Klassiskt gränssnitt, taggningskonsol{#classic-ui-tagging-console}
 

@@ -10,7 +10,8 @@ legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimiz
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3200'
 ht-degree: 0%

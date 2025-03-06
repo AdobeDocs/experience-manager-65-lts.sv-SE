@@ -4,7 +4,8 @@ description: Lägg till ContextHub på sidorna för att aktivera ContextHub-funk
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a2b32ec3-ff1b-47e0-b346-53a5db5ae27f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%

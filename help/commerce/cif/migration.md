@@ -4,7 +4,8 @@ description: Så här migrerar du till tillägget AEM Commerce integration frame
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%

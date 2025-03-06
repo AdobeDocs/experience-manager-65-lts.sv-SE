@@ -8,7 +8,8 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
+exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 0%
@@ -246,4 +247,3 @@ Läs [Allmän beskrivning](#general-description) ovan före en distribution.
    * Byt namn på AEM krigsfil till ROOT.war om du vill distribuera den som en rotwebbapp. Byt namn på den till aemauthor.war om du vill ha en aemauthor som kontextrot.
    * Kopiera den till Tomcat&#39;s webbapps folder.
    * Vänta tills AEM har installerats.
-

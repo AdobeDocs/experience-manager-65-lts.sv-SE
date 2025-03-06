@@ -4,7 +4,8 @@ description: Adobe Experience Manager innehåller ett antal färdiga komponenter
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 48cdca14c4e993281ed8c0a4a364aebe7a4611ad
+exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%

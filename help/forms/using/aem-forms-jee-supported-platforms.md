@@ -8,13 +8,13 @@ docset: aem65
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3989'
 ht-degree: 0%
 
 ---
-
 
 # Plattformar som stöds för AEM Forms på JEE {#supported-platforms-for-aem-forms-on-jee}
 
@@ -928,4 +928,3 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
 
     -->
-

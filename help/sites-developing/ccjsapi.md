@@ -8,7 +8,8 @@ content-type: reference
 feature: Context Hub,Developing,Personalization
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: db4a4a1a-e014-4865-ab8c-d8a5aaefd93a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3106'
 ht-degree: 0%

@@ -4,7 +4,8 @@ description: I den h√§r delen av AEM Headless Developer Journey kommer du att f√
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 36a20b73-9277-4619-8103-80a3f900459d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 0%

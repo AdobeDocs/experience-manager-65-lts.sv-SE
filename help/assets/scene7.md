@@ -9,7 +9,8 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+exl-id: 80ffa496-880a-4638-bf78-1aab0c052983
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2706'
 ht-degree: 1%

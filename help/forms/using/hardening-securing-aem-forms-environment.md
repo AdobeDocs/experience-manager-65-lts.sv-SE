@@ -5,7 +5,8 @@ topic-tags: Security
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0225063b-9a57-4b3f-8216-295b1f2d4db5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 0%

@@ -8,7 +8,8 @@ topic-tags: configuring
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f5944c6e-bf6f-490e-a8b1-3a01b76d32c0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 2%

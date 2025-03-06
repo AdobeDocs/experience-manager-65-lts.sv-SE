@@ -4,7 +4,8 @@ description: AEM-projekt kan implementeras i en headful och headless-modell, men
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ba7f8ad9-807b-48d9-a4eb-da0a60d2494a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%

@@ -4,13 +4,13 @@ description: Med projekt kan du gruppera resurser i en enhet vars gemensamma, de
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 1%
 
 ---
-
 
 # Projekt {#projects}
 

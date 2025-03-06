@@ -8,7 +8,8 @@ content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 0%

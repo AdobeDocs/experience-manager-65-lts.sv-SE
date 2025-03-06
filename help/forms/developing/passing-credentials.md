@@ -4,7 +4,8 @@ description: Lär dig hur du skickar inloggningsuppgifter med WS-security header
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 558d9b27-8734-4da2-b498-5bb2361ac65b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%

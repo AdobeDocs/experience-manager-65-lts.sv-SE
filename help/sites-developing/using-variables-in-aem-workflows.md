@@ -4,7 +4,8 @@ description: Skapa en variabel, ange ett värde för variabeln och använd den i
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9bb44a58e919fd038c83cab89620256501137bef
+exl-id: eb75efb8-c59a-4d51-af54-942cca178f2e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 0%

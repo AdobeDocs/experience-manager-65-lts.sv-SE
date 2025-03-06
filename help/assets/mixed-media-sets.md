@@ -9,7 +9,8 @@ docset: aem65
 feature: Mixed Media Sets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 52325c53-324f-4dd0-93c0-cb8a78a38d6b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1426'
 ht-degree: 14%

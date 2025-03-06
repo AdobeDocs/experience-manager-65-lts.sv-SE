@@ -4,13 +4,13 @@ description: Lär dig hur du migrerar innehåll från AEM 6.5 till AEM 6.5 LTS m
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ef25b11163ca727a9fa99799b713085e594ff520
+exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
 
 ---
-
 
 # AEM 6.5 till AEM 6.5 LTS Content Migration Using Oak-upgrade {#aem-65-to-aem-65lts-content-migration-using-oak-upgrade}
 

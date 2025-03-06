@@ -10,7 +10,8 @@ legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-usin
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%

@@ -6,13 +6,13 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: b147ec33af63783f250aac098af7c52505664a96
+exl-id: 0b4d1cb7-b3a7-4bcd-ad37-d718b2a0abd5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
 
 ---
-
 
 # Uppgradera steg för programserverinstallationer {#upgrade-steps-for-application-servers}
 

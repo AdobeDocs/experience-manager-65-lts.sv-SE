@@ -6,7 +6,8 @@ keywords: Lägga till adaptiva formulärfragment, adaptiva formulärfragment, Sk
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 0%

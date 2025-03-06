@@ -4,7 +4,8 @@ description: Ta reda på hur du felsöker de vanligaste MSM-relaterade problemen
 feature: Multi Site Manager
 role: Admin
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: eca28076-bc91-4a6f-aef8-979ad6f761f7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%

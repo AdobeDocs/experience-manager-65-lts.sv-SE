@@ -5,7 +5,8 @@ topic-tags: security
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8232d8a9-6df4-45f9-8924-7328a55093cb
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%

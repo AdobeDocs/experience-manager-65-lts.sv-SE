@@ -4,7 +4,8 @@ description: Förstå den autentisering som krävs för fjärrfrågor till Adobe
 feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8891b13d-5d7d-4ac5-99ba-bde8bff58a6d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 0%

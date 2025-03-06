@@ -4,7 +4,8 @@ description: AEM Headless CMS Documentation. Börja här för en guidad resa med
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1425c1b4-3c47-47ff-b2ef-408e889ddb34
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 1%

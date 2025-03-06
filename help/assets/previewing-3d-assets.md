@@ -7,7 +7,8 @@ feature: 3D Assets
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 88dc81aa-f8b2-403e-bd87-ea224ac2d0c2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 1%

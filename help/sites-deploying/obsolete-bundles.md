@@ -8,7 +8,8 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 5b31b74b89334efcae647c216d2ae2be35545b22
+exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%

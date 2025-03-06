@@ -5,7 +5,8 @@ topic-tags: site-features, best-practices
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 907ed679-5a91-4581-b0ab-ed550586da71
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 0%

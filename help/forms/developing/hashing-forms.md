@@ -4,7 +4,8 @@ description: Generera och arbeta med hash i dynamiska PDF forms.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3fa1b6c9-fe73-4d76-aa72-20ce3e502941
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 0%

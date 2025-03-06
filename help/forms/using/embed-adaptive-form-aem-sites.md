@@ -7,7 +7,8 @@ topic-tags: author, interactive-communications
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9d7f3c62-1b49-437c-9f61-1f0fc0156bdf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%

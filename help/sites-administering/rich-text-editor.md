@@ -5,7 +5,8 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2817'
 ht-degree: 0%
@@ -384,4 +385,3 @@ Verifiera också att koden och nodstrukturen för implementering av flera fält 
 **Konfiguration som är tillgänglig för administratörer är inte tillgänglig för författare**
 
 Om uppdateringarna av gränssnittskonfigurationerna återspeglas för administratörer men inte för författarkonton kontrollerar du att konfigurationsnoden inte har namnet `config`. Använd egenskapen [`configPath` ](/help/sites-developing/components-basics.md#cq-inplaceediting).
-

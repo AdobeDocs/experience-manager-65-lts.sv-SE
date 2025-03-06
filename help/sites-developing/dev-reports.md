@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5177'
 ht-degree: 0%
 
 ---
-
 
 # Utveckla rapporter {#developing-reports}
 

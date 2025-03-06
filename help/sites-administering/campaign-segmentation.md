@@ -9,13 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bd75453e-8d3f-466e-b573-653eb68429cf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera segmentering {#configuring-segmentation}
 

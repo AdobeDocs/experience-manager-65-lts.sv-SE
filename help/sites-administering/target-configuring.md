@@ -4,7 +4,8 @@ description: Lär dig hur du konfigurerar integreringen med Adobe Target manuell
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: a83de8a787f0e446d4d231fdffbf37a11dfd9c53
+exl-id: 55f100b2-625a-4d0e-b8bb-011c7e3e3580
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 0%

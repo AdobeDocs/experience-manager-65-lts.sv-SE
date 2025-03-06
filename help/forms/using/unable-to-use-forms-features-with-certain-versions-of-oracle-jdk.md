@@ -4,7 +4,8 @@ description: Kan inte använda Experience Manager Forms med vissa versioner av O
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4aa45f02-ff89-4e40-a15d-e62c5879a87d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%

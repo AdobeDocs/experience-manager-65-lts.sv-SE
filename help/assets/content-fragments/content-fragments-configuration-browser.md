@@ -4,7 +4,8 @@ description: Lär dig hur du aktiverar vissa Content Fragment-funktioner i Confi
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b526cd3a-9b04-403a-a6f4-6abe973aaeac
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 12%

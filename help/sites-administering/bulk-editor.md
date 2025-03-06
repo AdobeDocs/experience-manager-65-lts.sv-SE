@@ -9,13 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 14aa70236c24a0fda8f1beb0103950cd34975842
+exl-id: 8028e74e-29df-4081-a567-5eb87ae362d4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
 
 ---
-
 
 # Massredigeraren{#the-bulk-editor}
 

@@ -6,7 +6,8 @@ role: Developer
 feature: Assets HTTP API,Developer Tools
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7bb4aec8-e6c0-416a-a318-d3120f9688c4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%

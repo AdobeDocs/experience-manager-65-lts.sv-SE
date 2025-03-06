@@ -4,7 +4,8 @@ description: En introduktion till de kraftfulla och flexibla headless-funktioner
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Architect,Data Architect
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cb64e012-7001-47a3-b038-8f8f6891c6a0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%

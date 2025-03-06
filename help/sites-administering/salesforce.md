@@ -9,13 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 68003650-76d7-40b3-860b-70454c13211e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 3%
 
 ---
-
 
 # Integrera med Salesforce {#integrating-with-salesforce}
 

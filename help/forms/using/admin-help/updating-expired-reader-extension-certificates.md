@@ -4,13 +4,13 @@ description: Giltighetstid för Reader Extensions-certifikat och dess effekt
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 83dbd00e-28ad-4a2e-ac22-3658fb6f639b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
 
 ---
-
 
 # Giltighetstid för Reader Extensions-certifikat och dess effekt {#expiration-of-reader-extensions-certificates-and-its-impact}
 

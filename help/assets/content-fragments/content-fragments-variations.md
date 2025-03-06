@@ -4,7 +4,8 @@ description: Förstå hur variationer kan göra ert headless-innehåll i AEM än
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 4%

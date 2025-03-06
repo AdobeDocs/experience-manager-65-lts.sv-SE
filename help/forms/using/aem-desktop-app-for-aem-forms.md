@@ -8,7 +8,8 @@ noindex: true
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7b1c4808-8f41-47e5-b936-f017c29dbd3f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

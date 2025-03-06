@@ -5,7 +5,8 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 54523e507ae818f87032929cf3d28dc34a45eb34
+exl-id: 9cad4bbc-64f6-4ea2-a9b2-b6b9aaa72f11
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3123'
 ht-degree: 0%

@@ -5,7 +5,8 @@ contentOwner: AG
 role: Admin, Architect
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%

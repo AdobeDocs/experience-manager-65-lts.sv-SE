@@ -4,7 +4,8 @@ description: Konfigurera Adobe Experience Manager-komponenter i designläge.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: ac26c0163309b6cb6c0cfde2098a8cc05955d03f
+exl-id: 679ec753-1beb-49d2-9ed3-ee9abdd5f1a9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%

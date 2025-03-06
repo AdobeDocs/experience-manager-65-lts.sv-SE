@@ -8,7 +8,8 @@ content-type: reference
 feature: Viewer Presets
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 23c04c7e-3321-4eae-8067-ca23adefa9f6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 15%

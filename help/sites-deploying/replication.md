@@ -9,7 +9,8 @@ docset: aem65
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1d011ae238f213459c97e921740db10640935022
+exl-id: b840d970-9365-4df3-8467-e34abd940074
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3277'
 ht-degree: 0%

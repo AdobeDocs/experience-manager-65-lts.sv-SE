@@ -4,7 +4,8 @@ description: En introduktion till Adobe Experience Manager (AEM) och Web Accessi
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3df5379b-a66f-4d74-bbb1-75440324ef98
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 62%

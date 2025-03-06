@@ -4,7 +4,8 @@ description: RemotePage-komponenten är en anpassad sidkomponent för redigering
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: 9c8dff52-3860-4f71-a0d9-993574f1d654
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%

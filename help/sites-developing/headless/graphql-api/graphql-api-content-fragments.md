@@ -4,7 +4,8 @@ description: Lär dig hur du använder innehållsfragment i Adobe Experience Man
 feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 767f0e03-5228-4c85-a0be-9dae90fa5cbd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '4984'
 ht-degree: 0%

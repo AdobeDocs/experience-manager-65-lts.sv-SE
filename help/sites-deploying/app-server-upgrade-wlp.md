@@ -4,7 +4,8 @@ description: Lär dig hur du uppgraderar instanser av AEM som distribueras via W
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: cd04a7a493a575cabf416b53869dd3fe4df7ab6b
+exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%

@@ -6,13 +6,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: b6d27aa78b195a6131b43c83dc4df74b797490fa
+exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera layoutbehållare och layoutläge{#configuring-layout-container-and-layout-mode}
 

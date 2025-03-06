@@ -10,7 +10,8 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ae78421de75518894f3996829e554acd9003a6d1
+exl-id: 255ef365-0da5-4bc9-b099-2e3bc67dd25a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%

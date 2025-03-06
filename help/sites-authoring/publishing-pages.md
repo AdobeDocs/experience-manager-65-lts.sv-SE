@@ -4,7 +4,8 @@ description: Lär dig publicera innehållssidor i Adobe Experience Manager 6.5.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 5%

@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: d1297182b801ff4db163b8ae91332f5aebb94b9b
+exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 0%

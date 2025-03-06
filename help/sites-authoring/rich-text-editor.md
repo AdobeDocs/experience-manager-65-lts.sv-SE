@@ -4,7 +4,8 @@ description: Använda RTF-redigeraren för att skapa innehåll i Adobe Experienc
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 01c2a67a-7168-4362-ad7d-f4990ea43ed8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%

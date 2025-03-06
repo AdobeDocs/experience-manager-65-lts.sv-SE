@@ -4,7 +4,8 @@ description: Lär dig hur du konfigurerar och felsöker ett Adobe Experience Man
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f7279bba-b889-4431-9cfd-79e140d46e05
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3943'
 ht-degree: 0%

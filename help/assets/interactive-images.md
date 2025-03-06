@@ -9,7 +9,8 @@ docset: aem65
 feature: Interactive Images
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 1d011ae238f213459c97e921740db10640935022
+exl-id: e4be0056-1e19-41a8-8d8c-be65999b562d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '4084'
 ht-degree: 0%

@@ -6,7 +6,8 @@ role: User
 feature: Link Sharing,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ac7ff784-d331-4437-940f-9ea3ce122f8b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 3%

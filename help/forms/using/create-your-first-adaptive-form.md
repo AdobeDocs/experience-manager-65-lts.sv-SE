@@ -4,7 +4,8 @@ description: Lär dig skapa interaktiva och responsiva blanketter i affärsklass
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%

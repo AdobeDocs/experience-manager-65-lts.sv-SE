@@ -5,13 +5,13 @@ hide: true
 feature: Asset Management
 role: Leader, Architect, User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 3%
 
 ---
-
 
 # Om [!DNL Adobe Experience Manager Assets] som DAM-lösning {#administering-assets}
 

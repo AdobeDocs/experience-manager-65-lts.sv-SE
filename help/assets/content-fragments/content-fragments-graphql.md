@@ -4,7 +4,8 @@ description: Lär dig använda AEM Content Fragments med GraphQL för leverans a
 feature: Content Fragments,Headless,GraphQL
 role: User,Developer
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8d0271c0-a795-4ff6-a2ae-72329f05a401
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%

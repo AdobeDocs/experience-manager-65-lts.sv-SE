@@ -8,7 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: f3e4de41-49bd-4766-894a-8bbde5281d8c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%

@@ -5,7 +5,8 @@ contentOwner: AG
 role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 21771c11-ecce-4eff-be5b-f55835a5644e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+exl-id: 15d9c2ac-0b13-4839-a873-bc884ee69132
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 0%

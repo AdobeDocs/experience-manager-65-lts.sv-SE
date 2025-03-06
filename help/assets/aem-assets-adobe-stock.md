@@ -6,7 +6,8 @@ feature: Search, Adobe Stock
 role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2288'
 ht-degree: 2%
@@ -422,4 +423,3 @@ Användarna kan se egenskaperna för både, licensierade och olicensierade resur
 >
 >If there are multiple [!DNL Adobe Stock] configurations, select the desired configuration in [!UICONTROL User Preferences] panel. To access the panel from [!DNL Experience Manager] home page, click the user icon and then click **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**.
 -->
-

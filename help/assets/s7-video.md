@@ -9,7 +9,8 @@ role: User, Admin
 mini-toc-levels: 3
 feature: Video
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a54d39c3-e3eb-4d09-b79e-b5284e6e3f0b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%

@@ -5,7 +5,8 @@ role: User, Developer
 level: Beginner, Intermediate
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8d2781e7-732e-42e4-b18b-e6d9ceaa7abe
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 0%

@@ -8,7 +8,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 0%
@@ -281,5 +282,3 @@ Mer information om datapubliceringstjänsten och hur du schemalägger den här t
 * **[!UICONTROL Sync]**: Synkronisera den inbäddade processrapportdatabasen med AEM Forms-databasen.
 * **[!UICONTROL Help]**: Visa hjälpdokumentationen om processrapportering.
 * **[!UICONTROL Logout]**: Logga ut från processrapportering
-
-

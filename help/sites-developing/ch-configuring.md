@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 05ede6b5f84675d08d9fcf53f062308ac4d62660
+exl-id: 00dfc10f-6cdf-4c79-b11e-85c801425858
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1712'
 ht-degree: 0%

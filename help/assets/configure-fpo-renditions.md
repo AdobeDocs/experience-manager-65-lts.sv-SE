@@ -6,7 +6,8 @@ role: Admin
 feature: Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7f66bc81-c4f7-4267-93b8-b78097ebbb16
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 1%

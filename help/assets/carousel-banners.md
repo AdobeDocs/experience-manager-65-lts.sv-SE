@@ -9,7 +9,8 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 48cdca14c4e993281ed8c0a4a364aebe7a4611ad
+exl-id: d066e8ea-57f4-41a1-afcf-86950267fd50
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '4482'
 ht-degree: 2%

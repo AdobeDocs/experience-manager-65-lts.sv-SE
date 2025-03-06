@@ -9,13 +9,13 @@ legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Architect
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c9ea613d-f1d1-49be-bd52-95d489442f46
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 4%
 
 ---
-
 
 # Introduktion till AEM Platform{#introduction-to-the-aem-platform}
 

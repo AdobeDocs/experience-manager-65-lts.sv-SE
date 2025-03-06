@@ -7,7 +7,8 @@ topic-tags: forms-manager
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cc84c92b-d1a3-4314-a079-7dcbf013712a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

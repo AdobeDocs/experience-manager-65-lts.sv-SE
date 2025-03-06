@@ -4,8 +4,9 @@ description: Lista över alla API:er som räknas som transaktioner för AEM Form
 topic-tags: forms-manager
 feature: Transaction Reports
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+solution: Experience Manager, Experience Manager Forms
+exl-id: 6b58be5a-822b-48e2-b984-7b72bf24e0fa
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 0%

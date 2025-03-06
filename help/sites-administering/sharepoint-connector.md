@@ -8,7 +8,8 @@ content-type: reference
 docset: aem65
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3f8ec723-2705-4ce5-8cb2-e7e6bfe94512
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 0%

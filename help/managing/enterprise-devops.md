@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bd80a4c5-4b65-43db-af4e-f43849c796be
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 58%

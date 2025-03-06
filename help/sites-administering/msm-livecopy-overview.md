@@ -8,7 +8,8 @@ content-type: reference
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 32184455f3c74605a11c20152cf9c8879101a5c2
+exl-id: ddd50c64-0f17-4638-a57e-17ededaca27b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%

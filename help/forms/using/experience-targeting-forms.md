@@ -7,7 +7,8 @@ topic-tags: integrations
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: be7493a9-1e3b-4918-8b3e-fb1a2000b453
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%

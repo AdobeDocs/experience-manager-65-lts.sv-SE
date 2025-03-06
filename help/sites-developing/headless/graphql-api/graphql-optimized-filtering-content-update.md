@@ -4,7 +4,8 @@ description: Lär dig hur du uppdaterar innehållsfragment för optimerad GraphQ
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 40211033-7084-4117-a3e2-73e504283266
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%

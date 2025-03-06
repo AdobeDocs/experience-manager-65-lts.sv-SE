@@ -4,7 +4,8 @@ description: Lär dig hur du använder AEM Assets REST API för att hantera inne
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a5f7f0b9-7779-49c3-b79f-3dd3762c746a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%

@@ -4,7 +4,8 @@ description: Lär dig hur du arbetar med video i Dynamic Media, t.ex. de bästa 
 feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 3430ab95465f4f0ee40ab781989ee6cbf563de43
+exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '10966'
 ht-degree: 1%

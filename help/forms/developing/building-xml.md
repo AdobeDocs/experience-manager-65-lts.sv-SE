@@ -4,7 +4,8 @@ description: Använda den körda skripttjänsten i AEM Forms på JEE Workbench f
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2f49cb29-698b-43ab-971f-81e2b18e6fa9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%

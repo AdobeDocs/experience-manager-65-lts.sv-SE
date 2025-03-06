@@ -4,7 +4,8 @@ description: Lär dig hur du optimerar dina GraphQL-frågor när du filtrerar, s
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c2beb0fa-ff6c-4e42-842d-6a73311f4740
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 0%

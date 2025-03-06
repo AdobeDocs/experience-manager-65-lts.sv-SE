@@ -6,7 +6,8 @@ role: User,Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: c62ad80108619063025772cd991848a3f7d76be8
+exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3425'
 ht-degree: 5%

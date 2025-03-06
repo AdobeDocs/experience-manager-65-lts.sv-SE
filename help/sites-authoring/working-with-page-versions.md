@@ -4,7 +4,8 @@ description: Skapa, jämföra och återställa versioner av en sida i Adobe Expe
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1509'
 ht-degree: 2%

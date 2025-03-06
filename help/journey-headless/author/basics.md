@@ -4,7 +4,8 @@ description: Lär dig mer om hur du skapar innehåll för Headless CMS med hjäl
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 20ff7c83-0882-454e-a8f5-9eda1724cfe3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%

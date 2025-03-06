@@ -7,13 +7,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
-source-git-commit: 61eadc4c005841e136d2aee11c0807c0149e1a92
+exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 0%
 
 ---
-
 
 # Anpassa och utöka innehållsfragment{#customizing-and-extending-content-fragments}
 

@@ -8,13 +8,13 @@ content-type: reference
 role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 0%
 
 ---
-
 
 # Gör CDN-cachen ogiltig via Dynamic Media {#invalidating-cdn-cache-for-dm-assets}
 

@@ -5,7 +5,8 @@ contentOwner: khsingh
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 17%

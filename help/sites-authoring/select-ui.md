@@ -4,7 +4,8 @@ description: Konfigurera vilket gränssnitt du använder för Adobe Experience M
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 1%

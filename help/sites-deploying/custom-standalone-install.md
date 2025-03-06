@@ -6,7 +6,8 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: ee0a8865faf594253139e89d4e6ea20a1cb27f62
+exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1532'
 ht-degree: 0%

@@ -4,7 +4,8 @@ description: Dessa riktlinjer för storleksändring ger en uppskattning av de ma
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: ac26c0163309b6cb6c0cfde2098a8cc05955d03f
+exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 0%

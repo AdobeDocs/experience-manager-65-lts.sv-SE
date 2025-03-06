@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 0%
@@ -442,4 +443,3 @@ Om du vill göra hela cacheminnet ogiltigt måste du skapa ett supportärende oc
 Smart Imaging har nu stöd för förlustkonvertering baserat på kvalitetsnivån. Du kan fortsätta använda förlustfri konvertering genom att ange kvaliteten till 100, antingen genom ditt företags inställningar eller genom att lägga till `qlt=100` i bildens URL-sökväg.
 
 +++
-

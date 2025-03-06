@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 73a3a6386a857eae1b7392d0fdf943b9b6799b33
+exl-id: 8f00a86f-0fd0-480d-84a9-89a948840a0b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 2%

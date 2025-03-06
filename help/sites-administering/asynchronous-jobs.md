@@ -4,7 +4,8 @@ description: Adobe Experience Manager optimerar prestandan genom att asynkront s
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e095b7d4-b1b4-4070-9264-b23ea2c677f5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 83%

@@ -4,7 +4,8 @@ description: Steg för integrering av Salesforce med AEM Forms med OAuth 2.0-kli
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 56b4a767-1210-47f3-b022-766b0dda9943
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 1%

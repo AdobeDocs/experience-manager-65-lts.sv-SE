@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 831d42bb7f885b637d2e356fe06bb0e141639915
+exl-id: c44ecbb4-a883-4468-bddc-55964485529b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 0%
@@ -147,4 +148,3 @@ Konfigurera [sessionshantering i dispatcher.alla filer](https://experienceleague
    ```
 
 1. Ange [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) till `0`.
-

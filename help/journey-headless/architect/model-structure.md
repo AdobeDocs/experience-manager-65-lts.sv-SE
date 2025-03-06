@@ -4,7 +4,8 @@ description: Lär dig mer om koncepten och mekanismerna i att modellera innehål
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Architect,Data Architect
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fe603779-7763-4cb9-b95a-34e4b78d72db
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%

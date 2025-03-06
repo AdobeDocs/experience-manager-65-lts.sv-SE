@@ -7,7 +7,8 @@ content-type: reference
 feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+exl-id: 68896dab-2d46-4998-9918-40efb8554143
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5903'
 ht-degree: 0%

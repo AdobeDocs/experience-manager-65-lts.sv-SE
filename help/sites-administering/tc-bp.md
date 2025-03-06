@@ -4,7 +4,8 @@ description: Här hittar du de effektivaste strategierna som sammanställts av A
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c09cce08-4df4-4de8-9402-3905d8430794
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 0%

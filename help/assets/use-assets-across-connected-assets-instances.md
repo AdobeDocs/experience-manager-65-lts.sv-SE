@@ -7,7 +7,8 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3792'
 ht-degree: 14%
@@ -368,4 +369,3 @@ Följ de här stegen för att felsöka vanliga fel:
   ![det gick inte att hämta resursfjärrreferenser](assets/reference-report-failure.png)
 
 * Om cookies inte skickas från Sites-servern till Assets-servern i Google Chrome beror det på att Assets-anslutningen inte är via HTTPS. Om du inte använder HTTPS på Assets-instansen kan rubriken `SameSite=None` inte läggas till i svaret efter att du har autentiserat dig på Assets-servern.
-

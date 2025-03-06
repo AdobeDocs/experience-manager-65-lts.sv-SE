@@ -9,7 +9,8 @@ docset: aem65
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d50dedf3-1973-471d-b16d-f56d60325bb3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2672'
 ht-degree: 0%

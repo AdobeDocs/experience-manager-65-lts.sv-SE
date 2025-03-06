@@ -9,13 +9,13 @@ docset: aem65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 43d9effbe842c8114e31b2b27d6b9f60fc398d64
+exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 0%
 
 ---
-
 
 # Användarsynkronisering{#user-synchronization}
 

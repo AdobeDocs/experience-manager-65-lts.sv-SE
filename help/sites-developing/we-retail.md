@@ -8,7 +8,8 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: ac26c0163309b6cb6c0cfde2098a8cc05955d03f
+exl-id: 71a49353-5273-46ee-a1ff-5bbfe5b6b0b4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 0%

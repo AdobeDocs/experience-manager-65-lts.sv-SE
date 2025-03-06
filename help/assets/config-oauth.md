@@ -4,7 +4,8 @@ description: Lär dig hur du konfigurerar smart taggning och förbättrad smart 
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 26371d15-b0e1-4892-9c52-bc9829e462ca
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 15%

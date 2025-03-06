@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fc60d6a3-b2fd-4991-931f-22924ba8003d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%
 
 ---
-
 
 # Felsökning av Adobe Campaign Classic-integrering{#troubleshooting-your-adobe-campaign-classic-integration}
 

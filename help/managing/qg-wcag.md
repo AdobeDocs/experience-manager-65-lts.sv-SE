@@ -4,7 +4,8 @@ description: A Quick Guide to Web Content Accessibility Guidelines (WCAG) versio
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 57afd8bf-c6d6-47ab-9a30-c5830bc5ea51
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 87%

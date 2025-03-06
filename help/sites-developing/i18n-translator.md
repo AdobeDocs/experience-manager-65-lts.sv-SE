@@ -8,7 +8,8 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a8f03f31dd636ee239cfc6f2b67a7573216cf0fe
+exl-id: 8f6936d0-051f-4966-84ed-87b348eab0b8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2312'
 ht-degree: 1%

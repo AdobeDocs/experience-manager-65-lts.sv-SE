@@ -4,7 +4,8 @@ description: Designer finns som fristående installationsprogram och medföljer 
 role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -118,4 +119,3 @@ Om du använder ett fristående installationsprogram för AEM Forms Designer utf
       1. Öppna Designer, gå till Hjälp, klicka på Om designer så visas versionsinformation för designer tillsammans med bitinformationen. 64-bitarsversionen visas i slutet av den version som visas här:
          `6.5.21.20240522.1.161 | 64 bit`
       1. Öppna Designer. Överst till vänster ser du en ikon med 64-bitarsinformation med produktnamnet.
-

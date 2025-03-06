@@ -4,7 +4,8 @@ description: Förstå AEM-konfigurationer och hur de hanterar arbetsyteinställn
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 73230415-078c-4933-8521-bc18e5490103
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%

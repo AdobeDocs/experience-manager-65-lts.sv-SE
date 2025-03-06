@@ -4,7 +4,8 @@ description: Använd översättningskopplingen och reglerna för att översätta
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 13d11e2b-5a3f-4987-a653-14e0790fbbd0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 0%

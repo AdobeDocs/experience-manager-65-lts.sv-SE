@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: aeb8e954-dd6c-4e18-bb78-6eaac86fa4b9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%

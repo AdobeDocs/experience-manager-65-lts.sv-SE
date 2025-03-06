@@ -4,7 +4,8 @@ description: Lär dig hur du skapar och hanterar sidor med Adobe Experience Mana
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2416'
 ht-degree: 1%

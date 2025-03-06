@@ -9,7 +9,8 @@ legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 879f11eb-0d47-43a7-9a64-53cefd851cf4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%

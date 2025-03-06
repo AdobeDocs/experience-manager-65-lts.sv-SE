@@ -4,7 +4,8 @@ description: AEM SPA Editor SDK presenterades i en serie AEM Gems-sessioner. Ser
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 93d2307858fc07108fa15f9277d35c430334c844
+exl-id: 37a403c3-666c-46f3-84be-c622baeeccbc
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%

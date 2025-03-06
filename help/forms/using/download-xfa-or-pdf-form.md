@@ -7,7 +7,8 @@ topic-tags: forms-manager
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: eafb1a93-8ee5-4420-830b-aee234988393
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%

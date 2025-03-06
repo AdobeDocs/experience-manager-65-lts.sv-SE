@@ -4,7 +4,8 @@ description: Lär dig hur du åtgärdar felet när du inte kan hämta e-post med
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c04e0716-2aa2-420b-bbf5-74ffd1c28794
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%

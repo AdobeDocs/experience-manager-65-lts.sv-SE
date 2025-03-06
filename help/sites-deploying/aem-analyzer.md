@@ -6,13 +6,13 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2645745a83477509bac81cb5e122eabc44db3961
+exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 15%
 
 ---
-
 
 # Utvärdera uppgraderingskomplexiteten med AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
@@ -235,8 +235,3 @@ Den återstående förfallotiden för AEM Analyzer-rapporten visas på sidospår
 
 * Ibland kan meddelandet visas i åtgärden Ta bort: *Vissa sökvägar har inte tagits bort. Kontrollera loggarna och försök igen.*&quot;. Om sökvägarna verkligen tagits bort kan du ignorera det här meddelandet
 * På samma sätt kan paketåtgärden misslyckas med felet: *. Fel när du utför den önskade åtgärden. Kontrollera loggarna och försök igen.*&quot;. Detta beror troligtvis på att sessionen har upphört. I sådana fall bör du försöka åtgärda problemet genom att försöka igen.
-
-
-
-
-

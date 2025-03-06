@@ -4,7 +4,8 @@ description: Lär dig komprimera och expandera filer med en anpassad DSC för JE
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c97a8651-aca7-42e3-bcd0-71d089c3e753
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%

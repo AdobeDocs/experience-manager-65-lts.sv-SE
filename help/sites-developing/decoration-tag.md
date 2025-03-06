@@ -4,7 +4,8 @@ description: När en komponent på en webbsida återges kan ett HTML-element gen
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 085192a0-0415-4861-8bea-a66cd50d9487
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%

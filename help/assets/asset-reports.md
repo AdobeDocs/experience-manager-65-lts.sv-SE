@@ -6,7 +6,8 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 434a081a-f9e4-4a0d-8468-55b4ab5a6287
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 7%

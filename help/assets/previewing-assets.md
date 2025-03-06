@@ -9,7 +9,8 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: af2673d9-780c-44bf-9c75-4b908cca4e98
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%

@@ -9,7 +9,8 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 1d011ae238f213459c97e921740db10640935022
+exl-id: caacf3b3-1e12-4ea3-9160-774181aadf41
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5868'
 ht-degree: 1%

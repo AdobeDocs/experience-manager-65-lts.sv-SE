@@ -4,7 +4,8 @@ description: Läs om hur Adobe Experience Manager 6.5 kan skapa personaliserat i
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%

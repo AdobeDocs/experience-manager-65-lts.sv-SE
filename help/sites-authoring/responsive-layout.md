@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9492907f011fa58dff6bd9eeaf1ae2c6d0397700
+exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 5%
 
 ---
-
 
 # Responsiv layout{#responsive-layout}
 

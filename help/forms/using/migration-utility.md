@@ -10,7 +10,8 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: ac26c0163309b6cb6c0cfde2098a8cc05955d03f
+exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1723'
 ht-degree: 0%

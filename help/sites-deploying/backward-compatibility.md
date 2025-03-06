@@ -9,7 +9,8 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 94bd0b9bdc18724d1b49ab230e858b35bcd82eb2
+exl-id: 96e44da3-da89-4671-a4fb-19ce1b9a38c4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%

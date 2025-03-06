@@ -9,13 +9,13 @@ feature: Brand Portal
 role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 3%
 
 ---
-
 
 # Konfigurera AEM Assets med Brand Portal {#configure-integration-65}
 

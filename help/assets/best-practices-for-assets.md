@@ -5,7 +5,8 @@ contentOwner: AG
 feature: Asset Management
 role: Architect, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 754659d0-7d5f-4e60-a5a1-9bad177de9bc
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%

@@ -8,7 +8,8 @@ topic-tags: coding
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6c384e25-f53f-44aa-9043-b9f9f659f987
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1783'
 ht-degree: 0%

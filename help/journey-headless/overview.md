@@ -4,7 +4,8 @@ description: En samling dokumentationsresor som beskriver hur du använder Adobe
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Developing,Content Fragments
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 77f797c8-d8ed-42ea-ad5f-988d976e0ce5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 5%

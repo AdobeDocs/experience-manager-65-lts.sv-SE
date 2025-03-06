@@ -4,7 +4,8 @@ description: Länkkontrollen hjälper till att validera både interna och extern
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3fafb5e6-f5ac-4c11-809f-6cb2c5269377
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 0%

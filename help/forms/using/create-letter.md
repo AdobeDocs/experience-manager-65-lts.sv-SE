@@ -6,7 +6,8 @@ topic-tags: correspondence-management
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3979'
 ht-degree: 0%

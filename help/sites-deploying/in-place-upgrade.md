@@ -5,7 +5,8 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 67bd9b29ccc525111710a397cca5de1c961486ac
+exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
