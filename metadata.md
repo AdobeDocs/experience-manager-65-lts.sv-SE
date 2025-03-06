@@ -2,13 +2,13 @@
 product: adobe experience manager
 description: Adobe Experience Manager 6.5 LTS-dokumentation.
 git-repo: https://github.com/AdobeDocs/experience-manager-65-lts.sv-SE
-hide: y
+index: y
 type: Documentation
 solution: Experience Manager
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 cloud: Experience Cloud
 recommendations: noDisplay
-source-git-commit: 59969e1e669f6aef3f0d480b5dbdad0bdf28a1d7
+source-git-commit: 766b9eaad3ebe43db3659e8ba4afb8b4496a1f3a
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%
