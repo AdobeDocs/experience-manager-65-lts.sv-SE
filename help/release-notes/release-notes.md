@@ -1,8 +1,11 @@
 ---
 title: Aktuell versionsinformation för Adobe Experience Manager 6.5 LTS
 description: Detta är den aktuella versionsinformationen för Adobe Experience Manager 6.5 LTS.
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f9fefb530e9cdcced664bede2e11556ab0345876
+source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 4%
