@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '10966'
+source-wordcount: '10339'
 ht-degree: 1%
 
 ---
@@ -263,10 +263,6 @@ I följande tabell beskrivs enheten, webbläsaren och uppspelningsmetoden för v
  </tbody>
 </table>
 
->[!IMPORTANT]
->
->*För att kunna använda DASH för dina videor måste Adobe tekniska support först aktivera det på ditt konto. Se [Aktivera DASH på ditt Dynamic Media-konto](#enable-dash).
-
 ## Arkitektur för Dynamic Media Video Solution {#architecture-of-dynamic-media-video-solution}
 
 I följande bild visas det övergripande arbetsflödet för redigering av videoklipp som överförs och kodas via DMG-gatewayen (i Dynamic Media Hybrid-läge) och görs tillgängliga för offentlig användning.
@@ -419,60 +415,6 @@ Anta till exempel att källvideon är 1 920 × 1 080. I följande tabell ger de 
 
 Dynamic Media rekommenderar att du använder MP4 H.264-videokodningsförinställningar. Eftersom MP4-filer använder H.264-videokodeken ger den video med hög kvalitet men i en komprimerad filstorlek.
 
-### Aktivera stöd för DASH, flera bildtexter och ljudspår på ditt Dynamic Media-konto {#enable-dash}
-
-**Om att aktivera DASH på ditt konto**
-DASH (Digital Adaptive Streaming over HTTP) är den internationella standarden för direktuppspelad video och används i stor utsträckning av olika videovisningsprogram. När DASH är aktiverat för ditt konto kan du välja mellan DASH eller HLS för adaptiv videoströmning. Du kan också välja båda med automatisk växling mellan spelare när **[!UICONTROL auto]** väljs som uppspelningstyp i visningsförinställningen.
-
-Några viktiga fördelar med att aktivera DASH på ditt konto är följande:
-
-* Paketera DASH-strömvideo för strömning med adaptiv bithastighet. Den här metoden leder till ökad effektivitet vid leverans. Adaptiv strömning ger bästa möjliga tittarupplevelse för dina kunder.
-* Webbläsaroptimerad direktuppspelning med Dynamic Media Player växlar mellan HLS- och DASH-strömning för att säkerställa bästa möjliga servicekvalitet. Videospelaren växlar automatiskt till HLS när en Safari-webbläsare används.
-* Du kan konfigurera den direktuppspelningsmetod du föredrar (HLS eller DASH) genom att redigera visningsförinställningen för videon.
-* Optimerad videokodning säkerställer att ingen ytterligare lagring används samtidigt som DASH-funktionen aktiveras. En enda uppsättning videokodningar skapas för både HLS och DASH för att optimera lagringskostnaderna för video.
-* Gör videomaterialet mer tillgängligt för kunderna.
-* Hämta strömnings-URL:en via API:er också.
-
-Om du vill aktivera DASH på ditt konto krävs två steg:
-
-* Konfigurera Dynamic Media för DASH, som du enkelt kan göra själv.
-* Konfigurera Experience Manager att använda DASH, vilket sker via ett kundsupportärende från Adobe som du skapar och skickar in.
-
-När du skapar ett Adobe Support-ärende för att aktivera DASH på ditt konto aktiveras även stöd för flera bildtexter och ljudspår automatiskt. När videon har aktiverats bearbetas alla nyligen överförda videor med en uppdaterad serverdelsarkitektur som stöder tillägg av flera bildtexter och ljudspår.
-
->[!IMPORTANT]
->
->Alla videofilmer som du överförde *före* och som aktiverar stöd för flera bildtexter och ljudspår på ditt Dynamic Media-konto, [måste bearbetas på nytt](/help/assets/processing-profiles.md#reprocessing-assets). Det här steget för videoombearbetning är nödvändigt för att de ska kunna använda flera bildtexter och ljudspår. Video-URL:erna fortsätter att fungera och spelas upp som vanligt efter ombearbetningen.
-
-**Så här aktiverar du stöd för DASH, flera bildtexter och flera ljudspår på ditt Dynamic Media-konto:**
-
-<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
-1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. To enable (turn on) DASH, select the checkbox. -->
-1. Börja med **att konfigurera Dynamic Media för DASH** - Navigera från Experience Manager till **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-
-1. Bläddra från sidan **[!UICONTROL Adobe Experience Manager Web Console Configuration]** till namnet *AEM Assets Dynamic Media Video Advanced Streaming Feature Flag*.
-
-1. Till vänster om namnet markerar du kryssrutan för att aktivera DASH.
-
-1. Välj **[!UICONTROL Save]**.
-
-1. Använd nu Admin Console för att börja [skapa ett nytt supportärende](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Om du vill skapa ett supportärende följer du instruktionerna och ser till att du anger följande information:
-
-   * Primärt kontaktnamn, e-postadress, telefon.
-   * Namn på ditt Dynamic Media-konto.
-   * Ange att du vill att stöd för DASH, flera bildtexter och flera ljudspår ska aktiveras på ditt Dynamic Media-konto på Experience Manager.
-
-1. Adobe kundsupport lägger till dig i kundväntelistan baserat på i vilken ordning förfrågningarna skickas.
-1. När Adobe är redo att hantera din begäran kontaktar kundsupporten dig för att koordinera och ange ett måldatum för aktiveringen.
-1. Kundsupport meddelar dig när allt är klart.
-1. Nu kan du göra något av följande:
-
-   * Skapa din [videovisningsförinställning](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) som vanligt.
-   * [Lägg till flera bildtexter och ljudspår](#add-msma) i videon.
-
 ## Visa videorapporter {#viewing-video-reports}
 
 >[!NOTE]
@@ -610,7 +552,6 @@ Innan du lägger till flera bildtexter och ljudspår i videon måste du kontroll
 
 * Dynamic Media är konfigurerat i en AEM-miljö.
 * En [dynamisk medievideoprofil används i mappen där videoklippen har importerats](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [Flera bildtexter och ljudspår är aktiverade på ditt Dynamic Media-konto](#enable-dash).
 
 Tillagda bildtexter och bildtexter stöds med formaten WebVTT och Adobe `.vtt`. Dessutom stöds tillagda ljudspårsfiler med MP3-format.
 
@@ -842,10 +783,6 @@ Det går inte att hämta det ursprungliga ljudspåret som har extraherats från 
 
 
 ## Lägga till undertexter i en video {#adding-captions-to-video}
-
->[!IMPORTANT]
->
->Adobe rekommenderar att du [aktiverar flera funktioner för beskrivning och ljudspår](#enable-dash) på ditt Dynamic Media-konto. På så sätt kan du dra nytta av den senaste Dynamic Media-backend-arkitekturen och ett förenklat arbetsflöde för att lägga till bildtexter, undertexter och ljudspår i videoklipp.
 
 Du kan utöka räckvidden för dina videor till globala marknader genom att lägga till undertexter till enskilda videor eller till adaptiva videouppsättningar. Genom att lägga till undertextning slipper du att duplicera ljudet eller att du behöver använda inbyggda högtalare för att spela in ljudet igen för varje språk. Videon spelas upp på det språk den spelades in på. Undertexter på främmande språk visas så att personer på olika språk fortfarande kan förstå ljuddelen.
 
