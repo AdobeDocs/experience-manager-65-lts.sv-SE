@@ -3,10 +3,12 @@ title: Åtgärder och funktioner i formulärbaserade AEM-arbetsflöden för OSGi
 description: Åtgärder och funktioner i formulärbaserade AEM-arbetsflöden för OSGi- och AEM Forms JEE-arbetsflöden
 contentOwner: khsingh
 solution: Experience Manager, Experience Manager Forms
+hide: true
+hidefromtoc: true
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 17%

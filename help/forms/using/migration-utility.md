@@ -1,31 +1,26 @@
 ---
 title: Migrera AEM Forms-resurser och -dokument
-description: Med migreringsverktyget kan du migrera Adobe Experience Manager (AEM) Forms-filer och -dokument från AEM 6.3 Forms eller tidigare versioner till AEM 6.4 Forms.
+description: Med migreringsverktyget kan du migrera Adobe Experience Manager (AEM) Forms-resurser och -dokument från AEM 6.5.22.0 Forms till AEM 6.5 Forms LTS.
 content-type: reference
-topic-tags: correspondence-management, installing
-geptopics: SG_AEMFORMS/categories/jee
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-content-strategy: max-2018
-docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
 
 # Migrera AEM Forms-resurser och -dokument{#migrate-aem-forms-assets-and-documents}
 
-Migreringsverktyget konverterar [adaptiva Forms-resurser](../../forms/using/introduction-forms-authoring.md), [molnkonfigurationer](/help/sites-developing/extending-cloud-config.md) och [Correspondence Management-resurser](/help/forms/using/cm-overview.md) från det format som används i tidigare versioner till det format som används i Adobe Experience Manager (AEM) 6.5 Forms. När du kör migreringsverktyget migreras följande:
+Migreringsverktyget konverterar [adaptiva Forms-resurser](../../forms/using/introduction-forms-authoring.md), [molnkonfigurationer](/help/sites-developing/extending-cloud-config.md) och [Correspondence Management-resurser](/help/forms/using/cm-overview.md) från det format som används i tidigare versioner till det format som används i Adobe Experience Manager (AEM) 6.5 LTS Forms. När du kör migreringsverktyget migreras följande:
 
 * Anpassade komponenter för adaptiva formulär
-* Anpassningsbara mallar för blanketter och korrespondenshantering
+* Adaptiva formulär och Correspondence Management-mallar
 * Molnkonfigurationer
-* Korrespondenshantering och adaptiva formulärresurser
+* Korrespondenshantering och adaptiva Forms-resurser
 
 >[!NOTE]
 >
@@ -33,11 +28,11 @@ Migreringsverktyget konverterar [adaptiva Forms-resurser](../../forms/using/intr
 
 ## Migreringsmetod {#approach-to-migration}
 
-Du kan [uppgradera](../../forms/using/upgrade.md) till den senaste versionen av AEM Forms 6.5 från AEM Forms 6.4, 6.3 eller 6.2, eller en ny installation. Beroende på om du har uppgraderat din tidigare installation eller utfört en ny installation måste du göra något av följande:
+Du kan [uppgradera](../../forms/using/upgrade.md) till [AEM Forms 6.5 LTS från AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md). Beroende på om du har uppgraderat din tidigare installation eller utfört en ny installation måste du göra något av följande:
 
 **Om det finns en uppgradering på plats**
 
-Om du har utfört en uppgradering på plats har den uppgraderade instansen redan resurserna och dokumenten. Innan du kan använda resurserna och dokumenten måste du installera [AEMFD-kompatibilitetspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (innehåller kompatibilitetspaketet för hantering av korrespondenshantering)
+Om du utförde en [på plats-uppgradering](/help/sites-deploying/in-place-upgrade.md) har den uppgraderade instansen redan resurserna och dokumenten. Innan du kan använda resurserna och dokumenten måste du installera [AEMFD-kompatibilitetspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (inkluderar kompatibilitetspaketet för hantering av korrespondenshantering).
 
 Därefter måste du uppdatera resurserna och dokumenten genom att [köra migreringsverktyget](#runningmigrationutility).
 
@@ -62,7 +57,7 @@ För Correspondence Management-resurser:
 * Läget Klar att publicera är föråldrat sedan AEM 6.1 Forms, så alla resurser i läget Klar att publicera ändras till läget Ändrat.
 * Eftersom användargränssnittet uppdateras i AEM Forms 6.3 skiljer sig även stegen för att utföra anpassningarna. Gör om anpassningen om du migrerar från en version före 6.3.
 * Layoutfragment flyttas från `/content/apps/cm/layouts/fragmentlayouts/1001` till `/content/apps/cm/modules/fragmentlayouts`. Referens till datamordlista i resurser visar sökvägen till datamappningen i stället för dess namn.
-* Alla tabbavstånd som används för justering i textmoduler måste justeras om. Mer information finns i [Korrespondenshantering - Använda tabbavstånd för att ordna text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
+* Alla tabbavstånd som används för justering i textmoduler måste justeras om. <!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->.
 * Resurshanterarkonfigurationer ändras till Correspondence Management-konfigurationer.
 * Assets flyttas under mappar med namn som Befintlig text och Befintlig lista.
 

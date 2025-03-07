@@ -1,45 +1,25 @@
 ---
-title: Uppgradera till AEM 6.5 Forms på OSGi
-description: Du kan uppgradera direkt från AEM 6.1 Forms, AEM 6.2 Forms och LiveCycle ES4 SP1 till AEM 6.3 Forms.
+title: Uppgradera till AEM 6.5 Forms LTS i OSGi
+description: Du kan utföra en direkt uppgradering från AEM 6.5.22.0 Forms till AEM 6.5 Forms LTS.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: installing
-geptopics: SG_AEMFORMS/categories/jee
-role: Admin,User
+role: Admin, User
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade
+feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
 
-# Uppgradera till AEM 6.5 Forms på OSGi {#upgrade-to-aem-forms-osgi}
+# Uppgradera till AEM 6.5 Forms LTS i OSGi {#upgrade-to-aem-forms-osgi}
 
-Du kan uppgradera direkt från AEM 6.3 Forms eller AEM 6.4 Forms till AEM 6.5 Forms.
+Om du vill [uppgradera från AEM 6.5 till AEM 6.5 LTS](/help/sites-deploying/upgrade.md) uppgraderar du till AEM 6.5.22.0 Forms eller senare. En direkt uppgradering från AEM 6.5.22.0 till AEM 6.5 Forms LTS stöds.
 
-Direktuppgradering från **AEM 6.0 Forms, AEM 6.1 Forms** och **AEM 6.2 Forms** till AEM 6.5 Forms är inte tillgängligt. Utför en [uppgradering till AEM 6.2 Forms](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html), [uppgradering till AEM 6.3 Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html) eller [uppgradering till AEM 6.4 Forms](/help/forms/using/upgrade.md) och uppgradera sedan från AEM 6.3 Forms eller AEM 6.4 Forms till AEM 6.5 Forms.
+Om du använder AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms eller AEM 6.5 Forms finns det ingen direkt uppgradering till AEM 6.5 Forms LTS. Detaljerade uppgraderingsalternativ finns i dokumentationen för [uppgraderingssökvägar](/help/forms/using/upgrade.md).
 
-Gör följande för att uppgradera från AEM 6.3 Forms eller AEM 6.4 Forms till AEM 6.5 Forms:
-
-1. Uppgradera AEM till AEM 6.5. Stegen listas nedan:
-
-   1. Installera den senaste Service Pack-uppdateringen och patcharna för AEM 6.3 Forms eller AEM 6.4 Forms. Mer information finns i [AEM Sustenance Hub](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
-   1. Förbered källinstansen för uppgraderingen. Mer information finns i [Uppgradera till AEM 6.5](/help/sites-deploying/upgrade.md).
-   1. Hämta [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software).
-   1. **(Endast Unix/Linux-baserade installationer)** Om du använder UNIX eller Linux som underliggande operativsystem öppnar du terminalfönstret, navigerar till mappen som innehåller crx-quickstart och kör följande kommando:
-
-      `chmod -R 755 ../crx-quickstart`
-
-   1. Uppgradera din AEM-instans till AEM 6.3. Stegvisa instruktioner finns i [Uppgradera till AEM 6.5](/help/sites-deploying/upgrade.md).
-
-      Innan du fortsätter med nästa steg väntar du tills meddelandena ServiceEvent REGISTERED och ServiceEvent UNREGISTERED inte visas i filen &lt;crx-database>/error.log.
-
-      >[!NOTE]
-      >
-      >När servern är igång är några AEM Forms-paket fortfarande i installationstillstånd. Antalet paket kan variera för varje installation. Du kan ignorera läget för de här paketen. Paketen listas på https://&#39;[server]:[port]&#39;/system/console/.
+När du har uppgraderat till Service Pack AEM Forms 6.5.22.0 följer du de här stegen för att uppgradera till AEM 6.5 LTS Forms:
 
 1. Installera AEM Forms tilläggspaket. Stegen listas nedan:
 
@@ -49,20 +29,25 @@ Gör följande för att uppgradera från AEM 6.3 Forms eller AEM 6.4 Forms till 
       1. Välj **[!UICONTROL Forms]** i listrutan **[!UICONTROL Solution]**.
       1. Välj version och typ för paketet. Du kan också använda alternativet **[!UICONTROL Search Downloads]** för att filtrera resultaten.
    1. Välj det paketnamn som gäller för ditt operativsystem, välj **[!UICONTROL Accept EULA Terms]** och välj **[!UICONTROL Download]**.
+   1. Öppna [Pakethanteraren](/help/sites-administering/package-manager.md) och klicka på **[!UICONTROL Upload Package]** för att överföra paketet.
    1. Öppna [Pakethanteraren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) och klicka på **[!UICONTROL Upload Package]** för att överföra paketet.
    1. Markera paketet och klicka på **[!UICONTROL Install]**.
 
-      Du kan också hämta paketet med hjälp av den direktlänk som finns i artikeln [AEM Forms-utgåvor](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
+      Du kan också hämta paketet med hjälp av den direktlänk som finns i artikeln [AEM Forms-utgåvor](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) .
 
-      >[!NOTE]
-      >
-      >När paketet har installerats uppmanas du att starta om AEM-instansen. **Stoppa inte servern omedelbart.** Innan du stoppar AEM Forms-servern väntar du tills meddelandena ServiceEvent REGISTERED och ServiceEvent UNREGISTERED inte visas i filen &lt;crx-database>/error.log och loggen är stabil. Observera också att ett fåtal paket kan vara i installerat läge. Du kan ignorera dessa paketen.
+      När paketet har installerats uppmanas du att starta om AEM-instansen. **Stoppa inte servern omedelbart.** Innan du stoppar AEM Forms-servern väntar du tills meddelandena ServiceEvent REGISTERED och ServiceEvent UNREGISTERED inte visas i filen &lt;crx-database>/error.log och loggen är stabil. Observera också att ett fåtal paket kan vara i installerat läge. Du kan ignorera dessa paketen.
+
+
+      **Starta om AEM-instansen med följande JVM-kommandoradsparametrar**:
+      `--add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED`
+
+      Om servern startas via ett skript eller en tjänst ska du uppdatera den så att den innehåller ovanstående så att de även gäller efter efterföljande omstarter.
 
 1. Starta om AEM.
 
    >[!NOTE]
    >
-   Du bör använda kommandot Ctrl + C för att starta om SDK. Om du startar om AEM SDK med alternativa metoder, till exempel att stoppa Java-processer, kan det leda till inkonsekvenser i AEM utvecklingsmiljö.
+   > Du bör använda kommandot Ctrl + C för att starta om SDK. Om du startar om AEM SDK med alternativa metoder, till exempel att stoppa Java-processer, kan det leda till inkonsekvenser i AEM utvecklingsmiljö.
 
 1. Utför efterinstallationsaktiviteter.
 
@@ -108,3 +93,7 @@ Gör följande för att uppgradera från AEM 6.3 Forms eller AEM 6.4 Forms till 
       * `https://'[server]:[port]'/crx/packmgr`
       * `https://'[server]:[port]'/crx/de`
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+
+   >[!NOTE]
+   >
+   >I AEM 6.4 Forms har strukturen för crx-database ändrats. Om du uppgraderar från 6.3 Forms till AEM 6.5 Forms kan du använda de nya anpassningsmöjligheterna som du skapar på nytt. En fullständig lista över ändrade sökvägar finns i [Omstrukturering av Forms-databaser i AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).

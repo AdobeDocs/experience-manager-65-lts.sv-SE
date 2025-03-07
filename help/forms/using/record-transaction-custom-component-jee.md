@@ -4,8 +4,10 @@ description: Lär dig hur du använder TransactionRecorder API för att registre
 feature: Transaction Reports
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
-exl-id: 346ebc2a-ac8c-48e6-a80b-1c0e34a7b3ff
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+hide: true
+hidefromtoc: true
+exl-id: e2d1b548-ce30-471b-b01c-ce37b737aeb5
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%

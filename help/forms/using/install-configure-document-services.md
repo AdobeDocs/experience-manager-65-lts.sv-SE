@@ -6,7 +6,7 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '5503'
 ht-degree: 0%
@@ -74,8 +74,8 @@ Innan du börjar installera och konfigurera AEM Forms Document Services bör du 
 
 * Klientprogramvara som krävs för att PDF generator ska kunna utföra konvertering i Microsoft® Windows och Linux® installeras:
 
-   * **Microsoft® Windows**: Installera [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) eller [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux®**: Installera [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft® Windows**: Installera **Microsoft® Office** eller **Apache OpenOffice**
+   * **Linux®**: Installera **Apache OpenOffice**
 
 >[!NOTE]
 >
@@ -654,7 +654,7 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
 +++ Adobe Acrobat
 
-* Kontrollera att endast [version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) av Microsoft® Office (32-bitars) och Adobe Acrobat som stöds är installerade och att dialogrutorna för att öppna är avbrutna.
+* Kontrollera att endast [version](/help/sites-deploying/technical-requirements.md) av Microsoft® Office (32-bitars) och Adobe Acrobat som stöds är installerade och att dialogrutorna för att öppna är avbrutna.
 * Kontrollera att Adobe Acrobat Update Service är inaktiverad.
 * Kontrollera att gruppfilen [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) kördes med administratörsbehörighet.
 * Se till att en PDF Generator-användare läggs till i PDF konfigurationsgränssnitt.
@@ -667,7 +667,7 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
 **Microsoft® Windows**
 
-* Kontrollera att 32-bitars [version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) av Microsoft Office som stöds är installerad och att dialogrutorna för att öppna är avbrutna för alla program.
+* Kontrollera att 32-bitars [version](/help/sites-deploying/technical-requirements.md) av Microsoft Office som stöds är installerad och att dialogrutorna för att öppna är avbrutna för alla program.
 * Se till att en PDF Generator-användare läggs till i PDF konfigurationsgränssnitt.
 * Kontrollera att PDF Generator-användaren är medlem i en administratörsgrupp och att privilegiet [Ersätt en token ](#grant-the-replace-a-process-level-token-privilege) för processnivå har angetts för användaren.
 * Se till att användaren är konfigurerad i PDF Generator UI och utför följande åtgärder:
@@ -681,7 +681,7 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
 **Linux®**
 
-* Installera den [version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) av OpenOffice som stöds. AEM Forms stöder både 32- och 64-bitarsversioner. När du har installerat öppnar du alla OpenOffice-program, avbryter alla dialogrutor och stänger programmen. Öppna programmen igen och se till att ingen dialogruta visas när du öppnar ett OpenOffice-program.
+* Installera den version av OpenOffice som stöds. AEM Forms stöder både 32- och 64-bitarsversioner. När du har installerat öppnar du alla OpenOffice-program, avbryter alla dialogrutor och stänger programmen. Öppna programmen igen och se till att ingen dialogruta visas när du öppnar ett OpenOffice-program.
 
 * Skapa en miljövariabel `OpenOffice_PATH` och ställ in den så att den pekar på OpenOffice-installationen anges i [ console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) - eller dt-profilen (enhetsträd).
 * Om det uppstår problem när du installerar OpenOffice kontrollerar du att [32-bitars bibliotek](#extrarequirements) som krävs för OpenOffice-installation är tillgängliga.

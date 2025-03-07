@@ -4,8 +4,10 @@ description: Räkna med alla formulär som skickas, återges, dokument som konve
 feature: Transaction Reports
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
-exl-id: 4dd61c94-0108-49e8-a6c0-dd77e7c09cf1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+hide: true
+hidefromtoc: true
+exl-id: f2703820-8701-4b48-be9c-12daa73d5408
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%

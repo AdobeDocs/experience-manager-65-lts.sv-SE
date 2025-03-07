@@ -4,11 +4,13 @@ description: Lär dig hur du administrerar användarkonton och tjänster som, tr
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
+hide: true
+hidefromtoc: true
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 2278a4df-2584-4a15-9aaf-bbfc0487b72a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%

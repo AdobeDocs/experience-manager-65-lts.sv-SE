@@ -8,8 +8,10 @@ topic-tags: develop
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+hide: true
+hidefromtoc: true
 exl-id: 6c2bdfc3-0f7b-4d53-b17e-f4cd11ab40ea
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%

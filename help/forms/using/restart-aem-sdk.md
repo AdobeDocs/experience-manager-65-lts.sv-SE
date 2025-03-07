@@ -4,8 +4,10 @@ description: De bästa sätten att starta om AEM SDK
 role: Admin, Developer, User
 feature: Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi
 solution: Experience Manager, Experience Manager Forms
+hide: true
+hidefromtoc: true
 exl-id: 68935045-89b1-4219-b111-88a4600200df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%

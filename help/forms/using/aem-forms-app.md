@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2307'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Ökning {#overview}
 
-Med AEM Forms-appen kan du synkronisera adaptiva formulär, mobilformulär och formuläruppsättningar på mobila enheter, baserat på din server. Du kan definiera arbetsflöden som är [Forms-baserade arbetsflöden i OSGi](/help/forms/using/aem-forms-workflow.md) eller Forms-arbetsflöden i JEE. Du ansvarar t.ex. för ett bankföretag och använder AEM Forms för att hantera kundtillämpningar och kommunikation. Era kunder fyller i en blankett och skickar in den för verifiering. Om du aktiverar formuläret på mobila enheter kan dina kunder fylla i formuläret i AEM Forms-appen. Du kan också hantera verifieringsarbetsflödet genom att aktivera verifieringsformuläret på mobila enheter. Din fältarbetare kan bära en mobil enhet med sig till kunden, verifiera informationen och skicka formuläret. AEM Forms-appen synkroniseras med AEM Forms-servern och hämtar de formulär som är aktiverade för mobila enheter. Om programmet är offline lagras data lokalt.
+Med AEM Forms-appen kan du synkronisera adaptiva formulär, mobilformulär och formuläruppsättningar på mobila enheter, baserat på din server. Du kan definiera arbetsflöden som är [Forms-centrerade arbetsflöden i OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->. Du ansvarar t.ex. för ett bankföretag och använder AEM Forms för att hantera kundtillämpningar och kommunikation. Era kunder fyller i en blankett och skickar in den för verifiering. Om du aktiverar formuläret på mobila enheter kan dina kunder fylla i formuläret i AEM Forms-appen. Du kan också hantera verifieringsarbetsflödet genom att aktivera verifieringsformuläret på mobila enheter. Din fältarbetare kan bära en mobil enhet med sig till kunden, verifiera informationen och skicka formuläret. AEM Forms-appen synkroniseras med AEM Forms-servern och hämtar de formulär som är aktiverade för mobila enheter. Om programmet är offline lagras data lokalt.
 
 Källkoden för AEM Forms-appen är tillgänglig för kunder via Software Distribution. Källkodspaketet i programvarudistribution är tillgängligt som: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
@@ -62,9 +62,13 @@ Så här synkroniserar du formuläret i AEM Forms-appen:
 
 När formuläret publiceras synkroniseras programmet med servern och formuläret hämtas. Om du vill synkronisera flera formulär i författarinstansen markerar du flera formulär i formulärhanteraren och väljer **[!UICONTROL Sync with AEM Forms App]**.
 
-## Stöd för mobila enheter {#mobile-device-support}
+<!--
 
-Se [AEM Forms-app (tidigare Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+## Mobile device support {#mobile-device-support}
+
+See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+
+-->
 
 ## Viktiga funktioner i AEM Forms {#key-features-of-aem-forms-app}
 
@@ -72,7 +76,7 @@ Se [AEM Forms-app (tidigare Mobile Workspace)](/help/forms/using/aem-forms-jee-s
 
 Du kan synkronisera din app med AEM Forms-servern och arbeta med formulär på din mobila enhet.
 
-Med AEM Forms Workflow Server kan ett formulär kopplas till en startpunkt i en workbench-process och AEM Inbox-program. Ett AEM Inbox-program kan ha ett associerat adaptivt formulär. En startpunkt kan ha ett adaptivt formulär, ett HTML5-formulär eller en tillhörande formuläruppsättning. En startpunkt kan skickas som en uppgift eller så kan uppgiften sparas som ett utkast. Mer information om skillnaderna mellan ett AEM Inbox-program och en startpunkt finns i [Åtgärder och funktioner för formulärbaserade AEM-arbetsflöden i OSGi- och AEM Forms JEE-arbetsflöden](capabilities-osgi-jee-workflows.md).
+Med AEM Forms Workflow Server kan ett formulär kopplas till en startpunkt i en workbench-process och AEM Inbox-program. Ett AEM Inbox-program kan ha ett associerat adaptivt formulär. En startpunkt kan ha ett adaptivt formulär, ett HTML5-formulär eller en tillhörande formuläruppsättning. En startpunkt kan skickas som en uppgift eller så kan uppgiften sparas som ett utkast. <!--For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 Med en AEM Forms-server utan AEM Forms-arbetsflöde återges ett formulär som är aktiverat för synkronisering i appen i AEM Forms-appen. Forms finns på fliken Forms i programmet, kan skickas eller sparas som ett utkast. Anpassningsbara formulär och mobilformulär stöds i appen.
 
@@ -123,7 +127,7 @@ Se [Använda automatiskt sparande i AEM Forms-appen](/help/forms/using/autosave-
 
 ## Skillnader mellan funktionerna i AEM Inbox och AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Två av de framträdande sätten att starta ett Forms-centrerat arbetsflöde är att använda [AEM Inbox](/help/forms/using/manage-applications-inbox.md) och appen AEM Forms. Funktionerna i AEM Inbox och AEM Forms skiljer sig dock åt. AEM Inbox fungerar endast med [Forms-centrerade arbetsflöden](/help/forms/using/aem-forms-workflow.md) medan AEM Forms-appen fungerar med både Forms-centrerade arbetsflöden och processhantering. Mer information om skillnaderna mellan funktionerna i AEM Inbox och AEM Forms App finns i [Åtgärder och funktioner i formulärbaserade AEM Workflows för OSGi- och AEM Forms JEE-arbetsflöden](capabilities-osgi-jee-workflows.md).
+Två av de framträdande sätten att starta ett Forms-centrerat arbetsflöde är att använda [AEM Inbox](/help/forms/using/manage-applications-inbox.md) och appen AEM Forms. Funktionerna i AEM Inbox och AEM Forms skiljer sig dock åt. AEM Inbox fungerar endast med [Forms-centrerade arbetsflöden](/help/forms/using/aem-forms-workflow.md) medan AEM Forms-appen fungerar med både Forms-centrerade arbetsflöden och processhantering. <!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## Formulär som stöds {#supported-forms}
 

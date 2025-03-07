@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2469'
+source-wordcount: '1471'
 ht-degree: 0%
 
 ---
@@ -41,19 +41,23 @@ Arkitekturen för AEM Forms innehåller följande komponenter:
 
 **AEM Forms på OSGi:** En AEM Forms på OSGi-miljö är AEM standardförfattare eller AEM Publish med AEM Forms-paket distribuerat på den. Du kan köra AEM Forms på OSGi i en [servermiljö, en servergrupp och grupperade konfigurationer](/help/sites-deploying/recommended-deploys.md). Klusterinställningar är bara tillgängliga för AEM Author-instanser.
 
-**AEM Forms på JEE:** AEM Forms på JEE är en AEM Forms-server som körs på JEE-stacken. Den har AEM Author med AEM Forms tilläggspaket och ytterligare AEM Forms JEE-funktioner som kan användas tillsammans på en enda JEE-stack som körs på en programserver. Du kan köra AEM Forms på JEE i enserver- och gruppkonfigurationer. AEM Forms on JEE krävs endast för dokumentsäkerhet, processhantering och för LiveCycle-kunder som uppgraderar till AEM Forms. Här är några ytterligare scenarier för användning av AEM Forms i JEE:
+<!--
 
-* **Stöd för HTML arbetsyta (för kunder som använder HTML arbetsyta):** AEM Forms på JEE möjliggör enkel inloggning med Bearbetningsinstanser, visar vissa resurser som återges i Bearbeta instanser och hanterar överföringen av formulär som återges på HTML arbetsyta.
-* **Avancerad ytterligare bearbetning av formulär/interaktiva kommunikationsdata**: AEM Forms på JEE kan användas för att ytterligare bearbeta formulär-/interaktiva kommunikationsdata (och spara resultaten i ett lämpligt datalager) i komplexa fall där avancerade processhanteringsfunktioner krävs.
+**AEM Forms on JEE:** AEM Forms on JEE is AEM Forms server running on JEE stack. It has AEM Author with AEM Forms add-on packages and additional AEM Forms JEE capabilities co-deployed on a single JEE stack running on an application server. You can run AEM Forms on JEE in single-server and clustered setups. AEM Forms on JEE is required only to run document security, process management, and for LiveCycle customers upgrading to AEM Forms. Here are a few additional scenarios to use AEM Forms on JEE:
 
-AEM Forms on JEE innehåller även följande stödtjänster till komponenterna i AEM:
+* **HTML workspace support (for customers using HTML workspace):** AEM Forms on JEE enables single sign-on with Processing instances, serves certain assets rendered on Processing instances, and handles submission of forms rendered within the HTML workspace.
+* **Advanced additional form/interactive communication data processing**: AEM Forms on JEE can be utilized for additionally processing form/interactive communication data (and saving the results to a suitable data store) in complex use-cases where advanced process-management capabilities are required.
 
-* **Integrerad användarhantering:** Tillåter att användare av AEM Forms på JEE identifieras som AEM-formulär på OSGi-användare och aktiverar enkel inloggning för både OSGi- och JEE-användare. Detta krävs för scenarier där enkel inloggning mellan AEM-formulär på OSGi och AEM Forms på JEE krävs (till exempel HTML arbetsyta).
-* **Resursvärdtjänster:** AEM Forms på JEE kan hantera resurser (till exempel HTML5-formulär) som återges i AEM Forms på OSGi.
+AEM Forms on JEE also includes provides following supporting services to the AEM components:
 
-AEM Forms redigeringsgränssnitt stöder inte skapande av DOR (Document of Record), PDF forms och HTML5 Forms. Sådana resurser är utformade med den fristående Forms Designer-applikationen och överförs individuellt till AEM Forms Manager. För AEM Forms på JEE kan formulär även utformas som programresurser (i AEM Forms Workbench) och distribueras till AEM Forms på JEE-server.
+* **Integrated user management:** Allows users of AEM Forms on JEE to be recognized as AEM forms on OSGi users and helps enable SSO for both OSGi and JEE users. This is required for scenarios where single sign-on between AEM forms on OSGi and AEM Forms on JEE is required (for example, HTML workspace).
+* **Asset hosting:** AEM Forms on JEE can serve assets (for example, HTML5 forms) rendered on AEM Forms on OSGi.
 
-AEM Forms på OSGi och AEM Forms på JEE har båda arbetsflödesfunktioner. Du kan snabbt skapa och distribuera grundläggande arbetsflöden för olika uppgifter i AEM-formulär på OSGi, utan att behöva installera AEM Forms fullständiga processhanteringsfunktion på JEE. Det finns en viss skillnad i [funktionerna i det formulärbaserade arbetsflödet i AEM Forms för OSGi och Process Management i AEM Forms för JEE](capabilities-osgi-jee-workflows.md). Utvecklingen och hanteringen av formulärcentrerade arbetsflöden i AEM Forms på OSGi använder det välbekanta AEM Workflow och AEM Inbox.
+-->
+
+AEM Forms redigeringsgränssnitt stöder inte skapande av DOR (Document of Record), PDF forms och HTML5 Forms. Sådana resurser är utformade med den fristående Forms Designer-applikationen och överförs individuellt till AEM Forms Manager. <!--Alternatively, for AEM Forms on JEE, forms can be designed as application (in AEM Forms Workbench) assets and deployed into AEM Forms on JEE server.-->
+
+AEM Forms på OSGi <!--and AEM Forms on JEE both--> har arbetsflödesfunktioner. Du kan snabbt skapa och distribuera grundläggande arbetsflöden för olika uppgifter i AEM-formulär på OSGi.<!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->
 
 ## Terminologies {#terminologies}
 
@@ -61,7 +65,7 @@ Följande bild visar olika AEM Form Server-konfigurationer och deras komponenter
 
 ![aem_forms_-_recommendedtopology](assets/aem_forms_-_recommendedtopology.png)
 
-**Författare:** En författarinstans är en AEM Forms-server som körs i standardkörningsläget för författare. Det kan vara AEM Forms på JEE eller AEM Forms i OSGi-miljö. Det är avsett för interna användare, formulärutvecklare och designers av interaktiv kommunikation. Det aktiverar följande funktioner:
+**Författare:** En författarinstans är en AEM Forms-server som körs i standardkörningsläget för författare. <!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.--> Den är avsedd för interna användare, formulär och interaktiva kommunikationsdesigners samt utvecklare. Det aktiverar följande funktioner:
 
 * **Skapa och hantera formulär och interaktiv kommunikation:** Designers och utvecklare kan skapa och redigera adaptiva formulär och interaktiv kommunikation, överföra andra typer av formulär som skapats externt, till exempel formulär som skapats i Adobe Forms Designer, och hantera dessa resurser med Forms Manager-konsolen.
 * **Publicering av formulär och interaktiv kommunikation:** Assets på en författarinstans kan publiceras till en publiceringsinstans för körningsåtgärder. Resurspublicering använder AEM replikeringsfunktioner. Adobe rekommenderar att en replikeringsagent konfigureras på alla författarinstanser för att manuellt skicka publicerade formulär till bearbetningsinstanser, och en annan replikeringsagent konfigureras för att bearbeta instanser med utlösaren *Vid mottagande* aktiverad för att automatiskt replikera mottagna formulär till publiceringsinstanser.
@@ -72,7 +76,7 @@ Följande bild visar olika AEM Form Server-konfigurationer och deras komponenter
 * Transport av obearbetade inlämnade formulärdata till bearbetningsinstanser för vidare bearbetning och lagring i det slutliga databassystemet. Standardimplementeringen i AEM Forms uppnår detta med funktionerna för omvänd replikering i AEM. Det finns också en alternativ implementering för att skicka formulärdata direkt till bearbetningsservrar i stället för att spara dem lokalt först (det senare är en förutsättning för att omvänd replikering ska aktiveras). Kunder som oroar sig för lagring av potentiellt känsliga data i publiceringsinstanser kan gå in för den här [alternativa implementeringen](/help/forms/using/configuring-draft-submission-storage.md) eftersom bearbetningsinstanser vanligtvis ligger i en säkrare zon.
 * Återge och skicka interaktiva meddelanden och brev: En interaktiv kommunikation och ett interaktivt brev återges på publiceringsinstanser och motsvarande data skickas till bearbetningsinstanser för lagring och efterbearbetning. Data kan antingen sparas lokalt på en publiceringsinstans och återreplikeras till en bearbetningsinstans (standardalternativet) senare, eller skickas direkt till bearbetningsinstansen utan att sparas i publiceringsinstansen. Den senare implementeringen är användbar för säkerhetsmedvetna kunder.
 
-**Bearbetning:** En instans av AEM Forms som körs i redigeringsläge utan användare tilldelade till formulärhanteringsgruppen. Du kan distribuera AEM Forms på JEE eller AEM Forms på OSGi som en bearbetningsinstans. Användarna är inte tilldelade att säkerställa att formulärredigerings- och hanteringsaktiviteter inte utförs på Bearbetning-instansen och bara inträffar på Author-instansen. En bearbetningsinstans aktiverar följande funktioner:
+**Bearbetning:** En instans av AEM Forms som körs i redigeringsläge utan användare tilldelade till formulärhanteringsgruppen. Du kan distribuera <!--AEM Forms on JEE or--> AEM Forms på OSGi som en bearbetningsinstans. Användarna är inte tilldelade att säkerställa att formulärredigerings- och hanteringsaktiviteter inte utförs på Bearbetning-instansen och bara inträffar på Author-instansen. En bearbetningsinstans aktiverar följande funktioner:
 
 * **Bearbetning av råformulärsdata som kommer från en publiceringsinstans:** Detta uppnås huvudsakligen med en Bearbetningsinstans via AEM-arbetsflöden som utlöser när data kommer. I arbetsflödena kan du använda steget Formulärdatamodell som du får när du vill arkivera data eller dokument i ett lämpligt datalager.
 * **Säker lagring av formulärdata**: Bearbetningen ger en databas bakom brandväggen för råformulärdata som är isolerad från användare. Varken formulärdesigners på författarinstansen eller slutanvändare på publiceringsinstansen har åtkomst till den här databasen.
@@ -90,42 +94,46 @@ En bearbetningsinstans har konfigurerats att köras i redigeringskörningsläget
 * Det möjliggör omvänd replikering av råformulärdata från en Publish-instans. Standardhanteraren för datalagring kräver funktionen för omvänd replikering.
 * AEM Workflows, som är det primära sättet att bearbeta råformulärsdata som kommer från en Publish-instans, rekommenderas för körning i ett system av utvecklartyp.
 
-## Exempel på fysiska topologier för AEM Forms på JEE {#sample-physical-topologies-for-aem-forms-on-jee}
+<!--
 
-De AEM Forms on JEE-topologier som rekommenderas nedan gäller främst kunder som uppgraderar från LiveCycle eller en tidigare version av AEM Forms på JEE. Adobe rekommenderar att du använder AEM Forms på OSGi för att installera nya produkter. En ny installation av AEM Forms på JEE rekommenderas endast för dokumentsäkerhet och processhantering.
+## Sample physical topologies for AEM Forms on JEE {#sample-physical-topologies-for-aem-forms-on-jee}
 
-### Topologi för dokumenttjänster eller dokumentsäkerhet {#topology-for-using-document-services-or-document-security-capabilities}
+The AEM Forms on JEE topologies recommended below are mainly for customers upgrading from LiveCycle or a previous version of AEM Forms on JEE. Adobe recommends using AEM Forms on OSGi for fresh installations. A fresh installation of AEM Forms on JEE only recommended for using Document Security and Process Management capabilities.
 
-AEM Forms-kunder som bara planerar att använda dokumenttjänster eller dokumentsäkerhetsfunktioner kan ha en topologi som liknar den som visas nedan. Den här topologin rekommenderar att du använder en enda instans av AEM Forms. Du kan också skapa ett kluster eller en grupp med AEM Forms-servrar om det behövs. Den här topologin rekommenderas när de flesta användare programmässigt får tillgång till funktioner på AEM Forms-servern och det krävs minsta möjliga ingrepp via användargränssnittet. Topologin är användbar vid gruppbearbetning av dokumenttjänster. Du kan till exempel använda utdatatjänsten för att skapa hundratals icke-redigerbara PDF-dokument dagligen.
+### Topology for using document services or document security capabilities {#topology-for-using-document-services-or-document-security-capabilities}
 
-Även om AEM Forms låter dig konfigurera och köra alla funktioner från en enda server bör du ändå göra kapacitetsplanering, lastbalansering och konfigurera dedikerade servrar för specifika funktioner i en produktionsmiljö. I en miljö där PDF Generator-tjänsten används för att konvertera tusentals sidor om dagen och lägga till digitala signaturer för att begränsa åtkomsten till dokument, kan du skapa separata AEM Forms-servrar för PDF Generator-tjänsten och digitala signaturer. Det ger optimala prestanda och skalar servrarna oberoende av varandra.
+AEM Forms customers planning to use only document services or document security capabilities can have a topology similar to the one displayed below. This topology recommends using a single instance of AEM Forms. You can also create a cluster or farm of AEM Forms servers, if necessary. This topology is recommended when most users programmatically access capabilities of AEM Forms server and intervention through the user interface is minimum. The topology is helpful in batch processing operations of document services. For example, using output service to create hundreds of non-editable PDF documents on daily basis.
 
-![grundläggande funktioner](assets/basic-features.png)
+Although, AEM Forms lets you set up and run all the functionalities from a single server, yet, you should do capacity planning, load balancing, and set up dedicated servers for specific capabilities in a production environment. For example, for an environment using the PDF Generator service to convert thousands of pages a day and add digital signatures to limit access to documents, set up separate AEM Forms servers for the PDF Generator service and digital signature capabilities. It helps provide optimum performance and scale the servers independent of each other.
 
-### Topologi för AEM Forms processhantering {#topology-for-using-aem-forms-process-management}
+![basic-features](assets/basic-features.png)
 
-AEM Forms-kunder som planerar att använda AEM Forms processhanteringsfunktioner kan till exempel ha en topologi som liknar den som visas nedan. AEM Forms på JEE-servern kan vara i en enda server- eller klusterkonfiguration.
+### Topology for using AEM Forms process management {#topology-for-using-aem-forms-process-management}
 
-Om du uppgraderar från LiveCycle ES4 speglar denna topologi noga det du redan har i LiveCycle, förutom att AEM Author har lagts till i AEM Forms på JEE. Dessutom ändras inte kraven på klustring för kunder som utför en uppgradering. Om du använder AEM Forms i en klustermiljö kan du fortsätta med det i AEM 6.5 Forms. För en ny installation av AEM Forms av JEE för HTML Workspace är körning av AEM-författarinstans som är inbyggd i JEE-miljön ett extra krav.
+AEM Forms customers planning to use AEM Forms process management features, for example, HTML Workspace can have a topology similar to the one displayed below. The AEM Forms on JEE server can be in a single server or cluster configuration.
 
-Formulärdatalagret är ett datalager från tredje part som används för att lagra slutliga bearbetade data av formulär och interaktiv kommunikation. Detta är ett valfritt element i topologin. Du kan också välja att konfigurera en bearbetningsinstans och använda dess databas som det slutliga systemet för post, om det behövs.
+If you are upgrading from LiveCycle ES4, this topology closely mirrors with what you already have in LiveCycle except for the addition of AEM Author built-in to AEM Forms on JEE. Moreover, there is no change in the clustering requirements for customers performing an upgrade. If you were using AEM Forms in a clustered environment, you can continue with same in AEM 6.5 Forms. For a fresh installation of AEM Forms of JEE for using HTML Workspace, running AEM author instance built-in to the JEE environment is an additional requirement.
+
+Form data store is a third-party data store used for storing final processed data of forms and interactive communications. This is an optional element in the topology. You can also choose to set up a processing instance and use its repository as the final system-of-record system, if necessary.
 
 ![topology_for_usinghtmlworkspaceandformsapp](assets/topology_for_usinghtmlworkspaceandformsapp.png)
 
-Topologin rekommenderas för kunder som planerar att använda AEM Forms på en JEE-server för processhanteringsfunktioner (HTML Workspace) utan att behöva använda efterbearbetning, adaptiva formulär, HTML5-formulär och interaktiva kommunikationsfunktioner.
+The topology is recommended to the customers planning to use AEM Forms on JEE server for process management capabilities (HTML Workspace) without using any post-processing, adaptive forms, HTML5 forms, and interactive communication capabilities.
 
-### Topologi för användning av adaptiva formulär, HTML5-formulär, interaktiva kommunikationsfunktioner {#topology-for-using-adaptive-forms-html-forms-interactive-communication-capabilities}
+### Topology for using adaptive forms, HTML5 forms, interactive communication capabilities {#topology-for-using-adaptive-forms-html-forms-interactive-communication-capabilities}
 
-AEM Forms-kunder som planerar att använda AEM Forms funktioner för datainhämtning, till exempel adaptiva formulär, HTML5 Forms, PDF forms, kan ha en topologi som liknar den som visas nedan. Denna topologi rekommenderas också för interaktiv kommunikation i AEM Forms.
+AEM Forms customers planning to use AEM Forms data capture capabilities, for example, adaptive forms, HTML5 Forms, PDF Forms, can have a topology similar to the one displayed below. This topology is also recommended for using interactive communication capabilities of AEM Forms.
 
 ![topology-for-using-forms-osgi-modules](assets/topology-for-using-forms-osgi-modules.png)
 
-Du kan göra följande ändringar/anpassningar av ovanstående föreslagna topologi:
+You can make the following changes/customizations to the above-suggested topology:
 
-* Om du vill använda HTML Workspace och AEM Forms-appen måste du ha en AEM-författare eller bearbetningsinstans. Du kan använda den AEM-författarinstans som är inbyggd i AEM Forms på JEE-servern i stället för att konfigurera ytterligare en extern AEM-författarserver.
-* En instans av AEM Author eller Processing krävs endast för Forms-centrerade arbetsflöden i OSGi, adaptiva formulär, formulärportalen och interaktiv kommunikation.
-* gränssnitt för interaktiv kommunikationsagent körs vanligtvis inom organisationen. Du kan därför behålla en publiceringsserver för agentanvändargränssnittet i det privata nätverket.
-* AEM-formulär på OSGi-instanser som är inbyggda i AEM Forms på JEE-servern kan även köra Forms-centrerade arbetsflöden på OSGi och Bevakade mappar.
+* Using HTML Workspace and AEM Forms app requires an AEM author or processing instance. You can use the AEM author instance built-in to AEM Forms on JEE server instead of setting up an additional external AEM author server.
+* An AEM Author or Processing instance is required only for Forms-centric workflows on OSGi, adaptive forms, forms portal, and interactive communication.
+* interactive communication Agent UI is generally run within the organization. So, you can keep a publish server for Agent UI within the private network.
+* AEM forms on OSGi instance built-in to AEM Forms on JEE server can also run Forms-centric workflows on OSGi and Watched Folders.
+
+-->
 
 ## Exempel på fysiska topologier för användning av AEM Forms i OSGi {#sample-physical-topologies-for-using-aem-forms-on-osgi}
 

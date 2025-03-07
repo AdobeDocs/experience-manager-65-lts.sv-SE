@@ -9,8 +9,10 @@ docset: aem65
 feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: cc0a3d56-3adc-4d6e-87a3-9a8587bbe3f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -19,7 +21,7 @@ ht-degree: 0%
 
 # Introduktion till att arbeta med PDF Generator {#introduction-to-working-with-pdf-generator}
 
-PDF Generator konverterar olika filformat till PDF. Den konverterar även PDF till andra filformat och optimerar storleken på PDF-dokument. En lista över filformat som stöds finns i [Programstöd för PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
+PDF Generator konverterar olika filformat till PDF. Den konverterar även PDF till andra filformat och optimerar storleken på PDF-dokument. En lista över filformat som stöds finns i [Programstöd för PDF Generator](/help/sites-deploying/technical-requirements.md)
 
 **Skickar filer till PDF Generator för bearbetning**
 

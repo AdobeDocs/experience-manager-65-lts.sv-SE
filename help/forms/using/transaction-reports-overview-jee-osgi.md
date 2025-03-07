@@ -6,9 +6,9 @@ feature: Transaction Reports
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 4a075532-5ad9-4b1d-9e04-c0b80d215e00
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,15 @@ Med transaktionsrapporter i AEM Forms kan ni övervaka alla transaktioner sedan 
 
 Nedan finns omfattande instruktioner om hur du aktiverar transaktioner, listan med fakturerbara API:er och anpassade inspelningsimplementeringar, baserat på din AEM Forms-teknologi:
 
-**Transaktionsrapportering för AEM Forms på JEE**
+<!--
 
-* [Aktivera och visa transaktionsrapport för AEM Forms på JEE](/help/forms/using/transaction-report-overview-jee.md)
-* [Lista över fakturerbara API:er för AEM Forms i JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
-* [Registrera en transaktion för anpassade komponent-API:er](/help/forms/using/record-transaction-custom-component-jee.md)
+**Transaction Reporting for AEM Forms on JEE**
+
+* [Enabling and viewing transaction report for AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
+* [List of billable APIs for AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
+* [Record a transaction for custom component APIs](/help/forms/using/record-transaction-custom-component-jee.md)
+
+-->
 
 **Transaktionsrapportering för AEM Forms på OSGi**
 
