@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Läs Adobe Experience Manager 6.5 LTS-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
 breadcrumb-title: Användarhandbok
 user-guide-title: AEM 6.5 LTS
-source-git-commit: b4a1806c48ab0945f83691a597cad214c6d1b645
+source-git-commit: 96fdfc1f754358bc358595c10ba908a4aabce4af
 workflow-type: tm+mt
-source-wordcount: '6819'
+source-wordcount: '6802'
 ht-degree: 1%
 
 ---
@@ -403,7 +403,7 @@ ht-degree: 1%
 + Forms {#forms}
    + Versionsinformation {#release-notes-new-features}
       + [Nyheter](/help/forms/using/whats-new.md)
-      + [Vanliga frågor](/help/forms/using/frequently-asked-questions-faq.md)
+      + [Frågor och svar](/help/forms/using/frequently-asked-questions-faq.md)
    + Komma igång {#getting-started}
       + [Introduktion till AEM Forms](/help/forms/using/introduction-aem-forms.md)
       + [Introduktion till utveckling av anpassningsbara formulär](/help/forms/using/introduction-forms-authoring.md)
@@ -971,12 +971,9 @@ ht-degree: 1%
    + Utvecklarreferens {#developer-reference}
       + [HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
       + [AEM-plugin för att felsöka adaptiva formulär](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
-      + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
-      + [AEM Forms på JEE Java API-referens](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
       + [Formulär-API:er för HTML5-formulär](/help/forms/using/form-bridge-apis.md)
       + [API-referens för JavaScript-bibliotek för Adaptiv Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [Assembler Service och DDX Reference](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
-      + [Workbench - hjälp](https://www.adobe.com/go/learn_aemforms_workbench_65)
       + Programmera med AEM Forms på JEE {#programming-aem-forms-jee}
          + Introduktion till programmering med AEM Forms på JEE {#introduction-programming-aem-forms-jee}
             + [Introduktion till Java API QuickStart](/help/forms/developing/introducing-java-api-soap-quick.md)

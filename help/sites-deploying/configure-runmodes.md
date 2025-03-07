@@ -1,17 +1,13 @@
 ---
 title: Körningslägen
 description: Lär dig hur du trimmar din AEM-instans för specifika syften med körningslägen.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3370d62eafb9339a9f9c638f3fb2e2ce0f14d9ec
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -38,18 +34,14 @@ Installationslägena är färdiga:
 
 * `author`
 * `publish`
-* `samplecontent`
-* `nosamplecontent`
 
 Det här är två par körningslägen som inte kan köras samtidigt. Du kan till exempel:
 
 * definiera antingen `author` eller `publish`, inte båda samtidigt
 
-* kombinera `author` med antingen `samplecontent` eller `nosamplecontent` (men inte båda)
-
 >[!CAUTION]
 >
->När du använder något av ovanstående körningslägen (författare, publicera, sampla innehåll, nosamplingsinnehåll), definierar det värde som används vid installationen körningsläget för den *kompletta körningstiden* för den installationen.
+>När du använder något av ovanstående körningslägen (författare, publicera), definierar det värde som används vid installationen körningsläget för *hela livstiden* för den installationen.
 >
 >För dessa körningslägen kan du *inte* ändra dem efter installationen.
 
@@ -68,16 +60,6 @@ Du kan också skapa egna, anpassade körningslägen. Dessa kan kombineras för a
 * efter behov. .
 
 Du kan också välja anpassade körningslägen vid varje start.
-
-## Använda exempelinnehåll och nosamplingsinnehåll {#using-samplecontent-and-nosamplecontent}
-
-Med dessa lägen kan du styra användningen av exempelinnehåll. Exempelinnehållet definieras innan snabbstarten byggs och kan innehålla paket, konfigurationer och så vidare:
-
-* Körningsläget `samplecontent` installerar innehållet (standardläget).
-
-* `nosamplecontent`-läget installerar inte exempelinnehållet.
-
-Körningsläget nosampling-innehåll är utformat för produktionsinstallationer.
 
 ## Definiera konfigurationsegenskaper för ett körningsläge {#defining-configuration-properties-for-a-run-mode}
 

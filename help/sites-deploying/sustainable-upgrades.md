@@ -1,16 +1,13 @@
 ---
 title: Hållbara uppgraderingar
 description: Läs om hållbara uppgraderingar i Adobe Experience Manager 6.4.
-contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: upgrading
-docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 180fd02df50f84e0d4f9bc01efe56e28d25555e2
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%

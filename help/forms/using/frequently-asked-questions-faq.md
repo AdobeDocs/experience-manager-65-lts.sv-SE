@@ -6,7 +6,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 69c71f6e-a802-45da-a931-28436c7fc1f6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+hide: true
+hidefromtoc: true
+source-git-commit: 1336ccddcc73459f933e5e4b00a3a22605cdb9a1
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%

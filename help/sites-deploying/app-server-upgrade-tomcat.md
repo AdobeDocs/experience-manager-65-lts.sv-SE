@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b835dbf6fd7f40a2a1e1ca26c8a6870b69a19cbe
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Steg före uppgradering {#pre-upgrade-steps}
 
-Innan du utför uppgraderingen måste du utföra flera steg. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) och [Underhållsaktiviteter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Kontrollera dessutom att datorn uppfyller [kraven för AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) och se [planeringshänsyn](/help/sites-deploying/upgrade-planning.md) samt hur [Analyzer](/help/sites-deploying/pattern-detector.md) kan hjälpa dig att beräkna komplexiteten.
+Innan du utför uppgraderingen måste du utföra flera steg. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) och [Underhållsaktiviteter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Kontrollera dessutom att datorn uppfyller [kraven för AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) och se [planeringshänsyn](/help/sites-deploying/upgrade-planning.md) samt hur [Analyzer](/help/sites-deploying/aem-analyzer.md) kan hjälpa dig att beräkna komplexiteten.
 
 
 ### Krav för migrering {#migration-prerequisites}
@@ -42,7 +42,7 @@ I alla exemplen i den här proceduren används Tomcat som Application Server och
    ```
 
 1. Konfigurera en AEM 6.5 LTS-kompatibel Tomcat-server
-1. Granska startparametrarna för AEM-servern och se till att uppdatera parametrarna enligt systemkraven. Mer information finns i [Java 17 Considerations](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)
+1. Granska startparametrarna för AEM-servern och se till att uppdatera parametrarna enligt systemkraven. Mer information finns i [Java 17 Considerations](/help/sites-deploying/custom-standalone-install.md#java-considerations)
 1. Driftsätt 6.5 LTS-kriget på Tomcat-servern med Java 17 och starta AEM 6.5 LTS Tomcat-servern genom att köra:
 
    ```

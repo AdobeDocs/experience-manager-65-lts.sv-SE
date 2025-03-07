@@ -6,9 +6,9 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: dd45dfe953a111ccbbc71e8e25a8a2577037587a
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,6 @@ När du har uppgraderat till Service Pack AEM Forms 6.5.22.0 följer du de här 
       1. Välj version och typ för paketet. Du kan också använda alternativet **[!UICONTROL Search Downloads]** för att filtrera resultaten.
    1. Välj det paketnamn som gäller för ditt operativsystem, välj **[!UICONTROL Accept EULA Terms]** och välj **[!UICONTROL Download]**.
    1. Öppna [Pakethanteraren](/help/sites-administering/package-manager.md) och klicka på **[!UICONTROL Upload Package]** för att överföra paketet.
-   1. Öppna [Pakethanteraren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) och klicka på **[!UICONTROL Upload Package]** för att överföra paketet.
    1. Markera paketet och klicka på **[!UICONTROL Install]**.
 
       Du kan också hämta paketet med hjälp av den direktlänk som finns i artikeln [AEM Forms-utgåvor](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) .
@@ -43,11 +42,9 @@ När du har uppgraderat till Service Pack AEM Forms 6.5.22.0 följer du de här 
 
       Om servern startas via ett skript eller en tjänst ska du uppdatera den så att den innehåller ovanstående så att de även gäller efter efterföljande omstarter.
 
-1. Starta om AEM.
-
-   >[!NOTE]
-   >
-   > Du bör använda kommandot Ctrl + C för att starta om SDK. Om du startar om AEM SDK med alternativa metoder, till exempel att stoppa Java-processer, kan det leda till inkonsekvenser i AEM utvecklingsmiljö.
+      >[!NOTE]
+      >
+      > Du bör använda kommandot Ctrl + C för att starta om SDK. Om du startar om AEM SDK med alternativa metoder, till exempel att stoppa Java-processer, kan det leda till inkonsekvenser i AEM utvecklingsmiljö.
 
 1. Utför efterinstallationsaktiviteter.
 

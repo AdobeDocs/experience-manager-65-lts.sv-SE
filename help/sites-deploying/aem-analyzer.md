@@ -2,14 +2,13 @@
 title: Utvärdera uppgraderingskomplexiteten med AEM Analyzer
 description: Lär dig hur du använder AEM Analyzer för att bedöma hur komplex din uppgradering är.
 topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2069'
 ht-degree: 15%
 
 ---
@@ -34,17 +33,17 @@ AEM 6.5 LTS Analyzer-rapporten innehåller följande kategorier:
 * AEM 6.5-funktioner som har tagits bort av nya funktioner eller som för närvarande inte stöds i AEM 6.5 LTS
 * Ta bort Java- och Guava API-användning
 
-Ytterligare information om kategorierna och eventuella konsekvenser och lösningar som är kopplade till dessa kategorier finns via länkar i AEM 6.5 LTS Analyzer Report.
+Mer information om kategorier och möjliga konsekvenser och lösningar som är kopplade till dessa kategorier finns via länkar i AEM 6.5 LTS Analyzer Report.
 
 ## Tillgänglighet {#analyzer-availability}
 
-AEM Analyzer kan laddas ned som en zip-fil från [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Du kan installera paketet via [Package Manager](/help/sites-administering/package-manager.md) på din AEM-källinstans.
+AEM Analyzer kan laddas ned som en zip-fil från [programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Du kan installera paketet via [Package Manager](/help/sites-administering/package-manager.md) på din AEM-källinstans.
 
 ## Viktigt att tänka på när du använder AEM Analyzer {#important-considerations-for-using-aem-analyzer}
 
 Följ avsnittet nedan för att få en förståelse för viktiga aspekter av att köra AEM Analyzer:
 
-* Analysrapporten byggs med utdata från AEM [Mönsteravkännare](/help/sites-deploying/pattern-detector.md). Den version av Mönsteravkännare som används av Analyzer ingår i AEM Analyzer-installationspaketet
+* Analysrapporten byggs med utdata från AEM Mönsteravkännare. Den version av Mönsteravkännare som används av Analyzer ingår i AEM Analyzer-installationspaketet
 * AEM Analyzer kan bara köras av **admin**-användaren eller en användare i **administratörsgruppen**
 * Analyzer stöds på AEM-instanser med version 6.5 och senare.
 

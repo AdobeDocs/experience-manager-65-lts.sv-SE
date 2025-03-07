@@ -9,7 +9,9 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 exl-id: 7c92e9bb-aa68-4d4b-bf62-060a213e50f3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+hide: true
+hidefromtoc: true
+source-git-commit: 1336ccddcc73459f933e5e4b00a3a22605cdb9a1
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%

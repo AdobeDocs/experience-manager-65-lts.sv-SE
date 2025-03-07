@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Innan du utför uppgraderingen måste du utföra flera steg. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) och [Underhållsaktiviteter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Kontrollera dessutom att datorn uppfyller [kraven för AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md).
 
-Kontrollera [Planera uppgraderingen](/help/sites-deploying/upgrade-planning.md) och hur [AEM Analyzer](/help/sites-deploying/pattern-detector.md) kan hjälpa dig att beräkna komplexiteten i uppgraderingen av AEM.
+Kontrollera [Planera uppgraderingen](/help/sites-deploying/upgrade-planning.md) och hur [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) kan hjälpa dig att beräkna komplexiteten i uppgraderingen av AEM.
 
 ### Krav för migrering {#migration-prerequisites}
 
@@ -82,7 +82,7 @@ Kontrollera [Planera uppgraderingen](/help/sites-deploying/upgrade-planning.md) 
    java -version
    ```
 
-1. Granska startparametrarna för AEM-servern och se till att du uppdaterar parametrarna enligt dina krav. Mer information finns i [Java 17 Considerations](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)
+1. Granska startparametrarna för AEM-servern och se till att du uppdaterar parametrarna enligt dina krav. Mer information finns i [Java 17 Considerations](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 1. Hämta det nya 6.5 LTS-kriget och kopiera det till dropins-mappen på: `/<path-to-aem-server>/dropins/`
 1. Starta AEM-instansen: Det går oftast att göra med det här kommandot:
 

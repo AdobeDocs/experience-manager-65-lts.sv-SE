@@ -1,16 +1,13 @@
 ---
 title: Utvärdera uppgraderingskomplexiteten med mönsteravkännaren
 description: Lär dig hur du använder mönsteravkännaren för att bedöma hur komplicerad din uppgradering är.
-contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
-docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%

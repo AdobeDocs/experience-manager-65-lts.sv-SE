@@ -7,8 +7,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 4db457d2-fefb-410d-8e74-58147f52bbd3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9334414dd47f00eeb79b2d122b78952d2a9c3735
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
