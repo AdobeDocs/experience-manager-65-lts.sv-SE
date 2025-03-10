@@ -8,8 +8,10 @@ content-type: reference
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
 workflow-type: tm+mt
 source-wordcount: '1954'
 ht-degree: 0%

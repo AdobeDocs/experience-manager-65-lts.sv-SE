@@ -4,8 +4,10 @@ description: En lista med artiklar som beskriver hur du utför specifika distrib
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: c316a5d6-0e4a-4710-b4d0-3467f1d5085b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%

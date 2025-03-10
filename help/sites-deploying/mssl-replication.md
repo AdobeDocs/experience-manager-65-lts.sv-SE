@@ -8,8 +8,10 @@ topic-tags: configuring
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: f5944c6e-bf6f-490e-a8b1-3a01b76d32c0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 2%

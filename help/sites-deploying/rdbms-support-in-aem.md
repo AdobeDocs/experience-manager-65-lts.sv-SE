@@ -9,8 +9,10 @@ docset: aem65
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: b6886495-f06e-4e4f-8f38-39206ef43072
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%

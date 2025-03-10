@@ -8,8 +8,10 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: 81306cad-b968-4bdd-973c-50cbcdd2cee7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%

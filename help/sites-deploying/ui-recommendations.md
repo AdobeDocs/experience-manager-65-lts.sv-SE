@@ -4,8 +4,10 @@ description: En lista med rekommendationer relaterade till de klassiska och peko
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: f65f9e94-0837-48d1-a565-cfb880963790
-source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
+source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 0%
