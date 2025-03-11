@@ -4,10 +4,8 @@ description: Lär dig hur du uppgraderar instanser av AEM som distribueras via p
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: 0b4d1cb7-b3a7-4bcd-ad37-d718b2a0abd5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d716571f490fe4bf3b7e58ea2ca85bbe6703ec0d
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%

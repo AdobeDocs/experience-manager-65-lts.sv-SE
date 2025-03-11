@@ -9,9 +9,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5696'
+source-wordcount: '5139'
 ht-degree: 0%
 
 ---
@@ -78,18 +78,15 @@ På grund av detta bör du göra skivans storlek minst två eller tre gånger st
 
 ## Komprimeringslägen i full- och slutläge  {#full-and-tail-compaction-modes}
 
-**AEM 6.5** introducerar **två nya lägen** för **compaction** -fasen i rensningsprocessen för onlineändringar:
+**AEM 6.5 LTS** har **två lägen** för **compaction** -fasen i rensningsprocessen för onlineändringar:
 
-* Läget **Fullständig komprimering** skriver om alla segment och målfiler i hela databasen. Den efterföljande rensningsfasen kan på så sätt ta bort den maximala mängden skräp i databasen. Eftersom fullständig komprimering påverkar hela databasen krävs det mycket systemresurser och tid för att slutföra. Fullständig komprimering motsvarar komprimeringsfasen i AEM 6.3.
+* Läget **Fullständig komprimering** skriver om alla segment och målfiler i hela databasen. Den efterföljande rensningsfasen kan på så sätt ta bort den maximala mängden skräp i databasen. Eftersom fullständig komprimering påverkar hela databasen krävs det mycket systemresurser och tid för att slutföra.
 * Läget **slutkomprimering** skriver bara om de senaste segmenten och tjärfilerna i databasen. De senaste segmenten och tjärfilerna är de som har lagts till sedan den senaste gången komprimeringen kördes, antingen helt eller slut. Den efterföljande rensningsfasen kan därför bara ta bort det skräp som finns i den senaste delen av databasen. Eftersom slutkomprimering bara påverkar en del av databasen krävs betydligt mindre systemresurser och tid för att slutföra kompaktionen än fullständig komprimering.
 
 Dessa komprimeringslägen utgör en kompromiss mellan effektivitet och resursförbrukning: även om slutkomprimeringen är mindre effektiv har den mindre inverkan på den normala systemdriften. Fullständig komprimering är däremot mer effektivt men har större inverkan på den normala systemdriften.
 
-I AEM 6.5 introduceras också en effektivare funktion för borttagning av dubbletter vid komprimering, vilket ytterligare minskar databasens diskutrymme.
+AEM 6.5 LTS har en effektiv funktion för borttagning av innehållsdubbletter vid komprimering, vilket ytterligare minskar databasens diskutrymme.
 
-De två diagrammen nedan visar resultaten från interna laboratorietester som visar hur den genomsnittliga exekveringstiden och den genomsnittliga diskåtgången i AEM 6.5 minskar jämfört med AEM 6.3:
-
-![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
 ### Så här konfigurerar du kompaktion med hel- och slutdata {#how-to-configure-full-and-tail-compaction}
 
@@ -108,7 +105,7 @@ Tänk också på följande:
 Tänk på följande när du använder de nya komprimeringslägena:
 
 * Du kan övervaka in-/utdataaktiviteten (I/O), t.ex. I/O-åtgärder, CPU väntar på IO, spara köstorlek. Detta hjälper till att avgöra om systemet håller på att bli I/O-bundet och kräver en uppgradering.
-* `RevisionCleanupTaskHealthCheck` anger den övergripande hälsostatusen för onlinerevideringsrensningen. Det fungerar på samma sätt som i AEM 6.3 och skiljer inte mellan full- och svanskomprimering.
+* `RevisionCleanupTaskHealthCheck` anger den övergripande hälsostatusen för onlinerevideringsrensningen.
 * Loggmeddelandena innehåller relevant information om komprimeringslägena. När t.ex. onlineredigering av revision startas, visar motsvarande loggmeddelanden komprimeringsläget. I vissa hörnfall återställs systemet till fullständig komprimering när det var schemalagt att köra en slutkomprimering och loggmeddelandena indikerar den här ändringen. Loggexemplen nedan visar komprimeringsläget och ändringen från svans till full komprimering:
 
 ```
@@ -123,83 +120,6 @@ Ibland kan rensningsprocessen fördröjas om du växlar mellan svansen och det f
 **Du bör ändra storlek på disken minst två eller tre gånger så stor som den ursprungligen uppskattade databasstorleken.**
 
 ## Vanliga frågor och svar om rensning av onlineversioner {#online-revision-cleanup-frequently-asked-questions}
-
-### AEM 6.5 Upgrade Considerations {#aem-upgrade-considerations}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td>Frågor </td>
-   <td>Svar</td>
-  </tr>
-  <tr>
-   <td>Vad bör jag veta när jag uppgraderar till AEM 6.5?</td>
-   <td><p>Det beständiga formatet för tarMK ändras med AEM 6.5. Dessa ändringar kräver inget proaktivt migreringssteg. Befintliga databaser genomgår en rullande migrering som är transparent för användaren. Migreringsprocessen initieras första gången AEM 6.5 (eller relaterade verktyg) får åtkomst till databasen.</p> <p><strong>När migreringen till AEM 6.5-beständighetsformatet har startats går det inte att återställa databasen till det tidigare AEM 6.3-beständiga formatet.</strong></p> </td>
-  </tr>
- </tbody>
-</table>
-
-### Migrera till Oak Segment tar {#migrating-to-oak-segment-tar}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td><strong>Frågor</strong></td>
-   <td><strong>Svar</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Varför måste jag migrera databasen?</strong></td>
-   <td><p>I AEM 6.3 behövdes ändringar av lagringsformatet, särskilt för att förbättra prestanda och effekt vid rensning av onlineändringar. Dessa ändringar är inte bakåtkompatibla och databaser som skapats med det gamla Oak-segmentet (AEM 6.2 och tidigare) måste migreras.</p> <p>Ytterligare fördelar med att ändra lagringsformatet:</p>
-    <ul>
-     <li>Bättre skalbarhet (optimerad segmentstorlek).</li>
-     <li>Snabbare <a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">skräpinsamling för datalager</a>.<br /> </li>
-     <li>Markarbeten för framtida förbättringar.</li>
-    </ul> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Stöds det tidigare tjärformatet fortfarande?</strong></td>
-   <td>Endast den nya Oak Segment tar stöds med AEM 6.3 eller senare.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Är innehållsmigreringen alltid obligatorisk?</strong></td>
-   <td>Ja. Om du inte börjar med en ny instans måste du alltid migrera innehållet.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Kan jag uppgradera till 6.3 eller senare och göra migreringen senare (till exempel genom att använda ett annat underhållsfönster)?</strong></td>
-   <td>Nej, som förklaras ovan är innehållsmigrering obligatorisk.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Kan driftstopp undvikas vid migrering?</strong></td>
-   <td>Nej. Detta är en engångsåtgärd som inte kan utföras på en instans som körs.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Vad händer om jag av misstag kör mot fel databasformat?</strong></td>
-   <td>Om du försöker köra eksegmentmodulen mot en eksegment-tjärdatabas (eller omvänt) misslyckas starten med ett <em>IllegalStateException</em> med meddelandet"Ogiltigt segmentformat". Inga data skadas.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Måste sökindexen indexeras om?</strong></td>
-   <td>Nej. När du migrerar från eksegment till eksegment-tar ändras behållarformatet. De data som finns påverkas inte och kommer inte att ändras.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Hur beräknas det förväntade diskutrymmet under och efter migreringen på bästa sätt?</strong></td>
-   <td>Migreringen motsvarar att återskapa segmentbutiken i det nya formatet. Detta kan användas för att uppskatta det ytterligare diskutrymme som behövs under migreringen. Efter migreringen kan det gamla segmentlagret tas bort för att frigöra utrymme.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Hur uppskattar jag migreringens varaktighet på bästa sätt?</strong></td>
-   <td>Migreringsprestanda kan förbättras avsevärt om <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup">rensning av offlineändringar</a> körs före migreringen. Alla kunder uppmanas att göra detta som en förutsättning för uppgraderingsprocessen. Migreringens varaktighet bör i allmänhet vara densamma som tiden för rensningsaktiviteten för offlineändringar, förutsatt att rensningsaktiviteten för offlineändringar har körts före migreringen.</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
 
 ### Online Revision Cleanup körs {#running-online-revision-cleanup}
 
@@ -243,11 +163,6 @@ Ibland kan rensningsprocessen fördröjas om du växlar mellan svansen och det f
   <tr>
    <td><strong>Skulle författare och publicering vanligtvis ha olika fönster för rensning av onlineversioner?</strong></td>
    <td>Detta beror på kontorstid och kundens trafikmönster online. Underhållsfönstren bör konfigureras utanför de huvudsakliga produktionstiderna för att ge bästa möjliga rensningseffekt. För flera AEM Publish-instanser (tarMK-servergrupp) bör underhållsfönstren för onlinerevision Cleanup mellanlagras.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Finns det några krav innan onlineversionen rensas?</strong></td>
-   <td><p>Online Revision Cleanup är endast tillgängligt med AEM 6.3 och senare versioner. Om du använder en äldre version av AEM måste du migrera till den nya <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak Segment-taggen</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>

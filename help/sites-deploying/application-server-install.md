@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d716571f490fe4bf3b7e58ea2ca85bbe6703ec0d
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,13 @@ I det här avsnittet beskrivs hur du installerar Adobe Experience Manager (AEM) 
 Installationsstegen för följande programservrar beskrivs:
 
 * [WebSphere](#websphere)
-* [JBoss](#jboss-eap)
-* [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
-* [Tomcat 8/8.5](#tomcat)
+* [Tomcat 11.0.x](#tomcat)
 
 Mer information om hur du installerar webbprogram, serverkonfigurationer och hur du startar och stoppar servern finns i dokumentationen för respektive programserver.
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->Om du använder Dynamic Media i en WAR-distribution kan du läsa [dokumentationen för dynamiska media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media). -->
 
 ## Allmän beskrivning {#general-description}
 
@@ -49,7 +47,7 @@ Om den distribueras händer följande som standard:
 * körningsläget är `author`
 * instansen (databas, Felix OSGI-miljö, paket och så vidare) är installerad i `${user.dir}/crx-quickstart`där `${user.dir}` är den aktuella arbetskatalogen. Sökvägen till crx-quickstart kallas `sling.home`
 
-* kontextroten är krigsfilens namn, till exempel `aem-6`
+* kontextroten är krigsfilens namn, till exempel `aem-65-lts`
 
 #### Konfiguration {#configuration}
 
@@ -95,7 +93,7 @@ I demonstrationssyfte kan det vara lämpligt att installera författaren och pub
 
 ## Installationsprocedurer för programservrar {#application-servers-installation-procedures}
 
-### WebSphere® 8.5 {#websphere}
+### WebSphere® 24.0.0.7 {#websphere}
 
 Läs [Allmän beskrivning](#general-description) ovan före en distribution.
 
@@ -124,66 +122,7 @@ Läs [Allmän beskrivning](#general-description) ovan före en distribution.
 
 * Starta AEM webbprogram
 
-#### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
-
-Läs [Allmän beskrivning](#general-description) ovan före en distribution.
-
-**Förbered JBoss®-server**
-
-Ange minnesargument i din conf-fil (till exempel `standalone.conf`)
-
-* JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
-
-Om du använder distributionsskannern för att installera AEM webbprogram kan det vara bra att öka `deployment-timeout,` för det angivna attributet `deployment-timeout` i xml-filen för din instans (till exempel `configuration/standalone.xml)`:
-
-```xml
-<subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
-            <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000" deployment-timeout="1000"/>
-</subsystem>
-```
-
-**Distribuera AEM webbprogram**
-
-* Ladda upp AEM webbprogram i JBoss® Administration Console.
-
-* Aktivera AEM webbprogram.
-
-#### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
-
-Läs [Allmän beskrivning](#general-description) ovan före en distribution.
-
-Detta använder en enkel serverlayout med endast en Admin Server.
-
-**Förberedelse av WebLogic-server**
-
-* I `${myDomain}/config/config.xml`lägg till i avsnittet för säkerhetskonfiguration:
-
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` finns på [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) för att se rätt position (som standard är OK för att placera den i slutet av avsnittet)
-
-* Öka inställningarna för virtuellt minne:
-
-   * öppna `${myDomain}/bin/setDomainEnv.cmd` (svara .sh) sökning efter WLS_MEM_ARGS, ange till exempel `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
-   * starta om WebLogic-server
-
-* Skapa en paketmapp i `${myDomain}` och i en cq-mapp och i den en planmapp
-
-**Distribuera AEM webbprogram**
-
-* Ladda ned AEM krigsfil
-* Placera AEM-krigsfilen i mappen ${myDomain}/packages/cq
-* Gör dina konfigurationer i `WEB-INF/web.xml` om det behövs (se ovan i den allmänna beskrivningen)
-
-   * Packa upp filen `WEB-INF/web.xml`
-   * ändra sling.run.modes-parameter för publicering
-   * avkommentera sling.home initial parameter och ange den här sökvägen efter behov (se General Description)
-   * Replikera filen web.xml
-
-* Distribuera AEM-krigsfil som ett program (använd standardinställningarna för de andra inställningarna)
-* Installationen kan ta tid..
-* Kontrollera att installationen har slutförts enligt beskrivningen ovan i den allmänna beskrivningen (t.ex. för att anpassa error.log)
-* Du kan ändra kontextroten på fliken Konfiguration i webbprogrammet i WebLogic `/console`
-
-#### Tomcat 8/8.5 {#tomcat}
+#### Tomcat 11.0.x {#tomcat}
 
 Läs [Allmän beskrivning](#general-description) ovan före en distribution.
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 57302061656ebf37a49041753dd5eb34e7ba22ef
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -38,21 +38,21 @@ På den här sidan hittar du:
    * [Opackad installationskatalog](#unpacked-install-directory)
    * [Starta och stoppa](#starting-and-stopping)
 
-När du har lärt dig grunderna hittar du mer avancerad och detaljerad information på följande undersidor:
+<!-- Once you have familiarized yourself with these basics, you can find in more advanced and detailed information in the following subpages:
 
-* [Tekniska krav](/help/sites-deploying/technical-requirements.md)
-* [Rekommenderade distributioner](/help/sites-deploying/recommended-deploys.md)
-* [Anpassad fristående installation](/help/sites-deploying/custom-standalone-install.md)
-* [Installation av programserver](/help/sites-deploying/application-server-install.md)
-* [Kommandoradens start och stopp](/help/sites-deploying/command-line-start-and-stop.md)
-* [Konfigurerar](/help/sites-deploying/configuring.md)
-* [Uppgradera till AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Instruktionsartiklar för konfiguration](/help/sites-deploying/ht-deploy.md)
-* [Webbkonsol](/help/sites-deploying/web-console.md)
-* [Felsökning av replikering](/help/sites-deploying/troubleshoot-rep.md)
-* [Bästa praxis](/help/sites-deploying/best-practices.md)
-* [Introduktion till AEM Platform](/help/sites-deploying/platform.md)
-* [Riktlinjer för prestanda](/help/sites-deploying/performance-guidelines.md)
+* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
+* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
+* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server Install](/help/sites-deploying/application-server-install.md)
+* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configuring](/help/sites-deploying/configuring.md)
+* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
+* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
+* [Web Console](/help/sites-deploying/web-console.md)
+* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
+* [Best Practices](/help/sites-deploying/best-practices.md)
+* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
+* [Performance Guidelines](/help/sites-deploying/performance-guidelines.md) -->
 
 ## Grundläggande begrepp {#basic-concepts}
 
@@ -79,7 +79,7 @@ AEM-servern är **Java-baserad** och körs på de flesta operativsystem som stö
 
 >[!NOTE]
 >
->Funktionen Adaptive Forms, som finns i AEM 6.5 QuickStart, är avsedd endast för utforsknings- och utvärderingsändamål. För produktion krävs en giltig licens för AEM Forms, eftersom Adaptive Forms-funktionaliteten kräver rätt licensiering.
+>Funktionen Adaptive Forms, som finns i AEM 6.5 LTS QuickStart, är endast avsedd för prospekterings- och utvärderingsändamål. För produktion krävs en giltig licens för AEM Forms, eftersom Adaptive Forms-funktionaliteten kräver rätt licensiering.
 
 ### Vanliga distributionsscenarier {#typical-deployment-scenarios}
 
@@ -102,37 +102,23 @@ I följande avsnitt beskrivs båda scenarierna:
 
 ### Lokalt {#on-premise}
 
-Du kan installera AEM på servrar i din företagsmiljö. Typiska installationsinstanser är: Utvecklings-, testnings- och publiceringsmiljöer. Se [Komma igång](/help/sites-deploying/deploy.md#getting%20started) för grundläggande information om hur du får AEM-programmet att installera det lokalt.
+Du kan installera AEM på servrar i din företagsmiljö. Typiska installationsinstanser är: Utvecklings-, testnings- och publiceringsmiljöer. Se [Komma igång](#getting-started) för grundläggande information om hur du får AEM-programmet att installera det lokalt.
 
-Mer information om de typiska lokala distributionerna finns i [Rekommenderade distributioner](/help/sites-deploying/recommended-deploys.md).
+<!-- To learn more about the typical on-premises deployments, see [Recommended Deployments](/help/sites-deploying/recommended-deploys.md). -->
 
 ### Managed Services med Cloud Manager {#managed-services-using-cloud-manager}
 
-AEM Managed Services är en komplett lösning för Digital Experience Management. Det ger fördelar med upplevelseleverans i molnet samtidigt som man behåller kontrollen, säkerheten och anpassningsfördelarna med en lokal driftsättning. Med AEM Managed Services kan kunderna komma igång snabbare genom att driftsätta i molnet och även genom att lära sig de bästa metoderna och den bästa supporten från Adobe. Organisationer och företagsanvändare kan engagera kunderna på minimal tid, öka marknadsandelen och fokusera på att skapa innovativa marknadsföringskampanjer samtidigt som IT-avdelningen minskar bördan.
-
-Med AEM Managed Services kan man dra nytta av följande fördelar:
-
-**Snabbare time to Market:** Med flexibel molninfrastruktur i Adobe Managed Services kan organisationer snabbt planera, starta och optimera framgångsrika digitala upplevelser. Adobe hanterar molnarkitekturen utan ytterligare kapital-, maskinvaru- eller programvarubehov och Adobe kundlösningstekniker, hjälp med AEM arkitektur, provisionering, anpassning för att ansluta till back-end-appar och bästa praxis för att publicera.
-
-**Högre prestanda:** Tillhandahåller tillförlitliga digitala upplevelser för ditt företag med fyra alternativ för tillgänglighet: 99,5 %, 99,9 %, 99,95 % och 99,99 %. Dessutom kan du använda automatiska modeller för säkerhetskopiering och återställning i flera lägen för att säkerställa tillförlitlighet och hantering av oförutsedda händelser.
-
-**Optimerade IT-kostnader:** Proaktiv vägledning och expertis hjälper organisationer att hålla sig uppdaterade med den senaste versionen av AEM. Adobe Platinum Maintenance and Support ingår automatiskt i nya driftsättningar av AMS Enterprise/Basic, med teknisk expertis och driftserfarenhet för att hjälpa företag att underhålla sina verksamhetskritiska applikationer. Kostnadsfria grundläggande analyser eller Target-funktioner ger ytterligare värde, särskilt för medelstora organisationer med begränsade behov av analys och personalisering.
-
-**Högsta säkerhet:** Säkerställer fysisk säkerhet, nätverks- och datasäkerhet i företagsklass genom att vara värd för kundprogram i en anläggning med begränsad åtkomst, bakom brandväggssystem eller i ett virtuellt privat moln. Den innehåller virtuella datorer med en klientorganisation och robust kryptering för datalagring, antivirala program och dataisolering.
-
-**Cloud Manager**: Cloud Manager, som ingår i Adobe Experience Manager Managed Services-erbjudandet, är en självbetjäningsportal som gör det möjligt för organisationer att självhantera Adobe Experience Manager i molnet. Den innehåller en modern pipeline för kontinuerlig integrering och kontinuerlig leverans (CI/CD) som gör att IT-team och implementeringspartners kan snabba upp leveransen av anpassningar eller uppdateringar utan att kompromissa med prestanda eller säkerhet. Cloud Manager är endast tillgängligt för Adobe kunder som har hanterade tjänster.
-
-Mer information om Cloud Manager och dess resurser finns i [**Cloud Manager användarhandbok**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).
+<i>Anmäl dig snart.</i>
 
 ## Komma igång {#getting-started}
 
 ### Förutsättningar {#prerequisites}
 
-Medan produktionsinstanser körs på dedikerade datorer som kör ett operativsystem som stöds officiellt (se [Tekniska krav](/help/sites-deploying/technical-requirements.md)), kommer Experience Manager-servern att köras på alla system som stöder [**Java™ Standard Edition 8**](https://www.oracle.com/java/technologies/downloads/#java8).
+Medan produktionsinstanser körs på dedikerade datorer som kör ett operativsystem som stöds officiellt (se [Tekniska krav](/help/sites-deploying/technical-requirements.md)), kommer Experience Manager-servern att köras på alla system som stöder [**Java™ Standard Edition 17**](https://www.oracle.com/java/technologies/downloads/#java17).
 
 För att kunna bli bekant och utveckla i AEM är det vanligt att använda en instans som är installerad på din dator och som kör Apple OS X eller skrivbordsversioner av Microsoft® Windows eller Linux®.
 
-På klientsidan fungerar AEM med alla moderna webbläsare (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) både på datorer och surfplattor. Mer information finns i [Klientplattformar som stöds](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
+På klientsidan fungerar AEM med alla moderna webbläsare (**Microsoft® Edge**, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) på både dator och surfplatta. Mer information finns i [Klientplattformar som stöds](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Hämta programvaran {#getting-the-software}
 
@@ -140,9 +126,9 @@ Kunder med ett giltigt underhålls- och supportavtal bör ha fått ett e-postmed
 
 AEM programpaket finns i två former:
 
-* **cq-quickstart-6.5.0.jar:** En fristående körbar *jar*-fil som innehåller allt du behöver för att komma igång.
+* **CQ AEM 6.5 LTS jar:** En fristående körbar *jar* -fil som innehåller allt du behöver för att komma igång.
 
-* **cq-quickstart-6.5.0.war:** En *war*-fil för distribution i en tredjepartsprogramserver.
+* **CQ AEM 6.5 LTS war:** En *war*-fil för distribution i en tredjepartsprogramserver.
 
 I följande avsnitt beskriver vi den **fristående installationen**. Mer information om hur du installerar AEM på en programserver finns i [Installation av programserver](/help/sites-deploying/application-server-install.md).
 
@@ -164,18 +150,18 @@ I följande avsnitt beskriver vi den **fristående installationen**. Mer informa
 
    ```shell
    <aem-install>/
-       cq-quickstart-6.5.0.jar
+       <aem-65-lts>.jar
        license.properties
    ```
 
    Om du inte anger någon `license.properties`-fil dirigerar AEM om webbläsaren till en **välkomstskärm** vid start, där du kan ange en licensnyckel. Du måste begära en giltig licensnyckel från Adobe om du inte redan har en.
 
-1. Om du vill starta instansen i en GUI-miljö dubbelklickar du på filen **`cq-quickstart-6.5.0.jar`**.
+1. Om du vill starta instansen i en GUI-miljö dubbelklickar du på filen **`<aem-65-lts>.jar`**.
 
    Du kan även starta AEM från kommandoraden:
 
    ```shell
-       java -Xmx1024M -jar cq-quickstart-6.5.0.jar
+       java -Xmx1024M -jar <aem-65-lts>.jar
    ```
 
 AEM tar några minuter att packa upp burkfilen, installera sig själv och starta. Ovannämnda procedur ger följande resultat:
@@ -217,7 +203,7 @@ Du installerar de här två instanserna i
 Mer information om hur du anpassar installationen finns i:
 
 * [Anpassad fristående installation](/help/sites-deploying/custom-standalone-install.md)
-* [Körningslägen](/help/sites-deploying/configure-runmodes.md)
+<!-- * [Run Modes](/help/sites-deploying/configure-runmodes.md) -->
 
 ### Opackad installationskatalog {#unpacked-install-directory}
 
@@ -226,7 +212,7 @@ När snabbstartsburken startas för första gången packas den upp i samma katal
 ```xml
 <aem-install>/
     license.properties
-    cq-quickstart-6.5.0.jar
+    <aem-65-lts>.jar
     crx-quickstart/
         app/
         bin/
@@ -279,28 +265,28 @@ AEM startar och dirigerar automatiskt om webbläsaren till rätt sida, vanligtvi
 `https://localhost:4502/`
 
 ![inloggningsskärmen](assets/screen_shot_2019-04-08at83533am.png)
+<!-- 
+After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
-När du har loggat in har du tillgång till AEM. Mer information, beroende på din roll, finns i:
+* [Authoring](/help/sites-authoring/first-steps.md)
+* [Administering](/help/sites-administering/home.md)
+* [Developing](/help/sites-developing/getting-started.md)
+* [Managing](/help/managing/best-practices.md)
 
-* [Redigering](/help/sites-authoring/first-steps.md)
-* [Administratör](/help/sites-administering/home.md)
-* [Utvecklar](/help/sites-developing/getting-started.md)
-* [Hantera](/help/managing/best-practices.md)
+## Advanced Deployment {#advanced-deployment}
 
-## Avancerad distribution {#advanced-deployment}
+The above section should give you a good understanding of the basics of AEM installation. However, installing a full production system of AEM can involve considerably more complexity. For full coverage of advanced installation see the following subpages:
 
-Ovanstående avsnitt bör ge dig en god förståelse för grunderna i AEM-installationen. Att installera ett komplett produktionssystem av AEM kan dock medföra en betydligt större komplexitet. Mer information om avancerad installation finns i följande undersidor:
-
-* [Tekniska krav](/help/sites-deploying/technical-requirements.md)
-* [Rekommenderade distributioner](/help/sites-deploying/recommended-deploys.md)
-* [Anpassad fristående installation](/help/sites-deploying/custom-standalone-install.md)
-* [Installation av programserver](/help/sites-deploying/application-server-install.md)
-* [Kommandoradens start och stopp](/help/sites-deploying/command-line-start-and-stop.md)
-* [Konfigurerar](/help/sites-deploying/configuring.md)
-* [Uppgradera till AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Instruktionsartiklar för konfiguration](/help/sites-deploying/ht-deploy.md)
-* [Webbkonsol](/help/sites-deploying/web-console.md)
-* [Felsökning av replikering](/help/sites-deploying/troubleshoot-rep.md)
-* [Bästa praxis](/help/sites-deploying/best-practices.md)
-* [Introduktion till AEM Platform](/help/sites-deploying/platform.md)
-* [Riktlinjer för prestanda](/help/sites-deploying/performance-guidelines.md)
+* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
+* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
+* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server Install](/help/sites-deploying/application-server-install.md)
+* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configuring](/help/sites-deploying/configuring.md)
+* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
+* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
+* [Web Console](/help/sites-deploying/web-console.md)
+* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
+* [Best Practices](/help/sites-deploying/best-practices.md)
+* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
+* [Performance Guidelines](/help/sites-deploying/performance-guidelines.md) -->
