@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: d716571f490fe4bf3b7e58ea2ca85bbe6703ec0d
+source-git-commit: 5f968f5dc0696a683cc063d330c8edfba05f11ab
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,10 @@ AEM levereras som en enda krigsfil att driftsätta.
 
 Om den distribueras händer följande som standard:
 
-* körningsläget är `author`
-* instansen (databas, Felix OSGI-miljö, paket och så vidare) är installerad i `${user.dir}/crx-quickstart`där `${user.dir}` är den aktuella arbetskatalogen. Sökvägen till crx-quickstart kallas `sling.home`
+* Körningsläget är `author`
+* Instansen (Repository, Felix OSGI environment, bundles, osv.) är installerad i `${user.dir}/crx-quickstart`, där `${user.dir}` är den aktuella arbetskatalogen. Den här sökvägen till crx-quickstart kallas `sling.home`
 
-* kontextroten är krigsfilens namn, till exempel `aem-65-lts`
+* Kontextroten är krigsfilens namn. Exempel: `aem-65-lts`.
 
 #### Konfiguration {#configuration}
 
@@ -63,62 +63,62 @@ Du kan ändra standardbeteendet på följande sätt:
 
 Om du vill distribuera en publiceringsinstans måste du ange att körningsläget ska publiceras:
 
-* Packa upp WEB-INF/web.xml från AEM krigsfil
-* Ändra parametern sling.run.modes till publicering
-* Repetera filen web.xml i AEM war-filen
+* Packa upp `WEB-INF/web.xml` från AEM krigsfil
+* Ändra parametern `sling.run.modes` till publicering
+* Repetera filen `web.xml` i AEM krigsfil
 * Distribuera AEM krigsfil
 
 #### Installationskontroll {#installation-check}
 
-Om du vill kontrollera om alla är installerade kan du:
+Om du vill kontrollera om allt är installerat kan du:
 
 * svansen för filen `error.log` för att se att allt innehåll är installerat
 * kontrollera i `/system/console` att alla paket är installerade
 
 #### Två instanser på samma programserver {#two-instances-on-the-same-application-server}
 
-I demonstrationssyfte kan det vara lämpligt att installera författaren och publicera instansen i en programserver. Gör så här:
+I demonstrationssyfte kan det vara lämpligt att installera både författare och publiceringsinstans på en programserver. För att uppnå det måste du:
 
-1. Ändra variablerna sling.home och sling.run.modes i publiceringsinstansen.
-1. Packa upp WEB-INF/web.xml från AEM krigsfil.
-1. Ändra parametern sling.home till en annan sökväg (absoluta och relativa sökvägar är möjliga).
-1. Ändra sling.run.modes till publicering för publiceringsinstansen.
-1. Upprepa filen web.xml.
-1. Byt namn på krigsfilerna så att de har olika namn. Exempel: en byter namn till aemauthor.war och den andra till aempublish.war.
+1. Ändra variabeln `sling.home` och variabeln `sling.run.modes` i publiceringsinstansen
+1. Packa upp filen `WEB-INF/web.xml` från AEM krigsfil
+1. Ändra parametern `sling.home` till en annan sökväg (absoluta och relativa sökvägar är möjliga)
+1. Ändra `sling.run.modes` till `publish` för publiceringsinstansen
+1. Svara på filen `web.xml`
+1. Byt namn på krigsfilerna så att de har olika namn. Byt till exempel namn på det ena till `aemauthor.war` och det andra till `aempublish.war`
 1. Använd högre minnesinställningar. AEM-standardinstanser använder till exempel `-Xmx3072m`
-1. Distribuera de två webbprogrammen.
-1. Stoppa de två webbprogrammen efter distributionen.
-1. I både författare- och publiceringsinstanser ser du till att egenskapen felix.service.urlhandlers=false anges i filen sling.properties (standard är att den är true).
+1. Distribuera de två webbprogrammen
+1. Stoppa de två webbprogrammen efter distributionen
+1. Kontrollera att egenskapen `felix.service.urlhandlers` är inställd på `false` i filen `sling.properties` i både författare- och publiceringsinstanser. (Standardinställningen är att den är inställd på `true`).
 1. Starta de två webbprogrammen igen.
 
 ## Installationsprocedurer för programservrar {#application-servers-installation-procedures}
 
 ### WebSphere® 24.0.0.7 {#websphere}
 
-Läs [Allmän beskrivning](#general-description) ovan före en distribution.
+Läs [Allmän beskrivning](#general-description) ovan före distributionen.
 
 **Serverförberedelse**
 
 * Låt Basic Auth Headers gå igenom:
 
-   * Ett sätt för AEM att autentisera en användare är att inaktivera den globala administrativa säkerheten för WebSphere®-servern: gå till Säkerhet > Global säkerhet och avmarkera kryssrutan Aktivera administrativ säkerhet, spara och starta om servern.
+   * Ett sätt att låta AEM autentisera en användare är att inaktivera den globala administrativa säkerheten för WebSphere®-servern. Om du vill göra det går du till **Säkerhet > Global säkerhet** och avmarkerar kryssrutan **Aktivera administrativ säkerhet**, sparar och startar om servern.
 
-* ange `"JAVA_OPTS= -Xmx2048m"`
+* Ange `"JAVA_OPTS= -Xmx2048m"`
 * Om du vill installera AEM med kontextroten = /, ändrar du kontextroten för det befintliga standardwebbprogrammet.
 
 **Distribuera AEM webbprogram**
 
 * Ladda ned AEM krigsfil
-* Gör dina konfigurationer i web.xml vid behov (se ovan i den allmänna beskrivningen)
+* Gör dina konfigurationer i filen `web.xml` om det behövs. Mer information finns i [Allmän beskrivning](#general-description) ovan.
 
-   * Packa upp WEB-INF/web.xml
-   * ändra sling.run.modes-parameter för publicering
-   * avkommentera slinga.initial startparameter och ange den här sökvägen efter behov
-   * Replikera filen web.xml
+   * Packa upp filen `WEB-INF/web.xml`
+   * Ändra parametern `sling.run.modes` till `publish`
+   * Avkommentera den inledande `sling.home`-parametern och ange den här sökvägen efter behov
+   * Upprepa filen `web.xml`.
 
 * Distribuera AEM krigsfil
 
-   * Välj en kontextrot (om du vill ange de körningslägen för sling som du behöver för att välja detaljerade steg i distributionsguiden, anger du dem sedan i steg 6 i guiden)
+   * Välj en kontextrot. Om du vill ange de körningslägen för sling som du behöver för att välja de detaljerade stegen i distributionsguiden anger du dem i steg 6 i guiden.
 
 * Starta AEM webbprogram
 
@@ -131,9 +131,12 @@ Läs [Allmän beskrivning](#general-description) ovan före en distribution.
    * Öka inställningarna för virtuellt minne:
 
       * I `bin/catalina.bat` (svara `catalina.sh` på UNIX®) lägger du till följande inställning:
-      * `set "JAVA_OPTS= -Xmx2048m`
 
-   * Tomcat ger inte administratörs- eller hanteraråtkomst vid installationen. Därför måste du redigera `tomcat-users.xml` manuellt för att tillåta åtkomst för dessa konton:
+        ```
+        set "JAVA_OPTS= -Xmx2048m`
+        ```
+
+   * Tomcat aktiverar inte administratörs- eller hanteraråtkomst vid installationen. Därför måste du redigera `tomcat-users.xml` manuellt för att tillåta åtkomst för dessa konton:
 
       * Redigera `tomcat-users.xml` om du vill inkludera åtkomst för administratör och hanterare. Konfigurationen bör se ut ungefär som i följande exempel:
 
@@ -154,15 +157,15 @@ Läs [Allmän beskrivning](#general-description) ovan före en distribution.
 
    * Om du vill distribuera AEM med kontextroten &quot;/&quot; måste du ändra kontextroten för den befintliga ROOT-webbappen:
 
-      * Stoppa och avdistribuera ROOT-webbprogram
-      * Byt namn på mappen ROOT.war i Tomcat-webbappen
+      * Stoppa och avdistribuera ROOT-webbprogrammet
+      * Byt namn på mappen `ROOT.war` i Tomcat-mappen för webbprogram
       * Starta webbprogrammet igen
 
-   * Om du installerar AEM webbprogram med hjälp av hanteraren-gui måste du öka den maximala storleken för en överförd fil, eftersom standardinställningen endast tillåter 50 MB uppladdningsstorlek. För att göra det öppnar web.xml för webbprogrammet manager,
+   * Om du installerar AEM webbprogram med hjälp av hanteraren-gui måste du öka den maximala storleken för en överförd fil, eftersom standardinställningen endast tillåter 50 MB uppladdningsstorlek. För att lyckas med att öppna `web.xml` för hanterarens webbprogram:
 
      `webapps/manager/WEB-INF/web.xml`
 
-     och öka storleken för max-file och max-request-size till minst 500 MB, se följande `multipart-config` exempel på en sådan `web.xml` -fil.
+     och öka `max-file-size` och `max-request-size` till minst 500 MB. Se följande `multipart-config` i en exempelfil `web.xml` nedan:
 
      ```xml
      <multipart-config>
@@ -175,14 +178,14 @@ Läs [Allmän beskrivning](#general-description) ovan före en distribution.
 
 * **Distribuera AEM webbprogram**
 
-   * Ladda ned AEM war-fil.
-   * Gör dina konfigurationer i web.xml om det behövs (se ovan i den allmänna beskrivningen).
+   * Ladda ned AEM krigsfil.
+   * Gör dina konfigurationer i filen `web.xml` om det behövs.
 
-      * Packa upp WEB-INF/web.xml.
-      * Ändra parametern sling.run.modes till publish.
-      * Avkommentera sling.home initial parameter och ange den här sökvägen efter behov.
-      * Repackera filen web.xml.
+      * Packa upp filen `WEB-INF/web.xml`
+      * Ändra parametern `sling.run.modes` till `publish`
+      * Avkommentera den inledande `sling.home`-parametern och ange den här sökvägen efter behov
+      * Upprepa filen `web.xml`.
 
-   * Byt namn på AEM krigsfil till ROOT.war om du vill distribuera den som en rotwebbapp. Byt namn på den till aemauthor.war om du vill ha en aemauthor som kontextrot.
-   * Kopiera den till Tomcat&#39;s webbapps folder.
+   * Byt namn på AEM krigsfil till `ROOT.war` om du vill distribuera den som en rotwebbapp. Byt namn på den till `aemauthor.war` om du vill ha `aemauthor` som kontextrot.
+   * Kopiera den till Tomcat&#39;s webapps folder
    * Vänta tills AEM har installerats.

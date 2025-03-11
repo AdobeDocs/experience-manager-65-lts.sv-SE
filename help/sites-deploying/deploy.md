@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 57302061656ebf37a49041753dd5eb34e7ba22ef
+source-git-commit: 6a94b2e2e1d387401bf11810c46d371c538407f9
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Medan produktionsinstanser körs på dedikerade datorer som kör ett operativsys
 
 För att kunna bli bekant och utveckla i AEM är det vanligt att använda en instans som är installerad på din dator och som kör Apple OS X eller skrivbordsversioner av Microsoft® Windows eller Linux®.
 
-På klientsidan fungerar AEM med alla moderna webbläsare (**Microsoft® Edge**, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) på både dator och surfplatta. Mer information finns i [Klientplattformar som stöds](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
+På klientsidan fungerar AEM med alla moderna webbläsare (**Microsoft® Edge**, **Chrome 51+**, **Firefox 47+**, **Safari 8+**) på både datorer och surfplattor. Mer information finns i [Klientplattformar som stöds](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Hämta programvaran {#getting-the-software}
 
@@ -265,6 +265,7 @@ AEM startar och dirigerar automatiskt om webbläsaren till rätt sida, vanligtvi
 `https://localhost:4502/`
 
 ![inloggningsskärmen](assets/screen_shot_2019-04-08at83533am.png)
+
 <!-- 
 After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
