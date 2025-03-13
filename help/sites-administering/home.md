@@ -1,20 +1,20 @@
 ---
-title: Användarhandbok om AEM 6.5-administration
-description: Läs om hur du administrerar AEM 6.5. Dessa användarhandböcker täcker webbplatsfunktioner, driftsättningsåtgärder, säkerhetsfunktioner, personalisering, integrering med mera.
+title: Användarhandbok för administration av AEM 6.5 LTS
+description: Läs om hur du administrerar AEM 6.5 LTS. Dessa handledningar täcker webbplatsfunktioner, driftsättningsåtgärder, säkerhetsfunktioner, personalisering, integrering med mera.
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 1ef575fc-5fc4-43ca-978e-911118dad438
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3db401e19e0d819760acb3b470d0beda2c16dc5d
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 73%
+source-wordcount: '67'
+ht-degree: 0%
 
 ---
 
-# Användarhandbok om AEM 6.5-administration
+# Användarhandbok för administration av AEM 6.5 LTS
 
-Läs om hur du administrerar AEM 6.5. Dessa användarhandböcker täcker webbplatsfunktioner, driftsättningsåtgärder, säkerhetsfunktioner, personalisering, integrering med mera.
+Läs om hur du administrerar AEM 6.5 LTS. Dessa handledningar täcker webbplatsfunktioner, driftsättningsåtgärder, säkerhetsfunktioner, personalisering, integrering med mera.
 
 ## Nyckeladministrationsartiklar
 

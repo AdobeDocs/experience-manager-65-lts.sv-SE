@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
+source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '801'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Quickstart använder Eclipse Jetty 11.0.x som servermotor.
 
 #### Paketering med Uberjar {#uber-jar-packaging}
 
-* Det finns en liten skillnad i förpackningen till AEM 6.5 LTS. Mer information [finns i](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version-update-the-aem-uber-jar-version).
+* Det finns en liten skillnad i förpackningen till AEM 6.5 LTS. Mer information finns i [Uppdatera AEM Uber Jar-versionen](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 #### Uppgradera {#upgrade}
 
