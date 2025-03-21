@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Läs Adobe Experience Manager 6.5 LTS-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
 breadcrumb-title: Användarhandbok
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 96fdfc1f754358bc358595c10ba908a4aabce4af
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '6802'
+source-wordcount: '6798'
 ht-degree: 1%
 
 ---
@@ -1407,7 +1407,6 @@ ht-degree: 1%
          + [Revision Cleanup](/help/sites-deploying/revision-cleanup.md)
          + [Oak Queries and Indexing](/help/sites-deploying/queries-and-indexing.md)
          + [Så här kör du AEM med TARMK Cold Standby](/help/sites-deploying/tarmk-cold-standby.md)
-         + [Stöd för RDBMS i AEM](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Indexering via Oak-runda JAR](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Oak-run.jar - Exempel på indexering](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Felsöka Oak-index](/help/sites-deploying/troubleshooting-oak-indexes.md)

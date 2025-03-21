@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6217'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ I den här distributionen krävs alla komponenter för en lyckad implementering.
 
 ### Operativsystem {#operating-systems}
 
-En lista över vilka operativsystem som stöds för AEM 6 finns på sidan [Tekniska krav](/help/sites-deploying/technical-requirements.md).
+En lista över vilka operativsystem som stöds för AEM 6.5 LTS finns på sidan [Tekniska krav](/help/sites-deploying/technical-requirements.md).
 
 ### Miljö {#environments}
 

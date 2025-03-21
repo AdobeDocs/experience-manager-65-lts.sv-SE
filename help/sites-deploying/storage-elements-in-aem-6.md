@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,10 @@ För närvarande finns det två nodlagringsimplementationer i AEM6: Tjärlagring
 
 Som standard använder AEM 6 Tjära-lagringen för att lagra noder och binära filer med standardkonfigurationsalternativen. Du kan konfigurera lagringsinställningarna manuellt genom att göra följande:
 
-1. Ladda ned AEM 6 quickstart jar och placera den i en ny mapp.
+1. Ladda ned AEM 6.5 LTS quickstart jar och placera den i en ny mapp.
 1. Packa upp AEM genom att köra:
 
-   `java -jar cq-quickstart-6.jar -unpack`
+   `java -jar <aem-65-lts>.jar -unpack`
 
 1. Skapa en mapp med namnet `crx-quickstart\install` i installationskatalogen.
 
@@ -60,12 +60,12 @@ Som standard använder AEM 6 Tjära-lagringen för att lagra noder och binära f
 
 #### Köra en nyinstallerad AEM-instans med Mongo Storage {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
-AEM 6 kan konfigureras att köras med MongoDB-lagring enligt följande procedur:
+AEM 6.5 LTS kan konfigureras att köras med MongoDB-lagring enligt följande procedur:
 
-1. Ladda ned AEM 6 quickstart jar och placera den i en ny mapp.
+1. Ladda ned AEM 6.5 LTS quickstart jar och placera den i en ny mapp.
 1. Packa upp AEM genom att köra följande kommando:
 
-   `java -jar cq-quickstart-6.jar -unpack`
+   `java -jar <aem-65-lts>.jar -unpack`
 
 1. Kontrollera att MongoDB är installerat och att en instans av `mongod` körs. Mer information finns i [Installera MongoDB](https://docs.mongodb.org/manual/installation/).
 1. Skapa en mapp med namnet `crx-quickstart\install` i installationskatalogen.
@@ -83,10 +83,10 @@ AEM 6 kan konfigureras att köras med MongoDB-lagring enligt följande procedur:
 
 1. Skapa en konfigurationsfil med PID för det datalager som du vill använda och redigera filen för att ange konfigurationsalternativen. Mer information finns i [Konfigurera nodarkiv och datalager](/help/sites-deploying/data-store-config.md).
 
-1. Starta AEM 6 jar med en MongoDB-lagringsserver genom att köra:
+1. Starta AEM 6.5 LTS jar med en MongoDB-lagringsserver genom att köra:
 
    ```shell
-   java -jar cq-quickstart-6.jar -r crx3,crx3mongo
+   java -jar <aem-65-lts>.jar -r crx3,crx3mongo
    ```
 
    När serverdelens körningsläge är **`-r`** börjar exemplet med stöd för MongoDB.
