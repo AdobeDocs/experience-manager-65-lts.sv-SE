@@ -12,7 +12,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: eb6903d0a34e9f9e90eaeee3ca6a89d1a2622dd0
 workflow-type: tm+mt
 source-wordcount: '2672'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Dataflödet är utformat för att automatiskt upptäcka och hantera anslutnings-
 
 #### Prestanda {#performance}
 
-Om du aktiverar TonaMK Cold Standby på den primära instansen påverkas prestanda nästan inte. Den extra CPU-förbrukningen är låg och den extra hårddisk- och nätverks-I/O-funktionen bör inte ge upphov till prestandaproblem.
+Om du aktiverar TonaMK Cold Standby på den primära instansen påverkas prestanda nästan inte. Den extra CPU-förbrukningen är låg och den extra hårddisk- och nätverks-I/O-funktionen bör inte orsaka några prestandaproblem.
 
 I vänteläge kan du förvänta dig hög förbrukning av CPU under synkroniseringsprocessen. Eftersom proceduren inte är flertrådig går det inte att öka hastigheten genom att använda flera kärnor. Om inga data ändras eller överförs finns det ingen mätbar aktivitet. Anslutningshastigheten varierar beroende på maskinvara och nätverksmiljö, men beror inte på storleken på databasen eller SSL-användningen. Tänk på detta när du beräknar den tid som krävs för en inledande synkronisering eller när mycket data har ändrats under tiden på den primära noden.
 
