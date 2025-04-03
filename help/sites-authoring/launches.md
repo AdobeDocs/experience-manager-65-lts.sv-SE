@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
 exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c759cb6830810b0b822cd66f8a29cbcf4f2851eb
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '892'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,9 @@ ht-degree: 4%
 
 Med lanseringar kan du effektivt utveckla innehåll för en framtida release.
 
-En startsida skapas så att du kan göra ändringar redo för framtida publicering (samtidigt som du behåller dina aktuella sidor). När du har redigerat och uppdaterat startsidorna befordrar du dem tillbaka till källan och aktiverar sedan källsidorna (översta nivån). Befordra duplicerar startinnehållet tillbaka till källsidorna och kan göras antingen manuellt eller automatiskt (beroende på fält som anges när du skapar och redigerar startsidan).
+En *Launch* skapas så att du kan göra ändringar inför framtida publicering, samtidigt som du behåller de aktuella sidorna. Det innebär att du redigerar två versioner samtidigt: sidor som för närvarande är publicerade och en version av dessa sidor, som ska publiceras i taget i framtiden. När tiden är inne kan du ersätta originalsidorna och publicera den nya versionen.
+
+Du skapar en *Launch* och när du har redigerat och uppdaterat dina *Launch* -sidor *höjer du* dem tillbaka till *Source*. Du kan sedan aktivera dessa *Source*-sidor (översta nivån). Befordra duplicerar startinnehållet tillbaka till källsidorna och kan göras antingen manuellt eller automatiskt (beroende på fält som anges när du skapar och redigerar startsidan).
 
 Till exempel kommer säsongsproduktsidorna i din onlinebutik att uppdateras kvartalsvis så att de aktuella produkterna passar den aktuella säsongen. Om du vill förbereda dig för nästa kvartalsvisa uppdatering kan du skapa en startsida med lämpliga webbsidor. Under hela kvartalet ackumuleras följande ändringar i startversionen:
 
