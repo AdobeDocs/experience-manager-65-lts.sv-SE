@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Developing,Content Fragments
 role: Admin, Developer
 exl-id: 77f797c8-d8ed-42ea-ad5f-988d976e0ce5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7e1d05c2c6bda15632d49aaecfd931238ae25e79
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 5%
@@ -48,7 +48,7 @@ Följande dokumentationsresor är tillgängliga för ämnesområden.
 |---|---|---|
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Lär dig mer om headless-teknik, vad de ger användarupplevelsen, hur AEM stöder headless-modeller och hur du implementerar ett eget headless-utvecklingsprojekt från A till Z. | Utvecklare |
 | [Headless Translation Journey](/help/journey-headless/translation/overview.md) | Lär dig mer om headless-teknik, varför de kan användas i ditt projekt och hur du skapar och uppdaterar översättningsprojekt i AEM från A till Z. | Översättningsspecialister |
-| [Headless Authoring Journey](/help/journey-headless/author/overview.md) | Börja här för en guidad resa med de kraftfulla och flexibla headless-funktionerna i AEM, deras funktioner och hur du kan modellera ditt innehåll i ditt första headless-projekt. | Arkitekter |
-| [Headless Architect Journey](/help/journey-headless/architect/overview.md) | Börja här för att få en introduktion till de kraftfulla och flexibla headless-funktionerna i Adobe Experience Manager as a Cloud Service och hur du modellerar innehåll för ditt projekt. | Innehållsskapare och författare |
+| [Headless Architect Journey](/help/journey-headless/architect/overview.md) | Börja här för en guidad resa med de kraftfulla och flexibla headless-funktionerna i AEM, deras funktioner och hur du kan modellera ditt innehåll i ditt första headless-projekt. | Arkitekter |
+| [Headless Authoring Journey](/help/journey-headless/author/overview.md) | Börja här för att få en introduktion till de kraftfulla och flexibla headless-funktionerna i Adobe Experience Manager as a Cloud Service och hur du skapar innehåll för ditt projekt. | Innehållsskapare och författare |
 
 Stanna kvar på [kommande resor som omfattar ytterligare roller.](/help/journey-documentation/home.md#journeys)
