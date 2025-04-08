@@ -1,6 +1,6 @@
 ---
-title: Lagringselement i AEM 6.5
-description: Lär dig mer om nodlagringsimplementeringar i AEM 6.5 och hur du underhåller databasen.
+title: Lagringselement i AEM 6.5 LTS
+description: Lär dig mer om nodlagringsimplementationer i AEM 6.5 LTS och hur du underhåller databasen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,35 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
 
-# Lagringselement i AEM 6.5{#storage-elements-in-aem}
+# Lagringselement i AEM 6.5 LTS{#storage-elements-in-aem}
 
 Denna artikel omfattar följande:
 
-* [Översikt över lagring i AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [Översikt över lagring i AEM 6.5 LTS](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Underhålla databasen](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
 
-## Översikt över lagring i AEM 6 {#overview-of-storage-in-aem}
+## Översikt över lagring i AEM 6.5 LTS {#overview-of-storage-in-aem}
 
-En av de viktigaste förändringarna i AEM 6 är innovationerna på databasnivå.
+En av de viktigaste förändringarna i AEM 6.5 LTS är innovationerna på databasnivå.
 
-För närvarande finns det två nodlagringsimplementationer i AEM6: Tjärlagring och MongoDB-lagring.
+För närvarande finns det två nodlagringsimplementationer i AEM 6.5 LTS: Tjärlagring och MongoDB-lagring.
 
 ### Tjärlagring {#tar-storage}
 
 #### Köra en nyinstallerad AEM-instans med TAR Storage {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
->[!CAUTION]
->
->PID:t för segmentnodarkivet har ändrats från org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService i tidigare versioner av AEM 6 till org.apache.jackrabbit.oak.segment.SegmentNodeStoreService i AEM 6.3. Kontrollera att nödvändiga konfigurationsjusteringar görs så att ändringarna återspeglas.
-
-Som standard använder AEM 6 Tjära-lagringen för att lagra noder och binära filer med standardkonfigurationsalternativen. Du kan konfigurera lagringsinställningarna manuellt genom att göra följande:
+Som standard använder AEM 6.5 LTS-lagring för att lagra noder och binära filer med hjälp av standardkonfigurationsalternativen. Du kan konfigurera lagringsinställningarna manuellt genom att göra följande:
 
 1. Ladda ned AEM 6.5 LTS quickstart jar och placera den i en ny mapp.
 1. Packa upp AEM genom att köra:
@@ -47,7 +43,7 @@ Som standard använder AEM 6 Tjära-lagringen för att lagra noder och binära f
 
 1. Skapa en mapp med namnet `crx-quickstart\install` i installationskatalogen.
 
-1. Skapa en fil med namnet `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` i den nyligen skapade mappen.
+1. Skapa en fil med namnet `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` i den nyligen skapade mappen.
 
 1. Redigera filen och ange konfigurationsalternativ. Följande alternativ är tillgängliga för Segment Node Store, som är grunden för AEM Tjära-lagringsimplementering:
 
@@ -57,6 +53,10 @@ Som standard använder AEM 6 Tjära-lagringen för att lagra noder och binära f
 1. Starta AEM.
 
 ### Mongo-lagring {#mongo-storage}
+
+>[!NOTE]
+>
+>Den lägsta version av Mongo som stöds är Mongo 6.
 
 #### Köra en nyinstallerad AEM-instans med Mongo Storage {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
@@ -71,12 +71,12 @@ AEM 6.5 LTS kan konfigureras att köras med MongoDB-lagring enligt följande pro
 1. Skapa en mapp med namnet `crx-quickstart\install` i installationskatalogen.
 1. Konfigurera nodarkivet genom att skapa en konfigurationsfil med namnet på konfigurationen som du vill använda i katalogen `crx-quickstart\install`.
 
-   I Document Node Store (som är grunden för AEM mongoDB-lagringsimplementering) används en fil med namnet `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   I Document Node Store (som är grunden för AEM mongoDB-lagringsimplementering) används en fil med namnet `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
 1. Redigera filen och ange konfigurationsalternativ. Följande alternativ är tillgängliga:
 
    * `mongouri`: [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) som krävs för att ansluta till Mongo-databasen. Standardvärdet är `mongodb://localhost:27017`
-   * `db`: Namnet på Mongo-databasen. Som standard använder nya AEM 6-installationer **aem-author** som databasnamn.
+   * `db`: Namnet på Mongo-databasen. Som standard använder nya AEM 6.5 LTS-installationer **aem-author** som databasnamn.
    * `cache`: Cachestorleken i MB. Cachestorleken fördelas mellan olika cacheminnen som används i DocumentNodeStore. Standardvärdet är 256.
    * `changesSize`: Storlek i MB på den skyddade samlingen som används i Mongo för att cachelagra diff-utdata. Standardvärdet är 256.
    * `customBlobStore`: Ett booleskt värde som anger att ett anpassat datalager används. Standardvärdet är false.

@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9baa4111-831a-4b68-9ce5-82aeeb06e07f
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d0e6fe09ddafabd5da06d53a69b85adad295e415
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,10 @@ Fördelarna:
 * Redundans
 
 ### Oak Cluster med MongoMK Failover för hög tillgänglighet i ett och samma datacenter {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
+
+>[!NOTE]
+>
+>Den lägsta version av Mongo som stöds är Mongo 6.
 
 Detta innebär att flera Oak-instanser får åtkomst till en MongoDB-replikuppsättning i ett enda datacenter, vilket skapar ett aktivt kluster för AEM-redigeringsmiljö. Replikuppsättningar i MongoDB används för hög tillgänglighet och redundans vid maskinvaru- eller nätverksfel.
 

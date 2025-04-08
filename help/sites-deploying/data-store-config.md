@@ -1,5 +1,5 @@
 ---
-title: Konfigurera nodarkiv och datalager i AEM 6
+title: Konfigurera nodarkiv och datalager i AEM 6.5 LTS
 description: Lär dig hur du konfigurerar nodarkiv och datalager och hur du utför skräpinsamling i datalager.
 content-type: reference
 topic-tags: deploying
@@ -10,14 +10,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3330'
 ht-degree: 0%
 
 ---
 
-# Konfigurera nodarkiv och datalager i AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Konfigurera nodarkiv och datalager i AEM 6.5 LTS{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Introduktion {#introduction}
 
@@ -46,19 +46,10 @@ Så här konfigurerar du både nodarkivet och datalagret:
 
 ## Konfigurationer för nodarkivet {#node-store-configurations}
 
->[!CAUTION]
->
->Nyare versioner av Oak har ett nytt namngivningsschema och format för OSGi-konfigurationsfiler. Det nya namnschemat kräver att konfigurationsfilen får namnet **.config** och det nya formatet kräver att värden skrivs. Mer information finns i [Provisioning Model för Apache Sling och Apache SlingStart - Standardkonfigurationsformat](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
->
->Om du uppgraderar från en äldre version av Oak måste du först säkerhetskopiera mappen `crx-quickstart/install`. Efter uppgraderingen återställer du innehållet i mappen till den uppgraderade installationen och ändrar tillägget för konfigurationsfilerna från **.cfg** till **.config**.
-
 ### Segmentnodarkiv {#segment-node-store}
 
-Segmentnodbutiken är grunden för Adobe TjärMK-implementering i AEM6. Det använder `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService`-PID:t för konfiguration.
+Segmentnodbutiken är grunden för Adobe TjärMK-implementering i AEM 6.5 LTS. Det använder `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService`-PID:t för konfiguration.
 
->[!CAUTION]
->
->PID för segmentnodarkivet har ändrats från `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` av AEM 6 till `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` i AEM 6.3. Se till att du gör de nödvändiga konfigurationsjusteringarna för att återspegla den här ändringen.
 
 Du kan konfigurera följande alternativ:
 
@@ -86,7 +77,7 @@ Dokumentnodarkivet är grunden för AEM MongoMK-implementering. Den använder `o
 
 * `mongouri`: [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) som krävs för att ansluta till Mongo-databasen. Standardvärdet är `mongodb://localhost:27017`
 
-* `db`: Namnet på Mongo-databasen. Standardvärdet är **Oak** ``. However, new AEM 6 installations use **aem-author** `` som standarddatabasnamn.
+* `db`: Namnet på Mongo-databasen. Standardvärdet är **aem-author**.
 
 * `cache`: Cachestorleken i MB. Detta fördelas mellan olika cacheminnen som används i DocumentNodeStore. Standardvärdet är `256`
 
@@ -143,9 +134,9 @@ AEM kan konfigureras för att lagra data i Amazon Simple Storage Service (S3). D
 
 >[!NOTE]
 >
->AEM 6.5 har stöd för datalagring i Amazon CS3, men det finns inte stöd för datalagring på andra plattformar, vars leverantörer kan ha egna implementeringar av Amazon S3-API:er.
+>AEM 6.5 LTS har stöd för datalagring i Amazon S3, men det finns inte stöd för att lagra data på andra plattformar, vars leverantörer kan ha egna implementeringar av Amazon S3 API:er.
 
-Om du vill aktivera S3-datalagringsfunktionen måste ett funktionspaket som innehåller S3 Datastore Connector hämtas och installeras. Gå till [Adobe-databasen](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) och hämta den senaste versionen från 1.10.x-versionerna av funktionspaketet (till exempel com.adobe.granite.oak.s3connector-1.10.0.zip). Du måste även hämta och installera den senaste AEM Service Pack-versionen som finns på sidan [AEM 6.5 Release Notes](/help/release-notes/release-notes.md) .
+Om du vill aktivera S3-datalagringsfunktionen måste ett funktionspaket som innehåller S3 Datastore Connector hämtas och installeras. Gå till [Adobe-databasen](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) och hämta den senaste versionen från 1.60.x-versionerna av funktionspaketet (till exempel com.adobe.granite.oak.s3connector-1.60.2.zip). Du måste även hämta och installera den senaste AEM Service Pack-versionen som finns på sidan [AEM 6.5 LTS Release Notes](/help/release-notes/release-notes.md) .
 
 >[!NOTE]
 >
@@ -189,9 +180,9 @@ När du har laddat ned den kan du installera och konfigurera S3 Connector på f�
 1. Redigera filen och lägg till de konfigurationsalternativ som krävs för installationen.
 1. Starta AEM.
 
-## Uppgradera till en ny version av 1.10.x S3 Connector {#upgrading-to-a-new-version-of-the-s-connector}
+## Uppgradera till en ny version av 1.60.x S3 Connector {#upgrading-to-a-new-version-of-the-s-connector}
 
-Så här uppgraderar du till en ny version av 1.10.x S3-kontakten (till exempel från 1.10.0 till 1.10.4):
+Så här uppgraderar du till en ny version av 1.60.x S3-anslutningen:
 
 1. Stoppa AEM-instansen.
 
@@ -205,7 +196,7 @@ Så här uppgraderar du till en ny version av 1.10.x S3-kontakten (till exempel 
    >
    >Filnamnen ovan används endast som illustrationer.
 
-1. Hämta den senaste versionen av funktionspaketet 1.10.x från [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Hämta den senaste versionen av funktionspaketet 1.60.x från [Programvarudistribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
 1. Zippa upp innehållet i en separat mapp och navigera sedan till `jcr_root/libs/system/install/15`.
 1. Kopiera jar-filerna till **&lt;aem-install>**/crx-quickstart/install/15 i AEM installationsmapp.
 1. Starta AEM och kontrollera anslutningsfunktionen.
@@ -413,7 +404,7 @@ Följande steg krävs för att konfigurera en binär replikering med S3:
 
 AEM kan konfigureras för att lagra data i Microsoft® Azure-lagringstjänst. Det använder `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config`-PID:t för konfiguration.
 
-Om du vill aktivera Azure-datalagrets funktioner måste ett funktionspaket som innehåller Azure Connector hämtas och installeras. Gå till [Adobe-databasen](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) och hämta den senaste versionen från 1.6.x-versionerna av funktionspaketet (till exempel com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Om du vill aktivera Azure-datalagrets funktioner måste ett funktionspaket som innehåller Azure Connector hämtas och installeras. Gå till [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) och hämta den senaste versionen från 1.9.x-versionerna av funktionspaketet (till exempel com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
 
 >[!NOTE]
 >

@@ -12,14 +12,18 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '6217'
+source-wordcount: '5965'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager med MongoDB{#aem-with-mongodb}
+
+>[!NOTE]
+>
+>Den lägsta version av Mongo som stöds är Mongo 6.
 
 Den här artikeln syftar till att förbättra kunskapen om de uppgifter och överväganden som krävs för att distribuera AEM (Adobe Experience Manager) med MongoDB.
 
@@ -74,8 +78,6 @@ För att uppnå läs- och skrivgenomströmning för bästa prestanda utan behov 
 
 ### RAM {#ram}
 
-MongoDB version 2.6 och 3.0 som använder MMAP-lagringsmotorn kräver att databasens arbetsuppsättning och dess index passar i RAM-minnet.
-
 Otillräckligt RAM-minne ger en avsevärd prestandaförsämring. Storleken på arbetsuppsättningen och databasen är mycket programberoende. Även om det går att göra vissa uppskattningar är det mest tillförlitliga sättet att fastställa mängden RAM-minne som krävs att bygga AEM-programmet och testa det.
 
 För att underlätta inläsningstestningsprocessen kan följande förhållande mellan arbetsuppsättningens och databasens totala storlek antas:
@@ -85,11 +87,9 @@ För att underlätta inläsningstestningsprocessen kan följande förhållande m
 
 Dessa proportioner innebär att för SSD-distributioner krävs 200 GB RAM för en databas på 2 TB.
 
-Även om samma begränsningar gäller för lagringsmotorn WiredTiger i MongoDB 3.0, är korrelationen mellan arbetsmängden, RAM och sidfel inte så stark. WiredTiger använder inte minnesmappning på samma sätt som MMAP-lagringsmotorn.
-
 >[!NOTE]
 >
->Adobe rekommenderar att du använder lagringsmotorn WiredTiger för AEM 6.1-distributioner som använder MongoDB 3.0.
+>Adobe rekommenderar att du använder lagringsmotorn WiredTiger för AEM 6.5 LTS-distributioner som använder MongoDB 6 eller senare.
 
 ### Datalager {#data-store}
 
@@ -235,8 +235,6 @@ Vi rekommenderar att en beständig cachekonfiguration aktiveras för MongoDB-dis
 
 ### Stöd för operativsystem {#operating-system-support}
 
-MongoDB 2.6 använder en minnesmappad lagringsmotor som är känslig för vissa aspekter av operativsystemets nivåhantering mellan RAM och disk. Fråge- och läsprestanda för MongoDB-instansen använder sig av att undvika eller eliminera långsamma I/O-åtgärder som ofta kallas sidfel. Dessa problem är sidfel som i synnerhet gäller för `mongod`-processen. Blanda inte ihop detta med sidfel på operativsystemnivå.
-
 För snabb åtgärd bör MongoDB-databasen bara komma åt data som redan finns i RAM-minnet. De data som de måste komma åt består av index och data. Den här samlingen med index och data kallas för arbetsuppsättningen. Om arbetsuppsättningen är större än den tillgängliga RAM MongoDB måste skicka in data från disken till en I/O-kostnad, och andra data som redan finns i minnet raderas. Om avlägsnandet medför att data läses in på nytt från disken, dominerar sidfelen och prestandan försämras. Om arbetsuppsättningen är dynamisk och variabel uppstår fler sidfel som stöd för åtgärder.
 
 MongoDB kan köras i flera operativsystem, bland annat en mängd olika Linux®-versioner, Windows och macOS. Mer information finns på [https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms). Beroende på vilket operativsystem du väljer har MongoDB olika rekommendationer på operativsystemnivå. Dokumentationen finns på [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) och sammanfattas här.
@@ -246,7 +244,6 @@ MongoDB kan köras i flera operativsystem, bland annat en mängd olika Linux®-v
 * Stäng av de genomskinliga övertoningarna och överstrålningarna. Mer information finns i [Inställningar för genomskinliga stora sidor](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/).
 * [Justera readahead-inställningarna](https://docs.mongodb.com/manual/administration/production-notes/#readahead) på enheterna som lagrar databasfilerna så att du passar ditt användningssätt.
 
-   * Om din arbetsuppsättning är större än det tillgängliga RAM-minnet och dokumentets åtkomstmönster är slumpmässigt bör du, för MMAPv1-lagringsmotorn, överväga att sänka läsbarheten till 32 eller 16. Utvärdera olika inställningar så att du kan hitta ett optimalt värde som maximerar det inbyggda minnet och minskar antalet sidfel.
    * För lagringsmotorn WiredTiger ska du ställa in readahead på 0 oavsett lagringsmedietyp (snurrning, SSD osv.). I allmänhet bör du använda den rekommenderade inställningen för framåtriktad avläsning, såvida inte testningen visar en mätbar, upprepningsbar och tillförlitlig fördel i ett högre avläsningsvärde. [Stöd för MongoDB Professional](https://docs.mongodb.com/manual/administration/production-notes/#readahead) kan ge råd och vägledning om icke-nollbaserade readahead-konfigurationer.
 
 * Inaktivera det justerade verktyget om du kör RHEL 7/CentOS 7 i en virtuell miljö.
@@ -358,11 +355,13 @@ Information om hur du justerar storleken på det interna WiredTiger-cacheminnet 
 
 ### NUMA {#numa}
 
-NUMA (Non-Uniform Memory Access) gör att en kärna kan hantera hur minne mappas till processorkärnorna. Även om den här processen försöker göra minnesåtkomsten snabbare för kärnor som ser till att de kan komma åt de data som krävs, så stör NUMA MMAP införandet av ytterligare latens eftersom läsningar inte kan förutsägas. Därför måste NUMA inaktiveras för processen `mongod` på alla operativsystem som kan användas.
+NUMA (Non-Uniform Memory Access) gör att en kärna kan hantera hur minne mappas till processorkärnorna.
 
 I ett NUMA-arkitekturminne är alltså anslutet till CPU:er och CPU:er är anslutna till en buss. I en SMP- eller UMA-arkitektur är minnet anslutet till bussen och delas av CPU:er. När en tråd allokerar minne på ett NUMA-CPU allokeras det enligt en princip. Standardinställningen är att minne som är kopplat till trådens lokala CPU ska allokeras, såvida det inte finns något ledigt utrymme. I så fall används minne från en kostnadsfri CPU till högre kostnad. När minnet har tilldelats flyttas det inte mellan CPU:er. Allokeringen utförs av en princip som ärvs från den överordnade tråden, vilket i slutändan är den tråd som startade processen.
 
-I många databaser där datorn är en flerkärnig, enhetlig minnesarkitektur leder det här scenariot till att den första CPU-funktionen blir full först och den andra CPU-fyllningen senare. Det är särskilt sant om en central tråd ansvarar för allokering av minnesbuffertar. Lösningen är att ändra NUMA-principen för huvudtråden som används för att starta `mongod`-processen genom att köra följande kommando:
+Om du kör MongoDB på ett system med icke-Uniform Memory Access (NUMA) kan det orsaka ett antal driftproblem, bland annat långsamma prestanda under tidsperioder, oförmåga att använda allt tillgängligt RAM-minne och hög användning av systemprocesser.
+
+Lösningen är att ändra NUMA-principen för huvudtråden som används för att starta `mongod`-processen genom att köra följande kommando:
 
 ```shell
 numactl --interleaved=all <mongod> -f config
@@ -676,10 +675,6 @@ Mer allmän information om MongoDB-prestanda finns i [Analyserar MongoDB-prestan
 MongoMK stöder samtidig användning av flera AEM-instanser med en databas, men inte samtidiga installationer.
 
 För att lösa problemet måste du först köra installationen med en enda medlem och lägga till de andra efter att den första installationen är klar.
-
-### Sidnamnslängd {#page-name-length}
-
-Om AEM körs på en MongoMK persistence Manager-distribution är [sidnamnen begränsade till 150 tecken.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >
