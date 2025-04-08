@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Läs Adobe Experience Manager 6.5 LTS-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
 breadcrumb-title: Användarhandbok
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 5405b449377e464b7311b09f2f854488e404c1fd
+source-git-commit: bec8386db59691ae2d0346afc0cbd48fbc4890de
 workflow-type: tm+mt
-source-wordcount: '6798'
+source-wordcount: '6800'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 1%
 + Versionsinformation {#release-notes}
    + [Versionsinformation](/help/release-notes/release-notes.md)
    + [Vanliga frågor](/help/release-notes/faq.md)
+   + [Tekniska frågor och svar](/help/release-notes/technical-faq.md)
 + Dokumentskydd {#security}
    + [Användaradministration och -säkerhet](/help/sites-administering/security.md)
    + [Behörighetsadministration för användare, grupp och åtkomst](/help/sites-administering/user-group-ac-admin.md)
@@ -50,7 +51,7 @@ ht-degree: 1%
    + [Konfigurera IMS-integreringar för AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + Redigering {#authoring}
-      + Viktiga uppgifter, verktyg och begrepp för AEM-redigering {#essentials}
+      + Viktiga uppgifter, verktyg och koncept för AEM Authoring {#essentials}
          + [Steg 1 för författare](/help/sites-authoring/first-steps.md)
          + [Sidredigering](/help/sites-authoring/page-authoring.md)
          + [Snabbguide till framtagning av sidor](/help/sites-authoring/qg-page-authoring.md)
@@ -108,7 +109,7 @@ ht-degree: 1%
          + [Innehållsinsikt](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/content-insights.html)
          + [Analyserar sidprestanda](/help/sites-authoring/ci-analyze.md)
          + [Visa sidanalysdata](/help/sites-authoring/pa-using.md)
-      + Personanpassning {#personalization}
+      + Personalization {#personalization}
          + [Personalization](/help/sites-authoring/personalization.md)
          + [Förhandsgranska sidor med ContextHub-data](/help/sites-authoring/ch-previewing.md)
          + [Skapa riktat innehåll med målläge](/help/sites-authoring/content-targeting-touch.md)
@@ -124,7 +125,7 @@ ht-degree: 1%
          + [Rikta in er på Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
          + [Skapa Adobe Campaign Forms i AEM](/help/sites-authoring/adobe-campaign-forms.md)
          + [Adobe Campaign Components](/help/sites-authoring/adobe-campaign-components.md)
-   + Administrerar {#administering}
+   + Administratör {#administering}
       + [Administrera användarhandboken - översikt](/help/sites-administering/home.md)
       + Webbplatsfunktioner {#introduction}
          + [MSM och översättning](/help/sites-administering/msm-and-translation.md)
@@ -179,7 +180,7 @@ ht-degree: 1%
          + [Redigerare](/help/sites-administering/enable-classic-ui-editor.md)
          + [Aktivera åtkomst till klassiskt gränssnitt](/help/sites-administering/enable-classic-ui.md)
          + [Admin Consoles](/help/sites-administering/enable-classic-ui-admin.md)
-      + Personanpassning {#personalization}
+      + Personalization {#personalization}
          + [Personalization](/help/sites-administering/personalization.md)
          + [ContextHub konfigureras](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/personlization/ch-configuring.html)
          + [Klientkontext](/help/sites-administering/client-context.md)
@@ -256,7 +257,7 @@ ht-degree: 1%
       + [Lägg till bildscheman](/help/assets/image-maps.md)
       + [Återanvända resurser med MSM](/help/assets/reuse-assets-using-msm.md)
       + [Ansluten Assets med  [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
-   + Dynamiska media{#dynamic}
+   + Dynamiska medier{#dynamic}
       + [Arkiv med nyhetsbrev från Experience League](/help/assets/dynamic-media-newsletter.md)
       + [Konfigurera Dynamic Media](/help/assets/administering-dynamic-media.md)
       + [Arbeta med Dynamic Media](/help/assets/dynamic-media.md)
@@ -396,7 +397,7 @@ ht-degree: 1%
       + [Relaterade tillgångar](/help/assets/related-assets.md)
       + [Delning av privata mappar](/help/assets/private-folder.md)
       + [Videoåtergivningar](/help/assets/video-renditions.md)
-   + Integrering med andra lösningar {#integrations}
+   + Integration med andra lösningar {#integrations}
       + [Integreringar med  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Installera [!DNL enhanced connector] för [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Konfigurera [!DNL enhanced connector] för [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
@@ -410,14 +411,14 @@ ht-degree: 1%
       + [Introduktion till interaktiv kommunikation](/help/forms/using/interactive-communications-overview.md)
       + [Introduktion till hantering av formulär](/help/forms/using/introduction-managing-forms.md)
       + [Introduktion till den automatiserade konverteringstjänsten för formulär](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
-      + Självstudie: Skapa ditt första adaptiva formulär {#create-first-adaptive-form}
+      + Självstudiekurs: Skapa ditt första adaptiva formulär {#create-first-adaptive-form}
          + [Självstudiekurs: Skapa ditt första anpassningsbara formulär](/help/forms/using/create-your-first-adaptive-form.md)
          + [Självstudiekurs: Skapa ett anpassat formulär](/help/forms/using/create-adaptive-form.md)
          + [Självstudiekurs: Skapa formulärdatamodell](/help/forms/using/create-form-data-model.md)
          + [Självstudiekurs: Använda regler i anpassade formulärfält l](/help/forms/using/apply-rules-to-adaptive-form-fields.md)
          + [Självstudiekurs: Formatera ditt anpassade formulär](/help/forms/using/style-your-adaptive-form.md)
          + [Självstudiekurs: Publicera ditt adaptiva formulär](/help/forms/using/publish-your-adaptive-form.md)
-      + Självstudie: Skapa din första interaktiva kommunikation {#create-first-interactive-communication}
+      + Självstudiekurs: Skapa din första interaktiva kommunikation {#create-first-interactive-communication}
          + [Självstudiekurs: Skapa din första interaktiva kommunikation](/help/forms/using/create-your-first-interactive-communication.md)
          + [Självstudiekurs: Planera interaktiv kommunikation](/help/forms/using/planning-interactive-communications.md)
          + [Självstudiekurs: Skapa formulärdatamodell](/help/forms/using/create-form-data-model0.md)
@@ -471,7 +472,7 @@ ht-degree: 1%
       + [Hämta XDP- och PDF-dokument i AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md)
       + [Importera och exportera resurser till AEM Forms](/help/forms/using/import-export-forms-templates.md)
       + [Stöd för nya språk för lokalisering av adaptiva formulär](/help/forms/using/supporting-new-language-localization.md)
-      + Hanterar användardata {#handling-user-data}
+      + Hantera användardata {#handling-user-data}
          + [Forms-centrerade arbetsflöden på OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
          + [Forms användarhantering](/help/forms/using/user-management-handling-user-data.md)
          + [Forms JEE-arbetsflöden](/help/forms/using/forms-workflow-jee-handling-user-data.md)
@@ -479,7 +480,7 @@ ht-degree: 1%
          + [Korrespondenshantering](/help/forms/using/correspondence-management-handling-user-data.md)
          + [Integrering med Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
          + [Dokumentsäkerhet](/help/forms/using/document-security-handling-user-data.md)
-      + Härdar AEM Forms-miljön {#hardening-aem-forms-environment}
+      + Förbättrad AEM Forms-miljö {#hardening-aem-forms-environment}
          + [Förbättra och skydda AEM-formulär i OSGi-miljö](/help/forms/using/hardening-securing-aem-forms-environment.md)
          + [Allmänna säkerhetsfrågor för AEM Forms i JEE](/help/forms/using/general-security-considerations.md)
          + [Förbättra din AEM Forms på JEE-miljö](/help/forms/using/hardening-aem-forms-jee-environment.md)
@@ -628,7 +629,7 @@ ht-degree: 1%
       + [Integrera AEM blankettarbetsyta med Microsoft Office SharePoint Server](/help/forms/using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
       + [Arbeta med att göra-listor](/help/forms/using/todo-lists.md)
       + [Felsökningsriktlinjer för arbetsytan i AEM Forms](/help/forms/using/troubleshooting-guidelines-html-workspace.md)
-   + AEM Forms-app {#aem-forms-app}
+   + AEM Forms {#aem-forms-app}
       + [Introduktion till AEM Forms](/help/forms/using/aem-forms-app.md)
       + [Konfigurera miljö för AEM Forms-program](/help/forms/using/setup-environment-mobile-workspace.md)
       + [Konfigurera Xcode-projektet och bygg iOS-appen](/help/forms/using/setup-xcode-project-build-installer.md)
@@ -706,7 +707,7 @@ ht-degree: 1%
       + [Infogade villkor och upprepningar i interaktiv kommunikation och brev](/help/forms/using/cm-inline-condition.md)
       + [Dokumentfragment](/help/forms/using/lists.md)
       + [Egenskaper för konfiguration av korrespondenshantering](/help/forms/using/cm-configuration-properties.md)
-   + Integrera AEM Forms med Experience Cloud-lösningar {#integrate-aem-forms-with-experience-cloud-solutions}
+   + Integrera AEM Forms med Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
       + [Skapa riktade upplevelser i AEM Forms](/help/forms/using/experience-targeting-forms.md)
       + [Mät och förbättra effektiviteten och konverteringen av blanketter](/help/forms/using/measure-improve-performance-forms-documents.md)
       + [Analytics Using Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md)
@@ -760,7 +761,7 @@ ht-degree: 1%
       + [Designer FormCalc-referens](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [Använda klottersignaturer i HTML5-formulär](/help/forms/using/scribble-signature.md)
       + [Ändra sidans nollinnehåll i Designer](/help/forms/using/changing-page-zero-content-designer.md)
-      + Bästa praxis för hjälpmedel {#accessibility-best-practices}
+      + Bästa metoder för tillgänglighet {#accessibility-best-practices}
          + [Introduktion](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Bästa tillvägagångssätt för att skapa formulär](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [Tekniker för att testa formulärtillgänglighet](/help/forms/using/techniques-for-testing-form-accessibility.md)
@@ -791,7 +792,7 @@ ht-degree: 1%
          + [Aktivera och visa transaktionsrapporter](/help/forms/using/transaction-report-overview-jee.md)
          + [Lista över fakturerbara API:er för AEM Forms i JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
          + [Registrera en transaktion för anpassade komponent-API:er](/help/forms/using/record-transaction-custom-component-jee.md)
-   + Administratörshjälp för AEM Forms på JEE {#administrator-help}
+   + Administratörshjälp för AEM Forms i JEE {#administrator-help}
       + Kom igång {#get-started}
          + [Allmänna inställningar för AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
          + [Uppdatera licenstypen för distributionen](/help/forms/using/admin-help/update-license-type-deployment.md)
@@ -820,7 +821,7 @@ ht-degree: 1%
          + [Skapa och konfigurera grupper](/help/forms/using/admin-help/creating-configuring-groups.md)
          + [Sök efter en användare eller grupp](/help/forms/using/admin-help/search-user-or-group.md)
          + [Skapa och konfigurera roller](/help/forms/using/admin-help/creating-configuring-roles.md)
-      + Ansluter till ett innehållshanteringssystem {#connect-content-management-system}
+      + Ansluta till ett innehållshanteringssystem {#connect-content-management-system}
          + [Konfigurera Connector for EMC Documentum](/help/forms/using/admin-help/configuring-connector-emc-documentum.md)
          + [Konfigurera Connector för IBM FileNet](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
          + [Konfigurera Connector för IBM Content Manager](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
@@ -847,7 +848,7 @@ ht-degree: 1%
       + [Konfigurera bevakade mappslutpunkter](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Konfigurera slutpunkter för Aktivitetshanteraren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Typer av slutpunkter](/help/forms/using/admin-help/types-endpoints.md)
-      + Konfigurerar Acrobat Reader DC-tillägg {#configure-acrobat-reader-dc-extensions}
+      + Konfigurera Acrobat Reader DC-tillägg {#configure-acrobat-reader-dc-extensions}
          + [Certifikattyper som används av Acrobat Reader DC-tillägg](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
          + [Känna igen giltiga och utgångna certifikat i PDF-dokument](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
          + [Konfigurera Acrobat Reader DC-tillägg för datainhämtning](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
@@ -874,7 +875,7 @@ ht-degree: 1%
          + [Konfigurera SSL för JBoss Application Server](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
          + [Konfigurera SSL i Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
          + [Konfigurera SSL för WebSphere Application Server](/help/forms/using/admin-help/configuring-ssl-websphere-application-server.md)
-      + Arbetar med dokumentsäkerhet {#work-with-document-security}
+      + Arbeta med dokumentsäkerhet {#work-with-document-security}
          + [Om dokumentsäkerhet](/help/forms/using/admin-help/document-security.md)
          + [Säker informationsleverans i stora volymer](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
          + [Konfigurera klient- och serveralternativ](/help/forms/using/admin-help/configuring-client-server-options.md)
@@ -885,7 +886,7 @@ ht-degree: 1%
          + [Använda webbsidor för dokumentsäkerhet](/help/forms/using/admin-help/using-document-security-web-pages.md)
          + [Skapa och hantera principuppsättningar](/help/forms/using/admin-help/creating-policy-sets.md)
          + [Registrera som användare](/help/forms/using/admin-help/registering-as-a-user.md)
-      + Konfigurerar Forms {#configure-forms}
+      + Konfigurera Forms {#configure-forms}
          + [Grunderna för att konfigurera formulär](/help/forms/using/admin-help/overview-7.md)
          + [Ange alternativ för internationalisering](/help/forms/using/admin-help/setting-internationalization-options.md)
          + [Konfigurera cachelagring för Forms](/help/forms/using/admin-help/configuring-caching-forms.md)
@@ -904,7 +905,7 @@ ht-degree: 1%
          + [Ange teckensnitt som ska bäddas in](/help/forms/using/admin-help/specify-fonts-embed.md)
          + [Ange säkerhetsinställningar](/help/forms/using/admin-help/specify-security-settings.md)
          + [Ändra teckenuppsättningen](/help/forms/using/admin-help/change-character-set.md)
-      + Konfigurerar formulärarbetsflödet {#configure-forms-workflow}
+      + Konfigurera arbetsflöde för formulär{#configure-forms-workflow}
          + [Om administration och processterminologi](/help/forms/using/admin-help/administration-process-terminology.md)
          + [Hantera processer](/help/forms/using/admin-help/processes.md)
          + [Konfigurera affärskalendrar](/help/forms/using/admin-help/configuring-business-calendars.md)
@@ -915,38 +916,38 @@ ht-degree: 1%
          + [Arbeta med fasta operationer och grenar](/help/forms/using/admin-help/stalled-operations-branches.md)
          + [Konfigurera delade köer](/help/forms/using/admin-help/configuring-shared-queues.md)
          + [Arbeta med uppgifter](/help/forms/using/admin-help/tasks.md)
-      + Konfigurerar Workspace {#configure-workspace}
+      + Konfigurera Workspace {#configure-workspace}
          + [Översikt över Workspace](/help/forms/using/admin-help/overview-10.md)
          + [Importera och exportera globala inställningar](/help/forms/using/admin-help/importing-exporting-global-settings.md)
          + [Ställa in dagens meddelande](/help/forms/using/admin-help/setting-message-day.md)
          + [Anpassa sökmallar](/help/forms/using/admin-help/customizing-search-templates.md)
          + [Hantera de kategorier som visas i Workspace](/help/forms/using/admin-help/categories-displayed-workspace.md)
-      + Hälsoövervakaren {#health-monitor}
+      + Hälsoövervakning {#health-monitor}
          + [Översikt över hälsoövervakning](/help/forms/using/admin-help/overview-11.md)
          + [Finjustera prestanda för hälsoövervakning](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
          + [Visa statistik för Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md)
          + [Visa systeminformation](/help/forms/using/admin-help/view-system-information.md)
          + [Rensa poster från Job Manager-databasen](/help/forms/using/admin-help/purge-records-job-manager-database.md)
-      + Underhåller AEM-formulär {#maintain-aem-forms}
+      + Underhåll AEM-blanketter {#maintain-aem-forms}
          + [Loggfiler](/help/forms/using/admin-help/log-files.md)
          + [Användarhantering](/help/forms/using/admin-help/user-management.md)
          + [Övervaka användning av AEM-formulär](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
          + [Arbetshanteraren och begränsning](/help/forms/using/admin-help/manager-throttling.md)
          + [Köra AEM-formulär i underhållsläge](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
-      + Underhåller AEM-formulärdatabasen {#maintain-aem-forms-database}
+      + Underhålla AEM formulärdatabas {#maintain-aem-forms-database}
          + [DB2-databas: Köra en process varje vecka](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
          + [Tröskelvärde för högsta antal öppna markörer i Oracle-databasen](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
          + [IBM DB2-databas: Kör kommandon för regelbundet underhåll](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
          + [Rensningsprocessdata](/help/forms/using/admin-help/purging-process-data.md)
          + [Microsoft SQL Server-databas: finjusterar konfigurationen](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
          + [Tips för att minimera databastillväxt](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
-      + Underhåller programservern {#manage-application-server}
+      + Underhåll programservern {#manage-application-server}
          + [Programserverwebbplatser](/help/forms/using/admin-help/application-server-websites.md)
          + [Global dokumentlagringskatalog](/help/forms/using/admin-help/global-document-storage-directory.md)
          + [Att tänka på vid körning av AdministrationConsole](/help/forms/using/admin-help/considerations-running-administration-console.md)
          + [Förbättra programserverns prestanda](/help/forms/using/admin-help/enhancing-application-server-performance.md)
          + [Startar och stoppar WebSphere Application Server](/help/forms/using/admin-help/starting-stopping-websphere-application-server.md)
-      + Säkerhetskopiering och återställning för AEM-formulär {#aem-forms-backup-recovery}
+      + Säkerhetskopiering och återställning av AEM-formulär {#aem-forms-backup-recovery}
          + [Säkerhetskopiera och återställa EMC Documentum-databasen](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md)
          + [Aktivera och inaktivera säkert säkerhetskopieringsläge](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md)
          + [Säkerhetskopiera AEM-formulärdata](/help/forms/using/admin-help/backing-aem-forms-data.md)
@@ -968,19 +969,19 @@ ht-degree: 1%
       + [Anpassade rapporter i processrapportering](/help/forms/using/process-reporting/process-reporting-custom-reports.md)
       + [Ad hoc-frågor i processrapportering](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
       + [Felsökning av processrapportering](/help/forms/using/process-reporting/troubleshooting-process-management.md)
-   + Utvecklarreferens {#developer-reference}
+   + Referens för utvecklare {#developer-reference}
       + [HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
       + [AEM-plugin för att felsöka adaptiva formulär](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [Formulär-API:er för HTML5-formulär](/help/forms/using/form-bridge-apis.md)
       + [API-referens för JavaScript-bibliotek för Adaptiv Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [Assembler Service och DDX Reference](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
-      + Programmera med AEM Forms på JEE {#programming-aem-forms-jee}
+      + Programmera med AEM Forms i JEE {#programming-aem-forms-jee}
          + Introduktion till programmering med AEM Forms på JEE {#introduction-programming-aem-forms-jee}
             + [Introduktion till Java API QuickStart](/help/forms/developing/introducing-java-api-soap-quick.md)
             + [Anropa AEM Forms med API:er](/help/forms/developing/invoking-aem-forms-using-apis.md)
          + [Förstå AEM Forms processer](/help/forms/developing/aem-forms-processes.md)
          + [Tjänstbehållare](/help/forms/developing/service-container.md)
-         + Utvecklar SPI för AEM Forms {#developing-spis-aem-forms}
+         + Developing SPIs for AEM Forms {#developing-spis-aem-forms}
             + [Skapa en hanterare för att bjuda in externa användare](/help/forms/developing/creating-invite-external-users-handler.md)
          + Snabbstart för Java API - kodexempel {#java-api-quick-start-code-examples}
             + [JavaAPI-snabbstart för Application Manager-klient (SOAP)](/help/forms/developing/application-manager-client-java-api.md)
@@ -1010,14 +1011,14 @@ ht-degree: 1%
             + [Java API QuickStart (SOAP) för tjänsten Task Manager](/help/forms/developing/task-manager-service-java-api.md)
             + [Java API-snabbstart för användarhanteraren (SOAP)](/help/forms/developing/user-manager-java-api-quick.md)
             + [XMP Utilities Service Java APIQuick Start (SOAP)](/help/forms/developing/xmp-utilities-service-java-api.md)
-         + Anropar AEM Forms på JEE med API:er {#invoking-aem-forms-jee-apis}
+         + Anropa AEM Forms på JEE med API:er {#invoking-aem-forms-jee-apis}
             + [Anropa AEM Forms med REST-begäran](/help/forms/developing/invoking-aem-forms-using-rest.md)
             + [Anropa AEM Forms med Web Services](/help/forms/developing/invoking-aem-forms-using-web.md)
             + [Anropa AEM Forms med Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md)
             + [Anropa AEM Forms med Web Services](/help/forms/developing/invoking-human-centric-long-lived.md)
             + [Anropa AEM Forms med JavaAPI](/help/forms/developing/invoking-aem-forms-using-java.md)
             + [Skapa Flash Builder-program som utför SSO-autentisering med HTTP-tokens](/help/forms/developing/creating-flash-builder-applications-perform.md)
-         + Utför serviceåtgärder med API:er {#performing-service-operations-using-apis}
+         + Utföra serviceåtgärder med API:er {#performing-service-operations-using-apis}
             + [Utföra serviceåtgärder med API:er](/help/forms/developing/performing-service-operations-using-apis.md)
             + [Återger Forms](/help/forms/developing/rendering-forms.md)
             + [Sammanställa PDF-dokument](/help/forms/developing/assembling-pdf-documents.md)
@@ -1088,7 +1089,7 @@ ht-degree: 1%
 + Innehåll och Commerce {#commerce}
    + [Introduktion och översikt](/help/commerce/cif/introduction.md)
    + [Betydande förändringar av AEM-innehåll och Commerce](/help/commerce/cif/changes.md)
-   + Integrationer {#integrations}
+   + Integreringar {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [Commerce Solution från tredje part](/help/commerce/cif/integrating/third-party.md)
    + AEM Storefront {#storefront}
@@ -1098,14 +1099,14 @@ ht-degree: 1%
          + [Product Cockpit](/help/commerce/cif/authoring/product-cockpit.md)
          + [Berika produktdata med tillhörande innehåll](/help/commerce/cif/authoring/enrich-product-associated-content.md)
          + [Produktrekommendationer](/help/commerce/cif/authoring/product-recommendations.md)
-      + Administrerar {#administering}
+      + Administratör {#administering}
          + [Installation i flera butiker](/help/commerce/cif/configuring/multi-store-setup.md)
          + [Användning i flera mallar](/help/commerce/cif/configuring/multi-template-usage.md)
          + [Konfigurera URL:er för SEO](/help/commerce/cif/configuring/advanced-url-configuration.md)
          + [Cachealternativ](/help/commerce/cif/configuring/caching.md)
          + [Anpassade HTTP-huvuden](/help/commerce/cif/configuring/custom-http-headers.md)
          + [Kundvagn och installationsprogram för Dispatcher](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
-      + Utveckling {#developing}
+      + Utvecklar {#developing}
          + [Utveckla med AEM](/help/commerce/cif/develop.md)
          + [Formatera CIF-komponenter](/help/commerce/cif/customizing/style-cif-component.md)
          + [Anpassa CIF-komponenter](/help/commerce/cif/customizing/customize-cif-components.md)
@@ -1146,8 +1147,8 @@ ht-degree: 1%
       + [Översätta innehåll](/help/journey-headless/translation/translate-content.md)
       + [Publicera översatt innehåll](/help/journey-headless/translation/publish-content.md)
    + [Vad är en dokumentationsresa?](/help/journey-documentation/home.md)
-+ Implementera {#implementing}
-   + Utveckling {#developing}
++ Implementering {#implementing}
+   + Utvecklar {#developing}
       + Introduktion för utvecklare {#introduction}
          + [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
          + [AEM Core Concepts](/help/sites-developing/the-basics.md)
@@ -1217,7 +1218,7 @@ ht-degree: 1%
             + [Internationaliserar gränssnittssträngar](/help/sites-developing/i18n-dev.md)
             + [Använda översättare för att hantera ordlistor](/help/sites-developing/i18n-translator.md)
             + [Extraherar strängar för översättning](/help/sites-developing/i18n-extract.md)
-         + Klassiska gränssnittskomponenter {#classic-ui-components}
+         + Klassiska gränssnittskomponenter{#classic-ui-components}
             + [Utveckla AEM-komponenter (Classic UI)](/help/sites-developing/developing-components-classic.md)
             + [Använda och utöka widgetar (Classic UI)](/help/sites-developing/widgets.md)
             + [Använda xtypes (Classic UI)](/help/sites-developing/xtypes.md)
@@ -1272,7 +1273,7 @@ ht-degree: 1%
             + [Uppdatera dina innehållsfragment för optimerad GraphQL-filtrering](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
             + [Autentisering av AEM GraphQL-fjärrfrågor för innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-authentication-content-fragments.html)
             + [AEM GraphQL API med innehållsfragment - exempel på innehåll och frågor](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/content-fragments-graphql-samples.html)
-         + Den universella redigeraren {#universal-editor}
+         + Universell redigerare {#universal-editor}
             + [Introduktion](/help/sites-developing/universal-editor/introduction.md)
       + Hybrid och SPA AEM Development {#spas}
          + [Hybrid och SPA med AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1309,7 +1310,7 @@ ht-degree: 1%
          + [AEM Brackets Extension](/help/sites-developing/aem-brackets.md)
          + [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md)
          + [AEM Repo Tool](/help/sites-developing/aem-repo-tool.md)
-      + Personanpassning {#personlization}
+      + Personalization {#personlization}
          + [ContextHub](/help/sites-developing/contexthub.md)
          + [Konfigurerar kontexthubb](/help/sites-developing/ch-configuring.md)
          + [Lägga till ContextHub på Pages och Access Stores](/help/sites-developing/ch-adding.md)
@@ -1319,10 +1320,10 @@ ht-degree: 1%
          + [ContextHub Diagnostics](/help/sites-developing/ch-diagnostics.md)
          + [Utveckla för riktat innehåll](/help/sites-developing/target.md)
          + [ContextHub JavaScript API Reference](/help/sites-developing/contexthub-api.md)
-         + Klientkontext {#client-context}
+         + Klientkontext{#client-context}
             + [Klientkontext i detalj](/help/sites-developing/client-context.md)
             + [JavaScript API för klientkontext](/help/sites-developing/ccjsapi.md)
-      + Utökar AEM {#extending-aem}
+      + Utöka AEM {#extending-aem}
          + [Utöka AEM med Adobe Developer App Builder](/help/sites-developing/app-builder.md)
          + [Anpassa sidredigering](/help/sites-developing/customizing-page-authoring-touch.md)
          + [Anpassa konsolerna](/help/sites-developing/customizing-consoles-touch.md)
@@ -1331,7 +1332,7 @@ ht-degree: 1%
          + [Anpassa och utöka innehållsfragment](/help/sites-developing/customizing-content-fragments.md)
          + [Innehållsfragment Konfigurera komponenter för återgivning](/help/sites-developing/content-fragments-config-components-rendering.md)
          + [Upplevelsefragment](/help/sites-developing/experience-fragments.md)
-         + Utökar arbetsflöden {#extending-workflows}
+         + Utöka arbetsflöden{#extending-workflows}
             + [Utveckla och utöka arbetsflöden](/help/sites-developing/workflows.md)
             + [Skapa arbetsflödesmodeller](/help/sites-developing/workflows-models.md)
             + [Utöka arbetsflödesfunktioner](/help/sites-developing/workflows-customizing-extending.md)
@@ -1341,12 +1342,12 @@ ht-degree: 1%
             + [Referens för arbetsflödesprocess](/help/sites-developing/workflows-process-ref.md)
             + [Variabler i AEM arbetsflöden](/help/sites-developing/using-variables-in-aem-workflows.md)
          + [Utöka Multi Site Manager](/help/sites-developing/extending-msm.md)
-         + Spårning och analys {#extending-analytics}
+         + Spårning och analys{#extending-analytics}
             + [Utöka händelsespårning](/help/sites-developing/extending-analytics.md)
             + [Lägga till Adobe Analytics Tracking i komponenter](/help/sites-developing/extending-analytics-components.md)
             + [Anpassa Adobe Analytics Framework](/help/sites-developing/extending-analytics-framework.md)
             + [Implementera sidnamngivning på serversidan för analys](/help/sites-developing/extending-analytics-pa-naming.md)
-         + Cloud Services{#extending-cloud-services}
+         + Molntjänster{#extending-cloud-services}
             + [Cloud Service Configurations](/help/sites-developing/extending-cloud-config.md)
             + [Skapa en anpassad Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md)
          + [Skapa anpassade tillägg](/help/sites-developing/extending-campaign-extensions.md)
@@ -1354,11 +1355,11 @@ ht-degree: 1%
             + [Skapa anpassade formulärmappningar](/help/sites-developing/extending-campaign-form-mapping.md)
             + [Skapa en anpassad AEM-sidmall med Adobe Campaign-formulärkomponenter](/help/sites-developing/extending-campaign-custom-template.md)
          + [Begär analysskript](/help/sites-developing/analyze-request.md)
-         + Utökar det klassiska användargränssnittet {#extending-classic-ui}
+         + Utöka Classic UI{#extending-classic-ui}
             + [Anpassa webbplatskonsolen (Classic UI)](/help/sites-developing/customizing-siteadmin.md)
             + [Anpassa välkomstkonsolen (Classic UI)](/help/sites-developing/customizing-the-welcome-console.md)
             + [Utvecklar rapporter](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/platform/dev-reports.html)
-      + Testar {#testing}
+      + Testning {#testing}
          + [Planering](/help/sites-developing/planning.md)
          + [Vilka testmiljöer behövs?](/help/sites-developing/test-environments.md)
          + [Definiera testfall](/help/sites-developing/test-cases.md)
@@ -1377,7 +1378,7 @@ ht-degree: 1%
          + [Bästa praxis för utveckling](/help/sites-developing/development-practices.md)
          + [Innehållsarkitektur](/help/sites-developing/content-architecture.md)
          + [Programvaruarkitektur](/help/sites-developing/software-architecture.md)
-         + Referensimplementering för Vi.butik{#we-retail}
+         + Implementering av referens för Vi.butik{#we-retail}
             + [Implementering av referens för Vi.butik](/help/sites-developing/we-retail.md)
             + [Testa innehållsfragment i webb.detaljhandel](/help/sites-developing/we-retail-content-fragments.md)
             + [Provar kärnkomponenter i We.Retail](/help/sites-developing/we-retail-core-components.md)
@@ -1392,12 +1393,12 @@ ht-degree: 1%
          + [Kodexempel](/help/sites-developing/code-samples.md)
          + [Felsöka långsamma frågor](/help/sites-developing/troubleshooting-slow-queries.md)
    + Distribuerar {#deploying}
-      + Introduktion till AEM-plattformen {#introduction}
+      + Introduktion till AEM Platform {#introduction}
          + [Introduktion till AEM Platform](/help/sites-deploying/platform.md)
          + [Tekniska krav](/help/sites-deploying/technical-requirements.md)
          + [Lagringselement i AEM](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [AEM med MongoDB](/help/sites-deploying/aem-with-mongodb.md)
-      + Distribuerar AEM {#deploying}
+      + Distribuera AEM {#deploying}
          + [Driftsättning och underhåll](/help/sites-deploying/deploy.md)
          + [Rekommenderade distributioner](/help/sites-deploying/recommended-deploys.md)
          + [Installation av programserver](/help/sites-deploying/application-server-install.md)
@@ -1411,7 +1412,7 @@ ht-degree: 1%
          + [Oak-run.jar - Exempel på indexering](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Felsöka Oak-index](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [Loggar in i statistiksamling för aggregerad användning](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
-      + Konfigurerar AEM {#configuring}
+      + Konfigurera AEM {#configuring}
          + [Grundläggande konfigurationskoncept](/help/sites-deploying/configuring.md)
          + [Loggning](/help/sites-deploying/configure-logging.md)
          + [Konfigurerar OSGi](/help/sites-deploying/configuring-osgi.md)
@@ -1432,7 +1433,7 @@ ht-degree: 1%
          + [Assets Performance Guide](/help/sites-deploying/assets-performance-sizing.md)
          + [Instruktionsartiklar för konfiguration](/help/sites-deploying/ht-deploy.md)
          + [Konfigurerar webbkonsolen](/help/sites-deploying/configuring-web-console.md)
-      + Uppgraderar till AEM 6.5 LTS {#upgrading}
+      + Uppgradera till AEM 6.5 LTS {#upgrading}
          + [Uppgradera till AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [Planera din uppgradering](/help/sites-deploying/upgrade-planning.md)
          + [Utvärdera uppgraderingskomplexiteten med mönsteravkännaren](/help/sites-deploying/pattern-detector.md)
@@ -1460,9 +1461,9 @@ ht-degree: 1%
          + [Metodtips för frågor och indexering](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
          + [Rekommendationer för användargränssnitt för kunder](/help/sites-deploying/ui-recommendations.md)
          + [Prestanda och skalbarhet](/help/sites-deploying/performance.md)
-   + Fluid Experiences {#fluid-experiences}
+   + Flytande upplevelser {#fluid-experiences}
       + [Funktionslista](/help/fluid-experiences/feature-list.md)
-+ Hanterar {#managing}
++ Hantera {#managing}
    + Hantera - checklista för bästa praxis {#managing-best-practices-checklist}
       + [Hantera projekt - checklista för bästa praxis](/help/managing/best-practices.md)
       + [Checklistan](/help/managing/best-practices-checklist.md)
