@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 0%
@@ -139,13 +139,13 @@ I tidigare versioner fanns klientbiblioteksmapparna under `/etc/clientlibs` i da
 >
 >Om du vill isolera kod bättre från innehåll och konfiguration bör du leta upp klientbibliotek under `/apps` och visa dem via `/etc.clientlibs` med egenskapen `allowProxy`.
 
-En proxyserver används för att klientbiblioteken under `/apps` ska kunna nås. Åtkomstkontrollistorna används fortfarande i klientbiblioteksmappen, men med den kan innehållet läsas via `/etc.clientlibs/` om egenskapen `allowProxy` är inställd på `true`.
+För att klientbiblioteken under `/apps` ska vara tillgängliga används en proxyserver. Åtkomstkontrollistorna används fortfarande i klientbiblioteksmappen, men med den kan innehållet läsas via `/etc.clientlibs/` om egenskapen `allowProxy` är inställd på `true`.
 
 En statisk resurs kan bara nås via proxyn om den finns under en resurs under klientbiblioteksmappen.
 
 Exempel:
 
-* Du har ett klientlib i `/apps/myproject/clientlibs/foo`
+* Du har ett klientlib i `/apps/myprojects/clientlibs/foo`
 * Du har en statisk bild i `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
 Sedan ställer du in egenskapen `allowProxy` för `foo` på true.
