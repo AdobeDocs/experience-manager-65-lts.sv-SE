@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2323'
 ht-degree: 0%
 
 ---
@@ -80,9 +80,9 @@ För varje instans i klustret kan du se flera topologirelaterade egenskaper:
 * De jobbämnen som instansen är registrerad för avlastning för.
 * Jobbämnena som instansen bearbetar.
 
-1. Klicka på fliken Verktyg med Touch-gränssnittet. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
-1. Klicka på Avlastningsläsaren i området Beskärningsåtgärder.
-1. Klicka på Topology Browser i navigeringspanelen.
+1. Klicka på fliken Verktyg med Touch-gränssnittet. ([http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html))
+1. Om du vill visa Avlastning klickar du på Överföringsplatta i avsnittet Distribution.
+1. Om du vill visa topologi klickar du på Topologipanelen i distributionsavsnittet.
 
    De kluster som ingår i topologin visas.
 
@@ -100,7 +100,7 @@ Du kan också använda webbkonsolen för att visa topologiinformation. Konsolen 
 Gör så här för att öppna sidan Topology Management i webbkonsolen:
 
 1. Öppna webbkonsolen i webbläsaren. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Klicka på Meny > Topologihantering.
+1. Klicka på Sling > Topology Management.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
