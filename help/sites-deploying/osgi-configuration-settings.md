@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3247'
 ht-degree: 0%
 
 ---
@@ -36,10 +36,6 @@ Följande OSGi-konfigurationsinställningar (listade efter paket) är relevanta 
 >Den konfiguration som krävs varierar från projekt till projekt.
 >
 >På webbkonsolen finns värden och detaljerad information om parametrar.
-
->[!NOTE]
->
->Diff-verktyget för OSGi-konfiguration, som ingår i [AEM-verktygen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), kan användas för att lista OSGi-standardkonfigurationer.
 
 >[!NOTE]
 >
@@ -81,7 +77,7 @@ Följande OSGi-konfigurationsinställningar (listade efter paket) är relevanta 
 
 Se [AEM-loggning](/help/sites-deploying/configure-logging.md) och [Sling-loggning](https://sling.apache.org/documentation/development/logging.html).
 
-**Konfiguration av händelsetrådspool för Apache Sling**:
+**Konfiguration av trådpoolen Apache Sling**:
 
 * **Minsta poolstorlek** och **Maximal poolstorlek**, storleken på poolen som används för att lagra händelsetrådar.
 
@@ -102,7 +98,7 @@ Inaktivera inte JSON.
 >
 >Den här inställningen konfigureras automatiskt för produktionsinstanser om du kör AEM i [Produktionsklart läge](/help/sites-administering/production-ready.md).
 
-**Apache Sling JavaScript Handler** Konfigurera inställningar för kompilering av Java-filer som skript (serverlets).
+**Apache Sling Java Script Handler** Konfigurera inställningar för kompilering av Java-filer som skript (serverlets).
 
 Vissa inställningar kan påverka prestanda. Inaktivera de här inställningarna där det är möjligt, särskilt för en produktionsinstans.
 
@@ -118,9 +114,9 @@ Vissa inställningar kan påverka prestanda. Inaktivera de här inställningarna
 
 * **Sökväg**, en lista med sökvägar som installeras söker efter resurser som ska installeras, tillsammans med en siffra som anger viktningsfaktorn för sökvägen.
 
-**Hanterare för jobbhändelser för Apache Sling** Konfigurera parametrar som hanterar jobbplanering:
+**Konfiguration av Apache Sling-kö** Konfigurera parametrar som hanterar jobbplanering:
 
-* **Återförsöksintervall**, **Maximalt antal försök**, **maximalt antal parallella jobb**, **Bekräfta väntetid**, bland annat.
+* **Återförsöksintervall**, **Maximalt antal försök**, **maximalt antal parallella jobb** bland andra.
 
 * Om du ändrar de här inställningarna kan prestandan förbättras i scenarier med ett stort antal jobb, till exempel stor användning av AEM DAM och arbetsflöden.
 * Värden som är specifika för ditt scenario bör fastställas med hjälp av tester.
@@ -177,7 +173,7 @@ Se [AEM-loggning](/help/sites-deploying/configure-logging.md) och [Sling-loggnin
 
 * **Antal anrop per begäran** och **rekursionsdjup** som skyddar datorn mot oändlig rekursion och för många skriptanrop.
 
-**Tjänsten Apache Sling MIME Type** Konfigurera:
+**MIME-typtjänst för Apache Sling Commons** Konfigurera:
 
 * **MIME-typer** om du vill lägga till typer som krävs för ditt projekt i systemet. Om du gör det kan en `GET`-begäran för en fil ange rätt innehållstyprubrik för länkning av filtypen och programmet.
 
@@ -239,23 +235,11 @@ Du kan ange olika parametrar, bland annat:
 * **Körningssökvägar** - Visar sökvägarna för körbara skript. Genom att konfigurera specifika sökvägar kan du begränsa vilka skript som kan köras. Om ingen sökväg är konfigurerad används standardvärdet ( `/` = root), vilket tillåter körning av alla skript.
 Om ett konfigurerat sökvägsvärde avslutas med ett snedstreck genomsöks hela underträdet. Utan ett sådant avslutande snedstreck körs skriptet bara om det är en exakt matchning.
 
-* **Skriptanvändare** - Den här valfria egenskapen kan ange det databasanvändarkonto som används för att läsa skripten. Om inget konto anges används användaren `admin` som standard.
-
 * **Standardtillägg** - Listan med tillägg som standardbeteendet används för. Det sista sökvägssegmentet i resurstypen kan användas som skriptnamn.
 
 **Proxykonfiguration för Apache HTTP Components** - Proxykonfigurationen för all kod som använder Apache HTTP-klienten, används när en HTTP görs. Till exempel vid replikering.
 
 När du skapar en konfiguration ska du inte ändra fabrikskonfigurationen. Skapa i stället en fabrikskonfiguration för den här komponenten med konfigurationshanteraren som finns här: **https://localhost:4502/system/console/configMgr/**. Proxykonfigurationen är tillgänglig i **org.apache.http.proxyconfigurator.**
-
->[!NOTE]
->
->I AEM 6.0 och tidigare konfigurerades proxy i Day Commons HTTP Client. Från och med AEM 6.1 och senare versioner har proxykonfigurationen flyttats till proxykonfigurationen för Apache HTTP Components i stället för konfigurationen för Day Commons HTTP Client.
-
-**Dag CQ Antispam** Konfigurera den antispam-tjänst (Akismet) som används. Den här funktionen kräver att du registrerar följande:
-
-* **Provider**
-* **API-nyckel**
-* **Registrerad URL**
 
 **Adobe Granite HTML Library Manager** Konfigurera för att styra hanteringen av klientbibliotek (css eller js), inklusive, t.ex., hur den underliggande strukturen visas.
 
@@ -281,7 +265,7 @@ När du skapar en konfiguration ska du inte ändra fabrikskonfigurationen. Skapa
 >
 >Den här inställningen konfigureras automatiskt för produktionsinstanser om du kör AEM i [Produktionsklart läge](/help/sites-administering/production-ready.md).
 
-**Day CQ HTTP Header Authentication Handler** Systemomfattande inställningar för den grundläggande autentiseringsmetoden i HTTP-begäran.
+**Adobe Granite HTTP Header Authentication Handler** Systemomfattande inställningar för den grundläggande autentiseringsmetoden i HTTP-begäran.
 
 När du använder [stängda användargrupper](/help/sites-administering/cug.md) kan du bland annat konfigurera följande:
 
@@ -377,7 +361,7 @@ De andra lägena kan nås från sidosparken eller så kan suffixet `?wcmmode=dis
 >
 >Den här inställningen konfigureras automatiskt för produktionsinstanser om du kör AEM i [Produktionsklart läge](/help/sites-administering/production-ready.md).
 
-**Dagens CQ WCM Link Checker-konfigurator** Konfigurera:
+**Dagens CQ WCM-länkkontroll** Konfigurera:
 
 * **Lista över omskrivningskonfigurationer** för att ange en lista över platser för innehållsbaserade länkkontrollerarkonfigurationer. Konfigurationerna kan baseras på körningsläge. Detta är viktigt för att skilja mellan skribent- och publiceringsmiljöer, eftersom inställningarna för länkkontroll kan variera.
 
@@ -427,7 +411,7 @@ Mer information finns i [Rensning av version](/help/sites-deploying/version-purg
 
 **Day CQ Workflow Email Notification Service** Konfigurera e-postinställningarna för meddelanden som skickas av ett arbetsflöde.
 
-**CQ Rewriter HTML Parser Factory**
+**Adobe AEM Rewriter HTML Parser Factory**
 
 Controls the HTML Parser for the CQ rewriter.
 

@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '1954'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -174,9 +174,6 @@ Eftersom samma konfigurationsparameter finns på flera ställen:
 * filter efter tjänstnamn
 * filter enligt körningsläge
 
->[!NOTE]
->
->Läs även [hur du definierar en databasbaserad konfiguration för en specifik instans endast](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
 
 ### Lägga till en ny konfiguration i databasen {#adding-a-new-configuration-to-the-repository}
 
@@ -186,9 +183,9 @@ Om du vill lägga till en konfiguration i databasen måste du känna till följa
 
 1. Tjänstens **PID (Persistent Identity**).
 
-   Referera till fältet **Konfigurationer** i webbkonsolen. Namnet visas inom hakparenteser efter paketnamnet (eller i **konfigurationsinformationen** längst ned på sidan).
+   Referera till **konfigurationerna** i webbkonsolen. Namnet visas i **konfigurationsinformationen** längst ned på sidan.
 
-   Skapa till exempel en nod `com.day.cq.wcm.core.impl.VersionManagerImpl.` som konfigurerar **AEM WCM Version Manager**.
+   Till exempel `com.day.cq.wcm.core.impl.VersionManagerImpl.` för att konfigurera **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -237,13 +234,13 @@ Så här lägger du till den nya konfigurationen i databasen:
 
    >[!NOTE]
    >
-   >När du gör en fabrikskonfiguration lägger du till `-<identifier>` till namnet.
+   >När du gör en fabrikskonfiguration lägger du till `~<identifier>` till namnet.
    >
-   >Som i: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
+   >Som i: `org.apache.sling.commons.log.LogManager.factory.config~<identifier>`
    >
    >Där `<identifier>` ersätts med fritext som du (måste) anger för att identifiera instansen (du kan inte utelämna den här informationen), till exempel:
    >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >`org.apache.sling.commons.log.LogManager.factory.config~MINE`
 
 1. Skapa en egenskap på den här noden för varje parameter som du vill konfigurera:
 
@@ -310,23 +307,7 @@ Konfigurationen med det högsta antalet matchande körningslägen gäller för h
 
 ### Standardkonfigurationer {#standard-configurations}
 
-I följande lista visas ett litet urval av de konfigurationer som är tillgängliga (i en standardinstallation) i databasen:
-
-* Författare - AEM WCM-filter:
-
-  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
-
-* Publicera - AEM WCM-filter:
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
-
-* Publicera - AEM WCM-sidstatistik:
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
-
->[!NOTE]
->
->Eftersom dessa konfigurationer finns i `/libs` får de inte redigeras direkt, utan kopieras till programområdet ( `/apps`) före anpassning.
+Om det finns någon standardkonfiguration i `/libs` får den inte redigeras direkt, utan kopieras till programområdet ( `/apps`) före anpassning.
 
 Om du vill visa alla konfigurationsnoder i din instans använder du funktionen **Fråga** i CRXDE Lite för att skicka följande SQL-fråga:
 
