@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '3277'
+source-wordcount: '3278'
 ht-degree: 0%
 
 ---
@@ -60,18 +60,26 @@ Omvänd replikering använder en agent i publiceringsmiljön som refererar till 
 
 ### Replikering - utanför lådan {#replication-out-of-the-box}
 
-Webbplatsen som ingår i en standardinstallation av AEM kan användas för att illustrera replikering.
+Skapa en sida genom att följa [Skapa och ordna sidor](/help/sites-authoring/managing-pages.md).
 
 [Installera AEM](/help/sites-deploying/deploy.md) med följande om du vill följa det här exemplet och använda standardreplikeringsagenterna:
 
+
 * författarmiljön på port `4502`
 * publiceringsmiljön på port `4503`
+
+Den här replikeringen utförs från redigeringsmiljön av:
+
+* **Standardagent (publicera)**
+Den här agenten replikerar innehåll till standardpubliceringsinstansen.
+Information om detta (konfiguration och loggar) finns på verktygskonsolen i redigeringsmiljön, eller:
+  `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
 >[!NOTE]
 >
 >Aktiverad som standard:
 >
->* Agenter på författare : Standardagent (publicera)
+>* Agenter på författare: Om inte standardagenten (publicera) måste du aktivera den innan du fortsätter.
 >
 >Inaktiverat som standard (från och med AEM 6.1):
 >
@@ -84,19 +92,13 @@ Webbplatsen som ingår i en standardinstallation av AEM kan användas för att i
 #### Replikering (författare att publicera) {#replication-author-to-publish}
 
 1. Gå till supportsidan i redigeringsmiljön.
-   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/site1/test.html** `<pi>`
 1. Redigera sidan så att du kan lägga till ny text.
 1. **Aktivera sidan** så att du kan publicera ändringarna.
 1. Öppna supportsidan i publiceringsmiljön:
-   **https://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/site1/test.html**
 1. Du kan nu se ändringarna som du har angett för Författare.
 
-Den här replikeringen utförs från redigeringsmiljön av:
-
-* **Standardagent (publicera)**
-Den här agenten replikerar innehåll till standardpubliceringsinstansen.
-Information om detta (konfiguration och loggar) finns på verktygskonsolen i redigeringsmiljön, eller:
-  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Replikeringsagenter - utanför lådan {#replication-agents-out-of-the-box}
 
@@ -108,7 +110,7 @@ Används för replikering från författare till publicering.
 * Dispatcher Flush
 Detta används för att hantera Dispatcher-cachen. Mer information finns i [Invaliderar Dispatcher-cache från redigeringsmiljön](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) och [Invaliderar Dispatcher-cache från en publiceringsinstans](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance).
 
-* [Omvänd replikering](#reverse-replication-publish-to-author)
+* [Omvänd replikering](#configuring-reverse-replication)
 Används för replikering från Publicera till Författare. Omvänd replikering används inte för communityfunktioner som forum, bloggar och kommentarer. Den är inaktiverad eftersom utkorgen inte är aktiverad. Användning av omvänd replikering kräver anpassad konfiguration.
 
 * Statisk agent

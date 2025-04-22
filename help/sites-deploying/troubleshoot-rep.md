@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,7 @@ Det finns olika orsaker till att replikeringen misslyckas. I den här artikeln f
 
 **Utlöses replikeringar överhuvudtaget när du klickar på knappen Aktivera? Om INTE, gör du följande:**
 
-1. Gå till /crx/explorer och logga in som administratör.
-1. Öppna &quot;Innehållsutforskaren&quot;
+1. Gå till /crx/de/index.jsp och logga in som administratör.
 1. Se om det finns en nod/bin/replikate eller /bin/replicate.json. Om noden finns tar du bort den och sparar den.
 
 **köas replikeringarna i replikeringsagentköerna?**
@@ -76,12 +75,12 @@ Kontrollera detta genom att gå till /etc/replication/agents.author.html och sed
 Ibland kan det vara praktiskt att ange att all replikeringsloggning ska läggas till i en separat loggfil på DEBUG-nivå. Så här gör du:
 
 1. Gå till https://host:port/system/console/configMgr och logga in som administratör.
-1. Hitta Apache Sling Logging Logger-fabriken och skapa en instans genom att klicka på knappen **+** till höger om fabrikskonfigurationen. Detta skapar en ny loggningslogg.
+1. Hitta loggningskonfigurationen för Apache Sling-loggning och skapa en instans genom att klicka på knappen **+** till höger om fabrikskonfigurationen. Detta skapar en ny loggningslogg.
 1. Ställ in konfigurationen så här:
 
    * Loggnivå: FELSÖKNING
-   * Loggfilens sökväg: logs/replication.log
-   * Kategorier: com.day.cq.replikation
+   * Loggfil: logs/replication.log
+   * Logger: com.day.cq.replikation
 
 1. Om du misstänker att problemet är relaterat till snedstreck/jobb på något sätt, kan du även lägga till det här Java™-paketet under kategorier:org.apache.sling.event
 
