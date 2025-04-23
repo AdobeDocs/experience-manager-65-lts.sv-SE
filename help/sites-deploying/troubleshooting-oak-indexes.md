@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,6 @@ En tvingad avstängning resulterar i att AEM avbryter asynkron indexering i upp 
 1. Vänta i ungefär 45 minuter tills AEM återupptar vanliga asynkrona indexeringsåtgärder.
 
 ## Trådpoolen har överlästs {#thread-pool-overloaded}
-
->[!NOTE]
->
->Kontrollera att [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) är installerat för AEM 6.1.
 
 I undantagsfall kan den trådpool som används för att hantera asynkron indexering bli överbelastad. Om du vill isolera indexeringsprocessen kan en trådpool konfigureras så att den förhindrar att andra AEM-program stör Oak förmåga att indexera innehåll i tid. I så fall gör du följande:
 

@@ -1,6 +1,6 @@
 ---
 title: Oak Queries and Indexing
-description: Lär dig konfigurera index i Adobe Experience Manager (AEM) 6.5.
+description: Lär dig hur du konfigurerar index i Adobe Experience Manager (AEM) 6.5 LTS.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '2577'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Den här artikeln handlar om att konfigurera index i AEM 6. Mer information om hur du optimerar fråga- och indexeringsprestanda finns i [Bästa metoder för frågor och indexering](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+>Den här artikeln handlar om att konfigurera index i AEM 6.5 LTS. Mer information om hur du optimerar fråga- och indexeringsprestanda finns i [Bästa metoder för frågor och indexering](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ## Introduktion {#introduction}
 
@@ -50,7 +50,7 @@ Med Apache Oak-baserad backend kan olika indexerare kopplas in i databasen.
 
 En indexerare är **egenskapsindexet**, som indexdefinitionen lagras i själva databasen.
 
-Implementeringar för **Apache Lucene** och **Solr** är också tillgängliga som standard, vilket båda stöder fulltextindexering.
+Implementering för **Apache Lucene** är tillgängligt som standard, vilket stöder fulltextindexering.
 
 **Traversal Index** används om ingen annan indexerare är tillgänglig. Det innebär att innehållet inte är indexerat och att innehållsnoderna gås igenom för att hitta matchningar med frågan.
 
@@ -109,7 +109,7 @@ Det sorterade indexet är ett tillägg till egenskapsindexet. Den har dock tagit
 
 ### Fullständigt Lucene-textindex {#the-lucene-full-text-index}
 
-En fulltextindexerare baserad på Apache Lucene finns i AEM 6.
+En fulltextindexerare baserad på Apache Lucene finns i AEM 6.5 LTS.
 
 Om ett fulltextindex är konfigurerat kommer alla frågor som har ett fulltextvillkor att använda fulltextindexet, oavsett om det finns andra villkor som är indexerade eller oavsett om det finns en sökvägsbegränsning.
 
@@ -308,7 +308,7 @@ Om du vill använda någon av de färdiga analysverktygen kan du konfigurera den
 
 #### Skapa analysatorer med hjälp av komposition {#creating-analyzers-via-composition}
 
-Analysatorer kan också sättas samman baserat på `Tokenizers`, `TokenFilters` och `CharFilters`. Du kan göra detta genom att ange en analysator och skapa underordnade noder till dess tillvalstokeniserare och filter som tillämpas i listordning. Se även [https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Analysatorer kan också sättas samman baserat på `Tokenizers`, `TokenFilters` och `CharFilters`. Du kan göra detta genom att ange en analysator och skapa underordnade noder till dess tillvalstokeniserare och filter som tillämpas i listordning.
 
 Se den här nodstrukturen som ett exempel:
 
@@ -359,87 +359,6 @@ Namnet på filtren, charFilters och tokenizers formas genom att fabrikssuffixen 
 Alla konfigurationsparametrar som krävs för fabriken anges som egenskapen för noden i fråga.
 
 För exempelvis inläsning av stoppord där innehåll från externa filer måste läsas in, kan innehållet anges genom att en underordnad nod av typen `nt:file` skapas för filen i fråga.
-
-### Solr-index {#the-solr-index}
-
-Syftet med Solr-indexet är fulltextsökning, men det kan också användas för indexsökning efter sökväg, egenskapsbegränsningar och primära typbegränsningar. Det innebär att Solr-indexet i Oak kan användas för alla typer av JCR-frågor.
-
-Integreringen i AEM sker på databasnivå så att Solr är ett av de möjliga index som kan användas i Oak, den nya databasimplementeringen som levererades med AEM.
-
-Den kan konfigureras för att fungera som en fjärrserver med AEM-instansen.
-
-### Konfigurera AEM med en enda fjärransluten Solr-server {#configuring-aem-with-a-single-remote-solr-server}
-
-AEM kan även konfigureras för att fungera med en fjärrserver för Solr:
-
-1. Hämta och extrahera den senaste versionen av Solr. Mer information om hur du gör detta finns i [dokumentationen för installation av Apache Solr](https://solr.apache.org/guide/6_6/installing-solr.html).
-1. Skapa nu två Solr-kort. Du kan göra detta genom att skapa mappar för varje delning i mappen där Solr har packats upp:
-
-   * Skapa mappen för det första delfönstret:
-
-   `<solrunpackdirectory>\aemsolr1\node1`
-
-   * Skapa mappen för den andra delningen:
-
-   `<solrunpackdirectory>\aemsolr2\node2`
-
-1. Leta reda på exempelinstansen i Solr-paketet. Den finns i en mapp med namnet `example` i paketets rot.
-1. Kopiera följande mappar från exempelinstansen till de två delade mapparna ( `aemsolr1\node1` och `aemsolr2\node2`):
-
-   * `contexts`
-   * `etc`
-   * `lib`
-   * `resources`
-   * `scripts`
-   * `solr-webapp`
-   * `webapps`
-   * `start.jar`
-
-1. Skapa en mapp med namnet `cfg` i var och en av de två delade mapparna.
-1. Placera dina Solr- och Zookeeper-konfigurationsfiler i de `cfg` nyligen skapade mapparna.
-
-   >[!NOTE]
-   >
-   >Mer information om Solr- och ZooKeeper-konfigurationen finns i [dokumentationen för Solr-konfiguration](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) och i [Starthandboken för ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
-
-1. Starta den första delningen med stöd för ZooKeeper genom att gå till `aemsolr1\node1` och köra följande kommando:
-
-   ```xml
-   java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar
-   ```
-
-1. Starta den andra delningen genom att gå till `aemsolr2\node2` och köra följande kommando:
-
-   ```xml
-   java -Xmx2g -Djetty.port=7574 -DzkHost=localhost:9983 -jar start.jar
-   ```
-
-1. När båda delarna har startats testar du att allt är igång genom att ansluta till Solr-gränssnittet på `http://localhost:8983/solr/#/`
-1. Starta AEM och gå till webbkonsolen på `http://localhost:4502/system/console/configMgr`
-1. Ange följande konfiguration under **Fjärrserverkonfigurationen för Oak Solr**:
-
-   * HTTP-URL för Solr: `http://localhost:8983/solr/`
-
-1. Välj **Fjärrserver** i listrutan under **Oak Solr**-serverprovidern.
-
-1. Gå till CRXDE och logga in som administratör.
-1. Skapa en nod med namnet **solrIndex** under **oak:index** och ange följande egenskaper:
-
-   * **type:** solr (av typen String)
-   * **async:** async (av typen String)
-   * **reindex:** true (av typen Boolean)
-
-1. Spara ändringarna.
-
-#### Rekommenderad konfiguration för Solr {#recommended-configuration-for-solr}
-
-Nedan visas ett exempel på en baskonfiguration som kan användas med alla tre Solr-distributioner som beskrivs i den här artikeln. Den innehåller de dedikerade egenskapsindexen som redan finns i AEM. Använd inte med andra program.
-
-Om du vill använda det på rätt sätt måste du placera innehållet i arkivet direkt i Solr Home Directory. Om det finns distributioner med flera noder bör den placeras direkt under rotmappen för varje nod.
-
-Rekommenderade Solr-konfigurationsfiler
-
-[Hämta fil](assets/recommended-conf.zip)
 
 ### AEM indexeringsverktyg {#aem-indexing-tools}
 

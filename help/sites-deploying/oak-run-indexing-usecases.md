@@ -11,7 +11,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a7a8a20a-e513-43df-80b7-1e6daf957f20
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Oak-körning stöder indexering av användningsfall på kommandoraden utan att d
 
 De största fördelarna med att använda indexkommandot oak-run.jar för att hantera Oak-index är:
 
-1. Indexkommando som körs i Oak innehåller en ny uppsättning indexeringsverktyg för AEM 6.4.
+1. Oak-kommandot index har en ny uppsättning indexeringsverktyg sedan AEM 6.4.
 1. Oak-körning minskar tiden för omindexering vilket minskar omindexeringstiden i större databaser.
 1. Oak-körning minskar resursförbrukningen vid omindexering i AEM, vilket ger bättre systemprestanda.
 1. Oak-runtime ger omindexering utan band, vilket ger stöd för situationer där produktionen måste vara tillgänglig och klarar inte underhåll eller driftavbrott som annars skulle behövas för omindexering.

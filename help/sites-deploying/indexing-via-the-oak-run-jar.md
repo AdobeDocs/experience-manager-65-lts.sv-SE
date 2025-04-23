@@ -10,7 +10,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Oak-run har stöd för alla indexeringsanvändningsfall på kommandoraden utan att JMX-nivån behöver användas. Fördelarna med att använda ekon är:
 
-1. Det är en ny indexeringsverktygslåda för AEM 6.4
+1. Det är en ny verktygslåda för indexering sedan AEM 6.4
 1. Det minskar time to re-index-värdet vilket påverkar omindexeringstiden positivt i större databaser
 1. Det minskar resursförbrukningen vid omindexering i AEM, vilket ger bättre systemprestanda för andra AEM-aktiviteter
 1. Oak-runda har stöd för out-of-band: Om produktionsvillkoren inte tillåter att du kör omindexering på produktionsinstanser kan en klonad miljö användas för omindexering för att undvika en kritisk prestandapåverkan.
@@ -64,7 +64,7 @@ Diagrammet är ett beslutsträd för när olika omindexeringsmetoder ska använd
 
 ### Textförextrahering för SegmentNodeStore och DocumentNodeStore {#textpre-extraction}
 
-[Textförextrahering](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (en funktion som fanns i AEM 6.3) kan användas för att minska tiden för omindexering. Textförextrahering kan användas med alla omindexeringsmetoder.
+[Textförextrahering](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (en funktion som har funnits sedan AEM 6.3) kan användas för att minska tiden det tar att indexera om. Textförextrahering kan användas med alla omindexeringsmetoder.
 
 Beroende på indexeringsmetoden för `oak-run.jar` finns det olika steg på båda sidor av steget Utför omindexering i diagrammet nedan.
 
