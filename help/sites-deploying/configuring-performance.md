@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6470'
+source-wordcount: '5052'
 ht-degree: 1%
 
 ---
@@ -21,8 +21,6 @@ ht-degree: 1%
 # Prestandaoptimering {#performance-optimization}
 
 >[!NOTE]
->
->Allmänna riktlinjer för prestanda finns på sidan [Riktlinjer för prestanda](/help/sites-deploying/performance-guidelines.md).
 >
 >Mer information om felsökning och korrigering av prestandaproblem finns också i [prestandaträdet](/help/sites-deploying/performance-tree.md).
 >
@@ -203,10 +201,6 @@ Vissa regler bör beaktas vid prestandaoptimering:
 
 Vissa aspekter av AEM (och/eller den underliggande databasen) kan konfigureras för att optimera prestanda. Följande är möjligheter och förslag. Du måste vara säker på om du använder funktionerna innan du gör några ändringar eller inte.
 
->[!NOTE]
->
->Se [Prestandaoptimering](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
-
 ### Sökindexering {#search-indexing}
 
 Från och med AEM 6.0 använder Adobe Experience Manager en Oak-baserad databasarkitektur.
@@ -224,6 +218,7 @@ När bilder (eller DAM-resurser i allmänhet) överförs, importeras bilderna au
 
 Arbetsflödesmotorn använder Apache Sling-jobbköer för hantering och schemaläggning av bearbetning av arbetsobjekt. Följande jobbkötjänster har skapats som standard från tjänsten Apache Sling Job Queue Configuration för bearbetning av arbetsflödesjobb:
 
+<!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Begränsa arbetsflödeskö: De flesta arbetsflödessteg, t.ex. de som bearbetar DAM-resurser, använder tjänsten Begränsa arbetsflödeskö.
 * Begränsa arbetsflödets externa processjobbkö: Den här tjänsten används för särskilda externa arbetsflödessteg som vanligtvis används för att kontakta ett externt system och avfråga resultat. Exempel: InDesign Media Extraction Process-steget implementeras som en extern process. Arbetsflödesmotorn använder den externa kön för att bearbeta avsökningen. (Se [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
@@ -462,7 +457,6 @@ Det finns ett urval verktyg som kan hjälpa dig med lastgenerering, prestandaöv
 
 * [JMeter](https://jmeter.apache.org/)
 * [Läs in Runner](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [InfraRED](https://www.infraredsoftware.com/)
 * [Interaktiv Java™-profil](https://jiprof.sourceforge.net/)
 
 Efter optimeringen testar du igen för att bekräfta påverkan.
@@ -642,87 +636,3 @@ Följ dessa riktlinjer för att vara säker på att filerna cachelagras korrekt:
 
 * Kontrollera att filerna alltid har rätt filtillägg.
 * Undvik generiska skript för filservrar, som har URL-adresser som `download.jsp?file=2214`. Om du vill använda URL:er som innehåller filspecifikationen skriver du om skriptet. I föregående exempel är den här omskrivningen `download.2214.pdf`.
-
-## Säkerhetskopiera prestanda {#backup-performance}
-
-I det här avsnittet presenteras en serie prestandatester som används för att utvärdera AEM säkerhetskopiering och hur säkerhetskopiering påverkar programmets prestanda. AEM säkerhetskopiering innebär en betydande belastning på systemet medan det körs, och Adobe mäter effekten och effekterna av inställningarna för fördröjning av säkerhetskopiering som försöker modulera dessa effekter. Målet är att tillhandahålla vissa referensdata om förväntade prestanda för säkerhetskopieringar i realistiska konfigurationer och kvantiteter av produktionsdata, och att ge vägledning om hur man beräknar säkerhetskopieringstider för planerade system.
-
-### Referensmiljö {#reference-environment}
-
-#### Fysiskt system {#physical-system}
-
-De resultat som rapporteras i det här dokumentet har hämtats från referensvärden som körs i en referensmiljö med följande konfiguration. Den här konfigurationen liknar en typisk produktionsmiljö i ett datacenter:
-
-* HP ProLiant DL380 G6, 8 processorer x 2,533 GHz
-* Serieanslutna SCSI-enheter på 300 GB, 10 000 RPM
-* Maskinvarubaserad RAID-styrenhet; åtta enheter i en RAID0+5-matris
-* VMware-bild CPU x 2 Intel Xeon® E5540 med 2,53 GHz
-* Red Hat® Linux® 2.6.18-194.el5; Java™ 1.6.0_29
-* Single Author-instans
-
-Diskundersystemet på den här servern är snabbt och representativt för en RAID-konfiguration med höga prestanda som kan användas i en produktionsserver. Säkerhetskopieringsprestanda kan vara beroende av diskprestanda och resultatet i den här miljön avspeglar prestanda i en snabb RAID-konfiguration. VMWare-avbildningen är konfigurerad att ha en enda stor diskvolym som fysiskt finns i den lokala disklagringen på RAID-matrisen.
-
-AEM-konfigurationen placerar databasen och datalagret på samma logiska volym, tillsammans med operativsystemet och AEM-programmet. Målkatalogen för säkerhetskopieringar finns också i det här logiska filsystemet.
-
-#### Datavolymer {#data-volumes}
-
-Följande tabell visar storleken på datavolymer som används i prestandatesterna för säkerhetskopiering. Det ursprungliga baslinjeinnehållet installeras först, sedan läggs ytterligare kända datamängder till för att öka storleken på det säkerhetskopierade innehållet. Säkerhetskopior skapas i specifika steg för att representera en stor ökning av innehållet och vad som kan produceras under en dag. Distributionen av innehåll (sidor, bilder, taggar) är i stort sett baserad på realistisk komposition av produktionsresurser. Sidor, bilder och taggar är begränsade till högst 800 underordnade sidor. Varje sida innehåller komponenterna title, Flash, text/image, video, bildspel, form, table, cloud och carousel. Bilder överförs från en pool med 400 unika filstorlekar från 37 kB till 594 kB.
-
-| Innehåll | Noder | Sidor | Bilder | Taggar |
-|---|---|---|---|---|
-| Grundinstallation | 69 610 | 562 | 256 | 237 |
-| Liten information för stegvis säkerhetskopiering |  | +100 | +2 | +2 |
-| Stort innehåll för fullständig säkerhetskopiering |  | +10 000 | +100 | +100 |
-
-Prestandatestvärdet för säkerhetskopiering upprepas med ytterligare innehållsuppsättningar som läggs till vid varje upprepning.
-
-#### Benchmark-scenarier {#benchmark-scenarios}
-
-Referensvärdena för säkerhetskopiering omfattar två huvudscenarier: säkerhetskopieringar när systemet är kraftigt belastat och säkerhetskopieringar när systemet är ledigt. Även om den allmänna rekommendationen är att säkerhetskopieringar ska utföras när AEM är så inaktivt som möjligt, finns det situationer där det är nödvändigt att säkerhetskopieringen körs när systemet är under laddning.
-
-* **Inaktivitetsstatus** - Säkerhetskopieringar utförs utan någon annan aktivitet på AEM.
-* **Under Läs in** - Säkerhetskopior utförs medan systemet är under 80 % inläst från onlineprocesser. Fördröjningen för säkerhetskopiering varierade för att se effekten på inläsningen.
-
-Tidpunkter och storlek för säkerhetskopieringen hämtas från AEM serverloggar. Det rekommenderas normalt att säkerhetskopieringar schemaläggs i fel tider när AEM är ledigt, t.ex. mitt i natten. Detta scenario är representativt för den rekommenderade metoden.
-
-Inläsningen består av sidor som skapats, sidor som tagits bort, bläddringar och frågor med de flesta inläsningar som kommer från sidbläddringar och frågor. Om du lägger till och tar bort för många sidor ökar arbetsytans storlek kontinuerligt och förhindrar att säkerhetskopiorna slutförs. Den lastfördelning som skriptet använder är 75 % sidvändningar, 24 % frågor och 1 % sidskapande (en nivå utan kapslade undersidor). Maximalt medelvärde för transaktioner per sekund i ett system som är inaktivt uppnås med fyra samtidiga trådar, som används vid testning av säkerhetskopior som läses in.
-
-Inläsningens inverkan på säkerhetskopieringsprestanda kan uppskattas av skillnaden mellan prestanda med och utan den här programinläsningen. Effekten av säkerhetskopieringen på programmets dataflöde hittas genom att man jämför scenariogenomströmningen i transaktioner per timme med och utan en pågående säkerhetskopiering, och med säkerhetskopieringar som körs med olika inställningar för fördröjning av säkerhetskopiering.
-
-* **Fördröjningsinställning** - I flera av scenarierna varierades även inställningen för fördröjning av säkerhetskopiering, med värden på 10 millisekunder (standard), 1 millisekunder och 0 millisekunder, för att utforska hur den här inställningen påverkade säkerhetskopieringens prestanda.
-* **Säkerhetskopieringstyp** - Alla säkerhetskopior var externa säkerhetskopior av databasen som gjorts till en säkerhetskopieringskatalog utan att skapa en zip, förutom i ett fall där tjärkommandot användes direkt. Eftersom det inte går att skapa stegvisa säkerhetskopieringar till en zip-fil, eller när den tidigare fullständiga säkerhetskopieringen är en zip-fil, är säkerhetskopieringskatalogmetoden den metod som oftast används i produktionssituationer.
-
-### Sammanfattning av resultat {#summary-of-results}
-
-#### Tid och genomströmning för säkerhetskopiering {#backup-time-and-throughput}
-
-Det främsta resultatet av dessa prestandatester är att visa hur tiden för säkerhetskopiering varierar beroende på säkerhetskopieringstyp och total datamängd. I följande diagram visas den inhämtade säkerhetskopieringstiden med standardkonfigurationen för säkerhetskopiering, som en funktion av det totala antalet sidor.
-
-![chlimage_1-81](assets/chlimage_1-81.png)
-
-Säkerhetskopieringstiderna för en inaktiv instans är relativt konsekventa, vilket är ett genomsnitt på 0,608 MB per sekund, oavsett fullständig eller stegvis säkerhetskopiering (se diagrammet nedan). Tidpunkten för säkerhetskopieringen är helt enkelt en funktion av mängden data som säkerhetskopieras. Tiden det tar att slutföra en fullständig säkerhetskopiering ökar tydligt med det totala antalet sidor. Tiden det tar att slutföra en stegvis säkerhetskopiering ökar också med det totala antalet sidor, men med en mycket lägre hastighet. Den tid det tar att slutföra den inkrementella säkerhetskopieringen är mycket kortare på grund av den relativt små mängden data som säkerhetskopieras.
-
-Storleken på säkerhetskopian som skapas är den viktigaste faktorn för den tid det tar att slutföra en säkerhetskopiering. I följande diagram visas hur lång tid det tar som en funktion av den slutliga säkerhetskopieringsstorleken.
-
-![chlimage_1-82](assets/chlimage_1-82.png)
-
-Diagrammet visar att både inkrementell och fullständig säkerhetskopiering följer ett enkelt format i storlek kontra tid som Adobe kan mäta som genomströmning. Säkerhetskopieringstiderna för en inaktiv instans är relativt konsekventa, vilket ger ett genomsnitt på 0,61 MB per sekund oavsett fullständig eller inkrementell säkerhetskopiering i testmiljön.
-
-#### Fördröjning för säkerhetskopiering {#backup-delay}
-
-Parametern för fördröjning av säkerhetskopiering anges för att begränsa i vilken utsträckning säkerhetskopiering kan påverka arbetsbelastningen i produktionen. Parametern anger en väntetid i millisekunder, vilket är inbäddat i säkerhetskopieringen fil för fil. Den övergripande effekten beror delvis på storleken på de filer som påverkas. Genom att mäta säkerhetskopieringsprestanda i MB/sek kan du jämföra fördröjningseffekterna för säkerhetskopieringen på ett rimligt sätt.
-
-* Att köra en säkerhetskopiering samtidigt med vanlig programinläsning har en negativ inverkan på den normala belastningens genomströmning.
-* Inverkan kan vara liten (så lite som 5 %) eller signifikant, vilket ger upp till 75 % nedgång i dataflödet. Det beror troligen mest på programmet.
-* Säkerhetskopiering är inte en stor belastning på CPU och därför påverkas inte CPU-intensiva produktionsarbetsbelastningar lika mycket av säkerhetskopieringen som I/O-intensiva arbetsbelastningar.
-
-![chlimage_1-83](assets/chlimage_1-83.png)
-
-Som en jämförelse kan nämnas den genomströmning som erhålls med en säkerhetskopia av filsystemet (&#39;tar&#39;) för att säkerhetskopiera samma databasfiler. Tjärans prestanda är jämförbar, men något högre än säkerhetskopian med fördröjningen inställd på noll. Även om du anger en liten fördröjning minskar säkerhetskopieringens genomströmning avsevärt och standardfördröjningen på 10 millisekunder resulterar det i avsevärt mindre genomströmning. I situationer där säkerhetskopieringar kan schemaläggas när den totala programanvändningen är låg, eller när programmet kan vara inaktivt, kan du minska fördröjningen under standardvärdet så att säkerhetskopieringen kan fortsätta snabbare.
-
-Den faktiska effekten av applikationens genomströmning vid en pågående säkerhetskopiering beror på applikations- och infrastrukturinformationen. Fördröjningsvärdet bör väljas genom empirisk analys av programmet, men bör väljas så litet som möjligt så att säkerhetskopieringen kan slutföras så snabbt som möjligt. Eftersom det bara finns en svag korrelation mellan valet av fördröjningsvärde och effekten på applikationens genomströmning, bör fördröjning främja kortare övergripande säkerhetskopieringstider för att minimera den övergripande effekten av säkerhetskopieringar. En säkerhetskopiering som tar åtta timmar att slutföra men påverkar dataflödet med -20 % har troligen större total effekt än en som tar två timmar att slutföra men påverkar dataflödet med -30 %.
-
-### Referenser {#references}
-
-* [Administrera - Säkerhetskopiera och återställ](/help/sites-administering/backup-and-restore.md)
-* [Hantering - kapacitet och volym](/help/managing/best-practices-further-reference.md#capacity-and-volume)

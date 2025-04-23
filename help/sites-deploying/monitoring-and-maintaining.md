@@ -1,6 +1,6 @@
 ---
-title: Övervaka och underhålla din Adobe Experience Manager-instans
-description: Lär dig hur du övervakar och underhåller din Adobe Experience Manager-instans.
+title: Övervaka och underhålla Adobe Experience Manager-instansen
+description: Lär dig övervaka och underhålla din Adobe Experience Manager-instans.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -12,14 +12,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5601'
 ht-degree: 0%
 
 ---
 
-# Övervaka och underhålla din Adobe Experience Manager-instans{#monitoring-and-maintaining-your-aem-instance}
+# Övervaka och underhålla Adobe Experience Manager-instansen{#monitoring-and-maintaining-your-aem-instance}
 
 När AEM-instanserna har distribuerats måste du övervaka och underhålla deras åtgärder, prestanda och integritet.
 
@@ -50,7 +50,7 @@ Företaget har förmodligen en säkerhetskopieringsprincip som du följer, ytter
 * hur ofta ändringar görs i antingen programvaran eller data.
 * datavolym; kapacitet kan ibland vara ett problem, liksom tiden för att utföra säkerhetskopieringen.
 * om säkerhetskopieringen kan göras medan användarna är online och, om möjligt, vilken prestandaeffekt har säkerhetskopieringen?
-* användarens geografiska utbredning, det vill säga när är den bästa tidpunkten att säkerhetskopiera (för att minimera påverkan)?
+* Den geografiska fördelningen av användare. Det vill säga, när är den bästa tiden att säkerhetskopiera (för att minimera påverkan)?
 * Din återställningspolicy. Finns det riktlinjer för var säkerhetskopierade data ska lagras (t.ex. utanför platsen och ett visst medium).
 
 Ofta utförs en fullständig säkerhetskopiering med regelbundna intervall (t.ex. varje dag, varje vecka eller varje månad), med inkrementella säkerhetskopieringar mellan (t.ex. varje timme, varje dag eller varje vecka).
@@ -61,22 +61,18 @@ Ofta utförs en fullständig säkerhetskopiering med regelbundna intervall (t.ex
 >
 >Utan den här testningen är säkerhetskopian potentiellt oanvändbar (värsta scenariot).
 
->[!NOTE]
->
->Mer information om prestanda för säkerhetskopiering finns i avsnittet Prestanda [för säkerhetskopiering](/help/sites-deploying/configuring-performance.md#backup-performance) .
+### Säkerhetskopiera programvaruinstallationen {#backing-up-your-software-installation}
 
-### Säkerhetskopiera din programvaruinstallation {#backing-up-your-software-installation}
-
-Efter installationen, eller betydande ändringar i konfigurationen, skapar du en säkerhetskopia av din programvaruinstallation.
+Skapa en säkerhetskopia av programvaruinstallationen när installationen är klar eller om konfigurationen har ändrats avsevärt.
 
 För att utföra den här uppgiften, [säkerhetskopiera hela lagringsplatsen](#backing-up-your-repository) och sedan:
 
 1. Stoppa AEM.
-1. Säkerhetskopiera hela `<cq-installation-dir>` från filsystemet.
+1. Säkerhetskopiera allt `<cq-installation-dir>` från filsystemet.
 
 >[!CAUTION]
 >
->Om du använder en tredjepartsprogramserver kan ytterligare mappar finnas på en annan plats och måste säkerhetskopieras. Mer information om hur du installerar programservrar finns i [Installera AEM med en programserver](/help/sites-deploying/application-server-install.md).
+>Om du använder en programserver från tredje part kan det finnas ytterligare mappar på en annan plats och måste också säkerhetskopieras. Mer information om hur du installerar programservrar finns i [Installera AEM med en programserver](/help/sites-deploying/application-server-install.md).
 
 >[!CAUTION]
 >
@@ -86,7 +82,7 @@ För att utföra den här uppgiften, [säkerhetskopiera hela lagringsplatsen](#b
 >
 >Diskspegling kan också användas som en säkerhetskopieringsmekanism.
 
-### Säkerhetskopiera din lagringsplats {#backing-up-your-repository}
+### Säkerhetskopiera databasen {#backing-up-your-repository}
 
 Avsnittet [Säkerhetskopiering och återställning](/help/sites-administering/backup-and-restore.md) i CRX-dokumentationen täcker alla problem som rör säkerhetskopiering av CRX-databasen.
 
@@ -96,11 +92,11 @@ Mer information om hur du skapar en &quot;hot&quot;-säkerhetskopiering online f
 
 Verktyget **Rensa versioner** är avsett att rensa versioner av en nod eller en hierarki av noder i din databas. Dess främsta syfte är att hjälpa dig att minska storleken på databasen genom att ta bort tidigare versioner av dina noder.
 
-I det här avsnittet behandlas underhållsåtgärder som rör versionsfunktionen i AEM. Verktyget **Rensa version** är avsett att rensa versioner av en nod eller en hierarki av noder i databasen. Dess primära syfte är att hjälpa dig att minska storleken på ditt arkiv genom att ta bort gamla versioner av dina noder.
+I det här avsnittet behandlas underhållsåtgärder som rör versionsfunktionen i AEM. Verktyget **Rensa version** är avsett att rensa versioner av en nod eller en hierarki av noder i databasen. Dess främsta syfte är att hjälpa dig att minska storleken på databasen genom att ta bort tidigare versioner av dina noder.
 
-### Överblick {#overview}
+### Ökning {#overview}
 
-Verktyget **Rensa versioner** är tillgängligt som en underhållsåtgärd varje vecka. Innan du använder den för första gången måste den läggas till och sedan konfigureras. Därefter kan det köras på begäran eller varje vecka.
+Verktyget **Rensa versioner** är tillgängligt som en underhållsåtgärd varje vecka. Innan den används för första gången måste den läggas till och sedan konfigureras. Därefter kan det köras på begäran eller varje vecka.
 
 ### Rensa versioner av en webbplats {#purging-versions-of-a-web-site}
 
@@ -172,7 +168,7 @@ Processen visar alla noder som har bearbetats. Under processen kan en nod ha nå
 
 * `ignore (not versionnable)`: noden stöder inte versionshantering och ignoreras under processen.
 
-* `ignore (no version)`: noden har ingen version och ignoreras under processen.
+* `ignore (no version)`: Noden har ingen version och ignoreras under processen.
 
 * `retained`: noden har inte rensats.
 * `purged`: noden rensas.
@@ -180,14 +176,14 @@ Processen visar alla noder som har bearbetats. Under processen kan en nod ha nå
 Konsolen ger dessutom användbar information om versionerna:
 
 * `V 1.0`: versionsnumret.
-* `V 1.0.1`&#42;: Stjärnan anger att versionen är den aktuella (grundversionen) och inte kan rensas.
+* `V 1.0.1`&#42;: stjärnan anger att versionen är den aktuella (bas) versionen och inte kan rensas.
 
-* `Thu Mar 15 2012 08:37:32 GMT+0100`: datumet för versionen.
+* `Thu Mar 15 2012 08:37:32 GMT+0100`: datum för versionen.
 
 I nästa exempel:
 
 * Versionerna **[!DNL Shirts]** rensas eftersom deras versionsålder är längre än två dagar.
-* Versionerna **[!DNL Tonga Fashions!]** rensas eftersom deras antal versioner är större än 5.
+* Versionerna **[!DNL Tonga Fashions!]** rensas eftersom antalet versioner är större än 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -209,11 +205,11 @@ Rotation av loggfiler avser den process som begränsar filens tillväxt genom at
 
 * Filen `error.log` har fått ett nytt namn enligt mönstret `{original_filename}.yyyy-MM-dd`. Exempel: den 11 juli 2010 får den aktuella loggfilen namnet `error.log-2010-07-10` och sedan skapas en ny `error.log`.
 
-* Tidigare loggfiler tas inte bort, så det är ditt ansvar att rensa gamla loggfiler med jämna mellanrum för att begränsa diskanvändningen.
+* Tidigare loggfiler tas inte bort, så det är ditt ansvar att regelbundet rensa gamla loggfiler för att begränsa diskanvändningen.
 
 >[!NOTE]
 >
->Om du uppgraderar AEM finns alla befintliga loggfiler som inte längre används av AEM kvar på disken. Du kan ta bort dem utan risk. Alla nya loggposter skrivs i de nya loggfilerna.
+>Om du uppgraderar din AEM-installation finns alla befintliga loggfiler som inte längre används av AEM kvar på disken. Du kan ta bort dem utan risk. Alla nya loggposter skrivs i de nya loggfilerna.
 
 ### Hitta loggfilerna {#finding-the-log-files}
 
@@ -294,7 +290,7 @@ I vissa fall kanske du vill skapa en anpassad loggfil med en annan loggnivå. G�
 
    * Namn: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
-     Där `<identifier>` ersätts av fritext som du (måste) ange för att identifiera instansen (du kan inte utelämna den här informationen).
+     Där `<identifier>` ersätts med fritext som du (måste) anger för att identifiera instansen (du kan inte utelämna den här informationen).
 
      Exempel: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
@@ -308,7 +304,7 @@ I vissa fall kanske du vill skapa en anpassad loggfil med en annan loggnivå. G�
 
    * Namn: `org.apache.sling.commons.log.file`
 
-     Typ: String
+     Typ: Sträng
 
      Värde: ange loggfilen, till exempel `logs/myLogFile.log`
 
@@ -334,7 +330,7 @@ I vissa fall kanske du vill skapa en anpassad loggfil med en annan loggnivå. G�
 
         Typ: `String`
 
-        Värde: ange mönstret för loggmeddelandet efter behov. till exempel
+        Värde: ange loggmeddelandets mönster efter behov, till exempel
 
         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
@@ -435,15 +431,15 @@ I vissa fall kanske du vill skapa en anpassad loggfil med en annan loggnivå. G�
    >för att ange när en ny fil skapas (och den befintliga filen får ett nytt namn enligt namnmönstret).
    >
    >* En storleksgräns kan anges med ett tal. Om ingen storleksindikator anges används den som antal byte, eller så kan du lägga till en av storleksindikatorerna - `KB`, `MB` eller `GB` (versaler ignoreras).
-   >* Ett tids-/datumschema kan anges som ett `java.util.SimpleDateFormat` mönster. Den definierar den tidsperiod efter vilken filen roteras. Dessutom läggs suffixet till i den roterade filen (för identifiering).
+   >* Ett tids-/datumschema kan anges som ett `java.util.SimpleDateFormat`-mönster. Den anger efter vilken tidsperiod som filen roteras. Dessutom läggs suffixet till i den roterade filen (för identifiering).
    >
-   >Standardvärdet är &#39;.&#39;yyyy-MM-dd (för daglig loggrotation).
+   >Standardvärdet är .yyyy-MM-dd (för daglig loggrotation).
    >
    >Till exempel vid midnatt den 20 januari 2010 (eller när det första loggmeddelandet efter detta datum inträffar för att vara exakt), .. /logs/error.log byter namn till .. /logs/error.log.2010-01-20. Loggning för 21 januari matas ut till (en ny och tom) .. /logs/error.log tills den rullas över vid nästa dagbyte.
    >
    >| `'.'yyyy-MM` | Rotation i början av varje månad |
    >|---|---|
-   >| `'.'yyyy-ww` | Rotation på den första dagen i varje vecka (beror på språkområdet). |
+   >| `'.'yyyy-ww` | Rotation den första dagen i varje vecka (beror på språk). |
    >| `'.'yyyy-MM-dd` | Rotation vid midnatt varje dag. |
    >| `'.'yyyy-MM-dd-a` | Rotation vid midnatt och middag varje dag. |
    >| `'.'yyyy-MM-dd-HH` | Rotation överst varje timme. |
@@ -544,7 +540,7 @@ Metoder som används för att samla in information för optimering kan också an
 >
 >Specifika [konfigurationer som är tillgängliga för att förbättra prestanda](/help/sites-deploying/configuring-performance.md#configuring-for-performance) kan också kontrolleras.
 
-Nedan visas vanliga prestandaproblem som uppstår, tillsammans med förslag om hur du kan hitta och motverka dem.
+Nedan listas vanliga prestandaproblem som uppstår, tillsammans med förslag på hur man kan upptäcka och motverka dem.
 
 | Område | Symptom | Öka kapaciteten.. | Minska volymen... |
 |---|---|---|---|
@@ -651,11 +647,6 @@ Vissa av dessa verktyg är beroende av operativsystemet.
    <td>JConsole</td>
    <td>Observera JVM-statistik och trådar.</td>
    <td><p>Syntax: jconsole</p> <p>Se <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> och <a href="#monitoring-performance-using-jconsole">Övervaka prestanda med JConsole</a>.</p> <p><strong>Obs!</strong> Med JDK 1.8 kan JConsole utökas med plugin-program, till exempel Top eller TDA (Thread Dump Analyzer).</p> </td>
-  </tr>
-  <tr>
-   <td>Java™ VisualVM</td>
-   <td>Observera JVM-statistik, trådar, minne och profilering.</td>
-   <td><p>Syntax: visualvm eller visualvm<br /> </p> <p>Se <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visuelltVm</a> och <a href="#monitoring-performance-using-j-visualvm">Övervaka prestanda med (J)VisualVM</a>.</p> <p><strong>Obs!</strong> Med JDK 1.8 kan VisualVM utökas med plugin-program. VisualVM avbryts efter JDK 9. Använd Java™ Flight Recorder istället.</p> </td>
   </tr>
   <tr>
    <td>truss/strace, lsof</td>
@@ -925,31 +916,6 @@ Verktygskommandot `jconsole` är tillgängligt med JDK.
 
    Nu kan du välja andra alternativ.
 
-### Övervaka prestanda med hjälp av (J)VisualVM {#monitoring-performance-using-j-visualvm}
-
-För JDK 6-8 är verktygskommandot `visualvm` tillgängligt. När du har installerat en JDK kan du göra följande:
-
-1. Starta din AEM-instans.
-
-   >[!NOTE]
-   >
-   >Om du använder Java™ 5 kan du lägga till argumentet `-Dcom.sun.management.jmxremote` i Java™-kommandoraden som startar din JVM. JMX är aktiverat som standard med Java™ 6.
-
-1. Kör antingen:
-
-   * `jvisualvm`: i mappen JDK 1.6 bin (testversion)
-   * `visualvm`: kan hämtas från [VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) (version med avblodningskant)
-
-1. Dubbelklicka på `com.day.crx.quickstart.Main` inifrån programmet `Local`. Översikten visas som standard:
-
-   ![chlimage_1-2](assets/chlimage_1-2.png)
-
-   Nu kan du välja andra alternativ, bland annat Bildskärm:
-
-   ![chlimage_1-3](assets/chlimage_1-3.png)
-
-Du kan använda det här verktyget för att generera tråddumpar och minnesdumpar. Den här informationen begärs ofta av den tekniska supportteamet.
-
 ### Informationsinsamling {#information-collection}
 
 Om du vet så mycket som möjligt om din installation kan det hjälpa dig att spåra vad som kan ha orsakat prestandaförändringar och om dessa ändringar är motiverade. Samla in dessa mätvärden med jämna mellanrum så att du enkelt kan se betydande ändringar.
@@ -1039,7 +1005,7 @@ Använd en databasfråga, via CRXDE - Verktyg - Fråga, om du vill se hur många
 
 #### Vilken är den genomsnittliga storleken på resurserna? {#what-is-the-average-size-of-the-assets}
 
-Så här fastställer du mappens `/var/dam` totala storlek:
+Så här avgör du den totala storleken på mappen `/var/dam`:
 
 1. Använd WebDAV för att mappa databasen till det lokala filsystemet.
 
@@ -1103,16 +1069,11 @@ Här följer en lista med förslag på vad du ska kontrollera om du får vissa p
 >* [Tråd dumpar](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
 >* [Analysera minnesproblem](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 >* [Analysera med den inbyggda profileraren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
->* [Analysera långsamma och blockerade processer](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU till 100 % {#cpu-at}
 
-Om CPU i ditt system hela tiden körs med 100 %, se följande:
-
-* Kunskapsbasen:
-
-   * [Analysera långsamma och blockerade processer](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+Om datorns CPU-system används till 100 % bör du kontrollera AEM loggar och använda verktyg som top, top eller jstack för att identifiera CPU-trådar. Analysera tråddumpar för oändliga slingor, blockerade trådar eller för stor skräpinsamling.
 
 ### Slut på minne {#out-of-memory}
 
@@ -1136,32 +1097,29 @@ Om det inte finns tillräckligt med diskutrymme på datorn eller om det uppstår
 * Oavsett om du har inaktiverat en samling felsökningsinformation kan den konfigureras på olika platser, bland annat följande:
 
    * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Apache Sling JavaScript-hanterare](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+   * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Konfiguration av Apache Sling-loggning](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [Bibliotekshanterare för CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [Felsökningsfilter för CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+   * [CQ HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+   * [CQ WCM-felsökningsfilter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [Loggare](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Om och hur du har konfigurerat [versionsrensning](/help/sites-deploying/version-purging.md)
 * Kunskapsbasen:
 
    * [För många öppna filer](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
-   * [Journalen förbrukar för mycket diskutrymme](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Regelbunden prestandaförsämring {#regular-performance-degradation}
 
-Om du ser att prestandan för din instans försämras efter varje omstart (ibland en vecka eller senare) kan du kontrollera följande:
+Om du ser att instansens prestanda försämras efter varje omstart (ibland en vecka eller senare) kan du kontrollera följande:
 
 * [Slut på minne](#outofmemory)
-* Kunskapsbasen:
-
-   * [Oavslutade sessioner](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+* [Oavslutade sessioner](/help/sites-administering/troubleshoot.md#checking-for-unclosed-jcr-sessions-checking-for-unclosed-jcr-sessions)
 
 ### JVM-justering {#jvm-tuning}
 
-Java™ Virtual Machine (JVM) har förbättrats när det gäller justering (särskilt sedan Java™ 7). Därför är det ofta lämpligt att ange en rimlig fast JVM-storlek och att använda standardvärdena.
+Java™ Virtual Machine (JVM) har förbättrats när det gäller justering. Därför är det ofta lämpligt att ange en rimlig fast JVM-storlek och att använda standardvärdena.
 
-Om standardinställningarna inte är lämpliga är det viktigt att upprätta en metod för att övervaka och bedöma GC-prestanda. Gör det innan du försöker justera JVM. Den här processen kan omfatta övervakningsfaktorer, inklusive heapstorlek, algoritm och andra aspekter.
+Om standardinställningarna inte är lämpliga är det viktigt att du skapar en metod för att övervaka och utvärdera GC-prestanda. Gör det innan du försöker justera JVM. Den här processen kan omfatta övervakningsfaktorer som stackstorlek, algoritm och andra aspekter.
 
 Några vanliga alternativ är:
 
@@ -1190,12 +1148,6 @@ Eller JConsole:
   ```
 
 * Anslut sedan till JVM med JConsole. Se följande:
-  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html](https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html)`
 
 Du kan se hur mycket minne som används, vilka GC-algoritmer som används, hur lång tid det tar att köra dem och vilken effekt den här processen har på programmets prestanda. Utan den är finjustering bara &quot;slumpmässigt virvlande knoppar&quot;.
-
->[!NOTE]
->
->För Oracle VM finns även information på:
->
->[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
