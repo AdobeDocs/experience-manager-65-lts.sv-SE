@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
 workflow-type: tm+mt
-source-wordcount: '3064'
+source-wordcount: '2961'
 ht-degree: 0%
 
 ---
@@ -65,14 +65,14 @@ Adobe rekommenderar dessa konfigurationer och ger fullständig support som en de
   </tr>
   <tr>
    <td><strong>R: Begränsat stöd</strong></td>
-   <td>För att våra kunder ska lyckas erbjuder Adobe full support i ett begränsat supportprogram, vilket kräver att specifika villkor uppfylls. Support på R-nivå kräver en formell kundförfrågan och en bekräftelse från Adobe. Kontakta Adobes kundtjänst om du vill ha mer information.</td>
+   <td>För att våra kunder ska lyckas erbjuder Adobe full support i ett begränsat supportprogram, vilket kräver att specifika villkor uppfylls. Support på R-nivå kräver en formell kundförfrågan och en bekräftelse från Adobe. Mer information får du av Adobe kundtjänst.</td>
   </tr>
  </tbody>
 </table>
 
 ### Konfigurationer som inte stöds {#unsupported-configurations}
 
-| Stödnivå | Beskrivning |
+| Supportnivå | Beskrivning |
 |---|---|
 | **Z: Stöds inte** | Konfigurationen stöds inte. Adobe har inga programsatser om huruvida konfigurationen fungerar eller inte. |
 
@@ -153,13 +153,14 @@ Adobe Experience Manager fungerar med följande serverplattformar för produktio
 | **Linux®, baserat på Red Hat®-distributionen** | A: Stöds `[1]` `[2]` |
 | Linux®, baserat på Debian-distribution inkl. Ubuntu | A: `[1]` stöds |
 | Linux®, baserat på SUSE®-distribution | A: `[1]` stöds |
+| Microsoft® Windows Server 2022 | R: Stöds |
 
 1. Linux® Kernel 5. x och 6. x innehåller derivat från distributionen av Red Hat®, inklusive Red Hat® Enterprise Linux®, CentOS, Oracle Linux® och Amazon Linux®.
 1. Linux®-distribution stöds av Adobe Managed Services.
 
    >[!NOTE]
    >
-   >För Linux-baserade servrar (OSGI- och JEE-stackar) kräver AEM Forms add-on körningsberoenden som:
+   >För Linux-baserad server kräver AEM Forms add-on körningsberoenden som:
    >* glibc.x86_64 (2.17-196)
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
@@ -176,17 +177,17 @@ Om du har en molnbaserad miljö kan du titta på det senaste erbjudandet från A
 
 Adobe erbjuder även Adobe Managed Services att distribuera AEM på Azure eller AWS. Adobe Managed Services förser experterna med erfarenhet och kunskaper av att driftsätta och använda AEM i dessa molnmiljöer. Se [ytterligare dokumentation om Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-I alla andra fall där AEM distribueras på Azure eller AWS, eller i någon annan molndatormiljö, finns support från Adobe i den virtuella datormiljön. Den virtuella miljön måste köras i enlighet med de tekniska specifikationer som anges på den här sidan. Alla rapporterade fel som rör AEM som körs i någon av dessa molnmiljöer måste kunna reproduceras oberoende av alla molntjänster som är specifika för molndatormiljön. Det vill säga om inte molntjänsten stöds som en del av de tekniska krav som anges på den här sidan, till exempel Azure Blob Storage eller AWS S3.
+I alla andra fall av distribution av AEM på Azure eller AWS, eller någon annan molnmiljö, finns stöd från Adobe för den virtuella beräkningsmiljön. Den virtuella miljön måste köras i enlighet med de tekniska specifikationerna på den här sidan. Alla rapporterade problem som rör AEM som körs i någon av dessa molnmiljöer måste kunna reproduceras oberoende av alla molntjänster som är specifika för molnmiljön. Det vill säga om inte molntjänsten stöds som en del av de tekniska krav som anges på den här sidan, till exempel Azure Blob Storage eller AWS S3.
 
 Om du vill ha rekommendationer om hur du distribuerar AEM på Azure eller AWS, utanför Adobe Managed Services, rekommenderar Adobe att du arbetar direkt med molnleverantören. Eller i samarbete med Adobe partners som stöder driftsättningen av AEM i den molnmiljö du föredrar. Den valda molnleverantören eller partnern ansvarar för storleksspecifikationer, utformning och implementering av arkitekturen för att uppfylla dina specifika krav på prestanda, belastning, skalbarhet och säkerhet.
 
 ### Dispatcher Platforms (webbservrar) {#dispatcher-platforms-web-servers}
 
-Dispatcher är en komponent för cachelagring och lastbalansering. [Hämta den senaste Dispatcher-versionen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 kräver Dispatcher version 4.3.2 eller senare.
+Dispatcher är komponenten för cachelagring och belastningsutjämning. [Hämta den senaste versionen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) av Dispatcher. Experience Manager 6.5 kräver Dispatcher version 4.3.2 eller senare.
 
 Följande webbservrar kan användas med Dispatcher version 4.3.2:
 
-| Plattform | Stödnivå |
+| Plattform | Supportnivå |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A: Stöds |
 | Microsoft® IIS 10 (Internet Information Server) | A: Stöds |
@@ -268,7 +269,7 @@ AEM användargränssnitt är optimerat för större skärmar (vanligen bärbara 
  </tbody>
 </table>
 
-1. Extended Support Release of Firefox [Läs mer om mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Extended Support Release av Firefox [Läs mer på mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. Stöd för Apple iPad
 
 ### Webbläsare som stöds för webbplatser {#supported-browsers-for-websites}
@@ -339,26 +340,26 @@ Om du använder Dynamic Media i Linux® måste följande krav vara uppfyllda:
 >
 >Konstruktionen för flera noder kan resultera i minnesöverbelastning på en eller flera av noderna innan andra noder töms. När minnesöverbelastning inträffar kan kärnan bestämma sig för att avsluta processer (till exempel Image Server eller Platform Server) trots att det finns tillgängligt minne.
 >
->Adobe rekommenderar därför att du stänger av NUMA med startalternativet **numa=off** om du kör ett sådant system så att du undviker kerneldödandet.
+>Därför rekommenderar Adobe att du, om du kör ett sådant system, stänger av NUMA med startalternativet **numa=off** för att undvika att kärnan dödar dessa processer.
 
 >[!NOTE]
 >
->**Servervärdnamnet måste matcha:** Kontrollera att serverns värdnamn kan matchas till en IP-adress. Om det inte är möjligt lägger du till det fullständigt kvalificerade värdnamnet och IP-adressen i **/etc/hosts**:
+>**Serverns värdnamn måste matchas:** Se till att serverns värdnamn kan matchas till en IP-adress. Om det inte är möjligt lägger du till det fullständigt kvalificerade värdnamnet och IP-adressen i **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
 
 * Microsoft® Windows Server 2016
-* Växlingsutrymme som är lika med minst dubbelt så mycket fysiskt minne (RAM)
+* Växla utrymme motsvarande minst dubbelt så mycket fysiskt minne (RAM)
 
-Om du vill använda Dynamic Media i Windows installerar du Microsoft® Visual Studio 2010, 2013 och 2015 redistributable för x64 och x86.
+Om du vill använda Dynamic Media i Windows installerar du Microsoft® Visual Studio 2010, 2013 och 2015 som kan återdistribueras för x64 och x86.
 
 För Windows x64:
 
 * Få Microsoft® Visual Studio 2010 omdistribuerbart på [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Få Microsoft® Visual Studio 2013 omdistribuerbart på [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Få Microsoft® Visual Studio 2015 omdistribuerbart på [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Få Microsoft® Visual Studio 2015 återdistribuerbart på [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 För Windows x86:
 
@@ -386,15 +387,7 @@ För Windows x86:
    <td>XPS, bildformat (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF och DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> senaste versionen (inaktuell)</td>
-   <td>XPS, bildformat (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF och DWF</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF och TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2016 (inaktuellt)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF och TXT</td>
   </tr>
   <tr>
@@ -402,29 +395,13 @@ För Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (inaktuellt)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016 (utgått)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2016 (utgått)<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, bildformat (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, JPC, HTML, HTM, RTF och TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (inaktuellt)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, bildformat (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, JPC, HTML, HTM, RTF och TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -451,33 +428,33 @@ För Windows x86:
 ### Krav för AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 eller Windows® 11
-* Processor på 1 GHz eller snabbare med stöd för PAE, NX och SSE2.
-* 1 GB RAM-minne för 32-bitars eller 2 GB RAM-minne för 64-bitars operativsystem
+* 1 GHz eller snabbare processor med stöd för PAE, NX och SSE2.
+* 1 GB RAM för 32-bitars eller 2 GB RAM för 64-bitars operativsystem
 * 16 GB diskutrymme för 32-bitars eller 20 GB för 64-bitars operativsystem
 * Grafikminne - 128 MB GPU (256 MB rekommenderas)
 * 2,35 GB ledigt hårddiskutrymme
-* Skärmupplösning på 1024 X 768 pixlar eller mer
-* Maskinvaruacceleration för video (tillval)
+* Bildskärmsupplösning på 1 024 x 768 pixlar eller högre
+* Maskinvaruacceleration för video (valfritt)
 * Acrobat Pro DC, Acrobat Standard DC eller Adobe Acrobat Reader DC
 * Administrativ behörighet för att installera Designer
-* Microsoft Visual C++ 2019 (VC 14.28 eller senare) 32-bitars körningsmiljö för 32-bitars AEM Forms Designer
-* Microsoft Visual C++ 2019 (VC 14.28 eller senare) 64-bitars runtime för 64-bitars AEM Forms Designer (för både OSGI- och JEE-stacken)
+* Microsoft Visual C++ 2019 (VC 14.28 eller senare) 32-bitars körning för 32-bitars AEM Forms Designer
+* Microsoft Visual C++ 2019 (VC 14.28 eller senare) 64-bitars körning för 64-bitars AEM Forms Designer
 
-[Installera och konfigurera AEM Forms designer](/help/forms/using/installing-configuring-designer.md)
+[Installera och konfigurera AEM Forms-designer](/help/forms/using/installing-configuring-designer.md)
 
-### Krav för återskrivning av AEM Assets XMP-metadata {#requirements-for-aem-assets-xmp-metadata-write-back}
+### Krav för tillbakaskrivning av AEM Assets XMP-metadata {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-XMP-återskrivningsfunktionen stöds och är aktiverad för följande plattformar och filformat:
+XMP-tillbakaskrivning stöds och aktiveras för följande plattformar och filformat:
 
 * **Operativsystem:**
 
    * Linux® (stöd för 32-bitars och 32-bitars program i 64-bitarssystem). Anvisningar om hur du installerar 32-bitars klientbibliotek finns i [Så här aktiverar du XMP-extrahering och återskrivning på 64-bitars Red Hat® Linux®](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
    * Windows Server
-   * macOS X (64 bitar)
+   * macOS X (64-bitars)
 
 * **Filformat**: JPEG, PNG, TIFF, PDF, INDD, AI och EPS.
 
-### Krav för AEM Assets för att bearbeta metadatatunga resurser i Linux® {#assetsonlinux}
+### Krav för AEM Assets att bearbeta metadataintensiva resurser i Linux® {#assetsonlinux}
 
 XMPFilesProcessor-processen kräver att biblioteket GLIBC_2.14 fungerar. Använd en Linux®-kärna som innehåller GLIBC_2.14, till exempel Linux®-kärna version 3.1.x. Prestandan för bearbetning av resurser som innehåller en stor mängd metadata förbättras, till exempel PSD-filer. Om du använder en tidigare version av GLIBC uppstår fel i loggar som börjar med `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
