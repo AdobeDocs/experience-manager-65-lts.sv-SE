@@ -11,7 +11,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d9bb95b41f065ced60ceef6eb6f2c08ebf115d2d
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%
@@ -75,9 +75,9 @@ I följande förklaring beskrivs de möjliga prestandafallsområdena med vissa l
 
 **Tillfälligt filsystem** Ett långsamt lokalt filsystem kan orsaka interaktiva prestandaproblem, särskilt vid sökning, eftersom sökindexen lagras på den lokala disken. Det kan också orsaka problem med resursbearbetningen om kommandoradsprocessen används.
 
-**AEM DAM Finder** Interaktiva prestandaproblem som ofta uppstår vid sökningar orsakas av hög användning av CPU på grund av många samtidiga användare eller andra CPU-krävande processer i samma instans. Genom att gå från virtuella datorer till dedikerade datorer och se till att inga andra tjänster körs på datorn kan du förbättra prestandan. Om CPU-belastningen är hög på grund av resursbearbetning och många samtidiga användare rekommenderar dag att du lägger till ytterligare klusternoder.
+**AEM DAM Finder** Interaktiva prestandaproblem som ofta uppstår vid sökningar orsakas av hög användning av CPU på grund av många samtidiga användare eller andra CPU-krävande processer i samma instans. Genom att gå från virtuella datorer till dedikerade datorer och se till att inga andra tjänster körs på datorn kan du förbättra prestandan. Om CPU-belastningen är hög på grund av resursbearbetning och många samtidiga användare rekommenderar Adobe att du lägger till ytterligare klusternoder.
 
-**AEM DAM-arbetsflöde** Långvariga arbetsflödesprocesser vid tillgångsintag orsakar prestandaproblem vid bearbetning av resurser. Beroende på vilken typ av mediefiler som bearbetas kan detta tyda på överutnyttjande av CPU. Dag rekommenderar att du minskar antalet andra processer som körs i systemet och ökar antalet tillgängliga processorer genom att lägga till klusternoder.
+**AEM DAM-arbetsflöde** Långvariga arbetsflödesprocesser vid tillgångsintag orsakar prestandaproblem vid bearbetning av resurser. Beroende på vilken typ av mediefiler som bearbetas kan detta tyda på överutnyttjande av CPU. Adobe rekommenderar att du minskar antalet andra processer som körs i systemet och ökar antalet tillgängliga processorer genom att lägga till klusternoder.
 
 **NAS-anslutning** Dålig nätverksanslutning till NAS orsakar interaktiva prestandaproblem eftersom åtkomst av nya noder under resurshanteringen blir långsammare på grund av nätverksfördröjning. Dessutom påverkar långsam nätverksgenomströmning negativt genomströmning, men även bearbetningsprestanda eftersom inläsning och sparande av återgivningar blir långsammare.
 
