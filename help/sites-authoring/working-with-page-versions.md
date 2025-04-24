@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1567'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,13 @@ Versionshantering skapar en ögonblicksbild av en sida vid en viss tidpunkt. Med
    * om du vill ångra en ändring som du har gjort på sidan.
 * Jämför den aktuella versionen av en sida med en tidigare version:
    * om du vill framhäva skillnader i text och bilder.
+
+>[!NOTE]
+>
+>Endast innehåll versionshanteras i AEM-databasen. Dynamiska resurser som kod, CSS och JavaScript är inte versionshanterade.
+>
+>* När du visar versioner visas innehållet med den aktuella koden, CSS och JavaScript för databasen.
+>* När du återställer versioner återställs endast innehållet och den aktuella koden, CSS och JavaScript för databasen tillämpas på det.
 
 ## Skapa en ny version {#creating-a-new-version}
 
