@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -71,10 +71,6 @@ Specifika dokument beskrivs och länkas till i de tabeller som följer.
 </table>
 
 ## UI {#ui}
-
-De bästa sätten att använda användargränssnittet beskrivs här:
-
-[Rekommendationer för användargränssnitt för kunder](/help/sites-deploying/ui-recommendations.md)
 
 AEM har för närvarande två användargränssnitt: klassiskt och pekoptimerat användargränssnitt i samma version. Därför måste kunderna fatta ett beslut om vilken användning som ska ske under projektets genomförande. Det här dokumentet är avsett att hjälpa till att hitta rätt alternativ.
 

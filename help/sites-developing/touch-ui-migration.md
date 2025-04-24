@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -100,10 +100,6 @@ Tänk på följande stora skillnader mellan det klassiska gränssnittet och pekg
 </table>
 
 Med andra ord innebär migrering av ett avsnitt i användargränssnittet från det klassiska gränssnittet till pekgränssnittet att en *ExtJS-widget* porteras till en *Sling-komponent*. För att underlätta detta baseras pekgränssnittet på GRE-ramverket (Granite UI Framework), som redan innehåller vissa Sling-komponenter för användargränssnittet (kallas GRE UI-komponenter).
-
-Kontrollera status och relaterade rekommendationer innan du börjar:
-
-* [Rekommendationer för användargränssnitt för kunder](/help/sites-deploying/ui-recommendations.md)
 
 Grundläggande information om hur du utvecklar användargränssnittet för pekskärmar är en stabil grund:
 

@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1075'
 ht-degree: 1%
 
 ---
@@ -154,7 +154,7 @@ Analysen börjar med steg 0. Målet är att avgöra vilken enhet (Dispatcher, ex
   <tr>
    <td><strong>Steg 19</strong></td>
    <td>100 % CPU</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html</a></td>
+   <td>Se <a href="/help/sites-deploying/monitoring-and-maintaining.md#cpu-at">CPU vid 100 %</a></td>
   </tr>
   <tr>
    <td><strong>Steg 20</strong></td>
@@ -288,7 +288,7 @@ Analysen börjar med steg 0. Målet är att avgöra vilken enhet (Dispatcher, ex
   <tr>
    <td><strong>Steg 45<br /> och 47</strong><br /> </td>
    <td>Använda HTTP/2</td>
-   <td>Se Gem Session för steg 37, 38 och 39. Du kan även ta en titt på <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">det här</a> foruminlägget om HTTP/2-stöd.<br /> </td>
+   <td>Se Gem-sessionen för steg 37,38 och 39.<br /> </td>
   </tr>
   <tr>
    <td><strong>Steg 49</strong></td>

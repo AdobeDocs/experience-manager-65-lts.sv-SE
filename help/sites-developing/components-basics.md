@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4834'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,6 @@ Innan något allvarligt samtal börjar om att utveckla komponenter måste du vet
   [Standardanvändargränssnittet](/help/sites-developing/touch-ui-concepts.md) baseras på den enhetliga användarupplevelsen för Adobe Experience Cloud med hjälp av de underliggande teknikerna i [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) och [Granite-gränssnittet](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Klassiskt användargränssnitt**
 Användargränssnitt som bygger på ExtJS-teknik som har ersatts med AEM 6.4.
-
-Mer information finns i [Gränssnittsrekommendationer för kunder](/help/sites-deploying/ui-recommendations.md).
 
 Komponenter kan implementeras för att stödja det beröringsaktiverade användargränssnittet, det klassiska användargränssnittet eller båda. När du tittar på en standardinstans ser du även färdiga komponenter som ursprungligen designats för det klassiska användargränssnittet, det pekaktiverade användargränssnittet eller båda.
 

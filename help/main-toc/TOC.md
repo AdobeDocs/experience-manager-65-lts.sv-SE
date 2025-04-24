@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Läs Adobe Experience Manager 6.5 LTS-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
 breadcrumb-title: Användarhandbok
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '6795'
+source-wordcount: '6790'
 ht-degree: 1%
 
 ---
@@ -1457,7 +1457,6 @@ ht-degree: 1%
          + [Prestandaträd](/help/sites-deploying/performance-tree.md)
          + [Bästa metoder för prestandatestning](/help/sites-deploying/best-practices-for-performance-testing.md)
          + [Metodtips för frågor och indexering](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
-         + [Rekommendationer för användargränssnitt för kunder](/help/sites-deploying/ui-recommendations.md)
          + [Prestanda och skalbarhet](/help/sites-deploying/performance.md)
    + Flytande upplevelser {#fluid-experiences}
       + [Funktionslista](/help/fluid-experiences/feature-list.md)

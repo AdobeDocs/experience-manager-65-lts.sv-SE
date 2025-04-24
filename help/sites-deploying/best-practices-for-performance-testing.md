@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,6 @@ Det finns många kommersiellt tillgängliga verktyg för prestandatestning på m
 
 * **Load Runner** är en inläsningstestprodukt i enterpriseklass. Det finns en kostnadsfri utvärderingsversion. Mer information finns på [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
-* Inläsningstestverktyg för webbplatser som [Vercara](https://vercara.com/website-performance-management) kan också användas.
 * När du testar mobila eller responsiva webbplatser måste du använda en separat uppsättning verktyg. De fungerar genom att begränsa nätverksbandbredden och simulera långsammare mobilanslutningar som 3G eller EDGE. Bland de verktyg som används mest finns följande:
 
    * **[Nätverkslänkvillkor](https://nshipster.com/network-link-conditioner/)** - Det är ett enkelt användargränssnitt och fungerar på en ganska låg nivå i nätverksstacken. Den innehåller versioner för OS X och iOS.
@@ -108,21 +107,18 @@ På system med MongoDB-backendar innehåller AEM flera [JMX](/help/sites-adminis
 
 * **Konsoliderad cachestatistik** MBean. Du kommer åt den direkt genom att gå till:
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DConsolidated+Cache+statistics%2Ctype%3DConsolidatedCacheStats`
 
 För cachen med namnet **Document-Diff** bör träffhastigheten vara över `.90`. Om träffhastigheten är under 90 % är det troligt att du måste redigera din `DocumentNodeStoreService`-konfiguration. Adobe produktsupport kan rekommendera optimala inställningar för din miljö.
 
 * **Oak-databasstatistik** Mbean. Du kommer åt den direkt genom att gå till:
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DOak+Repository+Statistics%2Ctype%3DRepositoryStats`
 
 Avsnittet **ObservationQueueMaxLength** visar antalet händelser i Oak observationskö under de senaste timmarna, minuterna, sekunderna och veckorna. Hitta det största antalet händelser i avsnittet&quot;per timme&quot;. Jämför det här talet med inställningen `oak.observation.queue-length`. Om det högsta antalet som visas för observationskön överskrider inställningen `queue-length`:
 
-1. Skapa en fil med namnet `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` som innehåller parametern `oak.observation.queue‐length=50000`
+1. Skapa en fil med namnet `com.adobe.granite.repository.impl.SlingRepositoryManager.config` som innehåller parametern `oak.observation.queue‐length=50000`
 1. Placera den under mappen /crx-quickstart/install.
-
->[!NOTE]
->Se [AEM 6.x | Tips för prestandajustering ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)
 
 Standardinställningen är 10 000, men de flesta distributioner måste öka den till 20 000 eller 50 000.
 
@@ -150,10 +146,9 @@ När du har kört prestandatester på författarinstansen måste eventuella prob
 * Kontrollera om det finns fel eller varningar i felloggen. Mer information finns i [Loggning](/help/sites-deploying/configure-logging.md).
 * Övervaka systemmaskinvaruresurser som minne och CPU-användning, disk-I/O eller nätverks-I/O. Dessa resurser är ofta orsaken till flaskhalsar i prestandan.
 * Optimera sidornas arkitektur och adressering för att minimera användningen av URL-parametrar så att så mycket cache-lagring som möjligt kan användas.
-* Följ dokumentationen för [Prestandaoptimering](/help/sites-deploying/configuring-performance.md) och [Prestandaoptimeringstips](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
-
+* Följ dokumentationen för [Prestandaoptimering](/help/sites-deploying/configuring-performance.md).
 * Om det är problem med att redigera vissa sidor eller komponenter på författarinstanser använder du TouchUI Developer Mode för att granska sidan i fråga. Då visas en beskrivning av varje innehållsområde på sidan och dess inläsningstid.
-* Minimera alla JS och CSS på webbplatsen. Se [blogginlägget](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
+* Minimera alla JS och CSS på webbplatsen.
 * Eliminera inbäddad CSS och JS från komponenterna. De bör inkluderas och minimeras med klientbiblioteken för att minimera antalet begäranden som krävs för att återge sidan.
 * Om du vill inspektera serverförfrågningarna och se vilka som tar längst tid använder du webbläsarverktyg som Chrome nätverksflik.
 
