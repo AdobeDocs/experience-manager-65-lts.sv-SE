@@ -8,10 +8,8 @@ noindex: true
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: a7a8a20a-e513-43df-80b7-1e6daf957f20
-source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
+source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 0%

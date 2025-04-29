@@ -4,10 +4,8 @@ description: Lär dig hur du trimmar din AEM-instans för specifika syften med k
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 0%
