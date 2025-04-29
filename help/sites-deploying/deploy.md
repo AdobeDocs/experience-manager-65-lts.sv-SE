@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
+source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -38,20 +38,20 @@ På den här sidan hittar du:
    * [Opackad installationskatalog](#unpacked-install-directory)
    * [Starta och stoppa](#starting-and-stopping)
 
-<!-- Once you have familiarized yourself with these basics, you can find in more advanced and detailed information in the following subpages:
+När du har lärt dig grunderna hittar du mer avancerad och detaljerad information på följande undersidor:
 
-* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
-* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server Install](/help/sites-deploying/application-server-install.md)
-* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configuring](/help/sites-deploying/configuring.md)
-* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
-* [Web Console](/help/sites-deploying/web-console.md)
-* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-* [Best Practices](/help/sites-deploying/best-practices.md)
-* [Introduction to the AEM Platform](/help/sites-deploying/platform.md) -->
+* [Tekniska krav](/help/sites-deploying/technical-requirements.md)
+* [Rekommenderade distributioner](/help/sites-deploying/recommended-deploys.md)
+* [Anpassad fristående installation](/help/sites-deploying/custom-standalone-install.md)
+* [Installation av programserver](/help/sites-deploying/application-server-install.md)
+* [Kommandoradens start och stopp](/help/sites-deploying/command-line-start-and-stop.md)
+* [Konfigurerar](/help/sites-deploying/configuring.md)
+* [Uppgradera till AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
+* [Instruktionsartiklar för konfiguration](/help/sites-deploying/ht-deploy.md)
+* [Webbkonsol](/help/sites-deploying/web-console.md)
+* [Felsökning av replikering](/help/sites-deploying/troubleshoot-rep.md)
+* [Bästa praxis](/help/sites-deploying/best-practices.md)
+* [Introduktion till AEM Platform](/help/sites-deploying/platform.md)
 
 ## Grundläggande begrepp {#basic-concepts}
 
@@ -265,28 +265,28 @@ AEM startar och dirigerar automatiskt om webbläsaren till rätt sida, vanligtvi
 
 ![inloggningsskärmen](assets/screen_shot_2019-04-08at83533am.png)
 
-<!-- 
-After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
-* [Authoring](/help/sites-authoring/first-steps.md)
-* [Administering](/help/sites-administering/home.md)
-* [Developing](/help/sites-developing/getting-started.md)
-* [Managing](/help/managing/best-practices.md)
+När du har loggat in har du tillgång till AEM. Mer information, beroende på din roll, finns i:
 
-## Advanced Deployment {#advanced-deployment}
+* [Redigering](/help/sites-authoring/first-steps.md)
+* [Administratör](/help/sites-administering/home.md)
+* [Utvecklar](/help/sites-developing/getting-started.md)
+* [Hantera](/help/managing/best-practices.md)
 
-The above section should give you a good understanding of the basics of AEM installation. However, installing a full production system of AEM can involve considerably more complexity. For full coverage of advanced installation see the following subpages:
+## Avancerad distribution {#advanced-deployment}
 
-* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
-* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server Install](/help/sites-deploying/application-server-install.md)
-* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configuring](/help/sites-deploying/configuring.md)
-* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
-* [Web Console](/help/sites-deploying/web-console.md)
-* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-* [Best Practices](/help/sites-deploying/best-practices.md)
-* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
- -->
+Ovanstående avsnitt bör ge dig en god förståelse för grunderna i AEM-installationen. Att installera ett komplett produktionssystem av AEM kan dock medföra en betydligt större komplexitet. Mer information om avancerad installation finns i följande undersidor:
+
+* [Tekniska krav](/help/sites-deploying/technical-requirements.md)
+* [Rekommenderade distributioner](/help/sites-deploying/recommended-deploys.md)
+* [Anpassad fristående installation](/help/sites-deploying/custom-standalone-install.md)
+* [Installation av programserver](/help/sites-deploying/application-server-install.md)
+* [Kommandoradens start och stopp](/help/sites-deploying/command-line-start-and-stop.md)
+* [Konfigurerar](/help/sites-deploying/configuring.md)
+* [Uppgradera till AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
+* [Instruktionsartiklar för konfiguration](/help/sites-deploying/ht-deploy.md)
+* [Webbkonsol](/help/sites-deploying/web-console.md)
+* [Felsökning av replikering](/help/sites-deploying/troubleshoot-rep.md)
+* [Bästa praxis](/help/sites-deploying/best-practices.md)
+* [Introduktion till AEM Platform](/help/sites-deploying/platform.md)
+
