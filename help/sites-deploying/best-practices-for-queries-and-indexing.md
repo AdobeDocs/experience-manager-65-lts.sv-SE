@@ -8,12 +8,10 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4520'
+source-wordcount: '4196'
 ht-degree: 0%
 
 ---
@@ -145,7 +143,7 @@ Rekommenderade värden är:
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-I AEM 6.3 är ovanstående två parametrar förkonfigurerade och kan sparas med OSGi QueryEngineSettings.
+Från och med AEM 6.3 är de två ovanstående parametrarna förkonfigurerade i körklart läge och kan behållas via OSGi QueryEngineSettings.
 
 Mer information finns under: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -168,20 +166,6 @@ Lucene-index introducerades i Oak 1.0.9 och innehåller kraftfulla optimeringar 
 * Eftersom Lucene-index är asynkront kan det inte framtvinga unika begränsningar. Om detta är obligatoriskt måste ett egenskapsindex sättas in.
 
 Vanligtvis rekommenderar vi att du använder Lucene-index, såvida det inte finns ett övertygande behov av att använda egenskapsindex så att du kan dra nytta av bättre prestanda och flexibilitet.
-
-### Solr-indexering {#solr-indexing}
-
-AEM har även stöd för Solr-indexering som standard. Detta används för att stödja textsökning, men det kan också användas för att stödja alla typer av JCR-frågor. Solr bör övervägas när AEM-instanserna inte har CPU-kapacitet att hantera antalet frågor som krävs vid sökintensiva distributioner, som sökdrivna webbplatser med ett stort antal samtidiga användare. Solr kan också implementeras i en crawlningsbaserad metod för att använda några av de mer avancerade funktionerna i plattformen.
-
-Solr-index kan konfigureras för att köras inbäddade på AEM-servern för utvecklingsmiljöer eller avlastas till en fjärrinstans för att förbättra sökskalbarheten i produktions- och stagningsmiljöer. När du avlastar sökningen förbättras skalbarheten, vilket medför fördröjning och därför rekommenderas inte om det inte krävs. Mer information om hur du konfigurerar Solr-integrering och hur du skapar Solr-index finns i [Oak Queries and Indexing-dokumentationen](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
-
->[!NOTE]
->
->När du använder den integrerade Solr-sökmetoden kan du avlasta indexering till en Solr-server. Om de mer avancerade funktionerna i Solr-servern används via en crawlningsbaserad metod krävs ytterligare konfigurationsarbete.
-
-Nackdelen med detta är att även om AEM-frågor som standard respekterar åtkomstkontrollistor och därmed döljer resultat som en användare inte har tillgång till, så stöds inte den här funktionen när användaren gör en extern sökning på en Solr-server. Om sökningen ska göras externt på det här sättet måste man se till att användarna inte får resultat som de inte ska se.
-
-Potentiella användningsfall där denna metod kan vara lämplig är fall där sökdata från flera källor kan behöva sammanställas. Du kan till exempel ha en webbplats som ligger hos AEM och en annan webbplats som ligger hos en tredjepartsplattform. Solr kunde konfigureras för att crawla innehållet på båda webbplatserna och lagra dem i ett aggregerat index. Detta skulle möjliggöra sökningar mellan webbplatser.
 
 ### Designöverväganden {#design-considerations}
 
@@ -216,7 +200,7 @@ När du tar bort ett index för en MongoDB-instans är borttagningskostnaden pro
 
 ### JCR-frågecheblad {#jcrquerycheatsheet}
 
-[JCR-frågechebladet](assets/JCR_query_cheatsheet-v1.1.pdf) kan hämtas och användas som referens under utvecklingen, vilket ger stöd för att skapa effektiva JCR-frågor och indexdefinitioner. Den innehåller exempelfrågor för QueryBuilder, XPath och SQL-2, som omfattar flera scenarier som beter sig på olika sätt när det gäller frågeprestanda. Här finns också rekommendationer för hur du skapar eller anpassar Oak-index. Innehållet i detta värmeblad gäller AEM 6.5 och AEM as a Cloud Service.
+[JCR-frågechebladet](assets/JCR_query_cheatsheet-v1.1.pdf) kan hämtas och användas som referens under utvecklingen, vilket ger stöd för att skapa effektiva JCR-frågor och indexdefinitioner. Den innehåller exempelfrågor för QueryBuilder, XPath och SQL-2, som omfattar flera scenarier som beter sig på olika sätt när det gäller frågeprestanda. Här finns också rekommendationer för hur du skapar eller anpassar Oak-index. Innehållet i detta Cheat Sheet gäller AEM 6.5, AEM 6.5 LTS och AEM as a Cloud Service.
 
 ## Omindexering {#re-indexing}
 
@@ -380,7 +364,7 @@ Här följer information om möjliga problem tillsammans med lösningar:
 
 >[!NOTE]
 >
->I AEM 6.5 är [oak-run.jar den ENDA metoden ](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) som stöds för omindexering i MongoMK- eller RDBMK-databaser.
+>I AEM 6.5 LTS är [oak-run.jar den ENDA metoden ](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) som stöds för omindexering i MongoMK- eller RDBMK-databaser.
 
 #### Indexerar om egenskapsindex {#re-indexing-property-indexes}
 
