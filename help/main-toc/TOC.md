@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Läs Adobe Experience Manager 6.5 LTS-dokumentationen och se hur det fungerar och vad programmet kan göra för dig.
 breadcrumb-title: Användarhandbok
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '6790'
+source-wordcount: '6786'
 ht-degree: 1%
 
 ---
@@ -1420,7 +1420,6 @@ ht-degree: 1%
          + [Körningslägen](/help/sites-deploying/configure-runmodes.md)
          + [Webbkonsol](/help/sites-deploying/web-console.md)
          + [Replikering](/help/sites-deploying/replication.md)
-         + [Replikering med ömsesidig SSL](/help/sites-deploying/mssl-replication.md)
          + [Felsökning av replikering](/help/sites-deploying/troubleshoot-rep.md)
          + [Förfallotid för statiska objekt](/help/sites-deploying/expiration-static-objects.md)
          + [Rensning av version](/help/sites-deploying/version-purging.md)

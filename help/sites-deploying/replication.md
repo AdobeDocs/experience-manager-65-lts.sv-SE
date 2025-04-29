@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '3278'
+source-wordcount: '3261'
 ht-degree: 0%
 
 ---
@@ -347,8 +347,6 @@ De här inställningarna används för att definiera utlösare för automatisera
   När det här alternativet är markerat tvingar agenten inte fram versionshantering av aktiverade sidor.
 
 ## Konfigurera replikeringsagenter {#configuring-your-replication-agents}
-
-Mer information om hur du ansluter replikeringsagenter till publiceringsinstansen med MSSL finns i [Replikera med ömsesidig SSL](/help/sites-deploying/mssl-replication.md).
 
 ### Konfigurera dina replikeringsagenter från författarmiljön {#configuring-your-replication-agents-from-the-author-environment}
 
