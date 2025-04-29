@@ -4,9 +4,9 @@ description: Läs om flexibiliteten i Universal Editor och hur den kan hjälpa t
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3f6d0791968ad3017256dcd5ecea617bc7c8ed83
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Universell redigerare är en tjänst som fungerar tillsammans med AEM för att s
 
 Universal Editor stöds av:
 
-* AEM 6.5 LTS
+* AEM 6.5 LTS GA
    * Både lokala värdtjänster och AMS-värdtjänster stöds.
-* [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (Service Pack 21 eller 22 plus ett funktionspaket)
+* [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (Service Pack 21 eller 22 plus ett funktionspaket eller högre)
    * Både lokala värdtjänster och AMS-värdtjänster stöds.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (release `2023.8.13099` eller senare)
 
@@ -50,29 +50,15 @@ Det här dokumentet fokuserar på AEM 6.5 LTS-stöd i Universal Editor.
 
 Om du vill testa den universella redigeraren måste du:
 
-1. [Uppdatera och konfigurera din AEM-redigeringsinstans.](#update-configure-aem)
+1. [Konfigurera tjänster på din AEM-redigeringsinstans.](#configure-aem)
 1. [Konfigurera en lokal Universal Editor-tjänst.](#set-up-ue)
 1. [Justera din dispatcher så att den kan användas i den universella redigeringstjänsten.](#update-dispatcher)
 
 När du har slutfört konfigurationen kan du [instrumentera dina program så att de använder den universella redigeraren.](#instrumentation)
 
-### Uppdatera AEM {#update-aem}
+### Konfigurera tjänster {#configure-aem}
 
-Service Pack 21 eller 22 och ett funktionspaket för AEM krävs för att du ska kunna använda Universal Editor med AEM 6.5.
-
-#### Använd senaste Service Pack {#latest}
-
-Kontrollera att du kör minst Service Pack 21 eller 22 för AEM 6.5. Du kan hämta det senaste Service Pack-meddelandet från [Programvarudistribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-
-#### Installera Universal Editor Feature Pack {#feature-pack}
-
-Installera **Universal Editor Feature Pack för AEM 6.5** [som finns tillgängligt för programdistribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
-
-Om du redan kör Service Pack 23 eller senare är funktionspaketet inte nödvändigt.
-
-### Konfigurera tjänster {#configure-services}
-
-Funktionspaketet installerar ett antal nya paket för vilka ytterligare konfiguration krävs.
+Den universella redigeraren använder ett antal tjänster som måste konfigureras.
 
 #### Ange samma webbplatsattribut för cookien `login-token`. {#samesite-attribute}
 
