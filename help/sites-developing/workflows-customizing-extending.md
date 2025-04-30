@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3499'
 ht-degree: 0%
@@ -76,9 +76,9 @@ Komponenten `/libs/cq/workflow/components/model/step` är den närmaste gemensam
 
 Följande objekt är tillgängliga (beroende på stegtyp) i ECMA-skript:
 
-* [WorkItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
-* [WorkflowSession](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
-* [WorkflowData](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
+* [WorkItem](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
+* [WorkflowSession](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
+* [WorkflowData](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
 * `args`: matris med processargument.
 
 * `sling`: om du vill komma åt andra SGB-tjänster.
@@ -257,7 +257,7 @@ Lägg till en `cq:EditConfig`-nod nedanför noden `cq:Component`. Under den här
 
 Du kan använda arbetsflödets metadata för att behålla information som krävs under arbetsflödets livstid - och mellan steg. Ett vanligt krav för arbetsflödessteg är att bevara data för framtida bruk eller att hämta beständiga data från tidigare steg.
 
-Arbetsflödets metadata lagras i ett [`MetaDataMap`](#metadatamaps)-objekt. Java-API:t tillhandahåller metoden [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) för att returnera ett [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) -objekt som innehåller rätt `MetaDataMap`-objekt. Det här `WorkflowData` `MetaDataMap`-objektet är tillgängligt för OSGi-tjänsten eller ECMA-skriptet för en stegkomponent.
+Arbetsflödets metadata lagras i ett [`MetaDataMap`](#metadatamaps)-objekt. Java-API:t tillhandahåller metoden [`Workflow.getWorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) för att returnera ett [`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) -objekt som innehåller rätt `MetaDataMap`-objekt. Det här `WorkflowData` `MetaDataMap`-objektet är tillgängligt för OSGi-tjänsten eller ECMA-skriptet för en stegkomponent.
 
 #### Java {#java}
 
@@ -662,8 +662,8 @@ function getParticipant() {
 >
 >Följande arbetsflödessteg accepterar arbetsflödespaket för aktivering av gruppsidor:
 >
->* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
->* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
 Du kan utveckla arbetsflödessteg som hämtar paketresurserna och bearbetar dem. Följande medlemmar i paketet `com.day.cq.workflow.collection` ger åtkomst till arbetsflödespaket:
@@ -832,7 +832,7 @@ Ett enkelt sätt att börja skapa egna anpassade steg är att kopiera ett befint
 
    * `cq:icon`
 
-     Används för att ange en [korallikon](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) för steget.
+     Används för att ange en [korallikon](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) för steget.
 
    * `componentGroup`
 

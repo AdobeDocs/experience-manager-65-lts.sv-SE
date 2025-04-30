@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3200'
 ht-degree: 0%
@@ -110,13 +110,13 @@ Du kan konfigurera redigeringsbeteendet för en komponent, inklusive attribut so
 
 ## Konfigurera förhandsvisningsbeteendet {#configuring-the-preview-behavior}
 
-Cookien [WCM-läge](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) anges när du växlar till läget **Förhandsgranska** även när sidan inte uppdateras.
+Cookien [WCM-läge](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) anges när du växlar till läget **Förhandsgranska** även när sidan inte uppdateras.
 
 Komponenter med en återgivning som är känslig för WCM-läget måste definieras så att de uppdateras specifikt och sedan förlitar sig på värdet för cookien.
 
 >[!NOTE]
 >
->I det beröringsaktiverade gränssnittet används endast värdena `EDIT` och `PREVIEW` för cookien [WCM-läge](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html).
+>I det beröringsaktiverade gränssnittet används endast värdena `EDIT` och `PREVIEW` för cookien [WCM-läge](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html).
 
 ## Skapa och konfigurera en dialogruta {#creating-and-configuring-a-dialog}
 

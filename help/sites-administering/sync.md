@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 0%
@@ -33,7 +33,7 @@ När användarsynkronisering är aktiverat i AEM 6.1 synkroniseras användardata
 
 ## Sling Distribution {#sling-distribution}
 
-Användardata, tillsammans med deras [ACL](/help/sites-administering/security.md), lagras i [Oak Core](/help/sites-deploying/platform.md), lagret under Oak JCR, och du får åtkomst till dem med [Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/oak/api/package-tree.html) . Med ovanliga uppdateringar är det rimligt att användardata synkroniseras med andra publiceringsinstanser med [Sling Content Distribution](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (Sling-distribution).
+Användardata, tillsammans med deras [ACL](/help/sites-administering/security.md), lagras i [Oak Core](/help/sites-deploying/platform.md), lagret under Oak JCR, och du får åtkomst till dem med [Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html) . Med ovanliga uppdateringar är det rimligt att användardata synkroniseras med andra publiceringsinstanser med [Sling Content Distribution](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (Sling-distribution).
 
 Fördelarna med användarsynkronisering med Sling-distribution jämfört med traditionell replikering är:
 

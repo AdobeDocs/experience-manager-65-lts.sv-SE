@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5177'
 ht-degree: 0%
@@ -107,7 +107,7 @@ Varje kolumn är en instans av [`columnbase`-komponenten](#column-base-component
 Frågan:
 
 * Definieras som en del av komponenten [`reportbase`](#report-base).
-* Baseras på [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
+* Baseras på [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html).
 * Hämtar data som används som grund för rapporten. Varje rad i resultatmängden (tabellen) är kopplad till en nod som returneras av frågan. Specifik information för [enskilda kolumner](#column-base-component) extraheras sedan från den här datauppsättningen.
 
 * Oftast består de av

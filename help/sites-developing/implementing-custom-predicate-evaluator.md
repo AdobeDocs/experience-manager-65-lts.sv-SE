@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: 5c98915c-e516-4505-9f9e-76f4509ba581
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Det mappar en sökbegränsning på högre nivå (till exempel &quot;width > 200&
 
 >[!NOTE]
 >
->Mer information om paketet `PredicateEvaluator` och `com.day.cq.search` finns i [Java™-dokumentationen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Mer information om paketet `PredicateEvaluator` och `com.day.cq.search` finns i [Java™-dokumentationen](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementera en anpassad predikatutvärderare för replikeringsmetadata {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -140,7 +140,7 @@ Projektet `cq-search` innehåller den abstrakta klassen `AbstractPredicateEvalua
 
 >[!NOTE]
 >
->I proceduren nedan beskrivs hur du skapar ett `Xpath`-uttryck för att filtrera data. Ett annat alternativ är att implementera metoden `includes` som markerar data på radbasis. Mer information finns i [Java™-dokumentationen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
+>I proceduren nedan beskrivs hur du skapar ett `Xpath`-uttryck för att filtrera data. Ett annat alternativ är att implementera metoden `includes` som markerar data på radbasis. Mer information finns i [Java™-dokumentationen](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
 
 1. Skapa en Java™-klass som utökar `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. Anteckna din klass med en `@Component` som följande

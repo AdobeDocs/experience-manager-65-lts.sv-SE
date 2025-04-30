@@ -9,7 +9,7 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1854'
 ht-degree: 0%
@@ -424,11 +424,11 @@ Mer information finns i [Ansluta AEM Forms till Adobe LiveCycle](/help/forms/usi
    >
    >Varje gång du gör några ändringar på servern startar du om LiveCycle Server.
 
-   Filen DSCSample.jar använder API:t renderLetter. Mer information om API:t renderLetter finns i [Interface LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+   Filen DSCSample.jar använder API:t renderLetter. Mer information om API:t renderLetter finns i [Interface LetterRenderService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importera DSC till LiveCyle {#import-dsc-to-livecyle}
 
-DSCSample.jar-filen använder API:t renderLetter för att återge bokstaven som PDF bytes från XML-data som DSC anger som indata. Mer information om renderLetter och andra API:er finns i [tjänsten Letter Render](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+DSCSample.jar-filen använder API:t renderLetter för att återge bokstaven som PDF bytes från XML-data som DSC anger som indata. Mer information om renderLetter och andra API:er finns i [tjänsten Letter Render](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Starta Workbench och logga in.
 1. Välj **Fönster > Visa vyer > Komponenter**. Vyn Komponenter läggs till i Workbench ES2.

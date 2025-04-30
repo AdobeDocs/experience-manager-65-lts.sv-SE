@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Tagging
 role: Developer
 exl-id: 15f30571-7129-402c-98be-270a142c4cbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Den globala filen deklarerar även [Sling-biblioteket](/help/sites-developing/ta
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-Taggen `<ui:includeClientLib>` innehåller ett AEM HTML-klientbibliotek, som kan vara ett js, en css eller ett temabibliotek. För flera inkluderingar av olika typer, till exempel js och css, måste den här taggen användas flera gånger i jsp. Den här taggen är ett bekvämt brytningstecken runt ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`-tjänstgränssnittet.
+Taggen `<ui:includeClientLib>` innehåller ett AEM HTML-klientbibliotek, som kan vara ett js, en css eller ett temabibliotek. För flera inkluderingar av olika typer, till exempel js och css, måste den här taggen användas flera gånger i jsp. Den här taggen är ett bekvämt brytningstecken runt ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`-tjänstgränssnittet.
 
 Den har följande attribut:
 

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -109,7 +109,7 @@ När användaren redigerar sidor måste han/hon ofta välja bland resurser (till
 
 För att hålla listan i en rimlig storlek och även relevant för användningsfallet kan ett filter implementeras i form av ett anpassat predikat. Om till exempel komponenten [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) används för att låta användaren välja sökvägen till en viss resurs, kan sökvägarna som visas filtreras på följande sätt:
 
-* Implementera det anpassade predikatet genom att implementera gränssnittet [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
+* Implementera det anpassade predikatet genom att implementera gränssnittet [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Ange ett namn för predikatet och referera det namnet när du använder `pathbrowser`.
 
 Mer information om hur du skapar ett anpassat predikat finns i [Implementera en anpassad predikatutvärderare för frågeverktyget](/help/sites-developing/implementing-custom-predicate-evaluator.md).

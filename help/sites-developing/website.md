@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '4919'
 ht-degree: 2%
@@ -523,9 +523,9 @@ I den här övningen matchar Sling dessa URL:er med det /apps/mywebsite/componen
 
 1. Kopiera följande kod till `navimage.png.java.`Koden utökar klassen AbstractImageServlet:
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) skapar ett ImageContext-objekt som lagrar den aktuella resursens egenskaper.
+   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) skapar ett ImageContext-objekt som lagrar den aktuella resursens egenskaper.
    * Resursens överordnade sida extraheras från ImageContext-objektet. Därefter hämtas sidans titel och underrubrik.
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) används för att generera bilden från filen navimage_bg.jpg för webbplatsdesignen, sidrubriken och sidans underrubrik.
+   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) används för att generera bilden från filen navimage_bg.jpg för webbplatsdesignen, sidrubriken och sidans underrubrik.
 
    ```java
    package apps.mywebsite.components.contentpage;

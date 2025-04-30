@@ -9,7 +9,7 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1888'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Du behöver följande för att integrera [!DNL Adobe Sign] med AEM [!DNL Forms]:
 
 * Ett aktivt [Adobe Sign-utvecklarkonto.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
 * En [SSL-aktiverad](/help/sites-administering/ssl-by-default.md) AEM [!DNL Forms]-server.
-* Ett [Adobe Sign API-program](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+* Ett [Adobe Sign API-program](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Autentiseringsuppgifter (klient-ID och klienthemlighet) för API-programmet [!DNL Adobe Sign].
 * När du konfigurerar om tar du bort den befintliga [!DNL Adobe Sign]-konfigurationen från både författare- och publiceringsinstanser.
 * Använd [identisk krypteringsnyckel](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) för författare och publiceringsinstanser.
@@ -112,7 +112,7 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
    * widget_write
    * workflow_read
 
-   Stegvis information om hur du konfigurerar OAuth-inställningar för ett [!DNL Adobe Sign]-program och hämtar nycklarna finns i [Konfigurera autentiseringsinställningar för programmets ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) utvecklardokumentation.
+   Stegvis information om hur du konfigurerar OAuth-inställningar för ett [!DNL Adobe Sign]-program och hämtar nycklarna finns i [Konfigurera autentiseringsinställningar för programmets ](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) utvecklardokumentation.
 
    ![OAuth-konfiguration](assets/oauthconfig_new.png)
 

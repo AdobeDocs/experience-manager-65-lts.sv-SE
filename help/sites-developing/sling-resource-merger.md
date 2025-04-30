@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6fb6e522-fb81-4ba2-90b2-aad68f8bfa9e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Med Sling Resource Merger sammanfogas överläggnings-/åsidosättningsresursern
 
 >[!CAUTION]
 >
->Sling Resource Merger och relaterade metoder kan bara användas med [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Det innebär också att det bara är lämpligt för det vanliga användargränssnittet med pekfunktion. I synnerhet gäller de åsidosättningar som definieras på det här sättet bara för den beröringsaktiverade dialogrutan för en komponent.
+>Sling Resource Merger och relaterade metoder kan bara användas med [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html). Det innebär också att det bara är lämpligt för det vanliga användargränssnittet med pekfunktion. I synnerhet gäller de åsidosättningar som definieras på det här sättet bara för den beröringsaktiverade dialogrutan för en komponent.
 >
 >Övertäckningar/åsidosättningar för andra områden (inklusive andra aspekter av en beröringsaktiverad komponent eller det klassiska användargränssnittet) innefattar att kopiera lämplig nod och struktur från originalet till den plats där anpassningen ska definieras.
 

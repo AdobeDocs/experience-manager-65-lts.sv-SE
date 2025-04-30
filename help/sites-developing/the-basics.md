@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3251'
 ht-degree: 0%
@@ -391,7 +391,7 @@ Om du till exempel vill hämta namnet på den aktuella sidan kan du använda fö
 
 S`tring pageName = currentPage.getName();`
 
-AktuellSida är det aktuella sidobjektet. Mer information om hur du hanterar sidobjekt finns i [Java™-dokumenten](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+AktuellSida är det aktuella sidobjektet. Mer information om hur du hanterar sidobjekt finns i [Java™-dokumenten](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Sidhanteraren** Sidhanteraren är ett gränssnitt som innehåller metoder för sidnivååtgärder.
 
@@ -399,7 +399,7 @@ Om du till exempel vill hämta innehållssidan för en resurs kan du använda f�
 
 Sida myPage = pageManager.getContainingPage(myResource);
 
-pageManager är sidhanterarobjektet och myResource är ett resursobjekt. Mer information om metoderna som tillhandahålls av sidhanteraren finns i [Java™ docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+pageManager är sidhanterarobjektet och myResource är ett resursobjekt. Mer information om metoderna som tillhandahålls av sidhanteraren finns i [Java™ docs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Struktur i databasen {#structure-within-the-repository}
 

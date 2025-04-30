@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2340'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Det finns tre sätt att få åtkomst till innehåll i AEM WCM:
 
 * Via objektet `currentPage` som introducerades i `global.jsp`:
 
-  Objektet `currentPage` är en instans av en sida (se [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). Klassen page innehåller vissa metoder för att komma åt innehåll.
+  Objektet `currentPage` är en instans av en sida (se [AEM API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). Klassen page innehåller vissa metoder för att komma åt innehåll.
 
   Exempel: `String pageTitle = currentPage.getTitle();`
 

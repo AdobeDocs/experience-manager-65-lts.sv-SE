@@ -9,7 +9,7 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5052'
 ht-degree: 1%
@@ -218,7 +218,7 @@ Arbetsflödesmotorn använder Apache Sling-jobbköer för hantering och schemal�
 
 <!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Begränsa arbetsflödeskö: De flesta arbetsflödessteg, t.ex. de som bearbetar DAM-resurser, använder tjänsten Begränsa arbetsflödeskö.
-* Begränsa arbetsflödets externa processjobbkö: Den här tjänsten används för särskilda externa arbetsflödessteg som vanligtvis används för att kontakta ett externt system och avfråga resultat. Exempel: InDesign Media Extraction Process-steget implementeras som en extern process. Arbetsflödesmotorn använder den externa kön för att bearbeta avsökningen. (Se [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Begränsa arbetsflödets externa processjobbkö: Den här tjänsten används för särskilda externa arbetsflödessteg som vanligtvis används för att kontakta ett externt system och avfråga resultat. Exempel: InDesign Media Extraction Process-steget implementeras som en extern process. Arbetsflödesmotorn använder den externa kön för att bearbeta avsökningen. (Se [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Konfigurera de här tjänsterna för att begränsa antalet arbetsflödesprocesser som körs samtidigt.
 

@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Välj den mall som krävs för din plats och bekräfta sedan med **OK**.
 
 ## Skapa en sidexportkonfiguration för platsen {#creating-a-page-exporter-configuration-for-your-site}
 
-Sidexporteraren baseras på [ramverket för innehållssynkronisering](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). De konfigurationer som är tillgängliga i dialogrutan **Sidegenskaper** är exportmallar som definierar nödvändiga beroenden för en sida.
+Sidexporteraren baseras på [ramverket för innehållssynkronisering](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html). De konfigurationer som är tillgängliga i dialogrutan **Sidegenskaper** är exportmallar som definierar nödvändiga beroenden för en sida.
 
 När en sidexport aktiveras refereras exportmallen. Både sidbanan och designbanan tillämpas dynamiskt. ZIP-filen skapas sedan med standardfunktionen för innehållssynkronisering.
 
@@ -108,7 +108,7 @@ Gör mallen tillgänglig när du har konfigurerat den:
 
 ### Konfigurationsnoder för sidexport {#page-exporter-configuration-nodes}
 
-Mallen består av en nodstruktur, eftersom den använder [ramverket för innehållssynkronisering](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Varje nod har en `type`-egenskap som definierar en specifik åtgärd när zip-filen skapas.
+Mallen består av en nodstruktur, eftersom den använder [ramverket för innehållssynkronisering](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html). Varje nod har en `type`-egenskap som definierar en specifik åtgärd när zip-filen skapas.
 
 <!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
@@ -178,14 +178,14 @@ Anpassade konfigurationer är också möjliga.
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-Implementera en [anpassad uppdateringshanterare](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html) för att uppfylla vissa specifika krav.
+Implementera en [anpassad uppdateringshanterare](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html) för att uppfylla vissa specifika krav.
 
 <!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Programmatisk export av en sida {#programmatically-exporting-a-page}
 
-Om du vill exportera en sida programmatiskt kan du använda OSGI-tjänsten [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html). Med den här tjänsten kan du:
+Om du vill exportera en sida programmatiskt kan du använda OSGI-tjänsten [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html). Med den här tjänsten kan du:
 
 * Exportera en sida och skriv till HTTP-serverns svar.
 * Exportera en sida och spara zip-filen på en viss plats.

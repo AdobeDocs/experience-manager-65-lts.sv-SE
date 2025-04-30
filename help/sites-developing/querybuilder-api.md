@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 0%
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Funktionerna i [Resursdelningsfrågeverktyget](/help/assets/assets-finder-editor.md) visas via ett Java™-API och ett REST-API. I det här avsnittet beskrivs dessa API:er.
 
-Frågebyggaren på serversidan ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) accepterar en frågebeskrivning, skapar och kör en XPath-fråga, kan filtrera resultatuppsättningen och extrahera facets om så önskas.
+Frågebyggaren på serversidan ( [`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html)) accepterar en frågebeskrivning, skapar och kör en XPath-fråga, kan filtrera resultatuppsättningen och extrahera facets om så önskas.
 
-Frågebeskrivningen är bara en uppsättning predikat ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Exemplen innehåller ett fulltextpredikat, som motsvarar funktionen `jcr:contains()` i XPath.
+Frågebeskrivningen är bara en uppsättning predikat ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/Predicate.html)). Exemplen innehåller ett fulltextpredikat, som motsvarar funktionen `jcr:contains()` i XPath.
 
-För varje predikattyp finns det en utvärderingskomponent ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) som kan hantera det specifika predikatet för XPath, filtrering och facetextrahering. Det är enkelt att skapa anpassade utvärderare, som kopplas in via OSGi-komponentkörningen.
+För varje predikattyp finns det en utvärderingskomponent ([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) som kan hantera det specifika predikatet för XPath, filtrering och facetextrahering. Det är enkelt att skapa anpassade utvärderare, som kopplas in via OSGi-komponentkörningen.
 
 REST API ger åtkomst till samma funktioner via HTTP med svar som skickas i JSON.
 
@@ -136,7 +136,7 @@ Som standard ger Query Builder även antalet träffar. Beroende på den resulter
 
 Gränssnittet kan till exempel anpassa följande metod:
 
-* Hämta och visa det exakta antalet för det totala antalet träffar ([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) eller det totala antalet i querybuilder.json-svaret) är mindre än eller lika med 100,
+* Hämta och visa det exakta antalet för det totala antalet träffar ([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) eller det totala antalet i querybuilder.json-svaret) är mindre än eller lika med 100,
 * Ange `guessTotal` till 100 när du anropar Query Builder.
 
 * Svaret kan ha följande resultat:
@@ -360,9 +360,9 @@ p.nodedepth=5
 
 Mer information om predikat finns på sidan [Referens för frågeverktyget ](/help/sites-developing/querybuilder-predicate-reference.md).
 
-Du kan också kontrollera [JavaScript för `PredicateEvaluator`-klasserna](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Javadoc för dessa klasser innehåller en lista med egenskaper som du kan använda.
+Du kan också kontrollera [JavaScript för `PredicateEvaluator`-klasserna](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Javadoc för dessa klasser innehåller en lista med egenskaper som du kan använda.
 
-Prefixet för klassnamnet (till exempel `similar` i [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) är klassens *huvudegenskap*. Den här egenskapen är också namnet på predikatet som ska användas i frågan (i gemener).
+Prefixet för klassnamnet (till exempel `similar` i [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) är klassens *huvudegenskap*. Den här egenskapen är också namnet på predikatet som ska användas i frågan (i gemener).
 
 För sådana huvudegenskaper kan du förkorta frågan och använda `similar=/content/en` i stället för den fullständigt kvalificerade varianten `similar.similar=/content/en`. Det fullständiga, kvalificerade formuläret måste användas för alla icke-huvudsakliga egenskaper i en klass.
 
@@ -438,13 +438,13 @@ Frågor kan lagras i databasen så att du kan använda dem senare. `QueryBuilder
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-När du använder metoden [`QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession) lagras den angivna `Query` i databasen som en fil eller som en egenskap enligt argumentvärdet `createFile`. I följande exempel visas hur du sparar en `Query` i sökvägen `/mypath/getfiles` som en fil:
+När du använder metoden [`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession) lagras den angivna `Query` i databasen som en fil eller som en egenskap enligt argumentvärdet `createFile`. I följande exempel visas hur du sparar en `Query` i sökvägen `/mypath/getfiles` som en fil:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Tidigare lagrade frågor kan läsas in från databasen med metoden [`QueryBuilder#loadQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession):
+Tidigare lagrade frågor kan läsas in från databasen med metoden [`QueryBuilder#loadQuery`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession):
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -567,10 +567,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Beskrivning** |
 |---|---|
-| [com.day.cq.search](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | Basic Query Builder och Query API |
-| [com.day.cq.search.result](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/package-summary.html) | Resultat-API |
-| [com.day.cq.search.facets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/package-summary.html) | Fasetter |
-| [com.day.cq.search.facets.bufickor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Bucklar (inneslutna i facets) |
-| [com.day.cq.search.eval](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html) | Förutse utvärderare |
-| [com.day.cq.search.facets.extractor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Fasettextraherare (för utvärderare) |
-| [com.day.cq.search.writer](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer för Querybuilder-servlet (/bin/querybuilder.json) |
+| [com.day.cq.search](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/package-summary.html) | Basic Query Builder och Query API |
+| [com.day.cq.search.result](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/result/package-summary.html) | Resultat-API |
+| [com.day.cq.search.facets](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/package-summary.html) | Fasetter |
+| [com.day.cq.search.facets.bufickor](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Bucklar (inneslutna i facets) |
+| [com.day.cq.search.eval](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/package-summary.html) | Förutse utvärderare |
+| [com.day.cq.search.facets.extractor](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Fasettextraherare (för utvärderare) |
+| [com.day.cq.search.writer](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer för Querybuilder-servlet (/bin/querybuilder.json) |

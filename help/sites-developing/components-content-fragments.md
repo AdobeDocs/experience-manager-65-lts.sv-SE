@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
 exl-id: 2196af09-8053-49c3-8a23-caf03bb9a39d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -131,4 +131,4 @@ I konfigurationen som är klar att användas används följande transformatorer:
 * `transformer-cfm-parfilter` - filtrerar bort oönskade stycken om ett styckeintervall har angetts (som kan göras med komponenten Innehållsfragment)
 * `transformer-cfm-assetprocessor` - används internt för att hämta en lista över resurser som är inbäddade i fragmentet
 
-Återgivningsprocessen visas genom [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) och kan användas (till exempel) av anpassade komponenter, om det behövs.
+Återgivningsprocessen visas genom [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) och kan användas (till exempel) av anpassade komponenter, om det behövs.

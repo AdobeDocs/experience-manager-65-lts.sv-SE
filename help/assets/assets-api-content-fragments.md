@@ -6,7 +6,7 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -261,7 +261,7 @@ Användningen kan variera beroende på om du använder en AEM-författare eller 
 
 >[!NOTE]
 >
->Mer information finns i [API-referens](/help/assets/assets-api-content-fragments.md#api-reference). Särskilt [Adobe Experience Manager Assets API - innehållsfragment](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>Mer information finns i [API-referens](/help/assets/assets-api-content-fragments.md#api-reference). Särskilt [Adobe Experience Manager Assets API - innehållsfragment](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
 
 ### Läsning/leverans {#read-delivery}
 
@@ -385,7 +385,7 @@ Returneras när:
 
 Här finns detaljerade API-referenser:
 
-* [Adobe Experience Manager Assets API - innehållsfragment](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - innehållsfragment](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [ASSETS HTTP API](/help/assets/mac-api-assets.md)
 
    * [Tillgängliga funktioner](/help/assets/mac-api-assets.md#assets)

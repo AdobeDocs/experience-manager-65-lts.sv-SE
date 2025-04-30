@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2313'
 ht-degree: 0%
@@ -269,7 +269,7 @@ Stöder facet-extrahering och ger två möjligheter för huvud- och delresurser.
 
 ### medlemOf {#memberof}
 
-Söker efter objekt som är medlemmar i en specifik [snedresurssamling](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
+Söker efter objekt som är medlemmar i en specifik [snedresurssamling](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 Detta är ett predikat som bara kan filtreras och det går inte att använda ett sökindex. Stöder inte facetextrahering.
 

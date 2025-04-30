@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 0%
@@ -43,8 +43,8 @@ På den här sidan kan du utöka funktionerna i Multi Site Manager:
 
 Hantering av flera platser består av följande paket:
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.Commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.Commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 De huvudsakliga MSM API-objekten interagerar på följande sätt (se även [Använda villkor](/help/sites-administering/msm.md#terms-used)):
 
@@ -103,8 +103,8 @@ De huvudsakliga MSM API-objekten interagerar på följande sätt (se även [Anv�
 
 Skapa anpassade synkroniseringsåtgärder som du kan använda med dina utrullningskonfigurationer. Skapa en synkroniseringsåtgärd när de [installerade åtgärderna](/help/sites-administering/msm-sync.md#installed-synchronization-actions) inte uppfyller dina specifika programkrav. Skapa då två klasser:
 
-* En implementering av gränssnittet [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) som utför åtgärden.
-* En OSGI-komponent som implementerar gränssnittet [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) och skapar instanser av klassen `LiveAction`.
+* En implementering av gränssnittet [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) som utför åtgärden.
+* En OSGI-komponent som implementerar gränssnittet [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) och skapar instanser av klassen `LiveAction`.
 
 `LiveActionFactory` skapar instanser av klassen `LiveAction` för en given konfiguration:
 
@@ -127,7 +127,7 @@ Använd konfigurationsnoden `LiveAction` i databasen för att lagra information 
 
 En `LiveAction` måste till exempel lagra namnet på den som skapat ritningen. En egenskap för konfigurationsnoden innehåller egenskapsnamnet för den planeringssida som lagrar informationen. Vid körning hämtar `LiveAction` egenskapsnamnet från konfigurationen och hämtar sedan egenskapsvärdet.
 
-Parametern för metoden [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) är ett `Resource`-objekt. Det här `Resource`-objektet representerar `cq:LiveSyncAction`-noden för den här live-åtgärden i rollout-konfigurationen. Se [Skapa en utrullningskonfiguration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Som vanligt när du använder en konfigurationsnod bör du anpassa den till ett `ValueMap`-objekt:
+Parametern för metoden [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) är ett `Resource`-objekt. Det här `Resource`-objektet representerar `cq:LiveSyncAction`-noden för den här live-åtgärden i rollout-konfigurationen. Se [Skapa en utrullningskonfiguration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Som vanligt när du använder en konfigurationsnod bör du anpassa den till ett `ValueMap`-objekt:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -145,9 +145,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 Följande objekt anges som parametrar för metoden `execute` för objektet `LiveAction`:
 
-* Ett [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html)-objekt som representerar källan för Live-kopian.
+* Ett [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html)-objekt som representerar källan för Live-kopian.
 * Ett `Resource`-objekt som representerar målet för Live-kopian.
-* Objektet [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) för live-kopian.
+* Objektet [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) för live-kopian.
 * Värdet `autoSave` anger om `LiveAction` ska spara ändringar som görs i databasen.
 
 * Återställningsvärdet anger återställningsläget för utrullning.
@@ -164,7 +164,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->`Resource`-argumenten kan vara `null`- eller `Resources`-objekt som inte anpassar sig till `Node`-objekt, till exempel [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html)-objekt.
+>`Resource`-argumenten kan vara `null`- eller `Resources`-objekt som inte anpassar sig till `Node`-objekt, till exempel [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/NonExistingResource.html)-objekt.
 
 ## Skapa en ny utrullningskonfiguration {#creating-a-new-rollout-configuration}
 

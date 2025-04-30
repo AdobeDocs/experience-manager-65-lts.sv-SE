@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Dessa kan användas på många sätt för att utöka dina AEM-konsoler. En liten
 >
 >* Använder och skapar [clientlibs](/help/sites-developing/clientlibs.md).
 >* Använda och skapa [övertäckningar](/help/sites-developing/overlays.md).
->* [Bevilja](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* [Bevilja](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 >
 
 
@@ -150,7 +150,7 @@ Så här anpassar du kolumnerna i listvyn:
 
 1. Valfritt:
 
-   * Om du vill lägga till ytterligare data måste du skriva en [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) med en
+   * Om du vill lägga till ytterligare data måste du skriva en [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) med en
      Egenskapen `pageInfoProviderType`.
 
    Se till exempel klassen/paketet som bifogas (från GitHub) nedan.

@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
 exl-id: abc2747f-cfd8-4ee1-bbc0-5ad89beb383a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Det är viktigt att du anpassar den här konfigurationen efter dina egna säkerh
 
 >[!NOTE]
 >
->Adobe rekommenderar att du alltid får tillgång till XSS-skydds-API:t med hjälp av [XSSAPI:n från AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe rekommenderar att du alltid får tillgång till XSS-skydds-API:t med hjälp av [XSSAPI:n från AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 En brandvägg för ett webbprogram, till exempel [mod_security för Apache](https://www.modsecurity.org), kan dessutom ge tillförlitlig, central kontroll över distributionsmiljöns säkerhet och skydda mot tidigare oidentifierade serveröverskridande skriptattacker (cross-site scripting).
 

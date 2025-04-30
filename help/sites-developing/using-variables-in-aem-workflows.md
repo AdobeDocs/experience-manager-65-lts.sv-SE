@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eb75efb8-c59a-4d51-af54-942cca178f2e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 0%
@@ -22,7 +22,7 @@ I AEM arbetsflödesmodeller kan du
 * [Ange ett värde för variabeln ](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable) med hjälp av arbetsflödessteget Ange variabel.
 * [Använd variabeln ](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) i arbetsflödesstegen ELLER Dela och Gå till AEM så att du kan definiera ett uttryck för att fatta beslut om routning. Du kan också använda variabler i alla steg i AEM Forms Workflow.
 
-Variabler är ett tillägg till gränssnittet [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). Du kan använda [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) i ECMAScript för att komma åt metadata som sparats med variabler.
+Variabler är ett tillägg till gränssnittet [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). Du kan använda [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) i ECMAScript för att komma åt metadata som sparats med variabler.
 
 ## Skapa en variabel {#create-a-variable}
 
@@ -169,7 +169,7 @@ Alla AEM Forms Workflow-steg har stöd för variabler. Mer information finns i [
 
 ### Arbetsflödessteg utan stöd för variabler {#workflow-steps-without-support-for-variables}
 
-Du kan använda gränssnittet [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) för att komma åt variabler i arbetsflödessteg som inte stöder variabler.
+Du kan använda gränssnittet [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) för att komma åt variabler i arbetsflödessteg som inte stöder variabler.
 
 #### Hämta variabelvärdet {#retrieve-the-variable-value}
 
@@ -211,7 +211,7 @@ Uppdaterar värdet för variabeln **lön** till 50000.
 
 Du kan använda ett API för att ange variabler och skicka dem för att anropa arbetsflödesinstanser.
 
-[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) använder modell, wfData och metaData som argument. Använd MetaDataMap för att ange värdet för variabeln.
+[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) använder modell, wfData och metaData som argument. Använd MetaDataMap för att ange värdet för variabeln.
 
 I detta API är variabeln **variableName** inställd på **value** med metaData.put(variableName, value);
 

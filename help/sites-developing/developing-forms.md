@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d1475168-6625-4d27-9c3b-01e415c2f398
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -315,7 +315,7 @@ När konfigurationen Visa/Dölj är ogiltig anges konfigurationen bara som JavaS
 
 ### Utveckla skript för användning med Forms {#developing-scripts-for-use-with-forms}
 
-Mer information om API-elementen som kan användas för att skriva skript finns i [javadocs för formulär](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Mer information om API-elementen som kan användas för att skriva skript finns i [javadocs för formulär](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 Du kan använda detta för åtgärder som att anropa en tjänst innan formuläret skickas och att avbryta tjänsten om den misslyckas:
 

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 1fcf6de4-30b5-46cb-9c1d-109a160d5030
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 3%
@@ -167,4 +167,4 @@ Beroende på vilket utrymme som är tillgängligt placeras komponentens verktygs
 
 Mer information om begreppen kring det beröringsaktiverade användargränssnittet finns i [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).
 
-Mer teknisk information finns i [JS-dokumentationen ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) för den beröringsaktiverade sidredigeraren.
+Mer teknisk information finns i [JS-dokumentationen ](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) för den beröringsaktiverade sidredigeraren.

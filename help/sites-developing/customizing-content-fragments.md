@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 0%
@@ -243,7 +243,7 @@ Innehållsfragment kan integreras med:
 
 Du kan använda serversidans API för att komma åt dina innehållsfragment. Se:
 
-[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -253,7 +253,7 @@ Du kan använda serversidans API för att komma åt dina innehållsfragment. Se:
 
 Följande tre gränssnitt kan fungera som startpunkter:
 
-* **Fragmentmall** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Fragmentmall** ([FragmentTemplate](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   Använd `FragmentTemplate.createFragment()` för att skapa ett fragment.
 
@@ -296,7 +296,7 @@ Följande tre gränssnitt kan fungera som startpunkter:
 
       * Hämta grundläggande data (namn, titel, beskrivning)
 
-* **Innehållsfragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Innehållsfragment** ([ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   Med det här gränssnittet kan du arbeta med ett innehållsfragment på ett abstrakt sätt.
 
@@ -328,7 +328,7 @@ Följande tre gränssnitt kan fungera som startpunkter:
 
   Gränssnitt som representerar de primära elementen i ett fragment är:
 
-   * **Innehållselement** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Innehållselement** ([ContentElement](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Hämta grundläggande data (namn, titel, beskrivning)
       * Hämta/ange innehåll
@@ -342,7 +342,7 @@ Följande tre gränssnitt kan fungera som startpunkter:
 
       * Kortkommando för att matcha variationer (tillämpa ytterligare, implementeringsspecifik reservlogik om den angivna varianten inte är tillgänglig för ett element)
 
-   * **Innehållsvariation** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Innehållsvariation** ([ContentVariation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Hämta grundläggande data (namn, titel, beskrivning)
       * Hämta/ange innehåll

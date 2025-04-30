@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7e14471e-8bb5-4cce-9175-3bbff9d803a9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 0%
@@ -26,7 +26,7 @@ När du [anpassar och utökar dina arbetsflöden](/help/sites-developing/workflo
 
 ## Använda Java API för arbetsflöde {#using-the-workflow-java-api}
 
-Arbetsflödets Java API består av paketet [`com.adobe.granite.workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html) och flera underpaket. Den viktigaste medlemmen i API är klassen `com.adobe.granite.workflow.WorkflowSession`. Klassen `WorkflowSession` ger åtkomst till arbetsflödesobjekt för både designtid och körning:
+Arbetsflödets Java API består av paketet [`com.adobe.granite.workflow`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/package-summary.html) och flera underpaket. Den viktigaste medlemmen i API är klassen `com.adobe.granite.workflow.WorkflowSession`. Klassen `WorkflowSession` ger åtkomst till arbetsflödesobjekt för både designtid och körning:
 
 * arbetsflödesmodeller
 * arbetsposter
@@ -40,10 +40,10 @@ Följande tabell innehåller länkar till referensdokumentationen för flera vik
 
 | Funktioner | Objekt |
 |---|---|
-| Åtkomst till ett arbetsflöde | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
-| Köra och fråga en arbetsflödesinstans | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
-| Hantera en arbetsflödesmodell | [`WorkflowModel`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
-| Information för en nod som finns i arbetsflödet (eller inte) | [`WorkflowStatus`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
+| Åtkomst till ett arbetsflöde | [`WorkflowSession`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
+| Köra och fråga en arbetsflödesinstans | [`Workflow`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
+| Hantera en arbetsflödesmodell | [`WorkflowModel`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
+| Information för en nod som finns i arbetsflödet (eller inte) | [`WorkflowStatus`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
 ## Hämta arbetsflödesobjekt i ECMA-skript {#obtaining-workflow-objects-in-ecma-scripts}
 
@@ -558,7 +558,7 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 
 ### Filtrera ut systemarbetsflöden när arbetsflödesstatus kontrolleras {#filtering-out-system-workflows-when-checking-workflow-status}
 
-Du kan använda [WorkflowStatus API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) för att hämta information om arbetsflödesstatus för en nod.
+Du kan använda [WorkflowStatus API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) för att hämta information om arbetsflödesstatus för en nod.
 
 Olika metoder har parametern:
 
@@ -809,7 +809,7 @@ wfSession.complete(workItem, routes.get(0));
 
 ### Lyssna efter arbetsflödeshändelser {#listening-for-workflow-events}
 
-Använd OSGi-händelseramverket för att lyssna efter händelser som definieras av klassen [`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html). Den här klassen innehåller också flera användbara metoder för att hämta information om föremålet för händelsen. Metoden `getWorkItem` returnerar till exempel objektet `WorkItem` för det arbetsobjekt som är involverat i händelsen.
+Använd OSGi-händelseramverket för att lyssna efter händelser som definieras av klassen [`com.adobe.granite.workflow.event.WorkflowEvent`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html). Den här klassen innehåller också flera användbara metoder för att hämta information om föremålet för händelsen. Metoden `getWorkItem` returnerar till exempel objektet `WorkItem` för det arbetsobjekt som är involverat i händelsen.
 
 I följande exempelkod definieras en tjänst som avlyssnar arbetsflödeshändelser och utför åtgärder utifrån händelsetypen.
 
