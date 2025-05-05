@@ -61,7 +61,7 @@ Om du vill använda HTTP/2 måste du uppfylla följande krav:
 
 Du initierar begäran om att växla över till HTTP/2. Det görs inte automatiskt åt dig.
 
-1. Om du vill gå över till HTTP/2 initierar du en begäran från Adobe kundsupport. Se [Öppna en supportanmälan](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
+1. Om du vill gå över till HTTP/2 initierar du en begäran från Adobe kundsupport. Se [Öppna en supportanmälan](https://experienceleague.adobe.com/sv?support-solution=General&amp;lang=en&amp;support-tab=home#support).
 
    1. Ange följande information i din supportförfrågan:
 

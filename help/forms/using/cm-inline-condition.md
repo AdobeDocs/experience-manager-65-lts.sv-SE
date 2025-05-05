@@ -200,7 +200,7 @@ I följande exempel visas hur du använder upprepning för att strukturera och �
    * Ett exempel på en XML-datafil som skapats baserat på den relevanta dataordlistan när bokstaven förhandsgranskas med exempeldata.
    * En XML-datafil som är kopplad till den relevanta dataordlistan.
 
-   Mer information finns i [Dataordlista](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
+   Mer information finns i [Dataordlista](https://helpx.adobe.com/se/aem-forms/6-2/data-dictionary.html).
 
    ![6_repeatOutputPreview](assets/6_repeatoutputpreview.png)
 

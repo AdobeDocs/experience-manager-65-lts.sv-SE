@@ -52,7 +52,7 @@ Inloggningsflödet för användare visas nedan. Användaren omdirigeras till IMS
 
 Kunden måste registrera sig för [!DNL Admin Console] för att kunna använda Adobe IMS för AEM-autentisering.
 
-Som ett första steg bör kunden ha en organisation som är etablerad i Adobe IMS. Adobe Enterprise-kunder representeras som IMS-organisationer i [Adobe [!DNL Admin Console]](https://helpx.adobe.com/enterprise/using/admin-console.html).
+Som ett första steg bör kunden ha en organisation som är etablerad i Adobe IMS. Adobe Enterprise-kunder representeras som IMS-organisationer i [Adobe [!DNL Admin Console]](https://helpx.adobe.com/se/enterprise/using/admin-console.html).
 
 AEM Managed Services-kunder bör redan ha en organisation etablerad, och som en del av IMS-etableringen kommer kundinstanserna att vara tillgängliga i [!DNL Admin Console] för hantering av användarberättiganden och åtkomst.
 
@@ -70,9 +70,9 @@ När en kund finns som IMS-organisation och AMS har etablerat kunden för IMS ä
 
 >[!NOTE]
 >
->Mer information om grunderna i Adobe Identity Management, inklusive IDP-konfiguration, finns i artikeln om [Konfigurera identitet och enkel inloggning](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
+>Mer information om grunderna i Adobe Identity Management, inklusive IDP-konfiguration, finns i artikeln om [Konfigurera identitet och enkel inloggning](https://helpx.adobe.com/se/enterprise/using/set-up-identity.html).
 >
->Mer information om företagsadministration och [!DNL Admin Console] finns i [Välkommen till administratörshandboken för företag och team](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+>Mer information om företagsadministration och [!DNL Admin Console] finns i [Välkommen till administratörshandboken för företag och team](https://helpx.adobe.com/se/enterprise/managing/user-guide.html).
 
 ### Onboarding-användare till [!DNL Admin Console] {#onboarding-users-to-the-admin-console}
 

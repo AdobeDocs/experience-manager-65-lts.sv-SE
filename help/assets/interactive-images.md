@@ -27,7 +27,7 @@ Här följer en köpbar banderoll med popup-fönstret QuickView. En användare a
 
 Se hur interaktiva bilder fungerar på webbsidan ovan genom att gå till följande:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=sv-SE](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=sv-SE)
 
 ## Se hur interaktiva bildbanderoller skapas {#watch-how-interactive-image-banners-are-created}
 
@@ -39,7 +39,7 @@ Följande steg-för-steg-beskrivning av arbetsflödet hjälper dig att komma ig�
 
 Leta efter rubriken **Exempel** i några av snabbstartsaktiviteterna. Den innehåller en kort självstudiekurs som baseras på följande exempel på webbsidor som ännu inte har Interactive Images tillagd:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=sv-SE](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=sv-SE)
 
 Självstudiekursen visar hur du integrerar interaktiva bilder på din egen webbplats.
 
@@ -158,7 +158,7 @@ Titta på följande exempel på QuickView-URL:er och deras resulterande hotspot-
 
 Du kan använda samma metod som i de tre exemplen ovan på demowebbsidan:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=sv-SE](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=sv-SE)
 
 Demonstrationswebbsidan innehåller flera produktminiatyrbilder med en QuickView-knapp med etiketten&quot;See More&quot;. Med webbläsarens felsökningsverktyg fortfarande aktiverat markerar du varje knapp och noterar de inspelade URL:erna för snabbvyn. När du har aktiverat alla fyra produkterna i snabbvyn som finns på sidan, finns följande lista över snabbvybegäranden som gjorts till serverdelen:
 
@@ -356,7 +356,7 @@ Den kopierade inbäddningskoden ställs in för en responsiv miljö så att den 
 
 Använda demowebbplatsen som exempel:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=sv-SE](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=sv-SE)
 
 Observera att bilden för de tre hanarna är en statisk `IMG`-tagg:
 
@@ -366,7 +366,7 @@ Observera att bilden för de tre hanarna är en statisk `IMG`-tagg:
 
 Integrationen är så enkel som att ta bort taggen `IMG` och ersätta den med den kopierade inbäddningskoden från Experience Manager Assets. Du kan se resultatet i följande URL som visar den interaktiva bilden som kan köpas på sidan med tre cirkelaktiveringspunkter:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=sv-SE](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=sv-SE)
 
 >[!NOTE]
 >
@@ -374,9 +374,9 @@ Integrationen är så enkel som att ta bort taggen `IMG` och ersätta den med de
 
 Om du vill tillämpa en beskärning på en interaktiv bild som kan köpas i en responsiv miljö kan du inkludera konfigurationsattributet `ZoomView.iscommand` för den interaktiva bilden i sökvägen. Komponenten `ZoomView` anropas och `iscommand` är det kommando för att skapa beskärningsbild som du använder.
 
-Se konfigurationsattributet [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand).
+Se konfigurationsattributet [ZoomView.iscommand](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand).
 
-Se [kommandot för att beskära](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) bilder.
+Se [kommandot för att beskära](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) bilder.
 
 Nu kan du integrera den interaktiva bilden med en befintlig Quickview på webbplatsen.
 
@@ -515,7 +515,7 @@ Här följer den fullständiga källkoden:
 
 Den färdiga demowebbplatsen med den helt integrerade interaktiva bilden ser ut så här:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=sv-SE](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=sv-SE)
 
 ## Använd snabbvyn för att skapa anpassade popup-fönster {#using-quickviews-to-create-custom-pop-ups}
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Hero-image](do-not-localize/13-publish-your-adaptive-form-small.png)
 
-Den här självstudiekursen är ett steg i serien [Create Your First Adaptive Form](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) . Vi rekommenderar att du följer serien i kronologisk ordning för att förstå, utföra och demonstrera det fullständiga självstudiekurserna.
+Den här självstudiekursen är ett steg i serien [Create Your First Adaptive Form](https://helpx.adobe.com/se/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) . Vi rekommenderar att du följer serien i kronologisk ordning för att förstå, utföra och demonstrera det fullständiga självstudiekurserna.
 
 När det adaptiva formuläret är klart kan du publicera det för att göra det tillgängligt för slutanvändarna. Slutanvändarna kan öppna det publicerade formuläret på vilken enhet och webbläsare som helst. När ett adaptivt formulär publiceras kopieras formuläret och tillhörande innehåll från en AEM-författarinstans till en AEM-publiceringsinstans. Formuläret görs tillgängligt för slutanvändaren via publiceringsinstansen.
 
@@ -31,8 +31,8 @@ Du kan publicera ett anpassat formulär på följande sätt:
 
 ## Innan du börjar {#before-you-start}
 
-* **[Konfigurera en AEM Forms-publiceringsinstans](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: Publiceringsinstansen är en offentlig instans av AEM [!DNL Forms] som körs i publiceringsläge. I en produktionsmiljö ligger publiceringsinstansen utanför organisationens brandvägg.
-* **[Konfigurera replikering och omvänd replikering](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**: Replikering kopierar innehåll från författarinstansen till en publiceringsinstans och returnerar användarindata (till exempel formulärindata) från publiceringsinstansen till författarinstansen.
+* **[Konfigurera en AEM Forms-publiceringsinstans](https://helpx.adobe.com/se/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: Publiceringsinstansen är en offentlig instans av AEM [!DNL Forms] som körs i publiceringsläge. I en produktionsmiljö ligger publiceringsinstansen utanför organisationens brandvägg.
+* **[Konfigurera replikering och omvänd replikering](https://helpx.adobe.com/se/experience-manager/6-3/help/sites-deploying/replication.html)**: Replikering kopierar innehåll från författarinstansen till en publiceringsinstans och returnerar användarindata (till exempel formulärindata) från publiceringsinstansen till författarinstansen.
 
 ## Publicera det adaptiva formuläret som en AEM-sida {#publish-the-adaptive-form-as-an-aem-page}
 
@@ -54,7 +54,7 @@ AEM [!DNL Forms] tillhandahåller en komponent, AEM [!DNL Forms] Container, som 
 
    Du kan även bädda in det adaptiva formuläret på en befintlig webbsida. Detaljhandel [!DNL Site's]. Till exempel sidan OM USA [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Du sparar tid när du skapar en sida. Stegen nedan använder den nya sidan.
 
-   Webbplatsen We.Retail levereras med AEM. Om du inte har installerat webbplatsen We.Retail ska du läsa [Implementering av referens för butik](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) för att installera webbplatsen.
+   Webbplatsen We.Retail levereras med AEM. Om du inte har installerat webbplatsen We.Retail ska du läsa [Implementering av referens för butik](https://helpx.adobe.com/se/experience-manager/6-3/help/sites-developing/we-retail.html) för att installera webbplatsen.
 
 1. Välj sidinformation för ![egenskaper](assets/properties.png) och välj alternativet **[!UICONTROL Edit Template]** på den nyligen skapade webbsidan för webb.butik. Sidmallen öppnas på en ny flik i webbläsaren.
 1. Markera i rutan **[!UICONTROL layout container]** och välj ![feedmanagement](assets/feedmanagement.png). Expandera dragspelet **[!UICONTROL General]** på fliken **[!UICONTROL Allowed Components]**, markera alternativet **[!UICONTROL AEM Form]** och välj ![save_icon](assets/save_icon.svg). AEM [!DNL Forms]-behållarkomponenten är aktiverad för sidan.

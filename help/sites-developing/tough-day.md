@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Vad är Tom Dag 2? {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; är ett program där du kan stresstesta gränserna för din AEM-instans. Den kan köras direkt med testsviten eller konfigureras för att passa dina testbehov. Du kan titta på [den här inspelningen](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) om du vill se en presentation av programmet.
+&quot;Tough Day 2&quot; är ett program där du kan stresstesta gränserna för din AEM-instans. Den kan köras direkt med testsviten eller konfigureras för att passa dina testbehov. Du kan titta på [den här inspelningen](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=sv-SE) om du vill se en presentation av programmet.
 
 >[!CAUTION]
 >

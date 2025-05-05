@@ -197,7 +197,7 @@ Du kan också använda anpassade metadata i ett e-postmeddelande. Anpassade meta
 
 Du kan använda Java-gränssnittet WorkitemUserMetadataService för att lägga till anpassade metadata för e-postmallar. Du kan skapa ett OSGi-paket som använder Java-gränssnittet WorkitemUserMetadataService och distribuera det till AEM Forms-servern. Metadata blir tillgängliga för val i steget Tilldela uppgift.
 
-Om du vill skapa ett OSGi-paket med Java-gränssnitt lägger du till filerna [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar och [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) som externa beroenden till OSGi-paketprojektet. Du kan använda vilken Java-utvecklingsmiljö som helst för att skapa ett OSGi-paket. I följande procedur beskrivs hur du använder Eclipse för att skapa ett OSGi-paket:
+Om du vill skapa ett OSGi-paket med Java-gränssnitt lägger du till filerna [AEM Forms Client SDK](https://helpx.adobe.com/se/aem-forms/kb/aem-forms-releases.html) jar och [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) som externa beroenden till OSGi-paketprojektet. Du kan använda vilken Java-utvecklingsmiljö som helst för att skapa ett OSGi-paket. I följande procedur beskrivs hur du använder Eclipse för att skapa ett OSGi-paket:
 
 1. Öppna Eclipse IDE. Navigera till Arkiv > Nytt projekt.
 

@@ -24,7 +24,7 @@ För att korrekt omkodning ska ske installerar administratören FFmpeg separat. 
 
 >[!CAUTION]
 >
->Den här Foundation-komponenten har tagits bort. Adobe rekommenderar att du använder [Core Components Embed Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html) i stället.
+>Den här Foundation-komponenten har tagits bort. Adobe rekommenderar att du använder [Core Components Embed Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=sv-SE) i stället.
 
 >[!CAUTION]
 >

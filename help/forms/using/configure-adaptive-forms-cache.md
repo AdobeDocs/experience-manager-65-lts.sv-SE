@@ -60,10 +60,10 @@ Du kan också konfigurera cachning av adaptiva formulär på Dispatcher för ytt
 
 Så här aktiverar och konfigurerar du cachelagring av adaptiva formulär på Dispatcher:
 
-1. Öppna följande URL för varje publiceringsinstans av miljön och [aktivera rensningsagenten för publiceringsinstanser av miljön](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Öppna följande URL för varje publiceringsinstans av miljön och [aktivera rensningsagenten för publiceringsinstanser av miljön](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=sv-SE#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [Lägg till följande i din dispatcher.vilken fil som helst](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
+1. [Lägg till följande i din dispatcher.vilken fil som helst](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#automatically-invalidating-cached-files):
 
    ```JSON
       /invalidate
@@ -92,7 +92,7 @@ Så här aktiverar och konfigurerar du cachelagring av adaptiva formulär på Di
    * Ett anpassat formulär finns kvar i cacheminnet tills en uppdaterad version av formuläret inte publiceras.
 
    * När en nyare version av en resurs som refereras till i ett adaptivt formulär publiceras blir de adaptiva formulären automatiskt ogiltiga. Det finns några undantag för automatisk ogiltigförklaring av refererade resurser. Du hittar mer information om undantag i avsnittet [felsökning](#troubleshooting).
-1. [Lägg till nedanstående regeldispatcher.vilken eller vilken anpassad regelfil som helst](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). URL:er som inte stöder cachelagring utesluts. Interaktiv kommunikation.
+1. [Lägg till nedanstående regeldispatcher.vilken eller vilken anpassad regelfil som helst](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#specifying-the-documents-to-cache). URL:er som inte stöder cachelagring utesluts. Interaktiv kommunikation.
 
    ```JSON
       /0000 {
@@ -116,7 +116,7 @@ Så här aktiverar och konfigurerar du cachelagring av adaptiva formulär på Di
       }
    ```
 
-1. [Lägg till följande parametrar i listan över ignorerade URL-parametrar](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
+1. [Lägg till följande parametrar i listan över ignorerade URL-parametrar](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#ignoring-url-parameters):
 
    ```JSON
       /ignoreUrlParams {
@@ -126,7 +126,7 @@ Så här aktiverar och konfigurerar du cachelagring av adaptiva formulär på Di
       }
    ```
 
-Din AEM-miljö är konfigurerad för att cachelagra adaptiva formulär. Den cache-lagrar alla typer av anpassningsbara formulär. Om du behöver kontrollera användaråtkomstbehörighet för en sida innan du levererar den cachelagrade sidan läser du [cachelagra skyddat innehåll](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+Din AEM-miljö är konfigurerad för att cachelagra adaptiva formulär. Den cache-lagrar alla typer av anpassningsbara formulär. Om du behöver kontrollera användaråtkomstbehörighet för en sida innan du levererar den cachelagrade sidan läser du [cachelagra skyddat innehåll](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=sv-SE).
 
 ## Felsökning {#troubleshooting}
 

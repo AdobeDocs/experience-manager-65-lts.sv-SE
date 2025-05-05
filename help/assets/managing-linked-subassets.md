@@ -27,7 +27,7 @@ Referenser tolkas utifrån sökväg, dokument-ID och instans-ID för de referera
 
 Du kan referera till befintliga digitala resurser inifrån en [!DNL Adobe Illustrator]-fil.
 
-1. Hämta de digitala resurserna på det lokala filsystemet med [[!DNL Experience Manager] skrivbordsappen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Navigera till filsystemplatsen för resursen som du vill referera till.
+1. Hämta de digitala resurserna på det lokala filsystemet med [[!DNL Experience Manager] skrivbordsappen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=sv-SE). Navigera till filsystemplatsen för resursen som du vill referera till.
 1. Dra resursen från den lokala mappen till filen [!DNL Illustrator].
 
 1. Spara filen [!DNL Illustrator] på den monterade enheten eller [överför](/help/assets/manage-assets.md#uploading-assets) till databasen [!DNL Experience Manager].
@@ -65,14 +65,14 @@ Den här proceduren liknar [Lägg till digitala resurser som referenser i Adobe 
 ### Skapa referenser till resurser genom att exportera en ZIP-fil {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Utför stegen i [Skapa arbetsflödesmodeller](/help/sites-developing/workflows-models.md) för att skapa ett arbetsflöde.
-1. Använd [packningsfunktionen](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) i [!DNL Adobe InDesign] för att exportera dokumentet. [!DNL Adobe InDesign] kan exportera ett dokument och de länkade resurserna som ett paket. I det här fallet innehåller den exporterade mappen en `Links`-mapp som innehåller underresurser i filen [!DNL InDesign]. Mappen `Links` finns i samma mapp som INDD-filen.
+1. Använd [packningsfunktionen](https://helpx.adobe.com/se/indesign/how-to/indesign-package-files-for-handoff.html) i [!DNL Adobe InDesign] för att exportera dokumentet. [!DNL Adobe InDesign] kan exportera ett dokument och de länkade resurserna som ett paket. I det här fallet innehåller den exporterade mappen en `Links`-mapp som innehåller underresurser i filen [!DNL InDesign]. Mappen `Links` finns i samma mapp som INDD-filen.
 1. Skapa en ZIP-fil och överför den till databasen [!DNL Experience Manager].
 1. Starta arbetsflödet för `Unarchiver`.
 1. När arbetsflödet är klart refereras referenserna i mappen Länkar automatiskt till underresurser. Om du vill visa en lista med refererade resurser går du till sidan med tillgångsinformation för resursen [!DNL InDesign] och stänger [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## [!DNL Adobe Photoshop]: Lägg till digitala resurser som referenser {#refps}
 
-1. Använd [!DNL Experience Manager]-datorprogrammet för att komma åt [!DNL Experience Manager Assets]. Hämta och visa resurserna i det lokala filsystemet. Använd funktionen [!UICONTROL Place Linked] i [!DNL Adobe Photoshop]. Se [Placera resurser i skrivbordsappen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
+1. Använd [!DNL Experience Manager]-datorprogrammet för att komma åt [!DNL Experience Manager Assets]. Hämta och visa resurserna i det lokala filsystemet. Använd funktionen [!UICONTROL Place Linked] i [!DNL Adobe Photoshop]. Se [Placera resurser i skrivbordsappen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=sv-SE#place-assets-in-native-documents).
 
 1. Spara i filen [!DNL Photoshop] till den monterade enheten eller [överför](/help/assets/manage-assets.md#uploading-assets) till databasen [!DNL Experience Manager].
 1. När arbetsflödet har slutförts visas referenserna till befintliga [!DNL Experience Manager]-resurser på sidan med resursinformation.
@@ -125,7 +125,7 @@ För [!DNL InDesign] kan du extrahera sidor med [!DNL InDesign Server]. Om förh
 
 Följande alternativ är tillgängliga i verktygsfältet, i den vänstra listen och i kontrollerna i Page Viewer:
 
-* **[!UICONTROL Desktop Actions]** om du vill öppna eller visa en viss underresurs med skrivbordsappen [!DNL Experience Manager]. Se hur du [konfigurerar skrivbordsåtgärder](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) om du använder datorprogrammet [!DNL Experience Manager].
+* **[!UICONTROL Desktop Actions]** om du vill öppna eller visa en viss underresurs med skrivbordsappen [!DNL Experience Manager]. Se hur du [konfigurerar skrivbordsåtgärder](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=sv-SE#desktopactions-v2) om du använder datorprogrammet [!DNL Experience Manager].
 
 * Alternativet **[!UICONTROL Properties]** öppnar sidan [!UICONTROL Properties] för den specifika underresursen.
 
@@ -141,7 +141,7 @@ Följande alternativ är tillgängliga i verktygsfältet, i den vänstra listen 
 
 >[!MORELIKETHIS]
 >
->* [Använd Adobe Experience Manager-datorprogrammet](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [Konfigurera skrivbordsåtgärder i Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
->* [Skapa länkade smarta objekt i Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [Montera bilder i Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+>* [Använd Adobe Experience Manager-datorprogrammet](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=sv-SE)
+>* [Konfigurera skrivbordsåtgärder i Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=sv-SE#desktopactions-v2)
+>* [Skapa länkade smarta objekt i Adobe Photoshop](https://helpx.adobe.com/se/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
+>* [Montera bilder i Adobe InDesign](https://helpx.adobe.com/se/indesign/using/placing-graphics.html)

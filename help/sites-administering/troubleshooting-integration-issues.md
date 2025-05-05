@@ -166,7 +166,7 @@ Det här problemet kan ha flera orsaker:
 Du kan testa följande lösningar:
 
 * Kontrollera att kundkoden som läser in DTM-liknande bibliotek (som i sin tur läser in Target-biblioteken) körs synkront i [sidhuvudet](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
-* om webbplatsen är konfigurerad att använda DTM för att leverera målbibliotek kontrollerar du att alternativet **Clientlib som levereras av DTM** är markerat i platsens [målkonfiguration](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html).
+* om webbplatsen är konfigurerad att använda DTM för att leverera målbibliotek kontrollerar du att alternativet **Clientlib som levereras av DTM** är markerat i platsens [målkonfiguration](https://helpx.adobe.com/se/experience-manager/6-3/sites/administering/using/target-configuring.html).
 
 ### Ett standarderbjudande visas alltid i stället för rätt erbjudande när AT.js 1.3+ används {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
@@ -211,7 +211,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Om svaret innehåller raden `a4tEnabled:false` kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/contact.html) för att få ditt konto etablerat korrekt.
+Om svaret innehåller raden `a4tEnabled:false` kan du kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/contact.html) för att få ditt konto etablerat korrekt.
 
 ### Användbara mål-API:er {#helpful-target-apis}
 

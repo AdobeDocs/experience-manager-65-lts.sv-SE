@@ -184,7 +184,7 @@ Därefter utökar du affärslogiken i Product Teaser genom att implementera en S
 
 Sling Models implementeras som Java™ och finns i **core** -modulen i det genererade projektet.
 
-Använd [den utvecklingsmiljö du väljer](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) för att importera Venia-projektet. De skärmbilder som används är från [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
+Använd [den utvecklingsmiljö du väljer](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=sv-SE#set-up-the-development-ide) för att importera Venia-projektet. De skärmbilder som används är från [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=sv-SE&#microsoft-visual-studio-code).
 
 1. I din IDE navigerar du under **core** -modulen till: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
@@ -324,9 +324,9 @@ Det här är en ny metod för att kapsla in logiken som anger om produkten har a
 
 ## Anpassa koden för Product Teaser {#customize-markup-product-teaser}
 
-Ett vanligt tillägg för AEM-komponenter är att ändra den kod som genereras av komponenten. Detta görs genom att åsidosätta det [HTML-skript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) som komponenten använder för att återge sin kod. HTML Template Language (HTL) är ett lättviktsmallspråk som används av AEM-komponenter för att dynamiskt återge kod baserat på det innehåll som skapats, vilket gör att komponenterna kan återanvändas. Product Teaser kan till exempel återanvändas om och om igen för att visa olika produkter.
+Ett vanligt tillägg för AEM-komponenter är att ändra den kod som genereras av komponenten. Detta görs genom att åsidosätta det [HTML-skript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE) som komponenten använder för att återge sin kod. HTML Template Language (HTL) är ett lättviktsmallspråk som används av AEM-komponenter för att dynamiskt återge kod baserat på det innehåll som skapats, vilket gör att komponenterna kan återanvändas. Product Teaser kan till exempel återanvändas om och om igen för att visa olika produkter.
 
-I det här fallet vill du återge en banderoll ovanpå teaser för att ange att produkten är&quot;miljövänlig&quot; baserat på ett anpassat attribut. Designmönstret för [att anpassa markeringen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) för en komponent är standard för alla AEM-komponenter, inte bara för AEM CIF Core-komponenter.
+I det här fallet vill du återge en banderoll ovanpå teaser för att ange att produkten är&quot;miljövänlig&quot; baserat på ett anpassat attribut. Designmönstret för [att anpassa markeringen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=sv-SE#customizing-the-markup) för en komponent är standard för alla AEM-komponenter, inte bara för AEM CIF Core-komponenter.
 
 >[!NOTE]
 >
@@ -346,7 +346,7 @@ I det här fallet vill du återge en banderoll ovanpå teaser för att ange att 
        componentGroup="Venia - Commerce"/>
    ```
 
-   Komponentdefinitionen för Product Teaser Component i det här projektet är ovan. Observera egenskapen `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Det här är ett exempel på hur du skapar en [proxykomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). I stället för att kopiera och klistra in alla HTML-skript för Product Teaser från AEM CIF Core Components kan du använda `sling:resourceSuperType` för att ärva alla funktioner.
+   Komponentdefinitionen för Product Teaser Component i det här projektet är ovan. Observera egenskapen `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Det här är ett exempel på hur du skapar en [proxykomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=sv-SE#create-proxy-components). I stället för att kopiera och klistra in alla HTML-skript för Product Teaser från AEM CIF Core Components kan du använda `sling:resourceSuperType` för att ärva alla funktioner.
 
 1. Öppna filen `productteaser.html`. Det här är en kopia av filen `productteaser.html` från [CIF Product Teaser](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
@@ -386,7 +386,7 @@ I det här fallet vill du återge en banderoll ovanpå teaser för att ange att 
 
    När du anropar en Sling Model-metod i HTML tas delen `get` och `is` av metoden bort och den första bokstaven sänks. `isShowBadge()` blir alltså `.showBadge` och `isEcoFriendly` blir `.ecoFriendly`. Baserat på det booleska värdet som returneras från `.isEcoFriendly()` avgör om `<span>Eco Friendly</span>` visas.
 
-   Mer information om `data-sly-test` och andra HTML-blocksatser finns i [HTML-specifikationen](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
+   Mer information om `data-sly-test` och andra HTML-blocksatser finns i [HTML-specifikationen](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=sv-SE).
 
 1. Spara ändringarna och distribuera uppdateringarna till AEM med dina Maven-kunskaper från en kommandoradsterminal:
 
@@ -490,9 +490,9 @@ Granska funktionaliteten för märket **New** som redan har implementerats i Pro
 
 ## Ytterligare resurser {#additional-resources}
 
-- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE)
 - [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)
 - [Anpassa AEM CIF Core-komponenter](https://github.com/adobe/aem-core-cif-components)
-- [Anpassa kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
-- [Komma igång med AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Anpassa kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=sv-SE)
+- [Komma igång med AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)
 - [Användning av CIF produkt- och kategoriväljare](use-cif-pickers.md)

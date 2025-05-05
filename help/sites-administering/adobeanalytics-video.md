@@ -139,7 +139,7 @@ I följande tabell beskrivs CQ-standardvariablerna som anges för metoden Milest
 
 1. Om du vill mappa CQ-variablerna till Adobe Analytics-egenskaper drar du Adobe Analytics-egenskaperna från ContentFinder bredvid CQ-variabeln för komponenten.
 
-   Mer information om hur du optimerar mappningarna finns i guiden [Mäta video i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+   Mer information om hur du optimerar mappningarna finns i guiden [Mäta video i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=sv-SE).
 
 1. [Lägg till ramverket](/help/sites-administering/adobeanalytics.md) på sidan.
 1. Om du vill testa konfigurationen i **förhandsgranskningsläget** spelar du upp videon och får Adobe Analytics-anrop att utlösa.
@@ -274,7 +274,7 @@ eventdata.events.milestoneXX
 
 1. Om du vill mappa CQ-variablerna till Adobe Analytics-egenskaper drar du Adobe Analytics-egenskaperna från ContentFinder bredvid CQ-variabeln för komponenten.
 
-   Mer information om hur du optimerar mappningarna finns i guiden [Mäta video i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+   Mer information om hur du optimerar mappningarna finns i guiden [Mäta video i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=sv-SE).
 
 1. [Lägg till ramverket](/help/sites-administering/adobeanalytics.md) på sidan.
 1. Om du vill testa konfigurationen i **förhandsgranskningsläget** spelar du upp videon och får Adobe Analytics-anrop att utlösa.
@@ -383,4 +383,4 @@ När du använder metoden** för tidigare sekunder* aktiveras Adobe Analytics-an
 
 **Referenser som används i den här självstudiekursen:**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=sv-SE](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=sv-SE)

@@ -190,4 +190,4 @@ Det finns en uppsättning förutsättningar och rekommendationer om du funderar 
 
 >[!NOTE]
 >
->Kontakta [Adobe kundtjänst](https://helpx.adobe.com/marketing-cloud/contact-support.html) om du har frågor om dessa riktlinjer, villkor och rekommendationer.
+>Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/marketing-cloud/contact-support.html) om du har frågor om dessa riktlinjer, villkor och rekommendationer.

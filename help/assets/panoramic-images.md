@@ -43,7 +43,7 @@ Information om hur du överför resurser som ska användas med panoramabildsvisn
 
 För att visningsprogrammet för panoramabilder ska fungera på rätt sätt i Adobe Experience Manager synkroniserar du förinställningarna för visningsprogrammet för panoramabilder med Dynamic Media Classic och Dynamic Media Classic-specifika metadata så att visningsprogrammets förinställningar uppdateras i JCR-filen. Konfigurera Dynamic Media Classic enligt följande:
 
-1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) och logga sedan in på ditt konto.
+1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=sv-SE#getting-started) och logga sedan in på ditt konto.
 
 1. I sidans övre högra hörn väljer du **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. Välj **[!UICONTROL Image Serving]** i listrutan **[!UICONTROL Publish Context]** nära överkanten på sidan Image Server Publish (Image Server Publish).

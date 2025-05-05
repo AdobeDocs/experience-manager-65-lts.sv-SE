@@ -45,7 +45,7 @@ Det här dokumentet förutsätter att du redan är bekant med att skapa och redi
 >[!NOTE]
 >
 >Följande självstudiekurs kan också vara intressant för att konfigurera en redigerbar sidmall i ett nytt projekt:
->[Komma igång med AEM Sites del 2 - Skapa en bassida och mall ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
+>[Komma igång med AEM Sites del 2 - Skapa en bassida och mall ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=sv-SE)
 
 ## Skapa en ny mall {#creating-a-new-template}
 
@@ -69,7 +69,7 @@ När du skapar en redigerbar mall:
    * Strukturen gör att du kan definiera komponenter och innehåll för mallen.
    * Komponenter som definieras i mallstrukturen kan inte flyttas till en resultatsida eller tas bort från eventuella resultatsidor.
 
-      * Om du skapar en mall i en anpassad mapp utanför exempelinnehållet `We.Retail` kan du välja Foundation Components (Foundation-komponenter) eller använda [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
+      * Om du skapar en mall i en anpassad mapp utanför exempelinnehållet `We.Retail` kan du välja Foundation Components (Foundation-komponenter) eller använda [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=sv-SE).
 
    * Om du vill att sidförfattare ska kunna lägga till och ta bort komponenter lägger du till ett styckesystem i mallen.
    * Komponenter kan låsas upp och låsas igen så att du kan definiera ursprungligt innehåll.
@@ -128,7 +128,7 @@ När du skapar en redigerbar mall:
 
 >[!TIP]
 >
->Ange aldrig någon information som måste internationaliseras i en mall. För internalisering rekommenderas [lokaliseringsfunktionen för kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Ange aldrig någon information som måste internationaliseras i en mall. För internalisering rekommenderas [lokaliseringsfunktionen för kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=sv-SE).
 
 >[!NOTE]
 >

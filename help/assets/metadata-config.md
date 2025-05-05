@@ -18,7 +18,7 @@ ht-degree: 3%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=sv-SE) |
 | AEM 6.5 | Den här artikeln |
 
 <!-- Scope of metadata articles:
@@ -118,7 +118,7 @@ Med en metadataprofil kan du använda standardmetadata för resurser i en mapp. 
 1. Klicka på **[!UICONTROL Delete]** i dialogrutan för att bekräfta borttagningsåtgärden. Metadataprofilen tas bort från listan.
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/se/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -278,7 +278,7 @@ Ange metadatavärden i de olika fälten och klicka på **[!UICONTROL Save]** fö
 >
 >* [Metadatabegrepp och -förståelse](metadata-concepts.md).
 >* [Redigera metadataegenskaper för flera samlingar](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Import och export av metadata i Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
+>* [Import och export av metadata i Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=sv-SE).
 >* [Profiler för att bearbeta metadata, bilder och videor](processing-profiles.md).
 >* [Bästa tillvägagångssätt för att ordna dina digitala resurser så att de använder bearbetningsprofiler](/help/assets/organize-assets.md).
 >* [XMP tillbakaskrivning](/help/assets/xmp-writeback.md).

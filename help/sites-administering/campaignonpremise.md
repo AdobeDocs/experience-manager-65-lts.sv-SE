@@ -43,7 +43,7 @@ Det här dokumentet leder dig igenom dessa steg i detalj.
 
 * Administratörsåtkomst till Adobe Campaign Classic
    * För att kunna utföra integreringen behöver du en fungerande Adobe Campaign Classic-instans, inklusive en konfigurerad databas.
-   * Om du behöver mer information om hur du konfigurerar och konfigurerar Adobe Campaign Classic kan du läsa [Adobe Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html), särskilt installations- och konfigurationsguiden.
+   * Om du behöver mer information om hur du konfigurerar och konfigurerar Adobe Campaign Classic kan du läsa [Adobe Campaign Classic-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=sv-SE), särskilt installations- och konfigurationsguiden.
 * Administratörsåtkomst till AEM
 
 ## Installera AEM-integreringspaketet i Campaign {#install-package}
@@ -118,7 +118,7 @@ Integrationspaketet skapar automatiskt operatorn `aemserver` som används av AEM
    >
    >Som standard finns ingen säkerhetszon konfigurerad för operatorn. För att AEM ska kunna ansluta till Adobe Campaign måste du välja en zon enligt beskrivningen i föregående steg.
    >
-   >Adobe rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information om det här avsnittet finns i [Adobe Campaign Classic-dokumentationen.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >Adobe rekommenderar starkt att du skapar en säkerhetszon som är dedikerad till AEM för att undvika säkerhetsproblem. Mer information om det här avsnittet finns i [Adobe Campaign Classic-dokumentationen.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=sv-SE)
 
 1. Gå tillbaka till operatorn `aemserver` i Campaign-klienten och välj fliken **Allmänt**.
 

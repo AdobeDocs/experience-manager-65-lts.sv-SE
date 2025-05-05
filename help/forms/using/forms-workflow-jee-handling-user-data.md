@@ -129,7 +129,7 @@ Nu när du har identifierat de processinstans-ID som är kopplade till en använ
 
 1. Skapa en instans av den offentliga `ProcessManager`-klienten ( `com.adobe.idp.workflow.client.ProcessManager`) med en `ServiceClientFactory`-instans med rätt anslutningsinställningar.
 
-   Mer information finns i Java™ API-referens för [klassen ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Mer information finns i Java™ API-referens för [klassen ProcessManager](https://helpx.adobe.com/se/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Kontrollera arbetsflödesinstansens status. Om statusen är annan än 2 (COMPLETE) eller 4 (TERMINATED) avslutar du instansen först genom att anropa följande metod:
 

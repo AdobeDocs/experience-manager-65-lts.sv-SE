@@ -153,7 +153,7 @@ Konfigurera nu e-posttjänsten på den senaste JEE-servern genom att logga in p�
 
    >[!NOTE]
    >
-   > [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service) om du vill veta mer om aktivitetsmeddelanden.
+   > [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=sv-SE#create-an-email-endpoint-for-the-complete-task-service) om du vill veta mer om aktivitetsmeddelanden.
 
 ## Konfigurera e-postslutpunkt {#configure_email_endpoint}
 
@@ -167,7 +167,7 @@ Konfigurera nu e-posttjänsten på den senaste JEE-servern genom att logga in p�
 
    >[!NOTE]
    >
-   > Om du vill ha mer information om hur du konfigurerar e-postslutpunkter klickar du på [Konfigurera en e-postslutpunkt](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Om du vill ha mer information om hur du konfigurerar e-postslutpunkter klickar du på [Konfigurera en e-postslutpunkt](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=sv-SE).
 
 ## Felsökning {#troubleshooting}
 

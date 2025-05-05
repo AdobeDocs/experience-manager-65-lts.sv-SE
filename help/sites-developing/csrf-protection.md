@@ -40,8 +40,8 @@ Om du vill använda token måste du replikera HMAC-binärfilen till alla instans
 >
 >Se även till att du gör de nödvändiga konfigurationsändringarna för Dispatcher för att använda CSRF Protection Framework:
 >
->* [Konfigurera Adobe Experience Manager Dispatcher för att förhindra CSRF-attacker](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
->* [Dispatcher - översikt](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher)
+>* [Konfigurera Adobe Experience Manager Dispatcher för att förhindra CSRF-attacker](https://experienceleague.adobe.com/sv/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [Dispatcher - översikt](https://experienceleague.adobe.com/sv/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >

@@ -257,7 +257,7 @@ När du skapar en konfiguration ska du inte ändra fabrikskonfigurationen. Skapa
 
 >[!CAUTION]
 >
->När du ändrar inställningen för antingen **Minify** eller **Gzip** tar du bort innehållet i cachen för klienter. Mer information finns i [kunskapsbasartikeln](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html).
+>När du ändrar inställningen för antingen **Minify** eller **Gzip** tar du bort innehållet i cachen för klienter. Mer information finns i [kunskapsbasartikeln](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=sv-SE).
 
 >[!NOTE]
 >

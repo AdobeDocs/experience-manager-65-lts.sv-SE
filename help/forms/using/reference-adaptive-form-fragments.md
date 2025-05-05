@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [Anpassat formulärfragment](../../forms/using/adaptive-form-fragments.md) är en grupp fält eller en panel som innehåller en grupp fält som du kan använda när du skapar ett formulär. Du kan skapa ett formulär snabbt och enkelt. Du kan dra och släppa ett anpassat formulärfragment i ett formulär med hjälp av resursläsaren i sidofältet, och du kan redigera det i formulärredigeraren.
 
-För formulärförfattare med adaptiv formatering finns referensfragment i [AEM Forms-tilläggspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Den innehåller följande fragment:
+För formulärförfattare med adaptiv formatering finns referensfragment i [AEM Forms-tilläggspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE). Den innehåller följande fragment:
 
 * Adress
 * Kontaktinformation

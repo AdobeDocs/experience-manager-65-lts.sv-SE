@@ -31,7 +31,7 @@ Klientkoden identifierar Adobe Target-kundkontot när Adobe Target-servern anrop
 >
 >Ditt konto måste också aktiveras av Target-teamet för att integreringen ska kunna användas.
 >
->Kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html) om så inte är fallet.
+>Kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=sv-SE) om så inte är fallet.
 
 ## Aktivera målreplikeringsagenten {#enabling-the-target-replication-agent}
 

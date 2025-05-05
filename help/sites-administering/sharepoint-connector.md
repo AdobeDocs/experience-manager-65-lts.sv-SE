@@ -87,7 +87,7 @@ Kopplingen stöder följande:
 
 ### Standardinstallation {#standard-installation}
 
-Distribution av programvara används för att distribuera produktfunktioner, exempel och snabbkorrigeringar. Mer information finns i [dokumentationen för programvarudistribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
+Distribution av programvara används för att distribuera produktfunktioner, exempel och snabbkorrigeringar. Mer information finns i [dokumentationen för programvarudistribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE#software-distribution).
 
 
 #### Integrera med AEM {#integrating-with-aem}

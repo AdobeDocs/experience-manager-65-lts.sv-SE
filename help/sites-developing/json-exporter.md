@@ -30,7 +30,7 @@ Med innehållsfragment som använder strukturerat innehåll kan du tillhandahål
 
 >[!NOTE]
 >
->De funktioner som beskrivs här är tillgängliga för alla kärnkomponenter sedan [version 1.1.0 av kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+>De funktioner som beskrivs här är tillgängliga för alla kärnkomponenter sedan [version 1.1.0 av kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE).
 
 ## JSON-exporterare med kärnkomponenter för innehållsfragment {#json-exporter-with-content-fragment-core-components}
 
@@ -102,4 +102,4 @@ Mer information finns i:
 * [Skapa med innehållsfragment](/help/sites-authoring/content-fragments.md)
 * [Aktivera JSON-export för en komponent](/help/sites-developing/json-exporter-components.md)
 
-* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) och komponenten [Innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) och komponenten [Innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=sv-SE)

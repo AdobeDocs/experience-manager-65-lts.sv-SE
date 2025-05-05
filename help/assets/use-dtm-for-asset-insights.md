@@ -19,7 +19,7 @@ Adobe Dynamic Tag Management är ett verktyg som aktiverar era verktyg för digi
 
 >[!CAUTION]
 >
->Adobe DTM är ersatt med [!DNL Adobe Experience Platform] och kommer snart att nå [slutet av livet](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe rekommenderar att du [använder [!DNL Adobe Experience Platform] för resursinsikter](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM är ersatt med [!DNL Adobe Experience Platform] och kommer snart att nå [slutet av livet](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe rekommenderar att du [använder [!DNL Adobe Experience Platform] för resursinsikter](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=sv-SE).
 
 Utför dessa steg för att aktivera Assets Insights via DTM.
 
@@ -33,7 +33,7 @@ Utför dessa steg för att aktivera Assets Insights via DTM.
 
    * Välj fliken **[!UICONTROL Web Properties]** och klicka sedan på **[!UICONTROL Add Property]**.
 
-   * Uppdatera fälten och klicka på **[!UICONTROL Create Property]**. Se [dokumentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Uppdatera fälten och klicka på **[!UICONTROL Create Property]**. Se [dokumentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE).
 
    ![Skapa webbegenskapen Redigera](assets/Create-edit-web-property.png)
 

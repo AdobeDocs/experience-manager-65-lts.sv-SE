@@ -33,7 +33,7 @@ Mer information om REST-slutpunkten och parametrar för begäran som stöds finn
 
 När en användare gör en begäran från en klientenhet som webbläsaren iOS eller Android™, löser Sling först profilnoden baserat på den begärda URL:en. Från den här profilnoden läser den **sling:resourceSuperType** och **sling:resourceType** för att identifiera alla tillgängliga skript som kan hantera den här formuläråtergivningsbegäran. Sedan används väljare för Sling-begäran tillsammans med begärandemetoden för att identifiera det skript som lämpar sig bäst för att hantera denna begäran. När begäran når en profilåtergivnings-JSP anropar JSP:n Forms OSGi-tjänsten.
 
-Mer information om Sling-skriptupplösningen finns i [AEM Sling Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) eller [Apache Sling Url-nedbrytning](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
+Mer information om Sling-skriptupplösningen finns i [AEM Sling Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE) eller [Apache Sling Url-nedbrytning](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
 #### Vanligt anropsflöde för formulärbearbetning {#typical-form-processing-call-flow}
 
@@ -178,7 +178,7 @@ Profilnoden har egenskapen **sling:resourceSuperType** med värdet **xfaforms/pr
 * **xfaforms.profile**: Det här biblioteket innehåller implementering för XFA-skriptnings- och layoutmotorn.
 
 Dessa bibliotek är modellerade som CQ Client Libraries, som utnyttjar automatisk sammanfogning, miniatyrbildnings- och komprimeringsfunktioner i CQ framework JavaScript Libraries.
-Mer information om CQ-klientbibliotek finns i [CQ Clientlib-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
+Mer information om CQ-klientbibliotek finns i [CQ Clientlib-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE).
 
 Så som beskrivs ovan anropar profilåtergivaren JSP Forms Service via en sling include. Denna JSP anger också olika felsökningsalternativ baserat på administratörskonfigurationen eller frågeparametrarna.
 

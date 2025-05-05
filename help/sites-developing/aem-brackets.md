@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## Ökning {#overview}
 
-Med AEM Brackets Extension får du ett smidigt arbetsflöde när du redigerar AEM-komponenter och klientbibliotek. Du använder kraften i [Brackets](https://brackets.io/) -kodredigeraren som ger åtkomst till Photoshop-filer och -lager inifrån kodredigeraren. Den enkla synkronisering som tillägget ger (ingen Maven eller filvalv krävs) ökar utvecklarens effektivitet och hjälper även gränssnittsutvecklare med begränsade AEM-kunskaper att delta i projekt. Det här tillägget har även stöd för [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), vilket gör JSP-komponenten mer komplex och gör komponentutvecklingen enklare och säkrare.
+Med AEM Brackets Extension får du ett smidigt arbetsflöde när du redigerar AEM-komponenter och klientbibliotek. Du använder kraften i [Brackets](https://brackets.io/) -kodredigeraren som ger åtkomst till Photoshop-filer och -lager inifrån kodredigeraren. Den enkla synkronisering som tillägget ger (ingen Maven eller filvalv krävs) ökar utvecklarens effektivitet och hjälper även gränssnittsutvecklare med begränsade AEM-kunskaper att delta i projekt. Det här tillägget har även stöd för [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE), vilket gör JSP-komponenten mer komplex och gör komponentutvecklingen enklare och säkrare.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 

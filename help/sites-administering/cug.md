@@ -117,13 +117,13 @@ För att undvika detta bör du skapa oskyddade omdirigeringssidor som pekar mot 
 
 Om du använder Dispatcher måste du definiera en Dispatcher-servergrupp med följande egenskaper:
 
-* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): Matchar sökvägen till sidorna som CUG gäller för.
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#identifying-virtual-hosts-virtualhosts): Matchar sökvägen till sidorna som CUG gäller för.
 * \sessionshantering: se nedan.
-* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): En cachekatalog som är dedikerad till de filer som CUG gäller för.
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#configuring-the-dispatcher-cache-cache): En cachekatalog som är dedikerad till de filer som CUG gäller för.
 
 ### Konfigurera Dispatcher sessionshantering för CUG:er {#configuring-dispatcher-session-management-for-cugs}
 
-Konfigurera [sessionshantering i dispatcher.alla filer](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) för CUG-filen. Den autentiseringshanterare som används när åtkomst begärs för CUG-sidor avgör hur du konfigurerar sessionshanteringen.
+Konfigurera [sessionshantering i dispatcher.alla filer](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#enabling-secure-sessions-sessionmanagement) för CUG-filen. Den autentiseringshanterare som används när åtkomst begärs för CUG-sidor avgör hur du konfigurerar sessionshanteringen.
 
 ```xml
 /sessionmanagement
@@ -137,7 +137,7 @@ Konfigurera [sessionshantering i dispatcher.alla filer](https://experienceleague
 >När en Dispatcher-servergrupp har sessionshantering aktiverat cachelagras inte alla sidor som servergruppen hanterar. Om du vill cachelagra sidor som ligger utanför CUG skapar du en andra grupp i dispatcher.any
 >som hanterar icke-CUG-sidor.
 
-1. Konfigurera [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) genom att definiera `/directory`, till exempel:
+1. Konfigurera [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#enabling-secure-sessions-sessionmanagement) genom att definiera `/directory`, till exempel:
 
    ```xml
    /sessionmanagement
@@ -147,4 +147,4 @@ Konfigurera [sessionshantering i dispatcher.alla filer](https://experienceleague
      }
    ```
 
-1. Ange [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) till `0`.
+1. Ange [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#caching-when-authentication-is-used) till `0`.

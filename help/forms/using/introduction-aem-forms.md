@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=sv-SE) |
 | AEM 6.5 | Den här artikeln |
 
 Information om de senaste funktionerna och förbättringarna i AEM Forms finns i [Nyheter i AEM Forms](../../forms/using/whats-new.md).

@@ -48,7 +48,7 @@ AEM Experience Fragments kan exporteras till standardarbetsytan i Adobe Target e
 >Mer information finns även i:
 >
 >* [Adobe Target-utveckling](https://developers.adobetarget.com/)
->* [Kärnkomponenter - Upplevelsefragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+>* [Kärnkomponenter - Upplevelsefragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=sv-SE)
 >
 
 ## Förutsättningar {#prerequisites}
@@ -100,7 +100,7 @@ De obligatoriska alternativen kan väljas i **Sidegenskaper** för den obligator
    >
    >Se kärnkomponenten:
    >
-   >[Kärnkomponenter - Upplevelsefragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+   >[Kärnkomponenter - Upplevelsefragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=sv-SE)
 
    Under **Adobe Target** väljer du:
 
@@ -170,7 +170,7 @@ Så här exporterar du ett Experience Fragment från AEM till Target (efter att 
 
 ## Använda dina upplevelsefragment i Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-När du har utfört ovanstående uppgifter visas Experience Fragment på offertsidan i Adobe Target. Titta på den [specifika Target-dokumentationen](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) för att lära dig mer om vad du kan uppnå där.
+När du har utfört ovanstående uppgifter visas Experience Fragment på offertsidan i Adobe Target. Titta på den [specifika Target-dokumentationen](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=sv-SE) för att lära dig mer om vad du kan uppnå där.
 
 >[!NOTE]
 >

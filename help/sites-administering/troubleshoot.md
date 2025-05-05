@@ -94,7 +94,7 @@ Tråddumpen är en lista över alla Java™-trådar som är aktiva. Om AEM inte 
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Mer information finns i [Så här tar du trådmodeller från en JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) -dokumentation
+Mer information finns i [Så här tar du trådmodeller från en JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=sv-SE) -dokumentation
 
 ### Söker efter oavslutade JCR-sessioner {#checking-for-unclosed-jcr-sessions}
 

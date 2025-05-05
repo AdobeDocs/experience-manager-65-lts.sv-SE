@@ -39,7 +39,7 @@ Förutom att [utveckla nya komponenter](/help/sites-developing/developing-compon
 
 >[!NOTE]
 >
->Det här dokumentet fokuserar på att utveckla formulär med [Foundation Components](/help/sites-authoring/default-components-foundation.md) i det klassiska användargränssnittet. Adobe rekommenderar att du använder de nya [kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) och [Dölj villkor](/help/sites-developing/hide-conditions.md) för formulärutveckling i det beröringskänsliga användargränssnittet.
+>Det här dokumentet fokuserar på att utveckla formulär med [Foundation Components](/help/sites-authoring/default-components-foundation.md) i det klassiska användargränssnittet. Adobe rekommenderar att du använder de nya [kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) och [Dölj villkor](/help/sites-developing/hide-conditions.md) för formulärutveckling i det beröringskänsliga användargränssnittet.
 
 ## Förhandsladda formulärvärden {#preloading-form-values}
 

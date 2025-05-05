@@ -56,7 +56,7 @@ Fördelarna med redigerbara mallar:
 
 >[!NOTE]
 >
->Se [Använda redigerbara sidmallar för att utveckla en Experience Manager-webbplats](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html).
+>Se [Använda redigerbara sidmallar för att utveckla en Experience Manager-webbplats](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=sv-SE).
 
 ### Statiska mallar {#static-templates}
 

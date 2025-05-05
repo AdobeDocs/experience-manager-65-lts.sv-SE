@@ -29,7 +29,7 @@ I det klassiska användargränssnittet används ExtJS för att skapa widgetar so
 >
 >Även om både HTML Template Language (HTL) och JSP kan användas för att utveckla komponenter för det klassiska användargränssnittet, illustrerar den här sidan utvecklingen med JSP. Detta beror enbart på historiken med att använda JSP i det klassiska användargränssnittet.
 >
->HTML är nu det rekommenderade skriptspråket för AEM. Jämför metoderna i [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) och [Utveckla AEM-komponenter](/help/sites-developing/developing-components.md).
+>HTML är nu det rekommenderade skriptspråket för AEM. Jämför metoderna i [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE) och [Utveckla AEM-komponenter](/help/sites-developing/developing-components.md).
 
 ## Struktur {#structure}
 

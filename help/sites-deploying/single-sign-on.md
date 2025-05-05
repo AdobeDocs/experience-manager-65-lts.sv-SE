@@ -80,13 +80,13 @@ Om du vill konfigurera enkel inloggning för en AEM-instans konfigurerar du [aut
 
 >[!NOTE]
 >
->Om du även använder [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) med Microsoft® Internet Information Server (IIS) krävs ytterligare konfiguration i:
+>Om du även använder [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE) med Microsoft® Internet Information Server (IIS) krävs ytterligare konfiguration i:
 >
 >* `disp_iis.ini`
 >* IIS
 >
 >I `disp_iis.ini`-uppsättningen:
->(Mer information finns i [installera Dispatcher med Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server))
+>(Mer information finns i [installera Dispatcher med Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=sv-SE#microsoft-internet-information-server))
 >
 >* `servervariables=1` (vidarebefordrar IIS-servervariabler som begärandehuvuden till fjärrinstansen)
 >* `replaceauthorization=1` (ersätter en rubrik med namnet &quot;Authorization&quot;, annan än &quot;Basic&quot;, med motsvarande &quot;Basic&quot;)

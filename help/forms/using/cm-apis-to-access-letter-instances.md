@@ -40,7 +40,7 @@ Correspondence Management exponerar API:er för att hämta bokstavsinstanser via
 
 ### Använda getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-Följande API hittar bokstavsinstanserna baserat på frågeobjektet (både Skickat och Utkast). Om frågeobjektet är null returneras alla bokstavsinstanser. Detta API returnerar en lista med [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) -objekt, som kan användas för att extrahera ytterligare information om bokstavsinstansen.
+Följande API hittar bokstavsinstanserna baserat på frågeobjektet (både Skickat och Utkast). Om frågeobjektet är null returneras alla bokstavsinstanser. Detta API returnerar en lista med [LetterInstanceVO](https://helpx.adobe.com/se/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) -objekt, som kan användas för att extrahera ytterligare information om bokstavsinstansen.
 
 **Syntax**: `List getAllLetterInstances(Query query) throws ICCException;`
 

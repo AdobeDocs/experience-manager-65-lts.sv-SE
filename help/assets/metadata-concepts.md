@@ -123,7 +123,7 @@ Programspecifika metadata innehåller tekniska och beskrivande metadata. Om du a
 * CQ - Används av [!DNL Experience Manager Assets].
 * DAM - används av [!DNL Experience Manager Assets].
 * DEX - [!DNL Optima SC Description explorer] är en samling verktyg för metadata och filhantering för Windows-operativsystem.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/se/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto och MP - Microsoft Photo.

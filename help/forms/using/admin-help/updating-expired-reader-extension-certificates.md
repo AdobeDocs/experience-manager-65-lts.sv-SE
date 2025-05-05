@@ -34,7 +34,7 @@ Svar: På grundval av den nya bedömningen av situationen fortsätter alla PDF-d
 
 **Q. Vem ska jag kontakta om jag har ytterligare frågor?**
 
-S. Du kan kontakta [Adobe Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) eller skaffa ett supportärende.
+S. Du kan kontakta [Adobe Support](https://experienceleague.adobe.com/sv?support-solution=Experience+Manager#support) eller skaffa ett supportärende.
 
 **Q. Vad händer om jag inte uppdaterar mitt certifikat före 7 januari 2023?**
 
@@ -46,7 +46,7 @@ S. Beskrivningen av de nya Acrobat Reader Extensions-certifikaten anger **G3-P24
 
 **Q. Hur får jag tag i de senaste certifikaten?**
 
-S. Alla berättigade Forms-kunder (med aktiv licens) kan hämta de nya certifikaten (certifikat baserade på&quot;Adobe Root CA G2&quot;) från [Adobe licenswebbplats](https://licensing.adobe.com/). Om du inte kan hitta certifikatet på Adobe licenswebbplats kontaktar du [Adobe support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) eller ber om en supportanmälan.
+S. Alla berättigade Forms-kunder (med aktiv licens) kan hämta de nya certifikaten (certifikat baserade på&quot;Adobe Root CA G2&quot;) från [Adobe licenswebbplats](https://licensing.adobe.com/). Om du inte kan hitta certifikatet på Adobe licenswebbplats kontaktar du [Adobe support](https://experienceleague.adobe.com/sv?support-solution=Experience+Manager&amp;lang=en#support) eller ber om en supportanmälan.
 
 **Q. Fortsätter mina PDF-dokument att fungera efter den 7 januari 2023 med certifikat som har utfärdats från&quot;Adobe Root CA&quot; (den gamla certifikatutfärdaren)?**
 
@@ -54,11 +54,11 @@ Svar: Ja. Alla PDF-dokument som har byggts ut med hjälp av produktionscertifika
 
 **Q. Vilken version av Adobe Acrobat Reader krävs för att fortsätta använda PDF-dokument som har utökats med certifikat som har utfärdats från Adobe Root CA (den gamla certifikatutfärdaren)?**
 
-S. Adobe Acrobat Reader 2020 eller senare krävs för PDF-dokument som har utökats med Adobe Root CA (den gamla certifikatutfärdaren). Det är den version av Acrobat Reader som stöds när det här dokumentet publiceras. Om du använder en [version av Adobe Acrobat](https://helpx.adobe.com/support/programs/eol-matrix.html) som inte stöds rekommenderar Adobe att du [hämtar och installerar den senaste versionen av Adobe Acrobat Reader](https://get.adobe.com/reader/).
+S. Adobe Acrobat Reader 2020 eller senare krävs för PDF-dokument som har utökats med Adobe Root CA (den gamla certifikatutfärdaren). Det är den version av Acrobat Reader som stöds när det här dokumentet publiceras. Om du använder en [version av Adobe Acrobat](https://helpx.adobe.com/se/support/programs/eol-matrix.html) som inte stöds rekommenderar Adobe att du [hämtar och installerar den senaste versionen av Adobe Acrobat Reader](https://get.adobe.com/reader/).
 
 **Q. Vilken version av Adobe Acrobat Reader krävs för att fortsätta använda PDF-dokument som har utökats med certifikat som har utfärdats från Adobe Root CA 2 (den nya certifikatutfärdaren)?**
 
-S. Adobe Acrobat Reader 2020 eller senare krävs för PDF-dokument som har utökats med Adobe Root CA 2 (den nya certifikatutfärdaren). Om du använder en [version av Adobe Acrobat Reader](https://helpx.adobe.com/support/programs/eol-matrix.html) som inte stöds rekommenderar Adobe att du [hämtar och installerar den senaste versionen av Adobe Acrobat Reader](https://get.adobe.com/reader/).
+S. Adobe Acrobat Reader 2020 eller senare krävs för PDF-dokument som har utökats med Adobe Root CA 2 (den nya certifikatutfärdaren). Om du använder en [version av Adobe Acrobat Reader](https://helpx.adobe.com/se/support/programs/eol-matrix.html) som inte stöds rekommenderar Adobe att du [hämtar och installerar den senaste versionen av Adobe Acrobat Reader](https://get.adobe.com/reader/).
 
 **Q. Kan jag ta bort ett gammalt Acrobat Reader Extensions-certifikat och lägga till ett nytt på en Adobe Experience Manager Forms-server samtidigt som jag fortsätter att använda det befintliga aliaset?**
 
@@ -190,4 +190,4 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).  -->
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=sv-SE).  -->

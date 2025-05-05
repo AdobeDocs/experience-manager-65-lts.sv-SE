@@ -66,7 +66,7 @@ Om du behöver ett arbetsflöde eller en versionshantering för dina resurser sk
 
 Om du inte behöver ett arbetsflöde eller en versionshantering för dina resurser överför du dina resurser till Scene7. Här följer det rekommenderade arbetsflödet:
 
-1. I Dynamic Media Classic konfigurerar [en schemalagd FTP-överföring och -kodning till Scene7 (automatiskt system)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+1. I Dynamic Media Classic konfigurerar [en schemalagd FTP-överföring och -kodning till Scene7 (automatiskt system)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=sv-SE#upload-files-using-via-ftp).
 1. I Experience Manager får du åtkomst till videoresurser i WCM på fliken **[!UICONTROL Scene7]** i Content Finder.
 1. Skapa med komponenten **[!UICONTROL Scene7 Video]**.
 
@@ -85,7 +85,7 @@ Om du inte behöver ett arbetsflöde eller en versionshantering för dina resurs
 
    >[!NOTE]
    >
-   >Mer information om vad videoförinställningarna betyder finns i [Dynamic Media Classic-dokumentationen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+   >Mer information om vad videoförinställningarna betyder finns i [Dynamic Media Classic-dokumentationen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=sv-SE#video-presets-for-encoding-video-files).
    >
    >Adobe rekommenderar att du antingen väljer båda adaptiva videouppsättningar när du konfigurerar de universella förinställningarna eller väljer alternativet **[!UICONTROL Adaptive Video Encoding]**.
 

@@ -106,7 +106,7 @@ Följande agenter finns i en standardinstallation av AEM:
 Används för replikering från författare till publicering.
 
 * Dispatcher Flush
-Detta används för att hantera Dispatcher-cachen. Mer information finns i [Invaliderar Dispatcher-cache från redigeringsmiljön](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) och [Invaliderar Dispatcher-cache från en publiceringsinstans](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance).
+Detta används för att hantera Dispatcher-cachen. Mer information finns i [Invaliderar Dispatcher-cache från redigeringsmiljön](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=sv-SE#invalidating-dispatcher-cache-from-the-authoring-environment) och [Invaliderar Dispatcher-cache från en publiceringsinstans](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=sv-SE#invalidating-dispatcher-cache-from-a-publishing-instance).
 
 * [Omvänd replikering](#configuring-reverse-replication)
 Används för replikering från Publicera till Författare. Omvänd replikering används inte för communityfunktioner som forum, bloggar och kommentarer. Den är inaktiverad eftersom utkorgen inte är aktiverad. Användning av omvänd replikering kräver anpassad konfiguration.
@@ -352,7 +352,7 @@ På fliken Verktyg i redigeringsmiljön kan du konfigurera replikeringsagenter s
 
 >[!NOTE]
 >
->När en Dispatcher hanterar HTTP-begäranden för författare- eller publiceringsinstanser måste HTTP-begäran från replikeringsagenten innehålla PATH-huvudet. Utöver följande procedur måste du lägga till PATH-rubriken i Dispatcher-listan med klientrubriker. Se [/klienthuvuden (klienthuvuden)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
+>När en Dispatcher hanterar HTTP-begäranden för författare- eller publiceringsinstanser måste HTTP-begäran från replikeringsagenten innehålla PATH-huvudet. Utöver följande procedur måste du lägga till PATH-rubriken i Dispatcher-listan med klientrubriker. Se [/klienthuvuden (klienthuvuden)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Gå till fliken **Verktyg** i AEM.

@@ -180,7 +180,7 @@ Adobe rekommenderar att du kör dessa instruktioner i en sekvens för att spara 
 
 Funktionen Spara som utkast är inte aktiverad som standard. Gör så här för att aktivera funktionen:
 
-1. Implementera SPI (Service Provider Interface) för [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
+1. Implementera SPI (Service Provider Interface) för [ccrDocumentInstance](https://helpx.adobe.com/se/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
 
    Med SPI kan du spara utkastet till version av den interaktiva kommunikationen i databasen med ett utkast-ID som unik identifierare. Dessa instruktioner förutsätter att du har kunskap om hur du bygger ett OSGi-paket med ett Maven-projekt.
 

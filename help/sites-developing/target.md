@@ -198,7 +198,7 @@ JSP-skriptet för den här komponenten genererar anrop till Target javascript AP
 
 Standardfilen mbox.js som används för att skapa mbox finns på /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js. Om du vill använda filen mbox.js för en kund lägger du till filen i molnkonfigurationen för Target. Om du vill lägga till filen måste filen mbox.js vara tillgänglig i filsystemet.
 
-Om du till exempel vill använda [Marketing Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html) måste du hämta mbox.js så att den innehåller rätt värde för variabeln `imsOrgID` som baseras på din klientorganisation. Den här variabeln krävs för integrering med Marketing Cloud ID-tjänsten. Mer information finns i [Adobe Analytics som Reporting Source för Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) och [Innan du implementerar](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html).
+Om du till exempel vill använda [Marketing Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE) måste du hämta mbox.js så att den innehåller rätt värde för variabeln `imsOrgID` som baseras på din klientorganisation. Den här variabeln krävs för integrering med Marketing Cloud ID-tjänsten. Mer information finns i [Adobe Analytics som Reporting Source för Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=sv-SE) och [Innan du implementerar](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=sv-SE).
 
 >[!NOTE]
 >

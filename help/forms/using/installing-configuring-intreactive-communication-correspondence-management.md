@@ -97,7 +97,7 @@ AEM Forms tilläggspaket är ett program som distribueras till AEM. Paketet inne
 1. Öppna [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  och klicka för **[!UICONTROL Upload Package]** att ladda upp paketet.
 1. Markera paketet och klicka på **[!UICONTROL Install]**.
 
-   Du kan också hämta paketet via direktlänken i artikeln [AEM Forms releaser](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) .
+   Du kan också hämta paketet via direktlänken i artikeln [AEM Forms releaser](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) .
 
 1. När paketet har installerats uppmanas du att starta om AEM. **Starta inte om servern omedelbart.** Innan du stoppar AEM Forms Server väntar du tills meddelandena ServiceEvent REGISTERED och ServiceEvent UNREGISTERED slutar visas i [filen AEM-Installation-Directory]/crx-quickstart/logs/error.log och loggen är stabil.
 
@@ -155,7 +155,7 @@ Med AEMFD-kompatibilitetspaketet kan du använda följande resurser från AEM 6.
 
 #### Konfigurera Dispatcher {#configure-dispatcher}
 
-Dispatcher är Adobe Experience Manager verktyg för cachelagring och belastningsutjämning som används med en webbserver i företagsklass. Om du använder [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en) ska du göra följande konfigurationer för AEM Forms:
+Dispatcher är Adobe Experience Manager verktyg för cachelagring och belastningsutjämning som används med en webbserver i företagsklass. Om du använder [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE) ska du göra följande konfigurationer för AEM Forms:
 
 1. Konfigurera åtkomst för AEM Forms:
 
@@ -163,7 +163,7 @@ Dispatcher är Adobe Experience Manager verktyg för cachelagring och belastning
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Spara och stäng filen. Mer information om filter finns i [Dispatcher-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).
+   Spara och stäng filen. Mer information om filter finns i [Dispatcher-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE).
 
 1. Konfigurera tjänsten för refererarfilter:
 

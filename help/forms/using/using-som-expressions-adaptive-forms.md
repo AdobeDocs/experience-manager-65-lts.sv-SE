@@ -46,4 +46,4 @@ I paneler kan du komma åt funktionen från panelens verktygsfält. Funktionen u
 
 Extrahera SOM-uttryck med panelens verktygsfält
 
-Vissa API:er i [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) använder SOM-uttrycket för ett element. Om du till exempel vill ge fokus till ett visst fält i ett adaptivt formulär skickar du motsvarande SOM-uttryck till `getFocus`-API:t i `guideBridge`.
+Vissa API:er i [GuideBridge](https://helpx.adobe.com/se/aem-forms/6/javascript-api/GuideBridge.html) använder SOM-uttrycket för ett element. Om du till exempel vill ge fokus till ett visst fält i ett adaptivt formulär skickar du motsvarande SOM-uttryck till `getFocus`-API:t i `guideBridge`.

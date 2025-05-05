@@ -62,7 +62,7 @@ Fält är aktiverade i sidkomponenten (*inte* i mallen):
 
    >[!NOTE]
    >
-   >I det här exemplet antas att kärnkomponenterna har installerats på instansen, vilket är fallet om instansen körs med exempelinnehållet We.Retail. Mer information finns i [dokumentationen för kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+   >I det här exemplet antas att kärnkomponenterna har installerats på instansen, vilket är fallet om instansen körs med exempelinnehållet We.Retail. Mer information finns i [dokumentationen för kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE).
 
 1. Navigera till det obligatoriska fältet i definitionen `cq:dialog`.
 1. Definiera följande egenskap på fältnoden:

@@ -130,9 +130,9 @@ Mer information finns i [Innehållsfragment - Ta bort överväganden](/help/asse
 
 >[!CAUTION]
 >
->[Kärnkomponenten för innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) rekommenderas nu. Mer information finns i [Utveckla kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
+>[Kärnkomponenten för innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=sv-SE) rekommenderas nu. Mer information finns i [Utveckla kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=sv-SE).
 
-Innehållsfragment kan refereras från AEM-sidor, precis som andra resurstyper. AEM tillhandahåller kärnkomponenten [**Content Fragment**](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) - en [komponent som gör att du kan ta med innehållsfragment på dina sidor](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Du kan också utöka den här kärnkomponenten för **innehållsfragment**.
+Innehållsfragment kan refereras från AEM-sidor, precis som andra resurstyper. AEM tillhandahåller kärnkomponenten [**Content Fragment**](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=sv-SE) - en [komponent som gör att du kan ta med innehållsfragment på dina sidor](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Du kan också utöka den här kärnkomponenten för **innehållsfragment**.
 
 * Komponenten använder egenskapen `fragmentPath` för att referera till det faktiska innehållsfragmentet. Egenskapen `fragmentPath` hanteras på samma sätt som liknande egenskaper för andra resurstyper, till exempel när innehållsfragmentet flyttas till en annan plats.
 
@@ -531,5 +531,5 @@ Om du vill ange ett intervall för automatiskt sparande på 5 minuter måste du 
 
 Mer information finns på
 
-* [Kärnkomponenter - Innehållsfragmentkomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (rekommenderas)
+* [Kärnkomponenter - Innehållsfragmentkomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=sv-SE) (rekommenderas)
 * [Content Fragment Components - Components for Page Authoring](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)

@@ -107,7 +107,7 @@ Alla system körs, men det finns bättre datorprestanda. Den extra prestandan ä
 Beräkningen av hur många klusternoder som behövs baseras på de grundläggande kraven och specifika användningsfall för det aktuella webbprojektet:
 
 * När det gäller felsäkerhet är det nödvändigt att för alla miljöer fastställa hur allvarligt felet är och hur lång tid det tar för en klusternod att återställa felet.
-* När det gäller skalbarhet är antalet skrivåtgärder den viktigaste faktorn. Belastningsutjämning kan upprättas för åtgärder som enbart använder systemet för att bearbeta läsåtgärder. Mer information finns i [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
+* När det gäller skalbarhet är antalet skrivåtgärder den viktigaste faktorn. Belastningsutjämning kan upprättas för åtgärder som enbart använder systemet för att bearbeta läsåtgärder. Mer information finns i [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE).
 
 ### Maskinvarurekommendationer {#hardware-recommendations}
 

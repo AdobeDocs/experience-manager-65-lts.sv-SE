@@ -18,7 +18,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[Resursväljaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) kallades [Resursväljaren](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) i tidigare versioner av [!DNL Experience Manager].
+>[Resursväljaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=sv-SE) kallades [Resursväljaren](https://helpx.adobe.com/se/experience-manager/6-2/assets/using/asset-picker.html) i tidigare versioner av [!DNL Experience Manager].
 
 Med resursväljaren kan du bläddra bland, söka efter och filtrera resurser i [!DNL Adobe Experience Manager] Assets. Du kan också hämta metadata för resurser som du väljer med resursväljaren. Om du vill anpassa resursväljargränssnittet kan du starta det med parametrar för begäran som stöds. Dessa parametrar anger kontexten för resursväljaren för ett visst scenario.
 
@@ -63,4 +63,4 @@ Du kan skicka följande frågeparametrar i en URL för att starta resursväljare
 
 >[!MORELIKETHIS]
 >
->* [Mikrofrontsväljare för mediefiler i AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)
+>* [Mikrofrontsväljare för mediefiler i AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=sv-SE)

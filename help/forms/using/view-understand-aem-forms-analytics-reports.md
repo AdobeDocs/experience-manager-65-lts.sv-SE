@@ -92,7 +92,7 @@ I avsnittet Sammanfattning på formulärnivå får du information om hur formul�
 * **Utkast**: Antal gånger som formuläret har sparats som utkast
 * **Skicka in**: Antal gånger som formuläret har skickats in
 * **Avbryt**: Antal gånger som användarna började fylla i formuläret och sedan lämnade det utan att fylla i formuläret
-* **Unika besökare**: Antal gånger som formuläret återges av unika besökare. Mer information om unika besökare finns i [Unika besökare, besök och kundbeteende](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Unika besökare**: Antal gånger som formuläret återges av unika besökare. Mer information om unika besökare finns i [Unika besökare, besök och kundbeteende](https://helpx.adobe.com/se/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Utökad sammanfattningsanalysrapport på formulärnivå](assets/analytics-report.png)
 

@@ -193,7 +193,7 @@ I följande två exempel illustreras definitionen:
 
 AEM använder LESS för att generera delar av den CSS som behövs, och dessa måste ingå i dina projekt.
 
-Du måste också skapa ett [klientbibliotek](https://experienceleague.adobe.com/docs/) för att kunna tillhandahålla ytterligare konfigurations- och funktionsanrop. Följande LESS-extrakt är ett exempel på det minsta som du måste lägga till i projektet:
+Du måste också skapa ett [klientbibliotek](https://experienceleague.adobe.com/docs/?lang=sv-SE) för att kunna tillhandahålla ytterligare konfigurations- och funktionsanrop. Följande LESS-extrakt är ett exempel på det minsta som du måste lägga till i projektet:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";

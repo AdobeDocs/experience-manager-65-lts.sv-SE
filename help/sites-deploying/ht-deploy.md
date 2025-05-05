@@ -20,7 +20,7 @@ I följande avsnitt beskrivs hur du utför specifika AEM-distributionsåtgärder
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [Så här tömmer du arbetsflöden och granskningsloggen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [Så här tömmer du arbetsflöden och granskningsloggen](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
 * [Tips för prestandajustering](/help/sites-deploying/configuring-performance.md)
 

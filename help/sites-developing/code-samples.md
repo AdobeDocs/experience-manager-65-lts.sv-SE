@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Adobe Consulting Services Team har genererat ett antal kodexempel från Adobe Experience Manager (AEM). Dessa exempel är välkommenterade kodavsnitt som hjälper AEM-utvecklare att förstå AEM huvudbyggstenar. Exemplen finns här: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-En självstudiekurs i flera delar som är utformad för utvecklare som inte har använt AEM och som täcker grundläggande ämnen som projektkonfiguration, kärnkomponenter, redigerbara mallar, klientbibliotek och komponentutveckling: [Komma igång med AEM Sites - WKND-självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+En självstudiekurs i flera delar som är utformad för utvecklare som inte har använt AEM och som täcker grundläggande ämnen som projektkonfiguration, kärnkomponenter, redigerbara mallar, klientbibliotek och komponentutveckling: [Komma igång med AEM Sites - WKND-självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)
 
 En Maven-mall som används för att skapa ett AEM-projekt som utgångspunkt för att utveckla egna funktioner finns tillgänglig [på GitHub - AEM Project Archetype](https://github.com/adobe/aem-project-archetype).
 

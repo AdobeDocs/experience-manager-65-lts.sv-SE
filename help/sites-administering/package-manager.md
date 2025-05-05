@@ -583,7 +583,7 @@ AEM Packages kan användas för att skapa och dela innehåll i olika AEM-miljöe
 
 [Programvarudistribution](https://downloads.experiencecloud.adobe.com) är en centraliserad tjänst som är utformad för att förenkla sökning och hämtning av AEM-paket.
 
-Mer information finns i [dokumentationen för programdistribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Mer information finns i [dokumentationen för programdistribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=sv-SE)
 
 >[!NOTE]
 >

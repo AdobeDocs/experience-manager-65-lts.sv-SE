@@ -105,7 +105,7 @@ Butiksspecifik:
 
 >[!NOTE]
 >
->Se även den fullständiga [ContextHub API Reference](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Se även den fullständiga [ContextHub API Reference](https://helpx.adobe.com/se/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
 ## Lägger till återanrop för post {#adding-record-callbacks}
 

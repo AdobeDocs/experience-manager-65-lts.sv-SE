@@ -47,7 +47,7 @@ AEM 6.5 är ett flexibelt verktyg för den headless-implementeringsmodellen med 
 1. Innehålls-API för leverans
    * AEM GraphQL API har stöd för leverans av innehållsfragment.
    * AEM Assets REST API stöder CRUD-åtgärder för innehållsfragment.
-   * Direktinnehållsleverans är också möjligt med [Content Fragment Core Component&#39;s JSON export.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+   * Direktinnehållsleverans är också möjligt med [Content Fragment Core Component&#39;s JSON export.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=sv-SE)
 
 ## Dina första steg med AEM Headless {#first-steps}
 
@@ -57,5 +57,5 @@ Det finns flera resurser som du kan använda för att komma igång med AEM headl
 |---|---|---|---|---|
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | **För användare som inte har använt AEM tidigare och headless** kan du börja här för att få en omfattande introduktion till AEM och dess headless-funktioner, från teorin om headless till att börja med ditt första headless-projekt. | Guide | Utvecklare **nybörjare i AEM och headless** | 1 timme |
 | [Starthandbok för Headless](/help/sites-developing/headless/getting-started/introduction.md) | **För erfarna AEM-användare** som behöver en kort sammanfattning av de viktigaste rubrikfria funktionerna i AEM kan du ta en titt på den här snabbstartsöversikten. | Snabbstart | Utvecklare, administratörer **med AEM** | 20 minuter |
-| [Komma igång med självstudiekurs för AEM Headless ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **Om du föredrar en praktisk strategi och är bekant med AEM** kan du använda den här självstudiekursen för att skapa ett enkelt headless-projekt. | Självstudiekurs | Utvecklare | 2 timmar |
-| [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html) | Den här resurssamlingen tillhandahålls för både **nya**- och **erfarna**-utvecklare. | Resurser | Utvecklare | |
+| [Komma igång med självstudiekurs för AEM Headless ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=sv-SE) | **Om du föredrar en praktisk strategi och är bekant med AEM** kan du använda den här självstudiekursen för att skapa ett enkelt headless-projekt. | Självstudiekurs | Utvecklare | 2 timmar |
+| [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=sv-SE) | Den här resurssamlingen tillhandahålls för både **nya**- och **erfarna**-utvecklare. | Resurser | Utvecklare | |

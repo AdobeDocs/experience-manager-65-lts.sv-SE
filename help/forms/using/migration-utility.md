@@ -32,13 +32,13 @@ Du kan [uppgradera](../../forms/using/upgrade.md) till [AEM Forms 6.5 LTS från 
 
 **Om det finns en uppgradering på plats**
 
-Om du utförde en [på plats-uppgradering](/help/sites-deploying/in-place-upgrade.md) har den uppgraderade instansen redan resurserna och dokumenten. Innan du kan använda resurserna och dokumenten måste du installera [AEMFD-kompatibilitetspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (inkluderar kompatibilitetspaketet för hantering av korrespondenshantering).
+Om du utförde en [på plats-uppgradering](/help/sites-deploying/in-place-upgrade.md) har den uppgraderade instansen redan resurserna och dokumenten. Innan du kan använda resurserna och dokumenten måste du installera [AEMFD-kompatibilitetspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) (inkluderar kompatibilitetspaketet för hantering av korrespondenshantering).
 
 Därefter måste du uppdatera resurserna och dokumenten genom att [köra migreringsverktyget](#runningmigrationutility).
 
 **Om det finns en installation på annan plats**
 
-Om det är en oavslutad (ny) installation måste du installera [AEMFD-kompatibilitetspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (inkluderar Correspondence Management Compatibility-paketet) innan du kan använda resurserna och dokumenten.
+Om det är en oavslutad (ny) installation måste du installera [AEMFD-kompatibilitetspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) (inkluderar Correspondence Management Compatibility-paketet) innan du kan använda resurserna och dokumenten.
 
 Därefter måste du importera resurspaketet (zip eller cmp) till den nya konfigurationen och sedan uppdatera resurserna och dokumenten genom att [köra migreringsverktyget](#runningmigrationutility). Adobe rekommenderar att du bara skapar resurser på den nya installationen efter att du har kört migreringsverktyget.
 

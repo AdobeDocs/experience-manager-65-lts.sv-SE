@@ -39,7 +39,7 @@ Se även [Skapa en dynamisk mediekonfiguration i molntjänster](/help/assets/con
 
 Du börjar konfigurera ett Dynamic Media-företagskonto genom att först skicka ett supportärende. Det här steget är obligatoriskt.
 
-1. [Använd Admin Console för att skapa ett supportärende](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. [Använd Admin Console för att skapa ett supportärende](https://helpx.adobe.com/se/enterprise/using/support-for-experience-cloud.html).
 1. Ange följande information i ditt supportärende:
 
    * Det namn på företaget Dynamic Media som du vill använda. Namnet får bara innehålla ** bokstäver (blandat skiftläge tillåts), siffror, bindestreck och understreck.

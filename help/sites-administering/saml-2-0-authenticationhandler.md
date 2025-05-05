@@ -31,7 +31,7 @@ Den här hanteraren lagrar det krypterade SAML-svarsmeddelandet i användarnoden
 
 >[!NOTE]
 >
->Se [en demonstration av AEM- och SAML-integrering](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
+>Se [en demonstration av AEM- och SAML-integrering](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=sv-SE).
 
 ## Konfigurera autentiseringshanteraren för SAML 2.0 {#configuring-the-saml-authentication-handler}
 

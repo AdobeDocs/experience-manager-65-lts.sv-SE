@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=sv-SE) |
 | AEM 6.5 | Den här artikeln |
 
 I [!DNL Adobe Experience Manager Assets] kan du göra mer än att lagra och styra dina resurser. [!DNL Experience Manager] erbjuder tillgångshanteringsfunktioner i enterpriseklass. Du kan redigera och dela resurser, köra avancerade sökningar och skapa flera renderingar av dussintals filformat som stöds. Du kan också hantera versioner och digitala rättigheter, automatisera bearbetningen av resurser, hantera och styra metadata, samarbeta med anteckningar och mycket annat.
@@ -103,7 +103,7 @@ Om du vill konfigurera rensningsaktiviteten för de oavslutade segmentöverföri
 
 >[!CAUTION]
 >
->Segmentöverföring utlöses när standardvärdet är 500 MB och segmentstorleken är 50 MB. Om du redigerar [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) och anger `timeout configuration` till mindre än den tid det tar för en resurs att överföra, kommer du att få en timeout för sessionen när överföringen av resursen pågår. Ändra därför `chunkUploadMinFileSize` och `chunksize` så att varje segmentbegäran uppdaterar sessionen.
+>Segmentöverföring utlöses när standardvärdet är 500 MB och segmentstorleken är 50 MB. Om du redigerar [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=sv-SE) och anger `timeout configuration` till mindre än den tid det tar för en resurs att överföra, kommer du att få en timeout för sessionen när överföringen av resursen pågår. Ändra därför `chunkUploadMinFileSize` och `chunksize` så att varje segmentbegäran uppdaterar sessionen.
 >
 >Med tanke på tidsgräns, fördröjning, bandbredd och förväntade samtidiga överföringar för autentiseringsuppgifter, är det högsta värdet som gör att du kan säkerställa att följande väljs:
 >
@@ -170,7 +170,7 @@ Med Dynamic Media kan du batchöverföra resurser via FTP-servern. Om du tänker
 
 >[!NOTE]
 >
->Installera Feature Pack 18912 på [!DNL Experience Manager]-författarinstanserna om du vill överföra resurser via FTP i läget Dynamic Media - Scene7. Kontakta [Adobe kundsupport](https://experienceleague.adobe.com/?support-solution=General#support) för att få tillgång till FP-18912 och slutföra konfigurationen av ditt FTP-konto. Mer information finns i [Installera funktionspaket 18912 för migrering av gruppresurser](/help/assets/bulk-ingest-migrate.md).
+>Installera Feature Pack 18912 på [!DNL Experience Manager]-författarinstanserna om du vill överföra resurser via FTP i läget Dynamic Media - Scene7. Kontakta [Adobe kundsupport](https://experienceleague.adobe.com/sv?support-solution=General#support) för att få tillgång till FP-18912 och slutföra konfigurationen av ditt FTP-konto. Mer information finns i [Installera funktionspaket 18912 för migrering av gruppresurser](/help/assets/bulk-ingest-migrate.md).
 >
 >Om du använder FTP för att överföra resurser ignoreras de överföringsinställningar som anges i [!DNL Experience Manager]. I stället används filbearbetningsregler, som de definieras i Dynamic Media Classic.
 
@@ -178,7 +178,7 @@ Med Dynamic Media kan du batchöverföra resurser via FTP-servern. Om du tänker
 
 1. Logga in på FTP-servern med det FTP-användarnamn och lösenord som du fick från e-postmeddelandet om etablering. Överför filer eller mappar till FTP-servern i FTP-klienten.
 
-1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) och logga sedan in på ditt konto.
+1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=sv-SE#system-requirements-dmc-app) och logga sedan in på ditt konto.
 
    Dina autentiseringsuppgifter och din inloggning tillhandahölls av Adobe vid tidpunkten för etableringen. Om du inte har den här informationen kan du kontakta Adobe kundsupport.
 
@@ -883,7 +883,7 @@ Du kan skapa versioner i [!DNL Experience Manager] i följande scenarier:
 * Överför en resurs med samma filnamn som finns på samma plats. Det kan vara en ny tillgång eller en modifierad version av samma resurs.
 * Redigera en bild i [!DNL Experience Manager] och spara ändringarna.
 * Redigera metadata för en resurs.
-* Använd datorprogrammet [!DNL Experience Manager] för att checka ut en befintlig resurs, redigera den och [överföra dina ändringar](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* Använd datorprogrammet [!DNL Experience Manager] för att checka ut en befintlig resurs, redigera den och [överföra dina ändringar](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=sv-SE#edit-assets-upload-updated-assets).
 
 Du kan även aktivera automatisk versionshantering via ett arbetsflöde. När du skapar en version för en resurs sparas metadata och återgivningar tillsammans med versionen. Återgivningar är renderingsalternativ för samma bilder, till exempel en PNG-återgivning av en överförd JPEG-fil.
 
@@ -958,4 +958,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Om du vill ha mer information kan du läsa om hur du [bläddrar bland DAM-resurser med skrivbordsappen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) och [hur du använder Adobe Asset Link](https://helpx.adobe.com/se/enterprise/using/manage-assets-using-adobe-asset-link.html).
+Om du vill ha mer information kan du läsa om hur du [bläddrar bland DAM-resurser med skrivbordsappen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=sv-SE#browse-search-preview-assets) och [hur du använder Adobe Asset Link](https://helpx.adobe.com/se/enterprise/using/manage-assets-using-adobe-asset-link.html).

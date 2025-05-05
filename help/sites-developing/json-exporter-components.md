@@ -35,7 +35,7 @@ Först måste en segmentmodell definieras för komponenten.
 
 >[!NOTE]
 >
->Ett exempel på hur du använder segmentmodeller finns i [Developing Sling Model Exporters in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+>Ett exempel på hur du använder segmentmodeller finns i [Developing Sling Model Exporters in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=sv-SE).
 
 Implementeringsklassen för Sling-modellen måste kommenteras med följande:
 
@@ -77,7 +77,7 @@ Modellgränssnittet måste vara korrekt kommenterat för att definiera vilka met
 
 ## Exempel {#example}
 
-Core Components har stöd för JSON-export sedan version [1.1.0 av kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) och kan användas som referens.
+Core Components har stöd för JSON-export sedan version [1.1.0 av kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) och kan användas som referens.
 
 Ett exempel finns i Sling Model-implementeringen av Image Core-komponenten och dess kommenterade gränssnitt.
 
@@ -92,9 +92,9 @@ Koden för den här sidan finns på GitHub
 
 Mer information finns i följande:
 
-* Avsnittet [Innehållsfragment i användarhandboken för Assets](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* Avsnittet [Innehållsfragment i användarhandboken för Assets](https://helpx.adobe.com/se/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Modeller för innehållsfragment](/help/assets/content-fragments/content-fragments-models.md)
 * [Skapa med innehållsfragment](/help/sites-authoring/content-fragments.md)
 * [JSON-exporterare för innehållstjänster](/help/sites-developing/json-exporter.md)
-* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) och komponenten [Innehållsfragment](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) och komponenten [Innehållsfragment](https://helpx.adobe.com/se/experience-manager/core-components/using/content-fragment-component.html)

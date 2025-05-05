@@ -102,7 +102,7 @@ Rapportens format är:
 
 >[!NOTE]
 >
->Mer information om de olika sökkategorierna finns i [Mönsterdetektorkategorierna](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Mer information om de olika sökkategorierna finns i [Mönsterdetektorkategorierna](https://experienceleague.adobe.com/sv/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 För att förstå prioritetsnivåerna följer du tabellen nedan:
 

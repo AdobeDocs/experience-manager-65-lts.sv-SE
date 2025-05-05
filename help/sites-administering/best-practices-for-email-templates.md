@@ -23,7 +23,7 @@ ht-degree: 0%
 >
 >Den här artikeln gäller de inaktuella Foundation Components-baserade e-postkomponenterna för AEM.
 >
->Användare uppmuntras att använda de moderna e-postkomponenterna för [kärnkomponenter.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+>Användare uppmuntras att använda de moderna e-postkomponenterna för [kärnkomponenter.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=sv-SE)
 
 I det här dokumentet beskrivs några av de bästa sätten att arbeta med e-postdesign, vilket resulterar i en välutvecklad mall för e-postkampanjer.
 

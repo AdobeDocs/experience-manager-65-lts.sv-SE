@@ -140,7 +140,7 @@ s.linkTrackVars= 'prop4';
 
 ## Exempel på konfiguration för länkspårning {#example-link-tracking-configuration}
 
-Utför följande procedurer för att utforska länkspårningsbeteendet i Adobe Analytics-integreringen. Processerna visar resultat från [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
+Utför följande procedurer för att utforska länkspårningsbeteendet i Adobe Analytics-integreringen. Processerna visar resultat från [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=sv-SE).
 
 ### Allmän konfiguration {#general-configuration}
 

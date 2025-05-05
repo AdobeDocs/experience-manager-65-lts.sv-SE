@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Information om hur du använder det klassiska användargränssnittet finns i [AEM 6.3-dokumentationen](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html).
+>Information om hur du använder det klassiska användargränssnittet finns i [AEM 6.3-dokumentationen](https://helpx.adobe.com/se/experience-manager/6-3/help/sites-developing/workflows-models.html).
 
 Du skapar en [arbetsflödesmodell](/help/sites-developing/workflows.md#model) för att definiera serien med steg som körs när en användare startar arbetsflödet. Du kan också definiera modellegenskaper, t.ex. om arbetsflödet är tillfälligt eller använder flera resurser.
 

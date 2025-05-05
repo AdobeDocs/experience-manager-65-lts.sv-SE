@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Med AEM-datorprogrammet kan du mappa Adobe Experience Manager (AEM) Assets-databasen och binära AEM Forms-filer till en nätverkskatalog på datorn. Du kan visa synkroniserade resurser och binära filer i en filutforskare och använda olika program för att redigera filerna efter behov. Förutom att visa filerna kan du även skapa, överföra och ta bort de binära filerna. Du kan också öppna, redigera och spara filer direkt från programmet. Du kan till exempel öppna och redigera en XDP-fil direkt från Designer. De ändringar du gör av resurserna lokalt återspeglas i AEM Assets-databasen och AEM Forms användargränssnitt.
 
-Du kan hämta programmet från en AEM-instans. Mer information om hur du hämtar appen finns i [Versionsinformation för AEM-datorprogrammet](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
+Du kan hämta programmet från en AEM-instans. Mer information om hur du hämtar appen finns i [Versionsinformation för AEM-datorprogrammet](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=sv-SE).
 
 ## AEM Forms-resurser som stöds i AEM datorprogram {#aem-forms-assets-supported-in-aem-desktop-app}
 

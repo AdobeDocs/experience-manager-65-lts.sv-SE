@@ -118,7 +118,7 @@ Du kan exportera PDF-filer till olika filformat enligt beskrivningen i kapitlet 
 
    Konverteringstiden som visas när filen konverteras kan vara större än det värde som du anger här. Konverteringstiden är den tid som har ägnats åt att vänta på tråden eller processen, den tid det tar att konvertera filen och den tid det tar för reservkonverteraren (om tillämpligt). tid. Värdet Ange en timeout är bara den tid det tar att konvertera filen.
 
-1. (Valfritt) Klicka på Bläddra i alternativet **Ange anpassad preflight-profil** och välj en [anpassad preflight-profil](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Preflight-profiler används endast vid konvertering av dokument till PDF-arkivformat (PDF/A).
+1. (Valfritt) Klicka på Bläddra i alternativet **Ange anpassad preflight-profil** och välj en [anpassad preflight-profil](https://helpx.adobe.com/se/acrobat/using/preflight-profiles-acrobat-pro.html). Preflight-profiler används endast vid konvertering av dokument till PDF-arkivformat (PDF/A).
 1. Klicka på Exportera. När konverteringen är klar visas en länk till den exporterade filen.
 1. Klicka på länken för att visa den konverterade filen.
 

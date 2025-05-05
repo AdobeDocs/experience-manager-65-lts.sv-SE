@@ -86,6 +86,6 @@ De centrala komponenterna är moderna, flexibla komponenter som är enkla att ut
 
 ## Ytterligare information {#further-information}
 
-Mer information om kärnkomponenterna finns i redigeringsdokumentet [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) för en översikt över kärnkomponenternas funktioner och i utvecklardokumentet [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) för en teknisk översikt.
+Mer information om kärnkomponenterna finns i redigeringsdokumentet [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) för en översikt över kärnkomponenternas funktioner och i utvecklardokumentet [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=sv-SE) för en teknisk översikt.
 
 Du kanske också vill undersöka [redigerbara mallar](/help/sites-developing/we-retail-editable-templates.md) ytterligare. Mer information om redigerbara mallar finns i redigeringsdokumentet [Creating Page Templates](/help/sites-authoring/templates.md) eller i utvecklardokumentet Page [Templates - Editable](/help/sites-developing/page-templates-editable.md).

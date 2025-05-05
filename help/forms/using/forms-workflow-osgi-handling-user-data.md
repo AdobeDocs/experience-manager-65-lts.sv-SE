@@ -160,4 +160,4 @@ Du kan också använda API:er för att komma åt och ta bort noder och egenskape
 
 * [Så här programmässigt kommer du åt AEM JCR](/help/sites-developing/access-jcr.md)
 * [Tar bort noder och egenskaper](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [API-referens](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [API-referens](https://helpx.adobe.com/se/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

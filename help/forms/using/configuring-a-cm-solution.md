@@ -51,4 +51,4 @@ Följ de här stegen för att definiera publiceringsinstansens URL för aktiveri
 
 1. Klicka på **[!UICONTROL Save]**.
 
-Mer information om hur du konfigurerar Correspondence Management finns i [Egenskaper för Correspondence Management-konfiguration](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).
+Mer information om hur du konfigurerar Correspondence Management finns i [Egenskaper för Correspondence Management-konfiguration](https://helpx.adobe.com/se/aem-forms/6-2/cm-configuration-properties.html).

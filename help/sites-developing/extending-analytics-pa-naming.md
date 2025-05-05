@@ -42,7 +42,7 @@ Tjänsten `DefaultPageNameProvider` avgör vilken av dessa CQ-variabler som mapp
 
 * `pagedata.navTitle`: Tjänsten använder `page.getNavigationTitle()`
 
-Objektet `page` är Java-objektet [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) för sidan.
+Objektet `page` är Java-objektet [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/se/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) för sidan.
 
 Om du inte mappar en CQ-variabel till egenskapen `s.pageName` i ramverket genereras värdet för `s.pageName` från sidsökvägen. Sidan med sökvägen `/content/geometrixx/en` använder till exempel värdet `content:geometrixx:en` för `s.pageName`.
 

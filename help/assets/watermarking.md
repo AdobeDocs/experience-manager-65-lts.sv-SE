@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=sv-SE) |
 | AEM 6.5 | Den här artikeln |
 
 Med [!DNL Adobe Experience Manager Assets] kan du lägga till en digital vattenstämpel till resurser som hjälper användarna att verifiera autenticiteten och copyrightäganderätten för resurserna. [!DNL Experience Manager Assets] stöder text som ska användas som vattenstämpel i PNG- och JPEG-filer.

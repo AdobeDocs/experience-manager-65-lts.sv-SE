@@ -447,7 +447,7 @@ I AEM består en produktionsmiljö ofta av två olika typer av instanser: en [f�
 
 ## Dispatcher {#the-dispatcher}
 
-Dispatcher är Adobe verktyg för både cachelagring och/eller belastningsutjämning. Mer information finns under [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
+Dispatcher är Adobe verktyg för både cachelagring och/eller belastningsutjämning. Mer information finns under [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE).
 
 ## FileVault (system för källrevision) {#filevault-source-revision-system}
 

@@ -52,7 +52,7 @@ Standardegenskaper för dialogrutefält som `name`, `fieldLabel` eller `fieldDes
 >
 >Från och med CIF Core Components version 2.0.0 har stödet för `id` tagits bort och ersatts med `uid`. Adobe rekommenderar att du använder `sku` eller `slug` som produkt-ID. Adobe har fortsatt stöd för `id` endast för projekt som använder CIF Core Components version 1.x.
 
-Ett fullt fungerande exempel på `cifproductfield` finns i [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) -projektet. Se även [Anpassa dialogrutor](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) i dokumentationen för AEM Core Components.
+Ett fullt fungerande exempel på `cifproductfield` finns i [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) -projektet. Se även [Anpassa dialogrutor](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=sv-SE#customizing-dialogs) i dokumentationen för AEM Core Components.
 
 ## Kategoriväljaren {#category-picker}
 
@@ -77,7 +77,7 @@ Standardegenskaper för dialogrutefält som `name`, `fieldLabel` eller `fieldDes
 
 >[!CAUTION]
 >
->Samma som komponenten `cifproductfield` i komponenten `cifcategoryfield` kräver även `cif.shell.picker` clientlib. Om du vill lägga till ett klientlib i en dialogruta kan du använda egenskapen `extraClientlibs`. Se [Anpassa dialogrutor](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) i dokumentationen för AEM Core Components.
+>Samma som komponenten `cifproductfield` i komponenten `cifcategoryfield` kräver även `cif.shell.picker` clientlib. Om du vill lägga till ett klientlib i en dialogruta kan du använda egenskapen `extraClientlibs`. Se [Anpassa dialogrutor](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=sv-SE#customizing-dialogs) i dokumentationen för AEM Core Components.
 >[!CAUTION]
 >
 >Från och med CIF Core Components version 2.0.0 har stödet för `id` tagits bort och ersatts med `uid`. Adobe rekommenderar att du använder `uid` eller `urlPath` som kategoriidentifierare. Adobe har fortsatt stöd för `id` och `idAndUrlPath` endast för projekt som använder CIF Core Components version 1.x.

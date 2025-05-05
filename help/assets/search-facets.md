@@ -18,7 +18,7 @@ ht-degree: 11%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=sv-SE) |
 | AEM 6.5 | Den här artikeln |
 
 En företagsövergripande distribution av [!DNL Adobe Experience Manager Assets] har kapacitet att lagra många resurser. Ibland kan det vara besvärligt och tidskrävande att hitta rätt resurs om du bara använder de generiska sökfunktionerna i [!DNL Experience Manager].

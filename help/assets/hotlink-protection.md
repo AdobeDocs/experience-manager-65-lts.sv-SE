@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Aktiv länkning är när en tredjepartswebbplats använder HTML-kod för att visa en bild från din webbplats. De använder din bandbredd varje gång bilden efterfrågas eftersom besökarens webbläsare öppnar den direkt från servern. Hotlink *protection* är en metod som förhindrar att andra webbplatser direkt länkar till bilder, CSS eller JavaScript på dina webbsidor. Den här typen av skydd minskar onödig bandbreddsanvändning under ditt Dynamic Media-konto.
 
-[Experience Manager kundsupport](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) kan konfigurera ett referensfilter på CDN-nivå (Content Delivery Network) så att Dynamic Media-innehåll endast kan skickas till webbplatser i din lista över tillåtna webbplatser för domänen.
+[Experience Manager kundsupport](https://experienceleague.adobe.com/sv?support-solution=Experience+Manager#support) kan konfigurera ett referensfilter på CDN-nivå (Content Delivery Network) så att Dynamic Media-innehåll endast kan skickas till webbplatser i din lista över tillåtna webbplatser för domänen.
 
 >[!NOTE]
 >

@@ -35,7 +35,7 @@ När du administrerar arbetsflöden kan du starta dem på olika sätt:
 >
 >* [Använda arbetsflöden på sidor](/help/sites-authoring/workflows-applying.md)
 >* [Använda arbetsflöden för DAM-resurser](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/se/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Översättningsprojekt](/help/sites-administering/tc-manage.md)
 >
 

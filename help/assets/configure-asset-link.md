@@ -33,7 +33,7 @@ Kontrollera att du har installerat rätt Service Pack och paket efter behov. Se 
 
 | Assets | Experience Manager-version och supportkrav |
 |--- |--- |
-| Resurslänk fungerar som standard | Experience Manager 6.5 och 6.5.2 eller senare. </br> Experience Manager 6.4.4 och 6.4.6 eller senare. </br> Adobe rekommenderar att du installerar det senaste [Experience Manager Service Pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) innan du använder AAL. |
+| Resurslänk fungerar som standard | Experience Manager 6.5 och 6.5.2 eller senare. </br> Experience Manager 6.4.4 och 6.4.6 eller senare. </br> Adobe rekommenderar att du installerar det senaste [Experience Manager Service Pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=sv-SE) innan du använder AAL. |
 | Resurslänk fungerar efter installation av ett paket | För Experience Manager 6.4.0 - 6.4.3 installerar du paketet [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). |
 | Integrering med Adobe Stock | Experience Manager 6.4.2 eller senare |
 | Visuell eller liknande sökning | Experience Manager 6.5.0 eller senare |
@@ -54,7 +54,7 @@ Adobe rekommenderar att du installerar konfigurationspaketet [adobe-asset-link-c
    Ange följande egenskaper och spara ändringarna.
 
    * [!UICONTROL Group Mappings]: Lämna tomt om du inte vill. Mer information finns i [Gruppmappning](#group-mapping).
-   * [!UICONTROL Organization]: Ange det organisations-ID som du använder i Adobe Admin Console. Mer information om organisations-ID:n finns i [Skapa användargrupp](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html).
+   * [!UICONTROL Organization]: Ange det organisations-ID som du använder i Adobe Admin Console. Mer information om organisations-ID:n finns i [Skapa användargrupp](https://helpx.adobe.com/se/enterprise/using/create-aal-user-group.html).
 
 1. Leta reda på konfigurationen för **[!UICONTROL Adobe Granite Bearer Authentication Handler]** och klicka för att redigera den.
 
@@ -116,7 +116,7 @@ Så här konfigurerar du Experience Manager manuellt:
 
 ## Ytterligare konfiguration efter migrering till affärsprofiler {#configure-migration-activity}
 
-Adobe Asset Link-användare kan ansluta till Experience Manager för att tillåta IMS-inloggning från huvudorganisationen för Creative Cloud for Enterprise (CCE). Experience Manager använder klient-ID för att identifiera den tillåtna IMS-organisationen. Efter migrering till affärsprofiler måste du konfigurera klient-ID och hemlig nyckel för IMS-organisationen i Experience Manager för Bearer Authentication Handler. Mer information om affärsprofiler finns i [Introduktion till Adobe-profiler](https://helpx.adobe.com/enterprise/kb/introducing-adobe-profiles.html).
+Adobe Asset Link-användare kan ansluta till Experience Manager för att tillåta IMS-inloggning från huvudorganisationen för Creative Cloud for Enterprise (CCE). Experience Manager använder klient-ID för att identifiera den tillåtna IMS-organisationen. Efter migrering till affärsprofiler måste du konfigurera klient-ID och hemlig nyckel för IMS-organisationen i Experience Manager för Bearer Authentication Handler. Mer information om affärsprofiler finns i [Introduktion till Adobe-profiler](https://helpx.adobe.com/se/enterprise/kb/introducing-adobe-profiles.html).
 
 Ytterligare konfiguration krävs endast om du använder olika Adobe IMS-organisationer för Experience Manager och Creative Cloud for Enterprise (CCE) och en domänförtroenderelation upprättas mellan dessa två organisationer.
 
@@ -283,11 +283,11 @@ Om du får problem när du konfigurerar eller använder Adobe Asset Link kan du 
 * Se till att driftsättningen uppfyller kraven. Kontrollera i synnerhet att rätt funktionspaket eller funktionspaket är installerade.
 * Kontakta din organisations partner eller systemintegratör.
 * Om dina Creative Cloud-användare inte kan verifiera de utcheckade resurserna ska du kontrollera om domännamnen finns i e-post-ID:n. Mer information finns i [manuell konfiguration](#manual-configuration).
-* Mer information finns i [felsökning av resurslänk](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
+* Mer information finns i [felsökning av resurslänk](https://helpx.adobe.com/se/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]
 >
->* [Om Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Om Adobe Asset Link](https://helpx.adobe.com/se/enterprise/using/adobe-asset-link.html)
 >* [Använd resurslänk i Creative Cloud-datorprogrammet och hantera resurser](https://helpx.adobe.com/se/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Konfigurera Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+>* [Konfigurera Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/se/enterprise/using/configure-aem-assets-for-asset-link.html).

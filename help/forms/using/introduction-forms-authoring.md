@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=sv-SE) |
 | AEM 6.5 | Den här artikeln |
 
 
@@ -156,7 +156,7 @@ Du kan dra och släppa formulärmodellelement i det anpassade formuläret. De ti
   </tr>
   <tr>
    <td>Bifogad fil</td>
-   <td><p>Lägger till en knapp som gör att användare kan bläddra bland och bifoga stöddokument till ett formulär. Du kan bifoga flera filer till en bifogad filkomponent. Du kan också ange **[!UICONTROL Maximum File Size]** och **[!UICONTROL Supported File Types]** för de bifogade filerna i egenskapswebbläsaren för komponenten. </p> <p><strong> Obs! </strong><ul> <li> Komponenten stöder inte bifogade filer med filnamn som börjar med tecken (.), som innehåller tecknen \ / : * ? " &lt; &gt; | ; % $, eller innehåller speciella filnamn som är reserverade för Windows-operativsystem som null, prn, con, lpt eller com. </li> <li> Om du vill bifoga flera filer till en bifogad fil som öppnas i webbläsaren Apple Safari markerar och bifogar du filer en i taget. Du kan inte markera och bifoga flera filer samtidigt.</li> <li>Komponenten Bifogad fil har stöd för en fördefinierad uppsättning filformat i adaptiva formulär som är aktiverade för Adobe Sign. Mer information finns i <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Filformat som stöds</a>. </li></ul></p> </td>
+   <td><p>Lägger till en knapp som gör att användare kan bläddra bland och bifoga stöddokument till ett formulär. Du kan bifoga flera filer till en bifogad filkomponent. Du kan också ange **[!UICONTROL Maximum File Size]** och **[!UICONTROL Supported File Types]** för de bifogade filerna i egenskapswebbläsaren för komponenten. </p> <p><strong> Obs! </strong><ul> <li> Komponenten stöder inte bifogade filer med filnamn som börjar med tecken (.), som innehåller tecknen \ / : * ? " &lt; &gt; | ; % $, eller innehåller speciella filnamn som är reserverade för Windows-operativsystem som null, prn, con, lpt eller com. </li> <li> Om du vill bifoga flera filer till en bifogad fil som öppnas i webbläsaren Apple Safari markerar och bifogar du filer en i taget. Du kan inte markera och bifoga flera filer samtidigt.</li> <li>Komponenten Bifogad fil har stöd för en fördefinierad uppsättning filformat i adaptiva formulär som är aktiverade för Adobe Sign. Mer information finns i <a href="https://helpx.adobe.com/se/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Filformat som stöds</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Lista över bifogade filer</td>

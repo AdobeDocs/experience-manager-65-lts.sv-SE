@@ -85,7 +85,7 @@ De bästa metoderna för prestandaanvändning listas här:
   </tr>
   <tr>
    <td>Använda Dispatcher med ett CDN</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Använda Dispatcher med ett CDN</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE#using-dispatcher-with-a-cdn">Använda Dispatcher med ett CDN</a></td>
    <td>Ett nätverk för innehållsleverans (CDN), som Akamai Edge Delivery eller Amazon Cloud Front, levererar innehåll från en plats nära slutanvändaren.</td>
   </tr>
   <tr>

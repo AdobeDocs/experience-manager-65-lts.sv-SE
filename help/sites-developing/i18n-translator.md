@@ -385,4 +385,4 @@ På samma sätt bör testning av ordlistesträngar utföras som en del av den no
 
 >[!NOTE]
 >
->När du använder Dispatcher måste du [göra cachelagrade sidor ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) ogiltiga om du vill inkludera nya ordbokssträngar i återgivna komponentsträngar.
+>När du använder Dispatcher måste du [göra cachelagrade sidor ](https://helpx.adobe.com/se/experience-manager/dispatcher/using/page-invalidate.html) ogiltiga om du vill inkludera nya ordbokssträngar i återgivna komponentsträngar.

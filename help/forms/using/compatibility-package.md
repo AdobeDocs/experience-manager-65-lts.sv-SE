@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Ökning {#overview}
 
-Interaktiv kommunikation är standardmetoden och rekommenderas för att skapa kundkommunikation i AEM Forms 6.5 LTS. Om du vill fortsätta använda bokstäver i AEM Forms 6.5 LTS måste du installera det senaste [AEMFD-kompatibilitetspaketet](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+Interaktiv kommunikation är standardmetoden och rekommenderas för att skapa kundkommunikation i AEM Forms 6.5 LTS. Om du vill fortsätta använda bokstäver i AEM Forms 6.5 LTS måste du installera det senaste [AEMFD-kompatibilitetspaketet](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
 Med AEMFD-kompatibilitetspaketet kan du även [använda följande resurser från AEM Forms 6.5.22.0, 6.4, 6.3 och 6.2 i AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
@@ -31,9 +31,9 @@ Mer information finns i [Assets har blivit kompatibelt med AEM Forms 6.5 genom a
 
 När du har utfört en uppgradering gör du följande för att installera AEMFD-kompatibilitetspaketet och göra dina resurser kompatibla med 6.5:
 
-Kontrollera att [AEM-kompatibilitetspaketet](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) är förinstallerat.
+Kontrollera att [AEM-kompatibilitetspaketet](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) är förinstallerat.
 
-1. Installera det senaste AEM 6.5 LTS [kompatibilitetspaketet](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+1. Installera det senaste AEM 6.5 LTS [kompatibilitetspaketet](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
    Mer information om hur du överför och installerar paketet finns i [Arbeta med paket](/help/sites-administering/package-manager.md).
 

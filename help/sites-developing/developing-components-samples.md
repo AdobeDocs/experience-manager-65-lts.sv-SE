@@ -47,7 +47,7 @@ Koden för den här sidan finns på GitHub
 
 >[!NOTE]
 >
->Det här kodexemplet är relaterat till AEM Gems-sessionen i [Anpassa dialogrutefält](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+>Det här kodexemplet är relaterat till AEM Gems-sessionen i [Anpassa dialogrutefält](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=sv-SE).
 
 ## Relaterade resurser {#related-resources}
 

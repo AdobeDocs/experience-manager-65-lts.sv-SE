@@ -26,7 +26,7 @@ Textdokumentavsnittet i Interaktiv kommunikation har stöd för följande typer 
 * **Datamodellsobjekt**: Dataegenskaperna använder en backend-datakälla.
 * **Regelbaserat innehåll**: Delar av innehåll i en text som visas eller döljs baserat på en regel. En regel kan också baseras på egenskaper och variabler för formulärdatamodellen.
 * **Variabler**: I textdokumentfragment är variabler inte bundna till en backend-datakälla. Agenten fyller i/väljer värden i variabler eller binder variablerna till datakällor när den förbereder interaktiva kommunikationen för att skicka den till en postprocess.
-* **Upprepa**: Du kan ha dynamisk information i din interaktiva kommunikation, t.ex. transaktioner i en kreditkortssats, vars antal kan ändras kontinuerligt för varje genererad interaktiv kommunikation. Med upprepning kan du formatera och strukturera sådan dynamisk information. Mer information finns i [Infogat villkor och upprepa](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Upprepa**: Du kan ha dynamisk information i din interaktiva kommunikation, t.ex. transaktioner i en kreditkortssats, vars antal kan ändras kontinuerligt för varje genererad interaktiv kommunikation. Med upprepning kan du formatera och strukturera sådan dynamisk information. Mer information finns i [Infogat villkor och upprepa](https://helpx.adobe.com/se/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Skapa text {#createtext}
 

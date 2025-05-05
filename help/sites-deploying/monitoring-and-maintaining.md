@@ -224,13 +224,13 @@ Modereringsåtgärder registreras här.
    * `error.log`
 Felmeddelanden (av varierande allvarlighetsgrad) registreras här.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=sv-SE)
 Den här loggen används bara om [!DNL Dynamic Media] är aktiverat. Det innehåller statistik och analysinformation som används för att analysera beteendet i den interna ImageServer-processen.
 
    * `request.log`
 Varje åtkomstbegäran registreras här tillsammans med svaret.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=sv-SE)
 Den här loggen används bara om [!DNL Dynamic Media] är aktiverat. I s7access-loggen registreras varje begäran som gjorts till [!DNL Dynamic Media] till `/is/image` och `/is/content`.
 
    * `stderr.log`
@@ -1064,9 +1064,9 @@ Här följer en lista med förslag på vad du ska kontrollera om du får vissa p
 >
 >Se även följande artiklar för mer information:
 >
->* [Tråd dumpar](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
->* [Analysera minnesproblem](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
->* [Analysera med den inbyggda profileraren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [Tråd dumpar](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=sv-SE)
+>* [Analysera minnesproblem](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=sv-SE)
+>* [Analysera med den inbyggda profileraren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=sv-SE)
 >
 
 ### CPU till 100 % {#cpu-at}
@@ -1086,7 +1086,7 @@ Kontrollera i så fall:
 * JVM-inställningarna som används för att [starta AEM](/help/sites-deploying/deploy.md#getting-started)
 * Kunskapsbasen:
 
-   * [Analysera minnesproblem](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+   * [Analysera minnesproblem](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=sv-SE)
 
 ### Skiva-I/O {#disk-i-o}
 
@@ -1104,7 +1104,7 @@ Om det inte finns tillräckligt med diskutrymme på datorn eller om det uppstår
 * Om och hur du har konfigurerat [versionsrensning](/help/sites-deploying/version-purging.md)
 * Kunskapsbasen:
 
-   * [För många öppna filer](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
+   * [För många öppna filer](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=sv-SE)
 
 ### Regelbunden prestandaförsämring {#regular-performance-degradation}
 

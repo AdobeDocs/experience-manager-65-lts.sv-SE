@@ -108,7 +108,7 @@ Följ de här stegen för att anpassa Correspondence Management så att använda
         <tr>
         <td>icon</td>
         <td>Sträng</td>
-        <td>icon-download<br /> <br /> Den ikon som Correspondence Management visar till vänster om kommandot/menyn. Olika ikoner och inställningar finns i <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank">dokumentationen för CoralUI-ikoner</a>.<br /> </td>
+        <td>icon-download<br /> <br /> Den ikon som Correspondence Management visar till vänster om kommandot/menyn. Olika ikoner och inställningar finns i <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE" target="_blank">dokumentationen för CoralUI-ikoner</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primärType</td>
@@ -277,7 +277,7 @@ Följ de här stegen för att anpassa Correspondence Management så att använda
    1. Dubbelklicka på filen **POST.jsp** för att öppna den i CRX.
    1. Lägg till följande kod i filen POST.jsp och klicka på **Spara alla**:
 
-      Den här koden är specifik för bokstavsåtergivningstjänsten. För alla andra resurser lägger du till resursens Java™-bibliotek i den här koden. Mer information om AEM Forms API:er finns i [AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
+      Den här koden är specifik för bokstavsåtergivningstjänsten. För alla andra resurser lägger du till resursens Java™-bibliotek i den här koden. Mer information om AEM Forms API:er finns i [AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE).
 
       Mer information om AEM-bibliotek finns i AEM [Komponenter](/help/sites-developing/components.md).
 

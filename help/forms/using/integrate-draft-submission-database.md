@@ -26,7 +26,7 @@ Exemplet, som behandlas i det här dokumentet, är en referensimplementering av 
 >[!NOTE]
 >
 >* De exempel och konfigurationer som beskrivs i det här dokumentet är enligt MySQL 5.6.24 och du måste ersätta dem på lämpligt sätt för ditt databassystem.
->* Kontrollera att du har installerat den senaste versionen av AEM Forms tilläggspaket. En lista över tillgängliga paket finns i artikeln [AEM Forms-utgåvor](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+>* Kontrollera att du har installerat den senaste versionen av AEM Forms tilläggspaket. En lista över tillgängliga paket finns i artikeln [AEM Forms-utgåvor](https://helpx.adobe.com/se/aem-forms/kb/aem-forms-releases.html).
 >* Exempelpaketet fungerar bara med adaptiva Forms-sändningsåtgärder.
 
 ## Konfigurera och konfigurera exemplet {#set-up-and-configure-the-sample}

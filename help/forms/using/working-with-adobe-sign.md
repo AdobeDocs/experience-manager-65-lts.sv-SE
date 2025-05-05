@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Använda [!DNL Adobe Sign] i ett anpassat formulär{#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
+<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=sv-SE) |
 | AEM 6.5 | Den här artikeln |
 
 
@@ -140,7 +140,7 @@ Utför följande steg för att lägga till fält i ett adaptivt formulär och an
 
 1. Välj ikonen **[!UICONTROL Adobe Sign]Field** ![ aem_6_3_adobesign](assets/aem_6_3_adobesign.png) . Här visas alternativ för att markera och lägga till [!DNL Adobe Sign] fält.
 
-   Expandera det nedrullningsbara fältet **[!UICONTROL Type]** för att markera ett [!DNL Adobe Sign]-fält och välj ikonen Klar ![ aem_6_3_forms_save](assets/aem_6_3_forms_save.png) för att lägga till det markerade fältet i [!DNL Adobe Sign] -blocket. Listrutan **[!UICONTROL Type]** innehåller fälttyperna Signatur, Signerarinformation och Data. [!DNL Adobe Sign]-integrering med AEM [!DNL Forms]-supportfält visas endast i listrutan [!UICONTROL Type]. Mer information om [!DNL Adobe Sign] fält finns i [Adobe Sign-dokumentation](https://helpx.adobe.com/sign/help/field-types.html).
+   Expandera det nedrullningsbara fältet **[!UICONTROL Type]** för att markera ett [!DNL Adobe Sign]-fält och välj ikonen Klar ![ aem_6_3_forms_save](assets/aem_6_3_forms_save.png) för att lägga till det markerade fältet i [!DNL Adobe Sign] -blocket. Listrutan **[!UICONTROL Type]** innehåller fälttyperna Signatur, Signerarinformation och Data. [!DNL Adobe Sign]-integrering med AEM [!DNL Forms]-supportfält visas endast i listrutan [!UICONTROL Type]. Mer information om [!DNL Adobe Sign] fält finns i [Adobe Sign-dokumentation](https://helpx.adobe.com/se/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -148,7 +148,7 @@ Utför följande steg för att lägga till fält i ett adaptivt formulär och an
 
    Om du väljer **[!UICONTROL Digital Signature]** i listrutan kan du använda digitala signaturer i det adaptiva formuläret:
 
-   * Online med molnsignaturer för att signera med ett [digitalt ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) som finns hos en betrodd tjänsteleverantör.
+   * Online med molnsignaturer för att signera med ett [digitalt ID](https://helpx.adobe.com/se/sign/kb/digital-certificate-providers.html) som finns hos en betrodd tjänsteleverantör.
    * Hämta dokumentet lokalt med Adobe Acrobat eller Reader med ett smartkort, en USB-token eller ett filbaserat digitalt ID.
 
 ### Aktivera [!DNL Adobe Sign] för ett anpassat formulär {#enableadobsignforanadaptiveform}
@@ -258,7 +258,7 @@ När du har [redigerat anpassningsbara formuläregenskaper för Adobe Sign](../.
 
    Använd digitala signaturer på det anpassade formuläret med:
 
-   * Molnsignaturer: Signera med ett [digitalt ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) som finns hos en betrodd tjänsteleverantör. Molnsignaturalternativet är inte tillgängligt för Adobe Acrobat Sign Solutions för myndigheter.
+   * Molnsignaturer: Signera med ett [digitalt ID](https://helpx.adobe.com/se/sign/kb/digital-certificate-providers.html) som finns hos en betrodd tjänsteleverantör. Molnsignaturalternativet är inte tillgängligt för Adobe Acrobat Sign Solutions för myndigheter.
 
    * Adobe Acrobat eller Reader: Hämta och öppna dokumentet med Adobe Acrobat eller Reader för att signera med ett smartkort, en USB-token eller ett filbaserat digitalt ID.
 
@@ -332,7 +332,7 @@ Nu är signeringsupplevelsen i form av formulär klar. Du kan förhandsgranska f
 **Ans:** Adaptivt formulär som skapats med den avancerade mallen har konfigurerats att använda [!DNL Adobe Sign]. Lös felet genom att skapa och välja en [!DNL Adobe Sign]-molnkonfiguration och konfigurera en [!DNL Adobe Sign]-signerare för det adaptiva formuläret.
 
 **Q:** Kan jag använda [!DNL Adobe Sign]-texttaggar i en statisk textkomponent i ett adaptivt formulär?
-**Ans:** Ja, du kan använda texttaggar i en textkomponent för att lägga till [!DNL Adobe Sign] fält i ett anpassat formulär som har aktiverats med alternativet [Postdokument](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (endast automatiskt genererat postdokument). Mer information om proceduren och reglerna för att skapa en texttagg finns i [Adobe Sign-dokumentation](https://helpx.adobe.com/sign/using/text-tag.html). Dessutom har adaptiva formulär begränsat stöd för texttaggar. Du kan använda texttaggarna för att skapa endast de fält som [Adobe Sign-blocket](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) har stöd för.
+**Ans:** Ja, du kan använda texttaggar i en textkomponent för att lägga till [!DNL Adobe Sign] fält i ett anpassat formulär som har aktiverats med alternativet [Postdokument](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (endast automatiskt genererat postdokument). Mer information om proceduren och reglerna för att skapa en texttagg finns i [Adobe Sign-dokumentation](https://helpx.adobe.com/se/sign/using/text-tag.html). Dessutom har adaptiva formulär begränsat stöd för texttaggar. Du kan använda texttaggarna för att skapa endast de fält som [Adobe Sign-blocket](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) har stöd för.
 
 **Q:** AEM [!DNL Forms] innehåller både [!UICONTROL Adobe Sign block]- och signaturstegskomponenter. Kan dessa användas samtidigt i anpassningsbar form?
 **Ans:** Du kan använda båda komponenterna samtidigt i ett formulär. Här följer några rekommendationer för hur du använder dessa komponenter:

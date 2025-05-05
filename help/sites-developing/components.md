@@ -31,7 +31,7 @@ Den här sidan innehåller en översikt över Adobe Experience Manager-komponent
 * ha ett standardiserat användargränssnitt.
 * Har redigeringsbeteende som kan konfigureras.
 * Använda dialogrutor som är byggda med delelement som är baserade på GRÄNSSNITTSkomponenter i Granite
-* Utvecklas med [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (rekommenderas) eller JSP.
+* Utvecklas med [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE) (rekommenderas) eller JSP.
 * Kan utvecklas för att skapa anpassade komponenter som utökar standardfunktionerna.
 
 Eftersom komponenterna är modulära kan du:
@@ -63,7 +63,7 @@ Komponenterna som anges och deras användning i [exemplet Web.Retail-webbplatser
 
 Det finns två uppsättningar AEM-komponenter som tillhandahålls av Adobe:
 
-* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE)
 * [Foundation Components](/help/sites-authoring/default-components-foundation.md)
 
 **Core Components** introducerades med AEM 6.3 och erbjuder flexibla och funktionsrika redigeringsfunktioner. Referenswebbplatsen [We.Retail](/help/sites-developing/we-retail.md) visar hur kärnkomponenterna kan användas och representerar de bästa metoderna för komponentutveckling.
@@ -72,7 +72,7 @@ Det finns två uppsättningar AEM-komponenter som tillhandahålls av Adobe:
 
 >[!NOTE]
 >
->[Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) representerar de bästa metoderna för komponentdesign och -utveckling och fungerar som referensimplementationer.
+>[Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) representerar de bästa metoderna för komponentdesign och -utveckling och fungerar som referensimplementationer.
 >
 >[AEM moderniseringsverktyg](modernization-tools.md) kan hjälpa dig att migrera till kärnkomponenter.
 
@@ -105,7 +105,7 @@ På följande sidor finns mer detaljerad information om hur du utvecklar dessa -
 * [Komponenter för innehållsfragment](/help/sites-developing/components-content-fragments.md)
 * [Hämta sidinformation i JSON-format](/help/sites-developing/pageinfo.md)
 * [Internationalisering av komponenter](/help/sites-developing/i18n.md)
-* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE)
 * [Använda Dölj villkor](/help/sites-developing/hide-conditions.md)
 * Klassiskt användargränssnitt
 

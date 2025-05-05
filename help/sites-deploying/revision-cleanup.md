@@ -24,7 +24,7 @@ Varje uppdatering av databasen skapar en innehållsändring. Det innebär att da
 
 Med AEM 6.3 och senare introducerades en onlineversion av den här funktionen som kallas Online Revision Cleanup. Jämfört med offlineredigering där AEM-instansen måste stängas av, kan onlineredigering köras när AEM-instansen är online. Rensa onlineändringar är aktiverat som standard och det är det rekommenderade sättet att rensa en revision.
 
-**Obs!**: [I videon ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) finns en introduktion och information om hur du använder rensning av onlineversioner.
+**Obs!**: [I videon ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=sv-SE) finns en introduktion och information om hur du använder rensning av onlineversioner.
 
 Revideringsrensningsprocessen består av tre faser: **uppskattning**, **komprimering** och **rensning**. Beräkningen avgör om nästa fas (komprimering) ska köras eller inte baserat på hur mycket skräp som kan samlas in. Under komprimeringsfasen skrivs segment och tjärfiler om, utan att något innehåll som inte används tas bort. Rensa upp-fasen tar sedan bort de gamla segmenten, inklusive eventuellt skräp som de innehåller. Offlineläget kan vanligtvis frigöra mer utrymme eftersom onlineläget måste ta hänsyn till AEM arbetsgrupper som inte samlar in fler segment.
 
@@ -409,7 +409,7 @@ Ibland kan rensningsprocessen fördröjas om du växlar mellan svansen och det f
     <ol>
      <li>Ett program som kringgår de rekommenderade åtkomstmekanismerna (som Sling och JCR API) och använder ett API/SPI på lägre nivå för att komma åt databasen och sedan överskrider kvarhållningstiden för ett segment. Det innebär att den behåller en referens till en enhet som är längre än den kvarhållningstid som tillåts av onlinerevideringsrensningen (24 timmar som standard). Det här fallet är övergående och leder inte till att data skadas. För att återställa systemet bör ekkörningsverktyget användas för att bekräfta undantagets transienta karaktär (ekskörningskontrollen bör inte rapportera några fel). För att göra detta måste instansen tas offline och sedan startas om.</li>
      <li>En extern händelse orsakade att data på disken skadades. Det kan vara ett diskfel, slut på diskutrymme eller en oavsiktlig ändring av de datafiler som krävs. I det här fallet måste instansen tas offline och repareras med körkontrollen. Mer information om hur du utför körningskontrollen finns i följande <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache-dokumentation</a>.</li>
-     <li>Åtgärda alla andra händelser via <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">Adobe kundtjänst</a>.</li>
+     <li>Åtgärda alla andra händelser via <a href="https://experienceleague.adobe.com/sv?support-solution=General&amp;support-tab=home#support" target="_blank">Adobe kundtjänst</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>

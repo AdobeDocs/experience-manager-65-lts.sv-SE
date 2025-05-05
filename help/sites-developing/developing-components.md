@@ -74,7 +74,7 @@ Komponenten återges med [HTML](https://www.w3schools.com/htmL/html_intro.asp). 
 
 ### Använda HTML mallspråk {#using-the-html-template-language}
 
-[HTML Mallating Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), som introducerades med AEM 6.0, ersätter JSP (JavaServer Pages) som det rekommenderade serversidesmallsystemet för HTML. För webbutvecklare som behöver bygga robusta företagswebbplatser kan HTML bidra till ökad säkerhet och effektivare utveckling.
+[HTML Mallating Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE), som introducerades med AEM 6.0, ersätter JSP (JavaServer Pages) som det rekommenderade serversidesmallsystemet för HTML. För webbutvecklare som behöver bygga robusta företagswebbplatser kan HTML bidra till ökad säkerhet och effektivare utveckling.
 
 >[!NOTE]
 >
@@ -88,11 +88,11 @@ Mekanismen för att skilja logik från utseende gör det lättare att klargöra 
 
 ### Använda Java {#using-java}
 
-[Använd-API:t för HTL Java möjliggör för en HTML-fil att komma åt hjälpmetoder i en anpassad Java-klass](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Detta gör att du kan använda Java-kod för att implementera logiken för att välja och konfigurera komponentinnehållet.
+[Använd-API:t för HTL Java möjliggör för en HTML-fil att komma åt hjälpmetoder i en anpassad Java-klass](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=sv-SE). Detta gör att du kan använda Java-kod för att implementera logiken för att välja och konfigurera komponentinnehållet.
 
 ### Använda JavaScript {#using-javascript}
 
-[Använd-API:t för HTML JavaScript gör att en HTML-fil kan komma åt hjälpkod som skrivits i JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). På så sätt kan du använda JavaScript-kod för att implementera logiken för att välja och konfigurera komponentinnehållet.
+[Använd-API:t för HTML JavaScript gör att en HTML-fil kan komma åt hjälpkod som skrivits i JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=sv-SE). På så sätt kan du använda JavaScript-kod för att implementera logiken för att välja och konfigurera komponentinnehållet.
 
 ### Använda HTML-bibliotek på klientsidan {#using-client-side-html-libraries}
 
@@ -191,7 +191,7 @@ Se till exempel:
 >
 >Se:
 >
->* AEM Gems-sessionen på [Anpassa dialogfält](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+>* AEM Gems-sessionen på [Anpassa dialogfält](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=sv-SE).
 >* den relaterade exempelkoden som beskrivs i [Kodexempel - Anpassa dialogrutefält ](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -423,7 +423,7 @@ Koden för den här sidan finns på GitHub
 
 >[!NOTE]
 >
->Det automatiska skapandet av komponentinstanser kan nu enkelt konfigureras i användargränssnittet när [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) och Editable Templates används. Mer information om hur du definierar vilka komponenter som automatiskt associeras med de angivna medietyperna finns i [Skapa sidmallar](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
+>Det automatiska skapandet av komponentinstanser kan nu enkelt konfigureras i användargränssnittet när [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) och Editable Templates används. Mer information om hur du definierar vilka komponenter som automatiskt associeras med de angivna medietyperna finns i [Skapa sidmallar](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
 ## Använda AEM Brackets Extension {#using-the-aem-brackets-extension}
 
@@ -432,7 +432,7 @@ Tillägget [AEM Brackets](/help/sites-developing/aem-brackets.md) ger ett smidig
 Tillägg:
 
 * Förenklar synkronisering (ingen Maven eller filvalv krävs) för att öka utvecklarens effektivitet och även hjälpa gränssnittsutvecklare med begränsade AEM-kunskaper att delta i projekt.
-* Tillhandahåller lite [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)-stöd, mallspråket som är utformat för att förenkla komponentutveckling och öka säkerheten.
+* Tillhandahåller lite [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE)-stöd, mallspråket som är utformat för att förenkla komponentutveckling och öka säkerheten.
 
 >[!NOTE]
 >
@@ -444,7 +444,7 @@ När du migrerar en komponent som har utformats för användning med det klassis
 
 * HTL
 
-   * Det är inte obligatoriskt att använda [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), men om komponenten behöver uppdateras är det lämpligt att överväga att [migrera från JSP till HTML](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * Det är inte obligatoriskt att använda [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE), men om komponenten behöver uppdateras är det lämpligt att överväga att [migrera från JSP till HTML](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Komponenter
 
@@ -457,9 +457,9 @@ När du migrerar en komponent som har utformats för användning med det klassis
    * Skapa en dialogruta för användning i det beröringsaktiverade användargränssnittet. Av kompatibilitetsskäl kan emellertid det beröringsaktiverade användargränssnittet använda definitionen för en klassisk användargränssnittsdialogruta när ingen dialogruta har definierats för det beröringsaktiverade användargränssnittet.
    * [AEM modernissverktyg](/help/sites-developing/modernization-tools.md) finns tillgängliga för att hjälpa dig att utöka befintliga komponenter.
    * [Genom att mappa ExtJS till Granite-gränssnittskomponenter](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) får du en praktisk översikt över ExtJS-xtyper och nodtyper med motsvarande Granite-gränssnittsresurstyper.
-   * Mer information om hur du anpassar fält finns i AEM Gems-sessionen om [Anpassa dialogrutefält](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+   * Mer information om hur du anpassar fält finns i AEM Gems-sessionen om [Anpassa dialogrutefält](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=sv-SE).
    * Migrera från typer till [Bevilja gränssnittsvalidering](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Mer information om hur du använder JS-avlyssnare finns i [Hantera fälthändelser](#handling-field-events) och AEM Gems-sessionen om [Anpassa dialogrutefält](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+   * Mer information om hur du använder JS-avlyssnare finns i [Hantera fälthändelser](#handling-field-events) och AEM Gems-sessionen om [Anpassa dialogrutefält](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=sv-SE).
 
 ### Migrera cq:avlyssnarkod {#migrating-cq-listener-code}
 

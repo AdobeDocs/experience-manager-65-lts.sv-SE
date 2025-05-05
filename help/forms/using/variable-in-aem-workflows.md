@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=sv-SE) |
 | AEM 6.5 | Den här artikeln |
 
 En variabel i en arbetsflödesmodell är ett sätt att lagra ett värde baserat på dess datatyp. Du kan sedan använda namnet på variabeln i vilket arbetsflödessteg som helst för att hämta värdet som lagras i variabeln. Du kan också använda variabelnamn för att definiera uttryck för att fatta beslut om routning.
@@ -38,13 +38,13 @@ Variabler är ett tillägg till det befintliga [MetaDataMap](https://developer.a
 Du skapar variabler med hjälp av avsnittet Variabler som är tillgängliga i arbetsflödesmodellens sidospak. AEM arbetsflödesvariabler har stöd för följande datatyper:
 
 * **Primitiva datatyper**: Long, Double, Boolean, Date och String
-* **Komplexa datatyper**: [Dokument](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) och Form Data Model-instans.
+* **Komplexa datatyper**: [Dokument](https://helpx.adobe.com/se/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) och Form Data Model-instans.
 
 >[!NOTE]
 >
 >Arbetsflöden har endast stöd för ISO8601-format för datatypsvariabler.
 
-Du behöver [AEM Forms-tilläggspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) för datatyperna Document och Form Data Model.  Använd datatypen ArrayList för att skapa variabelsamlingar. Du kan skapa en ArrayList-variabel för alla primitiva och komplexa datatyper. Skapa till exempel en ArrayList-variabel och välj String som undertyp för att lagra flera strängvärden med variabeln.
+Du behöver [AEM Forms-tilläggspaket](https://helpx.adobe.com/se/aem-forms/kb/aem-forms-releases.html) för datatyperna Document och Form Data Model.  Använd datatypen ArrayList för att skapa variabelsamlingar. Du kan skapa en ArrayList-variabel för alla primitiva och komplexa datatyper. Skapa till exempel en ArrayList-variabel och välj String som undertyp för att lagra flera strängvärden med variabeln.
 
 Så här skapar du en variabel:
 
@@ -196,7 +196,7 @@ Använd följande API:er i ECMA-skriptet för att hämta värden för befintliga
 | Formulärdatamodell | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Du behöver [AEM Forms-tilläggspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) för datatyperna Document och Form Data Model.
+Du behöver [AEM Forms-tilläggspaket](https://helpx.adobe.com/se/aem-forms/kb/aem-forms-releases.html) för datatyperna Document och Form Data Model.
 
 **Exempel**
 

@@ -300,7 +300,7 @@ I följande tabell visas ett exempel på de värden som visas som ett resultat a
 | SocialSecurityNumber | 1234567 | text{999-99-9999} | 1-23-4567 | Antalet siffror i standardvärdefältet är mindre än antalet siffror i mönsterfältet. Mönstret används på de 7 tillgängliga siffrorna. |
 | SocialSecurityNumber | 1234567890 | text{999-99-9999} | 1234567890 | Antalet siffror i standardvärdefältet är större än antalet siffror i mönsterfältet. Därför ändras inte visningsvärdet. |
 
-Om inget visningsmönster anges för en variabel eller ett formulärdatamodellselement används [det globala dokumentfragmentets konfiguration](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) som standard.
+Om inget visningsmönster anges för en variabel eller ett formulärdatamodellselement används [det globala dokumentfragmentets konfiguration](https://helpx.adobe.com/se//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) som standard.
 
 Om du inte använder ett visningsmönster för en variabel med taldatatyp, visas mönstret i förhandsvisningen enligt den globala dokumentfragmentkonfigurationen. Om du tillämpar ändringar i standardkonfigurationen för globala dokumentfragment, visar agentgränssnittet fortfarande mönstret enligt standardavgränsarna som är definierade för språkområdet.
 
@@ -618,7 +618,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-Om du vill generera utdata i något annat format anger du typ av utdataformat. I [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) finns en lista över de utdataformat som stöds.
+Om du vill generera utdata i något annat format anger du typ av utdataformat. I [PrintChannel API](https://helpx.adobe.com/se/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) finns en lista över de utdataformat som stöds.
 
 Du kan till exempel använda följande exempel för att definiera PCL som utdataformat för en interaktiv kommunikation:
 

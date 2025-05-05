@@ -44,7 +44,7 @@ Det här dokumentet leder dig igenom dessa steg i detalj.
 ## Förutsättningar {#prerequisites}
 
 * Administratörsåtkomst till Adobe Campaign Standard
-   * Om du behöver mer information om hur du konfigurerar och konfigurerar Adobe Campaign Standard läser du [Adobe Campaign Standard-dokumentationen.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
+   * Om du behöver mer information om hur du konfigurerar och konfigurerar Adobe Campaign Standard läser du [Adobe Campaign Standard-dokumentationen.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=sv-SE)
 * Administratörsåtkomst till AEM
 
 ## Konfigurera eServer-användaren i Campaign {#aemserver-user}
@@ -65,7 +65,7 @@ Adobe Campaign Standard har som standard en `aemserver`-användare som AEM anvä
 
 Din `aemserver`-användare har nu nödvändiga rättigheter så att AEM kan använda den för att kommunicera med Adobe Campaign.
 
-Innan AEM kan använda användaren `aemserver` måste dess lösenord anges. Detta kan inte göras via Adobe Campaign. Den måste utföras av en Adobe supporttekniker. [Skicka en biljett till Adobe kundtjänst](https://experienceleague.adobe.com/?support-tab=home#support) för att begära att lösenordet för `aemserver` återställs. När du har fått lösenordet från Adobe kundtjänst kan du förvara det på en säker plats.
+Innan AEM kan använda användaren `aemserver` måste dess lösenord anges. Detta kan inte göras via Adobe Campaign. Den måste utföras av en Adobe supporttekniker. [Skicka en biljett till Adobe kundtjänst](https://experienceleague.adobe.com/sv?support-tab=home#support) för att begära att lösenordet för `aemserver` återställs. När du har fått lösenordet från Adobe kundtjänst kan du förvara det på en säker plats.
 
 ## Verifiera AEMResourceTypeFilter i Campaign {#resource-type-filter}
 

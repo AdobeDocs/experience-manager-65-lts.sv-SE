@@ -36,11 +36,11 @@ REST API ger åtkomst till samma funktioner via HTTP med svar som skickas i JSON
 
 ## Gruppsession {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) är en serie tekniska djupdykningar i Adobe Experience Manager som levereras av Adobe experter. Den här sessionen som är avsedd för frågebyggaren är användbar för en översikt över och användning av verktyget.
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=sv-SE) är en serie tekniska djupdykningar i Adobe Experience Manager som levereras av Adobe experter. Den här sessionen som är avsedd för frågebyggaren är användbar för en översikt över och användning av verktyget.
 
 >[!NOTE]
 >
->AEM Gem-session [Söka enkelt i formulär med AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) om du vill ha en detaljerad översikt över frågebyggaren.
+>AEM Gem-session [Söka enkelt i formulär med AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=sv-SE) om du vill ha en detaljerad översikt över frågebyggaren.
 
 ## Exempelfrågor {#sample-queries}
 

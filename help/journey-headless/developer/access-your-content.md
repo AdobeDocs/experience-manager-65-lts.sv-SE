@@ -377,8 +377,8 @@ Nu när du har lärt dig att komma åt och fråga efter rubriklöst innehåll me
 * [Arbeta med innehållsfragment](/help/assets/content-fragments/content-fragments.md)
    * [Modeller för innehållsfragment](/help/assets/content-fragments/content-fragments-models.md)
    * [JSON-utdata](/help/assets/content-fragments/content-fragments-json-preview.md)
-* [Förstå korsursprunglig resursdelning (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))
-* [Komma igång med AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - En kort videosjälvstudiekurs med en översikt över hur du använder AEM headless-funktioner, inklusive innehållsmodellering och GraphQL.
+* [Förstå korsursprunglig resursdelning (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=sv-SE#understand-cross-origin-resource-sharing-(cors))
+* [Komma igång med AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=sv-SE) - En kort videosjälvstudiekurs med en översikt över hur du använder AEM headless-funktioner, inklusive innehållsmodellering och GraphQL.
 
 <!--
 * [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)

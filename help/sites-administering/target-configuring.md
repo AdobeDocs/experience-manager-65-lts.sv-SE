@@ -52,7 +52,7 @@ Följande egenskapsvärden används i den konfiguration av molnet för konfigura
 >* Bättre implementeringsalternativ för ensidiga program
 >* AT.js innehåller komponenterna som ingick i target.js, så det finns inte längre något anrop till target.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=sv-SE -->
 
 ### Etablerade egenskaper för målramverk {#provisioned-target-framework-properties}
 
@@ -115,7 +115,7 @@ Integrera manuellt med Adobe Target i stället för att använda anmälningsguid
 >
 >Du kan välja AT.js eller mbox.js i listrutan **Klientbibliotek** .
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=sv-SE -->
 
 ### Skapa en målmolnkonfiguration {#creating-a-target-cloud-configuration}
 
@@ -220,7 +220,7 @@ Ditt ramverk har skapats. Om du vill replikera ramverket till publiceringsinstan
 
 ### Associera aktiviteter med målmolnkonfigurationen  {#associating-activities-with-the-target-cloud-configuration}
 
-Koppla dina [AEM-aktiviteter](/help/sites-authoring/activitylib.md) till din Target-molnkonfiguration så att du kan spegla aktiviteterna i [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Koppla dina [AEM-aktiviteter](/help/sites-authoring/activitylib.md) till din Target-molnkonfiguration så att du kan spegla aktiviteterna i [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=sv-SE).
 
 >[!NOTE]
 >

@@ -45,7 +45,7 @@ Det är obligatoriskt att aktivera HTTPS-transportlagret på både författare- 
 
 ### Installera snabbkorrigeringar för säkerhet {#install-security-hotfixes}
 
-Kontrollera att du har installerat de senaste [säkerhetsuppdateringarna från Adobe](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+Kontrollera att du har installerat de senaste [säkerhetsuppdateringarna från Adobe](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=sv-SE).
 
 ### Ändra standardlösenord för administratörskonton för AEM och OSGi Console {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -110,11 +110,11 @@ Adobe rekommenderar att du definierar anpassade felhanterarsidor, särskilt för
 
 >[!NOTE]
 >
->Mer information finns i [Så här skapar jag egna skript eller felhanterare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html).
+>Mer information finns i [Så här skapar jag egna skript eller felhanterare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=sv-SE).
 
 ### Fullständig checklista för Dispatcher {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher är en viktig del av er infrastruktur. Adobe rekommenderar att du slutför [Dispatcher checklista](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
+AEM Dispatcher är en viktig del av er infrastruktur. Adobe rekommenderar att du slutför [Dispatcher checklista](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=sv-SE).
 
 >[!CAUTION]
 >

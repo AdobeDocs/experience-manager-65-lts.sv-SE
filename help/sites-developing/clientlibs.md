@@ -66,7 +66,7 @@ Eftersom HTML är den rekommenderade tekniken för utveckling av AEM-webbplatser
 
 ### Använda HTML {#using-htl}
 
-I HTML läses klientbibliotek in via en hjälpmall från AEM, som du kommer åt via [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Det finns tre mallar i den här filen som kan anropas via [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+I HTML läses klientbibliotek in via en hjälpmall från AEM, som du kommer åt via [`data-sly-use`](https://helpx.adobe.com/se/experience-manager/htl/using/block-statements.html#use). Det finns tre mallar i den här filen som kan anropas via [`data-sly-call`](https://helpx.adobe.com/se/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - läser endast in CSS-filer för de refererade klientbiblioteken.
 * **js** - Läser bara in JavaScript-filerna för de refererade klientbiblioteken.
@@ -74,7 +74,7 @@ I HTML läses klientbibliotek in via en hjälpmall från AEM, som du kommer åt 
 
 Varje hjälpmall förväntar sig ett `categories`-alternativ för att referera till de önskade klientbiblioteken. Det alternativet kan antingen vara en array med strängvärden eller en sträng som innehåller en kommaseparerad värdelista.
 
-Mer information och exempel på användning finns i dokumentet [Komma igång med HTML mallspråk](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Mer information och exempel på användning finns i dokumentet [Komma igång med HTML mallspråk](https://helpx.adobe.com/se/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### Använda JSP {#using-jsp}
 

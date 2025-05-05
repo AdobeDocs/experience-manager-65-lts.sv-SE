@@ -49,7 +49,7 @@ Egenskaperna fördelas på flera flikar.
 
 * **Varumärke**
 
-  Använd en enhetlig varumärkesidentitet på alla sidor genom att lägga till en instruktionsmarginal till varje sidrubrik. Den här funktionen kräver att du använder Page Component från version 2.14.0 eller senare av [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+  Använd en enhetlig varumärkesidentitet på alla sidor genom att lägga till en instruktionsmarginal till varje sidrubrik. Den här funktionen kräver att du använder Page Component från version 2.14.0 eller senare av [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE)
 
    * **Åsidosätt** - Markera för att definiera instruktionsmarginalen för varumärket på den här sidan.
       * Värdet ärvs av alla underordnade sidor såvida inte deras **Åsidosätt**-värden också har angetts.
@@ -98,7 +98,7 @@ Egenskaperna fördelas på flera flikar.
   >* Ska inte anges till en befintlig sida.
   >
 
-  Konfigurera Dispatcher för att aktivera åtkomst till mål-URL:er. Mer information finns i [Aktivera åtkomst till Vanity-URL:er](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls).
+  Konfigurera Dispatcher för att aktivera åtkomst till mål-URL:er. Mer information finns i [Aktivera åtkomst till Vanity-URL:er](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#enabling-access-to-vanity-urls-vanity-urls).
 
 * **URL för omdirigering av vanity**
 
@@ -190,7 +190,7 @@ Visar sidminiatyrbilden. Du kan:
 
 * **Delning via sociala medier**
 
-  Definierar de delningsalternativ som är tillgängliga på sidan. Visar de alternativ som är tillgängliga för kärnkomponenten [Delning](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
+  Definierar de delningsalternativ som är tillgängliga på sidan. Visar de alternativ som är tillgängliga för kärnkomponenten [Delning](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=sv-SE).
 
    * **Aktivera användardelning för Facebook**
    * **Aktivera användardelning för Pinterest**

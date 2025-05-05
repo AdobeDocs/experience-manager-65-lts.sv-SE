@@ -116,7 +116,7 @@ Dialogrutor är en viktig faktor när du migrerar komponenter:
 
    * Det finns ett kompatibilitetslager med pekfunktion för att öppna en klassisk användargränssnittsdialogruta i en&quot;Touch UI wrapper&quot;, men det har begränsad funktionalitet och rekommenderas inte på lång sikt.
 
-* [Anpassa dialogrutefält i Touch-gränssnittet](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Anpassa dialogrutefält i Touch-gränssnittet](https://helpx.adobe.com/se/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Skapa en ny GRE-fältkomponent](/help/sites-developing/granite-ui-component.md)
 * [Anpassa sidredigering](/help/sites-developing/customizing-page-authoring-touch.md) (med det beröringsaktiverade användargränssnittet)
 
@@ -131,8 +131,8 @@ Du kan också anpassa konsolerna:
 Även om det inte är direkt relaterat till en migrering till pekgränssnittet finns det relaterade problem som är värda att ta hänsyn till samtidigt, eftersom de också rekommenderas:
 
 * [Mallar](/help/sites-developing/templates.md) - [Redigerbara mallar](/help/sites-developing/page-templates-editable.md)
-* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE)
+* [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE)
 
 >[!NOTE]
 >
@@ -144,9 +144,9 @@ Mer information om hur du utvecklar AEM finns i resurssamlingen under:
 
 * [Utveckla användarhandbok](/help/sites-developing/getting-started.md)
 * [Bevilja gränssnittsdokumentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [Självstudiekurser och videofilmer för AEM 6.5-webbplatser](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
+* [Självstudiekurser och videofilmer för AEM 6.5-webbplatser](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=sv-SE)
 * [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=sv-SE)
 * [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

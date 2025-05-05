@@ -32,7 +32,7 @@ Se [API för hantering av innehållsfragment - klientsidan](/help/sites-developi
 
 >[!CAUTION]
 >
->[Kärnkomponenten för innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) rekommenderas nu. Mer information finns i [Utveckla kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
+>[Kärnkomponenten för innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=sv-SE) rekommenderas nu. Mer information finns i [Utveckla kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=sv-SE).
 >
 >I det här avsnittet beskrivs den ursprungliga komponenten som levererats för användning med innehållsfragment (**Innehållsfragment** i gruppen **Allmänt**).
 

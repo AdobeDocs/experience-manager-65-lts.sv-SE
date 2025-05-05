@@ -39,7 +39,7 @@ MSM är ett konfigurerbart ramverk för automatisering av innehållsdistribution
 >Du kan också använda [referenskomponenten](/help/sites-authoring/default-components-foundation.md#reference) för att återanvända en sida eller ett stycke. Kom dock ihåg:
 >
 >* MSM är flexiblare och ger detaljerad kontroll över vilket innehåll som synkroniseras och när.
->* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) rekommenderas nu framför grundkomponenterna.
+>* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) rekommenderas nu framför grundkomponenterna.
 >
 
 ## Live Copy-källor och layoutkonfigurationer {#live-copy-sources-and-blueprint-configurations}

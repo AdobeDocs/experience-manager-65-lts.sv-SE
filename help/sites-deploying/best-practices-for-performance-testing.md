@@ -74,7 +74,7 @@ Dokumentationen [Övervakningsprestanda](/help/sites-deploying/monitoring-and-ma
 
 **Utvecklarläge i Touch-gränssnittet**
 
-En av de nya funktionerna i pekgränssnittet i AEM 6 är utvecklarläget. Precis som författare kan växla mellan redigerings- och förhandsgranskningsläge kan utvecklare växla till utvecklarläget i författargränssnittet. På så sätt kan du se återgivningstiden för varje komponent på sidan och se stackspår för eventuella fel. Mer information om utvecklarläget finns i den här [CQ Gems-presentationen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
+En av de nya funktionerna i pekgränssnittet i AEM 6 är utvecklarläget. Precis som författare kan växla mellan redigerings- och förhandsgranskningsläge kan utvecklare växla till utvecklarläget i författargränssnittet. På så sätt kan du se återgivningstiden för varje komponent på sidan och se stackspår för eventuella fel. Mer information om utvecklarläget finns i den här [CQ Gems-presentationen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=sv-SE).
 
 **Använda rlog.jar för att läsa begärandeloggarna**
 

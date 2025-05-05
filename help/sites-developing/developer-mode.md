@@ -57,7 +57,7 @@ Detta hjälper en utvecklare att:
 >Se
 >
 >* Kunskapsbasartikeln [Felsökning av AEM TouchUI-problem](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) innehåller ytterligare tips och verktyg.
->* AEM Gems-session om [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
+>* AEM Gems-session om [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=sv-SE).
 >
 
 ## Öppnar utvecklarläge {#opening-developer-mode}

@@ -25,7 +25,7 @@ Den här självstudiekursen är ett steg i [Skapa din första interaktiva kommun
 
 Med AEM Forms dataintegreringsmodul kan du skapa en formulärdatamodell från olika backend-datakällor, till exempel AEM användarprofil, RESTful-webbtjänster, SOAP-baserade webbtjänster, OData-tjänster och relationsdatabaser. Du kan konfigurera datamodellsobjekt och datatjänster i en formulärdatamodell och koppla den till ett anpassat formulär. Anpassningsbara formulärfält är bundna till objektegenskaper för datamodell. Med tjänsterna kan du förifylla det adaptiva formuläret och skriva skickade formulärdata tillbaka till datamodellobjektet.
 
-Mer information om integrering av formulärdata och formulärdatamodell finns i [AEM Forms-dataintegrering](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
+Mer information om integrering av formulärdata och formulärdatamodell finns i [AEM Forms-dataintegrering](https://helpx.adobe.com/se/experience-manager/6-3/forms/using/data-integration.html).
 
 I den här självstudiekursen får du hjälp med att förbereda, skapa, konfigurera och koppla en formulärdatamodell till en interaktiv kommunikation. I slutet av den här självstudiekursen kan du:
 
@@ -46,7 +46,7 @@ Formulärdatamodellen ser ut ungefär så här:
 Kontrollera att du har följande innan du börjar:
 
 * MySQL-databas med exempeldata enligt avsnittet [Konfigurera databasen](../../forms/using/create-form-data-model0.md#step-set-up-the-database).
-* OSGi-paket för MySQL JDBC-drivrutin enligt beskrivningen i [Paketera JDBC-databasdrivrutinen](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
+* OSGi-paket för MySQL JDBC-drivrutin enligt beskrivningen i [Paketera JDBC-databasdrivrutinen](https://helpx.adobe.com/se/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
 
 ## Steg 1: Konfigurera databasen {#step-set-up-the-database}
 
@@ -113,7 +113,7 @@ Tabellen **Fakturor** innehåller fakturainformation som faktureringsdatum, fakt
 
 ## Steg 2: Konfigurera MySQL-databasen som datakälla {#step-configure-mysql-database-as-data-source}
 
-Du kan konfigurera olika typer av datakällor för att skapa en formulärdatamodell. I den här självstudiekursen konfigurerar du MySQL-databasen som är konfigurerad och ifylld med exempeldata. Mer information om andra datakällor som stöds och hur du konfigurerar dem finns i [AEM Forms-dataintegrering](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
+Du kan konfigurera olika typer av datakällor för att skapa en formulärdatamodell. I den här självstudiekursen konfigurerar du MySQL-databasen som är konfigurerad och ifylld med exempeldata. Mer information om andra datakällor som stöds och hur du konfigurerar dem finns i [AEM Forms-dataintegrering](https://helpx.adobe.com/se/experience-manager/6-3/forms/using/data-integration.html).
 
 Gör följande för att konfigurera MySQL-databasen:
 
@@ -155,7 +155,7 @@ Gör följande för att konfigurera MySQL-databasen:
 
 ## Steg 3: Skapa formulärdatamodell {#step-create-form-data-model}
 
-AEM Forms har ett intuitivt användargränssnitt för att [skapa ett formulärdataläge](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l från konfigurerade datakällor. Du kan använda flera datakällor i en formulärdatamodell. I den här självstudiekursen använder du MySQL som datakälla.
+AEM Forms har ett intuitivt användargränssnitt för att [skapa ett formulärdataläge](https://helpx.adobe.com/se/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l från konfigurerade datakällor. Du kan använda flera datakällor i en formulärdatamodell. I den här självstudiekursen använder du MySQL som datakälla.
 
 Gör följande för att skapa formulärdatamodell:
 

@@ -195,7 +195,7 @@ Här nedan hittar du ett exempel på hur du skapar ett självsignerat certifikat
 
 >[!NOTE]
 >
->En centraliserad lista över användbara cURL-kommandon i AEM finns i [Använda cURL med AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html).
+>En centraliserad lista över användbara cURL-kommandon i AEM finns i [Använda cURL med AEM](https://helpx.adobe.com/se/experience-manager/6-4/sites/administering/using/curl.html).
 
 Du kan också automatisera SSL-/TLS-konfigurationen med verktyget cURL. Du kan göra detta genom att skicka konfigurationsparametrarna till den här URL:en:
 

@@ -358,7 +358,7 @@ Här följer information om möjliga problem tillsammans med lösningar:
    * Om detta inte löser problemet och `AsyncIndexUpdate` undantag kvarstår:
 
       1. [Indexera om](#how-to-re-index) felindexet
-      1. Skicka även en anmälan till [Adobe Support](https://helpx.adobe.com/support.html)
+      1. Skicka även en anmälan till [Adobe Support](https://helpx.adobe.com/se/support.html)
 
 ### Indexera om {#how-to-re-index}
 

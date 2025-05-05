@@ -28,7 +28,7 @@ Adobe Experience Manager Forms kan använda inloggningsuppgifter som lagrats på
 
 ## Innan du konfigurerar HSM- eller tokenenheter med AEM Forms {#configurehsmetoken}
 
-* Installera [AEM Forms-tilläggspaketet](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+* Installera [AEM Forms-tilläggspaketet](https://helpx.adobe.com/se/aem-forms/kb/aem-forms-releases.html).
 * Installera och konfigurera HSM- eller tokenklientprogramvara på samma dator som AEM-servern. Klientprogramvaran krävs för att kommunicera med HSM- och tokenenheterna.
 
 ## Aktivera tjänsten DocAssurance {#configuredocassurance}

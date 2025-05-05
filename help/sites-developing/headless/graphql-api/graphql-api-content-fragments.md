@@ -769,7 +769,7 @@ För att aktivera cachelagring av beständiga frågor krävs följande uppdateri
   >
   >Dispatcher lägger till suffixet `.json` i alla beständiga fråge-URL:er, så att resultatet kan cachas.
   >
-  >Detta för att säkerställa att frågan uppfyller Dispatcher krav för dokument som kan cachas. Mer information finns i [Hur returnerar Dispatcher dokument?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
+  >Detta för att säkerställa att frågan uppfyller Dispatcher krav för dokument som kan cachas. Mer information finns i [Hur returnerar Dispatcher dokument?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=sv-SE#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
@@ -959,7 +959,7 @@ Den grundläggande funktionen för frågor med GraphQL för AEM följer GraphQL 
 
 >[!NOTE]
 >
->En detaljerad översikt över CORS-resursdelningsprincipen i AEM finns i [Förstå korsdomänsresursdelning (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
+>En detaljerad översikt över CORS-resursdelningsprincipen i AEM finns i [Förstå korsdomänsresursdelning (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=sv-SE#understand-cross-origin-resource-sharing-(cors)).
 
 Konfigurera en CORS-princip i kundens Git-databas för att få åtkomst till GraphQL-slutpunkten. Den här konfigurationen görs genom att en lämplig OSGi CORS-konfigurationsfil läggs till för en eller flera önskade slutpunkter.
 
@@ -1098,4 +1098,4 @@ I framtiden planerar AEM att investera i AEM GraphQL API.*&quot;
 
 ## Självstudiekurs - Komma igång med AEM Headless och GraphQL {#tutorial}
 
-Söker du en praktisk självstudiekurs? Ta en titt på [Komma igång med AEM Headless och GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - en komplett självstudiekurs som visar hur du bygger upp och exponerar innehåll med AEM GraphQL API:er och som används av en extern app i ett headless CMS-scenario.
+Söker du en praktisk självstudiekurs? Ta en titt på [Komma igång med AEM Headless och GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=sv-SE) - en komplett självstudiekurs som visar hur du bygger upp och exponerar innehåll med AEM GraphQL API:er och som används av en extern app i ett headless CMS-scenario.

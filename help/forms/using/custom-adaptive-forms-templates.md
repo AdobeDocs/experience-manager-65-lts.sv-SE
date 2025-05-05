@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Förutsättningar {#prerequisites}
 
-* Förstå AEM [Sidmall](/help/sites-authoring/templates.md) och [redigering av anpassat formulär](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Förstå AEM [Sidmall](/help/sites-authoring/templates.md) och [redigering av anpassat formulär](https://helpx.adobe.com/se/aem-forms/6-1/introduction-forms-authoring.html)
 
 * Förstå AEM [klientbibliotek](/help/sites-developing/clientlibs.md)
 
