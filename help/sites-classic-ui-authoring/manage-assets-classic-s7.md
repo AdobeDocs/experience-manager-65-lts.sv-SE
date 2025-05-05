@@ -395,7 +395,7 @@ Som standard söker Experience Manager igenom den markerade mappen och alla unde
 >* I det klassiska användargränssnittet kan du även söka efter **Flash** och **FXG**. Det går inte att filtrera efter dessa två termer i det pekoptimerade användargränssnittet.
 >
 >* När du söker efter video söker du efter en enskild återgivning. Resultatet returnerar den ursprungliga återgivningen (endast &#42;.mp4) och den kodade återgivningen.
-* När du söker i en adaptiv videouppsättning söker du i mappen och i alla undermappar, men bara om du har lagt till ett nyckelord i sökningen. Om du inte har lagt till något nyckelord söker Experience Manager inte igenom undermapparna.
+>* När du söker i en adaptiv videouppsättning söker du i mappen och i alla undermappar, men bara om du har lagt till ett nyckelord i sökningen. Om du inte har lagt till något nyckelord söker Experience Manager inte igenom undermapparna.
 >
 
 **Publiceringsstatus** - Du kan filtrera efter resurser baserat på publiceringsstatus: Opublicerad eller Publicerad. Om du inte väljer någon publiceringsstatus söker Experience Manager som standard igenom alla publiceringsstatusar.

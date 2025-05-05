@@ -88,6 +88,7 @@ Eftersom innehållsmodellerna definierar innehållsstrukturen måste du veta vil
 1. **Modellredigeraren för innehållsfragment** öppnas.
    1. Den vänstra kolumnen innehåller modellens fält. Den här kolumnen intresserar oss.
    1. Den högra kolumnen innehåller de fält som kan läggas till i modellen. Den här kolumnen kan vi ignorera.
+
       ![Modellredigerare för innehållsfragment](assets/content-fragment-model-editor.png)
 1. Klicka på ett av modellens fält. AEM markerar det och informationen om det fältet visas i den högra kolumnen.
    ![Information om modellredigeraren för innehållsfragment](assets/content-fragment-model-editor-detail.png)

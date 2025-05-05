@@ -56,7 +56,7 @@ Kalkylbladet **Projektpulsslag** innehåller en grafisk översikt över kritiska
 
 ## Status efter roll {#status-by-role}
 
-Kalkylbladet **Status efter roll** visar detaljerad beskrivning av [**Hälsa**, **Kvalitet och **Fullständighet**](#projectheartbeat) av **[Fas](#phases-and-milestones)** och **[Persona](#persona)**.
+Kalkylbladet **Status efter roll** visar detaljerad beskrivning av [**Hälsa**, **Kvalitet och &#x200B;** Fullständighet&#x200B;**](#projectheartbeat) av &#x200B;** [Fas](#phases-and-milestones)**&#x200B; och &#x200B;** [Persona](#persona)**.
 
 ## Faser och milstolpar {#phases-and-milestones}
 

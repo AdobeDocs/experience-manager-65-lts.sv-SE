@@ -293,6 +293,7 @@ Se även [Lägg till bildscheman](/help/assets/image-maps.md).
    * Välj **[!UICONTROL Hyperlink]**.
 
       * Om du är kund hos Experience Manager Sites väljer du ikonen Platsväljare (mapp) för att navigera till en URL.
+
         >[!NOTE]
         >
         >Den URL-baserade länkningsmetoden är inte möjlig om det interaktiva innehållet har länkar till relativa URL-adresser, särskilt länkar till Experience Manager Sites-sidor.

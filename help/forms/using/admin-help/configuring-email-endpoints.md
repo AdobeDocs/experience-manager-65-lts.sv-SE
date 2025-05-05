@@ -91,7 +91,7 @@ För att formulärarbetsflöden ska kunna ta emot och hantera inkommande e-postm
 
 **Domänmönster:** Domännamnsmönstret som används för att filtrera inkommande e-post. Om du till exempel använder adobe.com kommer endast e-post från adobe.com att bearbetas, och e-post från andra domäner ignoreras.
 
-**Filmönster:** Inkommande mönster för bifogade filer som accepteras av providern. Detta inkluderar filer som har specifika tillägg (&amp;ast;.dat, &amp;ast;.xml), specifika namn (data) och sammansatta uttryck i namnet och tillägget (.[dD][aA]&#39;port&#39;). Standardvärdet är &amp;ast;.&amp;ast;..
+**Filmönster:** Inkommande mönster för bifogade filer som accepteras av providern. Detta inkluderar filer som har specifika tillägg (&ast;.dat, &ast;.xml), specifika namn (data) och sammansatta uttryck i namnet och tillägget (.[dD][aA]&#39;port&#39;). Standardvärdet är &ast;.&ast;..
 
 **Jobbets mottagare lyckades:** En eller flera e-postadresser som används för att skicka e-post för att ange slutförda jobb. Som standard skickas alltid ett meddelande om att jobbet lyckades till avsändaren av det ursprungliga jobbet. Stöd för upp till 100 mottagare. Om du vill inaktivera den här inställningen lämnar du det här fältet tomt.
 
@@ -169,7 +169,7 @@ Använd följande inställningar för att konfigurera en e-postslutpunkt.
 
 **Domänmönster:** Anger domänmönster för inkommande e-post som accepteras av providern. Om du till exempel använder adobe.com bearbetas bara e-post från adobe.com. E-post från andra domäner ignoreras.
 
-**Filmönster:** Anger mönster för inkommande bifogade filer som accepteras av providern. Detta inkluderar filer som har specifika tillägg (&amp;ast;.dat, &amp;ast;.xml), specifika namn (data) eller sammansatta uttryck i namnet och tillägget (&amp;ast;.[dD][aA]&#39;port&#39;).
+**Filmönster:** Anger mönster för inkommande bifogade filer som accepteras av providern. Detta inkluderar filer som har specifika tillägg (&ast;.dat, &ast;.xml), specifika namn (data) eller sammansatta uttryck i namnet och tillägget (&ast;.[dD][aA]&#39;port&#39;).
 
 **Slutförda jobbmottagare:** En e-postadress dit meddelanden skickas för att ange slutförda jobb. Som standard skickas alltid ett meddelande om att jobbet lyckades till avsändaren. Om du skriver avsändare skickas e-postresultaten till avsändaren. Stöd för upp till 100 mottagare. Ange ytterligare mottagare med e-postadresser, avgränsade med kommatecken (,).
 
@@ -237,7 +237,7 @@ Standardvärdet är asynkront.
 
 **Litteral:** E-postmeddelandet använder det värde som anges i fältet när det visas.
 
-**Variabel:** Du kan mappa en sträng från e-postmeddelandets ämne, brödtext, huvud eller avsändarens e-postadress. Om du vill göra det använder du något av följande nyckelord: %SUBJECT%, %BODY%, %HEADER% eller %SENDER%. Om du till exempel använder %SUBJECT% används innehållet i e-postämnet som indataparameter. Om du vill hämta bifogade filer anger du ett filmönster som e-postslutpunkten kan använda för att välja bifogade dokument. Om du till exempel anger &amp;ast;.pdf väljs alla bifogade dokument som har filnamnstillägget .pdf. Ange &amp;stämpel;ast; markerar ett bifogat dokument. Om du anger example.pdf väljs alla bifogade dokument som heter example.pdf.
+**Variabel:** Du kan mappa en sträng från e-postmeddelandets ämne, brödtext, huvud eller avsändarens e-postadress. Om du vill göra det använder du något av följande nyckelord: %SUBJECT%, %BODY%, %HEADER% eller %SENDER%. Om du till exempel använder %SUBJECT% används innehållet i e-postämnet som indataparameter. Om du vill hämta bifogade filer anger du ett filmönster som e-postslutpunkten kan använda för att välja bifogade dokument. Om du till exempel anger &ast;.pdf väljs alla bifogade dokument som har filnamnstillägget .pdf. Ange &amp;stämpel;ast; markerar ett bifogat dokument. Om du anger example.pdf väljs alla bifogade dokument som heter example.pdf.
 
 **Mappningar av utdataparameter:** Används för att konfigurera utdata för tjänsten och åtgärden. Följande tecken i mappningsvärdena för utdataparametrar utökas i filnamnet för den bifogade filen:
 
@@ -247,7 +247,7 @@ Standardvärdet är asynkront.
 
 Alla förekomster av det omvända snedstrecket (\) ersätts med %%.
 
-***Obs!**Om tjänstbegärandemeddelandet innehåller flera bifogade filer kan du inte använda parametrarna %F och %E för egenskapen Mappningar av utdataparameter för slutpunkten. Om tjänstsvaret returnerar flera bifogade filer kan du inte ange samma filnamn för fler än en bifogad fil. Om du inte följer dessa rekommendationer skapar den anropade tjänsten namnen för de returnerade filerna, och namnen är inte förutsägbara.*
+***Obs!**&#x200B;Om tjänstbegärandemeddelandet innehåller flera bifogade filer kan du inte använda parametrarna %F och %E för egenskapen Mappningar av utdataparameter för slutpunkten. Om tjänstsvaret returnerar flera bifogade filer kan du inte ange samma filnamn för fler än en bifogad fil. Om du inte följer dessa rekommendationer skapar den anropade tjänsten namnen för de returnerade filerna, och namnen är inte förutsägbara.*
 
 Följande värden är tillgängliga:
 

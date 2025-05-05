@@ -344,7 +344,7 @@ När du skapar eller redigerar bildförinställningar finns alternativen som bes
      <strong>TIFF med alfa</strong> innehåller ytterligare ett alternativ:
     </div>
     <ul>
-     <li><strong>Komprimering</strong> - Välj en komprimeringsalgoritm. Algoritmalternativen för PDF är <strong>Ingen</strong>, <strong>Zip</strong> och <strong>Jpeg</strong>. För TIFF är alternativen <strong>Ingen</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> och <strong>Zip</strong> och för TIFF med Alpha är <strong>Ingen</strong> 15}, <strong>LZW</strong> och <strong>Zip</strong>.</li>
+     <li><strong>Komprimering</strong> - Välj en komprimeringsalgoritm. Algoritmalternativen för PDF är <strong>Ingen</strong>, <strong>Zip</strong> och <strong>Jpeg</strong>. För TIFF är alternativen <strong>Ingen</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> och <strong>Zip</strong> och för TIFF med Alpha är <strong>Ingen</strong> 15&rbrace;, <strong>LZW</strong> och <strong>Zip</strong>.</li>
     </ul> <p>Om du väljer <strong>PNG</strong>, <strong> PNG med Alpha,</strong> eller <strong>EPS</strong> finns inga ytterligare alternativ.</p> </td>
   </tr>
   <tr>

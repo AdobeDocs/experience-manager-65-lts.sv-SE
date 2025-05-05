@@ -29,29 +29,29 @@ I den här artikeln listas de kortkommandon som kan användas med Adaptiv formul
 | Stäng egenskapsgranskaren för den markerade adaptiva formulärkomponenten | Ctrl+Alt+W | Kommando+Alt+W |
 | Spara ändringar i egenskapsgranskaren för den valda adaptiva formulärkomponenten | Ctrl+S | Kommando+S |
 | Redigera regel för den valda adaptiva formulärkomponenten | Ctrl+Alt+Enter | Kommando+Alt+Retur |
-| Växla mellan Förhandsgranska och det markerade läget (till exempel Redigera och Skällning) | Ctrl+Skift+M | Ctrl+Skift+M&amp;ast; |
-| Ångra senaste ändring | Ctrl+Z | Ctrl+Z&amp;ast; |
-| Gör om senaste ändring | Ctrl+Y | Ctrl+Y&amp;ast; |
+| Växla mellan Förhandsgranska och det markerade läget (till exempel Redigera och Skällning) | Ctrl+Skift+M | Ctrl+Skift+M&ast; |
+| Ångra senaste ändring | Ctrl+Z | Ctrl+Z&ast; |
+| Gör om senaste ändring | Ctrl+Y | Ctrl+Y&ast; |
 | Markera flera komponenter | Skift+klicka | Skift+klicka |
-| Kopiera markerad komponent | Ctrl-C | Ctrl-C&amp;ast; |
-| Klipp ut markerade komponenter. Klippkomponenten försvinner inte förrän den klistras in på den nya platsen. | Ctrl-X | Ctrl-X&amp;ast; |
+| Kopiera markerad komponent | Ctrl-C | Ctrl-C&ast; |
+| Klipp ut markerade komponenter. Klippkomponenten försvinner inte förrän den klistras in på den nya platsen. | Ctrl-X | Ctrl-X&ast; |
 | Klistra in komponenter | Ctrl+V | Ctrl+V |
-| Ta bort markerade komponenter | Ctrl+Del | Ctrl+Del&amp;ast; |
-| Ta bort markerade komponenter | Ctrl+Backsteg | Ctrl+Backsteg&amp;ast; |
-| Gör text fet när du använder komponenten RTF-redigerare i förhandsgranskningsläget | Ctrl+B | Ctrl+B&amp;ast; |
+| Ta bort markerade komponenter | Ctrl+Del | Ctrl+Del&ast; |
+| Ta bort markerade komponenter | Ctrl+Backsteg | Ctrl+Backsteg&ast; |
+| Gör text fet när du använder komponenten RTF-redigerare i förhandsgranskningsläget | Ctrl+B | Ctrl+B&ast; |
 | Kursivera text när du använder komponenten RTF-redigerare i förhandsgranskningsläget | Ctrl+I | Ctrl+I&amp;ämpel;ast; |
-| Gör text fet när du använder komponenten RTF-redigerare i förhandsgranskningsläget | Ctrl+U | Ctrl+U&amp;ppna;ast; |
+| Gör text fet när du använder komponenten RTF-redigerare i förhandsgranskningsläget | Ctrl+U | Ctrl+U&ppna;ast; |
 
 >[!NOTE]
 >
->Kortkommandon markerade med &#39;&amp;ast;&#39; fungerar både med Ctrl- och Kommando-tangenterna i macOS.
+>Kortkommandon markerade med &#39;&ast;&#39; fungerar både med Ctrl- och Kommando-tangenterna i macOS.
 
 >[!NOTE]
 >
-Flera val på en stationär enhet:
+>Flera val på en stationär enhet:
 >
-* Windows: Ctrl-klicka på nödvändiga komponenter.
-* macOS: Kommando-klicka på nödvändiga komponenter.
+>* Windows: Ctrl-klicka på nödvändiga komponenter.
+>* macOS: Kommando-klicka på nödvändiga komponenter.
 >
 
 ## Theme Editor  {#themeeditor}
@@ -60,13 +60,13 @@ Flera val på en stationär enhet:
 |---|---|---|
 | Öppna egenskapsgranskaren för den valda komponenten i ett tema | Alt+Enter | Alt+Retur |
 | Stäng egenskapsgranskaren för den markerade komponenten i ett tema | Ctrl+Alt+W | Kommando+Alt+W |
-| Ångra senaste ändring | Ctrl+Z | Ctrl+Z&amp;ast; |
-| Gör om senaste ändring | Ctrl+Y | Ctrl+Y&amp;ast; |
-| Spara ändringar i egenskapsgranskaren för den valda komponenten i ett tema | Ctrl+S | Ctrl+S&amp;ast; |
+| Ångra senaste ändring | Ctrl+Z | Ctrl+Z&ast; |
+| Gör om senaste ändring | Ctrl+Y | Ctrl+Y&ast; |
+| Spara ändringar i egenskapsgranskaren för den valda komponenten i ett tema | Ctrl+S | Ctrl+S&ast; |
 
 >[!NOTE]
 >
-Kortkommandon markerade med &#39;&amp;ast;&#39; fungerar både med Ctrl- och Kommando-tangenterna i macOS.
+>Kortkommandon markerade med &#39;&ast;&#39; fungerar både med Ctrl- och Kommando-tangenterna i macOS.
 
 ## Content Browser  {#contentbrowser}
 

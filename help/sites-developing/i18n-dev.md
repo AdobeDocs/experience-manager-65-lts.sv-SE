@@ -118,7 +118,7 @@ Klassen `I18N` definierar en statisk `get`-metod som är användbar när du mås
 
 Med JavaScript API kan du lokalisera strängar på klienten. Precis som med [Java™- och JSP](#internationalizing-strings-in-java-and-jsp-code)-kod kan du med JavaScript API identifiera strängar för lokalisering, tillhandahålla lokaliseringstips och ta med variabler i de lokaliserade strängarna.
 
-Klientbiblioteksmappen `granite.utils` [](/help/sites-developing/clientlibs.md) innehåller JavaScript API. Om du vill använda API:t inkluderar du den här klientbiblioteksmappen på sidan. Lokaliseringsfunktioner använder namnutrymmet `Granite.I18n`.
+Klientbiblioteksmappen `granite.utils` [&#128279;](/help/sites-developing/clientlibs.md) innehåller JavaScript API. Om du vill använda API:t inkluderar du den här klientbiblioteksmappen på sidan. Lokaliseringsfunktioner använder namnutrymmet `Granite.I18n`.
 
 Innan du presenterar lokaliserade strängar anger du språkområdet med funktionen `Granite.I18n.setLocale`. Funktionen kräver språkkoden för språkområdet som ett argument:
 

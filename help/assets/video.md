@@ -65,6 +65,7 @@ Läs mer om [Bästa tillvägagångssätt för att ordna digitala resurser så at
    * Förhandsgranska och publicera videomaterial
 
       * Visa källvideon och de kodade återgivningarna av videon tillsammans med tillhörande miniatyrer:
+
         [Förhandsgranska videoklipp](managing-video-assets.md#upload-and-preview-video-assets) eller [Förhandsgranska resurser](previewing-assets.md)
         [Visa videoåtergivningar](video-renditions.md)
         [Hantera videorenderingar](manage-assets.md#managing-renditions)
@@ -75,9 +76,11 @@ Läs mer om [Bästa tillvägagångssätt för att ordna digitala resurser så at
    * Arbeta med videometadata
 
       * Visa egenskaperna för en kodad videoåtergivning, t.ex. bildrutefrekvens, ljud- och videobithastighet samt kodek:
+
         [Visa egenskaper för videoåtergivning](video-renditions.md)
 
       * Redigera egenskaperna för video, till exempel titel, beskrivning och taggar, anpassade metadatafält:
+
         [Redigera videoegenskaper](manage-assets.md#editing-properties)
 
       * [Hantera metadata för digitala resurser](metadata.md)
@@ -102,9 +105,11 @@ Läs mer om [Bästa tillvägagångssätt för att ordna digitala resurser så at
    * Om du använder ett webbinnehållshanteringssystem från en annan leverantör kan du länka eller bädda in videor på dina webbsidor.
 
       * Integrera video med URL:
+
         [Länka URL:er till ditt webbprogram](linking-urls-to-yourwebapplication.md).
 
       * Integrera video med inbäddad kod på en webbsida:
+
         [Bädda in videovisningsprogrammet på en webbsida](embed-code.md).
 
    * [Generera videorapporter](#viewing-video-reports).

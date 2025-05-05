@@ -66,7 +66,7 @@ Se till att du lägger till gruppen som du skapar som medlem i den körklara anv
 Så här associerar du användargrupper med ett anpassat formulär:
 
 1. Gå till **Forms** > **Forms &amp; Documents** i redigeringsläget.
-1. Använd alternativet **Välj **för att välja ett anpassat formulär och klicka på **Visa egenskaper**.
+1. Använd alternativet **Välj &#x200B;** för att välja ett anpassat formulär och klicka på **Visa egenskaper**.
 1. Klicka på **Redigera** i fönstret Egenskaper för formuläret och klicka sedan på **AVANCERAT**.
 1. Ange gruppen i gruppfältet för granskare som ska skicka in och klicka på **Klar**.
 

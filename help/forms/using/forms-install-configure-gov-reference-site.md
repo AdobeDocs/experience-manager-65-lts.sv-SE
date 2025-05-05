@@ -312,15 +312,15 @@ När molnkonfigurationen är klar kanske du vill testa formulärdatamodellen.
 
    >[!NOTE]
    >
-   När du har testat tjänsterna klickar du på **Avbryt** för att se till att ofrivilliga ändringar inte sprids till formulärdatamodellen.
+   >När du har testat tjänsterna klickar du på **Avbryt** för att se till att ofrivilliga ändringar inte sprids till formulärdatamodellen.
 
    >[!NOTE]
    >
-   Det har rapporterats att en omstart av AEM Server krävs för att Data Source ska kunna binda till FDM.
+   >Det har rapporterats att en omstart av AEM Server krävs för att Data Source ska kunna binda till FDM.
 
    >[!NOTE]
    >
-   Du bör använda kommandot Ctrl + C för att starta om SDK. Om du startar om AEM SDK med alternativa metoder, till exempel att stoppa Java-processer, kan det leda till inkonsekvenser i AEM utvecklingsmiljö.
+   >Du bör använda kommandot Ctrl + C för att starta om SDK. Om du startar om AEM SDK med alternativa metoder, till exempel att stoppa Java-processer, kan det leda till inkonsekvenser i AEM utvecklingsmiljö.
 
 #### Testa Forms datamodell (Derby) {#test-fdm-derby}
 
@@ -425,7 +425,7 @@ Administratörer kan ge användare AEM analysbehörigheter genom att utföra fö
 
 >[!NOTE]
 >
-AEM Forms Analytics-data är tillgängliga offline eller utan en Adobe Analytics Cloud-konfiguration om `we-gov-forms.ui.analytics-<version>.zip`-paketet är installerat, men AEM Sites-data kräver en aktiv molnkonfiguration.
+>AEM Forms Analytics-data är tillgängliga offline eller utan en Adobe Analytics Cloud-konfiguration om `we-gov-forms.ui.analytics-<version>.zip`-paketet är installerat, men AEM Sites-data kräver en aktiv molnkonfiguration.
 
 1. Navigera till *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Välj&quot;AEM Forms Web.Gov Site&quot; för att visa webbplatssidorna.
@@ -454,7 +454,7 @@ AEM Forms Analytics-data är tillgängliga offline eller utan en Adobe Analytics
 
 >[!NOTE]
 >
-AEM Forms Analytics-data är tillgängliga offline eller utan en Adobe Analytics Cloud-konfiguration om `we-gov-forms.ui.analytics-<version>.zip`-paketet är installerat, men AEM Sites-data kräver en aktiv molnkonfiguration.
+>AEM Forms Analytics-data är tillgängliga offline eller utan en Adobe Analytics Cloud-konfiguration om `we-gov-forms.ui.analytics-<version>.zip`-paketet är installerat, men AEM Sites-data kräver en aktiv molnkonfiguration.
 
 1. Navigera till
 
@@ -501,7 +501,7 @@ Ansvarig överst till vänster > Verktyg > Säkerhet > Adobe IMS Configuration.
 
 >[!NOTE]
 >
-Certifikatet som skapas i det här avsnittet kommer att användas för att skapa integreringstjänsten i Adobe I/O. När användarna har skapat integreringstjänsten kan de använda informationen från Adobe I/O för att slutföra konfigurationen.
+>Certifikatet som skapas i det här avsnittet kommer att användas för att skapa integreringstjänsten i Adobe I/O. När användarna har skapat integreringstjänsten kan de använda informationen från Adobe I/O för att slutföra konfigurationen.
 
 #### Skapa integrering i Adobe I/O {#create-integration-adobeio}
 
@@ -800,7 +800,7 @@ För att kunna konfigurera dem så att de aktiveras i arbetsflödet måste anvä
 
    >[!NOTE]
    >
-   Bara för att en användare aktiverar tjänsten på Configuration Manager-sidan måste användaren ändå konfigurera en tjänstkonfiguration för att kunna kommunicera med de externa tjänster som efterfrågas.
+   >Bara för att en användare aktiverar tjänsten på Configuration Manager-sidan måste användaren ändå konfigurera en tjänstkonfiguration för att kunna kommunicera med de externa tjänster som efterfrågas.
 
    ![vi hanterar formulärpaket](assets/aftia-configuration-options.jpg)
 

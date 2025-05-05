@@ -171,7 +171,7 @@ Du kan antingen distribuera det här paketet vid körning eller lägga till det 
 När cacheminnet har distribuerats cachelagrar portleten innehållet från publiceringsinstansen. Portletcachen kan göras ogiltig med en dispatchertömning från AEM. Så här konfigurerar du portleten att använda sin egen cache:
 
 1. Konfigurera en replikeringsagent i författaren som har portalservern som mål.
-1. Om portalservern körs på värddatorn **localhost**, **port 8080 **och webbprogrammet för AEM-portleten är monterat i kontexten **cqportlet** är den URL som ska tömmas cachen `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Använd GET som metod.
+1. Om portalservern körs på värddatorn **localhost**, **port 8080 &#x200B;** och webbprogrammet för AEM-portleten är monterat i kontexten **cqportlet** är den URL som ska tömmas cachen `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Använd GET som metod.
    **Obs!** I stället för att använda en frågeparameter kan du skicka en http-rubrik med namnet **Path**.
 
 #### Tömmer cache via replikeringsagenten {#flushing-the-cache-via-replication-agent}
@@ -526,7 +526,7 @@ title="{text}"/>
 
 #### Installera en anpassad layout {#installing-a-custom-layout}
 
-Om du vill installera en anpassad layout går du till portletens OSGI-webbkonsol **Paket **och överför paketet.
+Om du vill installera en anpassad layout går du till portletens OSGI-webbkonsol **Paket &#x200B;** och överför paketet.
 
 #### Paket {#packages}
 
@@ -610,7 +610,7 @@ OSGi-tjänster som tillval kan implementeras för att anpassa olika delar av por
 
 Följande tjänster har en standardimplementering i innehållsportleten (med motsvarande Java-gränssnitt). För att kunna anpassa måste ett paket som innehåller den nya tjänstimplementeringen distribueras till portletprogrammet.
 
-När du implementerar en sådan tjänst måste du se till att egenskapen **service.ranking** för tjänsten har ett positivt värde. Standardimplementeringen använder rangordningen** 0** och portleten använder tjänsten med högst rankning.
+När du implementerar en sådan tjänst måste du se till att egenskapen **service.ranking** för tjänsten har ett positivt värde. Standardimplementeringen använder rangordningen **&#x200B; 0** och portleten använder tjänsten med högst rankning.
 
 | **Namn** | **Beskrivning** | **Standardbeteende** |
 |---|---|---|
@@ -715,7 +715,7 @@ Använd portalkomponenten för att lägga till ett portletfönster på webbsidan
 
 1. Dubbelklicka på komponenten för att öppna Portlet-egenskaperna.
 1. I listrutan **Portletenhet** väljer du portleten i listan.
-1. Markera eller avmarkera kryssrutan **Dölj namnlist **beroende på om du vill se portletens namnlist.
+1. Markera eller avmarkera kryssrutan **Dölj namnlist &#x200B;** beroende på om du vill se portletens namnlist.
 1. I fältet **Portletfönster** anger du ett unikt portletfönster-ID om du vill.
 
    >[!NOTE]

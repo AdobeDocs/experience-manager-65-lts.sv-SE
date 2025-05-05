@@ -123,7 +123,7 @@ Följande metoder måste implementeras:
 
 Här är en exempelmall:
 
-paketera my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler utökar com.day.cq.dam.core.AbstractAssetHandler { // implementera relevanta delar }
+paketera my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler utökar com.day.cq.dam.core.AbstractAssetHandler { // implementera relevanta delar }
 
 Gränssnittet och klasserna omfattar:
 

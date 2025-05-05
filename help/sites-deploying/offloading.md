@@ -208,7 +208,7 @@ Flera JobConsumer-implementeringar installeras med Experience Manager. Ämnen so
 | Jobbämne | Tjänst-PID | Beskrivning |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Installerat med Apache Sling. Bearbetar jobb som genereras av OSGi-händelseadministratören för bakåtkompatibilitet. |
-| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | En replikeringsagent som replikerar jobbnyttolaster. |
+| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | En replikeringsagent som replikerar jobbnyttolaster. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Använd webbkonsolen eller en `sling:OsgiConfig`-nod för att konfigurera följa
 
 | Egenskapsnamn i webbkonsolen | OSGi ID | Beskrivning |
 |---|---|---|
-| Tillåtelselista | job.consumermanager.whitelist | En lista med ämnen som den lokala JobManager-tjänsten bearbetar. Standardvärdet för &amp;ast; gör att alla ämnen skickas till den registrerade TopicConsumer-tjänsten. |
+| Tillåtelselista | job.consumermanager.whitelist | En lista med ämnen som den lokala JobManager-tjänsten bearbetar. Standardvärdet för &ast; gör att alla ämnen skickas till den registrerade TopicConsumer-tjänsten. |
 | Blockeringslista | job.consumermanager.blacklist | En lista med ämnen som den lokala JobManager-tjänsten inte bearbetar. |
 
 ## Skapar replikeringsagenter för avlastning {#creating-replication-agents-for-offloading}

@@ -210,11 +210,11 @@ Om du vill aktivera Dynamic Media måste du aktivera körningsläget Dynamic Med
    >
    >* ImageServer-&lt;PortId>-&lt;ååå>&lt;mm>&lt;dd>.log - Loggen för ImageServer innehåller statistik och analytisk information som används för att analysera beteendet hos den interna ImageServer-processen.
    >
-   Exempel på ett loggfilsnamn för en Image Server: `ImageServer-57346-2020-07-25.log`
+   >Exempel på ett loggfilsnamn för en Image Server: `ImageServer-57346-2020-07-25.log`
    >
-   * s7access-&lt;åååå>&lt;mm>&lt;dd>.log - s7access-loggen registrerar varje begäran som gjorts till Dynamic Media via `/is/image` och `/is/content`.
+   >* s7access-&lt;åååå>&lt;mm>&lt;dd>.log - s7access-loggen registrerar varje begäran som gjorts till Dynamic Media via `/is/image` och `/is/content`.
    >
-   Dessa loggar används bara när Dynamic Media är aktiverat. De ingår inte i paketet **Hämta fullständig** som genereras från sidan `system/console/status-Bundlelist`. När du ringer kundsupport om du har ett problem med dynamiska media lägger du till båda loggarna i problemet.
+   >Dessa loggar används bara när Dynamic Media är aktiverat. De ingår inte i paketet **Hämta fullständig** som genereras från sidan `system/console/status-Bundlelist`. När du ringer kundsupport om du har ett problem med dynamiska media lägger du till båda loggarna i problemet.
 
 ### Om du har installerat Experience Manager på en annan port eller kontextsökväg ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -233,7 +233,7 @@ I en WAR-distribution av Experience Manager QuickStart går det inte att härled
 
 >[!NOTE]
 >
-I en fristående [Experience Manager Quickstart-distribution](/help/sites-deploying/deploy.md) behöver en **självdomän** vanligtvis inte konfigureras eftersom portnumret och kontextsökvägen kan konfigureras automatiskt. Om alla nätverksgränssnitt är inaktiverade måste du konfigurera **självdomänen**.
+>I en fristående [Experience Manager Quickstart-distribution](/help/sites-deploying/deploy.md) behöver en **självdomän** vanligtvis inte konfigureras eftersom portnumret och kontextsökvägen kan konfigureras automatiskt. Om alla nätverksgränssnitt är inaktiverade måste du konfigurera **självdomänen**.
 
 ## Inaktivera dynamiska media  {#disabling-dynamic-media}
 
@@ -255,9 +255,9 @@ Om du vill inaktivera Dynamic Media när du har aktiverat det tar du bort flagga
 
    >[!NOTE]
    >
-   När körningsläget för dynamiska media har inaktiverats hoppas det arbetsflödessteg som genererar återgivningen av `cqdam.pyramid.tiff` över automatiskt. Det inaktiverar också stöd för dynamisk återgivning och andra dynamiska mediefunktioner.
+   >När körningsläget för dynamiska media har inaktiverats hoppas det arbetsflödessteg som genererar återgivningen av `cqdam.pyramid.tiff` över automatiskt. Det inaktiverar också stöd för dynamisk återgivning och andra dynamiska mediefunktioner.
    >
-   Observera också att när körningsläget Dynamic Media är inaktiverat efter att du har konfigurerat Experience Manager-servern är alla resurser som har överförts i det körningsläget nu ogiltiga.
+   >Observera också att när körningsläget Dynamic Media är inaktiverat efter att du har konfigurerat Experience Manager-servern är alla resurser som har överförts i det körningsläget nu ogiltiga.
 
 ## (Valfritt) Migrera förinställningar och konfigurationer för dynamiska media från 6.3 till 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
@@ -265,7 +265,7 @@ Om du uppgraderar Experience Manager - Dynamic Media från 6.3 till 6.5 (som nu 
 
 >[!NOTE]
 >
-Om du kör Experience Manager-instansen i kompatibilitetsläge, d.v.s. har kompatibilitetspaketet installerat, behöver du inte köra dessa kommandon.
+>Om du kör Experience Manager-instansen i kompatibilitetsläge, d.v.s. har kompatibilitetspaketet installerat, behöver du inte köra dessa kommandon.
 
 För alla uppgraderingar, antingen med eller utan kompatibilitetspaketet, kan du kopiera de förinställda visningsprogrammen som ursprungligen levererades med Dynamic Media genom att köra följande kommando för Linux®:
 
@@ -290,13 +290,13 @@ När du har konfigurerat replikeringsagenten måste du [verifiera och testa att 
 
 >[!NOTE]
 >
-Standardminnesgränsen för att skapa PTIFF är 3 GB för alla arbetsflöden. Du kan till exempel bearbeta en bild som kräver 3 GB minne medan andra arbetsflöden är pausade, eller så kan du bearbeta 10 bilder parallellt som kräver 300 MB minne vardera.
+>Standardminnesgränsen för att skapa PTIFF är 3 GB för alla arbetsflöden. Du kan till exempel bearbeta en bild som kräver 3 GB minne medan andra arbetsflöden är pausade, eller så kan du bearbeta 10 bilder parallellt som kräver 300 MB minne vardera.
 >
-Minnesgränsen kan konfigureras och passar systemresursens tillgänglighet och den typ av bildinnehåll som bearbetas. Om du har många stora resurser och tillräckligt med minne i systemet kan du öka den här gränsen för att se till att bilderna bearbetas parallellt.
+>Minnesgränsen kan konfigureras och passar systemresursens tillgänglighet och den typ av bildinnehåll som bearbetas. Om du har många stora resurser och tillräckligt med minne i systemet kan du öka den här gränsen för att se till att bilderna bearbetas parallellt.
 >
-En bild som kräver mer än den maximala minnesgränsen avvisas.
+>En bild som kräver mer än den maximala minnesgränsen avvisas.
 >
-Om du vill ändra minnesgränsen för att skapa PTIFF går du till **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** och ändrar värdet för **[!UICONTROL maxMemory]**.
+>Om du vill ändra minnesgränsen för att skapa PTIFF går du till **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** och ändrar värdet för **[!UICONTROL maxMemory]**.
 
 ### Konfigurera autentisering {#setting-up-authentication}
 
@@ -320,7 +320,7 @@ Konfigurera replikeringsautentisering för författaren så att du kan replikera
 
    >[!NOTE]
    >
-   Kom ihåg lösenordet eftersom du måste ange det igen när du konfigurerar replikeringsagenten senare.
+   >Kom ihåg lösenordet eftersom du måste ange det igen när du konfigurerar replikeringsagenten senare.
 
    ![chlimage_1-508](assets/chlimage_1-508.png)
 
@@ -379,10 +379,10 @@ Replication test succeeded
 
 >[!NOTE]
 >
-Du kan även kontrollera genom att göra något av följande:
+>Du kan även kontrollera genom att göra något av följande:
 >
-* Kontrollera replikeringsloggarna för att se till att resursen är replikerad.
-* Publicera en bild. Markera bilden och välj **[!UICONTROL Viewers]** i listrutan och välj sedan en visningsförinställning. Välj **[!UICONTROL URL]**. Verifiera att bilden visas genom att kopiera och klistra in URL-sökvägen i webbläsaren.
+>* Kontrollera replikeringsloggarna för att se till att resursen är replikerad.
+>* Publicera en bild. Markera bilden och välj **[!UICONTROL Viewers]** i listrutan och välj sedan en visningsförinställning. Välj **[!UICONTROL URL]**. Verifiera att bilden visas genom att kopiera och klistra in URL-sökvägen i webbläsaren.
 >
 
 ### Felsök autentisering {#troubleshooting-authentication}
@@ -545,7 +545,7 @@ Som en del av konfigurationen måste du ange ett registrerings-ID, en URL för v
 
 >[!NOTE]
 >
-Innan du konfigurerar Dynamic Media Cloud Services måste du se till att du har konfigurerat din publiceringsinstans. Du måste också ha konfigurerat replikering innan du konfigurerar Dynamic Media Cloud Services.
+>Innan du konfigurerar Dynamic Media Cloud Services måste du se till att du har konfigurerat din publiceringsinstans. Du måste också ha konfigurerat replikering innan du konfigurerar Dynamic Media Cloud Services.
 
 **Så här konfigurerar du Dynamic Media Cloud-tjänster:**
 
@@ -686,7 +686,7 @@ Mer information finns i [Publicera förinställningar för visningsprogram](/hel
 
 >[!NOTE]
 >
-Som standard visas olika återgivningar när du väljer **[!UICONTROL Renditions]** och olika visningsförinställningar när du väljer **[!UICONTROL Viewers]** i resursens detaljvy. Du kan öka eller minska antalet som visas. Se [Öka antalet bildförinställningar som visas](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) eller [Öka antalet visningsförinställningar som visas](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Som standard visas olika återgivningar när du väljer **[!UICONTROL Renditions]** och olika visningsförinställningar när du väljer **[!UICONTROL Viewers]** i resursens detaljvy. Du kan öka eller minska antalet som visas. Se [Öka antalet bildförinställningar som visas](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) eller [Öka antalet visningsförinställningar som visas](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 ## Filtrera resurser för replikering {#filtering-assets-for-replication}
 
@@ -749,7 +749,7 @@ Om du använder Dynamic Media för (1) bildåtergivning i produktion *eller* (2)
 
 >[!NOTE]
 >
-Filter gäller för MIME-typer och kan inte vara sökvägsspecifika.
+>Filter gäller för MIME-typer och kan inte vara sökvägsspecifika.
 
 ### Ställ in resursfilter för distributioner med enbart video {#setting-up-asset-filters-for-video-only-deployments}
 
@@ -791,9 +791,9 @@ Med de här stegen konfigureras publiceringsinstansen för Experience Manager s�
 
 >[!NOTE]
 >
-Om det finns många olika filter i en författare måste varje agent ha tilldelats en annan användare. Koden granite använder en-filter-per-användarmodell. Ha alltid olika användare för varje filterinställning.
+>Om det finns många olika filter i en författare måste varje agent ha tilldelats en annan användare. Koden granite använder en-filter-per-användarmodell. Ha alltid olika användare för varje filterinställning.
 >
-Använder du mer än ett filter på en server? Ett filter för replikering som ska publiceras och ett andra filter för s7delivery. I så fall måste du se till att dessa två filter har ett annat **userId** tilldelat i noden `jcr:content`. Se bilden som följer:
+>Använder du mer än ett filter på en server? Ett filter för replikering som ska publiceras och ett andra filter för s7delivery. I så fall måste du se till att dessa två filter har ett annat **userId** tilldelat i noden `jcr:content`. Se bilden som följer:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -844,7 +844,7 @@ När du konfigurerar Dynamic Media Image Server måste du redigera paketet Adobe
 
 >[!NOTE]
 >
-Dynamic Media fungerar körklart [när det har aktiverats](#enabling-dynamic-media). Du kan dock välja att finjustera installationen genom att konfigurera Dynamic Media Image Server så att den uppfyller vissa specifikationer eller krav.
+>Dynamic Media fungerar körklart [när det har aktiverats](#enabling-dynamic-media). Du kan dock välja att finjustera installationen genom att konfigurera Dynamic Media Image Server så att den uppfyller vissa specifikationer eller krav.
 
 **Förutsättning** - *Innan* du konfigurerar Dynamic Media Image Server kontrollerar du att din virtuella dator med Windows® innehåller en installation av Microsoft® Visual C++-biblioteken. Biblioteken krävs för att köra Dynamic Media Image Server. Du kan [hämta Microsoft® Visual C++ 2010 Redistributable Package (x64) här](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
@@ -863,7 +863,7 @@ Så här konfigurerar du inställningar för Dynamic Media Image Server:
 
    >[!NOTE]
    >
-   Normalt behöver du inte ändra standardvärdena. Om du emellertid ändrar standardvärdena måste du starta om paketet för att ändringarna ska börja gälla.
+   >Normalt behöver du inte ändra standardvärdena. Om du emellertid ändrar standardvärdena måste du starta om paketet för att ändringarna ska börja gälla.
 
    | Egenskap | Standardvärde | Beskrivning |
    | --- | --- | --- |
@@ -880,7 +880,7 @@ Så här konfigurerar du inställningar för Dynamic Media Image Server:
 
    >[!NOTE]
    >
-   Dynamic Media Image Server använder sin egen diskcache för att cachelagra svar. Experience Manager HTTP-cache och Dispatcher kan inte användas för att cachelagra svar från Dynamic Media Image Server.
+   >Dynamic Media Image Server använder sin egen diskcache för att cachelagra svar. Experience Manager HTTP-cache och Dispatcher kan inte användas för att cachelagra svar från Dynamic Media Image Server.
 
    | Egenskap | Standardvärde | Beskrivning |
    |---|---|---|
@@ -939,7 +939,7 @@ I avancerade användningsfall kan en manuell konfigureringsmodifierare (`icc=`) 
 
 >[!NOTE]
 >
-Adobe standardfärgprofiler är bara tillgängliga om du har [Feature Pack 12445 från Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installerat. Alla funktionspaket och servicepaket finns på [Programdistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). I Feature Pack 12445 finns Adobe färgprofiler.
+>Adobe standardfärgprofiler är bara tillgängliga om du har [Feature Pack 12445 från Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installerat. Alla funktionspaket och servicepaket finns på [Programdistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). I Feature Pack 12445 finns Adobe färgprofiler.
 
 
 ### Installerar funktionspaket 12445 {#installing-feature-pack}
@@ -1041,7 +1041,7 @@ När du har installerat funktionspaketet konfigurerar du lämpliga standardfärg
 
 >[!NOTE]
 >
-Egenskapsnamnen är skiftlägeskänsliga och måste innehålla gemener.
+>Egenskapsnamnen är skiftlägeskänsliga och måste innehålla gemener.
 
 **Färgprofiltabell**
 
@@ -1252,23 +1252,23 @@ Se [Leverera Dynamic Media Assets](/help/assets/delivering-dynamic-media-assets.
   <tr>
    <td>Kopiera inbäddningskod för ett visningsprogram</td>
    <td><p>I dialogrutan Kopiera inbäddningskod visas ett kodfragment som liknar följande (kodexemplet är endast avsett som exempel):</p> <p><code class="code">&lt;style type="text/css"&gt;
-       #s7basiczoom_div.s7basiczoomviewer{
+       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
        width:100%;
        height:auto;
-       }
+       &rbrace;
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
        "containerId" : "s7basiczoom_div",
-       "params" : {
+       "params" : &lbrace;
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" }
-       }).init();
+       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
+       &rbrace;).init();
        &lt;/script&gt;</code></p> <p>Där <code>PUBLISHNODE</code> refererar till den vanliga Experience Manager-publiceringsnoden och <code>IMAGESERVICEPUBLISHNODE</code> refererar till bildtjänstens URL.</p> <p>Se även <a href="/help/assets/delivering-dynamic-media-assets.md">Leverera Dynamic Media Assets</a>.</p> </td>
   </tr>
  </tbody>

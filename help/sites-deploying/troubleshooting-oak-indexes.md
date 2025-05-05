@@ -114,7 +114,7 @@ Så här identifierar och korrigerar du en fast omindexeringsprocess:
 
         eller gå till [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
-   * Använd konsolläget ](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) för [oak-run.jar för att samla in information om vad som finns under noden * `/:async`*.
+   * Använd konsolläget [&#128279;](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) för oak-run.jar för att samla in information om vad som finns under noden * `/:async`*.
    * Samla in en lista med databaskontrollpunkter med `CheckpointManager` MBean:
 
       * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()

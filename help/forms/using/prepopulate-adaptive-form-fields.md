@@ -391,9 +391,11 @@ Du kan konfigurera AEM Forms-servern så att den utför datasammanfogningsåtgä
    1. Aktivera alternativet Configuration.af.clientside.datamerge.enabled.name
 * Så här aktiverar eller inaktiverar du från kommandoraden:
    * Aktivera genom att köra följande cURL-kommando:
+
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * Om du vill inaktivera kör du följande cURL-kommando:
+
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
   Om du vill dra nytta av det förifyllda datavärdet på klienten ska du uppdatera förifyllningstjänsten så att [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) och [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) returneras

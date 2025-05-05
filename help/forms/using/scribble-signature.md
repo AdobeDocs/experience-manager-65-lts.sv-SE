@@ -72,7 +72,7 @@ När du klickar på ikonen för geopositionering när du skapar klottret bäddas
 
 >[!NOTE]
 >
-I iPad är det som standard obligatoriskt att bädda in geolokaliseringsinformation.
+>I iPad är det som standard obligatoriskt att bädda in geolokaliseringsinformation.
 
 I iPad visas inte geopositioneringsikonen som standard och geopositioneringsinformationen bäddas in automatiskt när du klickar på **OK**.
 

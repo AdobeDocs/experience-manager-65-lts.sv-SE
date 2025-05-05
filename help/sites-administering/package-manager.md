@@ -205,7 +205,7 @@ Paketfilter definieras oftast när du först [skapar paketet.](#creating-a-new-p
 | URL | URL för providern | `https://wknd.site` |
 | Länk | Paketspecifik länk till en providersida | `https://wknd.site/package/` |
 | Kräver | Definierar om det finns några begränsningar när paketet installeras | **Admin** - Paketet får bara installeras med administratörsbehörighet <br>**Starta om** - AEM måste startas om efter att paketet har installerats |
-| AC-hantering | Anger hur åtkomstkontrollsinformationen som definieras i paketet hanteras när paketet importeras | **Ignorera** - Bevara ACL:er i databasen <br>**Skriv över** - Skriv över ACL:er i databasen <br>**Merge** - Sammanfoga båda uppsättningarna ACL:er <br>**MergePreserve** - Lägg samman åtkomstkontroll i innehållet med den som följer med paketet genom att lägga till åtkomstkontrollposter för objekt som inte finns i innehållet <br>**Rensa**} - Rensa åtkomstkontrollistor |
+| AC-hantering | Anger hur åtkomstkontrollsinformationen som definieras i paketet hanteras när paketet importeras | **Ignorera** - Bevara ACL:er i databasen <br>**Skriv över** - Skriv över ACL:er i databasen <br>**Merge** - Sammanfoga båda uppsättningarna ACL:er <br>**MergePreserve** - Lägg samman åtkomstkontroll i innehållet med den som följer med paketet genom att lägga till åtkomstkontrollposter för objekt som inte finns i innehållet <br>**Rensa**&rbrace; - Rensa åtkomstkontrollistor |
 
 ### Paketskärmbilder {#package-screenshots}
 

@@ -37,6 +37,7 @@ Informationsarkitekterna måste utforma frågor så att deras kanalslutpunkter k
    * På den vänstra panelen kan du skapa din fråga.
    * Resultatet visas på den högra panelen.
    * Frågeredigeraren har funktioner för kodkomplettering och snabbtangenter för att enkelt köra frågan.
+
      ![GraphiQL-redigerare](assets/graphiql.png)
 
 1. Om du utgår ifrån att den modell du skapade anropades med fälten `firstName`, `lastName` och `position` kan du skapa en enkel fråga för att hämta innehållet i innehållsfragmentet.`person`
@@ -67,6 +68,7 @@ Informationsarkitekterna måste utforma frågor så att deras kanalslutpunkter k
    * **Dokument** längst upp till höger på sidan om du vill visa sammanhangsberoende dokumentation som hjälper dig att skapa frågor som anpassar sig efter dina egna modeller.
    * **Historik** i det övre verktygsfältet om du vill visa tidigare frågor.
    * **Spara som** och **Spara** om du vill spara dina frågor. Därefter kan du visa och hämta dem från panelen **Beständiga frågor** och **Publicera**.
+
      ![GraphiQL-dokumentation](assets/graphiql-documentation.png)
 
 GraphQL möjliggör strukturerade frågor som inte bara kan rikta sig till specifika datauppsättningar eller enskilda dataobjekt, utan även kan leverera specifika element i objekten, kapslade resultat, har stöd för frågevariabler och mycket annat.

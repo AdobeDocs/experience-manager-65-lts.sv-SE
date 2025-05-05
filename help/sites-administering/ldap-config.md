@@ -244,7 +244,7 @@ Självsignerade certifikat kan användas när AEM konfigureras för autentiserin
 
 1. Kontrollera att du har ett SSL-bibliotek installerat och att det fungerar. I den här proceduren används OpenSSL som exempel.
 
-1. Skapa en anpassad OpenSSL-konfigurationsfil (cnf). Du kan göra den här konfigurationen genom att kopiera standardkonfigurationsfilen **openssl.cnf **och anpassa den. På UNIX®-system är den på `/usr/lib/ssl/openssl.cnf`
+1. Skapa en anpassad OpenSSL-konfigurationsfil (cnf). Du kan göra den här konfigurationen genom att kopiera standardkonfigurationsfilen **openssl.cnf &#x200B;** och anpassa den. På UNIX®-system är den på `/usr/lib/ssl/openssl.cnf`
 
 1. Fortsätt till att skapa certifikatutfärdarens rotnyckel genom att köra följande kommando i en terminal:
 
@@ -280,12 +280,12 @@ Om du vill aktivera felsökningsloggning måste du göra följande:
 
 * Loggnivå: Felsökning
 * Loggfil logs/ldap.log
-* Meddelandemönster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Meddelandemönster: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Loggnivå: Felsökning
 * Loggfil: logs/external.log
-* Meddelandemönster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Meddelandemönster: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Ett ord om gruppanknytning {#a-word-on-group-affiliation}

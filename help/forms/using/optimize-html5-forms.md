@@ -60,8 +60,8 @@ Apache kan kommunicera med JBoss med HTTP eller AJP-protokollet.
    >När du använder en proxy krävs följande konfigurationsändringar:
    >
    >* Åtkomst: *https://*
-   * Redigera konfigurationen för referensfiltret för Apache Sling
-   * Lägg till posten för proxyservern i Tillåt värdar
+   >* Redigera konfigurationen för referensfiltret för Apache Sling
+   >* Lägg till posten för proxyservern i Tillåt värdar
 
 1. Aktivera komprimering.
 

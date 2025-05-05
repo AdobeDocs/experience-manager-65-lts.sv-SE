@@ -116,7 +116,7 @@ Om musen till exempel befinner sig över den vänstra eller högra delen av fön
 
 >[!NOTE]
 >
-Taggar som anges för DAM-resurser som visas på de besökta sidorna räknas inte.
+>Taggar som anges för DAM-resurser som visas på de besökta sidorna räknas inte.
 
 **Technographics Store** Den här komponenten är beroende av din installation.
 
@@ -128,7 +128,7 @@ Mer information finns i [Klientkontext i detalj](/help/sites-developing/client-c
 
 >[!NOTE]
 >
-Siddata är inte längre en standardkomponent i klientkontexten. Om det behövs kan du lägga till detta genom att redigera klientkontexten, lägga till **egenskaperna för allmän lagring** och sedan konfigurera detta för att definiera **Store** som `pagedata`.
+>Siddata är inte längre en standardkomponent i klientkontexten. Om det behövs kan du lägga till detta genom att redigera klientkontexten, lägga till **egenskaperna för allmän lagring** och sedan konfigurera detta för att definiera **Store** som `pagedata`.
 
 ## Ändra klientkontextprofilen {#changing-the-client-context-profile}
 

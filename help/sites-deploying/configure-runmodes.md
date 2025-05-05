@@ -103,8 +103,8 @@ De här mapparna är av typen `nt:folder` och ska innehålla rätt paket.
 Om du har definierat konfigurationer för flera körningslägen måste du definiera vilka som ska användas vid start. Det finns flera metoder för att ange vilket körningsläge som ska användas. Upplösningsordningen är:
 
 1. [systemegenskaper (](#using-a-system-property-in-the-start-script)
-1. [](#using-the-sling-properties-file)
-1. [](#using-the-r-option)
+1. [&#128279;](#using-the-sling-properties-file)
+1. [&#128279;](#using-the-r-option)
 1. [Filnamnsidentifiering](#filename-detection-renaming-the-jar-file)
 
 När du använder en programserver kan du även [definiera körningsläget i web.xml](#defining-the-run-mode-in-web-xml-with-application-server).

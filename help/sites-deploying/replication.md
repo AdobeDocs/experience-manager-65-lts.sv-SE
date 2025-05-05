@@ -425,6 +425,7 @@ Om du vill konfigurera replikering av innehåll för ytterligare en Publish-inst
    * På fliken **Transport**:
 
       * Ange den URI som krävs för den nya Publish-instansen, till exempel
+
         `https://localhost:4504/bin/receive`.
 
       * Ange det platsspecifika användarkonto som används för replikering.
@@ -468,6 +469,7 @@ Standardagenter ingår i installationen. En viss konfiguration behövs dock fort
    * På fliken **Transport**:
 
       * Ange den URI som krävs för den nya Publish-instansen, till exempel
+
         `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Ange det platsspecifika användarkonto som används för replikering.

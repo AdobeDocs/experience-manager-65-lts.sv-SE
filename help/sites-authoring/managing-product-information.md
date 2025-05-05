@@ -194,7 +194,7 @@ Aktiviteten **Skapa lista över scenbilder** gör det möjligt för projektägar
 
    ![Visa tagningslista](assets/chlimage_1-148a.png)
 
-   Om du vill redigera befintliga data eller lägga till nya data klickar du på **Redigera** i verktygsfältet. Endast fälten **Product **och **Description** kan redigeras.
+   Om du vill redigera befintliga data eller lägga till nya data klickar du på **Redigera** i verktygsfältet. Endast fälten **Product &#x200B;** och **Description** kan redigeras.
 
    ![Redigera tagningslista](assets/chlimage_1-149a.png)
 

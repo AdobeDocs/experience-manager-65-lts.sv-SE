@@ -38,12 +38,12 @@ Beroende på vilken projektmall du väljer finns det vissa arbetsflöden:
 | Begär start | x |  |  |  |
 | Begär landningssida | x |  |  |  |
 | Begär e-post | x |  |  |  |
-| DAM - skapa språkkopia&amp;ast; |  |  |  | x |
-| DAM Skapa och översätt språkkopia&amp;ast; |  |  |  | x |
+| DAM - skapa språkkopia&ast; |  |  |  | x |
+| DAM Skapa och översätt språkkopia&ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; dessa arbetsflöden startas inte från rutan **Arbetsflöde** i Projekt. Se [Skapa språkkopior för Assets.](/help/sites-administering/tc-manage.md)
+>&ast; dessa arbetsflöden startas inte från rutan **Arbetsflöde** i Projekt. Se [Skapa språkkopior för Assets.](/help/sites-administering/tc-manage.md)
 
 Stegen för att starta och slutföra arbetsflöden är desamma oavsett vilket arbetsflöde du väljer. Bara stegen ändras.
 

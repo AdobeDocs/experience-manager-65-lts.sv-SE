@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Integrering med Adobe Sign | Hantera användardata {#integration-with-adobe-sign-handling-user-data}
 
-[!DNL AEM Forms] integreras med [!DNL  Adobe Sign] för att aktivera e-signaturarbetsflöden i adaptiva formulär för att bearbeta formulär eller avtal för arbetsflöden för juridik, försäljning, lön och personalhantering. Det möjliggör signering för en eller flera användare, sekventiella och samtidiga signeringsarbetsflöden, signering av formulär som anonyma eller inloggade användare samt flera sätt att autentisera användare.
+[!DNL AEM Forms] integreras med [!DNL &#x200B; Adobe Sign] för att aktivera e-signaturarbetsflöden i adaptiva formulär för att bearbeta formulär eller avtal för arbetsflöden för juridik, försäljning, lön och personalhantering. Det möjliggör signering för en eller flera användare, sekventiella och samtidiga signeringsarbetsflöden, signering av formulär som anonyma eller inloggade användare samt flera sätt att autentisera användare.
 
 När en eller flera signerare signerar och skickar ett anpassat formulär skapas ett [!DNL Adobe Sign]-avtal som innehåller information om signerarna.
 

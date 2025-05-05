@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Med AEM Forms kan formulärutvecklare smidigt bädda in adaptiva formulär och interaktiv kommunikation i ett AEM Sites Single Page Application (SPA). Det inbäddade adaptiva formuläret och den interaktiva kommunikationen fungerar fullt ut och användarna kan fylla i och skicka formuläret utan att behöva lämna sidan. Det hjälper användaren att hålla sig i rätt kontext för andra element på webbsidan och interagera samtidigt med det adaptiva formuläret eller den interaktiva kommunikationen.
 
-I AEM Sites Single Page Application kan du lägga till ett adaptivt formulär eller interaktiv kommunikation med komponenten [AEM Forms SPA Container](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Det är en AEM Forms-komponent för AEM Sites SPA som du kan lägga till på din Sites-sida.
+I AEM Sites Single Page Application kan du lägga till ett adaptivt formulär eller interaktiv kommunikation med komponenten [AEM Forms SPA Container](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Det är en AEM Forms-komponent för AEM Sites SPA som du kan lägga till på din Sites-sida.
 
 Mer information om hur du bäddar in ett anpassat formulär i ett annat AEM Sites än SPA finns i [Bädda in ett anpassat formulär eller interaktiv kommunikation på AEM Sites sida](/help/forms/using/embed-adaptive-form-aem-sites.md).
 

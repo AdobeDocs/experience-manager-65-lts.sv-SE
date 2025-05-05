@@ -50,7 +50,7 @@ Du kan använda flera metoder för att kontrollera mönsteravkännarens utdata:
    ![screenshot-2018-2-5pattern-Dettor](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via ett reaktivt textbaserat eller vanligt JSON-gränssnitt**
-* **Via ett reaktivt gränssnitt för JSON-rader, **som genererar ett separat JSON-dokument på varje rad.
+* **Via ett reaktivt gränssnitt för JSON-rader, &#x200B;** som genererar ett separat JSON-dokument på varje rad.
 
 Båda dessa metoder beskrivs nedan:
 

@@ -81,7 +81,7 @@ Om du vill att konsolen [!DNL Assets] ska kunna visa de sammansatta resurserna t
 
    >[!NOTE]
    >
-   >Det är bara den som har skapat resursen (den person som överför en viss resurs till [!DNL Assets]) som får ett e-postmeddelande när resursen förfaller. Mer information om hur du konfigurerar e-postmeddelanden ](/help/sites-administering/notification.md) finns i [Konfigurera e-postmeddelanden på den övergripande [!DNL Experience Manager]-nivån.
+   >Det är bara den som har skapat resursen (den person som överför en viss resurs till [!DNL Assets]) som får ett e-postmeddelande när resursen förfaller. Mer information om hur du konfigurerar e-postmeddelanden [&#128279;](/help/sites-administering/notification.md) finns i Konfigurera e-postmeddelanden på den övergripande [!DNL Experience Manager]-nivån.
 
 1. I fältet **[!UICONTROL Prior notification in seconds]** anger du tiden i sekunder innan en resurs förfaller när du vill få ett meddelande om förfallotiden. Tillgångsskaparna får ett meddelande innan resursen upphör att gälla om att resursen håller på att gå ut efter den angivna tiden. När resursen har gått ut får du ett meddelande som bekräftar att den har gått ut. Dessutom inaktiveras utgångna resurser.
 

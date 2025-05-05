@@ -43,7 +43,7 @@ Lägsta krav för Adobe Experience Manager:
 >* [AEM Forms tilläggspaket](/help/forms/using/installing-configuring-aem-forms-osgi.md) kräver 15 GB tillfälligt utrymme.
 >
 
-Mer information finns i Riktlinjer](/help/managing/hardware-sizing-guidelines.md) för [maskinvarustorlek.
+Mer information finns i Riktlinjer[&#128279;](/help/managing/hardware-sizing-guidelines.md) för maskinvarustorlek.
 
 ### Supportnivåer {#support-levels}
 

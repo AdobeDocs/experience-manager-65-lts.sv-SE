@@ -28,12 +28,14 @@ MSM registrerar flera servrar som kan begäras med väljare på resurs-URL:erna.
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Använd detta på en ritningssida för att hämta listan över alla Live-kopior som är länkade till den, med ytterligare statusinformation för Live Copy.
    * till exempel:
+
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Använd detta på Live Copy-sidor för att hämta avancerad information om deras anslutning till deras ritningssidor. Om sidan inte är en Live-kopia returneras ingenting.
    * till exempel:
+
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Dessa servrar genererar DEBUG-loggmeddelanden via loggen `com.day.cq.wcm.msm` som också kan vara till hjälp.

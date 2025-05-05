@@ -69,7 +69,7 @@ För att aktivera SSL behöver WebSphere åtkomst till ett användarkonto i det 
 1. Välj **Administrativa användarroller** under Administrativ säkerhet.
 1. Klicka på Lägg till och gör följande:
 
-   1. Skriv **&amp;ast;** i sökrutan och klicka på Sök.
+   1. Skriv **&ast;** i sökrutan och klicka på Sök.
    1. Klicka på **Administratör** under roller.
    1. Lägg till den nyskapade användaren i Mappad till roll och mappa den till Administratör.
 

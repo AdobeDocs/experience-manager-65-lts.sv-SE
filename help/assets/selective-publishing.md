@@ -268,6 +268,7 @@ Du kan använda **[!UICONTROL Timeline]** med **[!UICONTROL Card view]**, **[!UI
 När du använder **[!UICONTROL List View]** visas en extra kolumn för publiceringstillståndet **[!UICONTROL Dynamic Media]**.
    * En mapp som är konfigurerad att synkronisera till dynamiska media visar kolumnen **[!UICONTROL Dynamic Media]** som standard.
    * En mapp som är *inte* konfigurerad att synkronisera till dynamiska media visar inte kolumnen Dynamiska media.
+
      ![Listvy och tidslinje](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Felsök selektiv publicering {#selective-publish-troubleshoot}

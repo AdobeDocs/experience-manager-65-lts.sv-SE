@@ -177,5 +177,5 @@ För att förbättra prestandan kan du instruera antivirusprogrammet att uteslut
 >
 >* Om du använder en annan plats för GDS och en tillfällig katalog öppnar du AdminUI på `https://'[server]:[port]'/adminui`, går till **Hem > Inställningar > Core System Settings > Core Configurations** för att bekräfta platsen som används.
 >
-* Om AEM Forms Server fungerar långsamt även efter att de föreslagna katalogerna har utelämnats ska du även utelämna den körbara Java™-filen (java.exe).
+>* Om AEM Forms Server fungerar långsamt även efter att de föreslagna katalogerna har utelämnats ska du även utelämna den körbara Java™-filen (java.exe).
 >

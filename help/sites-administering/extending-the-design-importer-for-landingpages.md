@@ -114,7 +114,7 @@ I följande avsnitt beskrivs hur du redigerar din HTML-fil så att du konvertera
 
 Observera följande begränsningar innan du importerar:
 
-### Attribut som klass eller id som används i &amp;lt;body>-taggen bevaras inte {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Attribut som klass eller id som används i &lt;body>-taggen bevaras inte {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 Om ett attribut som id eller class tillämpas på body-taggen, till exempel `<body id="container">`, bevaras det inte efter importen. Den design som importeras bör därför inte ha några beroenden av attributen som används för taggen `<body>`.
 
@@ -470,7 +470,7 @@ Du bör inte använda CSS-väljare som liknar följande för element som är mar
 Detta beror på att ytterligare HTML-element som &lt;div>-taggen läggs till i den genererade HTML-koden efter importen.
 
 * Skript som använder en struktur som liknar den ovan rekommenderas inte heller för element som är markerade för konvertering till AEM-komponenter.
-* Du bör inte använda format i märkordstaggar för komponentkonvertering som &lt;div data-cq-component=&quot;&amp;ast;&quot;>.
+* Du bör inte använda format i märkordstaggar för komponentkonvertering som &lt;div data-cq-component=&quot;&ast;&quot;>.
 * Designlayouten bör följa vedertagna standarder från HTML5 Boilerplate. Läs mer på: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Konfigurerar OSGI-moduler {#configuring-osgi-modules}
@@ -531,7 +531,7 @@ Tabellen nedan beskriver kortfattat egenskaperna:
 >
 >Om standardkonfigurationen till exempel är
 >
->>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Och du måste ersätta `CQ_DESIGN_PATH` med `VIPURL` i sökmönstret, så ska sökmönstret se ut så här:
 >

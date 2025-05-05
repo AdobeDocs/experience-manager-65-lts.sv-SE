@@ -38,7 +38,7 @@ Följ de här stegen för att anpassa standardprogramikonen och startbilden för
 #### För iOS {#for-ios}
 
 1. Öppna projektet `Capture.xcodeproj` i Xcode.
-1. (***Navigera till **[!UICONTROL Capture > Capture > Supporting Files > Capture-info.plist]**om du vill anpassa ikonen***) i navigeringsvyn i Capture. Klicka på listrutan bredvid ikonfilerna. Ange namnet på ikonfilen (.png) och överför filen på **[!UICONTROL Capture > Capture > Resources > icons]**. De dimensioner som stöds för närvarande är: 29 × 29, 50 × 50, 58 × 58, 72 × 72, 100 × 100 och 144 × 144.
+1. (***Navigera till &#x200B;** [!UICONTROL Capture > Capture > Supporting Files > Capture-info.plist]&#x200B;**om du vill anpassa ikonen***) i navigeringsvyn i Capture. Klicka på listrutan bredvid ikonfilerna. Ange namnet på ikonfilen (.png) och överför filen på **[!UICONTROL Capture > Capture > Resources > icons]**. De dimensioner som stöds för närvarande är: 29 × 29, 50 × 50, 58 × 58, 72 × 72, 100 × 100 och 144 × 144.
 1. (***För anpassning av startbilder***) Kontrollera att filnamnen för dina bilder är:
 
    * För stående: `Default-Portrait~ipad.png` och `Default-Portrait@2x~ipad.png`

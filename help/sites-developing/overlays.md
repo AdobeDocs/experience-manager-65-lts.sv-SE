@@ -63,7 +63,7 @@ Sedan AEM 6.0 har ändringar gjorts i hur övertäckningar implementeras och anv
 
 Övertäckningar rekommenderas för många ändringar, till exempel [konfigurera konsoler](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) eller [skapa din markeringskategori för resursläsaren på sidpanelen](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (används vid redigering av sidor). De krävs enligt följande:
 
-* ***Gör inte* ändringar i `/libs`-grenen **Alla ändringar du gör kan gå förlorade eftersom den här grenen kan ändras när du:
+* ***Gör inte* ändringar i `/libs`-grenen &#x200B;** Alla ändringar du gör kan gå förlorade eftersom den här grenen kan ändras när du:
 
    * uppgradera till din instans
    * tillämpa en snabbkorrigering

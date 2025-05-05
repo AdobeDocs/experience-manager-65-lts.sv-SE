@@ -88,11 +88,11 @@ Forms Portal innehåller en syntax för platshållare som kan visa anpassade/fä
 
 Om du vill ta med en repeterbar post konfigurerar du värdet för attributet **data-repetable** till **true**.
 
-*I exemplet som behandlas finns två Div-element högst upp i den anpassade mallen. Den första, med CSS-klassen&quot;__FP_boxes-container&quot;, fungerar som ett behållarelement för de formulär som visas. Den andra, med CSS-klassen&quot;__FP_boxes&quot;, är en mall för de grundläggande entiteterna, i det här fallet ett formulär. Attributet **data-repetable**i Div-elementet har värdet **true**.*
+*I exemplet som behandlas finns två Div-element högst upp i den anpassade mallen. Den första, med CSS-klassen&quot;__FP_boxes-container&quot;, fungerar som ett behållarelement för de formulär som visas. Den andra, med CSS-klassen&quot;__FP_boxes&quot;, är en mall för de grundläggande entiteterna, i det här fallet ett formulär. Attributet **data-repetable**&#x200B;i Div-elementet har värdet **true**.*
 
 Varje platshållare har en exklusiv metadatauppsättning som är färdig att användas. Om du vill visa anpassade metadata på en viss plats i formuläret lägger du till egenskapen **${metadata_prop}** på platsen.
 
-*I exemplet används metadataegenskapen i flera instanser. Den används t.ex. i **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**och **path**på föreskrivet sätt.*
+*I exemplet används metadataegenskapen i flera instanser. Den används t.ex. i **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;och **path**&#x200B;på föreskrivet sätt.*
 
 ## Metadata utanför kartongen {#out-of-the-box-metadata}
 

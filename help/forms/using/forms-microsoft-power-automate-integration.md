@@ -22,7 +22,7 @@ Du kan konfigurera ett adaptivt formulär så att det kör ett Microsoft® Power
 * Utför komplexa beräkningar på inhämtade data
 * Spara adaptiva Forms-data i lagringssystemen enligt ett fördefinierat schema
 
-Den adaptiva Forms-redigeraren tillhandahåller **Anropa ett Microsoft® Power Automate-flöde** för att skicka adaptiva formulärdata, bilagor och arkivdokument som skickas till Power Automate Cloud Flow. Om du vill använda åtgärden Skicka för att skicka hämtade data till Microsoft® Power Automate [ansluter du din instans av AEM Forms Author med Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+Den adaptiva Forms-redigeraren tillhandahåller **Anropa ett Microsoft® Power Automate-flöde** för att skicka adaptiva formulärdata, bilagor och arkivdokument som skickas till Power Automate Cloud Flow. Om du vill använda åtgärden Skicka för att skicka hämtade data till Microsoft® Power Automate [ansluter du din instans av AEM Forms Author med Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
 
 ## Förutsättningar
 

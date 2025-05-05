@@ -226,6 +226,7 @@ Om du tar bort den bild som Experience Manager använder som miniatyrbild genom 
    * Om du vill ta bort en resurs markerar du den och väljer **[!UICONTROL Delete Asset]**.
    * Om du vill använda en förinställning väljer du förinställningsikonen och väljer en förinställning.
    * Om du vill ta bort en hel snurruppsättning går du till snurra-uppsättningen, markerar den och väljer **[!UICONTROL Delete]**
+
    >[!NOTE]
    >
    >Du kan redigera bilderna i en snurruppsättning genom att navigera till uppsättningen, markera **[!UICONTROL Set Members]** i den vänstra listen och sedan välja pennikonen på en enskild resurs för att öppna redigeringsfönstret.

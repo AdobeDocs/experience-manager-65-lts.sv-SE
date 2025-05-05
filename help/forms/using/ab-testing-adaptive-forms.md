@@ -109,7 +109,7 @@ Du kan välja målgrupp när du konfigurerar A/B-testning för ett formulär, vi
 1. Klicka på verktyget **Markera** i verktygsfältet och välj det anpassade formuläret.
 1. Klicka på **Mer** i verktygsfältet och välj **Konfigurera A/B-testning**. Sidan Konfigurera A/B-testning öppnas.
 
-[](assets/ab-test-configure-1.png)
+[&#128279;](assets/ab-test-configure-1.png)
 
 1. Ange ett **aktivitetsnamn** för A/B-testet.
 
@@ -153,7 +153,7 @@ Så här visar och analyserar du A/B-testrapporten:
 
 1. Markera det adaptiva formuläret, klicka på **Mer** och sedan på **A/B-testrapport**. Rapporten visas.
 
-[](assets/ab-test-report-3.png)
+[&#128279;](assets/ab-test-report-3.png)
 
 1. Analysera rapporten och se om ni har tillräckligt många datapunkter för att kunna deklarera en av de mest framgångsrika upplevelserna som en vinnare. Du kan välja att fortsätta med samma A/B-test längre eller deklarera en vinnare och avsluta A/B-testet.
 1. Om du vill deklarera en vinnare och avsluta A/B-testet klickar du på knappen **End A/B test** på kontrollpanelen för rapporter. En dialogruta uppmanar dig att deklarera en av de två upplevelserna som vinnare. Välj en vinnare och bekräfta att du vill avsluta A/B-testet.

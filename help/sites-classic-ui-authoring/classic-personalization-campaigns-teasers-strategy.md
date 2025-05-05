@@ -111,7 +111,7 @@ Och vi använder följande definitioner av teaser:
 
 Om vi sedan tillämpar detta på en besökare där:
 
-* **S1**, **S2 och **S6** har matchats
+* **S1**, **S2 och &#x200B;** S6** har matchats
 
 * taggen **marketing** har tre träffar
 * taggen **business** har sex träffar

@@ -44,6 +44,7 @@ En kampanj är en samling individuella **upplevelser** .
 Det fokuserade innehållet utgör de olika upplevelserna, som presenteras för besökaren vid **Touchpoints** . Det finns flera olika typer av upplevelser:
 
    * **Lärare**
+
      [Teaser Pages/Paragraphs](#teasers) används för att styra specifika besökare **Segments** till innehåll som är inriktat på deras intressen.
 
      Teaser pages can:

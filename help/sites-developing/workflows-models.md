@@ -415,6 +415,7 @@ Så här definierar du en OR-regel:
    * Definiera detta som **standardflöde** genom att ange **värde** till `true`.
 
    * Ange sökvägen till skriptet som **Regel**. Till exempel:
+
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -424,6 +425,7 @@ Så här definierar du en OR-regel:
 1. Redigera egenskaperna för **grenen** i **ELLER Dela**.
 
    * Ange sökvägen till det andra skriptet som **Regel**. Till exempel:
+
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Ange egenskaperna för de enskilda stegen i varje gren. Kontrollera att **Användare/grupp** har angetts.

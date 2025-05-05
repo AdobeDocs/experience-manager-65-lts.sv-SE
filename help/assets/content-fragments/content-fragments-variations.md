@@ -468,7 +468,7 @@ När du redigerar en variant har du tillgång till åtgärden för att synkronis
 
 >[!CAUTION]
 >
->Synkronisering är bara tillgängligt för att kopiera ändringar *från **mastern**till varianten*.
+>Synkronisering är bara tillgängligt för att kopiera ändringar *från **mastern**&#x200B;till varianten*.
 >
 >Endast varianternas aktuella element synkroniseras.
 >

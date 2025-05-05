@@ -240,7 +240,7 @@ Inom schemat finns det enskilda fält av två baskategorier:
 
 * Fält som du genererar.
 
-  Ett urval av [datatyper](#data-types) används för att skapa fält baserat på hur du konfigurerar innehållsfragmentmodellen. Fältnamnen hämtas från fältet **Egenskapsnamn** i datatypen ****.
+  Ett urval av [datatyper](#data-types) används för att skapa fält baserat på hur du konfigurerar innehållsfragmentmodellen. Fältnamnen hämtas från fältet **Egenskapsnamn** i datatypen **&#x200B;**.
 
    * Det finns även inställningen **Återge som** att ta hänsyn till, eftersom användare kan konfigurera vissa datatyper. Ett textfält med en rad kan till exempel konfigureras att innehålla flera enkelradiga texter genom att välja `multifield` i listrutan.
 

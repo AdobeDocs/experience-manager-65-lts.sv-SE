@@ -204,7 +204,7 @@ Du har konfigurerat Externalizer och Adobe Campaign kan nu komma åt ditt inneh�
 
 >[!NOTE]
 >
-Publiceringsinstansen måste kunna nås från Adobe Campaign-servern. Om den pekar på `localhost:4503` eller en annan server som Adobe Campaign inte kan nå visas inte bilder från AEM i Adobe Campaign-konsolen.
+>Publiceringsinstansen måste kunna nås från Adobe Campaign-servern. Om den pekar på `localhost:4503` eller en annan server som Adobe Campaign inte kan nå visas inte bilder från AEM i Adobe Campaign-konsolen.
 
 ## Konfigurera kampanjfjärranvändare i AEM {#configure-user}
 

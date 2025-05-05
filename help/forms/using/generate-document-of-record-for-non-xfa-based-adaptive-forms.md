@@ -412,6 +412,7 @@ Mer information om hur du använder sidbrytningar och använder flera mallsidor 
 
 * **[!UICONTROL BASIC]**
    * **Mall:** Du kan välja mallen Standard eller Egen.
+
      ![Alt-text](image.png)
    * **Dekorfärg:** Du kan fördefiniera mallfärgen för [!UICONTROL Document of Record].
    * **Teckensnittsfamilj:** Välj teckensnittstyp för [!UICONTROL Document of Record]-texterna.
@@ -424,6 +425,7 @@ Mer information om hur du använder sidbrytningar och använder flera mallsidor 
       * Lodrätt
       * Vågrät
       * Samma som adaptiv form
+
      >[!NOTE]
      > Lodrät och vågrät justering gäller endast för     Alternativknapp och kryssruta
 * **[!UICONTROL MASTER PAGE PROPERTIES]** Klicka för mer information om [Mallsidesegenskaper](#master-page-properties-master-page-properties)

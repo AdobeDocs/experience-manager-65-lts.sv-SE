@@ -95,7 +95,7 @@ Du kan konfigurera AEM-användarprofil med hjälp av konfigurationen för använ
 
 >[!NOTE]
 >
-Konfiguration för molntjänstmappen krävs för konfigurering av molntjänster för RESTful-, SOAP- och OData-tjänster.
+>Konfiguration för molntjänstmappen krävs för konfigurering av molntjänster för RESTful-, SOAP- och OData-tjänster.
 
 Alla molntjänstkonfigurationer i AEM konsolideras i mappen `/conf` i AEM-databasen. Mappen `conf` innehåller som standard mappen `global` där du kan skapa molntjänstkonfigurationer. Du måste dock manuellt aktivera den för molnkonfigurationer. Du kan också skapa ytterligare mappar i `conf` för att skapa och organisera molntjänstkonfigurationer.
 
@@ -193,8 +193,8 @@ En OData-tjänst identifieras av tjänstens rot-URL. Om du vill konfigurera en O
 
 >[!NOTE]
 >
-Formulärdatamodellen stöder [OData version 4](https://www.odata.org/documentation/).
-Stegvisa anvisningar om hur du konfigurerar Microsoft Dynamics 365, online eller lokalt, finns i [Microsoft Dynamics OData Configuration](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Formulärdatamodellen stöder [OData version 4](https://www.odata.org/documentation/).
+>Stegvisa anvisningar om hur du konfigurerar Microsoft Dynamics 365, online eller lokalt, finns i [Microsoft Dynamics OData Configuration](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Gå till **[!UICONTROL Tools > Cloud Services > Data Sources]**. Välj den mapp där du vill skapa en molnkonfiguration.
 
@@ -208,7 +208,7 @@ Stegvisa anvisningar om hur du konfigurerar Microsoft Dynamics 365, online eller
 
    >[!NOTE]
    >
-   Välj autentiseringstypen OAuth 2.0 om du vill ansluta till Microsoft Dynamics-tjänster med OData-slutpunkten som tjänstrot.
+   >Välj autentiseringstypen OAuth 2.0 om du vill ansluta till Microsoft Dynamics-tjänster med OData-slutpunkten som tjänstrot.
 
 1. Välj **Skapa** om du vill skapa molnkonfigurationen för OData-tjänsten.
 

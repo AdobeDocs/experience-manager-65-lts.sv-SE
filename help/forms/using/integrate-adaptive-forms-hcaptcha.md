@@ -55,8 +55,10 @@ Så här integrerar du AEM Forms med tjänsten Captcha®:
 
 1. Konfigurera dina molntjänster:
    1. Gå till ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** och klicka på **[!UICONTROL hCaptcha®]** i AEM-författarinstansen.
+
       ![hCaptcha® i ui](assets/hcaptcha-in-ui.png)
    1. Välj en konfigurationsbehållare, skapad eller uppdaterad, enligt beskrivningen i föregående avsnitt. Välj **[!UICONTROL Create]**.
+
       ![Configuration Captcha®](assets/config-hcaptcha.png)
    1. Ange **[!UICONTROL Title]**, <!--**[!UICONTROL Name]**--> **[!UICONTROL Site Key]** och **[!UICONTROL Secret Key]** för hCaptcha®-tjänsten [ som hämtats i Förutsättning](#prerequisite).
    1. Klicka på **[!UICONTROL Create]**.
@@ -90,6 +92,7 @@ Så här integrerar du AEM Forms med tjänsten Captcha®:
    * **[!UICONTROL Validation Message]:** Ange ett valideringsmeddelande för din Captcha-validering när formulär skickas eller när en användaråtgärd utförs.
    * **[!UICONTROL Captcha Service]:** Välj CAPTCHA-tjänsten för att skicka formulär, här väljer du hCaptcha®.
    * **[!UICONTROL Configuration Settings]:** Välj din molnkonfiguration som är konfigurerad för hCaptcha®.
+
      >[!NOTE]
      >Du kan ha flera molnkonfigurationer i din miljö i liknande syfte. Välj tjänsten noggrant. Om ingen tjänst finns med i listan kan du läsa [Koppla din AEM Forms-miljö till hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service) för att lära dig hur du skapar en Cloud Service som ansluter din AEM Forms-miljö till hCaptcha®-tjänsten.
 

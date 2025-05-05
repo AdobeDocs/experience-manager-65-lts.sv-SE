@@ -47,7 +47,7 @@ När agenten förbereder den interaktiva kommunikationen med hjälp av agentgrä
 
 ### Ange data {#enter-data}
 
-1. På fliken Data anger du data för variabler, formulärdatamodegenskaper och utskriftsmallfält (XDP) efter behov. Fyll i alla obligatoriska fält som är markerade med en asterisk (&amp;ast;) för att aktivera knappen **Skicka**.
+1. På fliken Data anger du data för variabler, formulärdatamodegenskaper och utskriftsmallfält (XDP) efter behov. Fyll i alla obligatoriska fält som är markerade med en asterisk (&ast;) för att aktivera knappen **Skicka**.
 
    Markera ett datafältvärde i förhandsvisningen av interaktiv kommunikation om du vill markera motsvarande datafält på fliken Data eller omvänt.
 

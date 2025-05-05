@@ -212,7 +212,7 @@ Tillsammans med standardfunktionerna kan du:
       * typ: `String[]`
       * värde: en lista med underordnade noder (enligt definition i `/libs`) som ska döljas/ignoreras
 
-      Jokertecknet &amp;ast; kan användas för att dölja/ignorera alla underordnade noder.
+      Jokertecknet &ast; kan användas för att dölja/ignorera alla underordnade noder.
 
 * **Ändra ordning på noder**
 

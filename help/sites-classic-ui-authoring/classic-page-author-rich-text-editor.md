@@ -57,7 +57,7 @@ För närvarande är läget Redigering på plats aktiverat för sidelement som g
 
 ## Funktioner i RTF-redigeraren {#features-of-the-rich-text-editor}
 
-I RTF-redigeraren finns ett antal funktioner, som är beroende av konfigurationen ](/help/sites-administering/rich-text-editor.md) för den enskilda komponenten. [ Funktionerna är tillgängliga för både pekoptimerade och klassiska användargränssnitt.
+I RTF-redigeraren finns ett antal funktioner, som är beroende av konfigurationen [&#128279;](/help/sites-administering/rich-text-editor.md) för den enskilda komponenten.  Funktionerna är tillgängliga för både pekoptimerade och klassiska användargränssnitt.
 
 ### Grundläggande teckenformat {#basic-character-formats}
 

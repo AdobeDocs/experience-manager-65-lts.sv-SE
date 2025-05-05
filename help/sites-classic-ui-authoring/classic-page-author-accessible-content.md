@@ -47,7 +47,7 @@ Riktlinjerna är indelade i tre överensstämmelsenivåer: Nivå A (lägsta), Ni
 
 När du skapar din webbplats bör du bestämma den övergripande nivån som du vill att din plats ska anpassas efter.
 
-I följande avsnitt visas [WCAG 2.0-riktlinjerna](https://www.w3.org/TR/WCAG20/#guidelines) med relaterade kriterier för att lyckas med överensstämmelsenivåerna Nivå A och Nivå AA [](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
+I följande avsnitt visas [WCAG 2.0-riktlinjerna](https://www.w3.org/TR/WCAG20/#guidelines) med relaterade kriterier för att lyckas med överensstämmelsenivåerna Nivå A och Nivå AA [&#128279;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
 >[!NOTE]
 >
@@ -409,9 +409,9 @@ Se till att webbsidorna får rätt struktur genom att:
   >RTE i en standardinstallation av AEM är konfigurerad att använda:
   >
   >* &lt;b> för &lt;strong>
-  * &lt;i> för &lt;em>
+  >* &lt;i> för &lt;em>
   >
-  De är i själva verket samma, men &lt;strong> och &lt;em> är att föredra eftersom de är semantiskt korrekta i html. Utvecklingsteamet kan konfigurera RTE så att den använder &lt;strong> och &lt;em> (i stället för &lt;b> och &lt;i>) när du utvecklar projektinstansen.
+  >De är i själva verket samma, men &lt;strong> och &lt;em> är att föredra eftersom de är semantiskt korrekta i html. Utvecklingsteamet kan konfigurera RTE så att den använder &lt;strong> och &lt;em> (i stället för &lt;b> och &lt;i>) när du utvecklar projektinstansen.
 
 * **Använd listor**: Du kan använda HTML för att ange tre olika typer av listor:
 
@@ -427,7 +427,7 @@ Se till att webbsidorna får rätt struktur genom att:
 
   >[!NOTE]
   >
-  Elementet `<dl>` stöds inte av RTE.
+  >Elementet `<dl>` stöds inte av RTE.
 
 * **Använd tabeller**:
 
@@ -440,7 +440,7 @@ Se till att webbsidorna får rätt struktur genom att:
 
   >[!NOTE]
   >
-  Tabeller ska realiseras med komponenten **Table**. Även om tabeller kan skapas i Text-komponenten rekommenderas inte detta.
+  >Tabeller ska realiseras med komponenten **Table**. Även om tabeller kan skapas i Text-komponenten rekommenderas inte detta.
 
   Tillgängliga tabeller använder dessutom följande element och attribut:
 
@@ -450,7 +450,7 @@ Se till att webbsidorna får rätt struktur genom att:
 
   >[!NOTE]
   >
-  Som standard är dessa element och attribut inte direkt tillgängliga, men det är möjligt för systemadministratören att lägga till stöd för dessa värden i dialogrutan **Tabellegenskaper** (se [Lägga till stöd för ytterligare HTML Elements och attribut](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >Som standard är dessa element och attribut inte direkt tillgängliga, men det är möjligt för systemadministratören att lägga till stöd för dessa värden i dialogrutan **Tabellegenskaper** (se [Lägga till stöd för ytterligare HTML Elements och attribut](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
   När du lägger till en **tabell** kan du konfigurera **tabellegenskaper** med hjälp av dialogrutan.
 
@@ -469,11 +469,11 @@ Se till att webbsidorna får rätt struktur genom att:
 
   >[!NOTE]
   >
-  Attributet id är inte tillgängligt i en körklar installation. Den kan aktiveras genom att konfigurera HTML-regler och serialiseraren i textredigeraren.
+  >Attributet id är inte tillgängligt i en körklar installation. Den kan aktiveras genom att konfigurera HTML-regler och serialiseraren i textredigeraren.
 
   >[!NOTE]
   >
-  Tabeller ska realiseras med komponenten **Table**. Även om tabeller kan skapas i Text-komponenten rekommenderas inte detta.
+  >Tabeller ska realiseras med komponenten **Table**. Även om tabeller kan skapas i Text-komponenten rekommenderas inte detta.
 
   ```xml
   <table>
@@ -506,7 +506,7 @@ Se till att webbsidorna får rätt struktur genom att:
 
   >[!NOTE]
   >
-  Den här funktionen är inte omedelbart tillgänglig i en standardinstallation. Det kräver konfigurering av RTE; HTML-regler och serialisering.
+  >Den här funktionen är inte omedelbart tillgänglig i en standardinstallation. Det kräver konfigurering av RTE; HTML-regler och serialisering.
 
 #### Mer information - Info och relationer (1.3.1) {#more-information-info-and-relationships}
 
@@ -527,7 +527,7 @@ På samma sätt innebär information som kräver att man skiljer mellan olika lj
 
 >[!NOTE]
 >
-Mer information om krav för alternativ till färg finns i [Användning av färg](#use-of-color).
+>Mer information om krav för alternativ till färg finns i [Användning av färg](#use-of-color).
 
 #### Hur man uppfyller kraven - sensoriska egenskaper (1.3.3) {#how-to-meet-sensory-characteristics}
 
@@ -538,7 +538,7 @@ Se till att all information som bygger på visuella egenskaper för sidinnehåll
 
 >[!NOTE]
 >
-Beskrivande termer får användas om de anses ha betydelse i ett icke-visuellt sammanhang. Om du till exempel använder *ovan* och *nedan* skulle det i allmänhet vara acceptabelt, eftersom de innebär innehåll före och efter ett visst innehållsobjekt. Det skulle fortfarande verka vettigt när innehållet talas högt.
+>Beskrivande termer får användas om de anses ha betydelse i ett icke-visuellt sammanhang. Om du till exempel använder *ovan* och *nedan* skulle det i allmänhet vara acceptabelt, eftersom de innebär innehåll före och efter ett visst innehållsobjekt. Det skulle fortfarande verka vettigt när innehållet talas högt.
 
 #### Mer information - Sensoriska egenskaper (1.3.3) {#more-information-sensory-characteristics}
 
@@ -557,7 +557,7 @@ Beskrivande termer får användas om de anses ha betydelse i ett icke-visuellt s
 
 >[!NOTE]
 >
-Detta kriterium gäller specifikt färguppfattningen. Andra former av uppfattningar beskrivs i [Anpassningsbar (1.3)](#adaptable), inklusive programmatisk åtkomst till färg och annan visuell presentationskodning.
+>Detta kriterium gäller specifikt färguppfattningen. Andra former av uppfattningar beskrivs i [Anpassningsbar (1.3)](#adaptable), inklusive programmatisk åtkomst till färg och annan visuell presentationskodning.
 
 #### Syfte - Användning av färg (1.4.1) {#purpose-use-of-color}
 
@@ -621,7 +621,7 @@ Personer med vissa nedsatt syn kanske inte kan skilja mellan vissa färgpar med 
 
 >[!NOTE]
 >
-Text som endast används för dekorationsändamål ingår inte i detta kriterium.
+>Text som endast används för dekorationsändamål ingår inte i detta kriterium.
 
 #### Hur man klarar - Kontrast (minimum) (1.4.3) {#how-to-meet-contrast-minimum}
 
@@ -653,7 +653,7 @@ Om det inte går att följa de rekommenderade kontrastnivåerna skapar du en lä
 
 >[!NOTE]
 >
-Logotyper (text som är en del av en logotyp eller ett varumärkesnamn) anses vara viktiga.
+>Logotyper (text som är en del av en logotyp eller ett varumärkesnamn) anses vara viktiga.
 
 #### Syfte - Textbilder (1.4.5) {#purpose-images-of-text}
 
@@ -726,7 +726,7 @@ Beroende på innehållets natur kan du använda ett eller flera av följande fö
 
 >[!NOTE]
 >
-Eftersom innehåll som inte uppfyller detta kriterium kan påverka användarens förmåga att använda hela sidan, måste allt innehåll på webbsidan (vare sig det används för att uppfylla andra kriterier för framgång eller inte) uppfylla detta kriterium. Se [Krav på överensstämmelse 5: Störning](https://www.w3.org/TR/WCAG20/#cc5).
+>Eftersom innehåll som inte uppfyller detta kriterium kan påverka användarens förmåga att använda hela sidan, måste allt innehåll på webbsidan (vare sig det används för att uppfylla andra kriterier för framgång eller inte) uppfylla detta kriterium. Se [Krav på överensstämmelse 5: Störning](https://www.w3.org/TR/WCAG20/#cc5).
 
 #### Syfte - Tre blinkningar eller under tröskelvärde (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -742,7 +742,7 @@ Se till att följande tekniker används:
 #### Mer information - tre blinkningar eller under tröskelvärde (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
 * [Förstå villkor för slutförande 2.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
-* [Så här uppfyller du villkor för att lyckas {2.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
+* [Så här uppfyller du villkor för att lyckas &lbrace;2.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
 
 ### Sida med rubriker (2.4.2)  {#page-titled}
 
@@ -812,7 +812,7 @@ John Smith's publications
 
 >[!NOTE]
 >
-Ovanstående kodutdrag är en illustration. Du bör använda komponenten **Bild**.
+>Ovanstående kodutdrag är en illustration. Du bör använda komponenten **Bild**.
 
 Även om det är tillrådligt att ange länktext som identifierar länkens syfte utan att behöva ha ytterligare kontext, är det inte alltid möjligt. Kontextfria länkar kan användas i följande fall, varav HTML-exempel finns i [Så här uppfyller du kriterium 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
 
@@ -898,7 +898,7 @@ Attributet `lang` kan användas för att identifiera ändringar i innehållsspr�
 
 >[!NOTE]
 >
-Blockcitattecken stöds inte i en körklar instans. En anpassad komponent kan utvecklas som stöd för funktionen.
+>Blockcitattecken stöds inte i en körklar instans. En anpassad komponent kan utvecklas som stöd för funktionen.
 
 På samma sätt kan webbläsaren återge ett ovanligt låneord eller en ovanlig fras korrekt om elementet `span` används enligt följande:
 
@@ -908,7 +908,7 @@ På samma sätt kan webbläsaren återge ett ovanligt låneord eller en ovanlig 
 
 >[!NOTE]
 >
-Det är inte nödvändigt att följa detta kriterium när namn eller städer på olika språk inkluderas, eller när du använder låneord eller fraser som har blivit vanliga på standardspråket (till exempel *schadenfreude* på engelska).
+>Det är inte nödvändigt att följa detta kriterium när namn eller städer på olika språk inkluderas, eller när du använder låneord eller fraser som har blivit vanliga på standardspråket (till exempel *schadenfreude* på engelska).
 
 Om du vill lägga till intervallelementet med ett lämpligt språk kan du redigera din HTML-kod manuellt i källredigeringsläget för textredigeraren så att den läses som ovan. Alternativt kan attributet `lang` inkluderas i textredigeringsfilen av en systemadministratör (se [Lägga till stöd för ytterligare HTML Elements och attribut](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 

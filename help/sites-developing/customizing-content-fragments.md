@@ -82,6 +82,7 @@ Innehållsfragment med strukturerat innehåll (d.v.s. baserat på en innehållsf
 * Allt innehåll lagras under resursens `jcr:content/data`-nod:
 
    * Elementdata lagras under huvudundernoden:
+
      `jcr:content/data/master`
 
    * Variationer lagras under en undernod som har variantens namn:

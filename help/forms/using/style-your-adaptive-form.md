@@ -479,7 +479,7 @@ Du kan använda olika teckensnitt för att utforma ett anpassat formulär. Alla 
 9. Gå till den nyligen skapade mappen `clientlibs` och lägg till egenskaperna `allowProxy` och `categories`.
 10. Navigera till `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` och skapa en css-mapp.
 11. Gå till den skapade CSS-mappen och skapa en fil. Skapa till exempel en fil som `fonts.css` och klistra in inbäddningskoden tillsammans med URL:en.
-   ![Mappstruktur](/help/forms/using/assets/fonts-add-in-crxde.png)
+    ![Mappstruktur](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Spara ändringarna.
 
 >[!NOTE]

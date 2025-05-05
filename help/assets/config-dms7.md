@@ -115,6 +115,7 @@ Mer information finns i [Installera funktionspaket 18912 för migrering av grupp
 1. Ange följande när anslutningen lyckas. Rubriker med asterisk (*) krävs:
 
    * **[!UICONTROL Company]** - namnet på Dynamic Media-kontot.
+
      >[!IMPORTANT]
      >
      >Endast en dynamisk mediekonfiguration i molntjänster stöds i en instans av Experience Manager. Lägg inte till mer än en konfiguration. Flera dynamiska mediekonfigurationer i en Experience Manager-instans stöds _inte_ eller rekommenderas av Adobe.
@@ -141,7 +142,7 @@ Om du inte har en särskild lösning för att använda ditt företags server ell
    * **[!UICONTROL Dynamic Media sync mode]**
       * **[!UICONTROL Enabled by default]** - Konfigurationen används som standard på alla mappar, såvida du inte markerar en mapp som är specifikt för undantag. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabled by default]** - Konfigurationen tillämpas inte på någon mapp förrän du uttryckligen markerar en markerad mapp för synkronisering till Dynamic Media.
-Om du vill markera en markerad mapp för synkronisering till dynamiska media väljer du en resursmapp och sedan **[!UICONTROL Properties]** i verktygsfältet. På fliken **[!UICONTROL Details]** i listrutan **[!UICONTROL Dynamic Media sync mode]** väljer du bland följande tre alternativ. Välj **[!UICONTROL Save]** när du är klar. *Kom ihåg: dessa tre alternativ är inte tillgängliga om du valde **[!UICONTROL Sync all content]**tidigare.* Se även [Arbeta med selektiv publicering på mappnivå i Dynamic Media](/help/assets/selective-publishing.md).
+Om du vill markera en markerad mapp för synkronisering till dynamiska media väljer du en resursmapp och sedan **[!UICONTROL Properties]** i verktygsfältet. På fliken **[!UICONTROL Details]** i listrutan **[!UICONTROL Dynamic Media sync mode]** väljer du bland följande tre alternativ. Välj **[!UICONTROL Save]** när du är klar. *Kom ihåg: dessa tre alternativ är inte tillgängliga om du valde **[!UICONTROL Sync all content]**&#x200B;tidigare.* Se även [Arbeta med selektiv publicering på mappnivå i Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Inherited]** - Inget explicit synkroniseringsvärde för mappen. I stället ärver mappen synkroniseringsvärdet från en av dess överordnade mappar eller standardläget i molnkonfigurationen. Detaljerad status för ärvda program via ett verktygstips.
          * **[!UICONTROL Enable for subfolders]** - Inkludera allt i det här underträdet för synkronisering till dynamiska media. De mappspecifika inställningarna åsidosätter standardläget i molnkonfigurationen.
          * **[!UICONTROL Disabled for subfolders]** - Uteslut allt i det här underträdet från synkronisering till Dynamic Media.

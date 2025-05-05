@@ -26,7 +26,7 @@ Funktionen för transaktionsrapporter är tillgänglig som en del av AEM-tilläg
 * Aktivera omvänd replikering för alla publiceringsinstanser
 * Aktivera transaktionsrapporter
 * Ange rättigheter för att visa en transaktionsrapport
-* (Valfritt) Konfigurera tömningsperiod och utkorgar för transaktioner [](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* (Valfritt) Konfigurera tömningsperiod och utkorgar för transaktioner [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >

@@ -111,7 +111,7 @@ I följande lista visas egenskaperna så som de visas i webbkonsolen, följt av 
 * **Bra komponenter**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Beskrivning**: En lista över komponenter som du vill ska påverkas av kommandona Ångra och Gör om. Lägg till komponentsökvägar i den här listan när de fungerar korrekt med ångra/gör om. Lägg till en asterisk (&amp;ast;) för att ange en grupp komponenter:
+   * **Beskrivning**: En lista över komponenter som du vill ska påverkas av kommandona Ångra och Gör om. Lägg till komponentsökvägar i den här listan när de fungerar korrekt med ångra/gör om. Lägg till en asterisk (&ast;) för att ange en grupp komponenter:
 
       * Följande värde anger den grundläggande textkomponenten:
 

@@ -90,7 +90,7 @@ Listan med synliga användare och grupper är synlig för principuppsättningens
 
 1. När du har installerat och konfigurerat din AEM-formulärmiljö med dokumentsäkerhet konfigurerar du alla lämpliga domäner i Användarhantering. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***Obs!**Du måste skapa domäner innan du kan skapa profiler.*
+   ***Obs!**&#x200B;Du måste skapa domäner innan du kan skapa profiler.*
 
 1. I administrationskonsolen klickar du på Tjänster > Dokumenthantering > Profiler och sedan på fliken Principuppsättningar.
 1. Välj Global principuppsättning och klicka sedan på fliken Synliga användare och grupper.
@@ -500,11 +500,11 @@ Du kan skapa dynamiska vattenstämpelmallar. Mallarna är fortfarande tillgängl
    * Välj de vattenstämpeltyper som ska inkluderas. Om du väljer Egen text skriver du den text som ska visas för vattenstämpeln i den intilliggande rutan. Tänk på den textlängd som kommer att visas som vattenstämpel.
    * Ange textformateringsegenskaper som teckensnittsnamn, teckenstorlek, förgrundsfärg och bakgrundsfärg för textinnehållet i vattenstämpeltexten. Ange förgrunds- och bakgrundsfärgen som hexadecimala värden.
 
-     ***Obs!**Om du väljer skalförändringsalternativet Anpassa till sidan är egenskapen för teckensnittsstorlek inte tillgänglig för redigering.*
+     ***Obs!**&#x200B;Om du väljer skalförändringsalternativet Anpassa till sidan är egenskapen för teckensnittsstorlek inte tillgänglig för redigering.*
 
 1. Om du har valt PDF som alternativ för vattenstämpel klickar du på **Bläddra** bredvid Välj PDF för vattenstämpel för att välja det PDF-dokument som du vill använda som vattenstämpel.
 
-   ***Obs!**Använd inte ett lösenordsskyddat PDF-dokument. Om du anger en lösenordsskyddad PDF som vattenstämpelelement används inte vattenstämpeln.*
+   ***Obs!**&#x200B;Använd inte ett lösenordsskyddat PDF-dokument. Om du anger en lösenordsskyddad PDF som vattenstämpelelement används inte vattenstämpeln.*
 
 1. Välj antingen Ja eller Nej under Använd som bakgrund.
 
@@ -586,9 +586,9 @@ Du kan begränsa registreringen med dokumentsäkerhet för vissa externa använd
 
 Följande inställningar finns under Filter för e-postbegränsning på sidan Inbjuden användarregistrering.
 
-**Undantag:** Ange e-postadressen till en användare eller grupp som ska uteslutas. Om du vill exkludera flera användare eller grupper skriver du varje e-postadress på en ny rad. Om du vill utesluta alla användare som tillhör en viss domän anger du ett jokertecken och domännamnet. Om du till exempel vill utesluta alla användare i domänen example.com anger du &amp;ast;.example.com.
+**Undantag:** Ange e-postadressen till en användare eller grupp som ska uteslutas. Om du vill exkludera flera användare eller grupper skriver du varje e-postadress på en ny rad. Om du vill utesluta alla användare som tillhör en viss domän anger du ett jokertecken och domännamnet. Om du till exempel vill utesluta alla användare i domänen example.com anger du &ast;.example.com.
 
-**Inkludering:** Ange e-postadressen till en användare eller grupp som ska inkluderas. Om du vill inkludera flera användare eller grupper skriver du varje e-postadress på en ny rad. Om du vill inkludera alla användare som tillhör en viss domän anger du ett jokertecken och domännamnet. Om du till exempel vill ta med alla användare i domänen example.com anger du &amp;ast;.example.com.
+**Inkludering:** Ange e-postadressen till en användare eller grupp som ska inkluderas. Om du vill inkludera flera användare eller grupper skriver du varje e-postadress på en ny rad. Om du vill inkludera alla användare som tillhör en viss domän anger du ett jokertecken och domännamnet. Om du till exempel vill ta med alla användare i domänen example.com anger du &ast;.example.com.
 
 ### Parametrar för server- och registreringskonton {#server-and-registration-account-parameters}
 
@@ -953,7 +953,7 @@ I det här exemplet nekas alla begäranden från en Microsoft PowerPoint 2007- e
 
 Som standard kan du ange högst fem element i en vattenstämpel. Dessutom är den maximala filstorleken för PDF-dokumentet som du vill använda som vattenstämpel begränsad till 100 kB. Du kan ändra de här parametrarna i filen config.xml.
 
-***Obs!**Du bör ändra de här parametrarna med försiktighet.*
+***Obs!**&#x200B;Du bör ändra de här parametrarna med försiktighet.*
 
 1. Exportera konfigurationsfilen för dokumentsäkerhet. (Se [Redigera konfigurationsfilen för dokumentsäkerhet manuellt](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Öppna konfigurationsfilen i en redigerare och leta upp noden `ServerSettings`.

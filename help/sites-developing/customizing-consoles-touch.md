@@ -151,6 +151,7 @@ Så här anpassar du kolumnerna i listvyn:
 1. Valfritt:
 
    * Om du vill lägga till ytterligare data måste du skriva en [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) med en
+
      Egenskapen `pageInfoProviderType`.
 
    Se till exempel klassen/paketet som bifogas (från GitHub) nedan.

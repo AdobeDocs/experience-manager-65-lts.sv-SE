@@ -42,13 +42,13 @@ Det finns olika kortkommandon i hela AEM. Vissa gäller när du redigerar sidor,
 
 >[!NOTE]
 >
->&amp;ast; När användaren börjar interagera med sidan i förhandsgranskningsläget är genvägen `Ctrl-Shift-m` inte längre tillgänglig. Användaren måste klicka på det övre redigeringsfältet eller gå tillbaka till redigeringsläget för genvägen för att bli tillgänglig igen.
+>&ast; När användaren börjar interagera med sidan i förhandsgranskningsläget är genvägen `Ctrl-Shift-m` inte längre tillgänglig. Användaren måste klicka på det övre redigeringsfältet eller gå tillbaka till redigeringsläget för genvägen för att bli tillgänglig igen.
 
 Olika kortkommandon är också tillgängliga för skrivbordsanvändare när de använder [konsolerna](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
-Kortkommandon för redigeraren är alltid aktiva oavsett om kortkommandona för [konsolen har inaktiverats](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Kortkommandon för redigeraren är alltid aktiva oavsett om kortkommandona för [konsolen har inaktiverats](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Operativspecifika modifieringstangenter {#os-specific-modifier-keys}
 

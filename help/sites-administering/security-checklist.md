@@ -189,7 +189,7 @@ Så här konfigurerar du referenspunktsfiltertjänsten:
    `https://<server>:<port_number>/system/console/configMgr`
 
 1. Logga in som `admin`.
-1. Välj:****
+1. Välj:**&#x200B;**
 
    `Apache Sling Referrer Filter`
 
@@ -324,7 +324,7 @@ För att förhindra missbruk kan du göra följande:
 >
 >Denna begränsning bör endast utföras i AEM-miljöer som inte använder Forms.
 
-Eftersom AEM inte tillhandahåller körklara index för `FormChooserServlet` kan formulärväljare i frågor utlösa en kostsam databasövergång, vilket vanligen gör att AEM-instansen stannar. Formulärväljare kan identifieras med **&amp;ast;.form.&amp;ast;** sträng i frågor.
+Eftersom AEM inte tillhandahåller körklara index för `FormChooserServlet` kan formulärväljare i frågor utlösa en kostsam databasövergång, vilket vanligen gör att AEM-instansen stannar. Formulärväljare kan identifieras med **&ast;.form.&ast;** sträng i frågor.
 
 Du kan åtgärda det här problemet genom att göra följande:
 
@@ -377,7 +377,7 @@ Ingen konfiguration måste utföras för att aktivera den eftersom det nu är st
 
 Även om det inte rekommenderas kan du inaktivera det om du behöver den gamla implementeringen för bakåtkompatibilitet med dina befintliga program. För att göra det måste du göra följande:
 
-1. Gå till webbkonsolen och ta bort posten** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** från egenskapen **requiredServicePids** i **Apache Jackrabbit Oak SecurityProvider**.
+1. Gå till webbkonsolen och ta bort posten **&#x200B; org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** från egenskapen **requiredServicePids** i **Apache Jackrabbit Oak SecurityProvider**.
 
    Du kan också hitta Oak-säkerhetsprovidern genom att leta efter PID:t **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** i OSGi-konfigurationerna.
 

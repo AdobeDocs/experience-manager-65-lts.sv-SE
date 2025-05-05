@@ -248,6 +248,7 @@ Du kan utföra olika redigeringsåtgärder på bilduppsättningar, till exempel 
    * Om du vill ändra ordning på resurser drar du en bild till en ny plats (markera sorteringsikonen för att flytta objekt).
    * Om du vill sortera objekt i stigande eller fallande ordning markerar du kolumnrubriken.
    * Om du vill lägga till en resurs eller uppdatera en befintlig resurs väljer du **[!UICONTROL Add Asset]**. Navigera till en resurs, markera den och välj sedan **[!UICONTROL Select]** i sidans övre högra hörn.
+
      >[!NOTE]
      >
      >Om du tar bort den bild som Experience Manager använder som miniatyrbild genom att ersätta den med en annan bild, visas fortfarande originalresursen.

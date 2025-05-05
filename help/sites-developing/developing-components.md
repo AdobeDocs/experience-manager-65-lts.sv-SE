@@ -58,7 +58,7 @@ Du kan utöka en befintlig komponent med [Resurstypshierarki](/help/sites-develo
 
 >[!NOTE]
 >
->Innehållsfragmentkomponenten [](/help/sites-developing/customizing-content-fragments.md) kan också anpassas och utökas, men den fullständiga strukturen och relationerna med Assets måste beaktas.
+>Innehållsfragmentkomponenten [&#128279;](/help/sites-developing/customizing-content-fragments.md) kan också anpassas och utökas, men den fullständiga strukturen och relationerna med Assets måste beaktas.
 
 ### Anpassa en befintlig komponentdialogruta {#customizing-a-existing-component-dialog}
 

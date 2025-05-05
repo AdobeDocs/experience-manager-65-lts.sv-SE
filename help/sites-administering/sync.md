@@ -303,9 +303,11 @@ Om Sling ID för en Publish-instans matchar Sling ID för någon annan Publish-i
    * sök efter och ta bort filen *sling.id.file*
 
       * i ett Linux®-system:
+
         `rm -i $(find . -type f -name sling.id.file)`
 
       * i ett Windows-system:
+
         `use windows explorer and search for *sling.id.file*`
 
 1. starta Publish-instansen

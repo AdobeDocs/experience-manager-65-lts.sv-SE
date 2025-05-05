@@ -409,7 +409,7 @@ Som standard hämtas de långsammaste 20 sidbegäranden, men gränsen kan ändra
 
 ### Frågeprestanda {#query-performance}
 
-På sidan Frågeprestanda kan du analysera de långsammaste frågorna som har utförts av systemet. Denna information tillhandahålls av databasen i en JMX Mbean. I Jackrabbit tillhandahåller JMX Mbean den här informationen, medan den i Oak-databasen erbjuds av `org.apache.jackrabbit.oak.QueryStats.``com.adobe.granite.QueryStat`
+På sidan Frågeprestanda kan du analysera de långsammaste frågorna som har utförts av systemet. Denna information tillhandahålls av databasen i en JMX Mbean. I Jackrabbit tillhandahåller JMX Mbean den här informationen, medan den i Oak-databasen erbjuds av `org.apache.jackrabbit.oak.QueryStats.` `com.adobe.granite.QueryStat`
 
 Sidan visar:
 
@@ -452,7 +452,7 @@ Om du markerar rutan **Inkludera körningstid** innan frågan körs visas även 
 
 Syftet med indexhanteraren är att underlätta indexhantering, t.ex. att underhålla index eller visa deras status.
 
-Du kommer åt den genom att gå till **Verktyg - Åtgärder - Diagnos **från välkomstskärmen och sedan klicka på knappen **Indexhanteraren** .
+Du kommer åt den genom att gå till **Verktyg - Åtgärder - Diagnos &#x200B;** från välkomstskärmen och sedan klicka på knappen **Indexhanteraren** .
 
 Den kan också nås direkt på den här URL:en: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 

@@ -80,10 +80,10 @@ Ett befintligt HTML-program kan använda FormBridge API för att interagera med 
    >Taggen &lt;div id=&quot;rightdiv&quot;> på **rad 18** innehåller HTML-fragmentet för XFA-formuläret.
    >
    >
-   Sidan är formaterad i två behållare: **left** och **right**. Den högra behållaren har formuläret. Den vänstra behållaren har två inmatningsfält och en del av den externa HTML-sidan.
+   >Sidan är formaterad i två behållare: **left** och **right**. Den högra behållaren har formuläret. Den vänstra behållaren har två inmatningsfält och en del av den externa HTML-sidan.
    >
    >
-   Följande skärmbild visar hur formuläret visas i en webbläsare.
+   >Följande skärmbild visar hur formuläret visas i en webbläsare.
 
    ![portal](assets/portal.jpg)
 

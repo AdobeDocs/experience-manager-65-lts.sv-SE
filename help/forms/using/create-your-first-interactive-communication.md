@@ -68,7 +68,7 @@ Så här skapar du en anatomi för den interaktiva kommunikationen med följande
 * Villkorliga data
 * Bilder
 
-[](/help/forms/using/planning-interactive-communications.md)
+[&#128279;](/help/forms/using/planning-interactive-communications.md)
 
 ## Steg 2: Skapa formulärdatamodell {#step-create-form-data-model}
 
@@ -87,7 +87,7 @@ Med en formulärdatamodell kan du koppla en interaktiv kommunikation till olika 
 * Redigera exempeldata
 * Testa formulärdatamodell och konfigurerade tjänster med testdata
 
-[](/help/forms/using/create-form-data-model0.md)
+[&#128279;](/help/forms/using/create-form-data-model0.md)
 
 ## Steg 3: Skapa dokumentfragment {#step-create-document-fragments}
 
@@ -101,7 +101,7 @@ Dokumentfragment är återanvändbara komponenter i en korrespondens som använd
 * Skapa variabler
 * Skapa och tillämpa regler
 
-[](/help/forms/using/create-document-fragments.md)
+[&#128279;](/help/forms/using/create-document-fragments.md)
 
 ## Steg 4: Skapa mallar {#step-create-templates}
 
@@ -119,7 +119,7 @@ Mallarna för webbkanalen skapas i AEM. Mallförfattare och administratörer kan
 * Överför XDP-mallarna till AEM Forms Server
 * Skapa och aktivera mallar för webbkanalen
 
-[](/help/forms/using/create-templates-print-web.md)
+[&#128279;](/help/forms/using/create-templates-print-web.md)
 
 ## Steg 5: Skapa en interaktiv kommunikation {#step-create-an-interactive-communication}
 
@@ -138,7 +138,7 @@ Interaktiv kommunikation kan distribueras via två kanaler: tryck och webb. Du k
 * Skapa ett diagram i webbversionen av Interactive Communication
 * Skapa hyperlänkar i webbversionen av interaktiv kommunikation
 
-[](/help/forms/using/create-interactive-communication0.md)
+[&#128279;](/help/forms/using/create-interactive-communication0.md)
 
 ## Steg 6: Publicera interaktiv kommunikation {#step-publish-your-interactive-communication}
 

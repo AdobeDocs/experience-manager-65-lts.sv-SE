@@ -32,8 +32,10 @@ Denna lösning gäller
 1. Extrahera och kopiera innehållet i den hämtade mappen.
 1. Navigera till sökvägarna nedan för motsvarande programservrar:
    * **jboss**:
+
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **weblogic**:
+
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **websphere**:\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

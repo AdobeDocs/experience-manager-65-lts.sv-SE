@@ -44,7 +44,7 @@ Java™ Content Repository (JCR)-standarden, [JSR 283](https://developer.adobe.c
 
 Anvisningar om detta innehas av Adobe Research (Schweiz) AG.
 
-[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-paketet, javax.jcr.&amp;ast; används för direkt åtkomst och redigering av databasinnehåll.
+[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-paketet, javax.jcr.&ast; används för direkt åtkomst och redigering av databasinnehåll.
 
 ## Experience Server (CRX) och Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -285,7 +285,7 @@ Om du anropar representationen (skriptet) direkt döljer du resursen i skriptet,
 
 ### Sling API {#sling-api}
 
-Detta använder Sling API-paketet org.apache.sling.&amp;ast; och taggbibliotek.
+Detta använder Sling API-paketet org.apache.sling.&ast; och taggbibliotek.
 
 ### referera till befintliga element med sling:include {#referencing-existing-elements-using-sling-include}
 

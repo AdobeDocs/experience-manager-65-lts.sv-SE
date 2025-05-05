@@ -377,7 +377,7 @@ Så här jämför du språkkopior med språkinställningen:
 1. Gå till den språkkopia som du vill jämföra i konsolen **Platser**.
 1. Öppna panelen **[Referenser](/help/sites-authoring/basic-handling.md#references)**.
 1. Under rubriken **Kopior** väljer du **Språkkopior.**
-1. Välj en viss språkkopia och klicka sedan på **Jämför med mallsida **eller **Jämför med föregående **om tillämpligt.
+1. Välj en viss språkkopia och klicka sedan på **Jämför med mallsida &#x200B;** eller **Jämför med föregående &#x200B;** om tillämpligt.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 

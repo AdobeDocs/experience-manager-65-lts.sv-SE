@@ -27,7 +27,7 @@ Du kan överföra, förhandsgranska och skicka bilagor med HTML5-formulär. Som 
    | multiSelect | true eller false (true som standard) |
    | fileSizeLimit | Antal i MB (2 MB som standard). Exempel: 5. |
    | buttonText | Knapptext för popup-fönster (&quot;Bifoga&quot; som standard) |
-   | acceptera | kommaavgränsad lista över filtyper som ska accepteras (&quot;ljud/&amp;ast;, video/&amp;ast;, bild/&amp;ast;, text/&amp;ast;, .pdf&quot; som standard) |
+   | acceptera | kommaavgränsad lista över filtyper som ska accepteras (&quot;ljud/&ast;, video/&ast;, bild/&ast;, text/&ast;, .pdf&quot; som standard) |
 
    Till exempel:
 

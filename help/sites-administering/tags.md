@@ -252,7 +252,7 @@ Taggbehörigheter är [&#39;secure (as default)&#39;](/help/sites-administering/
       * till exempel gå till http://localhost:4502/useradmin
 
    * i den vänstra rutan markerar den grupp (eller användare) för vilken [läsbehörighet](/help/sites-administering/security.md#permissions) ska beviljas
-   * i den högra rutan letar du reda på **Path **to the Tag Namespace
+   * i den högra rutan letar du reda på **Path &#x200B;** to the Tag Namespace
 
       * till exempel `/content/cq:tags/mycommunity`
 

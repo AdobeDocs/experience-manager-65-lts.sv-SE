@@ -63,7 +63,7 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
 
    >[!NOTE]
    >
-   Kontrollera att URL:en för konfigurationssidan för molntjänster börjar med **HTTPS**. Om inte [aktiverar du SSL](/help/sites-administering/ssl-by-default.md) för AEM [!DNL Forms]-servern.
+   >Kontrollera att URL:en för konfigurationssidan för molntjänster börjar med **HTTPS**. Om inte [aktiverar du SSL](/help/sites-administering/ssl-by-default.md) för AEM [!DNL Forms]-servern.
 
 
 1. Tryck på **[!UICONTROL Create]** på konfigurationssidan för att skapa [!DNL Adobe Sign]-konfigurationen i AEM [!DNL Forms].
@@ -91,12 +91,12 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
 
    där:
 
-   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL  Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL &#x200B; Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
-   * Håll sidan **Skapa Adobe Acrobat Sign-konfiguration** öppen. Stäng den inte. Du kan hämta **klient-ID** och **klienthemlighet** efter att OAuth-inställningarna för [!DNL Adobe Acrobat Sign]-programmet har konfigurerats, vilket beskrivs i kommande steg.
-   * När du har loggat in på ditt Adobe Sign-konto går du till **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** för att komma åt information som rör Adobe Sign OAuth-URL och Access Token URL.
+   >* Håll sidan **Skapa Adobe Acrobat Sign-konfiguration** öppen. Stäng den inte. Du kan hämta **klient-ID** och **klienthemlighet** efter att OAuth-inställningarna för [!DNL Adobe Acrobat Sign]-programmet har konfigurerats, vilket beskrivs i kommande steg.
+   >* När du har loggat in på ditt Adobe Sign-konto går du till **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** för att komma åt information som rör Adobe Sign OAuth-URL och Access Token URL.
 
 1. Konfigurera OAuth-inställningar för programmet [!DNL Adobe Sign]:
 
@@ -153,7 +153,7 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
 
 >[!NOTE]
 >
-Om du vill konfigurera Adobe Sign-sandlådan kan du följa samma konfigurationssteg som beskrivs i [Adobe Sign](#adobe-sign).
+>Om du vill konfigurera Adobe Sign-sandlådan kan du följa samma konfigurationssteg som beskrivs i [Adobe Sign](#adobe-sign).
 
 ## Koppla AEM Forms till Adobe Acrobat Sign Solutions för myndigheter {#adobe-acrobat-sign-for-government}
 
@@ -189,8 +189,8 @@ Innan du börjar ansluta AEM Forms med Adobe Acrobat Sign Solution,
 >[!NOTE]
 >
 >
-* En `re-direct URL` ska innehålla en [toppnivå](https://en.wikipedia.org/wiki/Top-level_domain)-domän. Exempel: `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
-* Använd inte en lokal URL som `re-direct URL`. Exempel: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`.
+>* En `re-direct URL` ska innehålla en [toppnivå](https://en.wikipedia.org/wiki/Top-level_domain)-domän. Exempel: `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
+>* Använd inte en lokal URL som `re-direct URL`. Exempel: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`.
 
 
 #### Dela omdirigerings-URL:en och omfattningarna med Adobe Sign-teamet och få inloggningsuppgifter
@@ -240,11 +240,11 @@ Representanten genererar och delar uppgifter med dig. I nästa avsnitt använder
 
    där:
 
-   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL  Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL &#x200B; Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
-   * När du har loggat in på ditt Adobe Sign-konto går du till **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** för att få tillgång till information om Adobe Sign-autentiserings-URL och åtkomsttoken-URL.
+   >* När du har loggat in på ditt Adobe Sign-konto går du till **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** för att få tillgång till information om Adobe Sign-autentiserings-URL och åtkomsttoken-URL.
 
 1. Använd de inloggningsuppgifter som delas av Adobe Acrobat Sign for Government Solution manager ([Adobe Professional Services team member]) i föregående avsnitt som [**[!UICONTROL Client ID]** och **[!UICONTROL Client Secret]**].
 

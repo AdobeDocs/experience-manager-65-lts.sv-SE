@@ -93,6 +93,7 @@ Följ de här stegen för att konfigurera anslutningsmöjligheter för anslutna 
 1. Få åtkomst till en befintlig [!DNL Sites]-distribution eller skapa en distribution med följande kommando:
 
    1. Kör följande kommando på en terminal i JAR-filens mapp för att skapa varje [!DNL Experience Manager]-server.
+
       `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
    1. Efter några minuter startas servern [!DNL Experience Manager]. Ta den här [!DNL Sites]-distributionen som den lokala datorn för webbsidesredigering, till exempel `https://[local_sites]:4502`.

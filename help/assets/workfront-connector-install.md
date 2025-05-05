@@ -49,6 +49,7 @@ Så här installerar du kopplingen:
 1. Skapa `wf-workfront-users` i [!DNL Experience Manager]-användargruppen och tilldela behörigheten `jcr:all` till `/content/dam`.
 1. Lägg till en anpassad egenskap i indexdefinitionen utanför rutan för **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**. Utför följande steg:
    * Lägg till en **`nt:unstructured`**-egenskap med namnet **`wfReferenceNumber`** i:
+
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
    * Indexera om `index /oak:index/ntFolderDamLucene` genom att vända indexeringsflaggan till `true`.
 

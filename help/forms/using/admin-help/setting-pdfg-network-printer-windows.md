@@ -67,6 +67,6 @@ Användare som har rollen PDFG-administratör eller PDFG-användare kan installe
 
 1. Klicka på länken under Installation av PDFG-nätverksskrivare. När du uppmanas att ange användarkontouppgifter anger du användarnamnet och lösenordet som du använde i steg 1 för att logga in. Ett meddelande om att skrivaren har installerats visas.
 
-   ***Obs!**Om användarens lösenord ändras måste användarna installera om PDFG-nätverksskrivaren på sina datorer. Du kan inte uppdatera lösenordet från administrationskonsolen.*
+   ***Obs!**&#x200B;Om användarens lösenord ändras måste användarna installera om PDFG-nätverksskrivaren på sina datorer. Du kan inte uppdatera lösenordet från administrationskonsolen.*
 
 1. Klicka på OK.

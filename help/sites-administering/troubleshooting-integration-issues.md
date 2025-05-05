@@ -101,10 +101,10 @@ Du kan försöka åtgärda problemet genom att göra följande:
 * Kontrollera åtkomstkontrollistor på `/etc/cloudservices`. Åtkomstkontrollistorna ska vara:
 
    * allow; jcr:read; webservice-support-serviclibfinder
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/defaults`
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/public/`&amp;ast;
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/public`
+   * allow; jcr:read; all; `rep:glob:`&ast;`/defaults/`&ast;
+   * allow; jcr:read; all; `rep:glob:`&ast;`/defaults`
+   * allow; jcr:read; all; `rep:glob:`&ast;`/public/`&ast;
+   * allow; jcr:read; all; `rep:glob:`&ast;`/public`
 
 Mer information om hur du hanterar åtkomstkontrollistor finns på sidan [Användaradministration och -säkerhet](/help/sites-administering/security.md#permissions-in-aem).
 

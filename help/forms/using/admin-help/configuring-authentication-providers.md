@@ -161,7 +161,7 @@ Autentiseringen misslyckas om en användare autentiseras utan att etablera just-
 1. Om du vill skapa en domän klickar du på Ny företagsdomän eller Ny hybrid-domän. Om du vill redigera en befintlig domän klickar du på domänens namn.
 1. Markera Aktivera etablering i realtid.
 
-   ***Obs!**Om kryssrutan Aktivera tidsprovisionering för just in-tid saknas klickar du på Hem > Inställningar > Användarhantering > Konfiguration > Avancerade systemattribut och sedan på Läs in igen.*
+   ***Obs!**&#x200B;Om kryssrutan Aktivera tidsprovisionering för just in-tid saknas klickar du på Hem > Inställningar > Användarhantering > Konfiguration > Avancerade systemattribut och sedan på Läs in igen.*
 
 1. Lägg till autentiseringsproviders. När du lägger till autentiseringsproviders väljer du en registrerad identitetsskapare och tilldelningsprovider på skärmen Ny autentisering. (Se [Konfigurera autentiseringsproviders](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Spara domänen.

@@ -329,7 +329,7 @@ I det här avsnittet skapar du flera skript som varje skript skapar en del av si
 
 1. Skapa filen `left.jsp` under `/apps/mywebsite/components/contentpage` i CRXDE Lite:
 
-   1. Högerklicka på noden `/apps/mywebsite/components/contentpage` och välj sedan **Skapa **och sedan **Skapa fil**.
+   1. Högerklicka på noden `/apps/mywebsite/components/contentpage` och välj sedan **Skapa &#x200B;** och sedan **Skapa fil**.
 
    1. I fönstret skriver du `left.jsp` som **Namn** och klickar på **OK**.
 
@@ -1530,6 +1530,6 @@ För den här komponenten kan du ange flera parametrar i både redigeringsläge 
    ```
 
 1. Spara ändringarna.
-1. Läs in sidan** Products** på nytt i webbläsaren. Hela sidan ser ut så här:
+1. Läs in sidan **&#x200B; Products** på nytt i webbläsaren. Hela sidan ser ut så här:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

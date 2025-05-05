@@ -103,6 +103,7 @@ Gör följande för att registrera en OAuth-klient på AD FS-datorn (Active Dire
 
    * `Client-ID` är ett klient-ID som du kan generera med valfri GUID-generator.
    * `redirect-uri` är URL:en till Microsoft Dynamics OData-molntjänsten på AEM Forms. Standardmolntjänsten som installeras med AEM Forms-paketet distribueras på följande URL:
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Kör följande kommando för att bevilja åtkomst på AD FS-datorn:

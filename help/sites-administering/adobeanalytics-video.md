@@ -227,7 +227,7 @@ Anrop till Adobe Analytics som använder exemplet ska se ut så här när de vis
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Detta är det **första anropet**som gjorts till Adobe Analytics och som innehåller följande värden:*
+*Detta är det **första anropet**&#x200B;som gjorts till Adobe Analytics och som innehåller följande värden:*
 
 * *prop1 och eVar1 för eventdata.a.media.name,*
 * *props2-4, tillsammans med eVar2 och eVar3 som innehåller contentType (video) och segment (1:O:1-4)*
@@ -235,7 +235,7 @@ Anrop till Adobe Analytics som använder exemplet ska se ut så här när de vis
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Detta är det **tredje anropet**som gjorts till Adobe Analytics:*
+*Detta är det **tredje anropet**&#x200B;som gjorts till Adobe Analytics:*
 
 * *prop1 och eVar1 innehåller a.media.name;*
 * *event1 eftersom ett segment har visats*
@@ -322,7 +322,7 @@ Den här metoden liknar metoden milstolpar med skillnaden att de milstolpar som 
 
    ![milstolpar1](assets/lmilestones1.png)
 
-   *Variabeln **pev3**som skickades i anropet innehåller följande information:*
+   *Variabeln **pev3**&#x200B;som skickades i anropet innehåller följande information:*
 
    * *Namn* - Namnet på videofilen (*film.avi*)
 

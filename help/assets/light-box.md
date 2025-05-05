@@ -1,6 +1,6 @@
 ---
 title: Ljuslåda som ditt personliga bildgalleri
-description: Läs om ljuslådan som ditt eget bildgalleri i Adobe Experience Manager Assets].
+description: Läs om ljuslådan som ditt eget bildgalleri i Adobe Experience Manager Assets&rbrack;.
 contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions

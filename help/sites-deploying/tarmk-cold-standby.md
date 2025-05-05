@@ -325,7 +325,7 @@ Det rekommenderade sättet att tillämpa snabbkorrigeringar i ett kallt väntel�
 
 Du kan göra detta genom att följa stegen nedan:
 
-1. Stoppa synkroniseringsprocessen på den kalla standby-instansen genom att gå till JMX-konsolen och använda **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**bean. Mer information om hur du gör detta finns i avsnittet [Övervakning](#monitoring).
+1. Stoppa synkroniseringsprocessen på den kalla standby-instansen genom att gå till JMX-konsolen och använda **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**&#x200B;bean. Mer information om hur du gör detta finns i avsnittet [Övervakning](#monitoring).
 1. Stoppa kallstartsinstansen.
 1. Installera snabbkorrigeringen på den primära instansen. Mer information om hur du installerar en snabbkorrigering finns i [Arbeta med paket](/help/sites-administering/package-manager.md).
 1. Testa instansen efter problem efter installationen.

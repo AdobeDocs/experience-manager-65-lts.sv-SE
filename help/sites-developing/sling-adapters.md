@@ -338,7 +338,7 @@ Inga mål ännu, men implementerar Adaptable och kan användas som källa i en a
 
 #### Dokumentskydd {#security}
 
-**Behörighetsbar**, **Användare och **Grupp** kan anpassas till:
+**Behörighetsbar**, **Användare och &#x200B;** Grupp** kan anpassas till:
 
 | [Nod](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Returnerar hemnoden för användaren/gruppen. |
 |---|---|

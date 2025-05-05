@@ -48,7 +48,7 @@ Så här skapar du en Silverpop-konfiguration i molntjänster:
    >
    >Silverpop Engage är inte tillgängligt som alternativ under tredjepartstjänster om du inte hämtar paketet från paketresursen.
 
-1. Ange en titel och eventuellt ett namn och klicka på **Skapa**. Konfigurationsfönstret** Silverpop Settings** öppnas.
+1. Ange en titel och eventuellt ett namn och klicka på **Skapa**. Konfigurationsfönstret **&#x200B; Silverpop Settings** öppnas.
 1. Ange användarnamn, lösenord och välj en API-slutpunkt i listrutan.
 1. Klicka på **Anslut till Silverpop.** När du har anslutit visas en dialogruta om att anslutningen lyckades. Klicka på **OK** så att du stänger fönstret. Du kan gå till Silverpop genom att klicka på **Gå till Silverpop Engage**.
 1. Silverpop har konfigurerats. Du kan redigera konfigurationen genom att klicka på **Redigera**.

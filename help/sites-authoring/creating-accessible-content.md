@@ -37,7 +37,7 @@ Riktlinjerna är indelade i tre överensstämmelsenivåer: Nivå A (lägsta), Ni
 
 När du skapar din webbplats bör du bestämma den övergripande nivån som du vill att din plats ska anpassas efter.
 
-I följande avsnitt visas [lager i WCAG 2.1-riktlinjerna](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) med relaterade kriterier för lyckade resultat för överensstämmelsenivåerna Nivå A och Nivå AA [](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
+I följande avsnitt visas [lager i WCAG 2.1-riktlinjerna](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) med relaterade kriterier för lyckade resultat för överensstämmelsenivåerna Nivå A och Nivå AA [&#128279;](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
@@ -689,7 +689,7 @@ Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas 2.2.
 #### Mer information - Tidsjustering (2.2.1) {#more-information-timing-adjustable}
 
 * [Förstå villkor för slutförande 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
-* [Så här uppfyller du kriterierna för lyckade resultat {2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
+* [Så här uppfyller du kriterierna för lyckade resultat &lbrace;2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
 ### Pausa, Stoppa, Dölj (2.2.2)  {#pause-stop-hide}
 
@@ -760,7 +760,7 @@ Se till att följande tekniker används:
 #### Mer information - tre blinkningar eller under tröskelvärde (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
 * [Förstå villkor för slutförande 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
-* [Så här uppfyller du villkor för att lyckas {2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
+* [Så här uppfyller du villkor för att lyckas &lbrace;2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
 
 ### Navigeringsbar (2.4) {#navigable}
 
@@ -780,7 +780,7 @@ Syftet med detta villkor är att personer som navigerar sekventiellt genom inneh
 
 #### Så här möts du - kringgå block (2.4.1) {#how-to-meet-bypass-blocks}
 
-Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas {2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
+Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas &lbrace;2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
 
 #### Mer information - Kringgå block (2.4.1) {#more-information-bypass-blocks}
 
@@ -820,7 +820,7 @@ Syftet med detta villkor är att se till att användare som navigerar sekventiel
 
 #### Så här möts du - fokusordning (2.4.3) {#how-to-meet-focus-order}
 
-Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas {2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order).
+Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas &lbrace;2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order).
 
 #### Mer information - Fokusordning (2.4.3) {#more-information-focus-order}
 
@@ -908,12 +908,12 @@ Syftet med detta kriterium är att göra det möjligt för användare att hitta 
 
 #### Så här möts du - flera sätt (2.4.5) {#how-to-meet-multiple-ways}
 
-Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas {2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways).
+Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas &lbrace;2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways).
 
 #### Mer information - Flera sätt (2.4.5) {#more-information-multiple-ways}
 
 * [Förstå villkor för slutförande 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
-* [Så här uppfyller du kriterierna för att lyckas {2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
+* [Så här uppfyller du kriterierna för att lyckas &lbrace;2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
 
 ### Rubriker och etiketter (2.4.6)  {#headings-and-labels}
 
@@ -927,7 +927,7 @@ Syftet med detta kriterium är att hjälpa användarna att förstå vilken infor
 
 #### Hur man uppfyller kraven - rubriker och etiketter (2.4.6) {#how-to-meet-headings-and-labels}
 
-Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas {2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
+Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas &lbrace;2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
 
 #### Mer information - Rubriker och etiketter (2.4.6) {#more-information-headings-and-labels}
 
@@ -950,7 +950,7 @@ Om resultatvillkoret är&quot;driftssätt&quot;, ska detta beaktas för plattfor
 
 #### Hur man möter - Synligt fokus (2.4.7) {#how-to-meet-focus-visible}
 
-Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas {2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible).
+Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas &lbrace;2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible).
 
 #### Mer information - Synligt fokus (2.4.7) {#more-information-focus-visible}
 
@@ -1110,7 +1110,7 @@ Användare kan initiera en ändring av ordningen med hjälp av adaptiva använda
 
 #### Hur man möter - Enhetlig navigering (3.2.3) {#how-to-meet-consistent-navigation}
 
-Följ riktlinjerna under [Så här uppfyller du kriterierna för lyckat resultat {3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation).
+Följ riktlinjerna under [Så här uppfyller du kriterierna för lyckat resultat &lbrace;3.2.3](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation).
 
 #### Mer information - Enhetlig navigering (3.2.3) {#more-information-consistent-navigation}
 
@@ -1269,7 +1269,7 @@ Användarstyrda data är användaranpassade data som användaren kan ändra och/
 
 #### Hur man ska uppfylla kraven - Förebyggande av fel (rättsliga, finansiella, uppgifter) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 
-Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas {3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data).
+Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas &lbrace;3.3.4](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data).
 
 #### Mer information - Felförebyggande (Juridik, Finans, Data) (3.3.4) {#more-information-error-prevention-legal-financial-data}
 

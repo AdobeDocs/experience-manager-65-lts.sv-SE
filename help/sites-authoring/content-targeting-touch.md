@@ -297,7 +297,7 @@ Om du redigerar målinnehåll måste du klicka på **Starta målanpassning** inn
    >Administratörer kan bestämma om den här konfigurationen måste anges på **https://&lt;värd>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   Om du vill att användare ska ange en plats markerar du kryssrutan **Tvinga plats **.
+   >Om du vill att användare ska ange en plats markerar du kryssrutan **Tvinga plats &#x200B;**.
 
 1. Välj den upplevelse som du vill skapa erbjudandet för.
 1. Skapa erbjudandet:
@@ -579,13 +579,13 @@ Så här konfigurerar du mål och inställningar för Adobe Target:
 
    >[!NOTE]
    >
-   Du måste ha minst ett definierat mål.
+   >Du måste ha minst ett definierat mål.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
    >
-   Om det saknas information i måttet omges mätningen av en röd linje.
+   >Om det saknas information i måttet omges mätningen av en röd linje.
 
 1. Klicka på **Lägg till ett nytt mått** om du vill konfigurera ytterligare framgångsmått.
 
@@ -593,7 +593,7 @@ Så här konfigurerar du mål och inställningar för Adobe Target:
 
    >[!NOTE]
    >
-   Du kan ta bort ytterligare mål genom att klicka eller trycka på de tre punkterna och klicka eller trycka på **Ta bort**. AEM kräver att du har minst ett definierat mål.
+   >Du kan ta bort ytterligare mål genom att klicka eller trycka på de tre punkterna och klicka eller trycka på **Ta bort**. AEM kräver att du har minst ett definierat mål.
 
 1. Om du vill ha mer kontroll över hur framgångsmått räknas klickar du på **Avancerade inställningar** för att få tillgång till dem.
 1. Klicka på **Spara**.
@@ -616,7 +616,7 @@ Om oväntat innehåll visas på sidan när du läser in en profil kontrollerar d
 
 >[!NOTE]
 >
-Om ni använder A/B-testning visas upplevelser baserat på trafikprocenten när ni simulerar upplevelser. Detta styrs av Adobe Target, vilket kan leda till oväntade resultat för författare. (Aktiviteten _author synkroniseras med specifika inställningar som tillåter omvärdering under simulering.) Författare kan behöva uppdatera för att se de andra upplevelserna baserat på deras trafikinställningar.
+>Om ni använder A/B-testning visas upplevelser baserat på trafikprocenten när ni simulerar upplevelser. Detta styrs av Adobe Target, vilket kan leda till oväntade resultat för författare. (Aktiviteten _author synkroniseras med specifika inställningar som tillåter omvärdering under simulering.) Författare kan behöva uppdatera för att se de andra upplevelserna baserat på deras trafikinställningar.
 
 Använd följande verktyg för att simulera besökarens upplevelse:
 
@@ -710,7 +710,7 @@ Om du väljer Adobe Target som motor:
 
 >[!NOTE]
 >
-När du markerar en komponent och gör den målbar, ersätter AEM även komponenten och injicerar en Adobe Target-komponent. (Adobe Target-komponenten används inte bara när du lägger till den manuellt på sidan, utan även när du aktiverar en befintlig komponent.)
+>När du markerar en komponent och gör den målbar, ersätter AEM även komponenten och injicerar en Adobe Target-komponent. (Adobe Target-komponenten används inte bara när du lägger till den manuellt på sidan, utan även när du aktiverar en befintlig komponent.)
 
 Om du väljer Klientkontext (klientsidan) som motor:
 

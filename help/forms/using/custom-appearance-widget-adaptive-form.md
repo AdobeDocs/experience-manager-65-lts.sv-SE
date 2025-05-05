@@ -130,9 +130,9 @@ När projektmallen har skapats gör du följande ändringar efter behov:
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Returnerar en karta som konverterar HTML-händelser till XFA-händelser. <br /> <code class="code">{
+   <td>Returnerar en karta som konverterar HTML-händelser till XFA-händelser. <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Det här exemplet visar att <code>blur</code> är en HTML-händelse och att <code>XFA_EXIT_EVENT</code> är motsvarande XFA-händelse. </td>
+      &rbrace;</code><br /> Det här exemplet visar att <code>blur</code> är en HTML-händelse och att <code>XFA_EXIT_EVENT</code> är motsvarande XFA-händelse. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

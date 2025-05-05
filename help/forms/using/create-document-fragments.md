@@ -164,7 +164,7 @@ Så här skapar du variabler för fält med agentanvändargränssnittet som data
    ![Statisk text för kundinformation](assets/customer_details_static_text_new.png)
 
 1. Placera markören bredvid fältet **Mobilnummer** och dubbelklicka på egenskapen **customer** > **mobilenum** .
-1. Placera markören bredvid fältet **Alternativt kontaktnummer** och dubbelklicka på egenskapen** kund** > **alternateNumber** .
+1. Placera markören bredvid fältet **Alternativt kontaktnummer** och dubbelklicka på egenskapen **&#x200B; kund** > **alternateNumber** .
 1. Placera markören bredvid fältet **Relationsnummer** och dubbelklicka på egenskapen **customer** > **relationsnummer** .
 1. Markera fliken **Variabler**, placera markören bredvid fältet **Leveransställe** och dubbelklicka på variabeln **Placesupply** .
 1. Placera markören bredvid fältet **Statuskod** och dubbelklicka på variabeln **Statskod** .

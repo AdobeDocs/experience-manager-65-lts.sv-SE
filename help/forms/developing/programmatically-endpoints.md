@@ -333,7 +333,7 @@ Följande lista anger konfigurationsvärden som anges när en bevakad mappslutpu
 * **userName**: Det användarnamn som används när en måltjänst anropas från den bevakade mappen. Detta värde är obligatoriskt. Standardvärdet är SuperAdmin.
 * **domainName**: Användarens domän. Detta värde är obligatoriskt. Standardvärdet är DefaultDom.
 * **batchSize**: Antalet filer eller mappar som ska hämtas per skanning. Använd det här värdet om du vill förhindra överbelastning på datorn. Om du skannar för många filer samtidigt kan det resultera i en krasch. Standardvärdet är 2.
-* **waitTime**: Tiden i millisekunder att vänta innan en mapp eller fil genomsöks efter att den har skapats. Om väntetiden t.ex. är 36 000 000 millisekunder (en timme) och filen skapades för en minut sedan, hämtas den här filen när 59 eller fler minuter har gått. Det här attributet är användbart för att säkerställa att en fil eller mapp kopieras helt till indatamappen. Om du t.ex. har en stor fil att bearbeta och det tar tio minuter att hämta filen anger du väntetiden till 10&amp;ast;60 &amp;ast;1000 millisekunder. Den här inställningen förhindrar att den bevakade mappen skannar filen om den inte har väntat i tio minuter. Standardvärdet är 0.
+* **waitTime**: Tiden i millisekunder att vänta innan en mapp eller fil genomsöks efter att den har skapats. Om väntetiden t.ex. är 36 000 000 millisekunder (en timme) och filen skapades för en minut sedan, hämtas den här filen när 59 eller fler minuter har gått. Det här attributet är användbart för att säkerställa att en fil eller mapp kopieras helt till indatamappen. Om du t.ex. har en stor fil att bearbeta och det tar tio minuter att hämta filen anger du väntetiden till 10&ast;60 &ast;1000 millisekunder. Den här inställningen förhindrar att den bevakade mappen skannar filen om den inte har väntat i tio minuter. Standardvärdet är 0.
 * **excludeFilePattern**: Det mönster som används av en bevakad mapp för att avgöra vilka filer och mappar som ska sökas igenom och hämtas. Filer eller mappar med det här mönstret skannas inte för bearbetning. Den här inställningen är användbar när indata är en mapp som innehåller flera filer. Innehållet i mappen kan kopieras till en mapp som har ett namn som kommer att hämtas av den bevakade mappen. Det här steget förhindrar att den bevakade mappen hämtar en mapp för bearbetning innan mappen kopieras helt till indatamappen. Om värdet för excludeFilePattern till exempel är `data*` hämtas inte alla filer och mappar som matchar `data*`. Detta inkluderar filer och mappar med namnen `data1`, `data2` och så vidare. Dessutom kan mönstret kompletteras med jokertecken för att ange filmönster. Den bevakade mappen ändrar det reguljära uttrycket så att det stöder jokerteckenmönster som `*.*` och `*.pdf`. Dessa mönster med jokertecken stöds inte av reguljära uttryck.
 * **includeFilePattern**: Det mönster som den bevakade mappen använder för att avgöra vilka mappar och filer som ska sökas igenom och hämtas. Om det här värdet till exempel är `*` hämtas alla filer och mappar som matchar `input*`. Detta inkluderar filer och mappar med namnen `input1`, `input2` och så vidare. Standardvärdet är `*`. Detta värde anger alla filer och mappar. Dessutom kan mönstret kompletteras med jokertecken för att ange filmönster. Den bevakade mappen ändrar det reguljära uttrycket så att det stöder jokerteckenmönster som `*.*` och `*.pdf`. Dessa mönster med jokertecken stöds inte av reguljära uttryck. Detta värde är obligatoriskt.
 * **resultFolderName**: Mappen där de sparade resultaten lagras. Platsen kan vara en absolut eller relativ katalogsökväg. Om resultaten inte visas i den här mappen kontrollerar du felmappen. Skrivskyddade filer bearbetas inte och sparas i felmappen. Standardvärdet är `result/%Y/%M/%D/`. Det här är resultatmappen i den bevakade mappen.
@@ -431,7 +431,7 @@ Lägg till en bevakad mappslutpunkt med AEM Forms Java API:
    * Ett strängvärde som anger namnet på indataparametern. Namnet på indataparametern för EncryptDocument-tjänsten är till exempel `InDoc`.
    * Ett strängvärde som anger datatypen för indataparametern. Datatypen för indataparametern `InDoc` är till exempel `com.adobe.idp.Document`.
    * Ett strängvärde som anger mappningstypen. Du kan till exempel ange `variable`.
-   * Ett strängvärde som anger mappningstypsvärdet. Du kan till exempel ange &amp;ast;.pdf som filmönster.
+   * Ett strängvärde som anger mappningstypsvärdet. Du kan till exempel ange &ast;.pdf som filmönster.
 
    >[!NOTE]
    >
@@ -568,7 +568,7 @@ Följande konfigurationsvärden ställs in när en e-postslutpunkt läggs till i
 * **userName**: Det användarnamn som används när en måltjänst anropas från e-post. Standardvärdet är `SuperAdmin`.
 * **domainName**: Ett obligatoriskt konfigurationsvärde. Standardvärdet är `DefaultDom`.
 * **domainPattern**: Anger domänmönster för inkommande e-post som accepteras av providern. Om `adobe.com` till exempel används, kommer endast e-post från adobe.com att bearbetas, e-post från andra domäner ignoreras.
-* **filePattern**: Anger inkommande mönster för bifogade filer som accepteras av providern. Detta inkluderar filer som har specifika filnamnstillägg (&amp;ast;.dat, &amp;ast;.xml), filer som har specifika namn (data) och filer som har sammansatta uttryck i namnet och filnamnstillägget (&amp;ast;.[dD][aA]&#39;port&#39;). Standardvärdet är `*`.
+* **filePattern**: Anger inkommande mönster för bifogade filer som accepteras av providern. Detta inkluderar filer som har specifika filnamnstillägg (&ast;.dat, &ast;.xml), filer som har specifika namn (data) och filer som har sammansatta uttryck i namnet och filnamnstillägget (&ast;.[dD][aA]&#39;port&#39;). Standardvärdet är `*`.
 * **receiveSuccessfulJob**: En e-postadress dit meddelanden skickas för att ange slutförda jobb. Som standard skickas alltid ett meddelande om att jobbet lyckades till avsändaren. Om du skriver `sender` skickas e-postresultat till avsändaren. Stöd för upp till 100 mottagare. Ange ytterligare mottagare med e-postadresser, där var och en avgränsas med kommatecken. Om du vill inaktivera det här alternativet lämnar du det här värdet tomt. I vissa fall kanske du vill utlösa en process och inte skicka ett e-postmeddelande om resultatet. Standardvärdet är `sender`.
 * **receiveFailedJob**: En e-postadress som meddelanden skickas till som anger misslyckade jobb. Som standard skickas alltid ett meddelande om misslyckat jobb till avsändaren. Om du skriver `sender` skickas e-postresultat till avsändaren. Stöd för upp till 100 mottagare. Ange ytterligare mottagare med e-postadresser, där var och en avgränsas med kommatecken. Om du vill inaktivera det här alternativet lämnar du det här värdet tomt. Standardvärdet är `sender`.
 * **inboxHost**: Inkorgens värdnamn eller IP-adress som e-postprovidern kan läsa in.
@@ -676,7 +676,7 @@ Lägg till en e-postslutpunkt med Java API:
    * Ett strängvärde som anger namnet på indataparametern. Namnet på indataparametern för EncryptDocument-tjänsten är till exempel `InDoc`.
    * Ett strängvärde som anger datatypen för indataparametern. Datatypen för indataparametern `InDoc` är till exempel `com.adobe.idp.Document`.
    * Ett strängvärde som anger mappningstypen. Du kan till exempel ange `variable`.
-   * Ett strängvärde som anger mappningstypsvärdet. Du kan till exempel ange &amp;ast;.pdf som filmönster.
+   * Ett strängvärde som anger mappningstypsvärdet. Du kan till exempel ange &ast;.pdf som filmönster.
 
    >[!NOTE]
    >
@@ -803,7 +803,7 @@ Om du vill skapa en fjärrslutpunkt för en tjänst anger du följande värden:
 * **Beskrivning**: Anger beskrivningen av slutpunkten.
 * **Namn**: Anger slutpunktens namn.
 * **Tjänstidentifierarvärde**: Anger den tjänst som slutpunkten tillhör. Om du till exempel vill lägga till en fjärrslutpunkt i processen som introduceras i det här avsnittet (en process blir en tjänst när den aktiveras i Workbench) anger du `EncryptDocument`.
-* **Åtgärdsnamn**: Anger namnet på åtgärden som anropas med slutpunkten. När du skapar en fjärrslutpunkt anger du ett jokertecken (&amp;ast;).
+* **Åtgärdsnamn**: Anger namnet på åtgärden som anropas med slutpunkten. När du skapar en fjärrslutpunkt anger du ett jokertecken (&ast;).
 
 **Skapa en fjärrslutpunkt**
 
@@ -841,7 +841,7 @@ Lägg till en fjärrslutpunkt med Java API:
    * Ange beskrivningen av slutpunkten genom att anropa `CreateEndpointInfo`-objektets `setDescription`-metod och skicka ett strängvärde som beskriver slutpunkten.
    * Ange slutpunktens namn genom att anropa `CreateEndpointInfo`-objektets `setName`-metod och skicka ett strängvärde som anger namnet.
    * Ange den tjänst som slutpunkten tillhör genom att anropa `CreateEndpointInfo`-objektets `setServiceId`-metod och skicka ett strängvärde som anger tjänstnamnet.
-   * Ange den åtgärd som anropas av `CreateEndpointInfo`-objektets `setOperationName`-metod och skicka ett strängvärde som anger åtgärdsnamnet. Ange ett jokertecken (&amp;ast;) för en fjärrslutpunkt.
+   * Ange den åtgärd som anropas av `CreateEndpointInfo`-objektets `setOperationName`-metod och skicka ett strängvärde som anger åtgärdsnamnet. Ange ett jokertecken (&ast;) för en fjärrslutpunkt.
 
 1. Skapa en fjärrslutpunkt.
 

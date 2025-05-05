@@ -103,7 +103,7 @@ där `<category-nameX>` är namnet på det klientbaserade biblioteket.
 * att endast inkludera JavaScript-kod:
   `<ui:includeClientLib js="<category-name>"/>`
 
-Mer information finns i beskrivningen av &lt;ui:includeClientLib>taggen](/help/sites-developing/taglib.md#lt-ui-includeclientlib).&lt;/ui:includeClientLib> [
+Mer information finns i beskrivningen av &lt;ui:includeClientLib>taggen[&#128279;](/help/sites-developing/taglib.md#lt-ui-includeclientlib).&lt;/ui:includeClientLib> 
 
 Ibland bör ett klientbibliotek bara vara tillgängligt i redigeringsläge och bör undantas i publiceringsläge. Det kan uppnås på följande sätt:
 
@@ -395,6 +395,7 @@ Widgetbaserad dialogruta för **Anpassat multifält**:
 * Widgeten `multifield` har en fieldConfig (nodtyp = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`) som är baserad på den anpassade xtype &#39; `ejstcustom`&#39;:
    * `fieldconfig` är ett konfigurationsalternativ för objektet ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)`.
    * `optionsProvider` är en konfiguration av `ejstcustom`-widgeten. Den anges med metoden `Ejst.x3.provideOptions` som definieras i `exercises.js` vid:
+
      `/apps/extjstraining/clientlib/js/exercises.js`
 och returnerar två alternativ.
 * Definieras av noden `multifield` på:
@@ -545,6 +546,7 @@ Den JavaScript-kod som är inbäddad i komponent-jsp:
 * Om fönstret som visar trädet inte finns skapas `treePanel` ([CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)):
    * `treePanel` innehåller de data som används för att skapa fönstret.
    * Data hämtas genom att anropa servern som är registrerad på:
+
      `/bin/wcm/siteadmin/tree.json`
 * Avlyssnaren `beforeload` kontrollerar att den valda noden har lästs in.
 * Objektet `root` anger sökvägen `apps/extjstraining` som trädrot.
@@ -631,8 +633,10 @@ JavaScript-filen ( `defaultgrid.js`) som refereras i komponent-jsp definierar me
   `store.load();`
 * `gridPanel` är ett ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`-objekt som förbrukar `store`:
    * kolumnbredderna ändras alltid:
+
      `forceFit: true`
    * bara en rad åt gången kan markeras:
+
      `singleSelect:true`
 
 #### Exempel 2: Referenssökstödraster {#example-reference-search-grid}
@@ -643,7 +647,7 @@ När du installerar paketet visar `content.jsp` för komponenten **Stödrasterö
 * Baseras på data som hämtats från databasen genom att anropa en server.
 * Cellerna i den sista kolumnen kan redigeras. Värdet finns kvar i en `test`-egenskap under noden som definieras av sökvägen som visas i den första kolumnen.
 
-Så som förklaras i avsnittet ovan hämtar fönsterobjektet sitt ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`-objekt genom att anropa metoden `getGridPanel()` som definieras i filen `defaultgrid.js` vid `/apps/extjstraining/components/gridoverview/defaultgrid.js`. Komponenten **Grid Overview **ger en annan implementering av metoden `getGridPanel()` som definieras i filen `referencesearch.js` på `/apps/extjstraining/components/gridoverview/referencesearch.js`. Genom att byta .js-fil som refereras i komponentens jsp, baseras rutnätet på data som hämtas från databasen.
+Så som förklaras i avsnittet ovan hämtar fönsterobjektet sitt ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`-objekt genom att anropa metoden `getGridPanel()` som definieras i filen `defaultgrid.js` vid `/apps/extjstraining/components/gridoverview/defaultgrid.js`. Komponenten **Grid Overview &#x200B;** ger en annan implementering av metoden `getGridPanel()` som definieras i filen `referencesearch.js` på `/apps/extjstraining/components/gridoverview/referencesearch.js`. Genom att byta .js-fil som refereras i komponentens jsp, baseras rutnätet på data som hämtas från databasen.
 
 Byt .js-fil som refereras i komponent-jsp:
 
@@ -673,6 +677,7 @@ Kolumncellerna i kolumnen&quot;Testa&quot; kan redigeras så som de definieras m
 * `gridPanel` är ett ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)`-objekt som kan redigeras:
    * den baseras på den fördefinierade `store` och på kolumnmodellen `cm`
    * bara en rad åt gången kan markeras:
+
      `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
    * avlyssnaren `afteredit` ser till att när en cell i kolumnen **Test** har redigerats:
       * egenskapen `test` för noden vid sökvägen som definieras av kolumnen **jcr:path** anges i databasen med cellens värde

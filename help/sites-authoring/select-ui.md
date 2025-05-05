@@ -104,9 +104,11 @@ De inställningar som definieras av en användare eller systemadministratör kan
 * När du redigerar sidor:
 
    * Den klassiska redigeraren måste användas när sidan öppnas med `cf#` i URL:en. Till exempel:
+
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * Användning av den pekaktiverade redigeraren är tvingad när `/editor.html` används i URL:en eller när en pekenhet används. Till exempel:
+
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Alla tvång är tillfälliga och gäller endast för webbläsarsessionen

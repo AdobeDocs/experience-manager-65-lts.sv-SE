@@ -88,7 +88,7 @@ Returnerar versionsnumret för skriptbiblioteket
 
       * **widgetConfig:** Tillåter användaren att åsidosätta standardwidgetar i formuläret med anpassade widgetar. Konfigurationen åsidosätts enligt följande:
 
-        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&ast;configuration&ast;/})*
 
       * **pagingConfig:** Tillåter användaren att åsidosätta standardbeteendet för återgivning av endast den första sidan. Konfigurationen åsidosätts enligt följande:
 

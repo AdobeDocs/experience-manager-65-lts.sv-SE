@@ -393,7 +393,7 @@ Om det här alternativet är markerat återges alternativen som kryssrutor som b
 * **Egenskapsnamn för Publicera och Live-kopia**
 Etiketterna för publicerings- och Live copy-kryssrutorna för platsspecifika predikat.
 
-* &amp;ast; på fältetiketterna på fliken **Settings** betyder det att fälten är obligatoriska och om de lämnas tomma visas ett felmeddelande.
+* &ast; på fältetiketterna på fliken **Settings** betyder det att fälten är obligatoriska och om de lämnas tomma visas ett felmeddelande.
 
 ## Konfigurera din sökning i Forms {#configuring-your-search-forms}
 

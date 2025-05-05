@@ -56,8 +56,10 @@ Så här integrerar du AEM Forms med den färdiga tjänsten:
 
 1. Konfigurera dina molntjänster:
    1. Gå till ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** och klicka på **[!UICONTROL Turnstile]** i AEM-författarinstansen.
+
       ![Inaktivera i molntjänster](assets/turnstile-in-ui.png)
    1. Välj en konfigurationsbehållare, skapad eller uppdaterad, enligt beskrivningen i föregående avsnitt. Klicka på **[!UICONTROL Create]**.
+
       ![Konfigurationsomvandling](assets/config-hcaptcha.png)
    1. Ange **[!UICONTROL Widget Type]** som hanterad, icke-interaktiv eller osynlig.
    1. Ange annan information som **[!UICONTROL Title]**, **[!UICONTROL Name]**.
@@ -94,6 +96,7 @@ Så här integrerar du AEM Forms med den färdiga tjänsten:
    * **[!UICONTROL Validation Message]:** Ange ett valideringsmeddelande för att validera Captcha vid formuläröverföring eller vid en användaråtgärd.
    * **[!UICONTROL Captcha Service]:** Välj CAPTCHA-tjänsten för att skicka formulär, här väljer du Turnstle®.
    * **[!UICONTROL Configuration Settings]:** Välj din molnkonfiguration som är konfigurerad för Turnstle®.
+
      >[!NOTE]
      >Du kan ha flera molnkonfigurationer i din miljö i liknande syfte. Välj tjänsten noggrant. Om ingen tjänst visas läser du [Ansluta AEM Forms-miljön med Turnstile](#connect-your-forms-environment-with-turnstile-service) för att lära dig hur du skapar en Cloud Service som ansluter din AEM Forms-miljö till den färdiga tjänsten.
 

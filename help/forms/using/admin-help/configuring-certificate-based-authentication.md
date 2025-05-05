@@ -62,7 +62,7 @@ När du testar ett certifikat överför Hantering av användare certifikaten fö
    Du kan använda följande tecken i regex:
 
    * . (valfritt tecken)
-   * &amp;ast; (0 eller fler förekomster)
+   * &ast; (0 eller fler förekomster)
    * () (ange gruppen inom parentes)
    * \ (används för att kringgå ett regex-tecken till ett vanligt tecken)
    * $n (används för att referera till den n:te gruppen)
@@ -71,21 +71,21 @@ När du testar ett certifikat överför Hantering av användare certifikaten fö
 
    * Extrahera &quot;Alex Pink&quot; från &quot;Alex Pink (Authentication)&quot;
 
-     **Regex:** (.&amp;ast;) \(Authentication\)
+     **Regex:** (.&ast;) \(Authentication\)
 
    * Extrahera &quot;Alex Pink&quot; från &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
 
    * Extrahera &quot;Rosa Alex&quot; från &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
 
      Anpassad ordning: $2 $1 (returnera den andra gruppen, sammanfogad till den första gruppen, fångad med blankstegstecken)
 
    * Extrahera &quot;apink@sampleorg.com&quot; från &quot;smtp:apink@sampleorg.com&quot;
 
-     **Regex:** smtp:(.&amp;ast;)
+     **Regex:** smtp:(.&ast;)
 
    Mer information om hur du använder reguljära uttryck finns i [Java-självstudiekursen om reguljära uttryck](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

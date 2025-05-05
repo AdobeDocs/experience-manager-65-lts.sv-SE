@@ -123,9 +123,9 @@ Du kan konfigurera den interna brandväggen så att vissa AEM Forms-komponenter 
 
 Som standard är resurser som är tillgängliga på publiceringsnoderna tillgängliga för alla. Skrivskyddad åtkomst är aktiverat för alla resurser. Det krävs för att aktivera anonym åtkomst. Om du tänker begränsa formulärvyn och skicka in åtkomst endast till autentiserade användare kan du använda en gemensam grupp för att endast tillåta autentiserade användare att ha skrivskyddad åtkomst till resurserna som finns på publiceringsnoderna. Följande platser/kataloger innehåller formulärresurser som kräver skärpa (skrivskyddad åtkomst för autentiserade användare):
 
-* /content/&amp;ast;
-* /etc.clientlibs/fd/&amp;ast;
-* /libs/fd/&amp;ast;
+* /content/&ast;
+* /etc.clientlibs/fd/&ast;
+* /libs/fd/&ast;
 
 ## Hantera blankettdata säkert  {#securely-handle-forms-data}
 

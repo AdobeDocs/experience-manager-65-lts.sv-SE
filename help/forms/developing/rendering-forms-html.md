@@ -95,7 +95,7 @@ Formulärskript som finns i formen:ready-händelsen körs bara en gång under de
 
 >[!NOTE]
 >
-På flersidiga formulär behålls inte ändringar som gjorts av JavaScript till en sida om du går till en annan sida.
+>På flersidiga formulär behålls inte ändringar som gjorts av JavaScript till en sida om du går till en annan sida.
 
 Du kan anropa egna skript innan du skickar in ett formulär. Den här funktionen fungerar i alla tillgängliga webbläsare. Den kan dock bara användas när användare återger det HTML-formulär som har egenskapen `Output Type` inställd på `Form Body`. Det fungerar inte när `Output Type` är `Full HTML`. Mer information om hur du konfigurerar den här funktionen finns i Konfigurera formulär i administrationshjälpen.
 
@@ -169,7 +169,7 @@ Följande skript bevarar `fillColor` för ett fält baserat på värdet `hiddenF
 
 >[!NOTE]
 >
-Statiska objekt visas inte i ett återgivet HTML-formulär när de är kapslade i en tabellcell. En cirkel och rektangel som är kapslad i en tabellcell visas till exempel inte i ett återgivningsformulär i HTML. Samma statiska objekt visas emellertid korrekt utanför tabellen.
+>Statiska objekt visas inte i ett återgivet HTML-formulär när de är kapslade i en tabellcell. En cirkel och rektangel som är kapslad i en tabellcell visas till exempel inte i ett återgivningsformulär i HTML. Samma statiska objekt visas emellertid korrekt utanför tabellen.
 
 ## Digitalt signera HTML-formulär {#digitally-signing-html-forms}
 
@@ -192,7 +192,7 @@ Vi rekommenderar att du begränsar användningen av valideringsregler för formu
 
 >[!NOTE]
 >
-Mer information om tjänsten Forms finns i [Tjänstreferens för AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Mer information om tjänsten Forms finns i [Tjänstreferens för AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Sammanfattning av steg {#summary-of-steps}
 
@@ -228,11 +228,11 @@ HTTP-URL:er dit formulärdata skickas kan anges genom att ange mål-URL:en med h
 
 >[!NOTE]
 >
-Det är valfritt att återge ett HTML-formulär med ett verktygsfält.
+>Det är valfritt att återge ett HTML-formulär med ett verktygsfält.
 
 >[!NOTE]
 >
-Om du återger ett AHTML-formulär bör du inte lägga till ett verktygsfält i formuläret.
+>Om du återger ett AHTML-formulär bör du inte lägga till ett verktygsfält i formuläret.
 
 **Återge ett HTML-formulär**
 
@@ -284,7 +284,7 @@ När Forms-tjänsten återger ett HTML-formulär returneras en formulärdatastr�
 
    >[!NOTE]
    >
-   Forms återges inte korrekt i HTML när alternativet `StandAlone` är `true` och `ApplicationWebRoot` refererar till en annan server än J2EE-programservern som är värd för AEM Forms (värdet `ApplicationWebRoot` anges med objektet `URLSpec` som skickas till metoden `FormsServiceClient` object `(Deprecated) renderHTMLForm` ). När `ApplicationWebRoot` är en annan server från den som är värd för AEM Forms, måste värdet för webrot-URI:n i administrationskonsolen anges som formulärets webbprogram-URI-värde. Detta kan du göra genom att logga in på administrationskonsolen, klicka på Tjänster > Forms och ange webbrots-URI som https://server-name:port/FormServer. Spara sedan inställningarna.
+   >Forms återges inte korrekt i HTML när alternativet `StandAlone` är `true` och `ApplicationWebRoot` refererar till en annan server än J2EE-programservern som är värd för AEM Forms (värdet `ApplicationWebRoot` anges med objektet `URLSpec` som skickas till metoden `FormsServiceClient` object `(Deprecated) renderHTMLForm` ). När `ApplicationWebRoot` är en annan server från den som är värd för AEM Forms, måste värdet för webrot-URI:n i administrationskonsolen anges som formulärets webbprogram-URI-värde. Detta kan du göra genom att logga in på administrationskonsolen, klicka på Tjänster > Forms och ange webbrots-URI som https://server-name:port/FormServer. Spara sedan inställningarna.
 
 1. Återge ett HTML-formulär
 
@@ -342,7 +342,7 @@ När Forms-tjänsten återger ett HTML-formulär returneras en formulärdatastr�
 
    >[!NOTE]
    >
-   Forms återges inte korrekt i HTML när alternativet `StandAlone` är `true` och `ApplicationWebRoot` refererar till en annan server än J2EE-programservern som är värd för AEM Forms (värdet `ApplicationWebRoot` anges med objektet `URLSpec` som skickas till metoden `FormsServiceClient` object `(Deprecated) renderHTMLForm` ). När `ApplicationWebRoot` är en annan server från den som är värd för AEM Forms, måste värdet för webrot-URI:n i administrationskonsolen anges som formulärets webbprogram-URI-värde. Detta kan du göra genom att logga in på administrationskonsolen, klicka på Tjänster > Forms och ange webbrots-URI som https://server-name:port/FormServer. Spara sedan inställningarna.
+   >Forms återges inte korrekt i HTML när alternativet `StandAlone` är `true` och `ApplicationWebRoot` refererar till en annan server än J2EE-programservern som är värd för AEM Forms (värdet `ApplicationWebRoot` anges med objektet `URLSpec` som skickas till metoden `FormsServiceClient` object `(Deprecated) renderHTMLForm` ). När `ApplicationWebRoot` är en annan server från den som är värd för AEM Forms, måste värdet för webrot-URI:n i administrationskonsolen anges som formulärets webbprogram-URI-värde. Detta kan du göra genom att logga in på administrationskonsolen, klicka på Tjänster > Forms och ange webbrots-URI som https://server-name:port/FormServer. Spara sedan inställningarna.
 
 1. Återge ett HTML-formulär
 

@@ -48,7 +48,7 @@ I AEM 6.3 misslyckas frågan som standard när en genomgång på 100 000 nås oc
 
 #### Under utveckling {#during-development}
 
-Förklara **alla**-frågor och kontrollera att deras frågeplaner inte innehåller förklaringen **/&amp;ast; gå igenom** i dem. Exempel på genomgång av frågeplan:
+Förklara **alla**-frågor och kontrollera att deras frågeplaner inte innehåller förklaringen **/&ast; gå igenom** i dem. Exempel på genomgång av frågeplan:
 
 * **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 

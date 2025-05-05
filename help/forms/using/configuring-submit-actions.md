@@ -77,7 +77,7 @@ Konfigurerar åtgärden Skicka för resterande slutpunkt
 
 >[!NOTE]
 >
-Om du vill skicka fälten som parametrar i en REST-URL måste alla fält ha olika elementnamn, även om fälten placeras på olika paneler.
+>Om du vill skicka fälten som parametrar i en REST-URL måste alla fält ha olika elementnamn, även om fälten placeras på olika paneler.
 
 ### Bokför skickade data till en resurs eller extern slutpunkt för vila  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
@@ -108,7 +108,7 @@ I det här exemplet lagrar `data` XML-data och `att` lagrar data för bifogade f
 
 >[!NOTE]
 >
-Alla formulärfält måste ha olika elementnamn, även om de finns på olika paneler), för att kunna inkludera formulärdata i ett e-postmeddelande.
+>Alla formulärfält måste ha olika elementnamn, även om de finns på olika paneler), för att kunna inkludera formulärdata i ett e-postmeddelande.
 
 ## Skicka PDF via e-post {#send-pdf-via-email}
 
@@ -116,7 +116,7 @@ Alla formulärfält måste ha olika elementnamn, även om de finns på olika pan
 
 >[!NOTE]
 >
-Den här överföringsåtgärden är tillgänglig för XFA-baserade adaptiva formulär och XSD-baserade adaptionsformulär som har dokumentmallen.
+>Den här överföringsåtgärden är tillgänglig för XFA-baserade adaptiva formulär och XSD-baserade adaptionsformulär som har dokumentmallen.
 
 ## Anropa en Forms Workflow {#invoke-a-forms-workflow}
 
@@ -150,7 +150,7 @@ Innan du använder åtgärden **Anropa ett AEM Workflow** ska du [konfigurera Ex
 
 >[!NOTE]
 >
-Variabler kan användas oavsett om arbetsflödesmodellen är markerad för extern datalagring eller inte.
+>Variabler kan användas oavsett om arbetsflödesmodellen är markerad för extern datalagring eller inte.
 
 * **Bifogade filer**: Du kan använda alternativet **[!UICONTROL Attachment Path]** för att ange mappnamnet för att lagra de bifogade filer som överförts till det anpassade formuläret. Mappen skapas i förhållande till nyttolasten. Om arbetsflödet är markerat för extern datalagring använder du variabelalternativet och väljer variabeln i listan med variabler som är tillgängliga för arbetsflödesmodellen.
 
@@ -173,7 +173,7 @@ När konfigurationen är klar kan du använda åtgärden [Anropa ett Microsoft®
 
 >[!NOTE]
 >
-Listfunktionen Skicka till Microsoft® SharePoint introducerades med AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+>Listfunktionen Skicka till Microsoft® SharePoint introducerades med AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 Åtgärden **[!UICONTROL Submit to SharePoint]** kopplar ett adaptivt formulär till ett Microsoft® SharePoint-lagringsutrymme. Du kan skicka formulärdatafilen, bifogade filer eller arkivdokument till den anslutna Microsoft® Sharepoint-lagringsplatsen.
 
@@ -199,7 +199,7 @@ Så här ansluter du AEM Forms till din Microsoft® Sharepoint-lista:
 
      >[!NOTE]
      >
-     Fältet **klienthemlighet** är obligatoriskt eller valfritt beroende på din Azure Active Directory-programkonfiguration. Om ditt program är konfigurerat att använda en klienthemlighet är det obligatoriskt att ange klienthemligheten.
+     >Fältet **klienthemlighet** är obligatoriskt eller valfritt beroende på din Azure Active Directory-programkonfiguration. Om ditt program är konfigurerat att använda en klienthemlighet är det obligatoriskt att ange klienthemligheten.
 
 1. Klicka på **[!UICONTROL Connect]**. Om anslutningen lyckas visas meddelandet `Connection Successful`.
 1. Välj **[!UICONTROL SharePoint Site]** och **[!UICONTROL SharePoint List]** i listrutan.
@@ -218,16 +218,16 @@ När du skickar formuläret sparas data i det angivna lagringsutrymmet för Micr
 
 >[!NOTE]
 >
-I Microsoft® SharePoint List stöds inte följande kolumntyper:
-* bildkolumn
-* metadatakolumn
-* personkolumn
-* extern datakolumn
+>I Microsoft® SharePoint List stöds inte följande kolumntyper:
+>* bildkolumn
+>* metadatakolumn
+>* personkolumn
+>* extern datakolumn
 
 
 >[!NOTE]
 >
-[Generera OSGi-konfigurationer med AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) och [distribuera konfigurationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) till din Cloud Service-instans om du vill ange värden för en konfiguration.
+>[Generera OSGi-konfigurationer med AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) och [distribuera konfigurationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) till din Cloud Service-instans om du vill ange värden för en konfiguration.
 
 ## Förtroende på serversidan i adaptiv form {#server-side-revalidation-in-adaptive-form}
 
@@ -255,7 +255,7 @@ Om slutanvändaren åsidosätter dessa valideringar och skickar formulären utf�
 
 >[!NOTE]
 >
-Validering på serversidan validerar formulärmodellen. Vi rekommenderar att du skapar ett separat klientbibliotek för validering och inte blandar det med andra saker som HTML-formatering och DOM-manipulering i samma klientbibliotek.
+>Validering på serversidan validerar formulärmodellen. Vi rekommenderar att du skapar ett separat klientbibliotek för validering och inte blandar det med andra saker som HTML-formatering och DOM-manipulering i samma klientbibliotek.
 
 ### Stöd för anpassade funktioner i valideringsuttryck {#supporting-custom-functions-in-validation-expressions-br}
 

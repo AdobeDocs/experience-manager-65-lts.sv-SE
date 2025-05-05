@@ -66,7 +66,7 @@ Så här skapar du en ExactTarget-konfiguration i verktygen:
 
 1. Klicka på **Verktyg** på välkomstsidan. Eller navigera dit direkt genom att gå till `https://<hostname>:<port>/misadmin#/etc`.
 1. Välj **Verktyg**, sedan **Cloud Services-konfigurationer** och sedan **ExactTarget**.
-1. Klicka på **Nytt** för att öppna fönstret **Skapa sida **.
+1. Klicka på **Nytt** för att öppna fönstret **Skapa sida &#x200B;**.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 

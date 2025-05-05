@@ -117,5 +117,6 @@ Om du använder ett fristående installationsprogram för AEM Forms Designer utf
    * Det finns två sätt att kontrollera Forms Designer:
 
       1. Öppna Designer, gå till Hjälp, klicka på Om designer så visas versionsinformation för designer tillsammans med bitinformationen. 64-bitarsversionen visas i slutet av den version som visas här:
+
          `6.5.21.20240522.1.161 | 64 bit`
       1. Öppna Designer. Överst till vänster ser du en ikon med 64-bitarsinformation med produktnamnet.

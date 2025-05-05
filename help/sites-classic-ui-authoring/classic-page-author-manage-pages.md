@@ -106,7 +106,7 @@ Om du bara anger sidan **Rubrik** när du skapar en sida, hämtar AEM sidan **Na
 | Titel | Härlett namn |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc---c-.html |
+| SC%&amp;&ast;ç+ | sc---c-.html |
 
 #### Namn {#name}
 

@@ -249,7 +249,7 @@ Information om revideringsjournaler.
 
 >[!NOTE]
 >
->ImageServer- och s7access-loggarna ingår inte i **Download Full **paketet som genereras från sidan **system/console/status-Bundlelist **. Om du har [!DNL Dynamic Media] utgåvor av supporten lägger du till loggarna ImageServer och s7access när du kontaktar kundsupporten.
+>ImageServer- och s7access-loggarna ingår inte i **Download Full &#x200B;** paketet som genereras från sidan **system/console/status-Bundlelist &#x200B;**. Om du har [!DNL Dynamic Media] utgåvor av supporten lägger du till loggarna ImageServer och s7access när du kontaktar kundsupporten.
 
 ### Aktivera loggnivån för FELSÖKNING {#activating-the-debug-log-level}
 

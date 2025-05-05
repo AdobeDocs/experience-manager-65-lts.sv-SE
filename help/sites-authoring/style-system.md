@@ -85,7 +85,7 @@ Om du vill använda Style System för dina egna komponenter gör du följande:
 
    >[!NOTE]
    >
-   >I det här exemplet utesluter formaten **Färger** (**Svart**, **Vit** och **Grå**) varandra, medan alternativen **Format** (**Understruken**, **Högerjustera** och **Mini Spacing**}) kan kombineras. Detta kan [konfigureras i mallen som mallskapare](#as-a-template-author).
+   >I det här exemplet utesluter formaten **Färger** (**Svart**, **Vit** och **Grå**) varandra, medan alternativen **Format** (**Understruken**, **Högerjustera** och **Mini Spacing**&rbrace;) kan kombineras. Detta kan [konfigureras i mallen som mallskapare](#as-a-template-author).
 
 ### Som mallskapare {#as-a-template-author}
 
