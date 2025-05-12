@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Kontrollera [Planera uppgraderingen](/help/sites-deploying/upgrade-planning.md) 
 
 ### Krav för migrering {#migration-prerequisites}
 
-* **Minimikrav på Java-version**: Kontrollera att du har installerat IBM® Sumeru JRE 17 på WLP-servern.
+* **Minimikrav för Java-version**: Kontrollera att du har installerat IBM® Sumeru JRE 17/21 på WLP-servern.
 
 ### Utföra uppgraderingen {#performing-the-upgrade}
 
@@ -76,13 +76,13 @@ Kontrollera [Planera uppgraderingen](/help/sites-deploying/upgrade-planning.md) 
 
 1. Gör en säkerhetskopia av filen `sling.properties` (finns vanligtvis i `crx-quickstart/conf/`) och ta bort den
 1. Ändra serverletsversionen till **6.0** i filen `server.xml`
-1. Installera Java 17 och kontrollera att det är korrekt installerat genom att köra:
+1. Installera Java 17/Java 21 och kontrollera att det är korrekt installerat genom att köra:
 
    ```shell
    java -version
    ```
 
-1. Granska startparametrarna för AEM-servern och se till att du uppdaterar parametrarna enligt dina krav. Mer information finns i [Java 17 Considerations](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+1. Granska startparametrarna för AEM-servern och se till att du uppdaterar parametrarna enligt dina krav. Mer information finns i [Java 17/Java 21 Considerations](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 1. Hämta det nya 6.5 LTS-kriget och kopiera det till dropins-mappen på: `/<path-to-aem-server>/dropins/`
 1. Starta AEM-instansen: Det går oftast att göra med det här kommandot:
 

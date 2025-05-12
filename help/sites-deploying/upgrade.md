@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,6 @@ För att underlätta referensen till de AEM-instanser som ingår i dessa procedu
 
 ### Uppdateringar {#updates}
 
-Foundation layer har nu stöd för Java 17, som innehåller de senaste open-source-paketen från Apache Sling, Felix och Jackrabbit Oak. Dessutom har förpackningen till AEM 6.5 LTS uber-burken ändrats. Dessutom har några äldre funktioner tagits bort från AEM 6.5 LTS. Mer information finns i [Versionsinformation](/help/release-notes/release-notes.md#whats-new-what-s-new) och [Lista över föråldrade paket som avinstallerats efter uppgraderingen](/help/sites-deploying/obsolete-bundles.md)
+Foundation layer har nu stöd för Java 17 och Java 21, som innehåller de senaste open-source-paketen från Apache Sling, Felix och Jackrabbit Oak. Dessutom har förpackningen till AEM 6.5 LTS uber-burken ändrats. Dessutom har några äldre funktioner tagits bort från AEM 6.5 LTS. Mer information finns i [Versionsinformation](/help/release-notes/release-notes.md#whats-new-what-s-new) och [Lista över föråldrade paket som avinstallerats efter uppgraderingen](/help/sites-deploying/obsolete-bundles.md)
 
 AEM 6.5 LTS har ett starkt fokus på bakåtkompatibilitet för funktioner och levereras med ett analysverktyg. Se [Utvärdera uppgraderingskomplexiteten med AEM Analyzer](/help/sites-deploying/aem-analyzer.md) för en bedömning av komplexiteten när du börjar [planera för uppgraderingen](/help/sites-deploying/upgrade-planning.md).

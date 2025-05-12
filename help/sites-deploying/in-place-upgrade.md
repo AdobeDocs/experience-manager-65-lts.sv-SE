@@ -6,9 +6,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: db9bf14ec9fefcbafb7b6d749de966e97c54abda
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Innan du utför uppgraderingen måste du utföra flera steg. Mer information fin
 
 ## Krav för migrering {#migration-prerequisites}
 
-* **Minimikrav på Java-version:** Kontrollera att Oracle Java™ 17 är installerat på datorn.
+* **Minimikrav på Java-version:** Kontrollera att Oracle Java™ 17/21 är installerat på datorn.
 
 ## Förberedelse av filen AEM Quickstart jar {#prep-quickstart-file}
 
@@ -180,7 +180,7 @@ Starta nu AEM-instansen med det nya kommandot som bestäms med hjälp av informa
 
 >[!NOTE]
 >
->Stöd för vissa Java 8/11-argument har tagits bort i Java 17, se [Oracle Java™ 17-dokument](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) och [Java&amp;trade arguments-överväganden för AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
+>Stöd för vissa av Java 8/11-argumenten har tagits bort i Java 17/21, se [Oracle Java™ 17-dokument](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html), [Oracle Java™ 21-dokument](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) och [JavaTrade-argument för AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 För att kunna genomföra uppgraderingen är det viktigt att du startar AEM med filen jar för att ta fram instansen.
 
