@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '927'
 ht-degree: 5%
 
 ---
@@ -108,10 +108,28 @@ I det här avsnittet listas funktioner som har tagits bort från AEM 6.5 LTS. Ti
 | Öppna Source | `org.apache.jackrabbit.api` paket exporteras nu från paketet `org.apache.jackrabbit.oak-jackrabbit-api`. | Ingen ändring krävs. | 6,5 LTS GA |
 | Öppna Source | `com.github.jknack.handlebars` stöds inte | Välj relevant [version](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
 
+## Kända fel {#known-issues}
+
+### Dispatcher-anslutningsfel med SSL-funktion {#ssl-only-feature}
+
+När du aktiverar SSL-funktionen i AEM-distributioner finns det ett känt problem som påverkar anslutningen mellan dispatchern och AEM-instanserna. När den här funktionen har aktiverats kan hälsokontroller misslyckas och kommunikationen mellan dispatchern och AEM-instanser kan störas.
+
+**Effekt:**
+* Misslyckade hälsokontroller med HTTP 500-svarskoder
+* Trafiken mellan dispatcher och AEM-instanser har brutits
+* Innehållet kan inte hanteras korrekt via dispatchern
+
+**Berörda miljöer:**
+* AEM distribuerar med dispatcherkonfigurationer
+* System där SSL-funktionen har aktiverats
+
+**Lösning:**
+Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorrigering [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip) som åtgärdar det här problemet. Försök inte aktivera SSL-funktioner förrän du har implementerat den nödvändiga snabbkorrigeringen.
+
 ## Begränsade webbplatser{#restricted-sites}
 
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
