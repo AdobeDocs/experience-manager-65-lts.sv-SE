@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
+source-git-commit: 02b9f90dc9ef504f04a9b1f692358089d4626094
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 0%
@@ -111,7 +111,7 @@ I det här avsnittet listas funktioner som har tagits bort från AEM 6.5 LTS. Ti
 
 ## Kända fel {#known-issues}
 
-### Problem med JSP-skriptpaket i AEM 6.5.21-6.5.23 och AEM 6.5 LTS GA**
+### Problem med JSP-skriptpaket i AEM 6.5.21-6.5.23 och AEM 6.5 LTS GA
 
 AEM 6.5.21, 6.5.22, 6.5.23 och AEM 6.5 LTS GA levereras med paketet `org.apache.sling.scripting.jsp:2.6.0`, som innehåller ett känt fel. Problemet är vanligtvis under hög belastning när AEM-instansen hanterar många samtidiga begäranden.
 
@@ -149,5 +149,5 @@ Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorr
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
