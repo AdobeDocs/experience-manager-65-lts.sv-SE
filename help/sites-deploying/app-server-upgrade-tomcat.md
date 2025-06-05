@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Innan du utför uppgraderingen måste du utföra flera steg. Mer information fin
 ### Krav för migrering {#migration-prerequisites}
 
 * **Minimikrav på Java-version**: Kontrollera att du har installerat Oracle® JRE 17/21 på Tomcat-servern.
-* **Tomcat-server**: Den version av Tomcat-servern som krävs för 6.5 LTS är **11.0.x**.
+* **Tomcat-server**: De versioner av Tomcat-servern som stöds för AEM 6.5 LTS är **10.0.x** och **10.1.x**.
 
 ### Utföra uppgraderingen {#performing-the-upgrade}
 
