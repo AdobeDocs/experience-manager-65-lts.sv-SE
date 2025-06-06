@@ -10,9 +10,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2577'
+source-wordcount: '2594'
 ht-degree: 0%
 
 ---
@@ -211,6 +211,10 @@ Det enda dokument som innehåller båda villkoren är 200, som i exemplet nedan:
 | --- | --- | --- |
 
 När flera poster hittas sorteras de sedan efter poäng.
+
+>[!NOTE]
+>
+>Sökfunktionen som beskrivs i det här avsnittet använder Lucene-indexering, inte partiell matchning som kommandot `grep` i Linux.
 
 ### Egenskapsindexet Lucene {#the-lucene-property-index}
 
