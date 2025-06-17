@@ -7,12 +7,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
 
 ---
+
 
 # Introduktion och genomgång av SPA {#spa-introduction-and-walkthrough}
 
@@ -46,7 +48,7 @@ Genomgången baseras på AEM standardfunktioner och exempelprogrammet WKND SPA P
 >
 >Det här dokumentet använder [WKND Spa Project-programmet](https://github.com/adobe/aem-guides-wknd-spa) endast i demonstrationssyfte. Använd inte för projektarbete.
 >
->Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE) som stöder SPA-projekt med React eller Angular och använder SPA SDK.
+>Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) som stöder SPA-projekt med React eller Angular och använder SPA SDK.
 
 ### Vad är en SPA? {#what-is-a-spa}
 

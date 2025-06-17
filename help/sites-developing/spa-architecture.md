@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 8670d700-6ccd-4809-b719-8580d6fb2cf8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 0%
 
 ---
+
 
 # Utveckla SPA för AEM{#developing-spas-for-aem}
 
@@ -64,7 +66,7 @@ Statisk routning fungerar mot [principen för bärbarhet](/help/sites-developing
 
 ## AEM Project Archetype {#aem-project-archetype}
 
-Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE), som har stöd för SPA-projekt med React eller Angular och som använder SPA SDK.
+Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), som har stöd för SPA-projekt med React eller Angular och som använder SPA SDK.
 
 ## SPA-designmodeller {#spa-design-models}
 

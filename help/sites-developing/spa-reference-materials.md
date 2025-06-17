@@ -9,12 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: ba64fb22-85fb-434b-93fa-be910af107a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
 
 ---
+
 
 # SPA-referensmaterial {#spa-reference-materials}
 

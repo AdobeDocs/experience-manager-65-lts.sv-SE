@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 9889b0fe-f39c-42dc-bc7b-8743d68e7503
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
 
 ---
+
 
 # Getting Started with SPAs in AEM - React{#getting-started-with-spas-in-aem-react}
 
@@ -119,7 +121,7 @@ När paketet har skapats kan det överföras till en AEM-instans.
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE), som har stöd för SPA-projekt med React eller Angular och som använder SPA SDK.
+Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), som har stöd för SPA-projekt med React eller Angular och som använder SPA SDK.
 
 ## Programstruktur {#application-structure}
 

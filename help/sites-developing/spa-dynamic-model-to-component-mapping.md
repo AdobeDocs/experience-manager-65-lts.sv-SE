@@ -9,12 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 051be106-bb15-46b2-8158-53817f68f57c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
 
 ---
+
 
 # Dynamisk mappning av modell till komponent för SPA{#dynamic-model-to-component-mapping-for-spas}
 

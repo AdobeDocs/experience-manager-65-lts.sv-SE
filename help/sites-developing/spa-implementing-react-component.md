@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: f4a15b51-fbb9-454f-809d-b15ed8cbdd0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
 
 ---
+
 
 # Implementera en React Component for SPA{#implementing-a-react-component-for-spa}
 
@@ -36,7 +38,7 @@ Du bör känna till [strukturen för ett SPA-program för AEM](/help/sites-devel
 >[!CAUTION]
 >Det här dokumentet använder appen [We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) endast i demonstrationssyfte. Använd den inte för något projektarbete.
 >
->Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE), som har stöd för SPA-projekt med React eller Angular och som använder SPA SDK.
+>Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), som har stöd för SPA-projekt med React eller Angular och som använder SPA SDK.
 
 ## Väderkomponenten {#the-weather-component}
 

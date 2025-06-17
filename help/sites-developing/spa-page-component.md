@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 470636ce-3934-4aac-80ff-1fe6bd84455e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 0%
 
 ---
+
 
 # SPA-sidkomponent{#spa-page-component}
 
@@ -90,7 +92,7 @@ Meta-resursegenskaperna som beskriver SPA-innehållet:
 >
 >Det här dokumentet använder appen We.Retail Journal endast i demonstrationssyfte. Använd inte för projektarbete.
 >
->Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE), som stöder SPA-projekt med React eller Angular och använder SPA SDK. Alla SPA-projekt på AEM ska baseras på Maven Archetype för SPA Starter Kit.
+>Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), som stöder SPA-projekt med React eller Angular och använder SPA SDK. Alla SPA-projekt på AEM ska baseras på Maven Archetype för SPA Starter Kit.
 
 ## Synkronisering av sidredigeringsövertäckning {#page-editor-overlay-synchronization}
 

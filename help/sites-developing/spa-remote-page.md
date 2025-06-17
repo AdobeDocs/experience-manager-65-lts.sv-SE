@@ -5,12 +5,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 9c8dff52-3860-4f71-a0d9-993574f1d654
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
 
 ---
+
 
 # RemotePage-komponenten {#remote-page-component}
 

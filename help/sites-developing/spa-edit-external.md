@@ -5,12 +5,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 0%
 
 ---
+
 
 # Redigera en extern SPA i Adobe Experience Manager {#editing-external-spa-within-aem}
 
@@ -27,9 +29,9 @@ I det här dokumentet beskrivs de rekommenderade stegen för att överföra en f
 Förutsättningarna är enkla.
 
 * Kontrollera att en instans av AEM körs lokalt.
-* Skapa ett basprojekt för AEM SPA med [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE&#available-properties).
+* Skapa ett basprojekt för AEM SPA med [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Detta utgör grunden för AEM-projektet, som kommer att uppdateras med det externa SPA-projektet.
-   * Exemplen i det här dokumentet använder startpunkten för [WKND SPA-projektet](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=sv-SE#spa-editor).
+   * Exemplen i det här dokumentet använder startpunkten för [WKND SPA-projektet](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Ha den fungerande, externa React SPA som ni vill integrera till hands.
 
 ## Överför SPA till AEM Project {#upload-spa-to-aem-project}
@@ -371,8 +373,8 @@ RemotePage-komponenten förväntar sig att implementeringen tillhandahåller ett
 
 Följande referensmaterial kan vara användbart för att förstå SPA i samband med AEM.
 
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE)
-* [WKND SPA-projektet](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=sv-SE)
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [WKND SPA-projektet](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
 * [Komma igång med SPA i AEM med React](spa-getting-started-react.md)
 * [SPA-referensmaterial (API-referenser)](spa-reference-materials.md)
 * [SPA Blueprint och PageModelManager](spa-blueprint.md#pagemodelmanager)
