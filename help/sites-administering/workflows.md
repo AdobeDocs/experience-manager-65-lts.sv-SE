@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ När en arbetsflödesmodell startas (körs) skapas en arbetsflödesinstans. En a
 
 >[!CAUTION]
 >
->Stegen som utförs är de som definieras av arbetsflödesmodellen *vid den tidpunkt instansen genereras*. Mer information finns i [Utveckla arbetsflöden](/help/sites-developing/workflows.md#model).
+>Stegen som utförs är de som definieras av arbetsflödesmodellen *vid den tidpunkt instansen genereras*. Mer information finns i [Utveckla och utöka arbetsflöden - modeller](/help/sites-developing/workflows.md#model).
 
 Arbetsflödesinstanser går igenom följande livscykel:
 
