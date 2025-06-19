@@ -94,7 +94,7 @@ Tråddumpen är en lista över alla Java™-trådar som är aktiva. Om AEM inte 
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Mer information finns i [Så här tar du trådmodeller från en JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) -dokumentation
+Mer information finns i [Så här tar du trådmodeller från en JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=sv-SE) -dokumentation
 
 ### Söker efter oavslutade JCR-sessioner {#checking-for-unclosed-jcr-sessions}
 
@@ -104,7 +104,7 @@ När funktioner utvecklas för AEM WCM kan JCR-sessioner öppnas (vilket kan jä
 * Du kan se mycket av CacheManager: resizeAll-poster i loggfilen. Följande nummer (size=&lt;x>) visar antalet cacheminnen, varje session öppnar flera cacheminnen.
 * Från tid till annan har systemet slut på minne (efter några timmar, dagar eller veckor - beroende på allvarlighetsgraden).
 
-Information om hur du börjar analysera oavslutade sessioner finns i kunskapsbasartikeln [Ostängd resurslösare](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
+Information om hur du börjar analysera oavslutade sessioner finns i kunskapsbasartikeln [Ostängd resurslösare](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Använda Adobe Experience Manager Web Console {#using-the-adobe-experience-manager-web-console}
 

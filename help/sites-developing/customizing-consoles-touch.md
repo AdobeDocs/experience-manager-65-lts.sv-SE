@@ -64,7 +64,7 @@ Följande plats i `/libs`-strukturen kan till exempel överlappas:
 
 >[!NOTE]
 >
->Mer information finns i kunskapsbasartikeln [Felsökning av AEM TouchUI-problem](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935).
+>Mer information finns i kunskapsbasartikeln [Felsökning av AEM TouchUI-problem](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-16935).
 
 ## Anpassa standardvyn för en konsol {#customizing-the-default-view-for-a-console}
 

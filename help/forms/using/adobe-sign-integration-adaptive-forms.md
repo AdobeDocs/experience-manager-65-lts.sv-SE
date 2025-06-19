@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Integrera [!DNL Adobe Sign] med AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}
 
-<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
+<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=sv-SE#adobe-acrobat-sign-for-government) |
 | AEM 6.5 | Den här artikeln |
 
 [!DNL Adobe Sign] aktiverar e-signaturarbetsflöden för anpassningsbara formulär. E-signaturer förbättrar arbetsflödena för att bearbeta dokument inom juridik, försäljning, löneadministration, personaladministration och många andra områden.
@@ -87,7 +87,7 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
 
    där:
 
-   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL &#x200B; Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL &#x200B; Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/se/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -236,7 +236,7 @@ Representanten genererar och delar uppgifter med dig. I nästa avsnitt använder
 
    där:
 
-   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL &#x200B; Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL &#x200B; Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/se/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >

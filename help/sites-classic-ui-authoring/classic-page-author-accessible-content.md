@@ -312,7 +312,7 @@ Exakta detaljer om hur du skapar ljudbeskrivad video ligger utanför den här ha
 
 * [Förstå villkor 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [Så här uppfyller du kriterierna 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/se/premiere-pro/using/whats-new.html)
 
 ### Bildtexter (Live) (1.2.4)  {#captions-live}
 
