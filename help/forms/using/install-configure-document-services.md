@@ -779,7 +779,7 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
          &quot;
          
-         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;Absolute path to prov.xml>]{2&quot; 
+         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;Absolute path to prov.xml>]&lbrace;2&quot; 
      
          
          
