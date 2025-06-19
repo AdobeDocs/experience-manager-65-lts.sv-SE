@@ -47,7 +47,7 @@ Riktlinjerna är indelade i tre överensstämmelsenivåer: Nivå A (lägsta), Ni
 
 När du skapar din webbplats bör du bestämma den övergripande nivån som du vill att din plats ska anpassas efter.
 
-I följande avsnitt visas [WCAG 2.0-riktlinjerna](https://www.w3.org/TR/WCAG20/#guidelines) med relaterade kriterier för att lyckas med överensstämmelsenivåerna Nivå A och Nivå AA [](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
+I följande avsnitt visas [WCAG 2.0-riktlinjerna](https://www.w3.org/TR/WCAG20/#guidelines) med relaterade kriterier för att lyckas med överensstämmelsenivåerna Nivå A och Nivå AA [&#128279;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
 >[!NOTE]
 >
@@ -741,7 +741,7 @@ Se till att följande tekniker används:
 #### Mer information - tre blinkningar eller under tröskelvärde (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
 * [Förstå villkor för slutförande 2.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
-* [Så här uppfyller du villkor för att lyckas {2.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
+* [Så här uppfyller du villkor för att lyckas &lbrace;2.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
 
 ### Sida med rubriker (2.4.2)  {#page-titled}
 

@@ -285,6 +285,7 @@ Du kan lagra widgetdata i arbetsflödets nyttolast eller i arbetsobjektets metad
 * **Lagra data med nyttolasten**
 
    * Om du vill lagra widgetdata som en egenskap för arbetsflödets nyttolast använder du följande format för värdet för namnegenskapen för widgetnoden:
+
      `./jcr:content/nodename`
 
    * Data lagras i nyttolastnodens `nodename`-egenskap. Om noden inte innehåller den egenskapen skapas egenskapen.
@@ -293,6 +294,7 @@ Du kan lagra widgetdata i arbetsflödets nyttolast eller i arbetsobjektets metad
 * **Lagra data med arbetsobjektet**
 
    * Om du vill lagra widgetdata som en egenskap för arbetsobjektets metadata använder du följande format för värdet för egenskapen name:
+
      `nodename`
 
    * Data lagras i egenskapen `nodename` för arbetsobjektet `metadata`. Data bevaras om dialogrutan senare används med samma nyttolast.
