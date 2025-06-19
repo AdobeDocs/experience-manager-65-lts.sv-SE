@@ -136,7 +136,7 @@ En arbetsflödesmodellägare kan inte visa objekt som är relaterade till AEM Wo
      | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
 
 
-   * Distribuera indexen via ett AEM-paket. Du kan använda ett [AEM Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) -projekt för att skapa ett distribuerbart AEM-paket. Använd följande exempelkod för att lägga till index i ett AEM Archetype-projekt:
+   * Distribuera indexen via ett AEM-paket. Du kan använda ett [AEM Archetype](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/developing/archetype/using) -projekt för att skapa ett distribuerbart AEM-paket. Använd följande exempelkod för att lägga till index i ett AEM Archetype-projekt:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
