@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1363'
 ht-degree: 0%
 
 ---
@@ -233,10 +233,6 @@ När snabbstartsburken startas för första gången packas den upp i samma katal
 Om instansen installerades från användargränssnittet öppnas ett webbläsarfönster automatiskt och ett skrivbordsprogramfönster öppnas med instansens värd och port och en på/av-knapp:
 
 ![startskärmen](assets/screen_shot_.png)
-
->[!NOTE]
->
->Om du använder symboler kan du ta en titt på [problem med symbolen](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
 
 ### Starta och stoppa {#starting-and-stopping}
 

@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ed55397c-6777-4d00-a6e2-8b1b025e533f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -73,8 +73,6 @@ Personligen föredrar jag hierarkiska konventioner framför nodtypningssystemet 
 >[!CAUTION]
 >
 >Det sätt på vilket en innehållsdatabas är strukturerad kan även påverka prestanda. För bästa prestanda bör antalet underordnade noder som är kopplade till enskilda noder i en innehållsdatabas inte överstiga 1 000.
->
->Se [Hur mycket data kan CRX hantera?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Exempel {#example-2}
 

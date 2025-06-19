@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ REST API ger åtkomst till samma funktioner via HTTP med svar som skickas i JSON
 
 >[!NOTE]
 >
->QueryBuilder-API:t byggs med JCR-API:t. Du kan även fråga Adobe Experience Manager JCR genom att använda JCR-API:t i ett OSGi-paket. Mer information finns i [Adobe Experience Manager med JCR API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/access-jcr.html).
+>QueryBuilder-API:t byggs med JCR-API:t. Du kan även fråga Adobe Experience Manager JCR genom att använda JCR-API:t i ett OSGi-paket. Mer information finns i [Adobe Experience Manager med JCR API](/help/sites-developing/access-jcr.md).
 
 ## Gruppsession {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=sv-SE) är en serie tekniska djupdykningar i Adobe Experience Manager som levereras av Adobe experter. Den här sessionen som är avsedd för frågebyggaren är användbar för en översikt över och användning av verktyget.
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) är en serie tekniska djupdykningar i Adobe Experience Manager som levereras av Adobe experter. Den här sessionen som är avsedd för frågebyggaren är användbar för en översikt över och användning av verktyget.
 
 >[!NOTE]
 >
->AEM Gem-session [Söka enkelt i formulär med AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=sv-SE) om du vill ha en detaljerad översikt över frågebyggaren.
+>AEM Gem-session [Söka enkelt i formulär med AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) om du vill ha en detaljerad översikt över frågebyggaren.
 
 ## Exempelfrågor {#sample-queries}
 
@@ -324,7 +324,7 @@ Separerat med ett blanksteg:
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title

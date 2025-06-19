@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1453'
 ht-degree: 0%
 
 ---
@@ -39,10 +39,9 @@ Nedan beskrivs de viktigaste aspekterna, medan följande sidor innehåller mer i
 >
 >* Delta i arbetsflöden, se [Använda arbetsflöden](/help/sites-authoring/workflows.md).
 >* Administrera arbetsflöden och arbetsflödesinstanser, se [Administrera arbetsflöden](/help/sites-administering/workflows.md).
->* En communityartikel från början till slut finns i [Ändra Digital Assets med Adobe Experience Manager-arbetsflöden.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)
+>* En communityartikel från början till slut finns i [Ändra digitala Assets med Adobe Experience Manager-arbetsflöden.](/help/assets/assets-workflow.md).
 >* Se [Ask the AEM Experts Webinar on Workflows](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Ändringar av platserna för information finns i [Bästa praxis för arbetsflöde - Platser](/help/sites-developing/workflows-best-practices.md#locations).
->
 
 ## Modell {#model}
 
@@ -205,7 +204,7 @@ För ett arbetsflöde med sex steg och fyra steg:
 
 ### Arbetsflöden och Forms {#workflows-and-forms}
 
-Vanligtvis används arbetsflöden för att bearbeta formulärinskickade formulär i AEM. Det kan vara med [kärnkomponenterna från komponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=sv-SE) som är tillgängliga i en AEM-standardinstans eller med [AEM Forms-lösningen](/help/forms/using/aem-forms-workflow.md).
+Vanligtvis används arbetsflöden för att bearbeta formulärinskickade formulär i AEM. Det kan vara med [kärnkomponenterna från komponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) som är tillgängliga i en AEM-standardinstans eller med [AEM Forms-lösningen](/help/forms/using/aem-forms-workflow.md).
 
 När du skapar ett formulär kan du enkelt koppla formuläröverföringen till en arbetsflödesmodell. Du kan till exempel lagra innehållet på en viss plats i databasen eller meddela en användare om att formuläret skickas och dess innehåll.
 

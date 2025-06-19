@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,3 @@ Följande prestandaförbättringar har hittills använts i projekt:
 
 * Selektiv renderingsgenerering: Generera bara de renderingar du behöver genom att lägga till villkor i arbetsflödet för resursbearbetning, så att mer kostsamma renderingar bara genereras för vissa resurser.
 * Delat datalager mellan instanser: när det börjar ta slut på diskutrymme kan detta avsevärt minska mängden diskutrymme som behövs till priset av högre konfigurationsinsatser och förlorad automatisk rensning av datalagret.
-
-## Ytterligare läsning {#further-reading}
-
-* [Analyserar långsamma och blockerade processer](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)

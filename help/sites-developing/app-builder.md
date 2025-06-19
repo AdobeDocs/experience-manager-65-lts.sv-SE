@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ App Builder erbjuder ett sätt för kunder att enkelt utöka Adobe Experience Ma
 * Utbyggbarhet för bastjänster - Utöka de centrala programfunktionerna genom att utöka standardbeteendet med anpassade funktioner och affärslogik.
 * Utbyggbarhet för användarupplevelse - Utöka kärnupplevelsen för att uppfylla verksamhetskrav eller bygga kundspecifika digitala resurser, butiker och back-office-appar.
 
-App Builder har varit tillgängligt för företagskunder och partners via Adobe Developer Preview sedan sommaren 2020. App Builder allmänna tillgänglighet (GA) planeras till december 2021. Adobe välkomnar utvecklare att prova App Builder via Adobe [testprogram](https://developer.adobe.com/app-builder/trial/).
+App Builder har varit tillgängligt för företagskunder och partners via Adobe Developer Preview sedan sommaren 2020. App Builder allmänna tillgänglighet (GA) planeras till december 2021. Adobe välkomnar utvecklare att prova App Builder via Adobe [testprogram](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/set-up#access-and-credentials).
 
 >[!NOTE]
 >
->För kunder som har AEM as a Cloud Service och vill använda App Builder, se [Utöka Adobe Experience Manager as a Cloud Service med Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html).
+>För kunder som har AEM as a Cloud Service och vill använda App Builder, se [Utöka Adobe Experience Manager as a Cloud Service med Adobe Developer App Builder](/help/sites-developing/app-builder.md).
 
 ## Arkitektur {#architecture}
 
@@ -45,13 +45,13 @@ Följande diagram visar hur ett standardprogram som bygger på App Builder anvä
 
 ![Arkitektur](assets/appbuilder-architecture.jpg)
 
-Mer information om App Builder-arkitekturen finns i [Översikt över arkitekturen](https://developer.adobe.com/app-builder/docs/guides/).
+Mer information om App Builder-arkitekturen finns i [Översikt över arkitekturen](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview).
 
 ## Kom igång med App Builder {#additional-resources}
 
 För att hjälpa dig att komma igång med App Builder har en serie dokument skapats som hjälper dig att komma igång:
 
-* [App Builder Komma igång](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [App Builder Komma igång](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app)
 
 ## Fortsätta inlärningen med dokumentation {#appbuilder-documentation}
 

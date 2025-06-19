@@ -8,7 +8,7 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '3330'
 ht-degree: 0%
@@ -436,7 +436,7 @@ Du kan använda konfigurationsfilen med följande alternativ:
 * azureSas=&quot;&quot;: I version 1.6.3 av anslutningsprogrammet har stöd för Azure Shared Access Signature (SAS) lagts till. **Om det finns både SAS- och lagringsreferenser i konfigurationsfilen har SAS prioritet.** Mer information om SAS finns i den [officiella dokumentationen](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Se till att tecknet &#39;=&#39; escape-konverteras som &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: Azure Blob Endpoint. Till exempel https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: Lagringskontots namn. Mer information om autentiseringsuppgifter för Microsoft® Azure finns i den [officiella dokumentationen](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: Lagringskontots namn. Mer information om autentiseringsuppgifter för Microsoft® Azure finns i den [officiella dokumentationen](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretsKey=&quot;&quot;: Lagringsåtkomstnyckeln. Se till att tecknet &#39;=&#39; escape-konverteras som &#39;\=&#39;.
 * container=&quot;&quot;: Microsoft® Azure-blobbens lagringsbehållarnamn. Behållaren är en gruppering av en uppsättning blober. Mer information finns i den [officiella dokumentationen](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).

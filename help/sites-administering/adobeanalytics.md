@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 4f7e1794-af5a-45a2-8dc6-80029c47caeb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 19%
+source-wordcount: '249'
+ht-degree: 20%
 
 ---
 
@@ -50,15 +50,14 @@ Du kan också använda guiden [Anmäl dig](/help/sites-administering/opt-in.md) 
 Se:
 
 * [Utöka Adobe Analytics-integrationen](/help/sites-developing/extending-analytics.md) om du vill ha information om hur du utvecklar komponenter som samlar in användardata och anpassar Adobe Analytics-ramverket.
-* Kunskapsbasartikeln [Integrering med Adobe Analytics - felsökning](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), innehåller information om hur du felsöker integreringen med Adobe Analytics.
 
 >[!NOTE]
 >
 >Om du använder Adobe Analytics med en anpassad proxykonfiguration måste du [konfigurera två OSGi-paket](/help/sites-deploying/configuring-osgi.md) (till exempel med webbkonsolen) som krävs för proxykonfigurationerna i **Apaches HTTP-klient**. Båda är obligatoriska eftersom vissa funktioner i AEM använder 3.x-API:erna, medan andra använder 4.x-API:erna. Konfigurera:
 >
 >* **Day Commons HTTP Client 3.1** för att konfigurera 3.x API;
->  till exempel [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>  >  till exempel [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* **Proxykonfiguration för Apache HTTP Components** för att konfigurera 4.x API;
->  till exempel [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>  >  till exempel [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

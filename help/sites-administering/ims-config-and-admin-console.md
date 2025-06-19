@@ -9,7 +9,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 6%
@@ -52,7 +52,7 @@ Inloggningsflödet för användare visas nedan. Användaren omdirigeras till IMS
 
 Kunden måste registrera sig för [!DNL Admin Console] för att kunna använda Adobe IMS för AEM-autentisering.
 
-Som ett första steg bör kunden ha en organisation som är etablerad i Adobe IMS. Adobe Enterprise-kunder representeras som IMS-organisationer i [Adobe [!DNL Admin Console]](https://helpx.adobe.com/se/enterprise/using/admin-console.html).
+Som ett första steg bör kunden ha en organisation som är etablerad i Adobe IMS. Adobe Enterprise-kunder representeras som IMS-organisationer i [Adobe [!DNL Admin Console]](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
 AEM Managed Services-kunder bör redan ha en organisation etablerad, och som en del av IMS-etableringen kommer kundinstanserna att vara tillgängliga i [!DNL Admin Console] för hantering av användarberättiganden och åtkomst.
 
@@ -70,9 +70,9 @@ När en kund finns som IMS-organisation och AMS har etablerat kunden för IMS ä
 
 >[!NOTE]
 >
->Mer information om grunderna i Adobe Identity Management, inklusive IDP-konfiguration, finns i artikeln om [Konfigurera identitet och enkel inloggning](https://helpx.adobe.com/se/enterprise/using/set-up-identity.html).
+>Mer information om grunderna i Adobe Identity Management, inklusive IDP-konfiguration, finns i artikeln om [Konfigurera identitet och enkel inloggning](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
 >
->Mer information om företagsadministration och [!DNL Admin Console] finns i [Välkommen till administratörshandboken för företag och team](https://helpx.adobe.com/se/enterprise/managing/user-guide.html).
+>Mer information om företagsadministration och [!DNL Admin Console] finns i [Välkommen till administratörshandboken för företag och team](https://helpx.adobe.com/enterprise/managing/user-guide.html).
 
 ### Onboarding-användare till [!DNL Admin Console] {#onboarding-users-to-the-admin-console}
 
@@ -104,7 +104,7 @@ När användarsynkronisering körs hämtar den en lista över användare från o
 
 Verktyget gör att systemadministratören kan mappa användargrupper i kundens katalog med produktkonfiguration och användargrupper i [!DNL Admin Console], den nya UST-versionen tillåter även att användargrupper i [!DNL Admin Console] skapas dynamiskt.
 
-Om du vill konfigurera användarsynkronisering måste organisationen skapa en uppsättning autentiseringsuppgifter på samma sätt som de använder [[!DNL User Management] API](https://developer.adobe.com/apis/cloudplatform/usermanagement/docs/setup.html).
+Om du vill konfigurera användarsynkronisering måste organisationen skapa en uppsättning autentiseringsuppgifter på samma sätt som de använder [[!DNL User Management] API](https://adobe-apiplatform.github.io/user-sync.py/en/success-guide/identify_server.html).
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 

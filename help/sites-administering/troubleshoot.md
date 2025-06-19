@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Tråddumpen är en lista över alla Java™-trådar som är aktiva. Om AEM inte 
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Mer information finns i [Så här tar du trådmodeller från en JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=sv-SE) -dokumentation
+Mer information finns i [Så här tar du trådmodeller från en JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) -dokumentation
 
 ### Söker efter oavslutade JCR-sessioner {#checking-for-unclosed-jcr-sessions}
 
@@ -104,7 +104,7 @@ När funktioner utvecklas för AEM WCM kan JCR-sessioner öppnas (vilket kan jä
 * Du kan se mycket av CacheManager: resizeAll-poster i loggfilen. Följande nummer (size=&lt;x>) visar antalet cacheminnen, varje session öppnar flera cacheminnen.
 * Från tid till annan har systemet slut på minne (efter några timmar, dagar eller veckor - beroende på allvarlighetsgraden).
 
-Om du vill analysera oavslutade sessioner och ta reda på vilken kod som inte stänger en session kan du läsa artikeln [Analysera oavslutade sessioner](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html) i kunskapsbasen.
+Information om hur du börjar analysera oavslutade sessioner finns i kunskapsbasartikeln [Ostängd resurslösare](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Använda Adobe Experience Manager Web Console {#using-the-adobe-experience-manager-web-console}
 

@@ -1,17 +1,13 @@
 ---
 title: Grundläggande konfigurationskoncept
 description: Lär dig hur du konfigurerar Adobe Experience Manager för dina egna specifika behov.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -180,11 +176,11 @@ Mer information om användarhantering i AEM (inklusive tilldelning av åtkomstr�
 
 Dispatcher är Adobe Experience Manager verktyg för cachning, belastningsutjämning eller både och. Den kan användas med en webbserver i företagsklass.
 
-Mer information finns i [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE), särskilt [Konfigurera Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE) för mer konfigurationsinformation.
+Mer information finns i [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html), särskilt [Konfigurera Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) för mer konfigurationsinformation.
 
 ### Konfigurera AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-I och med lanseringen av AEM Doc Services och AEM Doc Security kan AEM nu anropa LiveCycle doc-tjänsterna för att återge ett XFA-formulär, konvertera ett dokument till PDF och skydda ett dokument med regler. Mer information finns i [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html).
+I och med lanseringen av AEM Doc Services och AEM Doc Security kan AEM nu anropa LiveCycle doc-tjänsterna för att återge ett XFA-formulär, konvertera ett dokument till PDF och skydda ett dokument med regler.
 
 ### Jobbavlastning och topologiadministration {#job-offloading-and-topology-administration}
 

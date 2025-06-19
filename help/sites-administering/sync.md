@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 0%
@@ -33,7 +33,7 @@ När användarsynkronisering är aktiverat i AEM 6.1 synkroniseras användardata
 
 ## Sling Distribution {#sling-distribution}
 
-Användardata, tillsammans med deras [ACL](/help/sites-administering/security.md), lagras i [Oak Core](/help/sites-deploying/platform.md), lagret under Oak JCR, och du får åtkomst till dem med [Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html) . Med ovanliga uppdateringar är det rimligt att användardata synkroniseras med andra publiceringsinstanser med [Sling Content Distribution](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (Sling-distribution).
+Användardata, tillsammans med deras [ACL](/help/sites-administering/security.md), lagras i [Oak Core](/help/sites-deploying/platform.md), lagret under Oak JCR, och du får åtkomst till dem med [Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html) . Med ovanliga uppdateringar är det rimligt att användardata synkroniseras med andra publiceringsinstanser med [Sling Content Distribution](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (Sling-distribution).
 
 Fördelarna med användarsynkronisering med Sling-distribution jämfört med traditionell replikering är:
 
@@ -75,7 +75,7 @@ När användarsynkroniseringen är aktiverad synkroniseras endast nyskapade anv�
 
 1. Kontrollera att den senaste koden är installerad:
 
-* [AEM plattformsuppdateringar](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=sv-SE)
+* [AEM plattformsuppdateringar](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
 
 ### 1. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -98,7 +98,7 @@ Verifiera `name`: **`socialpubsync`**
 
 ![Distributionsagent för Apache Sling](assets/chlimage_1-20.png)
 
-### 2. Skapa behörig användare {#createauthuser}
+### &#x200B;2. Skapa behörig användare {#createauthuser}
 
 **Konfigurera behörigheter**
 
@@ -152,7 +152,7 @@ Se även
 * [Behörighetshantering](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Felsökningsavsnittet [Ändra åtgärdsundantag under svarsbearbetning](#modify-operation-exception-during-response-processing).
 
-### 3. Adobe Granite Distribution - Krypterad lösenordstransporthemlighetsprovider {#adobegraniteencpasswrd}
+### &#x200B;3. Adobe Granite Distribution - Krypterad lösenordstransporthemlighetsprovider {#adobegraniteencpasswrd}
 
 **Konfigurera behörigheter**
 
@@ -220,7 +220,7 @@ Verifiera `Name`: `socialpubsync-reverse`
 
 ![Diff Observer Factory](assets/screen-shot_2019-05-24at090809.png)
 
-### 6. Apache Sling Distribution Trigger - Factory för schemalagda utlösare {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### &#x200B;6. Apache Sling Distribution Trigger - Factory för schemalagda utlösare {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Valfritt) Ändra avsökningsintervallet**
 
@@ -280,7 +280,7 @@ Det ska finnas en importslutpunkt för varje Publish-instans. Om det till exempe
 
 * välj `Save`
 
-### 8. Unikt ID för försäljning {#unique-sling-id}
+### &#x200B;8. Unikt ID för försäljning {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -303,11 +303,9 @@ Om Sling ID för en Publish-instans matchar Sling ID för någon annan Publish-i
    * sök efter och ta bort filen *sling.id.file*
 
       * i ett Linux®-system:
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * i ett Windows-system:
-
         `use windows explorer and search for *sling.id.file*`
 
 1. starta Publish-instansen

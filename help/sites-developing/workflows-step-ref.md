@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ Stegen **Ange variabel** körs upprepade gånger och värdet för variabeln **co
 
 >[!NOTE]
 >
->Se [ELLER Dela steg](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Se [ELLER Dela steg](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)
 
 ![Förgreningar med ELLER dela](assets/variables_orsplit_new.png)
 
@@ -285,7 +285,6 @@ Du kan lagra widgetdata i arbetsflödets nyttolast eller i arbetsobjektets metad
 * **Lagra data med nyttolasten**
 
    * Om du vill lagra widgetdata som en egenskap för arbetsflödets nyttolast använder du följande format för värdet för namnegenskapen för widgetnoden:
-
      `./jcr:content/nodename`
 
    * Data lagras i nyttolastnodens `nodename`-egenskap. Om noden inte innehåller den egenskapen skapas egenskapen.
@@ -294,7 +293,6 @@ Du kan lagra widgetdata i arbetsflödets nyttolast eller i arbetsobjektets metad
 * **Lagra data med arbetsobjektet**
 
    * Om du vill lagra widgetdata som en egenskap för arbetsobjektets metadata använder du följande format för värdet för egenskapen name:
-
      `nodename`
 
    * Data lagras i egenskapen `nodename` för arbetsobjektet `metadata`. Data bevaras om dialogrutan senare används med samma nyttolast.

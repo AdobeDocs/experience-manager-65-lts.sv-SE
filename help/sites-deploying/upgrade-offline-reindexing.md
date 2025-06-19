@@ -9,9 +9,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0001c874-7468-4750-a377-03156674f4b9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,7 @@ Vi rekommenderar att du klonar produktionssystemet och skapar offlineindexet med
 
 ### Förbered en körning av Runbook och testversioner {#prepare-a-runbook-and-trial-run}
 
-Vi rekommenderar att du förbereder en [runbook](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) och utför några försök innan du kör uppgraderingen i produktion.
+Vi rekommenderar att du förbereder en [runbook](/help/sites-deploying/upgrade-planning.md#building-the-upgrade-and-rollback-runbook) och utför några försök innan du kör uppgraderingen i produktion.
 
 ### Dokumentspårningsläge med offlineindexering {#doc-traversal-mode-with-offline-indexing}
 

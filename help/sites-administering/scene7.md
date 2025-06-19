@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 9f879ab6-6806-4e94-836c-0a7813940914
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5236'
+source-wordcount: '5216'
 ht-degree: 0%
 
 ---
@@ -420,14 +420,10 @@ Om du inte vill att resurser som skickas till Dynamic Media Classic ska publicer
 
 Innan du kan skicka resurser till Dynamic Media Classic utan att publicera dem måste du konfigurera följande:
 
-1. [Använd Admin Console för att skapa ett supportärende](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). I ditt supportärende begär du att du aktiverar en säker förhandsgranskning för ditt Dynamic Media Classic-konto.
-1. [Konfigurera säker förhandsgranskning för ditt Dynamic Media Classic-konto](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=sv-SE).
+1. [Använd Admin Console för att skapa ett supportärende](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). I ditt supportärende begär du att du aktiverar en säker förhandsgranskning för ditt Dynamic Media Classic-konto.
+1. [Konfigurera säker förhandsgranskning för ditt Dynamic Media Classic-konto](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 Detta är samma steg som du följer för att skapa säkra testinställningar i Dynamic Media Classic.
-
->[!NOTE]
->
->Om installationsmiljön är ett 64-bitars UNIX®-operativsystem kan du läsa [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) om andra konfigurationsalternativ som du måste ange.
 
 #### Kända begränsningar för att överföra resurser i opublicerat läge  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -454,7 +450,7 @@ Om du använder den här funktionen bör du tänka på följande begränsningar:
 1. Välj fliken **[!UICONTROL Advanced]**.
 1. I listrutan **[!UICONTROL Enable Secure View]** väljer du **[!UICONTROL Upon AEM Publish Activation]** för att skicka resurser till Dynamic Media Classic utan publicering. (Som standard är det här värdet **[!UICONTROL Immediately]**, där Dynamic Media Classic-resurser publiceras omedelbart.)
 
-   Mer information om hur du testar resurser innan du publicerar dem finns i [Dynamic Media Classic-dokumentationen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=sv-SE).
+   Mer information om hur du testar resurser innan du publicerar dem finns i [Dynamic Media Classic-dokumentationen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -569,7 +565,7 @@ Du konfigurerar det godkända filformatet efter MIME-typ i OSGi-området (Open S
 
    Till exempel `psprocess="rasterize"&psresolution=120` .
 
-   Se [Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=sv-SE) för fler överföringsjobbparametrar som du kan använda.
+   Se [Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) för fler överföringsjobbparametrar som du kan använda.
 
    >[!NOTE]
    >

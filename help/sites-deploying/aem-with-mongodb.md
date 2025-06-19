@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '5965'
 ht-degree: 0%
@@ -594,7 +594,7 @@ Eftersom Dispatcher är tillståndslöst kan det enkelt skalas vågrätt. I viss
 
 Om du kör AEM utan Dispatcher måste SSL-avslutning och belastningsutjämning utföras av ett annat program. Det är obligatoriskt eftersom sessioner måste ha tillhörighet till den AEM-instans som de skapas i, ett koncept som kallas klibbiga anslutningar. Orsaken är att uppdateringarna av innehållet har minimal fördröjning.
 
-Läs [Dispatcher-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-manager-dispatcher/using/dispatcher) om du vill ha mer information om hur du konfigurerar den.
+Läs [Dispatcher-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) om du vill ha mer information om hur du konfigurerar den.
 
 ### Ytterligare konfiguration {#additional-configuration}
 
@@ -656,7 +656,7 @@ Med CSP kan du finjustera principer. I ett komplext program måste emellertid CS
 
 >[!NOTE]
 >
->Mer information om hur det här fungerar finns på [OWASP-sidan om skyddsprofiler för innehåll](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Mer information om hur det här fungerar finns på [OWASP-sidan om skyddsprofiler för innehåll](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Storleksändring {#sizing}
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1ea2f849-ef36-47bf-ac3a-49d1984efca5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7d1ab7984bc890aa4f079357061f44784a3bd1fe
 workflow-type: tm+mt
-source-wordcount: '9070'
+source-wordcount: '9057'
 ht-degree: 5%
 
 ---
@@ -47,7 +47,7 @@ Riktlinjerna är indelade i tre överensstämmelsenivåer: Nivå A (lägsta), Ni
 
 När du skapar din webbplats bör du bestämma den övergripande nivån som du vill att din plats ska anpassas efter.
 
-I följande avsnitt visas [WCAG 2.0-riktlinjerna](https://www.w3.org/TR/WCAG20/#guidelines) med relaterade kriterier för att lyckas med överensstämmelsenivåerna Nivå A och Nivå AA [&#128279;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
+I följande avsnitt visas [WCAG 2.0-riktlinjerna](https://www.w3.org/TR/WCAG20/#guidelines) med relaterade kriterier för att lyckas med överensstämmelsenivåerna Nivå A och Nivå AA [](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
 >[!NOTE]
 >
@@ -312,7 +312,7 @@ Exakta detaljer om hur du skapar ljudbeskrivad video ligger utanför den här ha
 
 * [Förstå villkor 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [Så här uppfyller du kriterierna 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/se/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Bildtexter (Live) (1.2.4)  {#captions-live}
 
@@ -328,10 +328,9 @@ Detta kriterium är identiskt med [Bildtexter (inspelade i förväg)](#captions-
 
 Följ anvisningarna för [Bildtexter (inspelade i förväg)](#captions-pre-recorded) ovan. På grund av mediernas aktiva natur måste dock bildtexter skapas så snabbt som möjligt och som svar på vad som händer. Därför bör du överväga att använda bildtexter i realtid eller tal-till-text-verktyg.
 
-Detaljerade instruktioner ligger utanför det här dokumentets räckvidd, men med följande resurser får du användbar information:
+Detaljerade instruktioner ligger utanför det här dokumentets omfång, men följande resurs ger användbar information:
 
 * [WebAIM: Bildtext i realtid](https://webaim.org/techniques/captions/realtime)
-* [AccessIT (University of Washington): Kan bildtexter genereras automatiskt med taligenkänning?](https://www.washington.edu/doit/programs/accessit?1209)
 
 #### Mer information - Bildtexter (Live) (1.2.4) {#more-information-captions-live}
 
@@ -742,7 +741,7 @@ Se till att följande tekniker används:
 #### Mer information - tre blinkningar eller under tröskelvärde (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
 * [Förstå villkor för slutförande 2.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
-* [Så här uppfyller du villkor för att lyckas &lbrace;2.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
+* [Så här uppfyller du villkor för att lyckas {2.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
 
 ### Sida med rubriker (2.4.2)  {#page-titled}
 
