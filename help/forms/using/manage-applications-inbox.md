@@ -1,17 +1,13 @@
 ---
 title: Hantera Forms-program och -uppgifter i AEM Inbox
 description: Med AEM Inbox kan du starta Forms-centrerade arbetsflöden genom att skicka program och hantera uppgifter.
-contentOwner: vishgupt
-topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -140,7 +136,7 @@ En arbetsflödesmodellägare kan inte visa objekt som är relaterade till AEM Wo
      | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
 
 
-   * Distribuera indexen via ett AEM-paket. Du kan använda ett [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=sv-SE) -projekt för att skapa ett distribuerbart AEM-paket. Använd följande exempelkod för att lägga till index i ett AEM Archetype-projekt:
+   * Distribuera indexen via ett AEM-paket. Du kan använda ett [AEM Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) -projekt för att skapa ett distribuerbart AEM-paket. Använd följande exempelkod för att lägga till index i ett AEM Archetype-projekt:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +146,6 @@ En arbetsflödesmodellägare kan inte visa objekt som är relaterade till AEM Wo
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Skapa ett egenskapsindex och ange det till true](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Skapa ett egenskapsindex och ange det till true](/help/sites-deploying/queries-and-indexing.md#the-property-index).
 
-1. När du har konfigurerat index i CRX DE eller distribuerat via ett paket indexerar [om databasen](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
-
-https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html
+1. När du har konfigurerat index i CRX DE eller distribuerat via ett paket indexerar du om databasen.
