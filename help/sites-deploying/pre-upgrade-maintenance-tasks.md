@@ -37,7 +37,7 @@ Innan du påbörjar uppgraderingen är det viktigt att du följer dessa underhå
 
 ## Indexdefinitioner {#index-definitions}
 
-Kontrollera att du har installerat de indexdefinitioner som krävs och som släppts med senaste AEM 6.5 Service Pack. (Mer information finns i [Versionsinformation för AEM 6.5 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes)).
+Kontrollera att du har installerat de indexdefinitioner som krävs och som släppts med senaste AEM 6.5 Service Pack. (Mer information finns i [Versionsinformation för AEM 6.5 Service Pack](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/release-notes)).
 
 ## Se till att det finns tillräckligt med diskutrymme {#ensure-sufficient-disk-space}
 
