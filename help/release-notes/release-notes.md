@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1019'
 ht-degree: 1%
 
 ---
@@ -53,6 +53,10 @@ Eclipse Jetty 11.0.x används som servermotor för QuickStart.
 Installationsanvisningar finns i [Installationsanvisningar](/help/sites-deploying/custom-standalone-install.md).
 
 Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-deploying/upgrade.md).
+
+>[!NOTE]
+>
+> För nya AEM 6.5 LTS-installationer måste indexdefinitioner installeras separat. Mer information finns i [this](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Plattformar som stöds {#supported-platforms}
 
@@ -147,5 +151,5 @@ Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorr
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 

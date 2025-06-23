@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Innan du påbörjar uppgraderingen är det viktigt att du följer dessa underhå
 
 ## Indexdefinitioner {#index-definitions}
 
-Se till att du har installerat de indexdefinitioner som krävs och som lanserats med AEM 6.5 Service Pack fram till AEM Service Pack 22 som minimum. (Mer information finns i [Versionsinformation för AEM 6.5 Service Pack](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/release-notes)).
+Kontrollera att du har installerat de indexdefinitioner som krävs och som släppts med senaste AEM 6.5 Service Pack. (Mer information finns i [Versionsinformation för AEM 6.5 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes)).
 
 ## Se till att det finns tillräckligt med diskutrymme {#ensure-sufficient-disk-space}
 

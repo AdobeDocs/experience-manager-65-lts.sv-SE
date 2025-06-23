@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: dc92f670e7025f9490abbcecff4b485af331bd6d
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
@@ -314,6 +314,10 @@ Webbkonsolen.
 
 * Gå till [checklistan för säkerhet](/help/sites-administering/security-checklist.md) för uppgifter som krävs för att säkerställa att systemet förblir säkert.
 * Granska listan över standardanvändare och -grupper som installeras med AEM WCM. Kontrollera om du vill vidta åtgärder för andra konton. Mer information finns i [Säkerhet och användaradministration](/help/sites-administering/security.md).
+
+>[!NOTE]
+>
+> För nya AEM 6.5 LTS-installationer måste indexdefinitioner installeras separat. Mer information finns i [this](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Åtkomst till CRXDE Lite och webbkonsolen {#accessing-crxde-lite-and-the-web-console}
 
