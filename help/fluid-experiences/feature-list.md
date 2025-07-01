@@ -51,11 +51,11 @@ I följande tabeller definieras funktionerna i AEM Fluid Experiences och länken
 |---|
 | [HTTP API](/help/assets/mac-api-assets.md) |
 | [Strukturerade innehållsmodeller](/help/assets/content-fragments/content-fragments.md) |
-| [Innehållstjänster](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) |
+| [Innehållstjänster](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=sv-SE) |
 | [Upplev fragment](/help/sites-authoring/experience-fragments.md) |
 | HTTP API för strukturerat innehåll (läs) |
 | HTTP API för strukturerat innehåll (CRUD) |
-| [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |
+| [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) |
 | [Dynamiska media](/help/assets/dynamic-media.md) |
 
 ## Funktioner för administration och integrering {#admin-and-integration-features}
@@ -68,7 +68,7 @@ I följande tabeller definieras funktionerna i AEM Fluid Experiences och länken
 | [Innehållsöversättning](/help/sites-administering/translation.md) |
 | [Övervakning](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Säkerhetskopiera](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
+| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=sv-SE) |
 | [PIM-integrering](/help/sites-authoring/managing-product-information.md) |
 | [Projekt och uppgifter](/help/sites-authoring/projects.md) |
 | [Arbetsflöden](/help/sites-administering/workflows-starting.md) |
@@ -84,7 +84,7 @@ I följande tabeller definieras funktionerna i AEM Fluid Experiences och länken
 
 ## Läs mer {#learn-more}
 
-* [Fluid Experiences for headless use cases](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
-* [AEM Content Service: What, Why, and How?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
-* [Vanliga frågor om åtkomst från tredje part](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
-* [Använda Sling API:er](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)
+* [Fluid Experiences for headless use cases](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=sv-SE)
+* [AEM Content Service: What, Why, and How?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=sv-SE)
+* [Vanliga frågor om åtkomst från tredje part](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=sv-SE)
+* [Använda Sling API:er](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=sv-SE#sling-models)

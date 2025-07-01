@@ -57,7 +57,7 @@ Markera den bokstav du vill förhandsgranska genom att följa följande steg:
 
    >[!NOTE]
    >
-   >Mer information om hur du växlar mellan HTML- eller PDF-återgivningsläget för förhandsgranskning av brev finns i [Ändra återgivningsläget för bokstaven](#changerenditionmode). Mer information om PDF-stöd i Correspondence Management och AEM finns i [Avbryta plugin-program för NPAPI-webbläsare och dess påverkan](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+   >Mer information om hur du växlar mellan HTML- eller PDF-återgivningsläget för förhandsgranskning av brev finns i [Ändra återgivningsläget för bokstaven](#changerenditionmode). Mer information om PDF-stöd i Correspondence Management och AEM finns i [Avbryta plugin-program för NPAPI-webbläsare och dess påverkan](https://helpx.adobe.com/se/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Ange data {#enterdata}
 
@@ -371,7 +371,7 @@ Mer information om skriptstöd i HTML5-formulär finns i [Skriptstöd för HTML5
 
 Som standard används HTML- eller mobilformulären för att återge förhandsgranskningen av brevet i användargränssnittet för Skapa korrespondens. Förhandsgranskningen av mobilformulär har inga problem med återgivningen i någon webbläsare, eftersom webbläsarens inbyggda plugin-program används och inga ytterligare plugin-program krävs. Du kan ändra förhandsgranskningsläget för brev till PDF. Webbläsarbegränsningar kan dock ge problem med olika funktioner i den interaktiva PDF-förhandsgranskningen av brevet.
 
-Mer information om webbläsarkompatibilitet med förhandsgranskning av brev finns i [Avbryta plugin-program för NPAPI-webbläsare och dess påverkan](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Mer information om webbläsarkompatibilitet med förhandsgranskning av brev finns i [Avbryta plugin-program för NPAPI-webbläsare och dess påverkan](https://helpx.adobe.com/se/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Om du vill ändra förhandsgranskningsläget för brevet utför du följande steg:
 
