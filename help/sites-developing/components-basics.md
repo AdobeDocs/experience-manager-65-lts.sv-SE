@@ -1,18 +1,13 @@
 ---
 title: Adobe Experience Manager Components - The Basics
 description: När du börjar utveckla nya komponenter måste du förstå grunderna i deras struktur och konfiguration.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4834'
+source-wordcount: '4819'
 ht-degree: 0%
 
 ---
@@ -64,13 +59,13 @@ Grunderna för båda beskrivs på den här sidan och hur du känner igen dem.
 
 Adobe rekommenderar att koden som ansvarar för kod och återgivning hålls åtskild från koden som styr logiken som används för att markera komponentens innehåll.
 
-Den här filosofin stöds av [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE), ett mallspråk som är avsiktligt begränsat för att säkerställa att ett verkligt programmeringsspråk används för att definiera den underliggande affärslogiken. Den här (valfria) logiken anropas från HTML med ett specifikt kommando. Den här mekanismen markerar koden som anropas för en viss vy och, om det behövs, tillåter specifik logik för olika vyer av samma komponent.
+Den här filosofin stöds av [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), ett mallspråk som är avsiktligt begränsat för att säkerställa att ett verkligt programmeringsspråk används för att definiera den underliggande affärslogiken. Den här (valfria) logiken anropas från HTML med ett specifikt kommando. Den här mekanismen markerar koden som anropas för en viss vy och, om det behövs, tillåter specifik logik för olika vyer av samma komponent.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
 HTL är ett mallspråk från HTML som introducerades med AEM 6.0.
 
-Diskussionen om du ska använda [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE) eller JSP (Java™ Server Pages) när du utvecklar egna komponenter bör vara enkel eftersom HTML nu är det rekommenderade skriptspråket för AEM.
+Diskussionen om du ska använda [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) eller JSP (Java™ Server Pages) när du utvecklar egna komponenter bör vara enkel eftersom HTML nu är det rekommenderade skriptspråket för AEM.
 
 Både HTML och JSP kan användas för att utveckla komponenter för både det klassiska och det beröringskänsliga användargränssnittet. Även om det finns en tendens att anta att HTML bara är för det beröringsaktiverade användargränssnittet och JSP för det klassiska användargränssnittet, är detta en missuppfattning och beror mer på timing. Användargränssnittet med pekfunktion och HTML integrerades i AEM under ungefär samma period. Eftersom HTML nu är det rekommenderade språket används det för nya komponenter, som ofta används för användargränssnittet med pekfunktioner.
 
@@ -312,7 +307,7 @@ En komponent är en nod av typen `cq:Component` och har följande egenskaper och
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Om den anges används den här egenskapen som cell-ID. Mer information finns i kunskapsbasartikeln <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">How are Design Cell IDs built</a>.<br /> </td>
+   <td>Om den här egenskapen anges används den som cell-ID.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>

@@ -2,16 +2,13 @@
 title: Hur skapar eller anpassar man adaptiva formulärteman?
 description: Lär dig att skapa eller anpassa teman för adaptiva Forms Core-komponenter med BEM-specifikationer
 keywords: skapa anpassningsbara formulär, skapa ett nytt tema, anpassa tema, ladda upp nytt tema, använda tema i formulär, ta bort ett tema, skapa ett tema i AEM 6.5-formulär
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1932'
 ht-degree: 0%
 
 ---
@@ -20,7 +17,7 @@ ht-degree: 0%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 | AEM 6.5 | Denna artikel |
 
 
@@ -81,7 +78,7 @@ Att anpassa ett tema avser processen att ändra och anpassa utseendet på ett te
 
 * Installera den senaste versionen av [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven är ett automatiserat byggverktyg som ofta används för Java™-projekt. Genom att installera den senaste versionen får du de beroenden du behöver för att anpassa temat.
 
-* Lär dig skapa ett [klientbibliotek i Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html). AEM tillhandahåller klientbibliotek, som gör att du kan lagra din klientkod i databasen, ordna den i kategorier och definiera när och hur varje kodkategori ska skickas till klienten.
+* Lär dig skapa ett [klientbibliotek i Adobe Experience Manager](/help/sites-developing/clientlibs.md). AEM tillhandahåller klientbibliotek, som gör att du kan lagra din klientkod i databasen, ordna den i kategorier och definiera när och hur varje kodkategori ska skickas till klienten.
 
 * Installera en vanlig textredigerare. Exempel: Microsoft® Visual Studio Code. Med en vanlig textredigerare som Microsoft® Visual Studio Code får du en användarvänlig miljö där du kan redigera och ändra temafiler.
 
@@ -111,7 +108,7 @@ Att skapa eller anpassa ett tema är en process i flera steg. Utför stegen i li
 
 Exemplen i dokumentet är baserade på temat **Canvas**, men du kan klona ett tema och anpassa det med samma instruktioner. Dessa instruktioner kan användas för alla teman och du kan ändra teman efter dina specifika behov.
 
-#### 1. Klona Git-databasen för temat {#clone-git-repo-of-theme}
+#### &#x200B;1. Klona Git-databasen för temat {#clone-git-repo-of-theme}
 
 Om du vill klona ett tema för Core Components based Adaptive Forms väljer du ett av följande teman:
 
@@ -141,9 +138,9 @@ Utför följande instruktioner för att klona ett tema:
 
 När kommandot har körts har du en lokal kopia av temat på datorn i mappen `aem-forms-theme-canvas`.
 
-#### 2. Anpassa temat {#customize-the-theme}
+#### &#x200B;2. Anpassa temat {#customize-the-theme}
 
-Du kan anpassa enskilda komponenter eller göra ändringar på temanivå med hjälp av temats globala variabler. När du ändrar globala variabler får du en överlappande effekt på alla enskilda komponenter. Du kan till exempel använda globala variabler för att ändra kantfärgen på alla komponenter i ett adaptivt formulär eller tillämpa en levande fyllningsfärg på knapparna Call to Action (CTA). Du kan:
+Du kan anpassa enskilda komponenter eller göra ändringar på temanivå med hjälp av temats globala variabler. När du ändrar globala variabler får du en överlappande effekt på alla enskilda komponenter. Du kan t.ex. använda globala variabler för att ändra kantfärgen på alla komponenter i ett adaptivt formulär eller tillämpa en levande fyllningsfärg på Call to action-knappar (CTA). Du kan:
 
 * [Ange format för temanivåer](#theme-customization-global-level)
 
@@ -190,7 +187,7 @@ Du kan också anpassa teckensnitt, färg, storlek och andra CSS-egenskaper för 
 >
 > När ett format definieras både på tema- och komponentnivå prioriteras det format som definieras på komponentnivå.
 
-#### 3. Temat är klart för distribution {#generate-the-clientlib}
+#### &#x200B;3. Temat är klart för distribution {#generate-the-clientlib}
 
 Om du vill distribuera ett tema till en AEM-instans måste det konverteras till ett klientbibliotek. Så här konverterar du temat till ett klientbibliotek:
 
@@ -215,7 +212,7 @@ Om du vill distribuera ett tema till en AEM-instans måste det konverteras till 
 
    ![Klientbibliotekets plats](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Använd temat i en lokal miljö {#deploy-the-theme-on-a-local-environment}
+#### &#x200B;4. Använd temat i en lokal miljö {#deploy-the-theme-on-a-local-environment}
 
 Så här distribuerar du temat till din lokala utvecklings- eller testmiljö:
 
@@ -266,7 +263,7 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### 5. Använd ett tema i produktionsmiljön {#deploy-theme}
+#### &#x200B;5. Använd ett tema i produktionsmiljön {#deploy-theme}
 
 När du har testat temat på den lokala utvecklingsmiljön kan du fortsätta att distribuera temat till produktionsmiljöerna, inklusive både författaren och publiceringsinstanser. Så här distribuerar du temat i dina produktionsmiljöer:
 
@@ -344,4 +341,4 @@ Så här tar du bort oanvända eller oönskade teman:
 * [Skapa eller anpassa teman för grundkomponentbaserade adaptiva Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Skapa en mall för Core Components-baserade Adaptive Forms](template-editor.md)
 * [Skapa eller lägga till ett anpassat formulär på en AEM Sites-sida eller ett Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Exempelmallar för teman och formulärdatamodeller](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=sv-SE)
+* [Exempelmallar för teman och formulärdatamodeller](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

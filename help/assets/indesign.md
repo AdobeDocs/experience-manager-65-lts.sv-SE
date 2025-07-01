@@ -1,14 +1,13 @@
 ---
 title: Integrera [!DNL Assets] med [!DNL InDesign Server]
 description: Lär dig integrera [!DNL Adobe Experience Manager Assets] med [!DNL Adobe InDesign Server].
-contentOwner: AG
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8489976fbcee595ee8230c530597523e7cd0f6b7
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1516'
 ht-degree: 0%
 
 ---
@@ -21,11 +20,11 @@ ht-degree: 0%
 * En proxyarbetare som definierar och hanterar en viss uppgift.
 Dessa kan omfatta en mängd olika uppgifter, till exempel att använda en [!DNL InDesign Server] för att bearbeta filer.
 
-Om du vill överföra filer till [!DNL Experience Manager Assets] som du har skapat med [!DNL Adobe InDesign] används en proxy. Detta använder en proxyarbetare för att kommunicera med [!DNL Adobe InDesign Server], där [ skript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) körs för att extrahera metadata och generera olika återgivningar för [!DNL Experience Manager Assets]. Proxyarbetaren aktiverar tvåvägskommunikation mellan [!DNL InDesign Server] och [!DNL Experience Manager]-instanserna i en molnkonfiguration.
+Om du vill överföra filer till [!DNL Experience Manager Assets] som du har skapat med [!DNL Adobe InDesign] används en proxy. Detta använder en proxyarbetare för att kommunicera med [!DNL Adobe InDesign Server], där [ skript](https://helpx.adobe.com/indesign/using/scripting.html) körs för att extrahera metadata och generera olika återgivningar för [!DNL Experience Manager Assets]. Proxyarbetaren aktiverar tvåvägskommunikation mellan [!DNL InDesign Server] och [!DNL Experience Manager]-instanserna i en molnkonfiguration.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] erbjuds som två separata erbjudanden. [Adobe InDesign](https://www.adobe.com/products/indesign.html) som används för att utforma sidlayouter för tryck och digital distribution. Med [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) kan du skapa automatiserade dokument med programkod baserat på vad du har skapat med [!DNL InDesign]. Det fungerar som en tjänst som erbjuder ett gränssnitt till dess [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)-motor. Skripten skrivs i [!DNL ExtendScript], som liknar [!DNL JavaScript]. Mer information om [!DNL InDesign] skript finns i [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] erbjuds som två separata erbjudanden. [Adobe InDesign](https://www.adobe.com/products/indesign.html) som används för att utforma sidlayouter för tryck och digital distribution. Med [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) kan du skapa automatiserade dokument med programkod baserat på vad du har skapat med [!DNL InDesign]. Det fungerar som en tjänst som erbjuder ett gränssnitt till dess [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html)-motor. Skripten skrivs i [!DNL ExtendScript], som liknar [!DNL JavaScript].
 
 ## Hur extraheringen fungerar {#how-the-extraction-works}
 
@@ -50,7 +49,7 @@ Detta kommandoskript kommer att:
 
    >[!NOTE]
    >
-   >IDML är ett XML-baserat format som återger allt innehåll i filen [!DNL InDesign]. Den lagras som ett komprimerat paket med [ZIP](https://www.techterms.com/definition/zip) -komprimering. Mer information finns i [InDesign Interchange Formats INX och IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML är ett XML-baserat format som återger allt innehåll i filen [!DNL InDesign]. Den lagras som ett komprimerat paket med [ZIP](https://www.techterms.com/definition/zip) -komprimering. Mer information finns i [InDesign Interchange Formats INX och IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
 
    >[!CAUTION]
    >

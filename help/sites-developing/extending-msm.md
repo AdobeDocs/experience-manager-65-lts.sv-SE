@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2422'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ På den här sidan kan du utöka funktionerna i Multi Site Manager:
 >[!NOTE]
 >
 >Den här sidan ska läsas tillsammans med [Återanvända innehåll: Multi Site Manager](/help/sites-administering/msm.md).
->
->Följande avsnitt av Omstrukturering av anläggningstillgångar kan också vara av intresse:
->* [Multi-site Manager-utkastkonfigurationer](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [Konfiguration för utrullning av hanterare för flera platser](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -208,15 +204,12 @@ Den nya utrullningskonfigurationen är sedan tillgänglig för dig när du stäl
 
 1. Lägg till följande egenskaper i den här noden:
    * **Namn**: `jcr:title`
-
      **Typ**: `String`
      **Värde**: En identifierande titel som visas i användargränssnittet.
    * **Namn**: `jcr:description`
-
      **Typ**: `String`
      **Värde**: En valfri beskrivning.
    * **Namn**: `cq:trigger`
-
      **Typ**: `String`
      **Värde**: Utlösaren [som ska användas ](/help/sites-administering/msm-sync.md#rollout-triggers). Välj bland:
       * `rollout`
@@ -689,7 +682,6 @@ Anger om en sidegenskap ska rullas ut och därför styrs arvet av egenskapen dia
       * **Typ**: `String`
 
       * **Värde**: innehåller namnet på den aktuella egenskapen (och är jämförbart med värdet för egenskapen `name`; se till exempel
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 När `cq-msm-lockable` har definierats interagerar kedjan med MSM på följande sätt om kedjan bryts/stängs:

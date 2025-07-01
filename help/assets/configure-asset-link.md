@@ -6,9 +6,9 @@ role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 110b7175-d398-40ff-886e-5817a1df0ec9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ce0da5056e0821c94eb06a05c663a3939b37f940
 workflow-type: tm+mt
-source-wordcount: '2852'
+source-wordcount: '2849'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Implementera följande uppgifter om du vill konfigurera Experience Manager Asset
 
 1. Om du vill mappa Creative Cloud-licensierade användare till Experience Manager-användare hanterar du [åtkomstkontrollen](#user-access).
 
-1. Skapa [anpassat frågeindex](#create-custom-index), konfigurera [FPO-återgivningar](/help/assets/configure-fpo-renditions.md) för InDesign, konfigurera [Adobe Stock-integrering](/help/assets/aem-assets-adobe-stock.md) och konfigurera [visuell eller liknande sökning](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
+1. Skapa [anpassat frågeindex](#create-custom-index), konfigurera [FPO-återgivningar](/help/assets/configure-fpo-renditions.md) för InDesign, konfigurera [Adobe Stock-integrering](/help/assets/aem-assets-adobe-stock.md) och konfigurera [visuell eller liknande sökning](/help/assets/search-assets.md#configvisualsearch).
 
 ## Förutsättningar och stöd för olika funktioner {#prerequisites}
 
@@ -33,7 +33,7 @@ Kontrollera att du har installerat rätt Service Pack och paket efter behov. Se 
 
 | Assets | Experience Manager-version och supportkrav |
 |--- |--- |
-| Resurslänk fungerar som standard | Experience Manager 6.5 och 6.5.2 eller senare. </br> Experience Manager 6.4.4 och 6.4.6 eller senare. </br> Adobe rekommenderar att du installerar det senaste [Experience Manager Service Pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=sv-SE) innan du använder AAL. |
+| Resurslänk fungerar som standard | Experience Manager 6.5 och 6.5.2 eller senare. </br> Experience Manager 6.4.4 och 6.4.6 eller senare. </br> Adobe rekommenderar att du installerar det senaste [Experience Manager Service Pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) innan du använder AAL. |
 | Resurslänk fungerar efter installation av ett paket | För Experience Manager 6.4.0 - 6.4.3 installerar du paketet [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). |
 | Integrering med Adobe Stock | Experience Manager 6.4.2 eller senare |
 | Visuell eller liknande sökning | Experience Manager 6.5.0 eller senare |
@@ -54,7 +54,7 @@ Adobe rekommenderar att du installerar konfigurationspaketet [adobe-asset-link-c
    Ange följande egenskaper och spara ändringarna.
 
    * [!UICONTROL Group Mappings]: Lämna tomt om du inte vill. Mer information finns i [Gruppmappning](#group-mapping).
-   * [!UICONTROL Organization]: Ange det organisations-ID som du använder i Adobe Admin Console. Mer information om organisations-ID:n finns i [Skapa användargrupp](https://helpx.adobe.com/se/enterprise/using/create-aal-user-group.html).
+   * [!UICONTROL Organization]: Ange det organisations-ID som du använder i Adobe Admin Console. Mer information om organisations-ID:n finns i [Skapa användargrupp](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html).
 
 1. Leta reda på konfigurationen för **[!UICONTROL Adobe Granite Bearer Authentication Handler]** och klicka för att redigera den.
 
@@ -116,7 +116,7 @@ Så här konfigurerar du Experience Manager manuellt:
 
 ## Ytterligare konfiguration efter migrering till affärsprofiler {#configure-migration-activity}
 
-Adobe Asset Link-användare kan ansluta till Experience Manager för att tillåta IMS-inloggning från huvudorganisationen för Creative Cloud for Enterprise (CCE). Experience Manager använder klient-ID för att identifiera den tillåtna IMS-organisationen. Efter migrering till affärsprofiler måste du konfigurera klient-ID och hemlig nyckel för IMS-organisationen i Experience Manager för Bearer Authentication Handler. Mer information om affärsprofiler finns i [Introduktion till Adobe-profiler](https://helpx.adobe.com/se/enterprise/kb/introducing-adobe-profiles.html).
+Adobe Asset Link-användare kan ansluta till Experience Manager för att tillåta IMS-inloggning från huvudorganisationen för Creative Cloud for Enterprise (CCE). Experience Manager använder klient-ID för att identifiera den tillåtna IMS-organisationen. Efter migrering till affärsprofiler måste du konfigurera klient-ID och hemlig nyckel för IMS-organisationen i Experience Manager för Bearer Authentication Handler. Mer information om affärsprofiler finns i [Introduktion till Adobe-profiler](https://helpx.adobe.com/enterprise/kb/introducing-adobe-profiles.html).
 
 Ytterligare konfiguration krävs endast om du använder olika Adobe IMS-organisationer för Experience Manager och Creative Cloud for Enterprise (CCE) och en domänförtroenderelation upprättas mellan dessa två organisationer.
 
@@ -243,8 +243,7 @@ I Experience Manager 6.4 och Experience Manager 6.5 kan administratörer konfigu
 
 Konfigurationen är användbar för företagsanvändare och marknadsförare, till exempel för att skapa ett anpassat arbetsflöde i några specifika mappar. Anta att alla resurser från en reklambyrås foton kan vara vattenstämplade eller att alla resurser som överförts av en frilansare kan bearbetas för att skapa specifika renderingar.
 
-Mer information och information om Experience Manager-konfiguration finns i [autokörningsarbetsflöde för resurser](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
-
+Mer information och information om Experience Manager-konfiguration finns i [autokörningsarbetsflöde för resurser](/help/assets/assets-workflow.md#auto-execute-workflow-on-some-assets).
 
 ## Skapa ett anpassat index i Experience Manager 6.4.x {#create-custom-index}
 
@@ -261,7 +260,7 @@ Experience Manager innehåller index som används för frågor. Skapa följande 
 
 ## Konfigurera visuell sökning eller likhetssökning {#configure-visual-similarity-search}
 
-Med funktionen för visuell sökning kan du söka efter visuellt liknande resurser i AEM Assets-databasen med hjälp av panelen Adobe Asset Link. Funktionen är tillgänglig i version 6.5.0 eller senare och endast indexerade resurser söks igenom. Mer information finns i [Konfigurera visuell sökning](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
+Med funktionen för visuell sökning kan du söka efter visuellt liknande resurser i AEM Assets-databasen med hjälp av panelen Adobe Asset Link. Funktionen är tillgänglig i version 6.5.0 eller senare och endast indexerade resurser söks igenom. Mer information finns i [Konfigurera visuell sökning](/help/assets/search-assets.md#configvisualsearch).
 
 ## Generera renderingar endast för placering för Adobe InDesign {#fpo-renditions}
 
@@ -270,7 +269,7 @@ Experience Manager tillhandahåller renderingar som endast används för placeri
 
 ## Integrera med Adobe Stock {#adobe-stock-integration}
 
-Organisationer integrerar sina Adobe Stock-konton med Experience Manager Assets. Det hjälper marknadsförarna att göra licensierade högkvalitativa, royaltyfria foton, vektorer, illustrationer, videor, mallar och 3D-resurser tillgängliga för sina kreativa projekt och marknadsföringsprojekt. Kreatörer kan använda dessa resurser med hjälp av panelen Resurslänk.
+Organisationer integrerar sina Adobe Stock-konton med Experience Manager Assets. Det hjälper marknadsförarna att göra licensierade högkvalitativa, royaltyfria foton, vektorer, illustrationer, videor, mallar och 3D-resurser tillgängliga för sina kreativa projekt och marknadsföringsprojekt. Creative-användare kan använda dessa resurser med hjälp av panelen Resurslänk.
 
 Mer information om hur du integrerar med Adobe Stock finns i [Adobe Stock-resurser i Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md). Experience Manager 6.4.2 eller senare krävs för integrering med Adobe Stock.
 
@@ -283,11 +282,11 @@ Om du får problem när du konfigurerar eller använder Adobe Asset Link kan du 
 * Se till att driftsättningen uppfyller kraven. Kontrollera i synnerhet att rätt funktionspaket eller funktionspaket är installerade.
 * Kontakta din organisations partner eller systemintegratör.
 * Om dina Creative Cloud-användare inte kan verifiera de utcheckade resurserna ska du kontrollera om domännamnen finns i e-post-ID:n. Mer information finns i [manuell konfiguration](#manual-configuration).
-* Mer information finns i [felsökning av resurslänk](https://helpx.adobe.com/se/enterprise/kb/asset-link-troubleshooting.html).
+* Mer information finns i [felsökning av resurslänk](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]
 >
->* [Om Adobe Asset Link](https://helpx.adobe.com/se/enterprise/using/adobe-asset-link.html)
+>* [Om Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Använd resurslänk i Creative Cloud-datorprogrammet och hantera resurser](https://helpx.adobe.com/se/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Konfigurera Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/se/enterprise/using/configure-aem-assets-for-asset-link.html).
+>* [Konfigurera Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).

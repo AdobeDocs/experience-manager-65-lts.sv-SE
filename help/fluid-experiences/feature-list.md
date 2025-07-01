@@ -6,9 +6,9 @@ feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
 exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6e6e04a2532f812596f00557b5d3dc4dccdab66d
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '267'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Adobe Experience Manager Fluid Experiences bygger på de kraftfulla funktionerna i AEM Sites, AEM Dynamic Media och AEM Assets och ger en robust lösning för leverans av headless-material.
 
-AEM Fluid Experiences skiljer sig från klassiska AEM genom att endast använda headless-produkter. Framtagning och leverans av rubrikinnehåll och AEM starkt stöd för hybridanvändning finns för [AEM Sites-, Assets- och Dynamic Media-lösningarna.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/user-guide/home.html)
+AEM Fluid Experiences skiljer sig från klassiska AEM genom att endast använda headless-produkter. Framtagning och leverans av högklassigt innehåll och AEM starka stöd för hybridanvändning finns i AEM Sites, Assets och Dynamic Media.
 
 I följande tabeller definieras funktionerna i AEM Fluid Experiences och länken till relevant supportdokumentation.
 
@@ -51,11 +51,11 @@ I följande tabeller definieras funktionerna i AEM Fluid Experiences och länken
 |---|
 | [HTTP API](/help/assets/mac-api-assets.md) |
 | [Strukturerade innehållsmodeller](/help/assets/content-fragments/content-fragments.md) |
-| [Innehållstjänster](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=sv-SE) |
+| [Innehållstjänster](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) |
 | [Upplev fragment](/help/sites-authoring/experience-fragments.md) |
 | HTTP API för strukturerat innehåll (läs) |
 | HTTP API för strukturerat innehåll (CRUD) |
-| [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) |
+| [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |
 | [Dynamiska media](/help/assets/dynamic-media.md) |
 
 ## Funktioner för administration och integrering {#admin-and-integration-features}
@@ -68,7 +68,7 @@ I följande tabeller definieras funktionerna i AEM Fluid Experiences och länken
 | [Innehållsöversättning](/help/sites-administering/translation.md) |
 | [Övervakning](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Säkerhetskopiera](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=sv-SE) |
+| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
 | [PIM-integrering](/help/sites-authoring/managing-product-information.md) |
 | [Projekt och uppgifter](/help/sites-authoring/projects.md) |
 | [Arbetsflöden](/help/sites-administering/workflows-starting.md) |
@@ -84,7 +84,7 @@ I följande tabeller definieras funktionerna i AEM Fluid Experiences och länken
 
 ## Läs mer {#learn-more}
 
-* [Fluid Experiences for headless use cases](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=sv-SE)
-* [AEM Content Service: What, Why, and How?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=sv-SE)
-* [Vanliga frågor om åtkomst från tredje part](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=sv-SE)
-* [Använda Sling API:er](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=sv-SE#sling-models)
+* [Fluid Experiences for headless use cases](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [AEM Content Service: What, Why, and How?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [Vanliga frågor om åtkomst från tredje part](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
+* [Använda Sling API:er](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

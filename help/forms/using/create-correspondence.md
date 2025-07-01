@@ -8,9 +8,9 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3790'
+source-wordcount: '3763'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Skapa korrespondens i användargränssnittet Skapa korrespondens {#create-correspondence-in-the-create-correspondence-user-interface}
 
-När en [brevmall har skapats i Correspondence Management](../../forms/using/create-letter.md) kan slutanvändaren/agenten/anspråksjusteraren öppna brevet i användargränssnittet Skapa korrespondens och skapa en korrespondens genom att ange data, konfigurera innehåll och hantera bilagor. Slutligen kan anspråksjusteraren eller agenten hantera innehållet i förhandsgranskningsläget och skicka brevet.
+När en [brevmall har skapats i Correspondence Management](/help/forms/using/create-letter.md) kan slutanvändaren/agenten/anspråksjusteraren öppna brevet i användargränssnittet Skapa korrespondens och skapa en korrespondens genom att ange data, konfigurera innehåll och hantera bilagor. Slutligen kan anspråksjusteraren eller agenten hantera innehållet i förhandsgranskningsläget och skicka brevet.
 
 ### Förhandsgranska korrespondens {#preview-a-correspondence}
 
@@ -51,13 +51,13 @@ Markera den bokstav du vill förhandsgranska genom att följa följande steg:
 
 1. Bokstaven HTML preview (förhandsgranskning av mobilformulär) öppnas med fliken Data i fokus som standard.
 
-   Mer information om mobilformulär och vilka funktioner de stöder finns i [Funktionsdifferentiering mellan Mobile Forms och PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   Mer information om mobilformulär och vilka funktioner de stöder finns i [Funktionsdifferentiering mellan Mobile Forms och PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
    Det finns tre flikar: data, innehåll och bilagor. Om det inte finns några dataelement (platshållarvariabler och layoutfält) öppnas bokstaven direkt i med fliken Innehåll. Fliken Bifogade filer är bara tillgänglig när det finns bifogade filer eller när biblioteksåtkomst är aktiverat.
 
    >[!NOTE]
    >
-   >Mer information om hur du växlar mellan HTML- eller PDF-återgivningsläget för förhandsgranskning av brev finns i [Ändra återgivningsläget för bokstaven](#changerenditionmode). Mer information om PDF-stöd i Correspondence Management och AEM finns i [Avbryta plugin-program för NPAPI-webbläsare och dess påverkan](https://helpx.adobe.com/se/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Mer information om hur du växlar mellan HTML- eller PDF-återgivningsläget för förhandsgranskning av brev finns i [Ändra återgivningsläget för bokstaven](#changerenditionmode). Mer information om PDF-stöd i Correspondence Management och AEM finns i [Avbryta plugin-program för NPAPI-webbläsare och dess påverkan](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Ange data {#enterdata}
 
@@ -111,17 +111,13 @@ På fliken Innehåll hanterar du innehåll som dokumentfragment och innehållsva
 
    >[!NOTE]
    >
-   >Formateringen av inklistrad text har dock vissa [begränsningar](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
+   >Formateringen av inklistrad text har dock vissa begränsningar.
 
    Du kan dra in text och siffror i brevet med tabbtangenten. Du kan till exempel använda tabbtangenten för att justera flera textkolumner i en lista till ett tabellformat.
 
    ![tabspaces](assets/tabspaces.png)
 
    Exempel: Använda tabbtangenten för att justera flera textkolumner i ett tabellformat
-
-   >[!NOTE]
-   >
-   >Mer information om hur du ställer in tabbavstånd för textmoduler och bokstäver finns i [Mer information om hur du använder tabbavstånd för att ordna text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
 
 1. Infoga vid behov specialtecken i korrespondensen. Du kan till exempel använda paletten Specialtecken för att infoga:
 
@@ -375,7 +371,7 @@ Mer information om skriptstöd i HTML5-formulär finns i [Skriptstöd för HTML5
 
 Som standard används HTML- eller mobilformulären för att återge förhandsgranskningen av brevet i användargränssnittet för Skapa korrespondens. Förhandsgranskningen av mobilformulär har inga problem med återgivningen i någon webbläsare, eftersom webbläsarens inbyggda plugin-program används och inga ytterligare plugin-program krävs. Du kan ändra förhandsgranskningsläget för brev till PDF. Webbläsarbegränsningar kan dock ge problem med olika funktioner i den interaktiva PDF-förhandsgranskningen av brevet.
 
-Mer information om webbläsarkompatibilitet med förhandsgranskning av brev finns i [Avbryta plugin-program för NPAPI-webbläsare och dess påverkan](https://helpx.adobe.com/se/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Mer information om webbläsarkompatibilitet med förhandsgranskning av brev finns i [Avbryta plugin-program för NPAPI-webbläsare och dess påverkan](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Om du vill ändra förhandsgranskningsläget för brevet utför du följande steg:
 

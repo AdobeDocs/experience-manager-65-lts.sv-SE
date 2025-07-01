@@ -11,9 +11,9 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '803'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Sökmotoroptimering (SEO) har blivit en viktig fråga för många marknadsförare. Därför måste SEO-frågor behandlas i många AEM-projekt. Mer information finns i [Bästa metoder för SEO- och URL-hantering](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html).
+>Sökmotoroptimering (SEO) har blivit en viktig fråga för många marknadsförare. Därför måste SEO-frågor behandlas i många AEM-projekt. Mer information finns i [Bästa metoder för SEO- och URL-hantering](/help/managing/seo-and-url-management.md).
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) innehåller avancerade konfigurationer för att anpassa URL:er för produkt- och kategorisidor. Många implementeringar anpassar dessa URL:er för sökmotoroptimering (SEO). Följande video visar hur du konfigurerar tjänsten `UrlProvider` och funktionerna i [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) för att anpassa URL:er för produkt- och kategorisidor.
 
@@ -110,5 +110,5 @@ Projektet [Venias referensarkiv](https://github.com/adobe/aem-cif-guides-venia) 
 ## Ytterligare resurser
 
 * [Referensarkiv för Venedig](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM-resursmappning](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
+* [AEM Resource Mapping](/help/sites-deploying/resource-mapping.md)
 * [Kopplingsmappningar](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

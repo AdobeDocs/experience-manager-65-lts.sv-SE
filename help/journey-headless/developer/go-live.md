@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1801'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Den lokala utvecklingsmiljön består av tre huvudområden:
 
 När den lokala utvecklingsmiljön har konfigurerats kan du simulera innehåll som skickas till React-appen genom att distribuera en statisk nodserver lokalt.
 
-Mer information om hur du konfigurerar en lokal utvecklingsmiljö och alla beroenden som behövs för innehållsförhandsgranskning finns i [Dokumentation för produktionsdistribution](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=sv-SE).
+Mer information om hur du konfigurerar en lokal utvecklingsmiljö och alla beroenden som behövs för innehållsförhandsgranskning finns i [Dokumentation för produktionsdistribution](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Förbered AEM Headless Application for GoLive {#prepare-your-aem-headless-application-for-golive}
 
@@ -144,13 +144,13 @@ Distributionen till Production kan vara beroende av om du har en *traditionell* 
 
 ## Distribuera till produktion med Maven {#deploy-to-production-maven}
 
-En *traditionell*-distribution (ej AMS) med Maven finns i [WKND-självstudiekursen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=sv-SE#build) för en översikt.
+En *traditionell*-distribution (ej AMS) med Maven finns i [WKND-självstudiekursen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) för en översikt.
 
 ## Distribuera till produktion med Cloud Manager {#deploy-to-production-cloud-manager}
 
-Om du är AMS-kund och använder Cloud Manager kan du, efter att du har kontrollerat att allt fungerar som det ska, överföra dina koduppdateringar till en [centraliserad Git-databas i Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=sv-SE).
+Om du är AMS-kund och använder Cloud Manager kan du, efter att du har kontrollerat att allt fungerar som det ska, överföra dina koduppdateringar till en [centraliserad Git-databas i Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
 
-När uppdateringarna har överförts till Cloud Manager distribuerar du dem till AEM med [Cloud Manager CI/CD-pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=sv-SE).
+När uppdateringarna har överförts till Cloud Manager distribuerar du dem till AEM med [Cloud Manager CI/CD-pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -217,18 +217,18 @@ Om den här typen av flexibilitet är något du behöver för ditt projekt kan d
 
 ## Ytterligare resurser {#additional-resources}
 
-* [Utvecklingshandbok för AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/the-basics.html)
+* [AEM Developing Guide](/help/sites-developing/the-basics.md)
 
-* [WKND, självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)
+* [WKND, självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* [Cloud Manager för AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=sv-SE)
+* [Cloud Manager för AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 * CDN-cache
 
-   * [Kontrollera en CDN-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE#controlling-a-cdn-cache)
+   * [Kontrollera en CDN-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * Konfigurerar [CDN Rewriter](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/osgi-configuration-settings.html) (*sök efter CDN Rewriter*)
+   * Konfigurerar [CDN Rewriter](/help/sites-deploying/osgi-configuration-settings.md) (*sök efter CDN Rewriter*)
 
 * [Introduktion till AEM som Headless CMS](/help/sites-developing/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=sv-SE)
-* [Självstudiekurser för Headless i AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=sv-SE)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Självstudiekurser för Headless i AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

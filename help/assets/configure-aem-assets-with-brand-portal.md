@@ -1,18 +1,14 @@
 ---
 title: Konfigurera AEM Assets med Brand Portal
 description: Lär dig hur du konfigurerar AEM Assets med Brand Portal för publicering av resurser och samlingar till Brand Portal.
-topic-tags: brand-portal
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-docset: aem65
 feature: Brand Portal
 role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 89c9a0416f8d270f172eb42e1e308f2a986a2cb3
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 3%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 3%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 Med Adobe Experience Manager Assets Brand Portal kan ni publicera godkända varumärkesresurser från Adobe Experience Manager Assets till Brand Portal och distribuera dem till Brand Portal-användarna.
@@ -74,13 +70,13 @@ Vi rekommenderar att du har AEM 6.5 LTS för att skapa en AEM Author-instans. Om
 
 * Om du redan är AEM-kund hämtar du AEM 6.5 LTS från [Adobe Licensing-webbplatsen](https://licensing.adobe.com).
 
-* Om du är Adobe partner kan du använda [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) för att begära AEM 6.5.
+* Om du är Adobe partner kan du använda [Adobe Partner Training Program](https://solutionpartners.adobe.com/) för att begära AEM 6.5.
 
-När du har hämtat AEM finns instruktioner om hur du konfigurerar en AEM Author-instans i [Distribuera och underhålla](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html#default-local-install).
+När du har hämtat AEM finns instruktioner om hur du konfigurerar en AEM Author-instans i [Distribuera och underhålla](/help/sites-deploying/deploy.md#default-local-install).
 
 ### Hämta och installera AEM senaste Service Pack {#servicepack}
 
-Detaljerade instruktioner finns i den aktuella [AEM 6.5 LTS Service Pack-versionsinformationen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
+Detaljerade instruktioner finns i den aktuella [AEM 6.5 LTS Service Pack-versionsinformationen](/help/release-notes/release-notes.md).
 
 **Kontakta Adobe kundsupport** om du inte hittar det senaste AEM-paketet eller Service Pack.
 
@@ -122,11 +118,11 @@ Utför följande steg i den angivna sekvensen för att konfigurera Experience Ma
 
 #### Konfigurera OAuth-autentiseringsuppgifterna i Adobe Developer Console {#config-oauth}
 
-[Konfigurera OAuth-autentiseringsuppgifterna i Adobe Developer Console](https://experienceleague.adobe.com/sv/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) och välj Brand Portal API.
+[Konfigurera OAuth-autentiseringsuppgifterna i Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) och välj Brand Portal API.
 
 #### Skapa ny Adobe IMS-integrering med OAuth {#create-ims-account-configuration}
 
-[Skapa en ny Adobe IMS-integrering med OAuth](https://experienceleague.adobe.com/sv/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) och välj Brand Portal i listrutan.
+[Skapa en ny Adobe IMS-integrering med OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) och välj Brand Portal i listrutan.
 
 #### Konfigurera molntjänst {#configure-cloud-service}
 
@@ -369,20 +365,20 @@ To configure the IMS account:
    >
    >Avoid disabling any of the replication agents, as it can cause the replication of the assets (running-in-queue) to fail.
    >
-   >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=sv-SE#connection-timeout).
+   >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
    >
    >Do not modify any autogenerated settings.
 
 You can now:
 
 * [Publish assets from AEM Assets to Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=sv-SE) - Asset Sourcing in Brand Portal 
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal 
 * [Publish folders from AEM Assets to Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publish collections from AEM Assets to Brand Portal](../assets/brand-portal-publish-collection.md) 
-* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=sv-SE)
-* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=sv-SE)
+* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=sv-SE) for more information.
+See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
 -->
 <!--

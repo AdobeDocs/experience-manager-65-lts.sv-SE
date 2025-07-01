@@ -1,17 +1,13 @@
 ---
 title: Arbeta med arbetsytan i AEM Forms
 description: Kom igång med AEM Forms arbetsyta med en snabb översikt av processarbetsflödena.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: 7374797f-4154-402b-bb59-075134763c58
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -133,8 +129,4 @@ Du kan anpassa en stor del av gränssnittet och viktiga funktioner som teckensni
 
 Som standard återges ett XDP-formulär i PDF-format på en dator och i HTML-format på en surfplatta för en ny process. Det går alltid att återge ett XDP-formulär i HTML-format. Mer information finns i [Nya tjänster för återgivning och sändning](/help/forms/using/new-render-submit-service.md).
 
-Funktionen [Mobile Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) som fungerar med [profiler](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) aktiverar HTML-återgivning av XDP-formulär. Som standard använder &#39;Återge nytt HTML-formulär&#39; profilen `default.html` som du kan ändra. Du kan också lägga till anpassade ändringar som inträffar innan ett XDP-formulär återges i HTML-format.
-
-## AEM Forms arbetsyta {#aem-forms-workspace-app}
-
-Om du vill arbeta med dina affärsprocesser på en mobil enhet kan du använda AEM Forms-appen för arbetsytor i AEM Forms. Mer information finns i [Översikt över AEM Forms-arbetsyteprogrammet](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
+Funktionen [Mobile Forms](/help/forms/using/introduction.md) som fungerar med [profiler](/help/forms/using/custom-profile.md) aktiverar HTML-återgivning av XDP-formulär. Som standard använder &#39;Återge nytt HTML-formulär&#39; profilen `default.html` som du kan ändra. Du kan också lägga till anpassade ändringar som inträffar innan ett XDP-formulär återges i HTML-format.

@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1765'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Det finns många kommersiellt tillgängliga verktyg för prestandatestning på m
 * AEM har färdiga verktyg för att snabbt se problematiska frågor, förfrågningar och felmeddelanden. Mer information finns i avsnittet [Diagnosverktyg](/help/sites-administering/operations-dashboard.md#diagnosis-tools) i dokumentationen för kontrollpanelen för åtgärder.
 * Apache tillhandahåller en produkt med namnet **JMeter** som kan användas för prestanda- och inläsningstestning samt funktionellt beteende. Det är programvara med öppen källkod och kan användas utan extra kostnad, men har en mindre funktionsuppsättning än företagsprodukter och en brantare inlärningskurva. JMeter finns på Apache webbplats på [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load Runner** är en inläsningstestprodukt i enterpriseklass. Det finns en kostnadsfri utvärderingsversion. Mer information finns på [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
+* **Load Runner** är en inläsningstestprodukt i enterpriseklass. Det finns en kostnadsfri utvärderingsversion. Mer information finns i [Prestandautveckling för OpenText Professional](https://www.opentext.com/products/professional-performance-engineering).
 
 * När du testar mobila eller responsiva webbplatser måste du använda en separat uppsättning verktyg. De fungerar genom att begränsa nätverksbandbredden och simulera långsammare mobilanslutningar som 3G eller EDGE. Bland de verktyg som används mest finns följande:
 
@@ -74,7 +74,7 @@ Dokumentationen [Övervakningsprestanda](/help/sites-deploying/monitoring-and-ma
 
 **Utvecklarläge i Touch-gränssnittet**
 
-En av de nya funktionerna i pekgränssnittet i AEM 6 är utvecklarläget. Precis som författare kan växla mellan redigerings- och förhandsgranskningsläge kan utvecklare växla till utvecklarläget i författargränssnittet. På så sätt kan du se återgivningstiden för varje komponent på sidan och se stackspår för eventuella fel. Mer information om utvecklarläget finns i den här [CQ Gems-presentationen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=sv-SE).
+En av de nya funktionerna i pekgränssnittet i AEM 6 är utvecklarläget. Precis som författare kan växla mellan redigerings- och förhandsgranskningsläge kan utvecklare växla till utvecklarläget i författargränssnittet. På så sätt kan du se återgivningstiden för varje komponent på sidan och se stackspår för eventuella fel. Mer information om utvecklarläget finns i den här [CQ Gems-presentationen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Använda rlog.jar för att läsa begärandeloggarna**
 
