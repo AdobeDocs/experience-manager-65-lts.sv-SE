@@ -723,7 +723,7 @@ Experience Manager-konfigurationen består av följande två huvudsteg:
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. En integreringsinformationssida visas, ****, ungefär som följande:
+1. En integreringsinformationssida visas, **&#x200B;**, ungefär som följande:
 
    >[!NOTE]
    >

@@ -425,7 +425,7 @@ När man utformar dessa tester bör man komma ihåg att inte alla scenarier intr
 
 | Felscenario | Feltyp | Nej. Användare | Tx/sek (förväntas) | Tx/sek (testad) | Beskrivning |
 |---|---|---|---|---|---|
-| Överlagring av sökkomponent | Sök på globalt jokertecken (asterisk) | 10 | 1 |  | Endast &amp;ast;&amp;ast;&amp;ast; söks igenom. |
+| Överlagring av sökkomponent | Sök på globalt jokertecken (asterisk) | 10 | 1 |  | Endast &ast;&ast;&ast; söks igenom. |
 |   | Stoppord | 20 | 2 |  | Söker efter ett stoppord. |
 |   | Tom sträng | 10 | 1 |  | Söker efter en tom sträng. |
 |   | Specialtecken | 10 | 1 |  | Söker efter specialtecken. |

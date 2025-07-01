@@ -204,12 +204,15 @@ Den nya utrullningskonfigurationen är sedan tillgänglig för dig när du stäl
 
 1. Lägg till följande egenskaper i den här noden:
    * **Namn**: `jcr:title`
+
      **Typ**: `String`
      **Värde**: En identifierande titel som visas i användargränssnittet.
    * **Namn**: `jcr:description`
+
      **Typ**: `String`
      **Värde**: En valfri beskrivning.
    * **Namn**: `cq:trigger`
+
      **Typ**: `String`
      **Värde**: Utlösaren [som ska användas ](/help/sites-administering/msm-sync.md#rollout-triggers). Välj bland:
       * `rollout`
@@ -682,6 +685,7 @@ Anger om en sidegenskap ska rullas ut och därför styrs arvet av egenskapen dia
       * **Typ**: `String`
 
       * **Värde**: innehåller namnet på den aktuella egenskapen (och är jämförbart med värdet för egenskapen `name`; se till exempel
+
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 När `cq-msm-lockable` har definierats interagerar kedjan med MSM på följande sätt om kedjan bryts/stängs:
