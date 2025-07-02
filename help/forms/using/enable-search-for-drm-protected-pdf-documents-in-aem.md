@@ -23,7 +23,7 @@ AEM-sökning kan användas för att söka efter och hitta AEM-resurser och för 
 
 * Om du använder AEM Forms på OSGi:
 
-   * Installera [AEM Forms Document Security Indexer-paketet](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) på AEM Forms-servern.
+   * Installera [AEM Forms Document Security Indexer-paketet](https://helpx.adobe.com/se/aem-forms/kb/aem-forms-releases.html) på AEM Forms-servern.
 
    * Kontrollera att en AEM Forms på JEE-server är igång och att dokumentsäkerheten är installerad på motsvarande AEM Forms på JEE-server. AEM-formuläret på JEE-servern krävs för att indexera det skyddade dokumentet.
 
