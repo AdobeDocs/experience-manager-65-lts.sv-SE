@@ -165,7 +165,7 @@ Om en användare saknar de nödvändiga AEM-formulären och CQ-behörigheterna o
 * Correspondence Management-lösning
 * AEM blanketter Workspace
 
-  ***Obs!**Flex Workspace är föråldrat för AEM formulärrelease.*
+  ***Obs!**&#x200B;Flex Workspace är föråldrat för AEM formulärrelease.*
 
 * formulärhanterare
 * Processrapportering

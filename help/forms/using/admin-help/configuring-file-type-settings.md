@@ -267,7 +267,7 @@ Instruktioner om hur du använder den här inställningen finns i [Skapa eller r
 
    >[!NOTE]
    >
-   >*Om du använder det här alternativet i kombination med **Ångra inbäddning av vissa teckensnitt**frigörs fortfarande inbäddade teckensnitt i listan **Lägg till teckensnitt för att ångra inbäddning**.*
+   >*Om du använder det här alternativet i kombination med **Ångra inbäddning av vissa teckensnitt**&#x200B;frigörs fortfarande inbäddade teckensnitt i listan **Lägg till teckensnitt för att ångra inbäddning**.*
 
    >[!NOTE]
    >

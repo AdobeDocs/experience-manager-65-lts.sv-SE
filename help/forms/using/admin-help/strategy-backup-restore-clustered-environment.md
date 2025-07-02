@@ -131,7 +131,7 @@ Om hela klustret inte fungerar på grund av fel som t.ex. databaskrascher utför
    1. Ta bort filen clusterNode/revision.log på noden.
    1. Ta bort .lock-koden på noden, om sådan finns.
    1. Ta bort repository/system.id på noden, om det finns någon.
-   1. Ta bort filerna &amp;ast;&amp;ast;/listener.properties på noden, om sådan finns.
+   1. Ta bort filerna &ast;&ast;/listener.properties på noden, om sådan finns.
    1. Återställ repository/cluster_node.id för enskilda klusternoder.
 
 >[!NOTE]
@@ -161,7 +161,7 @@ Om hela klustret inte fungerar på grund av fel som t.ex. databaskrascher utför
    1. Ta bort filen clusterNode/revision.log på alla klusternoder.
    1. Ta bort .lock på alla klusternoder, om det finns.
    1. Ta bort repository/system.id alla klusternoder, om sådana finns.
-   1. Ta bort filerna &amp;ast;&amp;ast;/listener.properties på alla klusternoder, om sådana finns.
+   1. Ta bort filerna &ast;&ast;/listener.properties på alla klusternoder, om sådana finns.
    1. Återställ repository/cluster_node.id för enskilda klusternoder.
 
 >[!NOTE]

@@ -336,9 +336,9 @@ Den här rubriken innehåller följande information:
 >**X-Adobe-Smart-Imaging = -1 när WebP levereras**
 >
 >Om värdet för `X-Adobe-Smart-Imaging` är -1 och WebP fortfarande levereras är Smart Imaging aktivt. Storleksfördelarna beräknades dock inte på grund av inaktuell cache. Du kan använda `cache=update` (endast en gång) i bildens URL för att åtgärda problemet.
->>Ett exempel på hur du använder modifieraren:
->>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->>Om du vill göra hela cachen ogiltig måste du skapa ett supportärende.
+>&#x200B;>Ett exempel på hur du använder modifieraren:
+>&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>&#x200B;>Om du vill göra hela cachen ogiltig måste du skapa ett supportärende.
 
 +++
 
