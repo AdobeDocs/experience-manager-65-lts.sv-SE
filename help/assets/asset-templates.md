@@ -123,7 +123,7 @@ Du kan redigera en del direkt när du har skapat den. Du kan även öppna den fr
    >
    >Så här aktiverar du [!DNL Experience Manager] för att lösa bilder:
    >
-   >* Bädda in bilder när du skapar [!DNL InDesign]-mallar (se [Om länkar och inbäddade bilder](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Bädda in bilder när du skapar [!DNL InDesign]-mallar (se [Om länkar och inbäddade bilder](https://helpx.adobe.com/se/indesign/using/graphics-links.html)).
    >* Montera [!DNL Experience Manager] i det lokala filsystemet och mappa sedan saknade ikoner med befintliga resurser i [!DNL Experience Manager].
 
 1. Om du vill skapa en PDF-återgivning för broschyren väljer du alternativet Acrobat i dialogrutan och klickar sedan på **[!UICONTROL Continue]**.
