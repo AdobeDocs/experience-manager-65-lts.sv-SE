@@ -1,17 +1,15 @@
 ---
 title: Lägga till och konfigurera användare
 description: Med inställningarna för användarhantering i administrationskonsolen kan du skapa eller ta bort användare och konfigurera andra användarinställningar.
-contentOwner: admin
-geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1625'
 ht-degree: 0%
 
 ---
@@ -41,10 +39,6 @@ När du skapar användare kan du lägga till dem i grupper och tilldela roller t
 
 1. (Valfritt) Om du vill tilldela roller till användaren klickar du på **[!UICONTROL Find Roles]**, markerar kryssrutan för rollerna som ska tilldelas och klickar sedan på **[!UICONTROL OK]**.
 1. Klicka på **[!UICONTROL Finish]**.
-
-   >[!NOTE]
-   >
-   >Om du stöter på inloggningsproblem med användaren kan du läsa [AEM Forms på JEE-användare kan inte logga in på AEM Forms på OSGi-sidan](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Användarinställningar {#user-settings}
 
@@ -125,12 +119,12 @@ Undvik att skapa användarnamn som börjar med ett nummertecken (#). Vid uppgift
 1. Gör följande för att hitta användaren att redigera:
 
    * Ange dina sökvillkor i rutan **[!UICONTROL Find]**.
-   * Välj **[!UICONTROL Name]**, **[!UICONTROL Email]** eller **[!UICONTROL User ID]** i listan **[!UICONTROL Using]**.
+   * Välj **[!UICONTROL Using]**, **[!UICONTROL Name]** eller **[!UICONTROL Email]** i listan **[!UICONTROL User ID]**.
    * I **[!UICONTROL In list]** väljer du **[!UICONTROL Users]**.
    * Markera domänen, markera antalet objekt som ska visas och klicka sedan på **[!UICONTROL Find]**.
 
 1. Klicka på den användare som du vill redigera.
-1. För en användare som är en del av en lokal domän eller hybriddomän redigerar du **[!UICONTROL General Settings]** och **[!UICONTROL Login Settings]** på fliken **[!UICONTROL Detail]** och klickar på **[!UICONTROL Save]**. Mer information om inställningarna finns i [Användarinställningar](adding-configuring-users.md#user-settings). Du kan inte redigera de allmänna inställningarna och inloggningsinställningarna för en användare som tillhör en företagsdomän.
+1. För en användare som är en del av en lokal domän eller hybriddomän redigerar du **[!UICONTROL Detail]** och **[!UICONTROL General Settings]** på fliken **[!UICONTROL Login Settings]** och klickar på **[!UICONTROL Save]**. Mer information om inställningarna finns i [Användarinställningar](adding-configuring-users.md#user-settings). Du kan inte redigera de allmänna inställningarna och inloggningsinställningarna för en användare som tillhör en företagsdomän.
 1. Om du vill redigera gruppinställningarna för användaren klickar du på fliken **[!UICONTROL Group Membership]** och gör följande:
 
    * Klicka på **[!UICONTROL Find Group]** och fyll i sökinformationen.
@@ -154,7 +148,7 @@ Undvik att skapa användarnamn som börjar med ett nummertecken (#). Vid uppgift
 1. Gör följande för att hitta användaren som ska tas bort:
 
    * Ange dina sökvillkor i rutan **[!UICONTROL Find]**.
-   * Välj **[!UICONTROL Name]**, **[!UICONTROL Email]** eller **[!UICONTROL User ID]** i listan **[!UICONTROL Using]**.
+   * Välj **[!UICONTROL Using]**, **[!UICONTROL Name]** eller **[!UICONTROL Email]** i listan **[!UICONTROL User ID]**.
    * I **[!UICONTROL In list]** väljer du **[!UICONTROL Users]**.
    * Markera domänen, markera antalet objekt som ska visas och klicka sedan på **[!UICONTROL Find]**.
 
@@ -171,11 +165,11 @@ Om en användare saknar de nödvändiga AEM-formulären och CQ-behörigheterna o
 * Correspondence Management-lösning
 * AEM blanketter Workspace
 
-  ***Obs!**&#x200B;Flex Workspace är föråldrat för AEM formulärrelease.*
+  ***Obs!**Flex Workspace är föråldrat för AEM formulärrelease.*
 
 * formulärhanterare
 * Processrapportering
 
 CQ har en mekanism som åsidosätter standardhanteraren 404 jsp.
 
-Mer information om hur du anpassar felhanteringssidan finns i [Anpassa sidor som visas av felhanteraren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) i Adobe Experience Manager-dokumentationen.
+Mer information om hur du anpassar felhanteringssidan finns i [Anpassa sidor som visas av felhanteraren](/help/sites-developing/customizing-errorhandler-pages.md) i Adobe Experience Manager-dokumentationen.

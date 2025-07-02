@@ -5,7 +5,7 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: 995bad770ba026ee918233f4bf28e6ba3cf003a6
+source-git-commit: 1cedead501597fb655c2c7b87336b29cbf048294
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 14%
@@ -19,11 +19,11 @@ Innan du använder tjänsten för smart innehåll bör du kontrollera följande:
 
 * [Integrera med Adobe Developer Console](#integrate-adobe-io).
 * [Logga in på tjänsten för smart innehåll](#training-the-smart-content-service).
-* Installera den senaste [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=sv-SE).
+* Installera den senaste [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 >[!IMPORTANT]
 >
->Mer information om konfigurationen av smarta taggar i AEM 6.5 finns i [Förbered Assets för smart taggning](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/config-smart-tagging).
+>Mer information om konfigurationen av smarta taggar i AEM 6.5 finns i [Förbered Assets för smart taggning](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/config-smart-tagging).
 
 **Nya användare**
 
@@ -64,13 +64,13 @@ Mer information om hur du gör den här konfigurationen finns i Developer Consol
       * [Server till server-autentisering](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
    * Skapa en ny OAuth-autentiseringsuppgift:
-      * [Implementeringshandbok för autentiseringsuppgifter för OAuth Server-till-Server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+      * [Implementeringshandbok för autentiseringsuppgifter för OAuth Server-till-Server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
    * Migrera en befintlig JWT-autentiseringsuppgift till en OAuth-autentiseringsuppgift:
-      * [Migrerar från JWT-autentiseringsuppgifter (Service Account) till autentiseringsuppgifter för OAuth Server-till-Server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+      * [Migrerar från JWT-autentiseringsuppgifter (Service Account) till autentiseringsuppgifter för OAuth Server-till-Server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 
-1. Välj **[!UICONTROL Smart Content Services]** på sidan **[!UICONTROL Select product profiles]**. Klicka på **[!UICONTROL Save configured API]**.
+1. Välj **[!UICONTROL Select product profiles]** på sidan **[!UICONTROL Smart Content Services]**. Klicka på **[!UICONTROL Save configured API]**.
 
    En sida visar mer information om konfigurationen. Håll den här sidan öppen för att kopiera och lägga till dessa värden i [!UICONTROL Assets Smart Tagging Service Settings] av molnkonfigurationen i [!DNL Experience Manager] för att konfigurera smarta taggar.
 
@@ -148,7 +148,7 @@ Valideringsresultaten visas i samma dialogruta.
 
 ### Aktivera smart taggning i arbetsflödet [!UICONTROL DAM Update Asset] (valfritt) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-1. Gå till **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** i [!DNL Experience Manager].
+1. Gå till [!DNL Experience Manager] > **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** i **[!UICONTROL Models]**.
 
 1. Välj arbetsflödesmodellen **[!UICONTROL DAM Update Asset]** på sidan **[!UICONTROL Workflow Models]**.
 
@@ -162,7 +162,7 @@ Valideringsresultaten visas i samma dialogruta.
 
    ![Konfigurera arbetsflödet för DAM-uppdatering och lägg till smart tagg](assets/smart-tag-step-properties-workflow1.png)
 
-1. Välj **[!UICONTROL Ignore Errors]** på fliken **[!UICONTROL Arguments]** om du vill att arbetsflödet ska slutföras även om steget med automatisk taggning misslyckas.
+1. Välj **[!UICONTROL Arguments]** på fliken **[!UICONTROL Ignore Errors]** om du vill att arbetsflödet ska slutföras även om steget med automatisk taggning misslyckas.
 
    Om du dessutom vill tagga resurser när de överförs, oavsett om smart taggning är aktiverat för mappar, väljer du **[!UICONTROL Ignore Smart Tag Flag]**.
 
@@ -229,7 +229,7 @@ När det här alternativet har valts för en mapp kör [!DNL Experience Manager]
 Du kan utbilda tjänsten för smart innehåll när det behövs från arbetsflödeskonsolen.
 
 1. I gränssnittet [!DNL Experience Manager] går du till **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. Välj arbetsflödet **[!UICONTROL Smart Tags Training]** på sidan **[!UICONTROL Workflow Models]** och klicka sedan på **[!UICONTROL Start Workflow]** i verktygsfältet.
+1. Välj arbetsflödet **[!UICONTROL Workflow Models]** på sidan **[!UICONTROL Smart Tags Training]** och klicka sedan på **[!UICONTROL Start Workflow]** i verktygsfältet.
 1. I dialogrutan **[!UICONTROL Run Workflow]** bläddrar du till nyttolastmappen som innehåller de taggade resurserna för att utbilda tjänsten.
 1. Ange en rubrik för arbetsflödet och lägg till en kommentar. Klicka sedan på **[!UICONTROL Run]**. Resurserna och taggarna skickas in för utbildning.
 
@@ -244,7 +244,7 @@ Du kan utbilda tjänsten för smart innehåll när det behövs från arbetsflöd
 Om du vill kontrollera om Smart Content Service är utbildad i dina taggar i övningsresurserna kan du läsa rapporten om utbildningsarbetsflödet i rapportkonsolen.
 
 1. I gränssnittet [!DNL Experience Manager] går du till **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
-1. Klicka på **[!UICONTROL Create]** på sidan **[!UICONTROL Asset Reports]**.
+1. Klicka på **[!UICONTROL Asset Reports]** på sidan **[!UICONTROL Create]**.
 1. Välj rapporten **[!UICONTROL Smart Tags Training]** och klicka sedan på **[!UICONTROL Next]** i verktygsfältet.
 1. Ange en titel och beskrivning för rapporten. Under **[!UICONTROL Schedule Report]** låter du alternativet **[!UICONTROL Now]** vara markerat. Om du vill schemalägga rapporten till ett senare tillfälle väljer du **[!UICONTROL Later]** och anger ett datum och en tid. Klicka sedan på **[!UICONTROL Create]** i verktygsfältet.
 1. På sidan **[!UICONTROL Asset Reports]** markerar du rapporten som du skapat. Om du vill visa rapporten klickar du på **[!UICONTROL View]** i verktygsfältet.
@@ -270,4 +270,4 @@ Om du vill kontrollera om Smart Content Service är utbildad i dina taggar i öv
 >
 >* [Översikt och utbildning av smarta taggar](enhanced-smart-tags.md)
 >* [Felsökning av smarta taggar för OAuth-autentiseringsuppgifter](config-oauth.md)
->* [Videosjälvstudiekurs om smarta taggar](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=sv-SE)
+>* [Videosjälvstudiekurs om smarta taggar](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

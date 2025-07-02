@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '5903'
+source-wordcount: '5888'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Skapa eller redigera en filtypsinställning för att ange hur konverteringen av 
 
 1. När du har slutfört alla avsnitt klickar du på **[!UICONTROL Save]** eller **[!UICONTROL Save As]** och anger ett namn för inställningen.
 
-Stöd för olika filtyper kan anpassas. (Se [Lägga till stöd för fler inbyggda filformat](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html) i [Programmering med AEM-formulär](https://www.adobe.com/go/learn_lc_programming_11).)
+Stöd för olika filtyper kan anpassas.
 
 ## Ändra standardinställningarna {#change-the-default-settings}
 
@@ -267,7 +267,7 @@ Instruktioner om hur du använder den här inställningen finns i [Skapa eller r
 
    >[!NOTE]
    >
-   >*Om du använder det här alternativet i kombination med **Ångra inbäddning av vissa teckensnitt**&#x200B;frigörs fortfarande inbäddade teckensnitt i listan **Lägg till teckensnitt för att ångra inbäddning**.*
+   >*Om du använder det här alternativet i kombination med **Ångra inbäddning av vissa teckensnitt**frigörs fortfarande inbäddade teckensnitt i listan **Lägg till teckensnitt för att ångra inbäddning**.*
 
    >[!NOTE]
    >

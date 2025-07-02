@@ -7,9 +7,9 @@ role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e432b4e74f453ed222b2a295f1a6ef9e7b409223
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2642'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ När du överför stora mängder resurser till [!DNL Adobe Experience Manager] b
 
 Konfigurera den buffrade cachestorleken i OSGi-webbkonsolen. Vid `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache` anger du egenskapen `cq.dam.image.cache.max.memory` i byte. 1073741824 är till exempel 1 GB (1 024 x 1 024 x 1 024 = 1 GB).
 
-Om du använder en `sling:osgiConfig`-nod för att konfigurera den här egenskapen från Experience Manager 6.1 SP1 måste du ange datatypen till Long. Mer information finns i [CQBufferedImageCache förbrukar heap under överföring av tillgångar](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
+Om du använder en `sling:osgiConfig`-nod för att konfigurera den här egenskapen från Experience Manager 6.1 SP1 måste du ange datatypen till Long.
 
 ### Gemensamma datalager {#shared-data-stores}
 
@@ -156,7 +156,7 @@ Om du till exempel har kört flera icke-tillfälliga arbetsflöden (som skapar a
 
 Som standard kör [!DNL Experience Manager] ett maximalt antal parallella jobb som är lika med antalet processorer på servern. Problemet med den här inställningen är att under perioder med hög belastning används alla processorer av [!UICONTROL DAM Update Asset] arbetsflöden, vilket gör att gränssnittets svarstid minskar och hindrar [!DNL Experience Manager] från att köra andra processer som skyddar serverns prestanda och stabilitet. Det är en god vana att ange det här värdet till hälften av de processorer som är tillgängliga på servern genom att utföra följande steg:
 
-1. Åtkomst till `https://[aem_server]:[port]/system/console/slingevent` för [!DNL Experience Manager] Author.
+1. Åtkomst till [!DNL Experience Manager] för `https://[aem_server]:[port]/system/console/slingevent` Author.
 
 1. Klicka på **[!UICONTROL Edit]** i varje arbetsflödeskö som är relevant för implementeringen, till exempel **[!UICONTROL Granite Transient Workflow Queue]**.
 
@@ -243,7 +243,7 @@ När du replikerar resurser till ett stort antal publiceringsinstanser, till exe
 
 ## Sökindex {#search-indexes}
 
-Installera [de senaste Service Packs](/help/release-notes/release-notes.md) och prestandarelaterade snabbkorrigeringar eftersom de ofta innehåller uppdateringar av systemindex. Se [tips för prestandajustering](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/administer/performance-tuning-guidelines.html?lang=en) för vissa indexoptimeringar.
+Installera [de senaste Service Packs](/help/release-notes/release-notes.md) och prestandarelaterade snabbkorrigeringar eftersom de ofta innehåller uppdateringar av systemindex.
 
 Skapa anpassade index för frågor som du kör ofta. Mer information finns i [metod för att analysera långsamma frågor](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) och [skapa anpassade index](/help/sites-deploying/queries-and-indexing.md). Mer information om bästa praxis för frågor och index finns i [Bästa praxis för frågor och indexering](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -258,7 +258,7 @@ Vissa optimeringar kan göras för Oak indexkonfigurationer som kan förbättra 
 
 Om dina användare inte behöver göra fulltextsökning av resurser, till exempel söka igenom text i PDF-dokument, kan du inaktivera det. Du kan förbättra indexets prestanda genom att inaktivera fulltextindexering. Så här inaktiverar du textrahering av [!DNL Apache Lucene]:
 
-1. Öppna [!UICONTROL Package Manager] i gränssnittet [!DNL Experience Manager].
+1. Öppna [!DNL Experience Manager] i gränssnittet [!UICONTROL Package Manager].
 1. Överför och installera det paket som finns på [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Gissa totalt {#guess-total}

@@ -1,16 +1,15 @@
 ---
 title: XMP-tillbakaskrivning till återgivningar
 description: Lär dig hur XMP återskrivningsfunktion sprider metadataändringar för en resurs till alla eller vissa återgivningar av resursen.
-contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 4%
+source-wordcount: '708'
+ht-degree: 5%
 
 ---
 
@@ -18,8 +17,8 @@ ht-degree: 4%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM 6.5 LTS | Den här artikeln |
 
 Den här XMP-återskrivningsfunktionen i [!DNL Adobe Experience Manager Assets] replikerar metadataändringarna till återgivningarna av den ursprungliga resursen. När du ändrar metadata för en resurs i Assets eller när du överför resursen, lagras ändringarna först i metadatanoden i resurshierarkin.
 
@@ -54,8 +53,8 @@ Utför dessa steg för XMP Writeback-funktionen för att sprida metadata till å
 1. Navigera till **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** i Experience Manager-gränssnittet.
 1. Öppna arbetsflödesmodellen **[!UICONTROL DAM Metadata Writeback]** på sidan Modeller.
 1. På egenskapssidan för **[!UICONTROL DAM Metadata Writeback]** öppnar du steget **[!UICONTROL XMP Writeback Process]**.
-1. Klicka på fliken **[!UICONTROL Process]** i dialogrutan [!UICONTROL Step Properties].
-1. Lägg till `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` i rutan **Argument** och klicka på **[!UICONTROL OK]**.
+1. Klicka på fliken [!UICONTROL Step Properties] i dialogrutan **[!UICONTROL Process]**.
+1. Lägg till **i rutan** Argument`rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` och klicka på **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
@@ -69,8 +68,6 @@ Utför dessa steg för XMP Writeback-funktionen för att sprida metadata till å
 Metadataändringarna sprids till miniatyrbilden för återgivningarna.140.100.png och miniatyrbilden.319.319.png för resursen, inte till de andra.
 
 >[!NOTE]
->
->Information om XMP-tillbakaskrivningsproblem i 64-bitars Linux finns i [Så här aktiverar du XMP återskrivningsproblem i 64-bitars RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
 >Information om vilka plattformar som stöds finns i [XMP krav för återskrivning av metadata](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 

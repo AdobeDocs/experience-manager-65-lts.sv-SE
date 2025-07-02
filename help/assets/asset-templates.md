@@ -1,14 +1,13 @@
 ---
 title: Resursmallar
 description: Lär dig mer om tillgångsmallar i [!DNL Adobe Experience Manager Assets]  och hur du använder resursmallar för att skapa marknadsföringsmaterial.
-contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1516'
 ht-degree: 2%
 
 ---
@@ -41,7 +40,7 @@ Du kan exportera den uppdaterade filen i den överordnade mappen i INDD-, PDF- e
 
 Tänk dig ett scenario där du vill skapa digital tryckbar information som broschyrer, flygblad och annonser för en kommande kampanj och dela med butiker globalt. Genom att skapa material som bygger på en mall kan ni leverera en enhetlig kundupplevelse över alla kanaler. Designers kan skapa kampanjmallar (en eller flera sidor) med hjälp av en kreativ lösning, som [!DNL InDesign], och överföra mallarna till [!DNL Experience Manager Assets] åt dig. Innan du skapar en del ska du ha en eller flera INDD-mallar överförda till och tillgängliga i [!DNL Experience Manager] i förväg.
 
-1. Välj [!UICONTROL Assets] i gränssnittet [!DNL Experience Manager].
+1. Välj [!DNL Experience Manager] i gränssnittet [!UICONTROL Assets].
 
 1. Välj **[!UICONTROL Templates]** bland alternativen.
 
@@ -124,10 +123,8 @@ Du kan redigera en del direkt när du har skapat den. Du kan även öppna den fr
    >
    >Så här aktiverar du [!DNL Experience Manager] för att lösa bilder:
    >
-   >* Bädda in bilder när du skapar [!DNL InDesign]-mallar (se [Om länkar och inbäddade bilder](https://helpx.adobe.com/se/indesign/using/graphics-links.html)).
+   >* Bädda in bilder när du skapar [!DNL InDesign]-mallar (se [Om länkar och inbäddade bilder](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Montera [!DNL Experience Manager] i det lokala filsystemet och mappa sedan saknade ikoner med befintliga resurser i [!DNL Experience Manager].
-   >
-   >Mer information om hur du arbetar med [!DNL InDesign]-dokument finns i [Bästa tillvägagångssätt för att arbeta med InDesign-dokument i Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Om du vill skapa en PDF-återgivning för broschyren väljer du alternativet Acrobat i dialogrutan och klickar sedan på **[!UICONTROL Continue]**.
 1. Den sammansatta delen skapas i den mapp som du började med. Om du vill visa återgivningarna öppnar du materialet och väljer **[!UICONTROL Renditions]** i listan GlobalNav.
@@ -148,7 +145,7 @@ Du kan redigera en del direkt när du har skapat den. Du kan även öppna den fr
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Välj **[!UICONTROL Merge]** ![Lägg till resurser](assets/do-not-localize/assets_add_icon.png) på sidan [!UICONTROL Template Merge].
+1. Välj [!UICONTROL Template Merge] **[!UICONTROL Merge]** Lägg till resurser![ på sidan ](assets/do-not-localize/assets_add_icon.png).
 
 1. Navigera till platsen för den del av materialet som du vill sammanfoga och markera miniatyrbilderna för den del som du vill sammanfoga.
 
