@@ -125,7 +125,7 @@ Du kan förbättra nyckelordens relevans för vissa resurser för att öka sökn
 
 Du kan använda detta till din fördel genom att öka rankningen för vissa resurser i sökresultaten för nyckelordet target. Se exempelvideon nedan. Mer information finns i [söka i [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=sv-SE).
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/3444066/?quality=6&captions=swe)
 
 *Video: Förstå hur sökresultaten rangordnas och hur rangordningen kan påverkas.*
 
