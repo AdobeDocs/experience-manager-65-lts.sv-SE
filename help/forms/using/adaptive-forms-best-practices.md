@@ -363,11 +363,11 @@ En av de största utmaningarna för organisationer är att hantera personligt id
 
 Regelredigeraren i AEM Forms har ett visuellt gränssnitt för att skapa och hantera regler, vilket minskar behovet av omfattande kodning. Det kan vara särskilt användbart för företagsanvändare eller formulärdesigners som inte har avancerade programmeringskunskaper men behöver definiera och underhålla affärsregler i formulären, här diskuterar vi få användningsfall där regelredigeraren tillåter dig:
 
-* <!-- Allows you --> Definiera affärsregler för formulären utan behov av omfattande programmering.
-* <!-- Use the Rule Editor when you need --> Använda villkorsstyrd logik i formulären. Detta inkluderar att visa eller dölja formulärelement, ändra fältvärden baserat på vissa villkor eller dynamiskt ändra formulärens beteende.
-* <!--When you want --> Regelredigeraren kan användas för att definiera valideringsvillkor om du vill tillämpa datavalideringsregler för formulärinskickade formulär.
-* <!-- When you need --> För att integrera formulären med externa datakällor (FDM) eller tjänster kan regelredigeraren hjälpa dig att definiera regler för hämtning, visning och ändring av data under formulärinteraktioner.
-* <!-- If you want -->Om du vill skapa dynamiska och interaktiva formulär som svarar på användaråtgärder kan du definiera regler som styr formulärelementens beteende i realtid i regelredigeraren.
+* &#x200B;<!-- Allows you --> Definiera affärsregler för formulären utan behov av omfattande programmering.
+* &#x200B;<!-- Use the Rule Editor when you need --> Använda villkorsstyrd logik i formulären. Detta inkluderar att visa eller dölja formulärelement, ändra fältvärden baserat på vissa villkor eller dynamiskt ändra formulärens beteende.
+* &#x200B;<!--When you want --> Regelredigeraren kan användas för att definiera valideringsvillkor om du vill tillämpa datavalideringsregler för formulärinskickade formulär.
+* &#x200B;<!-- When you need --> För att integrera formulären med externa datakällor (FDM) eller tjänster kan regelredigeraren hjälpa dig att definiera regler för hämtning, visning och ändring av data under formulärinteraktioner.
+* &#x200B;<!-- If you want -->Om du vill skapa dynamiska och interaktiva formulär som svarar på användaråtgärder kan du definiera regler som styr formulärelementens beteende i realtid i regelredigeraren.
 
 Regelredigeraren är tillgänglig för både AEM Forms Foundation-komponenter och Core-komponenter.
 

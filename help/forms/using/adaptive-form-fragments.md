@@ -91,6 +91,7 @@ Om du dessutom har valt ett XML-schema eller en XDP-formulärmall som formulärm
 1. Ange följande information i dialogrutan Skapa fragment:
 
    * **Namn**: Namnet på fragmentet. Standardvärdet är panelens elementnamn. Det är ett obligatoriskt fält.
+
      >[!NOTE]
      >
      >Se till att du anger ett unikt namn för fragmentet. Om det finns ett annat fragment med samma namn kan fragmentet inte skapas.
