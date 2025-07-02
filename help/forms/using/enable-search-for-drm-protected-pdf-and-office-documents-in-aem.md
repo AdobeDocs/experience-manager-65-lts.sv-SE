@@ -1,17 +1,14 @@
 ---
 title: Möjliggör för AEM att söka efter säkerhetsskyddade PDF- och Microsoft Office-dokument
 description: Lär dig hur du aktiverar AEM-sökning för att utföra fulltextsökning i DRM-skyddade PDF-dokument.
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -49,7 +46,7 @@ En säker anslutning möjliggör ett smidigt informationsflöde mellan AEM Forms
 
 ### Konfigurera AEM Forms Client SDK Bundle med hjälp av ömsesidig autentisering {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
-1. Aktivera ömsesidig autentisering för AEM Forms på JEE. Mer information finns i [CAC och ömsesidig autentisering](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Aktivera ömsesidig autentisering för AEM Forms på JEE.
 1. Öppna konfigurationshanteraren för AEM och logga in som administratör. Standardwebbadressen är https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Sök i och öppna AEM Forms Client SDK Bundle. Ange värde för följande egenskaper:
 

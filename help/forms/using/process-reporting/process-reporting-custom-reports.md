@@ -1,19 +1,15 @@
 ---
 title: Anpassade rapporter i processrapportering
 description: Du kan skapa anpassade rapporter och lägga till de här rapporterna i användargränssnittet för JEE-processrapportering.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: process-reporting
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 7e7c9f2414504ade45d6695641e08108afed0bd2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -26,14 +22,14 @@ Du kan använda REST-gränssnittet i QueryBuilder eller skapa en OSGi-tjänst me
 
 Utför följande mallprocedur innan du lägger till en anpassad rapport:
 
-1. Data som används i anpassade rapporter måste vara tillgängliga i processrapportering. Om du vill vara säker på att data är tillgängliga schemalägger du ett cron-jobb eller använder alternativet **[Synkronisera](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** i gränssnittet för processrapportering.
-1. URL-begäran (som kapslar in den önskade frågan) måste returnera ett lämpligt frågeresultatobjekt. Om du vill skapa en fråga kan du använda REST-gränssnittet i [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=sv-SE) för att skapa en OSGi-tjänst med hjälp av QueryBuilder API. Du kan skapa dynamiska eller statiska frågor.
+1. Data som används i anpassade rapporter måste vara tillgängliga i processrapportering. Om du vill vara säker på att data är tillgängliga schemalägger du ett cron-jobb eller använder alternativet **Synkronisera** i gränssnittet för processrapportering.
+1. URL-begäran (som kapslar in den önskade frågan) måste returnera ett lämpligt frågeresultatobjekt. Om du vill skapa en fråga kan du använda REST-gränssnittet i [QueryBuilder](/help/sites-developing/querybuilder-api.md) för att skapa en OSGi-tjänst med hjälp av QueryBuilder API. Du kan skapa dynamiska eller statiska frågor.
 
 1. Skapa ett anpassat användargränssnitt för att visa resultaten. Du kan skapa ett fristående användargränssnitt eller integrera resultatet med befintliga processrapporteringsgränssnitt.
 
 ## Använda REST-gränssnittet i QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST-gränssnittet exponerar funktionerna i Asset Share Query Builder via ett Java API och ett REST API. Lär dig hur du använder [CRX QueryBuilder REST-gränssnittet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=sv-SE) innan du utför följande steg:
+CRX QueryBuilder REST-gränssnittet exponerar funktionerna i Asset Share Query Builder via ett Java API och ett REST API. Lär dig hur du använder [CRX QueryBuilder REST-gränssnittet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) innan du utför följande steg:
 
 1. Bläddra till URL:en `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Skapa en fråga baserat på lagringsnodens struktur och nodegenskaper i Process Reporting.
@@ -50,7 +46,7 @@ CRX QueryBuilder REST-gränssnittet exponerar funktionerna i Asset Share Query B
 
 ## Skapa en tjänst med hjälp av Query Builder API  {#creating-a-service-using-query-builder-api-nbsp}
 
-Förutsättningen för att skapa en tjänst med hjälp av Query Builder API är [att skapa och distribuera CQ OSGI-paketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE) och [med hjälp av Query Builder API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=sv-SE).
+Förutsättningen för att skapa en tjänst med hjälp av Query Builder API är [att skapa och distribuera CQ OSGI-paketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) och [med hjälp av Query Builder API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
 
 1. Skapa en OSGi-tjänst med lämpliga anteckningar. Så här kommer du åt QueryBuilder:
 
@@ -66,7 +62,7 @@ Förutsättningen för att skapa en tjänst med hjälp av Query Builder API är 
     predicateGroup.setAllRequired(true);
    ```
 
-1. Lägg till predikat i den nyligen skapade prediateGroup. Ett par användbara predikatkonstruktioner är [JcrBoolPropertyPredicateEvaluator i 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE), [JcrPropertyPredicateEvaluator i 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE), [RangePropertyPredicateEvaluator i 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE), [DateRangePredicateEvaluator i 5.5.5 3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE) och [TypePredicateEvaluator i 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE).
+1. Lägg till predikat i den nyligen skapade prediateGroup. Ett par användbara predikatkonstruktioner är [JcrBoolPropertyPredicateEvaluator i 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en), [JcrPropertyPredicateEvaluator i 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en), [RangePropertyPredicateEvaluator i 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en), [DateRangePredicateEvaluator i 5.5.5 3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) och [TypePredicateEvaluator i 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
 
    För statiska rapporter kan predikaten kodas, medan predikaten hämtas från begäran för dynamiska rapporter.
 
@@ -425,7 +421,7 @@ Exempelfilen `pom.xml` som ska skapas ovanför tjänsten är:
 
 ## Skapa ett separat användargränssnitt  {#creating-a-separate-ui-nbsp}
 
-Förutsättningarna för att skapa ett separat användargränssnitt för att visa resultat är [Grundläggande om segmentering i 5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE), [Skapa en CRX-nod](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE) och ger rätt [åtkomstbehörighet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE).
+Förutsättningarna för att skapa ett separat användargränssnitt för att visa resultat är [Grundläggande om segmentering i 5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en), [Skapa en CRX-nod](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) och ger rätt [åtkomstbehörighet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
 
 1. Skapa en CRX-nod på noden `/apps` och tilldela lämpliga åtkomstbehörigheter. (PERM_PROCESS_REPORTING_USER)
 1. Definiera renderaren på noden `/content`.

@@ -1,16 +1,13 @@
 ---
 title: Texter i interaktiv kommunikation
 description: Att skapa och redigera textdokumentfragment som ska användas i interaktiv kommunikation - text är en av de fyra typer av dokumentfragment som används för att skapa interaktiv kommunikation. De andra tre är villkor, listor och layoutfragment.
-topic-tags: interactive-communications
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: ca18b9f4-9d06-4b15-81dd-68a6821e2e3e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6db207b08535c063e41b333054561036481e8db9
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2410'
 ht-degree: 0%
 
 ---
@@ -26,7 +23,7 @@ Textdokumentavsnittet i Interaktiv kommunikation har stöd för följande typer 
 * **Datamodellsobjekt**: Dataegenskaperna använder en backend-datakälla.
 * **Regelbaserat innehåll**: Delar av innehåll i en text som visas eller döljs baserat på en regel. En regel kan också baseras på egenskaper och variabler för formulärdatamodellen.
 * **Variabler**: I textdokumentfragment är variabler inte bundna till en backend-datakälla. Agenten fyller i/väljer värden i variabler eller binder variablerna till datakällor när den förbereder interaktiva kommunikationen för att skicka den till en postprocess.
-* **Upprepa**: Du kan ha dynamisk information i din interaktiva kommunikation, t.ex. transaktioner i en kreditkortssats, vars antal kan ändras kontinuerligt för varje genererad interaktiv kommunikation. Med upprepning kan du formatera och strukturera sådan dynamisk information. Mer information finns i [Infogat villkor och upprepa](https://helpx.adobe.com/se/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Upprepa**: Du kan ha dynamisk information i din interaktiva kommunikation, t.ex. transaktioner i en kreditkortssats, vars antal kan ändras kontinuerligt för varje genererad interaktiv kommunikation. Med upprepning kan du formatera och strukturera sådan dynamisk information. Mer information finns i [Infogat villkor och upprepa](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Skapa text {#createtext}
 
@@ -238,10 +235,6 @@ Du kan kopiera och klistra in ett eller flera textstycken i ett redigerbart text
 Du kan kopiera och klistra in text direkt från Microsoft® Word-dokumentet i ett redigerbart textdokumentfragment. Formateringen som punktlistor, teckensnitt och textfärger behålls i textdokumentfragmentet.
 
 ![pastetexteditablemodul-1](assets/pastetexteditablemodule-1.png)
-
->[!NOTE]
->
->Formateringen av inklistrad text har dock vissa [begränsningar](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
 ## Infoga specialtecken i text {#special}
 

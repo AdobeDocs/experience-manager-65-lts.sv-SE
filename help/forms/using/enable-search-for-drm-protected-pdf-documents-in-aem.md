@@ -1,18 +1,13 @@
 ---
 title: Möjliggör för AEM att söka efter säkerhetsskyddade PDF-dokument
 description: Lär dig hur du aktiverar AEM-sökning för att utföra fulltextsökning i DRM-skyddade PDF-dokument.
-contentOwner: khsingh
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -28,7 +23,7 @@ AEM-sökning kan användas för att söka efter och hitta AEM-resurser och för 
 
 * Om du använder AEM Forms på OSGi:
 
-   * Installera [AEM Forms Document Security Indexer-paketet](https://helpx.adobe.com/se/aem-forms/kb/aem-forms-releases.html) på AEM Forms-servern.
+   * Installera [AEM Forms Document Security Indexer-paketet](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) på AEM Forms-servern.
 
    * Kontrollera att en AEM Forms på JEE-server är igång och att dokumentsäkerheten är installerad på motsvarande AEM Forms på JEE-server. AEM-formuläret på JEE-servern krävs för att indexera det skyddade dokumentet.
 
@@ -66,7 +61,7 @@ Du kan använda någon av följande metoder för att upprätta en säker anslutn
 
 #### Konfigurera Adobe LiveCycle Client SDK Bundle med hjälp av ömsesidig autentisering {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Aktivera ömsesidig autentisering för AEM Forms på JEE. Mer information finns i [CAC och ömsesidig autentisering](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Aktivera ömsesidig autentisering för AEM Forms på JEE.
 1. Öppna AEM Web Console. URL:en är https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Leta upp och öppna paketet **Adobe LiveCycle Client SDK**. Ange värde för följande egenskaper:
 
