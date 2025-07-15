@@ -4,9 +4,10 @@ description: Frågor och svar om AEM 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2352420843c613884ad3cae487ed048bd775e294
+exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
+source-git-commit: ec722773ce3acff1d0de861523db8ff7df552c4b
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -28,6 +29,14 @@ Detaljerad dokumentation om Felix Health Check-ramverket finns i [felix-dokument
 ### Stöd för AEM Groovy-konsol
 
 AEM Groovy-konsolversionen som användes i AEM 6.5 kanske inte fungerar i AEM 6.5 LTS på grund av att guava-beroenden saknas. Den nya versionen av AEM Groovy-konsolen som stöds är [19.0.8](https://mvnrepository.com/artifact/be.orbinson.aem/aem-groovy-console/19.0.8).
+
+### Har AEM 6.5 LTS stöd för användarsynkronisering?
+
+Ja, AEM 6.5 LTS stöder användarsynkronisering. Funktionen för användarsynkronisering mellan AEM 6.5 och 6.5 LTS förändras inte.
+
+### Uber JAR på Maven Central verkar vara skadad - vad är problemet?
+
+Kontrollera att du använder Uber JAR med klassificeraren `apis`. Observera att paketeringsstrukturen för Uber JAR har ändrats i AEM 6.5 LTS. Mer information finns i [Uppdatera AEM Uber Jar-versionen](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 ## Hämta ytterligare hjälp
 
