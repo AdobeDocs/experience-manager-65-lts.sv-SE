@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 2c2e8defbaab13a31beeb7c6978af5da19535e70
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1074'
 ht-degree: 1%
 
 ---
@@ -130,18 +130,21 @@ Det finns en hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com
 
 ### Dispatcher-anslutningsfel med SSL-funktion {#ssl-only-feature}
 
-När du aktiverar SSL-funktionen i AEM-distributioner finns det ett känt problem som påverkar anslutningen mellan Dispatcher- och AEM-instanserna. När du har aktiverat den här funktionen kan hälsokontroller misslyckas och kommunikationen mellan Dispatcher- och AEM-instanser kan avbrytas.
+När du aktiverar SSL-funktionen i AEM-distributioner finns det ett känt problem som påverkar anslutningen mellan Dispatcher- och AEM-instanserna. När du har aktiverat den här funktionen kan hälsokontroller misslyckas och kommunikationen mellan Dispatcher- och AEM-instanser kan avbrytas. Detta problem uppstår specifikt när kunder försöker ansluta via `https + IP` från Dispatcher till AEM-instanser och är relaterat till SNI-valideringsproblem (Server Name Indication).
 
 **Effekt:**
 
-* Misslyckade hälsokontroller med HTTP 500-svarskoder
+* Misslyckade hälsokontroller med HTTP 400-svarskoder
 * Trafiken mellan Dispatcher och AEM har brutits
 * Innehåll kan inte hanteras på rätt sätt via Dispatcher
+* Anslutningsfel vid användning av HTTPS med IP-adresser i Dispatcher-konfiguration
+* HTTP 400: Felet &quot;Invalid SNI&quot; vid anslutning via HTTPS + IP
 
 **Berörda miljöer:**
 
 * AEM installerar med Dispatcher-konfigurationer
 * System där SSL-funktionen har aktiverats
+* Dispatcher-konfigurationer som använder anslutningsmetoden `https + IP` till AEM-instanser
 
 **Lösning:**
 Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorrigering [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) som åtgärdar det här problemet. Försök inte aktivera SSL-funktioner förrän du har implementerat den nödvändiga snabbkorrigeringen.
@@ -151,5 +154,5 @@ Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorr
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
