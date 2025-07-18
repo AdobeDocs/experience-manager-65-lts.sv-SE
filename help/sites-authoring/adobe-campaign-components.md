@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 20de763d-dd07-4ba6-a54d-a2b3b9b7e1ec
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2855'
 ht-degree: 1%
 
 ---
+
 
 # Adobe Campaign Components{#adobe-campaign-components}
 
@@ -29,7 +31,7 @@ När du integrerar med Adobe Campaign finns det komponenter som du kan använda 
 
 ## Adobe Campaign Newsletter Components {#adobe-campaign-newsletter-components}
 
-Alla Campaign-komponenter följer den bästa praxis som beskrivs i [Bästa praxis för e-postmallar](/help/sites-administering/best-practices-for-email-templates.md) och baseras på Adobe markeringsspråk [HTML](https://helpx.adobe.com/se/experience-manager/htl/using/overview.html).
+Alla Campaign-komponenter följer den bästa praxis som beskrivs i [Bästa praxis för e-postmallar](/help/sites-administering/best-practices-for-email-templates.md) och baseras på Adobe markeringsspråk [HTML](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
 
 När du öppnar ett nyhetsbrev/e-postmeddelande som är konfigurerat för integrering med Adobe Campaign, bör du se följande komponenter i avsnittet **Adobe Campaign Newsletter**:
 
@@ -265,7 +267,7 @@ I redigeraren kan du lägga till text, ändra justeringen, lägga till och ta bo
 
 >[!NOTE]
 >
->Endast de fält som definieras i schemat **nms:seedMember** eller ett av dess tillägg beaktas. Attributen för de tabeller som är länkade till **nms:seedMember** är inte tillgängliga.
+>Endast fält som definierats i **nms:seedMember**-schemat eller ett av dess tillägg tas med i beräkningen. Attributen för de tabeller som är länkade till **nms:seedMember** är inte tillgängliga.
 
 ## Adobe Campaign Form Components {#adobe-campaign-form-components}
 

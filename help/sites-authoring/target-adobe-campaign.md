@@ -9,12 +9,13 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: ce6ebfff-3a1d-4c9f-aa50-23d1c3afc852
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
+
 
 # Rikta in er på Adobe Campaign{#targeting-your-adobe-campaign}
 
@@ -66,47 +67,3 @@ Så här skapar du upplevelser för segment:
 1. Klicka på **Redigera** och sedan under Segment klicka på **Lägg till objekt**.
 1. Ange sökvägen till det manliga segmentet, till exempel **/etc/segmentation/ac-segment/man**, och klicka på **OK**. Följande meddelande ska visas: *Upplevelsen är riktad till: Man*
 1. Upprepa föregående steg för att skapa en upplevelse för alla segment, till exempel kvinnligt mål.
-
-## Skapa ett nyhetsbrev med riktat innehåll {#creating-a-newsletter-with-targeted-content}
-
-När ni har skapat segment, varumärken, kampanjer och upplevelser kan ni skapa ett nyhetsbrev med riktat innehåll. När ni har skapat upplevelsen länkar ni upplevelser till era segment.
-
->[!NOTE]
->
->[E-postexempel är bara tillgängliga i Geometrixx](/help/sites-developing/we-retail.md). Ladda ned exempelinnehåll för Geometrixx från Package Share.
-
-Så här skapar du ett nyhetsbrev med riktat innehåll:
-
-1. Skapa ett nyhetsbrev med riktat innehåll: Klicka på **Skapa** > **Sida** nedan för e-postkampanjer i Geometrixx Outdoors och välj en av Adobe Campaign Mail-mallarna.
-
-   ![chlimage_1-188](assets/chlimage_1-188.png)
-
-1. Lägg till en Text- och Personalization-komponent i nyhetsbrevet.
-1. Lägg till text i Text- och Personalization-komponenten, till exempel&quot;This is the default&quot;.
-1. Klicka på pilen bredvid **Redigera** och välj **Mål**.
-1. Välj ert varumärke i den nedrullningsbara menyn Varumärke och välj er kampanj. (Detta är varumärket och kampanjen som du skapade tidigare).
-1. Klicka på **Starta målanpassning**. Dina segment visas i området Publiker. Standardupplevelsen används om inget av de definierade segmenten matchar.
-
-   >[!NOTE]
-   >
-   >Som standard använder de e-postexempel som ingår i AEM Adobe Campaign som målmotor. För anpassade nyhetsbrev kan du behöva välja Adobe Campaign som målmotor. När du väljer mål klickar du på + i verktygsfältet, anger en rubrik för den nya aktiviteten och väljer **Adobe Campaign** som målmotor.
-
-1. Klicka på **Standard** och sedan på komponenten Text och Personalization som du lade till så visas Bullseye med en pil i. Klicka på ikonen om du vill ange komponenten som mål.
-
-   ![chlimage_1-189](assets/chlimage_1-189.png)
-
-1. Navigera till ett annat segment (Man) och klicka på **Lägg till erbjudande** och klicka på plusikonen +. Redigera sedan erbjudandet.
-1. Navigera till ett annat segment (Kvinna) och klicka på **Lägg till erbjudande** och plustecknet +. Redigera sedan erbjudandet.
-1. Klicka på **Nästa** för att se mappning, klicka sedan på **Nästa** för att visa inställningar som inte gäller för Adobe Campaign och klicka sedan på **Spara**.
-
-   AEM genererar automatiskt rätt kod för Adobe Campaign när innehållet används i en leverans i Adobe Campaign
-
-1. Skapa leveransen i Adobe Campaign - välj **E-postleverans med AEM-innehåll** och välj det lokala AEM-kontot, beroende på vad som är lämpligt, och bekräfta dina ändringar.
-
-   I HTML-vyn omsluts de olika upplevelserna av målkomponenter av Adobe Campaign målkod.
-
-   ![chlimage_1-190](assets/chlimage_1-190.png)
-
-   >[!NOTE]
-   >
-   >Om du även konfigurerar segmenten i Adobe Campaign kan du visa upplevelserna för varje segment genom att klicka på **Förhandsgranska** .

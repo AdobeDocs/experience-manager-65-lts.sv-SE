@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Först och främst bör du kontrollera anslutningen mellan författaren och publ
 
 >[!NOTE]
 >
->Kontrollera att egenskapen **acMapping** på sidans **jcr:content** -nod är inställd på **mapRecipient** eller **profile** när du använder Adobe Campaign Classic respektive Adobe Campaign Standard
+>Kontrollera att egenskapen **acMapping** på sidans **jcr:content**-nod är inställd på **mapRecipient** eller **profile** när du använder Adobe Campaign Classic respektive Adobe Campaign Standard
 >
 
 1. I AEM navigerar du till den plats där du vill skapa en sida i Sites.
@@ -78,7 +78,7 @@ Forms som riktar sig till Adobe Campaign har specifika komponenter. Dessa kompon
 
 >[!NOTE]
 >
->Om den önskade mallen inte är tillgänglig läser du [Göra en mall tillgänglig](/help/sites-authoring/adobe-campaign.md).
+>Om den önskade mallen inte är tillgänglig går du till [Göra en mall tillgänglig.](/help/sites-authoring/campaign.md)
 
 I det här avsnittet beskrivs endast specifika länkar till Adobe Campaign. Mer information om hur du använder formulär i Adobe Experience Manager finns i [Komponenter i redigeringsläge](/help/sites-authoring/default-components-foundation.md).
 

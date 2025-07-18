@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 0%
 
 ---
+
 
 # Metodtips för e-postmallar {#best-practices-for-email-templates}
 
@@ -23,7 +25,7 @@ ht-degree: 0%
 >
 >Den här artikeln gäller de inaktuella Foundation Components-baserade e-postkomponenterna för AEM.
 >
->Användare uppmuntras att använda de moderna e-postkomponenterna för [kärnkomponenter.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=sv-SE)
+>Användare uppmuntras att använda de moderna e-postkomponenterna för [kärnkomponenter.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 I det här dokumentet beskrivs några av de bästa sätten att arbeta med e-postdesign, vilket resulterar i en välutvecklad mall för e-postkampanjer.
 
@@ -45,7 +47,7 @@ Använd dessa rutiner när du skapar ett eget nyhetsbrev.
 
 >[!NOTE]
 >
->När du skapar en e-postmall för Adobe Campaign måste du ta med egenskapen **acMapping** med värdet **mapRecipient** i noden **jcr:content** i mallen. Om du inte gör det kan du inte välja Adobe Campaign-mallen i **Sidegenskaper** i Experience Manager (fältet är inaktiverat).
+>När du skapar en e-postmall för Adobe Campaign måste du inkludera egenskapen **acMapping** med värdet **mapRecipient** i **jcr:content** -noden i mallen. Om du inte gör det kan du inte välja Adobe Campaign-mallen i **Sidegenskaper** i Experience Manager (fältet är inaktiverat).
 
 ## Komponenten Mall/sida {#template-page-component}
 

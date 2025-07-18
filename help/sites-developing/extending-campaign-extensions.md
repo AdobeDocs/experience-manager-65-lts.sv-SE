@@ -1,5 +1,5 @@
 ---
-title: Skapa anpassade tillägg
+title: Anpassade Adobe Campaign-tillägg
 description: Du kan ringa din egen kod i Adobe Campaign från AEM eller från AEM till Adobe Campaign.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7cdce721-ca00-43ac-a543-85bfad382821
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '492'
 ht-degree: 1%
 
 ---
 
-# Skapa anpassade tillägg{#creating-custom-extensions}
+
+# Anpassade Adobe Campaign-tillägg {#creating-custom-extensions}
 
 När du implementerar ett projekt har du vanligtvis anpassad kod i både AEM och Adobe Campaign. Med det befintliga API:t kan du anropa din anpassade kod i Adobe Campaign från AEM eller från AEM till Adobe Campaign. I det här dokumentet beskrivs hur du gör det.
 
@@ -34,10 +36,6 @@ Mer information finns i [Integrera AEM med Adobe Campaign 6.1](/help/sites-admin
 Standardintegrationen mellan AEM och Campaign baseras på JSON och JSSP (JavaScript Server Page). Dessa JSSP-filer finns i Campaign-konsolen och alla börjar med **aec** (Adobe Experience Cloud).
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
-
->[!NOTE]
->
->[Det här exemplet finns i Geometrixx](/help/sites-developing/we-retail.md), som är tillgängligt från Paketdelning.
 
 I det här exemplet skapades en ny anpassad JSSP-fil som anropar den från AEM-sidan för att hämta resultatet. Den kan till exempel användas för att hämta data från Adobe Campaign eller spara data i Adobe Campaign.
 
@@ -167,17 +165,13 @@ AEM erbjuder API:er som kan hämta objekt var som helst i platadminutforskarvyn.
 
 ![chlimage_1-17](assets/chlimage_1-17a.png)
 
->[!NOTE]
->
->[Det här exemplet finns i Geometrixx](/help/sites-developing/we-retail.md), som är tillgängligt från Paketdelning.
-
 För varje nod i Utforskaren finns det ett API som är länkat till det. För noden:
 
-* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
+* [http://localhost:4502/siteadmin#/content/campaign/geometrixx/scott-recommendations](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
 API:t är:
 
-* [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [http://localhost:4502/content/campaign/geometrixx/scott-recommendations.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 Slutet av URL:en **.1.json** kan ersättas med **.2.json**, **.3.json**, enligt antalet undernivåer som du är intresserad av att få. Om du vill få alla nyckelord kan du använda **infinity**:
 
