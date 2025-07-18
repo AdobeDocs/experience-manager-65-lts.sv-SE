@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2919'
 ht-degree: 1%
 
 ---
@@ -556,15 +556,16 @@ De här alternativen är tillgängliga via markeringen bredvid fältet **Komment
 
 ### Referenser {#references}
 
-**Referenser** visar alla anslutningar till den valda resursen. I **Platser**-konsolen [&#128279;](/help/sites-authoring/author-environment-tools.md#showingpagereferences) visar till exempel referenser för sidor:
+**Referenser** visar anslutningar till den valda resursen. I **Platser**-konsolen [ ](/help/sites-authoring/author-environment-tools.md#showingpagereferences) visar till exempel referenser för sidor:
 
+* [Ritningar](/help/sites-administering/msm.md)
 * [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live-kopior](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Språkversioner](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Innehållsreferenser:
 
-   * länkar från andra sidor till den markerade sidan
-   * innehåll som lånats från, eller lånats ut, eller både och, till den valda sidan av referenskomponenten
+   * Direktlänkar från andra sidor till den markerade sidan
+   * Innehåll som lånats från, lånats ut till, eller båda, den valda sidan av referenskomponenten
 
 ![bh-28](assets/bh-28.png)
 

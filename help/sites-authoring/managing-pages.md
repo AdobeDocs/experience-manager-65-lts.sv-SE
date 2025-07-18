@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2416'
+source-wordcount: '2476'
 ht-degree: 1%
 
 ---
@@ -326,7 +326,7 @@ I AEM finns funktioner för att uppdatera interna länkar som refererar till sid
 
    Guiden Flytta sida öppnas.
 
-1. Från steget **Byt namn** i guiden kan du antingen:
+1. I steget **Byt namn** i guiden får du **information** om sidan, inklusive skapandedatum, sökväg och antal direkta referenser. Här kan du antingen:
 
    * Ange det namn du vill att sidan ska ha efter att den har flyttats och klicka sedan på **Nästa** för att fortsätta.
 
@@ -365,7 +365,8 @@ I AEM finns funktioner för att uppdatera interna länkar som refererar till sid
 
    >[!NOTE]
    >
-   >Om sidan varken är länkad till eller refererad är det här steget inte tillgängligt.
+   >* Om sidan varken är länkad till eller refererad är det här steget inte tillgängligt.
+   >* I det här steget visas både direkta och indirekta referenser. Detta kan skilja sig från mängden som rapporteras i steget **Byt namn** i guiden samt referenserna som rapporteras av referenslinjen, där båda endast rapporterar direkta referenser av prestandaskäl.
 
    ![caop-09](assets/caop-09.png)
 

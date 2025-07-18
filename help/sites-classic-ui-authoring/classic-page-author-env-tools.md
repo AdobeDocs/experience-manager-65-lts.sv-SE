@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 2%
 
 ---
@@ -156,7 +156,7 @@ Du kan använda valfritt antal jokertecken i en fråga.
 
 I AEM kan du se vilka sidor som är länkade till den sida du arbetar med just nu.
 
-Så här visar du direkta sidreferenser:
+Så här visar du sidreferenser:
 
 1. I sidosparken väljer du flikikonen **Sida** .
 
@@ -165,6 +165,10 @@ Så här visar du direkta sidreferenser:
 1. Välj **Visa referenser..** AEM öppnar fönstret Referenser och visar vilka sidor som refererar till den markerade sidan, inklusive sökvägar för dem.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
+
+AEM visar alla sidor som direkt refererar till den valda sidan samt eventuella indirekta referenser. Det är praktiskt att förstå alla länkar som kommer att uppdateras om du behöver flytta eller ta bort sidan.
+
+## Fler Sidekick-åtgärder {#additional-actions}
 
 I vissa situationer kan Sidekick vidta ytterligare åtgärder, bland annat:
 
