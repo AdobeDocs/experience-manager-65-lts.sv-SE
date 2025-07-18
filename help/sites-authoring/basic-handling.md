@@ -556,7 +556,7 @@ De här alternativen är tillgängliga via markeringen bredvid fältet **Komment
 
 ### Referenser {#references}
 
-**Referenser** visar anslutningar till den valda resursen. I **Platser**-konsolen [ ](/help/sites-authoring/author-environment-tools.md#showingpagereferences) visar till exempel referenser för sidor:
+**Referenser** visar anslutningar till den valda resursen. I **Platser**-konsolen [&#128279;](/help/sites-authoring/author-environment-tools.md#showingpagereferences) visar till exempel referenser för sidor:
 
 * [Ritningar](/help/sites-administering/msm.md)
 * [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
