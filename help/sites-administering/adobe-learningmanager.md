@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Adobe Learning Manager (ALM) kan integreras med Adobe Experience Manager (AEM) sajter. På så sätt kan du skapa en egen webbplats och responsiva mobilgränssnitt för Adobe Learning Manager med minimal kodning. Med den här integreringen kan ni skapa anpassade undervisningsmaterial för era användare.
 
-Mer information finns i [Adobe Learning Manager referensplats (ALM-referensplats) för AEM Sites](https://experienceleague.adobe.com/en/docs/learning-manager/using/integration/aem-sites/adobe-learning-manager-integration-aem).
+Mer information finns i [Adobe Learning Manager referensplats (ALM-referensplats) för AEM Sites](https://experienceleague.adobe.com/sv/docs/learning-manager/using/integration/aem-sites/adobe-learning-manager-integration-aem).
