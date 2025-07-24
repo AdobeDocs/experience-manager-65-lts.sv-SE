@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: d69e5dccb5583ad310a52128e4bd534fc90cd186
+source-git-commit: 925a53bbf8a8ec28a8b3e5000bf83437ab18f513
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 0%
@@ -111,9 +111,9 @@ Det finns olika alternativ för att distribuera Adobe Experience Manager-databas
 | Lagra binärfiler i TAR-filer i filsystemet `[1]` | Binärfiler | Z: Stöds inte för produktion |
 | Amazon S3 | Binärfiler | A: Stöds |
 | Microsoft® Azure Blob Storage | Binärfiler | A: Stöds |
-| MongoDB Enterprise 8.0 | Databas | A: `[3, 4]` stöds |
-| MongoDB Enterprise 7.0 | Databas | A: `[3, 4]` stöds |
-| MongoDB Enterprise 6.0 | Databas | A: `[3, 4]` stöds |
+| MongoDB Enterprise 8.0 | Databas | A: `[2, 3]` stöds |
+| MongoDB Enterprise 7.0 | Databas | A: `[2, 3]` stöds |
+| MongoDB Enterprise 6.0 | Databas | A: `[2, 3]` stöds |
 | **Apache Lucene (inbyggd Quickstart)** | Söktjänst | A: Stöds |
 
 1. &#39;Filsystem&#39; inkluderar blocklagring som är POSIX-kompatibel. Innehåller nätverkslagringsteknik. Tänk på att filsystemets prestanda kan variera och påverka den övergripande prestandan. Läs in test-AEM med nätverks-/fjärrfilsystemet.
@@ -177,7 +177,7 @@ Adobe Experience Manager fungerar med följande serverplattformar för produktio
 
 Adobe Experience Manager stöds när det körs i en virtuell dator i molnmiljöer. Dessa miljöer omfattar Microsoft® Azure och Amazon Web Services (AWS), som körs i enlighet med de tekniska krav som anges på den här sidan och i enlighet med Adobe standardsupportvillkor.
 
-Om du har en molnbaserad miljö kan du titta på det senaste erbjudandet från AEM produktlinje: Adobe Experience Manager as a Cloud Service. Mer information finns i [Adobe Experience Manager as a Cloud Service-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=sv-SE).
+Om du har en molnbaserad miljö kan du titta på det senaste erbjudandet från AEM produktlinje: Adobe Experience Manager as a Cloud Service. Mer information finns i [Adobe Experience Manager as a Cloud Service-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html).
 
 Adobe erbjuder även Adobe Managed Services att distribuera AEM på Azure eller AWS. Adobe Managed Services förser experterna med erfarenhet och kunskaper av att driftsätta och använda AEM i dessa molnmiljöer. Se [ytterligare dokumentation om Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -187,7 +187,7 @@ Adobe rekommenderar att du arbetar direkt med molnleverantören för rekommendat
 
 ### Dispatcher Platforms (webbservrar) {#dispatcher-platforms-web-servers}
 
-Dispatcher är en komponent för cachelagring och lastbalansering. [Hämta den senaste Dispatcher-versionen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=sv-SE). Experience Manager 6.5 kräver Dispatcher version 4.3.2 eller senare.
+Dispatcher är en komponent för cachelagring och lastbalansering. [Hämta den senaste Dispatcher-versionen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 kräver Dispatcher version 4.3.2 eller senare.
 
 Följande webbservrar kan användas med Dispatcher version 4.3.2:
 
@@ -387,7 +387,7 @@ För Windows x86:
    <th><p><strong>Format som stöds för konvertering till PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/se/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 Classic track</a> senaste versionen</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 Classic track</a> senaste versionen</td>
    <td>XPS, bildformat (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF och DWF</td>
   </tr>
   <tr>
@@ -415,7 +415,7 @@ För Windows x86:
 >
 >Dessutom
 >
->* PDF Generator kräver en 32-bitarsversion av [Acrobat 2020 Classic track version 20.004.30006](https://helpx.adobe.com/se/acrobat/release-note/release-notes-acrobat-reader.html) eller Acrobat 2017 version 17.011.30078 för att kunna utföra konverteringen.
+>* PDF Generator kräver en 32-bitarsversion av [Acrobat 2020 Classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) eller Acrobat 2017 version 17.011.30078 för att kunna utföra konverteringen.
 >* PDF Generator har endast stöd för 32-bitarsversionen av Microsoft® Office Professional Plus och andra program som krävs för konvertering.
 >* Installationen av Microsoft® Office Professional Plus kan använda volymlicenser baserade på Retail eller MAK/KMS/AD.
 >* Om en Microsoft® Office-installation inaktiveras eller inte licensieras av någon anledning, t.ex. en volymlicensierad installation som inte kan hitta en KMS-värd inom en angiven period, kan konverteringen misslyckas tills installationen har licensierats på nytt och återaktiverats.
@@ -423,7 +423,7 @@ För Windows x86:
 >* PDF Generator stöder inte Microsoft® Office 365.
 >* PDF Generator-konverteringar för OpenOffice stöds endast i Windows och Linux®.
 >* Funktionerna OCR PDF, Optimize PDF och Export PDF stöds endast i Windows.
->* En version av Acrobat medföljer AEM Forms för att aktivera PDF Generator-funktioner. Programmatiskt få tillgång till den paketerade versionen endast med AEM Forms under AEM Forms-licensens löptid för användning med AEM Forms PDF Generator. Mer information finns i AEM Forms produktbeskrivning enligt din distribution ([On-Premise](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-manager-on-premise.html) eller [Managed Services](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* En version av Acrobat medföljer AEM Forms för att aktivera PDF Generator-funktioner. Programmatiskt få tillgång till den paketerade versionen endast med AEM Forms under AEM Forms-licensens löptid för användning med AEM Forms PDF Generator. Mer information finns i AEM Forms produktbeskrivning enligt din distribution ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) eller [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator-tjänsten stöder inte Microsoft® Windows 10.
 >* PDF Generator kan inte konvertera filer med Microsoft® Visio 2019. Du kan fortsätta använda Microsoft® Visio 2016 för att konvertera `.VSD`- och `.VSDX`-filer.
 >* PDF Generator kan inte konvertera filer med Microsoft® Project 2019. Du kan fortsätta använda Microsoft® Project 2016 för att konvertera `.VSD`- och `.VSDX`-filer.
