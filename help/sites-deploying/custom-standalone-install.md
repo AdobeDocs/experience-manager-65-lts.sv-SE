@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 90e63ad3be32b7ce551c5e3579c722ef75d97f95
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,16 @@ Det finns olika regler som ska följas när man byter namn på filen quickstart 
 
 Om du kör Oracle Java 17 eller Java 21 måste ytterligare växlar läggas till på kommandoraden när du startar AEM.
 
-Nedan visas ett exempel på hur de ytterligare JVM-parametrarna ska se ut när AEM startas på Java 17/Java 21:
+* Nedan visas ett exempel på hur de ytterligare JVM-parametrarna ska se ut när AEM startas på Java 17/Java 21:
 
 ```shell
 -XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=org.apache.sling.commons.threads -Djdk.util.zip.disableZip64ExtraFieldValidation=true
+```
+
+* [Endast Forms] nedan är ett exempel som kontrollerar att AEM Forms fungerar korrekt med Java 17/Java21. Inkludera följande JVM-parametrar:
+
+```shell
+--add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## Körningslägen {#run-modes}

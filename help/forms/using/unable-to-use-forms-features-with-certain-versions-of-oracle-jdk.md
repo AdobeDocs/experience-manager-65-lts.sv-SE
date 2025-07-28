@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 4aa45f02-ff89-4e40-a15d-e62c5879a87d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cf2f70432ccf9ebc80847cf5ec6acfe630feb39f
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
@@ -40,7 +40,9 @@ Ovannämnda och senare versioner av Java innehåller nya XML-bearbetningsgränse
 1. Stoppa Experience Manager Forms Server.
 1. Konfigurera följande JVM-argument för programservern:
 
-   `-Djdk.xml.xpathExprOpLimit=2000`
+   `-Djdk.xml.xpathExprGrpLimit=100`
+   `-Djdk.xml.xpathExprOpLimit=10000`
+   `-Djdk.xml.xpathTotalOpLimit=10000`
 
    Den ställer in systemegenskapen i JVM till ett rimligt högt värde så att standardgränsen inte nås.
 
