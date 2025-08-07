@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
 workflow-type: tm+mt
-source-wordcount: '10056'
+source-wordcount: '10090'
 ht-degree: 0%
 
 ---
@@ -199,7 +199,7 @@ Om du ska använda PDF Generator-tjänsten för att konvertera filformat som Mic
 >* Adobe Acrobat, Microsoft® Word, Excel och PowerPoint finns endast för Microsoft® Windows. Om du använder det UNIX-baserade operativsystemet måste du installera OpenOffice för att konvertera RTF-filer och Microsoft® Office-filer som stöds till PDF-dokument.
 >* Stäng alla dialogrutor som visas när du har installerat Adobe Acrobat och tredjepartsprogram för alla användare som har konfigurerats att använda tjänsten PDF Generator.
 >* Starta alla installerade program minst en gång. Stäng alla dialogrutor för alla användare som har konfigurerats att använda PDF Generator-tjänsten.
->* [Kontrollera förfallodatumet för dina Adobe Acrobat-serienummer](https://helpx.adobe.com/se/enterprise/kb/volume-license-expiration-check.html) och ange ett datum för att uppdatera licensen eller [migrera ditt serienummer](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) baserat på förfallodatumet.
+>* [Kontrollera förfallodatumet för dina Adobe Acrobat-serienummer](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) och ange ett datum för att uppdatera licensen eller [migrera ditt serienummer](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) baserat på förfallodatumet.
 
 När du har installerat Acrobat öppnar du Microsoft® Word. På fliken **Acrobat** klickar du på **Skapa PDF** och konverterar en .doc- eller .docx-fil som finns på datorn till ett PDF-dokument. Om konverteringen lyckas är AEM Forms redo att använda Acrobat med PDF Generator-tjänsten.
 
@@ -242,6 +242,12 @@ Installationsprocessen för Adobe Acrobat Pro DC för Microsoft Office varierar 
 
 * **Licenstyp**: Butiks- eller volymlicens
 * **Distributionstyp**: En användare eller flera användare
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>I videon visas installationsprocessen för en Retail License-konfiguration för en användare. För andra distributionsscenarier (Detaljhandel - Flera användare, Volymlicens - En användare eller Volymlicens - Flera användare), se instruktionerna i steg 9 på motsvarande flikar nedan för att säkerställa att servern startas och att licensen aktiveras korrekt för din distributionstyp.
 
 På varje flik finns skräddarsydda instruktioner som är optimerade för just din konfiguration, vilket hjälper dig att undvika konfigurationsproblem och säkerställa att licenserna är korrekta.
 
@@ -692,7 +698,7 @@ När du har avinstallerat den tidigare versionen måste du hämta och installera
 När du har slutfört alla processer utför du ett snabbåtgärdstest för att bekräfta att installationen är giltig:
 
 1. Använd Fjärrskrivbord (RDP) för att logga in på servern och starta AEM Forms-servern med hjälp av tjänster.
-2. Använd Fjärrskrivbord (RDP) för att logga in på servern och starta AEM Forms-servern med Windows Services. Stäng inte bara RDP-fönstret när servern är igång. I stället loggar du ut genom att logga ut användaren på ett smidigt sätt. Detta garanterar att sessionen avslutas korrekt medan tjänsten fortsätter att köras i bakgrunden.
+2. Stäng inte bara RDP-fönstret när servern är igång. I stället loggar du ut genom att logga ut användaren på ett smidigt sätt. Detta garanterar att sessionen avslutas korrekt medan tjänsten fortsätter att köras i bakgrunden.
 
 ###### Steg 10: Testa tjänsten PDF Generator
 
@@ -1050,7 +1056,7 @@ AEM Forms tilläggspaket är ett program som distribueras till AEM. Paketet inne
 1. Öppna [Pakethanteraren](/help/sites-administering/package-manager.md) och klicka på **[!UICONTROL Upload Package]** för att överföra paketet.
 1. Markera paketet och klicka på **[!UICONTROL Install]**.
 
-   Du kan även hämta paketet via den direktlänk som visas i artikeln [AEM Forms-utgåvor](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE).
+   Du kan även hämta paketet via den direktlänk som visas i artikeln [AEM Forms-utgåvor](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 1. När paketet har installerats uppmanas du att starta om AEM-instansen. **Stoppa inte servern omedelbart.** Innan du stoppar AEM Forms Server väntar du tills ServiceEvent REGISTERED- och ServiceEvent UNREGISTERED-meddelandena inte längre visas i filen `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log och loggen är stabil.
 
@@ -1447,7 +1453,7 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
          &quot;
          
-         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;Absolute path to prov.xml>]&lbrace;2&quot; 
+         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;Absolute path to prov.xml>]{2&quot; 
          
          
      
