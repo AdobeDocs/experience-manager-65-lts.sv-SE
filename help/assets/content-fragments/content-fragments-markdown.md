@@ -130,7 +130,7 @@ Du kan ha kapslade blockcitattecken. Till exempel:
 
 Du kan skapa både sorterade och osorterade listor.
 
-Om du vill skapa en osorterad lista använder du symbolen &amp;ast; före objekten i listan. Till exempel:
+Om du vill skapa en osorterad lista använder du symbolen &ast; före objekten i listan. Till exempel:
 
     `* item in list`
 
