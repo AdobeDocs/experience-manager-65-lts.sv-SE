@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '522'
 ht-degree: 3%
 
 ---
@@ -130,7 +130,7 @@ Du kan ha kapslade blockcitattecken. Till exempel:
 
 Du kan skapa både sorterade och osorterade listor.
 
-Om du vill skapa en osorterad lista använder du symbolen &ast; före objekten i listan. Till exempel:
+Om du vill skapa en osorterad lista använder du symbolen &amp;ast; före objekten i listan. Till exempel:
 
     `* item in list`
 
@@ -166,7 +166,7 @@ Du kan fet text enligt följande:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Om du vill ange ett intervall med kod omsluter du det med citattecken (&grave;). Till skillnad från ett förformaterat kodblock anger ett kodintervall koden i ett normalt stycke.
+Om du vill ange ett intervall med kod omsluter du det med citattecken (`` ` ``). Till skillnad från ett förformaterat kodblock anger ett kodintervall koden i ett normalt stycke.
 
 Till exempel:
 
