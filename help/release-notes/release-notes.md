@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 70436606-d95c-4208-94f6-e33f3eefdf66
-source-git-commit: e9c09eebb372fc36ae161959e0465c07ad755130
+source-git-commit: 7f9f24f173604640b454449b389da9fcdcf7017d
 workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Eclipse Jetty 11.0.x används som servermotor för QuickStart.
 * För optimala prestanda bör du åsidosätta standardvärdena för GC med andra värden. Mer information finns i avsnittet [Installera och uppdatera](/help/sites-deploying/custom-standalone-install.md).
 * Adobe distribuerar Java™ 17- och Java™ 21-underhållsuppdateringar för kundanvändning i AEM-relaterade projekt, när dessa inte är tillgängliga för allmänheten från Oracle.
 
-#### Paketering med Uberjar {#uber-jar-packaging}
+#### Uberjar-förpackning {#uber-jar-packaging}
 
 * Det finns en liten skillnad i förpackningen till AEM 6.5 LTS. Mer information finns i [Uppdatera AEM Uber Jar-versionen](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
@@ -154,4 +154,4 @@ Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorr
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
