@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: ec722773ce3acff1d0de861523db8ff7df552c4b
+source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Detaljerad dokumentation om Felix Health Check-ramverket finns i [felix-dokument
 
 ### Stöd för AEM Groovy-konsol
 
-AEM Groovy-konsolversionen som användes i AEM 6.5 kanske inte fungerar i AEM 6.5 LTS på grund av att guava-beroenden saknas. Den nya versionen av AEM Groovy-konsolen som stöds är [19.0.8](https://mvnrepository.com/artifact/be.orbinson.aem/aem-groovy-console/19.0.8).
+AEM Groovy-konsolversionen som användes i AEM 6.5 kanske inte fungerar i AEM 6.5 LTS på grund av att guava-beroenden saknas. Den nya versionen av AEM Groovy-konsolen som stöds är [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip).
 
 ### Har AEM 6.5 LTS stöd för användarsynkronisering?
 
