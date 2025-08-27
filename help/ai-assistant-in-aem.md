@@ -35,7 +35,7 @@ Det är direkt inbäddat i AEM och tillgängligt från AEM Experience Hub, Cloud
 
 I följande 3-minuters-39-sekundersvideo får du stegvis genomgång av AI Assistant i AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470359?learn=on&captions=swe)
 
 ## Få tillgång till AI Assistant i AEM{#get-access}
 
