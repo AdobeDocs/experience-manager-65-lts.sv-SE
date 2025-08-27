@@ -1,17 +1,22 @@
 ---
-title: AI Assistant i AEM
+title: AI Assistant i AEM 6.5
 description: Använd AI Assistant för att hitta svar och felsöka de lösningar som finns i Adobe Experience Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3cf3d5c83a91fbc582840c2a3b11b3b705f86712
+exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
+source-git-commit: 59a3074e339f066bb4803dab4ddbf0bec3cf5da5
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
 
-# AI Assistant i AEM {#about-ai-assistant-in-aem}
+# AI Assistant i AEM 6.5 {#about-ai-assistant-in-aem}
+
+>[!IMPORTANT]
+>
+>AEM 6.5- och AEM 6.5 LTS-kunder som inte använder Cloud Manager/Experience Hub måste kontakta sin Adobe Customer Success Engineer för att få tillgång till AI Assistant.
 
 AEM (Adobe Experience Manager) AI Assistant har ett konversationsgränssnitt som underlättar för dig att hitta svar på dina Adobe Experience Manager-relaterade frågor. Det hjälper dig att få snabba svar på dina produktrelaterade AEM-frågor (*som är tillgängliga för alla användare*) och automatisera skapandet av supportärenden (*som är tillgängliga för supportadministratörer*).
 
@@ -88,7 +93,7 @@ Produktkunskap omfattar begrepp och ämnen som härletts ur Adobe Experience Lea
 | Undervisning | <ul><li>Vad är den universella redigeraren?</li><li>Hur skapar jag ett program i Cloud Manager?</li></ul> |
 | Öppna identifiering | <ul><li>Hur använder jag Universal Editor?</li><li>Finns det något sätt att kopiera innehåll från en miljö till en annan?</li></ul> |
 | Felsökning | <ul><li>Varför har jag inte åtkomst till Universal Editor?</li><li>Varför misslyckas min pipeline?</li></ul> |
-| **Skapa supportbiljett** | **Endast tillgängligt för supportadministratörer &#x200B;**<br>**Exempel** |
+| **Skapa supportbiljett** | **Endast tillgängligt för supportadministratörer **<br>**Exempel** |
 | Automatiserad framtagning av supportbiljetter som fångar AI Assistant-chatthistorik och kontext | <ul><li>Skapa en supportbiljett åt mig.</li></ul> |
 | Hämta status för supportanmälan | <ul><li>Visa alla supportärenden som jag har öppnat.</li><li>Visa status för biljetten E—</li></ul> |
 
@@ -128,7 +133,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
