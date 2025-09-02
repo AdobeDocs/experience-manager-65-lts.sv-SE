@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6b101bcb474abe07a72d5fd04895f858eef34587
+source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
 workflow-type: tm+mt
-source-wordcount: '5228'
+source-wordcount: '5238'
 ht-degree: 0%
 
 ---
@@ -297,7 +297,6 @@ Ett hjälpmedelsproblem har korrigerats där platshållare felaktigt visades som
 #### Quickstart{#foundation-quickstart-65-lts-sp1}
 
 * Avinstallationsskriptet har uppdaterats för att justera versionsområdet för Guava-paketet och förhindra att det blocklist när det installeras via pakethanteraren. (GRANITE-59559)
-* Åtgärdade ett konfigurationsfel med flera delar som inträffade under överföringar av AEMFD-paket på Tomcat 11 med JDK 17 genom att uppdatera serverkonfigurationen så att den stöder stora paketinstallationer utan att utlösa parsningsfel. GRANITE-58327
 * Ett problem i replikeringsgränssnittet som visade ett fel (`#1660`) vid redigering av replikeringsagenter har korrigerats genom hantering av klassiska kryssrutor i gränssnittet. GRANITE-58302
 * Löste flera startfel för S3-datalagret när AEM 6.5 LTS kördes med JDK 21 genom att åtgärda saknade tjänstbehörigheter, uppdatera konfigurationshanteringen och säkerställa att nödvändiga tjänster initieras korrekt. (GRANITE-57082)
 * Definierade underhålls- och underhållsstrategin för AEM 6.5. Den här korrigeringen innehåller följande:
@@ -369,6 +368,11 @@ Eclipse Jetty 11.0.x används som servermotor för QuickStart.
 ## Installera och uppdatera {#install-update}
 
 Installationsanvisningar finns i [Installationsanvisningar](/help/sites-deploying/custom-standalone-install.md).
+
+>[!NOTE]
+>
+> Om du uppgraderar direkt till LTS SP1 från gamla 6.5 SP, följ instruktionerna för 6.5 till 6.5 LTS GA [upgrade](/help/sites-deploying/upgrade.md).
+
 
 Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-deploying/upgrade.md).
 
@@ -452,7 +456,11 @@ När det här problemet inträffar kan ett av följande undantag visas i fellogg
 
 Det finns en hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) som åtgärdar det här problemet.
 
-### Dispatcher-anslutningsfel med SSL-funktion {#ssl-only-feature}
+### Dispatcher-anslutningsfel med SSL-funktion (åtgärdat i AEM 6.5 LTS SP1 och senare){#ssl-only-feature}
+
+>[!NOTE]
+>
+> Problemet förekommer endast i AEM 6.5 LTS GA-utgåvan.
 
 När du aktiverar SSL-funktionen i AEM-distributioner finns det ett känt problem som påverkar anslutningen mellan Dispatcher- och AEM-instanserna. När du har aktiverat den här funktionen kan hälsokontroller misslyckas och kommunikationen mellan Dispatcher- och AEM-instanser kan avbrytas. Det här problemet inträffar specifikt när kunder försöker ansluta via `https + IP` från Dispatcher till AEM-instanser. Det är relaterat till SNI-valideringsproblem (Server Name Indication).
 
@@ -485,5 +493,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
