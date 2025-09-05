@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 516fb71493cad9d4f4105bb09f56fe95d2971974
+source-git-commit: d6b324ed961dc59a22e8e33109a5ba5262553aa7
 workflow-type: tm+mt
-source-wordcount: '7204'
+source-wordcount: '7221'
 ht-degree: 0%
 
 ---
@@ -457,6 +457,12 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 >
 > För nya AEM 6.5 LTS-installationer måste indexdefinitioner installeras separat. Mer information finns i [den här artikeln](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
+## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
+
+Detaljerade anvisningar finns i [Installationsanvisningar för AEM Forms Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+
+
+
 ## Plattformar som stöds {#supported-platforms}
 
 Hitta den fullständiga matrisen med plattformar som stöds, inklusive supportnivå på [AEM 6.5 LTS Technical Requirements](/help/sites-deploying/technical-requirements.md).
@@ -570,5 +576,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
