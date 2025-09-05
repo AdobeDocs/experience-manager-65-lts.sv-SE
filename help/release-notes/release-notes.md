@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
+source-git-commit: 516fb71493cad9d4f4105bb09f56fe95d2971974
 workflow-type: tm+mt
-source-wordcount: '5238'
+source-wordcount: '7204'
 ht-degree: 0%
 
 ---
@@ -342,8 +342,85 @@ Ett hjälpmedelsproblem har korrigerats där platshållare felaktigt visades som
 * Korrigerade ett problem i arbetsflödet Skapa uppgift i Inkorg där dialogrutan Lägg till uppgift inte stängdes efter att du klickat på Skicka, trots att uppgiften skapades, på grund av ett syntaxfel i JavaScript. (CQ-4355336)
 * Ett problem har korrigerats som förhindrade att konfigurationen för inkorgsvyn sparades på grund av att en egenskapsdefinition för `isEndUserConfigurationEnabled` saknades. (CQ-4287757)
 
+## Forms
 
+### Forms Designer
 
+* När en användare exporterar data för en XFA-baserad PDF med exportDataAPI visar XML-resultatet avvikelser när de jämförs med XML-data som exporteras manuellt med Acrobat Reader. Värden för vissa fält saknades i utdata jämfört med utdata som genererats från Acrobat Reader. (LC-3922791)
+* När du skapar en taggad PDF med utdatatjänsten i Workbench läggs en oväntad etiketttagg till under referenstaggen i ett innehållsobjekt. (LC-3922756)
+* När du förenklar dynamiska, ifyllbara PDF-filer till PDF/A-format med hjälp av utdatatjänsten bevaras inte det dynamiska läget. Detta leder till dataförlust och potentiella kompatibilitetsproblem, särskilt när taggning är aktiverat. (LC-3922708)
+* När en användare placerar fältbeskrivningar med justering längst ned eller till höger i AEM Forms Designer, innehåller taggträdet endast bildtexten utan motsvarande värde, vilket leder till ofullständig taggning av hjälpmedel. (LC-3922619)
+* QR-koderna i genererade PDF-filer blir oläsbara. Den alternativa texten för QR-koderna misslyckas också i hjälpmedelstestningen, vilket påverkar skärmläsarkompatibiliteten. (LC-3922551)
+* När en användare återger en bokstav i agentgränssnittet visas inte innehållet korrekt på grund av FormService-återgivnings()-API:t. (LC-3922461)
+* När en användare försöker skapa PDF/A-filer från XDP-filer med formatet Nedsänkt fyrkant i AEM Forms, uppstår problem med kantåtergivning. (LC-3922180)
+* Förenkling av dynamiska formulär som är bundna till ett XSD-schema orsakar partiell dataförlust eftersom vissa bundna formulärdata inte bevaras i den slutliga PDF. (LC-3922008)
+* När en användare försöker exportera data från interaktiva PDF-filer med hjälp av API:t extractData i AEM Forms 6.5.13 och senare, leder det till att data saknas jämfört med manuell export. (LC-3921983)
+* Användarna har ett problem med tillgänglighet där flera Link-OBJR-taggar skapas när XDP-formulär konverteras till statiska PDF-filer med AEM Forms Designer eller Output, i stället för att en enda enhetlig link-tagg skapas. (LC-3921977)
+
+### Adaptiv Forms
+
+* Om du aktiverar&quot;Tillåt RTF-text för rubrik&quot; i rotpanelen i AEM Forms döljs rotpanelens rubrik felaktigt av&quot;Uteslut namn från postdokument&quot; på en kapslad panel. Det gör det i det genererade postdokumentet. (FORMS-19696)
+* Systemet ignorerar den anpassade sling :resourceType som tilldelats via aem:afProperties i ett JSON-schema. Den anpassade resurstypen ignoreras under återgivningen. (FORMS-19691)
+* När en användare skickar ett adaptivt formulär med förifyllda bilagor med URI:er, misslyckas formuläröverföringen med ett NullPointerException på grund av att binära data saknas. (FORMS-19371) (FORMS-19486)
+* När en användare överför en PDF under avsnittet Forms och dokument slutar tidslinjefunktionen att fungera. (FORMS-19407)(FORMS-19234)
+* När en användare överför filer med OTB-komponenten (OOTB) för bifogade filer i AEM Forms identifieras säkerhetsproblem. Detta kan leda till att oauktoriserade enheter kan komma att avbryta inlämningsprocessen. (FORMS-19271)
+* När en användare konfigurerar ett anpassat formulär i AEM Forms så att det automatiskt genererar ett dokument för inspelning (DoR), visas inte den hämtade DoR-titeln i fältet Titel i Acrobat Reader dokumentegenskaper. Som standard visas inte formulärtiteln i stället för filnamnet. (FORMS-19263)
+* När en användare öppnar en interaktiv kommunikation i agentens användargränssnitt kan de förfyllda data inte raderas helt. När de tas bort fylls de automatiskt i med samma data. (FORMS-19151)
+* När en användare förhandsgranskar ett datumfält i agentgränssnittet ändras datumet oväntat. Problemet inträffar på grund av tidszonsavvikelser mellan den virtuella datorns UTC-inställning och systemets tolkning av datumet. (FORMS-19115)
+* När en användare skickar ett formulär kan bifogade filer dupliceras, vilket leder till flera överföringar av samma fil. (FORMS-19045)(FORMS-19051)
+* Det går inte att lägga till koordinatorer i uppsättningar av profiler i dokumentskydd i både produktions- och undermiljöer. (FORMS-18603, FORMS-18212, FORMS-19697)
+* När en användare klickar på ikonen&quot;datepicker-calendar-icon&quot; i skrivbordsläge med ett tomt fält inträffar ett fel på grund av den odefinierade variabeln _$focusedDate, som stör associerade anpassade skript. (FORMS-18483)(FORMS-18268)
+* När en kund förhandsgranskar en bokstav visas inte nummervärdena felaktigt i fältet&quot;Belopp i ord&quot;, vilket leder till felpassning och att blanksteg saknas i innehållet. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848, FORMS-19614, LC-3922004)
+* När en kund förhandsgranskar en sparad bokstav på RHEL saknas, blanksteg och oväntade tecken som x visas. (FORMS-18422)(FORMS-17641)
+* När en användare navigerar mellan flikar i AEM Forms svarar inte komponenterna på den första fliken. (FORMS-18345)
+* När en användare konverterar en HTML-fil till PDF med alternativet WebToPDF, saknar utdata-PDF rubrikavsnittet, inklusive metadata- och titeltaggar. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
+* När en användare anropar metoden retryAction(long actionOid) i AEM JEE Process Manager SDK försöker systemet felaktigt den första åtgärden som hittas i tabellen tb_action_instance. Det här arbetsflödet inträffar även när ett visst åtgärds-ID anges eller när ID:t är null, vilket resulterar i ett oväntat beteende. (FORMS-18187)
+* En användare stöter på problem där de sparade utkasts- och överföringsfunktionerna misslyckas utan att visa något felmeddelande. (FORMS-18069)
+* Övergången från XSD-baserade grundkomponenter till kärnkomponenter förhindrar implementering av korsfilsreferenser i JSON-scheman, vilket påverkar den adaptiva Forms-migreringen. (FORMS-18065)
+* När en användare förhandsgranskar en bokstav i agentanvändargränssnittet visas ett felaktigt värde i datumfältet på grund av problem med konc-tidskonvertering. Skillnaderna beror på skillnader i tidszon mellan den virtuella datormiljön och systemets tolkning av tid (UTC kontra lokal tid). (FORMS-17988) (FORMS-17248)
+* När en användare förhandsgranskar brev med hjälp av mallar för e-postmeddelanden i AEM Forms varierar PDF-genereringstiderna avsevärt, från 1,5 sekunder till mer än 10 sekunder, även på samma server. Inkonsekvensen påverkar verksamhetskritiska arbetsflöden. (FORMS-17951)
+* När en användare binder ett klottersigneringsobjekt i ett adaptivt formulär till en XDP-fil med alternativet Datakällor, kan ändringarna inte sparas. Orsaken beror på beständiga valideringsfel för proportioner, även när giltiga värden används. (FORMS-17587)
+* När en användare använder en viss XDP-fil med många dolda fält för dokumentfragment, skapar AEM CRX-noder med egenskapen cm:optional inställd på false, vilket gör att överföringen av interaktiv kommunikation (IC) misslyckas. (FORMS-17538)
+* När en kund förhandsgranskar en bokstav kan de numeriska rutorna inte hantera negativa värden korrekt när siffergränserna för lead och Frac definieras. Problemet inträffar på grund av användningen av parseFloat, som hanterar minustecknet som en del av talet. (FORMS-17451)
+* När en bokstav förhandsgranskas uppmärksammas användningen av jokertecknet &quot;*&quot; i filen Adobe.json, vilket ger anledning till oro för dess syfte och eventuella modifieringar. (FORMS-17317)
+* När en användare använder en skärmläsare på kopplingskontot Ansök om en fast avgift för sparare annonseras rubrikerna felaktigt som klickbara, vilket kan orsaka tillgänglighetsproblem. (FORMS-17038)
+* När ett formulär är inbäddat saknar den genererade iframe-funktionen ett rubrikattribut, vilket leder till ett kompatibilitetsproblem. (FORMS-17010)
+* När du hämtar ett formulär med användargränssnittet i Forms Manager ingår alltid associerade beroenden, som teman och fragment. (FORMS-1581)
+* När en användare öppnar formuläret på mobila enheter (iOS och Android™) inaktiveras knapparna &quot;next&quot; och &quot;previous&quot; på den första sidan. Skärmläsaren identifierar dem dock inte som inaktiverade. (FORMS-15773)
+* När en användare sparar ett stort formulär med fragment och lazy loading aktiverat, kan han/hon inte hämta utkast, vilket stör arbetsflödet. (FORMS-19890, FORMS-19808)
+* Användarna fick problem med att spara formuläregenskaper för adaptiva formulär baserat på kärnkomponenter. Detta inträffade eftersom överflödiga skript från redigeraren för adaptiva formulär baserade på Foundation Components ingår, vilket orsakar konflikter i det adaptiva formuläret baserat på Core Components. redigerare. (FORMS-17474)
+* Användare fick problem med Adobe Sign GovCloud Signature-sidan som inte återges i en iframe. (FORMS-16803)
+* Fel uppstår när användare väljer referenser för AF-fragment (Core Component Adaptive Forms). Felmeddelandet&quot;Det gick inte att återge referensen: Inte en absolut sökväg&quot; visas, vilket förhindrar korrekt referensåtergivning. (FORMS-1968)
+* Stöd för flertrådskonvertering med Acrobat DC gör att man kan konvertera dokument från Word, Excel och PowerPoint till PDF effektivare. (FORMS-21310)
+* `com.adobe.granite.toggle.impl.dev`-paketet har lagts till i AEM Service Pack 24, vilket ger effektivare utvecklingsprocesser genom att det tas bort från Forms-tillägget. (FORMS-20139)
+* FeatureToggleRenderConditionServlet har tagits bort från forms-foundation och paketet com.adobe.granite.toggle.impl.dev från formulärtillägget. Denna uppdatering säkerställer att återgivningsvillkoret åtgärdas korrekt efter att ett formulär har installerats, vilket förbättrar komponentfunktionaliteten för kunderna. (FORMS-20138)
+* Användarna fick långsamma prestanda på grund av långa frågor i Adaptive Forms. Den här uppdateringsbackports-frågan ändras för att öka effektiviteten. Kunder kan nu skapa index med märkordsnamnet aemformsAFReferences. (FORMS-21411)
+* Användarna fick feljusterade rubrikpositioner när de konverterade HTML till PDF (Portable Document Format) med WebtoPDF. Det här problemet påverkade dokumentlayoutens enhetlighet och läsbarhet. (FORMS-21502, FORMS-21540)
+* PDF/A-1b-valideringen misslyckades trots lyckad PreFlight-verifiering. Problemet påverkade dokumentkompatibilitetskontrollerna för företagskunder med PDF valideringsverktyg. (FORMS-20196)
+* Användare upplevde oöversatta strängar i användargränssnittet, vilket orsakade förvirring och svårigheter att förstå gränssnittet. (FORMS-6542)
+* Användarna råkade ut för problem med e-postmeddelanden. Arbetsflödessteget Skicka e-post kunde inte skicka e-postmeddelanden, vilket påverkade automatiserade kommunikationsprocesser. (FORMS-17961)
+* Användarna har råkat ut för misslyckade tester av formulärarbetsflöden, vilket har påverkat deras förmåga att slutföra arbetsflöden effektivt. (FORMS-16231)
+* Användare kunde inte använda tidslinjefunktionen i PDF-filer i AEM-formulär. Det här problemet påverkade användarnas möjlighet att spåra dokumentändringar och revisioner effektivt. När du överför någon PDF under avsnittet Forms och dokument i AEM formulärområde fungerar inte tidslinjevyn. (FORMS-1908)
+* Användarna får ett null-pekarundantag när de interagerar med OData. Detta orsakar avbrott i datahämtningsprocesserna. (FORMS-20348)
+* Tog bort biblioteket google.common.collect efter borttagningen av Guava, ett Java-bibliotek med öppen källkod. Denna uppdatering ger bättre kompatibilitet och prestanda för företagskunder som använder Adaptive Forms. (FORMS-17031)
+
+### Forms Captcha
+
+* Stöd för Hcaptcha och Turnstile har lagts till för Adaptive Forms baserat på Foundation Components. (FORMS-16562)
+* Användare har fått problem med ikonöverlappning i dialogrutan Skapa Capture-konfiguration. När du fyller i obligatoriska fält överlappade informationsikonen felikonen och orsakade förvirring under konfigurationsinställningarna. (FORMS-1616)
+* Användare fick en felaktig konfiguration när de plockades upp för reCAPTCHA i Adaptive Forms baserat på grundkomponenter. När konfigurationsbehållaren inte har valts för ett formulär orsakade flera konfigurationer i mappen `conf/global` problemet. (FORMS-19237)
+* Användare råkade ut för problem med att reCAPTCHA inte skulle återges. Detta påverkade inskickade formulär och säkerhetsvalidering för företagskunder. (FORMS-17136, FORMS-19596)
+* Användarna får problem där storleken på reCAPTCHA Enterprise inte återspeglas i användargränssnittet. (FORMS-16574)
+* Användare fick problem med ReCaptcha-funktionen på grund av en oavslutad ResourceResolver i ReCaptchaConfigurationServiceImpl, vilket orsakade intermittenta valideringsfel vid formulärskickning. (FORMS-19241)
+* Användare fick problem med reCAPTCHA-validering när formulär redigerades på webbplatser. AEM-formulär kände inte igen formulärnamnet korrekt, vilket orsakade valideringsfel. (FORMS-20486)
+* Användarna fick in blanketter även när reCAPTCHA-poängen var 1.0, vilket ledde till potentiella säkerhetsrisker. (FORMS-16766){{$include }}
+* Förbättrade reCAPTCHA-varningar i Adaptive Forms genom att uppdatera skicka-felkoder till 400. Du kan även förfina loggvarningar för att skilja mellan tidsgränser, förfallodatum och fel vid robotidentifiering, vilket förbättrar felsökningsnoggrannheten och systemobserverbarheten. (FORMS-19240)
+* Stängde en oavslutad ResourceResolver-instans i ReCaptchaConfigurationServiceImpl för att förhindra potentiella resursläckor och förbättra systemstabiliteten när du använder reCAPTCHA-integreringar i AEM Forms. (FORMS-1924)
+* Förbättrad CAPTCHA-konfigurationshantering för AEM Forms genom att säkerställa att rätt konfigurationskoder binds till varje formulär när det finns flera poster i mappen /conf/global. Förhindrar oavsiktlig användning av felaktiga CAPTCHA-inställningar när konfigurationsbehållaren inte uttryckligen har valts. (FORMS-19239)
+
+### Forms Management UI
+
+* Användare upplevde olokaliserade strängar i Forms > Skapa bevakningsmapp > Skapa bevakningsmapp. När du skapade en bevakad mapp gick det inte att hitta strängar som &quot;Bevakade mappar skapades&quot; och &quot;Bevakade mappar skapades utan fel&quot;, vilket påverkar användargränssnittet. (FORMS-15234)
 
 ## [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
@@ -493,5 +570,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
