@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 66f0240a32830ba629b656e7f9aef84af2efc91c
+source-git-commit: 713dc1615ef1751c2fdbf67b5f97690ce6eed676
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Experience Hub introducerar en central startpunkt för hantering av innehåll, r
 
 Se en snabb genomgång av den omdesignade arbetsytan i AEM Experience Hub (4 minuter, 9 sekunder).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471445?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -30,7 +30,7 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    ![Adobe Experience Cloud hemsida](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
-1. Klicka på **Experience Manager**&#x200B;[**i grupperingen** Snabbåtkomst](https://experience.adobe.com).
+1. Klicka på **Experience Manager**[**i grupperingen** Snabbåtkomst](https://experience.adobe.com).
 1. Första gången du öppnar den klickar du på önskat alternativ på sidan **Berätta för oss vad du vill göra** så att Adobe kan skräddarsy din upplevelse.
 
    Du kan ändra den här inställningen när som helst.
@@ -50,11 +50,11 @@ Adobe Experience Manager-sidan har uppdaterats med förbättrad navigering och i
 >
 >Vilka widgetar, verktyg och artefakter som visas beror på användarens personlighet, berättiganden och AEM driftsättningstyp (AEM as a Cloud Service eller Managed Services 6.5/6.5 LTS).
 
-De här lösningarna har nu flyttats till huvudnavigeringen under **Verktyg** eller **Tjänster**. Dessutom ger nya navigeringselement snabb åtkomst till viktiga Adobe Experience Manager-funktioner som är specifika för de lösningar som är aktiverade, som Assets, Sites, Forms, Content Fragments, Launches och många andra.
+De här lösningarna har nu flyttats till huvudnavigeringen under **Verktyg** eller **Tjänster**. Dessutom ger nya navigeringselement snabb åtkomst till viktiga Adobe Experience Manager-funktioner som är specifika för de lösningar som är aktiverade. Bland dessa lösningar finns Assets, Sites, Forms, Content Fragments, Launches och många andra.
 
 ![Experience Hub-miljöer](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
 
-De här funktionerna är tillgängliga för den primära produktionsmiljön som du har tillgång till, eller så kan du välja en specifik miljö att rikta dig till om du har tillgång till flera AEM-instanser.
+De här funktionerna är tillgängliga för den primära produktionsmiljön som du har tillgång till. Du kan också välja en specifik miljö att rikta sig till om du har tillgång till flera AEM-instanser.
 
 ![Prod- och scenmiljöer](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
@@ -66,7 +66,7 @@ Du kan också ändra storlek på widgetar och placera dem på sidan så att de p
 
 ![Experience Hub-widgetar](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-Avsnittet **Redigeringsmiljöer** visar alla AEM-miljöer som du har tillgång till, med specifika genvägar för de lösningar och sidor som är tillgängliga för dem, och du kan även fästa specifika miljöer som du vill ska visas högst upp i listan.
+Avsnittet **Redigeringsmiljöer** visar alla AEM-miljöer som du har tillgång till. Det finns specifika genvägar för de tillgängliga lösningarna och sidorna, och du kan även fästa specifika miljöer som du vill ska visas högst upp i listan.
 
 I avsnittet **Senaste**, som visas i bilden nedan, visas sidor som du nyligen har besökt i AEM. Beroende på din innehavares licensiering kan widgeten innehålla objekt som Program, Pipeline Execution, Assets, Page Editor och Form Editor.
 
