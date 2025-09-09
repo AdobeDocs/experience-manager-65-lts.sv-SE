@@ -1,6 +1,6 @@
 ---
 title: Aktuell versionsinformation för Adobe Experience Manager 6.5 LTS, SP1
-description: Aktuell versionsinformation om Adobe Experience Manager 6.5 LTS, Service Pack 1.
+description: Hitta aktuella versionsuppgifter för Adobe Experience Manager 6.5 LTS, tjänstepaket 1.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
@@ -459,7 +459,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -576,5 +576,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 

@@ -1,7 +1,7 @@
 ---
 title: Om Experience Hub
-description: Läs mer om Adobe Experience Hub.
-landing-page-description: Läs om Adobe Experience Hub, en central startpunkt för alla AEM-funktioner.
+description: Ta reda på mer om sidan Adobe Experience Hub.
+landing-page-description: Ta reda på mer om Adobe Experience Hub, en central utgångspunkt för alla AEM-funktioner.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -9,7 +9,7 @@ exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
 source-git-commit: 713dc1615ef1751c2fdbf67b5f97690ce6eed676
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ Experience Hub introducerar en central startpunkt för hantering av innehåll, r
 
 Se en snabb genomgång av den omdesignade arbetsytan i AEM Experience Hub (4 minuter, 9 sekunder).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471445?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -30,7 +30,7 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    ![Adobe Experience Cloud hemsida](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
-1. Klicka på **Experience Manager**&#x200B;[**i grupperingen** Snabbåtkomst](https://experience.adobe.com).
+1. Klicka på **Experience Manager**[**i grupperingen** Snabbåtkomst](https://experience.adobe.com).
 1. Första gången du öppnar den klickar du på önskat alternativ på sidan **Berätta för oss vad du vill göra** så att Adobe kan skräddarsy din upplevelse.
 
    Du kan ändra den här inställningen när som helst.
