@@ -8,9 +8,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
 workflow-type: tm+mt
-source-wordcount: '3330'
+source-wordcount: '3345'
 ht-degree: 0%
 
 ---
@@ -184,19 +184,19 @@ Så här uppgraderar du till en ny version av 1.60.x S3-anslutningen:
 
 1. Stoppa AEM-instansen.
 
-1. Navigera till `<aem-install>/crx-quickstart/install/15` i installationsmappen för AEM och gör en säkerhetskopia av dess innehåll.
-1. Efter säkerhetskopieringen tar du bort den gamla versionen av S3 Connector och dess beroenden genom att ta bort alla jar-filer i mappen `<aem-install>/crx-quickstart/install/15`, till exempel:
+1. Navigera till `<aem-install>/crx-quickstart/install` i installationsmappen för AEM och skapa en säkerhetskopia av alla dess undermappar.
+1. Efter säkerhetskopieringen tar du bort den gamla versionen av S3 Connector och dess beroenden genom att ta bort alla jar-filer i alla mappar i mappen `<aem-install>/crx-quickstart/install/`, till exempel:
 
-   * **oak-blob-cloud-1.6.1.jar**
-   * **aws-java-sdk-osgi-1.10.76.jar**
+   * **15/oak-blob-cloud-1.78.XXX.jar**
+   * **15/aws-java-sdk-osgi-1.12.XXX.jar**
 
    >[!NOTE]
    >
    >Filnamnen ovan används endast som illustrationer.
 
-1. Hämta den senaste versionen av funktionspaketet 1.60.x från [Programvarudistribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
-1. Zippa upp innehållet i en separat mapp och navigera sedan till `jcr_root/libs/system/install/15`.
-1. Kopiera jar-filerna till **&lt;aem-install>**/crx-quickstart/install/15 i AEM installationsmapp.
+1. Hämta den senaste versionen av funktionspaketet 1.60.x från [Maven-databasen.](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Zippa upp innehållet i en separat mapp och navigera sedan till `jcr_root/libs/system/install/`.
+1. Kopiera alla undermappar till **&lt;aem-install>**/crx-quickstart/install/ i AEM installationsmapp.
 1. Starta AEM och kontrollera anslutningsfunktionen.
 
 Du kan använda konfigurationsfilen med alternativen nedan.
