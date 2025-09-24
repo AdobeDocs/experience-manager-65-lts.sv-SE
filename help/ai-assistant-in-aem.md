@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
-source-git-commit: 2938d601fa4608b470cbd60f22cd8ec90ae3978a
+source-git-commit: 84cce811f7385834432e8462ae69394b16df31ba
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1312'
 ht-degree: 2%
 
 ---
@@ -35,32 +35,27 @@ Det är direkt inbäddat i AEM och tillgängligt från AEM Experience Hub, Cloud
 
 I följande 3-minuters-39-sekundersvideo får du stegvis genomgång av AI Assistant i AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470359?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Få tillgång till AI Assistant i AEM{#get-access}
 
-Om du vill ge användare åtkomst till AI Assistant i AEM måste din Adobe-administratör konfigurera följande anpassade behörigheter för de profiler som kräver åtkomst i **Adobe Admin Console**:
+För att få tillgång till AI Assistant i AEM måste man ha följande:
 
-* **AI Assistant-åtkomst** - Behörighet att använda AI Assistant i AEM för produktkunskap, som gör att användare kan ställa produktrelaterade frågor i AI Assistant-chatten. Den här behörigheten måste aktiveras.
-* **Supportåtkomst** - Användare måste också ha behörighet att öppna supportärenden, vilket kräver rollen **Support Admin**.
+* Tillstånd att använda AI Assistant i AEM för produktkunskap. Med den här behörigheten kan du ställa produktrelaterade frågor i AI Assistant-chatten. Den här behörigheten måste aktiveras.
+* Behörighet att öppna supportärenden, vilket kräver rollen **supportadministratör**.
 
-AI Assistant-begäranden i AEM autentiseras via Adobe Identity Management Services (IMS). Mer information finns i [Adobe Identity Management Services - översikt](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>[!NOTE]
+>
+>AI Assistant-begäranden i AEM autentiseras via Adobe Identity Management Services (IMS). Mer information finns i [Adobe Identity Management Services - översikt](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **Så här får du åtkomst till AI Assistant i AEM:**
 
 1. Kunderna måste ha ett extra avtal för att få tillgång till de flesta AI-baserade och autentiska funktionerna i Adobe Experience Manager. Kontakta Adobe för mer information.
 
-<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+1. Om du vill använda AI Assistant i AEM måste du ha tillstånd att få tillgång till produktkunskap via AI Assistant. Den här behörigheten är som standard PÅ.
 
-    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+   Om du vill kontrollera vem som har åtkomst till produktinformation skickar du ett e-postmeddelande till [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) från den e-postadress som är kopplad till din Adobe ID. Adobe kan aktivera åtkomstkontroll på användarnivå. När det är aktiverat kan din administratör bevilja åtkomst på användarnivå genom att följa stegen i [Konfigurera AI-assistenten i AEM](/help/ai-assistant-in-aem-admin.md).
 
-1. AEM Admin konfigurerar AI Assistant för användning i organisationen. Se [Konfigurera AI-assistenten i AEM](/help/ai-assistant-in-aem-admin.md).
-
-<!--
->[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
->
->For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## Omfång {#scope}
 
@@ -93,7 +88,7 @@ Produktkunskap omfattar begrepp och ämnen som härletts ur Adobe Experience Lea
 | Undervisning | <ul><li>Vad är den universella redigeraren?</li><li>Hur skapar jag ett program i Cloud Manager?</li></ul> |
 | Öppna identifiering | <ul><li>Hur använder jag Universal Editor?</li><li>Finns det något sätt att kopiera innehåll från en miljö till en annan?</li></ul> |
 | Felsökning | <ul><li>Varför har jag inte åtkomst till Universal Editor?</li><li>Varför misslyckas min pipeline?</li></ul> |
-| **Skapa supportbiljett** | **Endast tillgängligt för supportadministratörer &#x200B;**<br>**Exempel** |
+| **Skapa supportbiljett** | **Endast tillgängligt för supportadministratörer **<br>**Exempel** |
 | Automatiserad framtagning av supportbiljetter som fångar AI Assistant-chatthistorik och kontext | <ul><li>Skapa en supportbiljett åt mig.</li></ul> |
 | Hämta status för supportanmälan | <ul><li>Visa alla supportärenden som jag har öppnat.</li><li>Visa status för biljetten E—</li></ul> |
 
@@ -133,7 +128,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
