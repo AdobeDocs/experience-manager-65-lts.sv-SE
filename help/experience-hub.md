@@ -31,7 +31,7 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    ![Adobe Experience Cloud hemsida](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
-1. Klicka på **Experience Manager**[**i grupperingen** Snabbåtkomst](https://experience.adobe.com).
+1. Klicka på **Experience Manager**&#x200B;[**i grupperingen** Snabbåtkomst](https://experience.adobe.com).
 1. Vid första åtkomsten tilldelas du förinställningen **Innehållsförfattare** (visas i det övre högra hörnet på sidan). Den styr widgetar, navigeringsobjekt och innehåll som du ser.
 
    Du kan när som helst ändra den här förinställningen.
