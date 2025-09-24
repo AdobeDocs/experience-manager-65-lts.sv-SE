@@ -28,7 +28,7 @@ Se till att du ställer in den [senaste formulärversionen](https://github.com/a
 
 Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
 
-Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions).
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions).
 
 ## Introduktion
 
@@ -356,7 +356,7 @@ ELLER
 
 ### Skapa ett klientbibliotek med AEM Project Archetype{#create-client-library-archetype}
 
-Du kan lägga till anpassade funktioner genom att lägga till ett klientbibliotek i projektet som skapats [med AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Du kan lägga till anpassade funktioner genom att lägga till ett klientbibliotek i projektet som skapats [med AEM Project Archetype](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Om du har ett befintligt projekt <!--and have already the project structure as shown in the image below,--> kan du lägga till [anpassade funktioner](#create-add-custom-function) direkt i ditt lokala projekt.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -573,7 +573,7 @@ Låt oss förhandsgranska formuläret för att se hur de anpassade funktionerna 
 
 >[!NOTE]
 >
-> Du kan referera till följande [anpassade funktionsmapp](/help/forms/using/assets/customfunctions.zip). Hämta och installera den här mappen i din AEM-instans med [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
+> Du kan referera till följande [anpassade funktionsmapp](/help/forms/using/assets/customfunctions.zip). Hämta och installera den här mappen i din AEM-instans med [Package Manager](https://experienceleague.adobe.com/sv/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Stöd för asynkrona funktioner i anpassade funktioner {#support-of-async-functions}
 

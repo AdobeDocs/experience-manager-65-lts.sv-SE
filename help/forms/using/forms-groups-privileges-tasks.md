@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
 
-Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html).
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=sv-SE).
 
 Du kan [skapa grupper](/help/sites-administering/user-group-ac-admin.md#group-administration) och tilldela profiler och [användare](/help/sites-administering/user-group-ac-admin.md#user-administration) till grupper i Adobe Experience Manager (AEM). Dessa profiler styr behörigheterna för de användare som är en del av gruppen.
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
 
-Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html).
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=sv-SE).
 
 Adaptiva formulär kräver att skicka-åtgärder utförs för att bearbeta användarspecificerade data. En Skicka-åtgärd avgör vilken uppgift som utförs på de data som du skickar med ett anpassat formulär. Adobe Experience Manager (AEM) innehåller [färdiga Skicka-åtgärder](../../forms/using/configuring-submit-actions.md) som demonstrerar anpassade åtgärder som du kan utföra med hjälp av data som skickas av användaren. Du kan till exempel utföra uppgifter som att skicka e-post eller lagra data.
 
@@ -103,7 +103,7 @@ En Skicka-åtgärd är en sling :Folder som innehåller följande:
 
 ## Skapa en anpassad skickaåtgärd {#creating-a-custom-submit-action}
 
-Utför följande steg för att skapa en anpassad Skicka-åtgärd som sparar data i CRX-databasen och sedan skickar ett e-postmeddelande till dig. Det adaptiva formuläret innehåller det färdiga Submit action Store-innehållet (föråldrat) som sparar data i CRX-databasen. CQ tillhandahåller dessutom ett [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en)-API som kan användas för att skicka e-postmeddelanden. Innan du använder e-post-API:t [konfigurerar](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled) tjänsten Day CQ Mail via systemkonsolen. Du kan återanvända åtgärden Lagra innehåll (föråldrat) för att lagra data i databasen. Åtgärden Lagra innehåll (föråldrat) finns på platsen /libs/fd/af/components/guideSubittype/store i CRX-databasen.
+Utför följande steg för att skapa en anpassad Skicka-åtgärd som sparar data i CRX-databasen och sedan skickar ett e-postmeddelande till dig. Det adaptiva formuläret innehåller det färdiga Submit action Store-innehållet (föråldrat) som sparar data i CRX-databasen. CQ tillhandahåller dessutom ett [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE)-API som kan användas för att skicka e-postmeddelanden. Innan du använder e-post-API:t [konfigurerar](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE&wcmmode=disabled) tjänsten Day CQ Mail via systemkonsolen. Du kan återanvända åtgärden Lagra innehåll (föråldrat) för att lagra data i databasen. Åtgärden Lagra innehåll (föråldrat) finns på platsen /libs/fd/af/components/guideSubittype/store i CRX-databasen.
 
 1. Logga in på CRXDE Lite på adressen https://&lt;server>:&lt;port>/crx/de/index.jsp. Skapa en nod med egenskapsling :Folder och namnge store_and_mail i mappen /apps/custom_submit_action. Skapa mappen custom_submit_action om den inte redan finns.
 

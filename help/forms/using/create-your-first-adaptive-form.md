@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
 
-Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=sv-SE).
 
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
@@ -44,7 +44,7 @@ Webbplatsen körs på Adobe Experience Manager (AEM) och använder AEM [!DNL For
 
 ### Förutsättning {#prerequisite}
 
-* Konfigurera en [AEM-författarinstans](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
+* Konfigurera en [AEM-författarinstans](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=sv-SE#author-and-publish-installs)
 * Installera [AEM Forms-tillägget](../../forms/using/installing-configuring-aem-forms-osgi.md) på författarinstansen.
 * Hämta JDBC-databasdrivrutin (JAR-fil) från databasprovidern. Exemplen i självstudien är baserade på databasen [!DNL MySQL] och använder databasdrivrutinen [!DNL Oracle's] [MySQL JDBC ](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
