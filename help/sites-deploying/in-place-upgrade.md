@@ -6,7 +6,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 9e58e4c993929f792bd71bf70b3e64719e761b7f
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -22,8 +22,6 @@ ht-degree: 0%
 ## Steg före uppgradering {#pre-upgrade-steps}
 
 Innan du utför uppgraderingen måste du utföra flera steg. Mer information finns i [Uppgradera kod och anpassningar](/help/sites-deploying/upgrading-code-and-customizations.md) och [Underhållsaktiviteter före uppgradering](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Kontrollera dessutom att datorn uppfyller [kraven för AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) och se [planeringshänsyn](/help/sites-deploying/upgrade-planning.md) samt hur [Analyzer](/help/sites-deploying/pattern-detector.md) kan hjälpa dig att beräkna komplexiteten.
-
-<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Krav för migrering {#migration-prerequisites}
 

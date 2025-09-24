@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
+source-git-commit: 69033442fda82d9efdd1ba2f55a45173c8ffc6ec
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -86,6 +86,6 @@ Det enklaste sättet att åtgärda problemet är att ange källdatalagret i komm
 
 Varningen kan också ignoreras, men i det här fallet kommer databasen att indexeras om helt vid första starten. Det kan vara en lång process, särskilt för stora instanser. Databasen kan inte användas förrän omindexeringsprocessen är klar. Använd alternativet `--skip-checkpoints` om du vill inaktivera varningen.
 
-Du kan även indexera om databasen offline innan du startar AEM med [omindexering offline](/help/sites-deploying/upgrade-offline-reindexing.md) för att undvika fullständig omindexering vid första starten.
+Du kan även indexera om databasen offline innan du startar AEM med [omindexering offline](/help/sites-deploying/offline-reindexing.md) för att undvika fullständig omindexering vid första starten.
 
 Mer information om ekuponteringsverktyget och avancerad användning finns i [officiell dokumentation](https://jackrabbit.apache.org/oak/docs/migration.html).

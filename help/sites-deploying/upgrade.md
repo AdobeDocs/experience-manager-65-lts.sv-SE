@@ -10,7 +10,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Detta avsnitt omfattar uppgradering av en AEM-installation till AEM 6.5 LTS:
 * [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)
 * [Assessing the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md)
 * [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
-  This was drafted before: * [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+-->
 
 <!--
 * [Upgrade Procedure](/help/sites-deploying/upgrade-procedure.md)

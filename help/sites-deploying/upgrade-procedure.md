@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 255ef365-0da5-4bc9-b099-2e3bc67dd25a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -25,12 +25,6 @@ ht-degree: 0%
 >Uppgraderingen kräver driftstopp för Author-nivån eftersom de flesta uppgraderingar av Adobe Experience Manager (AEM) utförs på plats. Genom att följa dessa rutiner kan du minimera eller eliminera driftstopp i publiceringsskiktet.
 
 När du uppgraderar dina AEM-miljöer måste du ta hänsyn till skillnaderna i strategi mellan att uppgradera författarmiljöer eller publiceringsmiljöer för att minimera driftstoppen för både författare och slutanvändare. På den här sidan beskrivs hur du uppgraderar en AEM-topologi som för närvarande körs på en version av AEM 6.x. Eftersom processen skiljer mellan redigerings- och publiceringsnivåer och Mongo- och tarMK-baserade distributioner har varje nivå och mikrokärna listats i ett separat avsnitt. När du utför en distribution rekommenderar Adobe att du först uppgraderar din utvecklingsmiljö, avgör om du lyckas och sedan fortsätter till publiceringsmiljöerna.
-
-<!--
->[!IMPORTANT]
->
->The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
--->
 
 ## Stjärtmaskförfattarnivå {#tarmk-author-tier}
 
