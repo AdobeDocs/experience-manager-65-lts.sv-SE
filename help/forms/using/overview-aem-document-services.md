@@ -9,19 +9,20 @@ feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
 
 # Översikt över AEM Document Services{#overview-of-aem-document-services}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html).
 
 
 AEM Document Services är en uppsättning OSGi-tjänster för att skapa, sammanställa och skydda PDF-dokument. Dokumenttjänster innehåller följande tjänster:

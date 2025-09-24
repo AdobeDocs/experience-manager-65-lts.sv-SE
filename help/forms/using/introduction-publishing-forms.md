@@ -9,19 +9,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 606cd19d-b244-4c4d-ab25-7709351dcfe0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
 
 # Introduktion till att publicera formulär på en portal{#introduction-to-publishing-forms-on-a-portal}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html).
 
 
 ## Översikt över komponenter i AEM Forms portal {#aem-forms-portal-components-overview}

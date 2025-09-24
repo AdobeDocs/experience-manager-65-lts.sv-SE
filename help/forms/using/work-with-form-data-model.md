@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4045'
+source-wordcount: '4054'
 ht-degree: 0%
 
 ---
 
 # Arbeta med formulärdatamodell{#work-with-form-data-model}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html).
 
 ![data-integration](do-not-localize/data-integeration.png)
 

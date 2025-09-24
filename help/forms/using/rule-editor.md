@@ -9,23 +9,24 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6553'
+source-wordcount: '6561'
 ht-degree: 0%
 
 ---
 
 # Anpassad formulärregelredigerare{#adaptive-forms-rule-editor}
 
-<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
+<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
 
-| Version | Länk till artikel |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
 
-## Överblick {#overview}
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html).
+
+## Ökning {#overview}
 
 Regelredigeringsfunktionen i Adobe Experience Manager Forms gör det möjligt för användare och utvecklare av formulär att skriva regler för anpassningsbara formulärobjekt. Dessa regler definierar åtgärder som ska utlösas av formulärobjekt baserat på förinställda villkor, användarindata och användaråtgärder i formuläret. Det effektiviserar formulärifyllningen ytterligare och ger större precision och snabbhet.
 
@@ -105,11 +106,11 @@ Regelredigeraren innehåller en uppsättning fördefinierade regeltyper som du k
 
 ### När {#whenruletype}
 
-Regeltypen **When** följer regelkonstruktionen **condition-action-alternate action** eller ibland bara **condition-action** -konstruktionen. I den här regeltypen anger du först ett villkor för utvärdering följt av en åtgärd som ska utlösas om villkoret uppfylls ( `True`). När du använder regeltypen När kan du använda flera AND- och OR-operatorer[&#128279;](#nestedexpressions) för att skapa kapslade uttryck.
+Regeltypen **When** följer regelkonstruktionen **condition-action-alternate action** eller ibland bara **condition-action** -konstruktionen. I den här regeltypen anger du först ett villkor för utvärdering följt av en åtgärd som ska utlösas om villkoret är uppfyllt ( `True`). När du använder regeltypen When kan du använda flera AND- och OR-operatorer för att skapa [kapslade uttryck](#nestedexpressions).
 
-Med hjälp av regeltypen När kan du utvärdera ett villkor för ett formulärobjekt och utföra åtgärder på ett eller flera objekt.
+Med regeltypen När kan du utvärdera ett villkor i ett formulärobjekt och utföra åtgärder på ett eller flera objekt.
 
-I klartext är en typisk When-regel strukturerad på följande sätt:
+Med enkla ord är en vanlig When-regel strukturerad enligt följande:
 
 `When on Object A:`
 
@@ -117,7 +118,7 @@ I klartext är en typisk When-regel strukturerad på följande sätt:
 
 `Then, do the following:`
 
-Åtgärd 2 om objekt B;
+Åtgärd 2 på objekt B.
 OCH
 Åtgärd 3 om objekt C.
 
@@ -129,7 +130,7 @@ En lista har till exempel fyra alternativ: Röd, Blå, Grön och Gul. När regel
 
 ![multivaluefcdisplayalternativ](assets/multivaluefcdisplaysoptions.png)
 
-När du skriver en When-regel kan du utlösa åtgärden Clear Value Of. Åtgärden Rensa värde för rensar värdet för det angivna objektet. Med alternativet Radera värde för i programsatsen When kan du skapa komplexa villkor med flera fält.
+När du skriver en When-regel kan du utlösa åtgärden Clear Value Of. Med åtgärden Clear Value Of rensas det angivna objektets värde. Med alternativet Radera värde för i programsatsen When kan du skapa komplexa villkor med flera fält.
 
 ![clearValue för](assets/clearvalueof.png)
 
@@ -202,25 +203,25 @@ I följande bild visas ett exempel på hur du dynamiskt lägger till kryssrutor 
 
 Med regeltypen **[!UICONTROL Set Value of]** kan du ange värdet för ett formulärobjekt beroende på om det angivna villkoret är uppfyllt eller inte. Värdet kan anges till ett värde för ett annat objekt, en stränglitteral, ett värde som härleds från ett matematiskt uttryck eller en funktion, ett värde för en egenskap för ett annat objekt eller utdata från en datamodelltjänst för ett formulär. På samma sätt kan du söka efter ett villkor för en komponent, en sträng, en egenskap eller värden som härletts från en funktion eller ett matematiskt uttryck.
 
-Regeltypen Ange värde för är inte tillgänglig för alla formulärobjekt, t.ex. paneler och knappar i verktygsfält. En standardregel för uppsättningsvärdet för har följande struktur:
+Regeltypen Ange värde för är inte tillgänglig för alla formulärobjekt, t.ex. paneler och knappar i verktygsfält. En standarduppsättningsvärde för regel har följande struktur:
 
 
 
-Ange värdet för Objekt A till:
+Ange värdet för objekt A till:
 
-(sträng ABC) ELLER
-(objektegenskap X för objekt C) ELLER
-(värde från en funktion) ELLER
-(värde från ett matematiskt uttryck) ELLER
-(utdatavärde för en datamodellstjänst eller webbtjänst)
+(sträng ABC) OR
+(objektegenskap X för objekt C) OR
+(värde från en funktion) OR
+(värde från ett matematiskt uttryck) OR
+(datavärdet för en datamodelltjänst eller webbtjänst),
 
 När (valfritt):
 
-(Villkor 1 OCH Villkor 2 OCH Villkor 3) är SANT;
+(Villkor 1 OCH villkor 2 OCH villkor 3) är SANT.
 
 
 
-I följande exempel används värdet i fältet som indata och fältets värde `Relation` anges till utdata `Relation` från argumentet `getDependent` i `dependentid` formulärdatamodelltjänsten.
+I följande exempel används värdet i fältet `dependentid` som indata och värdet i fältet `Relation` anges som utdata för argumentet `Relation` i formulärdatamodelltjänsten `getDependent`.
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -372,11 +373,11 @@ Visar titeln på det adaptiva formulärobjektet genom vilket du startade regelre
 
 Panelen till vänster i regelredigerarens användargränssnitt innehåller två flikar - **[!UICONTROL Forms Objects]** och **[!UICONTROL Functions]**.
 
-På fliken Formulärobjekt visas en hierarkisk vy över alla objekt som finns i det anpassade formuläret. Där visas objektens namn och typ. När du skriver en regel kan du dra och släppa formulärobjekt till regelredigeraren. När du skapar eller redigerar en regel när du drar och släpper ett objekt eller en funktion i en platshållare, får platshållaren automatiskt lämplig värdetyp.
+På fliken Formulärobjekt visas en hierarkisk vy över alla objekt som finns i det anpassade formuläret. Där visas objektens namn och typ. När du skriver en regel kan du dra och släppa formulärobjekt till regelredigeraren. När du skapar eller redigerar en regel när du drar och släpper ett objekt eller en funktion till en platshållare, får platshållaren automatiskt rätt värdetyp.
 
-De formulärobjekt som har en eller flera giltiga regler markerade med en grön prick. Om någon av de regler som tillämpas på ett formulärobjekt är ogiltig markeras formulärobjektet med en gul prick.
+De formulärobjekt som har en eller flera giltiga regler markerade med en grön punkt. Om någon av reglerna som tillämpas på ett formulärobjekt är ogiltig markeras formulärobjektet med en gul punkt.
 
-Fliken Funktioner innehåller en uppsättning inbyggda funktioner, till exempel Summa av, Min av, Max av, Medelvärde av, Antal av och Validera formulär. Du kan använda dessa funktioner för att beräkna värden i repeterbara paneler och tabellrader och använda dem i åtgärds- och villkorssatser när du skriver regler. Du kan dock också skapa [anpassade funktioner](#custom-functions) .
+Fliken Funktioner innehåller en uppsättning inbyggda funktioner, till exempel summan av, Min av, Max av, Medel av, Antal, och Validera formulär. Du kan använda de här funktionerna för att beräkna värden i repeterbara paneler och tabellrader och använda dem i action- och condition-satser när du skriver regler. Du kan dock även skapa [anpassade funktioner](#custom-functions).
 
 ![Fliken Funktioner](assets/functions.png)
 
@@ -549,7 +550,7 @@ Utför följande steg för att skriva regler:
 
 Användare som läggs till i gruppen för formuläranvändare kan använda kodredigeraren. Regelredigeraren genererar automatiskt JavaScript-koden för alla regler som du skapar med den visuella redigeraren. Du kan växla från den visuella redigeraren till kodredigeraren för att visa den genererade koden. Men om du ändrar regelkoden i kodredigeraren kan du inte växla tillbaka till den visuella redigeraren. Om du föredrar att skriva regler i kodredigeraren i stället för i den visuella redigeraren kan du skriva reglerna på nytt i kodredigeraren. Med den visuella kodredigeraren kan du växla mellan de två lägena.
 
-Kodredigeraren JavaScript är uttrycksspråket i adaptiva formulär. Alla uttryck är giltiga JavaScript-uttryck och använder API:er för adaptiva formulär. Dessa uttryck returnerar värden av vissa typer. En fullständig lista över adaptiva formulärklasser, händelser, objekt och offentliga API:er finns i [API-referens för JavaScript-bibliotek för adaptiva formulär](https://helpx.adobe.com/se/experience-manager/6-5/forms/javascript-api/index.html).
+Kodredigeraren JavaScript är uttrycksspråket i adaptiva formulär. Alla uttryck är giltiga JavaScript-uttryck och använder API:er för adaptiva formulär. Dessa uttryck returnerar värden av vissa typer. En fullständig lista över adaptiva formulärklasser, händelser, objekt och offentliga API:er finns i [API-referens för JavaScript-bibliotek för adaptiva formulär](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 Mer information om riktlinjer för att skriva regler i kodredigeraren finns i [Adaptiva formuläruttryck](/help/forms/using/adaptive-form-expressions.md).
 
@@ -608,7 +609,7 @@ Visar parametrar som används av funktionen. En funktion kan ha flera parametert
 Syntax: `@return {type}`
 Du kan också använda `@returns {type}` .
 Lägger till information om funktionen, till exempel dess mål.
-{type} representerar funktionens returtyp. Följande returtyper tillåts:
+  {type} representerar funktionens returtyp. Följande returtyper tillåts:
 
    1. string
    1. tal

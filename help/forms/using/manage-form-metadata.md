@@ -9,19 +9,20 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1958'
 ht-degree: 0%
 
 ---
 
 # Hantera formulärmetadata{#manage-form-metadata}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html).
 
 ## Ökning  {#overview-nbsp}
 
@@ -295,7 +296,7 @@ AEM Forms visar metadatamappningar för de formulärtyper som stöds i det här 
 1. Klicka på en komponent som du just har dragit. Fyll i information för följande fält på fliken Inställningar som öppnas i den högra panelen:
 
    1. Ange en fältetikett som används som visningsnamn ovanför fältet som placeras i schemat (till exempel Avdelning)
-   1. Under Mappa till egenskapsfält kan du se det förfyllda värdet **./jcr:content/metadata/default&#39;**. Ändra **default** till ett önskat egenskapsnamn, som används för att lagra egenskapen i crx-databasen (till exempel: &#39;./jcr:content/metadata/dec&#39;)
+   1. Under Mappa till egenskapsfält kan du se det förfyllda värdet **./jcr:content/metadata/default**. Ändra **default** till ett önskat egenskapsnamn, som används för att lagra egenskapen i crx-databasen (till exempel: &#39;./jcr:content/metadata/avdelning&#39;)
 
       >[!NOTE]
       >

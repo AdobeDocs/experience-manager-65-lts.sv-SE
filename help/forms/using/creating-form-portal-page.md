@@ -9,19 +9,20 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 03430815-6459-469c-b3dd-4cd83b9eec5f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
 
 # Skapa en formulärportalsida{#creating-a-forms-portal-page}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html).
 
 Forms portalkomponenter förser webbutvecklare med komponenter för att skapa och anpassa en formulärportal på webbplatser som skapats med Adobe Experience Manager (AEM). En snabb översikt av formulärportalen finns i [Introduktion till att publicera formulär på en portal](../../forms/using/introduction-publishing-forms.md).
 
@@ -56,7 +57,7 @@ Sök efter och visa komponent på en sida med stödrasterlayout
 
 Listrutan är ett område där formulären listas. Komponenten Sök och lista innehåller olika konfigurationsalternativ som du kan använda för att styra visningen av formulär i rutan Lista.
 
-Om du vill konfigurera listrutan väljer du komponenten Sök och Lister och sedan ![settings_icon](assets/settings_icon.png). Dialogrutan **[!UICONTROL &#x200B; Edit Component]** öppnas.
+Om du vill konfigurera listrutan väljer du komponenten Sök och Lister och sedan ![settings_icon](assets/settings_icon.png). Dialogrutan **[!UICONTROL  Edit Component]** öppnas.
 
 ![Listruta i redigeringsläge](assets/edit-list.png)
 
@@ -114,7 +115,7 @@ Dialogrutan **Redigera** innehåller flera flikar med konfigurationsalternativ s
   <tr>
    <td> </td>
    <td>Av text</td>
-   <td><p>Ersätter ordet <strong> av</strong> med den angivna texten (sidan 1 <strong> av </strong> &lbrace;51). Standardvärdet är <strong>av</strong>.</p> <p>Om du till exempel anger <strong> av </strong> i det här fältet ändras texten till sidan 1 <strong> av </strong> 51.</p> </td>
+   <td><p>Ersätter ordet <strong> av</strong> med den angivna texten (sidan 1 <strong> av </strong> {51). Standardvärdet är <strong>av</strong>.</p> <p>Om du till exempel anger <strong> av </strong> i det här fältet ändras texten till sidan 1 <strong> av </strong> 51.</p> </td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Formulärlänk</strong></code></td>

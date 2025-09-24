@@ -6,9 +6,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3377'
+source-wordcount: '3386'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,11 @@ I den här artikeln beskrivs hur du skapar anpassade funktioner med den senaste 
 Se till att du ställer in den [senaste formulärversionen](https://github.com/adobe/aem-core-forms-components/tree/release/650) i AEM Forms Core Component-miljön så att den använder de senaste funktionerna i Anpassade funktioner. </span>
 
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM 6.5 | Denna artikel |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions).
 
 ## Introduktion
 
@@ -60,8 +61,8 @@ Anpassade funktioner är i huvudsak klientbibliotek som läggs till i JavaScript
 
 >[!NOTE]
 >`[functionName]` är namnet på funktionen. Blanksteg är inte tillåtna.
->`<Function Name>` är visningsnamnet för funktionen i regelredigeraren för Adaptiv Forms.
->Om funktionsnamnet är identiskt med namnet på själva funktionen kan du utelämna `[functionName]` från syntaxen.
+>>`<Function Name>` är visningsnamnet för funktionen i regelredigeraren för Adaptiv Forms.
+>>Om funktionsnamnet är identiskt med namnet på själva funktionen kan du utelämna `[functionName]` från syntaxen.
 
 #### Parameter
 
@@ -355,7 +356,7 @@ ELLER
 
 ### Skapa ett klientbibliotek med AEM Project Archetype{#create-client-library-archetype}
 
-Du kan lägga till anpassade funktioner genom att lägga till ett klientbibliotek i projektet som skapats [med AEM Project Archetype](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Du kan lägga till anpassade funktioner genom att lägga till ett klientbibliotek i projektet som skapats [med AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Om du har ett befintligt projekt <!--and have already the project structure as shown in the image below,--> kan du lägga till [anpassade funktioner](#create-add-custom-function) direkt i ditt lokala projekt.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -406,7 +407,7 @@ Lägg till följande i den tillagda klientbiblioteksmappen:
        function.js
    ```
 
-1. Lägg till javascript-filen som `function.js` i mappen `js` som innehåller de anpassade funktionerna:
+1. Lägg till javascript-filen som `js` i mappen `function.js` som innehåller de anpassade funktionerna:
 
    ```javascript
    /**
@@ -572,7 +573,7 @@ Låt oss förhandsgranska formuläret för att se hur de anpassade funktionerna 
 
 >[!NOTE]
 >
-> Du kan referera till följande [anpassade funktionsmapp](/help/forms/using/assets/customfunctions.zip). Hämta och installera den här mappen i din AEM-instans med [Package Manager](https://experienceleague.adobe.com/sv/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
+> Du kan referera till följande [anpassade funktionsmapp](/help/forms/using/assets/customfunctions.zip). Hämta och installera den här mappen i din AEM-instans med [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Stöd för asynkrona funktioner i anpassade funktioner {#support-of-async-functions}
 
@@ -768,7 +769,7 @@ I det här exemplet återställs panelen `personaldetails` när du klickar på k
 
 ![Knappen Rensa](/help/forms/using/assets/custom-function-reset-field.png)
 
-Se bilden nedan för att visa att panelen `personaldetails` återställs om användaren klickar på knappen `clear`:
+Se bilden nedan för att visa att panelen `clear` återställs om användaren klickar på knappen `personaldetails`:
 
 ![Återställ formulär](assets/custom-function-reset-form.png)
 
@@ -843,7 +844,7 @@ Lägg till följande kod i den anpassade funktionen enligt beskrivningen i avsni
     }
 ```
 
-I det här exemplet skickas `NA` till servern när formuläret skickas om användaren lämnar textrutan `comments` tom.
+I det här exemplet skickas `comments` till servern när formuläret skickas om användaren lämnar textrutan `NA` tom.
 
 Skapa nu en regel för knappen `Submit` som skickar data:
 

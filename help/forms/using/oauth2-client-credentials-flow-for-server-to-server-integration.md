@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
 exl-id: 56b4a767-1210-47f3-b022-766b0dda9943
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 1%
+source-wordcount: '370'
+ht-degree: 0%
 
 ---
 
 # Integrering av Salesforce med OAuth 2.0-klientens autentiseringsflöde  {#configure-salesforce-with-ouath-2.0-client-credential}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration).
 
 Du kan använda klientautentiseringsuppgifter för OAuth 2.0 för att integrera AEM Forms med Salesforce-programmet. OAuth 2.0-klientens autentiseringsuppgifter är en standard och säker metod för direkt kommunikation utan användarinblandning.
 
@@ -36,7 +37,7 @@ Innan du anger kommunikation mellan ett Salesforce-program och en AEM-miljö:
 
 * Skapa en [Salesforce-ansluten app med OAuth 2.0-klientautentiseringsflöde](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) och en API-användare för din organisation och hämta konsumentnyckeln och konsumenthemligheten för appen.
 
-* Kontrollera att Swagger-filen är rätt konfigurerad för att matcha organisationens API:er. Du kan också välja att [skapa en Swagger-fil](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api) från början, som är anpassad för användning i din AEM-miljö.
+* Kontrollera att Swagger-filen är rätt konfigurerad för att matcha organisationens API:er. Du kan också välja att [skapa en Swagger-fil](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api) från början, som är anpassad för användning i din AEM-miljö.
 >[!NOTE]
 >
 > AEM 6.5 stöder endast filspecifikationer i Swagger 2.0.

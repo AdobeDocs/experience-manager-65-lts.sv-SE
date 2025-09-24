@@ -8,19 +8,20 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a537fc63-b894-4e47-a71f-98ea07747baa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 1%
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
 # Aktivera komponenterna i formulärportalen {#enabling-forms-portal-components}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html).
 
 Komponenterna i formulärportalen är inte tillgängliga för användning. Gör så här för att visa komponenterna i listan över tillgängliga komponenter i AEM sidospark:
 
@@ -31,7 +32,7 @@ Komponenterna i formulärportalen är inte tillgängliga för användning. Gör 
    1. I sidhuvudet väljer du ![listrutan för arbetsyta](assets/canvas-drop-down.png) > **Design** för att öppna sidan i designläge.
    1. Markera en komponent (med en blå kant) och välj sedan ![fältnivå](assets/field-level.png) för att välja det styckesystem som innehåller den aktuella komponenten.
    1. I styckesystemet väljer du ![settings_icon](assets/settings_icon.png) för att öppna dialogrutan Redigera för styckesystemet.
-   1. Aktivera kryssrutor för komponenterna **[!UICONTROL Document Services]** och **[!UICONTROL Document Services Predicates]** i listan med **[!UICONTROL Allowed Components]**. Välj **[!UICONTROL OK]**.
+   1. Aktivera kryssrutor för komponenterna **[!UICONTROL Allowed Components]** och **[!UICONTROL Document Services]** i listan med **[!UICONTROL Document Services Predicates]**. Välj **[!UICONTROL OK]**.
 
 1. Utför följande steg för de sidor som använder en dynamisk mall:
 

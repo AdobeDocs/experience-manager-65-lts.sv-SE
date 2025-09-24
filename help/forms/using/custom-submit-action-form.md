@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
-source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1543'
 ht-degree: 0%
 
 ---
 
 # Skriva anpassad skickaåtgärd för anpassningsbara formulär{#writing-custom-submit-action-for-adaptive-forms}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html).
 
 Adaptiva formulär kräver att skicka-åtgärder utförs för att bearbeta användarspecificerade data. En Skicka-åtgärd avgör vilken uppgift som utförs på de data som du skickar med ett anpassat formulär. Adobe Experience Manager (AEM) innehåller [färdiga Skicka-åtgärder](../../forms/using/configuring-submit-actions.md) som demonstrerar anpassade åtgärder som du kan utföra med hjälp av data som skickas av användaren. Du kan till exempel utföra uppgifter som att skicka e-post eller lagra data.
 
@@ -89,7 +90,7 @@ Om åtgärden inte har någon framåtriktad sökväg dirigeras webbläsaren om m
 
 ## Skicka åtgärd {#submit-action}
 
-En Skicka-åtgärd är en sling:Mapp som innehåller följande:
+En Skicka-åtgärd är en sling :Folder som innehåller följande:
 
 * **addfields.jsp**: Det här skriptet innehåller de åtgärdsfält som läggs till i HTML-filen under återgivningen. Använd det här skriptet för att lägga till dolda indataparametrar som krävs vid överföring i skriptet post.POST.jsp.
 * **dialog.xml**: Det här skriptet liknar CQ Component-dialogrutan. Det innehåller konfigurationsinformation som författaren anpassar. Fälten visas på fliken Skicka åtgärder i dialogrutan Redigera anpassat formulär när du väljer åtgärden Skicka.
@@ -102,11 +103,11 @@ En Skicka-åtgärd är en sling:Mapp som innehåller följande:
 
 ## Skapa en anpassad skickaåtgärd {#creating-a-custom-submit-action}
 
-Utför följande steg för att skapa en anpassad Skicka-åtgärd som sparar data i CRX-databasen och sedan skickar ett e-postmeddelande till dig. Det adaptiva formuläret innehåller det färdiga Submit action Store-innehållet (föråldrat) som sparar data i CRX-databasen. CQ tillhandahåller dessutom ett [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE)-API som kan användas för att skicka e-postmeddelanden. Innan du använder e-post-API:t [konfigurerar](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE&wcmmode=disabled) tjänsten Day CQ Mail via systemkonsolen. Du kan återanvända åtgärden Lagra innehåll (föråldrat) för att lagra data i databasen. Åtgärden Lagra innehåll (föråldrat) finns på platsen /libs/fd/af/components/guideSubittype/store i CRX-databasen.
+Utför följande steg för att skapa en anpassad Skicka-åtgärd som sparar data i CRX-databasen och sedan skickar ett e-postmeddelande till dig. Det adaptiva formuläret innehåller det färdiga Submit action Store-innehållet (föråldrat) som sparar data i CRX-databasen. CQ tillhandahåller dessutom ett [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en)-API som kan användas för att skicka e-postmeddelanden. Innan du använder e-post-API:t [konfigurerar](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled) tjänsten Day CQ Mail via systemkonsolen. Du kan återanvända åtgärden Lagra innehåll (föråldrat) för att lagra data i databasen. Åtgärden Lagra innehåll (föråldrat) finns på platsen /libs/fd/af/components/guideSubittype/store i CRX-databasen.
 
-1. Logga in på CRXDE Lite på adressen https://&lt;server>:&lt;port>/crx/de/index.jsp. Skapa en nod med egenskapen sling:Folder och name store_and_mail i mappen /apps/custom_submit_action. Skapa mappen custom_submit_action om den inte redan finns.
+1. Logga in på CRXDE Lite på adressen https://&lt;server>:&lt;port>/crx/de/index.jsp. Skapa en nod med egenskapsling :Folder och namnge store_and_mail i mappen /apps/custom_submit_action. Skapa mappen custom_submit_action om den inte redan finns.
 
-   ![Skärmbild som avbildar skapandet av en nod med egenskapen sling:Folder](assets/step1.png)
+   ![Skärmbild som avbildar skapandet av en nod med egenskapsling:Folder](assets/step1.png)
 
 1. **Ange obligatoriska konfigurationsfält.**
 
@@ -116,7 +117,7 @@ Utför följande steg för att skapa en anpassad Skicka-åtgärd som sparar data
 
 1. **Ange konfigurationsfält för att fråga författaren om e-postkonfiguration.**
 
-   Det adaptiva formuläret innehåller även en e-poståtgärd som skickar e-post till användarna. Anpassa den här åtgärden baserat på dina behov. Gå till /libs/fd/af/components/guideSubmitType/email/dialog. Kopiera noderna i cq:dialog-noden till cq:dialog-noden i din Submit-åtgärd (/apps/custom_submit_action/store_and_email/dialog).
+   Det adaptiva formuläret innehåller även en e-poståtgärd som skickar e-post till användarna. Anpassa den här åtgärden baserat på dina behov. Gå till /libs/fd/af/components/guideSubmitType/email/dialog. Kopiera noderna i cq:dialog-noden till cq:dialog-noden för din Submit-åtgärd (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Anpassa e-poståtgärden](assets/step3.png)
 

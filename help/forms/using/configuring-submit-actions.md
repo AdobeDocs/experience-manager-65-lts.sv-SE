@@ -8,21 +8,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2565'
 ht-degree: 0%
 
 ---
 
 # Konfigurera åtgärden Skicka {#configuring-the-submit-action}
 
-<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
+<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html).
 
 
 ## Introduktion till att skicka in åtgärder {#introduction-to-submit-actions}
@@ -53,7 +54,7 @@ Standardåtgärderna för att skicka in anpassningsbara formulär är:
 >[!NOTE]
 >
 >Kontrollera att mappen [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
->finns. Katalogen krävs för att temporärt lagra bilagor. Om katalogen inte finns skapar du den.
+>>finns. Katalogen krävs för att temporärt lagra bilagor. Om katalogen inte finns skapar du den.
 
 >[!CAUTION]
 >
@@ -173,7 +174,7 @@ När konfigurationen är klar kan du använda åtgärden [Anropa ett Microsoft®
 
 >[!NOTE]
 >
->Listfunktionen Skicka till Microsoft® SharePoint introducerades med AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> Listfunktionen Skicka till Microsoft® SharePoint introducerades med AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 Åtgärden **[!UICONTROL Submit to SharePoint]** kopplar ett adaptivt formulär till ett Microsoft® SharePoint-lagringsutrymme. Du kan skicka formulärdatafilen, bifogade filer eller arkivdokument till den anslutna Microsoft® Sharepoint-lagringsplatsen.
 
@@ -199,7 +200,7 @@ Så här ansluter du AEM Forms till din Microsoft® Sharepoint-lista:
 
      >[!NOTE]
      >
-     >Fältet **klienthemlighet** är obligatoriskt eller valfritt beroende på din Azure Active Directory-programkonfiguration. Om ditt program är konfigurerat att använda en klienthemlighet är det obligatoriskt att ange klienthemligheten.
+     > Fältet **klienthemlighet** är obligatoriskt eller valfritt beroende på din Azure Active Directory-programkonfiguration. Om ditt program är konfigurerat att använda en klienthemlighet är det obligatoriskt att ange klienthemligheten.
 
 1. Klicka på **[!UICONTROL Connect]**. Om anslutningen lyckas visas meddelandet `Connection Successful`.
 1. Välj **[!UICONTROL SharePoint Site]** och **[!UICONTROL SharePoint List]** i listrutan.
@@ -218,16 +219,16 @@ När du skickar formuläret sparas data i det angivna lagringsutrymmet för Micr
 
 >[!NOTE]
 >
->I Microsoft® SharePoint List stöds inte följande kolumntyper:
->* bildkolumn
->* metadatakolumn
->* personkolumn
->* extern datakolumn
+> I Microsoft® SharePoint List stöds inte följande kolumntyper:
+> * bildkolumn
+> * metadatakolumn
+> * personkolumn
+> * extern datakolumn
 
 
 >[!NOTE]
 >
->[Generera OSGi-konfigurationer med AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=sv-SE#generating-osgi-configurations-using-the-aem-sdk-quickstart) och [distribuera konfigurationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=sv-SE#deployment-process) till din Cloud Service-instans om du vill ange värden för en konfiguration.
+> [Generera OSGi-konfigurationer med AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) och [distribuera konfigurationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) till din Cloud Service-instans om du vill ange värden för en konfiguration.
 
 ## Förtroende på serversidan i adaptiv form {#server-side-revalidation-in-adaptive-form}
 

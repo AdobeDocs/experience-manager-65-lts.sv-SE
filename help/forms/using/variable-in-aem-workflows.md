@@ -9,19 +9,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2052'
 ht-degree: 0%
 
 ---
 
 # Variabler i AEM Forms arbetsflöden{#variables-in-aem-forms-workflows}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html).
 
 En variabel i en arbetsflödesmodell är ett sätt att lagra ett värde baserat på dess datatyp. Du kan sedan använda namnet på variabeln i vilket arbetsflödessteg som helst för att hämta värdet som lagras i variabeln. Du kan också använda variabelnamn för att definiera uttryck för att fatta beslut om routning.
 
@@ -38,13 +39,13 @@ Variabler är ett tillägg till det befintliga [MetaDataMap](https://developer.a
 Du skapar variabler med hjälp av avsnittet Variabler som är tillgängliga i arbetsflödesmodellens sidospak. AEM arbetsflödesvariabler har stöd för följande datatyper:
 
 * **Primitiva datatyper**: Long, Double, Boolean, Date och String
-* **Komplexa datatyper**: [Dokument](https://helpx.adobe.com/se/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) och Form Data Model-instans.
+* **Komplexa datatyper**: [Dokument](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) och Form Data Model-instans.
 
 >[!NOTE]
 >
 >Arbetsflöden har endast stöd för ISO8601-format för datatypsvariabler.
 
-Du behöver [AEM Forms-tilläggspaket](https://helpx.adobe.com/se/aem-forms/kb/aem-forms-releases.html) för datatyperna Document och Form Data Model.  Använd datatypen ArrayList för att skapa variabelsamlingar. Du kan skapa en ArrayList-variabel för alla primitiva och komplexa datatyper. Skapa till exempel en ArrayList-variabel och välj String som undertyp för att lagra flera strängvärden med variabeln.
+Du behöver [AEM Forms-tilläggspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) för datatyperna Document och Form Data Model.  Använd datatypen ArrayList för att skapa variabelsamlingar. Du kan skapa en ArrayList-variabel för alla primitiva och komplexa datatyper. Skapa till exempel en ArrayList-variabel och välj String som undertyp för att lagra flera strängvärden med variabeln.
 
 Så här skapar du en variabel:
 
@@ -196,7 +197,7 @@ Använd följande API:er i ECMA-skriptet för att hämta värden för befintliga
 | Formulärdatamodell | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Du behöver [AEM Forms-tilläggspaket](https://helpx.adobe.com/se/aem-forms/kb/aem-forms-releases.html) för datatyperna Document och Form Data Model.
+Du behöver [AEM Forms-tilläggspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) för datatyperna Document och Form Data Model.
 
 **Exempel**
 

@@ -5,19 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
 
 # Självstudiekurs: Skapa ditt första anpassningsbara formulär {#tutorial-create-your-first-adaptive-form}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
 
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
@@ -43,7 +44,7 @@ Webbplatsen körs på Adobe Experience Manager (AEM) och använder AEM [!DNL For
 
 ### Förutsättning {#prerequisite}
 
-* Konfigurera en [AEM-författarinstans](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=sv-SE#author-and-publish-installs)
+* Konfigurera en [AEM-författarinstans](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installera [AEM Forms-tillägget](../../forms/using/installing-configuring-aem-forms-osgi.md) på författarinstansen.
 * Hämta JDBC-databasdrivrutin (JAR-fil) från databasprovidern. Exemplen i självstudien är baserade på databasen [!DNL MySQL] och använder databasdrivrutinen [!DNL Oracle's] [MySQL JDBC ](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1908'
 ht-degree: 0%
 
 ---
 
 # Konfigurera datakällor{#configure-data-sources}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html).
 
 
 ![Dataintegrering](do-not-localize/data-integeration.png)
@@ -107,7 +108,7 @@ Så här konfigurerar du mappen för molntjänstkonfigurationer:
 
    1. I **[!UICONTROL Configuration Browser]** markerar du mappen `global` och väljer **[!UICONTROL Properties]**.
 
-   1. Aktivera **[!UICONTROL Cloud Configurations]** i dialogrutan **[!UICONTROL Configuration Properties]**.
+   1. Aktivera **[!UICONTROL Configuration Properties]** i dialogrutan **[!UICONTROL Cloud Configurations]**.
 
    1. Välj **[!UICONTROL Save & Close]** om du vill spara konfigurationen och stänga dialogrutan.
 
@@ -194,7 +195,7 @@ En OData-tjänst identifieras av tjänstens rot-URL. Om du vill konfigurera en O
 >[!NOTE]
 >
 >Formulärdatamodellen stöder [OData version 4](https://www.odata.org/documentation/).
->Stegvisa anvisningar om hur du konfigurerar Microsoft Dynamics 365, online eller lokalt, finns i [Microsoft Dynamics OData Configuration](/help/forms/using/ms-dynamics-odata-configuration.md).
+>>Stegvisa anvisningar om hur du konfigurerar Microsoft Dynamics 365, online eller lokalt, finns i [Microsoft Dynamics OData Configuration](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Gå till **[!UICONTROL Tools > Cloud Services > Data Sources]**. Välj den mapp där du vill skapa en molnkonfiguration.
 

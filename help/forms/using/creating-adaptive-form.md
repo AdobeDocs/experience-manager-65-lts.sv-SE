@@ -6,21 +6,22 @@ level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d81781b-bb79-4b85-bba6-2ac67829bfcf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
 
 # Skapa ett anpassat formulär {#creating-an-adaptive-form}
 
-<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
+<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
 
 ## Skapa ett anpassat formulär {#strong-create-an-adaptive-form-strong}
 
@@ -121,7 +122,7 @@ Se följande dokument för att förstå hur du utformar XML- eller JSON-schema f
 
 Gör följande om du vill använda XML- eller JSON-schema som formulärmodell för ett anpassat formulär:
 
-1. Välj på fliken **[!UICONTROL Form Model]** på sidan **[!UICONTROL Add Properties]** när du skapar anpassade formulär.
+1. Välj på fliken **[!UICONTROL Add Properties]** på sidan **[!UICONTROL Form Model]** när du skapar anpassade formulär.
 1. Välj **[!UICONTROL Schema]** i listrutan **[!UICONTROL Select From]** på fliken Formulärmodell.
 
 1. Markera **[!UICONTROL Select Schema]** och gör något av följande:
@@ -201,7 +202,7 @@ Alternativet för att spara automatiskt är inte aktiverat som standard. Du kan 
 
 1. (Endast händelsebaserad autosparning) Utför följande steg för att konfigurera alternativ för händelsebaserad autosparning.
 
-   1. I rutan **[!UICONTROL Auto save after this event]** anger du en [GuideBridge](https://helpx.adobe.com/se/aem-forms/6/javascript-api/GuideBridge.html) -händelse. Formuläret sparas varje gång uttrycket utvärderas till TRUE.
+   1. I rutan **[!UICONTROL Auto save after this event]** anger du en [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) -händelse. Formuläret sparas varje gång uttrycket utvärderas till TRUE.
 
 1. (Valfritt) Om du vill spara innehållet automatiskt för anonyma användare väljer du alternativet **[!UICONTROL Enable Autosave for anonymous users]** och klickar på **[!UICONTROL OK]**.
 

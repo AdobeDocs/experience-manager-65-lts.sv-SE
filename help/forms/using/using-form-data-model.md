@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 900ec6cd-d780-46eb-8ab1-907e563d81d7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
 
 # Använd formulärdatamodell{#use-form-data-model}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html).
 
 
 ![hjältebild](do-not-localize/data-integration.png)
@@ -97,7 +98,7 @@ Så här förhandsgranskar du en interaktiv kommunikation med exempelformulärda
 
 1. Navigera till **[!UICONTROL Forms > Forms & Documents]** på AEM-författarinstansen.
 1. Välj en interaktiv kommunikation och välj **[!UICONTROL Preview]** i verktygsfältet för att välja **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]** eller **[!UICONTROL Both Channels]** för att förhandsgranska den interaktiva kommunikationen.
-1. Kontrollera att **[!UICONTROL Test Data of Form Data Model]** är markerat och välj **[!UICONTROL Preview]** i dialogrutan Förhandsgranska [*kanal*].
+1. Kontrollera att [*är markerat och välj*] i dialogrutan Förhandsgranska **[!UICONTROL Test Data of Form Data Model]** kanal **[!UICONTROL Preview]**.
 
 Den interaktiva kommunikationen öppnas med förfyllda exempeldata.
 

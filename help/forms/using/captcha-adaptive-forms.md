@@ -9,22 +9,23 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 300fcbdc-d884-409b-9011-89cdf2706535
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1764'
 ht-degree: 0%
 
 ---
 
 # Använda CAPTCHA i anpassningsbara formulär{#using-captcha-in-adaptive-forms}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms.html).
 
 
-<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
+<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) är ett program som ofta används vid onlinetransaktioner för att skilja mellan människor och automatiserade program eller organ. Det utgör en utmaning och utvärderar användarens svar för att avgöra om det är en människa eller en robot som interagerar med webbplatsen. Det förhindrar användaren att fortsätta om testet misslyckas och gör onlinetransaktionerna säkra genom att förhindra att skräppost eller skadliga syften publiceras.
 
@@ -249,7 +250,7 @@ Du kan validera CAPTCHA i ett adaptivt formulär antingen när du skickar formul
 Så här validerar du en CAPTCHA automatiskt när du skickar in ett adaptivt formulär:
 
 1. Markera CAPTCHA-komponenten och välj ![cmpr](assets/configure-icon.svg) för att visa komponentegenskaperna.
-1. Välj **[!UICONTROL Validate CAPTCHA at form submission]** i avsnittet **[!UICONTROL Validate CAPTCHA]**.
+1. Välj **[!UICONTROL Validate CAPTCHA]** i avsnittet **[!UICONTROL Validate CAPTCHA at form submission]**.
 1. Välj ![Klar](assets/save_icon.svg) om du vill spara komponentegenskaperna.
 
 #### Validera CAPTCHA på användaråtgärder och villkor {#validate-captcha-user-action}
@@ -257,7 +258,7 @@ Så här validerar du en CAPTCHA automatiskt när du skickar in ett adaptivt for
 Så här validerar du en CAPTCHA baserat på villkor och användaråtgärder:
 
 1. Markera CAPTCHA-komponenten och välj ![cmpr](assets/configure-icon.svg) för att visa komponentegenskaperna.
-1. Välj **[!UICONTROL Validate CAPTCHA on a user action]** i avsnittet **[!UICONTROL Validate CAPTCHA]**.
+1. Välj **[!UICONTROL Validate CAPTCHA]** i avsnittet **[!UICONTROL Validate CAPTCHA on a user action]**.
 1. Välj ![Klar](assets/save_icon.svg) om du vill spara komponentegenskaperna.
 
    >[!NOTE]

@@ -5,21 +5,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4130'
+source-wordcount: '4139'
 ht-degree: 0%
 
 ---
 
 # Generera arkivdokument för adaptiva formulär eller adaptiva formulärfragment {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
+<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
 
 
 ## Ökning {#overview}
@@ -412,7 +413,6 @@ Mer information om hur du använder sidbrytningar och använder flera mallsidor 
 
 * **[!UICONTROL BASIC]**
    * **Mall:** Du kan välja mallen Standard eller Egen.
-
      ![Alt-text](image.png)
    * **Dekorfärg:** Du kan fördefiniera mallfärgen för [!UICONTROL Document of Record].
    * **Teckensnittsfamilj:** Välj teckensnittstyp för [!UICONTROL Document of Record]-texterna.
@@ -425,7 +425,6 @@ Mer information om hur du använder sidbrytningar och använder flera mallsidor 
       * Lodrätt
       * Vågrät
       * Samma som adaptiv form
-
      >[!NOTE]
      > Lodrät och vågrät justering gäller endast för     Alternativknapp och kryssruta
 * **[!UICONTROL MASTER PAGE PROPERTIES]** Klicka för mer information om [Mallsidesegenskaper](#master-page-properties-master-page-properties)

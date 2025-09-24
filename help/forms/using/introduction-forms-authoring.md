@@ -9,19 +9,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3086'
+source-wordcount: '3095'
 ht-degree: 0%
 
 ---
 
 # Introduktion till utveckling av anpassningsbara formulär {#introduction-to-authoring-adaptive-forms}
 
-| Version | Artikellänk |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+## Gäller för {#applies-to}
+
+Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
+
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html).
 
 
 ## Ökning {#overview}
@@ -152,11 +153,11 @@ Du kan dra och släppa formulärmodellelement i det anpassade formuläret. De ti
   </tr>
   <tr>
    <td>E-post</td>
-   <td><p>Lägger till ett fält för att hämta e-postadressen. E-postkomponenten validerar som standard e-postadresser med följande reguljära uttryck.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Lägger till ett fält för att hämta e-postadressen. E-postkomponenten validerar som standard e-postadresser med följande reguljära uttryck.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Bifogad fil</td>
-   <td><p>Lägger till en knapp som gör att användare kan bläddra bland och bifoga stöddokument till ett formulär. Du kan bifoga flera filer till en bifogad filkomponent. Du kan också ange **[!UICONTROL Maximum File Size]** och **[!UICONTROL Supported File Types]** för de bifogade filerna i egenskapswebbläsaren för komponenten. </p> <p><strong> Obs! </strong><ul> <li> Komponenten stöder inte bifogade filer med filnamn som börjar med tecken (.), som innehåller tecknen \ / : * ? " &lt; &gt; | ; % $, eller innehåller speciella filnamn som är reserverade för Windows-operativsystem som null, prn, con, lpt eller com. </li> <li> Om du vill bifoga flera filer till en bifogad fil som öppnas i webbläsaren Apple Safari markerar och bifogar du filer en i taget. Du kan inte markera och bifoga flera filer samtidigt.</li> <li>Komponenten Bifogad fil har stöd för en fördefinierad uppsättning filformat i adaptiva formulär som är aktiverade för Adobe Sign. Mer information finns i <a href="https://helpx.adobe.com/se/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Filformat som stöds</a>. </li></ul></p> </td>
+   <td><p>Lägger till en knapp som gör att användare kan bläddra bland och bifoga stöddokument till ett formulär. Du kan bifoga flera filer till en bifogad filkomponent. Du kan också ange **[!UICONTROL Maximum File Size]** och **[!UICONTROL Supported File Types]** för de bifogade filerna i egenskapswebbläsaren för komponenten. </p> <p><strong> Obs! </strong><ul> <li> Komponenten stöder inte bifogade filer med filnamn som börjar med tecken (.), som innehåller tecknen \ / : * ? " &lt; &gt; | ; % $, eller innehåller speciella filnamn som är reserverade för Windows-operativsystem som null, prn, con, lpt eller com. </li> <li> Om du vill bifoga flera filer till en bifogad fil som öppnas i webbläsaren Apple Safari markerar och bifogar du filer en i taget. Du kan inte markera och bifoga flera filer samtidigt.</li> <li>Komponenten Bifogad fil har stöd för en fördefinierad uppsättning filformat i adaptiva formulär som är aktiverade för Adobe Sign. Mer information finns i <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Filformat som stöds</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Lista över bifogade filer</td>
