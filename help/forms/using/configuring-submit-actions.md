@@ -54,7 +54,7 @@ Standardåtgärderna för att skicka in anpassningsbara formulär är:
 >[!NOTE]
 >
 >Kontrollera att mappen [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
->>finns. Katalogen krävs för att temporärt lagra bilagor. Om katalogen inte finns skapar du den.
+>&#x200B;>finns. Katalogen krävs för att temporärt lagra bilagor. Om katalogen inte finns skapar du den.
 
 >[!CAUTION]
 >

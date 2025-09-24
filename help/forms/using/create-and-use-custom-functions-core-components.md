@@ -61,8 +61,8 @@ Anpassade funktioner är i huvudsak klientbibliotek som läggs till i JavaScript
 
 >[!NOTE]
 >`[functionName]` är namnet på funktionen. Blanksteg är inte tillåtna.
->>`<Function Name>` är visningsnamnet för funktionen i regelredigeraren för Adaptiv Forms.
->>Om funktionsnamnet är identiskt med namnet på själva funktionen kan du utelämna `[functionName]` från syntaxen.
+>&#x200B;>`<Function Name>` är visningsnamnet för funktionen i regelredigeraren för Adaptiv Forms.
+>&#x200B;>Om funktionsnamnet är identiskt med namnet på själva funktionen kan du utelämna `[functionName]` från syntaxen.
 
 #### Parameter
 

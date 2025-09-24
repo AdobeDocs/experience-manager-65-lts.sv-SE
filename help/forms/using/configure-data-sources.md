@@ -195,7 +195,7 @@ En OData-tjänst identifieras av tjänstens rot-URL. Om du vill konfigurera en O
 >[!NOTE]
 >
 >Formulärdatamodellen stöder [OData version 4](https://www.odata.org/documentation/).
->>Stegvisa anvisningar om hur du konfigurerar Microsoft Dynamics 365, online eller lokalt, finns i [Microsoft Dynamics OData Configuration](/help/forms/using/ms-dynamics-odata-configuration.md).
+>&#x200B;>Stegvisa anvisningar om hur du konfigurerar Microsoft Dynamics 365, online eller lokalt, finns i [Microsoft Dynamics OData Configuration](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Gå till **[!UICONTROL Tools > Cloud Services > Data Sources]**. Välj den mapp där du vill skapa en molnkonfiguration.
 

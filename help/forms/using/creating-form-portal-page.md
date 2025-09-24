@@ -57,7 +57,7 @@ Sök efter och visa komponent på en sida med stödrasterlayout
 
 Listrutan är ett område där formulären listas. Komponenten Sök och lista innehåller olika konfigurationsalternativ som du kan använda för att styra visningen av formulär i rutan Lista.
 
-Om du vill konfigurera listrutan väljer du komponenten Sök och Lister och sedan ![settings_icon](assets/settings_icon.png). Dialogrutan **[!UICONTROL  Edit Component]** öppnas.
+Om du vill konfigurera listrutan väljer du komponenten Sök och Lister och sedan ![settings_icon](assets/settings_icon.png). Dialogrutan **[!UICONTROL &#x200B; Edit Component]** öppnas.
 
 ![Listruta i redigeringsläge](assets/edit-list.png)
 
@@ -115,7 +115,7 @@ Dialogrutan **Redigera** innehåller flera flikar med konfigurationsalternativ s
   <tr>
    <td> </td>
    <td>Av text</td>
-   <td><p>Ersätter ordet <strong> av</strong> med den angivna texten (sidan 1 <strong> av </strong> {51). Standardvärdet är <strong>av</strong>.</p> <p>Om du till exempel anger <strong> av </strong> i det här fältet ändras texten till sidan 1 <strong> av </strong> 51.</p> </td>
+   <td><p>Ersätter ordet <strong> av</strong> med den angivna texten (sidan 1 <strong> av </strong> &lbrace;51). Standardvärdet är <strong>av</strong>.</p> <p>Om du till exempel anger <strong> av </strong> i det här fältet ändras texten till sidan 1 <strong> av </strong> 51.</p> </td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Formulärlänk</strong></code></td>
