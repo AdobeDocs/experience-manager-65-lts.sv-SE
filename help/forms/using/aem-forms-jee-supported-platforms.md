@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 hide: true
 hidefromtoc: true
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 6ba07ca04dde793e5750b65bbe5fc9c51418ac90
 workflow-type: tm+mt
-source-wordcount: '4005'
+source-wordcount: '4117'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 <div class="preview">
 
-Adobe har släppt ett [fullständigt installationsprogram](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) med AEM 6.5 Forms Service Pack 18 (6.5.18.0) på JEE tillsammans med patch-installationsprogrammen. Det fullständiga installationsprogrammet har stöd för nya plattformar medan korrigeringsprogrammets installationsprogram endast innehåller felkorrigeringar.
-Om du gör en ny installation eller planerar att använda den senaste programvaran för din AEM 6.5 Forms i JEE-miljö rekommenderar Adobe att du använder [AEM 6.5.18.0 Forms i JEE med det fullständiga installationsprogrammet ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) som släpptes den 31 augusti 2023 i stället för AEM 6.5 Forms installationsprogram som släpptes den 8 april 2019 eller AEM 6.5.12 Forms mars Installer som släpptes den 3 2022
+Adobe har släppt ett [fullständigt installationsprogram](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) med AEM 6.5 Forms Service Pack 18 (6.5.18.0) på JEE tillsammans med patch-installationsprogrammen. Det fullständiga installationsprogrammet har stöd för nya plattformar medan korrigeringsprogrammets installationsprogram endast innehåller felkorrigeringar.
+Om du gör en ny installation eller planerar att använda den senaste programvaran för din AEM 6.5 Forms i JEE-miljö rekommenderar Adobe att du använder [AEM 6.5.18.0 Forms i JEE med det fullständiga installationsprogrammet ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) som släpptes den 31 augusti 2023 i stället för AEM 6.5 Forms installationsprogram som släpptes den 8 april 2019 eller AEM 6.5.12 Forms mars Installer som släpptes den 3 2022
 
 </div>
 
@@ -51,7 +51,7 @@ I det här dokumentet visas vilka klient- och serverplattformar som stöds för 
 
 - **Service Pack-täckning**: Adobe ger teknisk support för AEM Forms-miljöer med hjälp av något av de senaste sex servicepaketen. Om din nuvarande version är äldre än de senaste sex servicepaketen rekommenderar Adobe starkt att du uppgraderar till den senaste versionen för optimala prestanda, säkerhet och kontinuerlig support.
 
-- **Riktlinjer för installation av korrigeringsfiler**: När du uppdaterar med hjälp av installationsprogram för korrigeringsfiler måste du kontrollera att den underliggande fullständiga installationsversionen inte är mer än två versioner gammal. Kontrollera till exempel att den underliggande fullständiga installationsversionen är 6.5.18.0 eller 6.5.12.0 under installationen av Service Pack 6.5.19.0.
+- **Riktlinjer för installation av korrigeringsfiler**: När du uppdaterar med hjälp av installationsprogram för korrigeringsfiler måste du kontrollera att den underliggande fullständiga installationsversionen inte är mer än två versioner gammal. Kontrollera till exempel att den underliggande fullständiga installationsversionen är 6.5.19.0 eller 6.5.18.0 under installationen av Service Pack 6.5.12.0.
 
 - **Stöd för korrigeringsuppgradering**: Du kan fortsätta uppgradera till det senaste Service Pack-versionen tills du uppgraderar till de senaste plattformarna som stöds. Det går till exempel att uppgradera från Service Pack 6.5.12.0 till 6.5.19.0, förutsatt att du går över till en plattformskombination som stöds för 6.5.19.0.
 
@@ -112,6 +112,11 @@ Adobe Experience Manager Forms kräver att en Java™ Virtual Machine körs, vil
    <th><p><strong>Patch-definitioner som stöds</strong></p> </th>
   </tr>
   <tr> 
+   <td><p>Oracle Java™ SE 17 (64 bitar) <sup> [8] </sup> </p>  </td>
+   <td><p>A: Stöds</p> </td>
+   <td><p>Mindre releaser och uppdateringar </p> </td>
+  </tr>
+  <tr> 
    <td><p>Oracle Java™ SE 11 (64 bitar) <sup> [8] </sup> </p>  </td>
    <td><p>A: Stöds</p> </td>
    <td><p>Mindre releaser och uppdateringar </p> </td>
@@ -128,6 +133,11 @@ Adobe Experience Manager Forms kräver att en Java™ Virtual Machine körs, vil
   </tr>
   <tr>
    <td>Oracle Java™ SE 8 (64 bitar)</td>
+   <td>A: Stöds</td>
+   <td>Mindre releaser och uppdateringar</td>
+  </tr>
+  <tr>
+   <td>IBM® J17 Virtual Machine (med endast Websphere Liberty)<br /> </td>
    <td>A: Stöds</td>
    <td>Mindre releaser och uppdateringar</td>
   </tr>
@@ -164,12 +174,17 @@ Adobe Experience Manager Forms kräver att en Java™ Virtual Machine körs, vil
    <td><p>Stöds</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 5.0</p> </td>
+   <td><p> MongoDB Enterprise 7.0 </p> </td>
+   <td><p>Databasmikrokernel</p> </td>
+   <td><p>Stöds</p> </td>
+  </tr>
+  <tr>
+   <td><p> MongoDB Enterprise 6.0</p> </td>
    <td><p>Databasmikrokernel</p> </td>
    <td><p>Stöds</p> </td>
   </tr>
     <tr>
-   <td><p> MongoDB Enterprise 6.0 </p> </td>
+   <td><p> MongoDB Enterprise 5.0 </p> </td>
    <td><p>Databasmikrokernel</p> </td>
    <td><p>Stöds</p> </td>
   </tr>
@@ -183,6 +198,11 @@ Adobe Experience Manager Forms kräver att en Java™ Virtual Machine körs, vil
    <td><p>Stöds</p> </td>
   </tr>
   <tr>
+   <td><p>Microsoft® SQL Server 2022 </p> </td>
+   <td><p>Databasmikrokernel</p> </td>
+   <td><p>Stöds</p> </td>
+  </tr>
+  <tr>
    <td><p>Microsoft® SQL Server 2019 </p> </td>
    <td><p>Databasmikrokernel</p> </td>
    <td><p>Stöds</p> </td>
@@ -190,6 +210,11 @@ Adobe Experience Manager Forms kräver att en Java™ Virtual Machine körs, vil
   <tr>
    <td>IBM® DB2® 11.1 (borttagen)</td>
    <td>Databasmikrokernel</td>
+   <td>R: Begränsat stöd</td>
+  </tr>
+  <tr>
+   <td>MySQL 8.4</td>
+   <td>-</td>
    <td>R: Begränsat stöd</td>
   </tr>
   <tr>
@@ -223,8 +248,18 @@ Adobe Experience Manager Forms kräver att en Java™ Virtual Machine körs, vil
   </tr>
   <tr>
    <td>MySQL</td>
+   <td><p>MySQL Connector/J 8.4</p> </td>
+   <td><p>Tillhandahålls med AEM Forms i JEE-installation</p> </td>
+  </tr>
+  <tr>
+   <td>MySQL</td>
    <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar (version 5.1.44)</p> </td>
    <td><p>Tillhandahålls med AEM Forms i JEE-installation</p> </td>
+  </tr>
+  <tr>
+   <td>Microsoft® SQL Server<br /> </td>
+   <td><p>Microsoft® SQL Server JDBC-drivrutin 12.10.0<br /> </p> <p>sqljdbc12.10.0.jar</p> </td>
+   <td><p>Ladda ned från Microsoft® webbplats.</p> </td>
   </tr>
   <tr>
    <td>Microsoft® SQL Server<br /> </td>
@@ -249,6 +284,11 @@ Adobe Experience Manager Forms kräver att en Java™ Virtual Machine körs, vil
    <td><p><strong>Patch-definitioner som stöds</strong></p> </td>
   </tr>
   <tr>
+   <td>Oracle WebLogic Server 14.1.2 <sup>[9]</sup></td>
+   <td>A: Stöds</td>
+   <td>Service Pack och viktiga uppdateringar</td>
+  </tr>
+  <tr>
    <td>Oracle WebLogic Server 12.2.1 (12c R2) (borttagen) <sup>[9]</sup></td>
    <td>A: Stöds</td>
    <td>Service Pack och viktiga uppdateringar</td>
@@ -262,6 +302,11 @@ Adobe Experience Manager Forms kräver att en Java™ Virtual Machine körs, vil
    <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
    <td>A: Stöds</td>
    <td>Service Pack och viktiga uppdateringar</td>
+  </tr>
+  <tr>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.4.22 <sup>[2] [3] [7]</sup> </p> </td>
+   <td><p>A: Stöds</p> </td>
+   <td><p>Patchar och kumulativa patchar för den EAP-version som stöds</p> </td>
   </tr>
   <tr>
    <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
@@ -302,12 +347,12 @@ Adobe Experience Manager Forms kräver att en Java™ Virtual Machine körs, vil
    <td>Servicepaket och viktiga uppdateringar</td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-bitars)</p> </td>
+   <td><p>Red Hat® Enterprise Linux® 9 (Kernel 5.x) (64-bitars)</p> </td>
    <td><p>A: Stöds</p> </td>
    <td><p>Mindre releaser, kumulativa uppdateringar och viktiga uppdateringar</p> </td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64-bitars) (borttaget)</td>
+   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-bitars)</td>
    <td><p>A: Stöds</p> </td>
    <td><p>Mindre releaser, kumulativa uppdateringar och viktiga uppdateringar</p> </td>
   </tr>
@@ -431,6 +476,10 @@ Tänk dessutom på följande när du väljer program för Adobe AEM Forms i JEE-
    <td>8.5 Fixpaket 2</td>
   </tr>
   <tr>
+   <td> IBM® Content Manager Client</td>
+   <td>8,7 </td>
+  </tr>
+  <tr>
    <td> IBM® Content Manager Client (borttagen)</td>
    <td>8,5 </td>
   </tr>
@@ -458,7 +507,7 @@ AEM Forms App har nu stöd för Apache Cordova. Följande plattformsspecifika ve
    <th><p><strong>Format som stöds för konvertering till PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/se/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 Classic track</a> senaste versionen</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 Classic track</a> senaste versionen</td>
    <td>XPS, bildformat (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF och DWF</td>
   </tr>
   <tr>
@@ -472,6 +521,10 @@ AEM Forms App har nu stöd för Apache Cordova. Följande plattformsspecifika ve
   <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Project 2019<br /> </td>
+   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
@@ -492,7 +545,7 @@ AEM Forms App har nu stöd för Apache Cordova. Följande plattformsspecifika ve
 >- PDF Generator stöder inte Microsoft® Office 365.
 >- PDF Generator-konverteringar för OpenOffice stöds endast i Windows och Linux®.
 >- Funktionerna OCR PDF, Optimize PDF och Export PDF stöds endast i Windows.
->- En version av Acrobat medföljer AEM Forms för att aktivera PDF Generator-funktioner. Programmeringsversionen får endast användas med AEM Forms under AEM Forms-licensens löptid för användning med AEM Forms PDF Generator. Mer information finns i AEM Forms produktbeskrivning för din distribution ([On-Premise](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-manager-on-premise.html) eller [Managed Services](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>- En version av Acrobat medföljer AEM Forms för att aktivera PDF Generator-funktioner. Programmeringsversionen får endast användas med AEM Forms under AEM Forms-licensens löptid för användning med AEM Forms PDF Generator. Mer information finns i AEM Forms produktbeskrivning för din distribution ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) eller [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >- PDF Generator-tjänsten stöder inte Microsoft® Windows 10.
 >- PDF Generator kan inte konvertera filer med Microsoft® Visio 2019.
 >- PDF Generator kan inte konvertera filer med Microsoft® Project 2019.
@@ -744,7 +797,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/se/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -827,7 +880,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/se/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -896,8 +949,8 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Tillagd support | Borttaget stöd | Föråldrat stöd |
 | -------------- | --------------- | ------------------- |
-| Oracle Java™ SE 11 (64 bitar) SDK för programservern JBoss® EAP 7.4. | | [Adobe Acrobat 2017 - Core-stöd för Adobe Acrobat 2017 upphör 6 juni 2022.](https://helpx.adobe.com/se/support/programs/eol-matrix.html) |
-|  | | Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64-bitars) |
+| Oracle Java™ SE 11 (64 bitar) SDK för programservern JBoss® EAP 7.4. | | [Adobe Acrobat 2017 - Core-stöd för Adobe Acrobat 2017 upphör 6 juni 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html) |
+|  | Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64-bitars) | |
 |  | | Microsoft® Windows Server 2016 (64-bitars) |
 |  | | Microsoft® Office 2016 |
 |  | | OpenOffice 4.1.2 |
