@@ -5,7 +5,7 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
-source-git-commit: fdb84a17b3af7eaa76e5a7c30d21d7a601463278
+source-git-commit: 981b175b039fd7ffbddf558a77d2da2fed52ad79
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Den här guiden hjälper dig att identifiera de områden du behöver uppdatera f
 
 ## CIF Add-on
 
-CIF-tillägget är tillgängligt via [Programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3aContent%2Fmetadata%2FDc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3AEM%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc layout=list&amp;p.offset=0&amp;p.limit=16). Det är kompatibelt och innehåller samma funktioner som CIF-tillägget för Experience Manager as a Cloud Service.
+CIF-tillägget är tillgängligt via [Programdistributionsportalen](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3aContent%2Fmetadata%2FDc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3AEM%2F6-5-lts&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=t desc&layout=list&p.offset=0&p.limit=16). Det är kompatibelt och innehåller samma funktioner som CIF-tillägget för Experience Manager as a Cloud Service.
 
 Se [Komma igång med AEM Content och Commerce](getting-started.md).
 
