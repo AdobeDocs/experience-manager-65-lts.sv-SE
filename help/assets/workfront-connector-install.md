@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: dd6eec1e-fa63-410a-bcd3-61892861fd0c
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: cbcce32b78970bb4aae70f041b2f293a53348fad
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 En användare med administratörsåtkomst i [!DNL Adobe Experience Manager] installerar den utökade anslutningen. Granska plattformsstödet och andra [krav för anslutningen](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience) innan du installerar.
@@ -49,11 +49,14 @@ Så här installerar du kopplingen:
 1. Skapa `wf-workfront-users` i [!DNL Experience Manager]-användargruppen och tilldela behörigheten `jcr:all` till `/content/dam`.
 1. Lägg till en anpassad egenskap i indexdefinitionen utanför rutan för **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**. Utför följande steg:
    * Lägg till en **`nt:unstructured`**-egenskap med namnet **`wfReferenceNumber`** i:
-
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
    * Indexera om `index /oak:index/ntFolderDamLucene` genom att vända indexeringsflaggan till `true`.
 
 En systemanvändare `workfront-tools` skapas automatiskt och de behörigheter som krävs hanteras automatiskt. Alla användare från [!DNL Workfront] som använder anslutningen läggs till automatiskt som en del av den här gruppen.
+
+>[!NOTE]
+>
+> När du använder företagsproxyservrar tar du med [!DNL workfront] i [!UICONTROL Apache HTTP Components Proxy Configuration PID] för [!UICONTROL Enhanced Workfront Connector] för att identifiera den. Det obligatoriska PID-formatet är: `org.apache.http.proxyconfigurator~workfront`.
 
 ## Konfigurera anslutningen mellan [!DNL Experience Manager] och [!DNL Workfront] {#configure-connection}
 
