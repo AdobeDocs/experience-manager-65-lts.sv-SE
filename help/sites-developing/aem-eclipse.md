@@ -126,7 +126,7 @@ Så här skapar du exempelprojektet:
 
    >[!TIP]
    >
-   >Mer information om hur du felsöker projekt som körs på en lokal AEM SDK finns i dokumentet [Fjärrfelsökning i AEM SDK.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >Mer information om hur du felsöker projekt som körs på en lokal AEM SDK finns i dokumentet [Fjärrfelsökning i AEM SDK.](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. Klicka på **Slutför**.
 
