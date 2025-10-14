@@ -35,4 +35,4 @@ I följande checklista markeras några av de viktigaste problemen - du hittar fu
 
 >[!NOTE]
 >
->Du kan även se checklistan [Hantera projekt - Bästa metoder ](/help/managing/best-practices.md) för ytterligare checklistor som gäller hela projektet.
+>Du kan även se checklistan [Hantera projekt - Bästa metoder &#x200B;](/help/managing/best-practices.md) för ytterligare checklistor som gäller hela projektet.

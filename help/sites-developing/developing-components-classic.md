@@ -98,7 +98,7 @@ Det finns tre sätt att få åtkomst till innehåll i AEM WCM:
 
 * Via objektet `currentNode` som introducerades i `global.jsp`:
 
-  Objektet `currentNode` är en instans av en nod (se [ JCR API ](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). En nods egenskaper kan nås av metoden `getProperty()`.
+  Objektet `currentNode` är en instans av en nod (se [&#x200B; JCR API &#x200B;](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). En nods egenskaper kan nås av metoden `getProperty()`.
 
   Exempel: `String pageTitle = currentNode.getProperty("jcr:title");`
 

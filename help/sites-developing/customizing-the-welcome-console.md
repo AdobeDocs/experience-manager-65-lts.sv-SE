@@ -188,7 +188,7 @@ Mer information om hur du anger behörigheter finns i avsnittet [Dokumentskydd](
 
 ### Länkmarkeringsmekanism {#link-selection-mechanism}
 
-I `/libs/cq/core/components/welcome/welcome.jsp` används [ ConsoleUtil](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html) som kör en fråga på noder som har egenskapen:
+I `/libs/cq/core/components/welcome/welcome.jsp` används [&#x200B; ConsoleUtil](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html) som kör en fråga på noder som har egenskapen:
 
 * `jcr:mixinTypes` med värdet: `cq:Console`
 

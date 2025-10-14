@@ -40,13 +40,13 @@ Med ikonerna (endast tillgängliga i författarmiljön) kan du konfigurera infor
 ![Ikonerna Redigera, Läs in och Återställ i fönstret Klientkontext](do-not-localize/clientcontext_icons.png)
 
 * **Redigera**
-En ny sida öppnas där du kan [redigera, lägga till eller ta bort en profilegenskap ](#editingprofiledetails) .
+En ny sida öppnas där du kan [redigera, lägga till eller ta bort en profilegenskap &#x200B;](#editingprofiledetails) .
 
 * **Läs in**
-Du kan [välja från en lista med profiler och läsa in profilen ](#loading-a-new-user-profile) som du vill testa.
+Du kan [välja från en lista med profiler och läsa in profilen &#x200B;](#loading-a-new-user-profile) som du vill testa.
 
 * **Återställ**
-Du kan [återställa profilen ](#resetting-the-profile-to-the-current-user) till den aktuella användarens profil.
+Du kan [återställa profilen &#x200B;](#resetting-the-profile-to-the-current-user) till den aktuella användarens profil.
 
 ## Tillgängliga klientkontextkomponenter {#available-client-context-components}
 
@@ -154,7 +154,7 @@ När du är klar kan du [återställa profilen](#resetting-the-profile-to-the-cu
 
 1. Då öppnas dialogrutan där du kan välja vilken profil som ska läsas in:
 
-   ![Dialogrutan Profilinläsare som visar listrutan för att välja en profil ](assets/clientcontext_profileloader.png)
+   ![Dialogrutan Profilinläsare som visar listrutan för att välja en profil &#x200B;](assets/clientcontext_profileloader.png)
 
 1. Klicka på **OK** för att läsa in.
 

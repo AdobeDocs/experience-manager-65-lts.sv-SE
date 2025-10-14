@@ -68,7 +68,7 @@ Du kan spåra klickningen på externa länkar (avsluta länkar) på sidorna.
 
 Så här spårar du externa länkar för ditt Adobe Analytics-ramverk:
 
-1. [Öppna Adobe Analytics-ramverket och utöka **Konfiguration för länkspårning** ](#configuring-link-tracking-for-an-adobe-analytics-framework).
+1. [Öppna Adobe Analytics-ramverket och utöka **Konfiguration för länkspårning** &#x200B;](#configuring-link-tracking-for-an-adobe-analytics-framework).
 1. Konfigurera följande egenskaper enligt dina krav.
 
 Egenskaper för spårning när du klickar på externa länkar:
@@ -314,7 +314,7 @@ Konfigurera Adobe Analytics-ramverket för att aktivera ad hoc-länkspårning.
 Innan du kan konfigurera ad hoc-länkspårning för själva **Text**-komponenterna måste följande konfigurationer ha implementerats:
 
 * [Adobe Analytics-ramverket har konfigurerats för att aktivera ad hoc-länkspårning](#enabling-ad-hoc-link-tracking).
-* Sidan [som innehåller komponenten **Text** är kopplad till ramverket ](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
+* Sidan [som innehåller komponenten **Text** är kopplad till ramverket &#x200B;](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
 
 Använd följande procedur för att konfigurera länkspårning för en **Text** -komponent:
 

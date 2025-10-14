@@ -121,7 +121,7 @@ Se [Lägg till Assets för dynamiska media på sidor](/help/assets/adding-dynami
    * Dra muspekaren över videon om du vill ändra visningsvinkeln för den statiska scenen.
    * Markera videoklippets **[!UICONTROL Play]**-knapp om du vill påbörja uppspelningen. När videon spelas upp drar du muspekaren över videon för att ändra visningsvinkeln.
 
-   ![En skärmbild av den internationella rymdstationen som flyter i yttre rymden med jorden och solen i bakgrunden ](assets/6_5_360video-preview-video360-social.png)*En 360-videobandbild.*
+   ![En skärmbild av den internationella rymdstationen som flyter i yttre rymden med jorden och solen i bakgrunden &#x200B;](assets/6_5_360video-preview-video360-social.png)*En 360-videobandbild.*
 
    * Välj **[!UICONTROL Video360VR]** i visningslistan.
 

@@ -211,12 +211,12 @@ Den återstående förfallotiden för AEM Analyzer-rapporten visas på sidospår
 
 1. Du kan välja alla eller specifika problem och välja **Ta bort** för att lösa dem
 
-   ![Tar bort banor ](/help/sites-deploying/assets/removing-paths-1.png)
+   ![Tar bort banor &#x200B;](/help/sites-deploying/assets/removing-paths-1.png)
 
    >[!NOTE]
    >En borttagningsåtgärd skapar ett säkerhetskopiepaket med källsökvägarna under `/etc/packages/modernizer-content-transformation` som standard, före omvandlingen. Även om dialogrutan för borttagningsåtgärd har ett alternativ för att inaktivera/aktivera skapandet av säkerhetskopieringspaketet, rekommenderar vi att du alltid har aktiverat skapandet av paketet.
 
-   ![Tar bort banor ](/help/sites-deploying/assets/removing-paths-2.png)
+   ![Tar bort banor &#x200B;](/help/sites-deploying/assets/removing-paths-2.png)
 
 1. Ett exempel på ett säkerhetskopieringspaket som skapats för borttagningsåtgärden för sökvägarna visas nedan. Du kan klicka på **Installera** för att hämta källsökvägarna
 

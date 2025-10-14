@@ -18,7 +18,7 @@ Definiera strukturen för det innehåll som du skapar och betjänar med headless
 
 ## Vad är Content Fragment Models? {#what-are-content-fragment-models}
 
-[Nu när du har skapat en konfiguration ](create-configuration.md) kan du använda den för att skapa modeller för innehållsfragment.
+[Nu när du har skapat en konfiguration &#x200B;](create-configuration.md) kan du använda den för att skapa modeller för innehållsfragment.
 
 Modeller för innehållsfragment definierar strukturen för data och innehåll som du skapar och hanterar i AEM. De fungerar som en sorts ställningar för ert innehåll. När du väljer att skapa innehåll väljer författarna bland de innehållsfragmentsmodeller du definierar, som vägleder dem när de skapar innehåll.
 

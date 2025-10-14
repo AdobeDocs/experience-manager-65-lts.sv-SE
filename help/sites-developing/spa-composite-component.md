@@ -163,7 +163,7 @@ Sedan kan du lägga till den i SPA-filen och hämta dess innehåll.
     itemPath='root/responsivegrid' />
    ```
 
-1. Lägg till den skapade `wknd-spa/components/imagecard`-komponenten i de tillåtna komponenterna för behållarkomponenten [ i sidmallen.](/help/sites-authoring/templates.md)
+1. Lägg till den skapade `wknd-spa/components/imagecard`-komponenten i de tillåtna komponenterna för behållarkomponenten [&#x200B; i sidmallen.](/help/sites-authoring/templates.md)
 
 Nu kan komponenten `imagecard` läggas till direkt i behållaren i AEM Editor.
 
@@ -181,4 +181,4 @@ Om innehållet finns i AEM kan det ingå direkt i SPA genom att ange sökvägen 
 
 ![Sammansatt sökväg i nodstruktur](assets/composite-path.png)
 
-Komponenten `AEMCard` är densamma som definierad [ i det föregående användningsfallet.](#content-does-not-exist) Här ingår det innehåll som definieras på ovanstående plats i AEM-projektet i SPA-programmet.
+Komponenten `AEMCard` är densamma som definierad [&#x200B; i det föregående användningsfallet.](#content-does-not-exist) Här ingår det innehåll som definieras på ovanstående plats i AEM-projektet i SPA-programmet.

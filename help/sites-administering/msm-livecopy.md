@@ -229,7 +229,7 @@ Rulla ut en ritningssida för att överföra innehållsändringar till live-kopi
 
    ![Utrullningsutkast](assets/rollout-blueprint.png)
 
-Utsläppen bearbetas som asynkrona jobb och kan kontrolleras på [**kontrollpanelen för asynkrona jobb** ](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) på **Global navigering** > **Verktyg** > **Åtgärder** > **Jobs**
+Utsläppen bearbetas som asynkrona jobb och kan kontrolleras på [**kontrollpanelen för asynkrona jobb** &#x200B;](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) på **Global navigering** > **Verktyg** > **Åtgärder** > **Jobs**
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Utsläppen bearbetas som asynkrona jobb och kan kontrolleras på [**kontrollpane
 
 1. När du har bekräftat informationen väljer du **Rollout** för att utföra åtgärden.
 
-Utsläppen bearbetas som asynkrona jobb och kan kontrolleras på [**kontrollpanelen för asynkrona jobb** ](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) på **Global navigering** > **Verktyg** > **Åtgärder** > **Jobs**
+Utsläppen bearbetas som asynkrona jobb och kan kontrolleras på [**kontrollpanelen för asynkrona jobb** &#x200B;](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) på **Global navigering** > **Verktyg** > **Åtgärder** > **Jobs**
 
 >[!NOTE]
 >
@@ -275,7 +275,7 @@ Utsläppen bearbetas som asynkrona jobb och kan kontrolleras på [**kontrollpane
 
    ![Utrullningsutkast](assets/rollout-blueprint.png)
 
-Utsläppen bearbetas som asynkrona jobb och kan kontrolleras på [**kontrollpanelen för asynkrona jobb** ](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) på **Global navigering** > **Verktyg** > **Åtgärder** > **Jobs**
+Utsläppen bearbetas som asynkrona jobb och kan kontrolleras på [**kontrollpanelen för asynkrona jobb** &#x200B;](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) på **Global navigering** > **Verktyg** > **Åtgärder** > **Jobs**
 
 >[!NOTE]
 >

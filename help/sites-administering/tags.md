@@ -289,7 +289,7 @@ När alla översättningar har angetts väljer du **Spara** för att avsluta red
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-I allmänhet hämtas det språk som valts för taggen från sidspråket, när det är tillgängligt. När [`tag`-widgeten ](/help/sites-developing/building.md#tagging-on-the-client-side) används i andra fall (till exempel i formulär eller i dialogrutor) beror taggspråket på sammanhanget.
+I allmänhet hämtas det språk som valts för taggen från sidspråket, när det är tillgängligt. När [`tag`-widgeten &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) används i andra fall (till exempel i formulär eller i dialogrutor) beror taggspråket på sammanhanget.
 
 I stället för att använda sidspråkinställningen används användarspråkinställningen i taggningskonsolen. I taggningskonsolen för taggen Animals visas Animaux för en användare som anger språket som franska i sina användaregenskaper.
 

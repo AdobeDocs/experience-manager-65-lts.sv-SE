@@ -248,7 +248,7 @@ Här följer information om möjliga problem tillsammans med lösningar:
 
 * Så här löser du:
 
-   * [Indexera om ](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) lucenindexet
+   * [Indexera om &#x200B;](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) lucenindexet
    * Du kan även trycka (utföra en benign write-åtgärd) på de noder som saknas
 
       * Kräver manuell beröring eller anpassad kod
@@ -276,7 +276,7 @@ Här följer information om möjliga problem tillsammans med lösningar:
 
    * Oak-versioner före 1.6:
 
-      * [Indexera om ](#how-to-re-index) lucenindexet
+      * [Indexera om &#x200B;](#how-to-re-index) lucenindexet
 
    * Oak version 1.6+
 
@@ -364,7 +364,7 @@ Här följer information om möjliga problem tillsammans med lösningar:
 
 >[!NOTE]
 >
->I AEM 6.5 LTS är [oak-run.jar den ENDA metoden ](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) som stöds för omindexering i MongoMK- eller RDBMK-databaser.
+>I AEM 6.5 LTS är [oak-run.jar den ENDA metoden &#x200B;](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) som stöds för omindexering i MongoMK- eller RDBMK-databaser.
 
 #### Indexerar om egenskapsindex {#re-indexing-property-indexes}
 
@@ -381,7 +381,7 @@ Här följer information om möjliga problem tillsammans med lösningar:
 
 #### Indexerar om Lucene-egenskapsindex {#re-indexing-lucene-property-indexes}
 
-* Använd [oak-run.jar om du vill indexera ](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) om Lucene-egenskapsindexet.
+* Använd [oak-run.jar om du vill indexera &#x200B;](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) om Lucene-egenskapsindexet.
 * Ställ in egenskapen async-reindex på true i egenskapsindexet lucene
 
    * `[oak:queryIndexDefinition]@reindex-async=true`

@@ -54,7 +54,7 @@ Gör så här om du vill att Designer ska kunna generera HTML-förhandsgransknin
 
 ### Inaktivera skyddat läge {#disable-protected-mode}
 
-Det [skyddade läget ](../../forms/using/get-xdp-pdf-documents-aem.md) är aktiverat som standard. Låt det vara aktiverat för produktionsmiljöerna. Du kan inaktivera det för en utvecklingsmiljö och förhandsgranska HTML5 Forms i Designer. Utför följande steg för att inaktivera den:
+Det [skyddade läget &#x200B;](../../forms/using/get-xdp-pdf-documents-aem.md) är aktiverat som standard. Låt det vara aktiverat för produktionsmiljöerna. Du kan inaktivera det för en utvecklingsmiljö och förhandsgranska HTML5 Forms i Designer. Utför följande steg för att inaktivera den:
 
 1. Logga in på AEM Web Console som administratör.
 
@@ -87,7 +87,7 @@ Det [skyddade läget ](../../forms/using/get-xdp-pdf-documents-aem.md) är aktiv
    >
    >Kontrollera att AEM Forms-servern är igång. HTML Preview ansluter till CRX-servern för att *generera* en förhandsvisning.
 
-   ![Alternativ för AEM Forms Designer ](assets/server_options.png)
+   ![Alternativ för AEM Forms Designer &#x200B;](assets/server_options.png)
 
    Alternativ för AEM Forms Designer
 

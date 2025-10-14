@@ -132,7 +132,7 @@ En lista har till exempel fyra alternativ: Röd, Blå, Grön och Gul. När regel
 
 När du skriver en When-regel kan du utlösa åtgärden Clear Value Of. `Clear Value Of`-åtgärden rensar värdet för det angivna objektet. Om du har `Clear Value of` som ett alternativ i When-satsen kan du skapa komplexa villkor med flera fält. Du kan lägga till Else-satsen för att lägga till ytterligare villkor.
 
-![Rensa värdet för ](assets/clearvalueof.png)
+![Rensa värdet för &#x200B;](assets/clearvalueof.png)
 
 >[!NOTE]
 >

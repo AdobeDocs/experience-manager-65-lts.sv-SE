@@ -43,7 +43,7 @@ Om du vill se en interaktiv, köpbar video in action väljer du [Livesändningar
 
 ### Se hur interaktiva videor skapas {#watch-how-interactive-videos-are-created}
 
-Spela upp en genomgång av [hur interaktiva videor skapas](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 minuter och 30 sekunder).
+Spela upp en genomgång av [hur interaktiva videor skapas](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo) (7 minuter och 30 sekunder).
 Även om videogenomgången märks med Assets on Demand, gäller fortfarande principerna och stegen för Interactive Video i Adobe Experience Manager Assets.
 
 ### Adobe Customer Solutions Webinar {#adobe-customer-success-webinar}
@@ -70,7 +70,7 @@ När du är klar med självstudiekursen i det sista exempelavsnittet ser den slu
 
 Interaktiva videosteg:
 
-1. **(Valfritt) Identifiera QuickView-variabler** - Börja med att identifiera dynamiska variabler som används av den befintliga QuickView-implementeringen. Du använder variablerna för att mappa produktminiatyrbilder till deras motsvarande produkt-snabbvyn när du skapar en interaktiv video. Se [ (valfritt) Identifiera QuickView-variabler ](#optional-identifying-quickview-variables).
+1. **(Valfritt) Identifiera QuickView-variabler** - Börja med att identifiera dynamiska variabler som används av den befintliga QuickView-implementeringen. Du använder variablerna för att mappa produktminiatyrbilder till deras motsvarande produkt-snabbvyn när du skapar en interaktiv video. Se [&#x200B; (valfritt) Identifiera QuickView-variabler &#x200B;](#optional-identifying-quickview-variables).
    *Det här steget krävs bara om alla följande är true*:
    * Du vill lägga till interaktivitet i videon genom att aktivera snabbvyn.
    * Din implementering av Experience Manager *använder inte* ett ramverk för e-handelsintegrering för att hämta produktdata till Experience Manager från en e-handelslösning som IBM® WebSphere® Commerce, Elastic Path, Hybris eller Intershop.
@@ -149,10 +149,10 @@ Titta på följande exempel på QuickView-URL:er och deras resulterande miniatyr
     <td><p>En SKU, hittades i frågesträngen.</p> </td>
     <td><p>De inspelade URL:erna för snabbvyn är bland annat följande:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>Den enda variabeldelen i URL:en är värdet på frågesträngsparametern <code>productId=</code>, och det är tydligt ett SKU-värde. Därför behöver dina miniatyrbilder bara SKU-fält med värden som <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -168,9 +168,9 @@ Titta på följande exempel på QuickView-URL:er och deras resulterande miniatyr
     <td><p>SKU och kategori-ID i frågesträngen.</p> </td>
     <td><p>De inspelade URL:erna för snabbvyn är bland annat följande:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>I det här fallet finns det två olika delar i URL:en. SKU:n lagras i parametern <code>prodId</code> och kategori-ID:t lagras i parametern <code>category=</code>.</p> <p>Miniatyrbildsdefinitionerna är par. Det vill säga ett SKU-värde och en extra variabel som kallas <code>categoryId</code>. De resulterande paren är följande:</p>
     <ul>
       <li>SKU är <code>305466</code> och <code>categoryId</code> är <code>1100004</code></li>

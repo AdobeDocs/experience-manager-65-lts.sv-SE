@@ -37,7 +37,7 @@ Document Security Server är den centrala komponenten som Document Security utf�
 
 På dokumentsäkerhetsservern finns ett webbaserat gränssnitt (webbsida) för att skapa profiler, hantera principskyddade dokument och övervaka händelser som är kopplade till principskyddade dokument. Administratörer kan också konfigurera globala alternativ som användarautentisering, granskning och meddelanden för inbjudna användare samt hantera inbjudna användarkonton.
 
-Servern ingår i AEM Forms Document Security-tillägget. Du kan kontakta AEM Forms [säljteam](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&amp;s_iid=70114000002JHs3AAG) för att köpa Document Security-tillägget.
+Servern ingår i AEM Forms Document Security-tillägget. Du kan kontakta AEM Forms [säljteam](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) för att köpa Document Security-tillägget.
 
 ### Skydda dokument {#protect-documents}
 
@@ -49,7 +49,7 @@ Du kan använda Document Security SDK, Adobe Acrobat, Document Security Extensio
 
 * **Document Security SDK:** SDK är en funktionsrik klient. Du kan använda SDK Document Security för att få åtkomst till dokumentserverfunktioner, öppna policyskyddade dokument och utveckla anpassade tillägg, plugin-program eller program. Du kan till exempel utveckla tillägg för att skydda anpassade filformat eller integrera SDK med DLP-lösningar (Data Loss Prevention). Tillägg, program och plugin-program som utvecklats med Document Security SDK för att skicka dokument till den avsedda AEM Forms Server och där reglerna tillämpas på servern. AEM Forms dokumentskyddsklient SDK (CSDK) kan inte ta bort skyddet för dokument som skyddas med PPL (Portable Protection Library) och omvänt.
 
-  Document Security SDK finns för både Java™ och C++. Java™ SDK ingår i AEM Forms Document Security och är installerat på att distribuera AEM-formulär på JEE. Kontakta [AEM kundsupport](https://experienceleague.adobe.com/sv?support-solution=General&amp;support-tab=home#support) om du vill köpa C++ SDK. C++ SDK kan kompileras med Microsoft® Visual Studio 2013. Besök [API-dokumentationen för dokumentsäkerhet](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) där du kan läsa om och använda funktioner i SDK.
+  Document Security SDK finns för både Java™ och C++. Java™ SDK ingår i AEM Forms Document Security och är installerat på att distribuera AEM-formulär på JEE. Kontakta [AEM kundsupport](https://experienceleague.adobe.com/sv?support-solution=General&support-tab=home#support) om du vill köpa C++ SDK. C++ SDK kan kompileras med Microsoft® Visual Studio 2013. Besök [API-dokumentationen för dokumentsäkerhet](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) där du kan läsa om och använda funktioner i SDK.
 
 * **Adobe Acrobat:** Du kan använda Adobe Acrobat för att tillämpa skyddsprofiler på PDF-dokument som skapats med vanliga skrivbordsprogram, till exempel Microsoft® Office, webbläsare eller andra program som stöder utskrift i PDF-format.
 
@@ -63,7 +63,7 @@ Du kan använda Document Security SDK, Adobe Acrobat, Document Security Extensio
 
   Tillsammans med ovanstående har PPL alla funktioner i Document Security SDK. Du kan använda SDK Document Security för att få åtkomst till dokumentserverfunktioner, öppna policyskyddade dokument och utveckla anpassade tillägg, plugin-program eller program. PPL kan inte ta bort skyddet för dokument som skyddas med AEM Forms Document Security Client SDK (CSDK) och omvänt.
 
-  PPL finns för Java™ och C++ i 32- och 64-bitarsversioner. Det finns också som ett OSGi-paket för AEM Forms på OSGi. C++ PPL kan kompileras med Microsoft® Visual Studio 2013. Om du har licensierat AEM Forms Document Security-tillägget kan du kontakta [AEM Forms Document Security](https://experienceleague.adobe.com/sv?support-solution=General&amp;support-tab=home#support)-supportteamet för att beställa PPL:en. Senare kan du använda PPL-hjälpen (medföljer biblioteket) för att konfigurera och använda PPL-filen.
+  PPL finns för Java™ och C++ i 32- och 64-bitarsversioner. Det finns också som ett OSGi-paket för AEM Forms på OSGi. C++ PPL kan kompileras med Microsoft® Visual Studio 2013. Om du har licensierat AEM Forms Document Security-tillägget kan du kontakta [AEM Forms Document Security](https://experienceleague.adobe.com/sv?support-solution=General&support-tab=home#support)-supportteamet för att beställa PPL:en. Senare kan du använda PPL-hjälpen (medföljer biblioteket) för att konfigurera och använda PPL-filen.
 
 ### Visa eller redigera skyddade dokument {#view-or-edit-protected-documents}
 

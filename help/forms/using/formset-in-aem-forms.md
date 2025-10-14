@@ -74,7 +74,7 @@ Så här skapar du en formuläruppsättning:
 
    Dessutom kan författaren välja att ta bort ett formulär från formuläruppsättningen med ikonen Ta bort i det högra hörnet av varje rad eller lägga till en annan uppsättning formulär med ikonen **+** i verktygsfältet. Den här ikonen **+** dirigerar användaren tillbaka till föregående steg i guiden som användes för att välja formulär. De befintliga markeringarna behålls och eventuella ytterligare markeringar som görs måste läggas till i formuläruppsättningen med hjälp av ikonen Lägg till i formuläruppsättning på den sidan.
 
-   ![Formuläruppsättning: Konfigurera formulär ](assets/createformset2.png)
+   ![Formuläruppsättning: Konfigurera formulär &#x200B;](assets/createformset2.png)
 
    >[!NOTE]
    >

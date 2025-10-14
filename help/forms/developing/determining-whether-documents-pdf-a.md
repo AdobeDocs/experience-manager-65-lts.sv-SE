@@ -173,7 +173,7 @@ Kontrollera om ett PDF-dokument är PDF/A-kompatibelt med Java (Assembler Servic
 
 **Se även**
 
-[Snabbstart (SOAP-läge): Avgör om ett dokument är PDF/A-kompatibelt med Java API ](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (SOAP-läge)
+[Snabbstart (SOAP-läge): Avgör om ett dokument är PDF/A-kompatibelt med Java API &#x200B;](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (SOAP-läge)
 
 [Inkludera AEM Forms Java-biblioteksfiler](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -90,7 +90,7 @@ Om du använder ett fristående installationsprogram för AEM Forms Designer utf
 
 1. Innan du installerar **AEM Forms Designer6.5.16.0** måste användare avinstallera tidigare versioner.
 1. Hämta och installera [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) från AEM formulärversionssida.
-1. När installationen av **AEM Forms Designer6.5.15.0** har slutförts hämtar och installerar du [ AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) genom att dubbelklicka på den hämtade installationsfilen.
+1. När installationen av **AEM Forms Designer6.5.15.0** har slutförts hämtar och installerar du [&#x200B; AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) genom att dubbelklicka på den hämtade installationsfilen.
 
 +++
 

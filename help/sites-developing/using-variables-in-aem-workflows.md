@@ -19,8 +19,8 @@ En variabel i en arbetsflödesmodell är ett sätt att lagra ett värde baserat 
 I AEM arbetsflödesmodeller kan du
 
 * [Skapa en variabel](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable) för en datatyp baserat på den informationstyp som du vill lagra i den.
-* [Ange ett värde för variabeln ](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable) med hjälp av arbetsflödessteget Ange variabel.
-* [Använd variabeln ](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) i arbetsflödesstegen ELLER Dela och Gå till AEM så att du kan definiera ett uttryck för att fatta beslut om routning. Du kan också använda variabler i alla steg i AEM Forms Workflow.
+* [Ange ett värde för variabeln &#x200B;](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable) med hjälp av arbetsflödessteget Ange variabel.
+* [Använd variabeln &#x200B;](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) i arbetsflödesstegen ELLER Dela och Gå till AEM så att du kan definiera ett uttryck för att fatta beslut om routning. Du kan också använda variabler i alla steg i AEM Forms Workflow.
 
 Variabler är ett tillägg till gränssnittet [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). Du kan använda [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) i ECMAScript för att komma åt metadata som sparats med variabler.
 
@@ -231,7 +231,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Redigera en variabel {#edit-a-variable}
 
 1. På sidan Redigera arbetsflöde väljer du ikonen Variabler som är tillgänglig i arbetsflödesmodellens sidokikon. I avsnittet Variabler i den vänstra rutan visas alla befintliga variabler.
-1. Välj ikonen ![Redigera som indikeras av en pennsymbol.Ikonen ](assets/edit.png) (Redigera) bredvid variabelnamnet som du vill redigera.
+1. Välj ikonen ![Redigera som indikeras av en pennsymbol.Ikonen &#x200B;](assets/edit.png) (Redigera) bredvid variabelnamnet som du vill redigera.
 1. Redigera variabelinformationen och välj ikonen ![Spara som markeras med en bock.](assets/Done_Icon.png) om du vill spara ändringarna. Du kan inte redigera fälten **[!UICONTROL Name]** och **[!UICONTROL Type]** för en variabel.
 
 ## Ta bort en variabel {#delete-a-variable}

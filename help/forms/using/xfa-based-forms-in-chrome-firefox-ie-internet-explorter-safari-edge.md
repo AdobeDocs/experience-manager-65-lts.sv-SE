@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Många av de senaste webbläsarversionerna har ett eget begränsat stöd för XFA-baserade PDF forms. Även om dessa webbläsare kan öppna XFA-baserade PDF forms är de tillgängliga funktionerna begränsade. Om du inte kan öppna eller skicka ett XFA-baserat PDF-formulär i en modern webbläsare använder du någon av följande metoder:
 
-* Använd [Adobe® Acrobat®](https://www.adobe.com/acrobat.html) eller [Adobe® Adobe® Reader® ](https://get.adobe.com/reader/) version 8 eller senare för att öppna och skicka XFA-baserad PDF forms.
+* Använd [Adobe® Acrobat®](https://www.adobe.com/acrobat.html) eller [Adobe® Adobe® Reader® &#x200B;](https://get.adobe.com/reader/) version 8 eller senare för att öppna och skicka XFA-baserad PDF forms.
 * I Acrobat och Reader kan du konfigurera så att PDF-filer öppnas i skyddat läge i Microsoft® Windows®, vilket förhindrar att XFA-baserade PDF forms öppnas. Kontrollera att Protected View-läget i Acrobat eller Reader är inaktiverat. Mer information finns i [Skyddad vy (endast Windows)](https://helpx.adobe.com/in/reader/using/protected-mode-windows.html).
 * (För Forms-utvecklare) Adobe Experience Manager Forms erbjuder även support för:
 

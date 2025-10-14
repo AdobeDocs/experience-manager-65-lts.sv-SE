@@ -36,7 +36,7 @@ AEM Forms-åtgärder kan utföras med AEM Forms starkt typbestämda API och ansl
 
 ## Snabbstart (SOAP-läge): Ange säkerhetskopieringsläge med Java™ API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-Följande Java™-kodexempel försätts i säkerhetskopieringsläge med en unik etikett i två timmar. När säkerhetskopieringstiden har gått ut eller om säkerhetskopieringsläget uttryckligen har avslutats, återgår Forms Server till att rensa filer från den globala dokumentlagringen. (Se [Läge för säkerhetskopiering på Forms-servern ](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server) aktiveras.)
+Följande Java™-kodexempel försätts i säkerhetskopieringsläge med en unik etikett i två timmar. När säkerhetskopieringstiden har gått ut eller om säkerhetskopieringsläget uttryckligen har avslutats, återgår Forms Server till att rensa filer från den globala dokumentlagringen. (Se [Läge för säkerhetskopiering på Forms-servern &#x200B;](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server) aktiveras.)
 
 ```java
  /*

@@ -46,7 +46,7 @@ Webbplatsen körs på Adobe Experience Manager (AEM) och använder AEM [!DNL For
 
 * Konfigurera en [AEM-författarinstans](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=sv-SE#author-and-publish-installs)
 * Installera [AEM Forms-tillägget](../../forms/using/installing-configuring-aem-forms-osgi.md) på författarinstansen.
-* Hämta JDBC-databasdrivrutin (JAR-fil) från databasprovidern. Exemplen i självstudien är baserade på databasen [!DNL MySQL] och använder databasdrivrutinen [!DNL Oracle's] [MySQL JDBC ](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Hämta JDBC-databasdrivrutin (JAR-fil) från databasprovidern. Exemplen i självstudien är baserade på databasen [!DNL MySQL] och använder databasdrivrutinen [!DNL Oracle's] [MySQL JDBC &#x200B;](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 * Konfigurera en databas som innehåller kunddata med fälten som visas nedan. En databas behövs inte för att skapa ett anpassningsbart formulär. I den här självstudien används en databas för att visa formulärdatamodell och beständighetsfunktioner i AEM [!DNL Forms].
 

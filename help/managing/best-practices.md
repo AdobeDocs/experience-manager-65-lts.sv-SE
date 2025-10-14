@@ -239,7 +239,7 @@ Att planera utvecklingsarbetet är avgörande för att säkerställa att projekt
 
   Innan utveckling bör alla supportprocesser som krävs för att driftsätta, frisläppa, testa och rapportera problem fastställas.
 
-  Se även [Adobe supportportal](https://experienceleague.adobe.com/sv?support-solution=General&amp;support-tab=home#support).
+  Se även [Adobe supportportal](https://experienceleague.adobe.com/sv?support-solution=General&support-tab=home#support).
 
 ### Planering och drift {#operations-planning-and-operations}
 

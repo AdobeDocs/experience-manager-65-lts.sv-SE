@@ -24,7 +24,7 @@ Automatisera översättning av sidinnehåll, resurser och användargenererat inn
 
 1. [Anslut AEM till översättningstjänstleverantören](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) och [skapa konfigurationer för översättningsintegreringsramverk](/help/sites-administering/tc-tic.md).
 1. [Koppla sidorna på din språkinställning](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) till översättningstjänsten och ramverkskonfigurationerna.
-1. [Identifiera den typ av innehåll ](/help/sites-administering/tc-rules.md) som ska översättas.
+1. [Identifiera den typ av innehåll &#x200B;](/help/sites-administering/tc-rules.md) som ska översättas.
 1. [Förbered innehållet för översättning](/help/sites-administering/tc-prep.md) genom att skapa språkinställningen och skapa rotsidorna för språkkopior.
 1. [Skapa översättningsprojekt](/help/sites-administering/tc-manage.md) för att samla in innehållet som ska översättas och förbereda översättningsprocessen.
 1. Använd översättningsprojekten för att [hantera innehållsöversättningsprocessen](/help/sites-administering/tc-manage.md).

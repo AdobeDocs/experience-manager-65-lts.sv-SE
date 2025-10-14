@@ -24,7 +24,7 @@ ht-degree: 0%
 <div class="preview">
 
 Adobe har släppt ett [fullständigt installationsprogram](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) med AEM 6.5 Forms Service Pack 18 (6.5.18.0) på JEE tillsammans med patch-installationsprogrammen. Det fullständiga installationsprogrammet har stöd för nya plattformar medan korrigeringsprogrammets installationsprogram endast innehåller felkorrigeringar.
-Om du gör en ny installation eller planerar att använda den senaste programvaran för din AEM 6.5 Forms i JEE-miljö rekommenderar Adobe att du använder [AEM 6.5.18.0 Forms i JEE med det fullständiga installationsprogrammet ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) som släpptes den 31 augusti 2023 i stället för AEM 6.5 Forms installationsprogram som släpptes den 8 april 2019 eller AEM 6.5.12 Forms mars Installer som släpptes den 3 2022
+Om du gör en ny installation eller planerar att använda den senaste programvaran för din AEM 6.5 Forms i JEE-miljö rekommenderar Adobe att du använder [AEM 6.5.18.0 Forms i JEE med det fullständiga installationsprogrammet &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) som släpptes den 31 augusti 2023 i stället för AEM 6.5 Forms installationsprogram som släpptes den 8 april 2019 eller AEM 6.5.12 Forms mars Installer som släpptes den 3 2022
 
 </div>
 

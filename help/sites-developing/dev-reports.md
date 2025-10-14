@@ -86,7 +86,7 @@ Rapportsidan är:
 
 ### Rapportbas {#report-base}
 
-[`reportbase`-komponenten ](#report-base-component) utgör grunden för alla rapporter eftersom den:
+[`reportbase`-komponenten &#x200B;](#report-base-component) utgör grunden för alla rapporter eftersom den:
 
 * Bevarar definitionen av [frågan](#the-query-and-data-retrieval) som levererar den underliggande resultatuppsättningen med data.
 
@@ -235,7 +235,7 @@ Varje rapporttyp kräver en behållarkomponent som härletts från `/libs/cq/rep
 Den här komponenten fungerar som en behållare för rapporten som helhet och ger information om:
 
 * [frågedefinitionen](#query-definition).
-* En [ (valfri) dialogruta ](#configuration-dialog) för att konfigurera rapporten.
+* En [&#x200B; (valfri) dialogruta &#x200B;](#configuration-dialog) för att konfigurera rapporten.
 * Alla [diagram](#chart-definitions) som är integrerade med rapporten.
 
 ```
@@ -770,7 +770,7 @@ N:definitions
 
 #### Förbehandling - Sök och ersätt mönster {#preprocessing-find-and-replace-patterns}
 
-För förbearbetning kan du ange en `pattern` (definierad som ett [ reguljärt uttryck ](https://en.wikipedia.org/wiki/Regular_expression) eller regex) som finns och sedan ersätts med mönstret `replace`:
+För förbearbetning kan du ange en `pattern` (definierad som ett [&#x200B; reguljärt uttryck &#x200B;](https://en.wikipedia.org/wiki/Regular_expression) eller regex) som finns och sedan ersätts med mönstret `replace`:
 
 * `pattern`
 

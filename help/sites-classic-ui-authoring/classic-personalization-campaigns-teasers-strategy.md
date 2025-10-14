@@ -31,7 +31,7 @@ Kampanjerna använder ofta teasers som en mekanism för att locka ett visst segm
 Teaser inom AEM består av flera delar:
 
 * **Teaser-sidor** lagras under rätt kampanjsida och innehåller definitioner för de Teaser-stycken som är tillgängliga för varje specifik kampanj. De här definitionerna används när de teaserskiktade styckena visas, inklusive innehållsvariationer, det segment som ska användas för att markera en variant och förstärkningsfaktor.
-* **Teaser-komponenten** är tillgänglig direkt och gör att du kan skapa en instans av ditt specifika teaser-stycke på en innehållssida. Du kan dra laserkomponenten från sidosparken och sedan ange din laserdefinition för att skapa ett eget teaser-stycke. **Obs!** Teaser-komponenten är nu inaktuell i AEM 6.2. Använd i stället komponenten [ Target ](/help/sites-authoring/content-targeting-touch.md) .
+* **Teaser-komponenten** är tillgänglig direkt och gör att du kan skapa en instans av ditt specifika teaser-stycke på en innehållssida. Du kan dra laserkomponenten från sidosparken och sedan ange din laserdefinition för att skapa ett eget teaser-stycke. **Obs!** Teaser-komponenten är nu inaktuell i AEM 6.2. Använd i stället komponenten [&#x200B; Target &#x200B;](/help/sites-authoring/content-targeting-touch.md) .
 * **Teaser paragraphs** är faktiska instanser av teaser på en innehållssida. Dessa locka fram ett segment av besökare till innehåll som fokuserar på deras intressen.
 * Sidor där kampanjinnehållet är inriktat på ett specifikt besökarsegment. Vanligtvis leder de smalare styckena besökaren till sådana sidor.
 

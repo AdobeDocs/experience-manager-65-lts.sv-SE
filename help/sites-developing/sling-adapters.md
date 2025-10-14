@@ -76,7 +76,7 @@ Det finns olika sätt att implementera `Adaptable.adaptTo()`:
 
 * En kombination av båda.
 
-I det första fallet kan Java™-dokumenten ange vad `adaptTo-targets` är möjligt. Detta är dock ofta inte möjligt för vissa underklasser, t.ex. JCR-baserade resurser. I det senare fallet är implementeringar av `AdapterFactory` vanligtvis en del av de privata klasserna i ett paket och exponeras därför inte i ett klient-API och inte heller listas i Java™-dokument. Teoretiskt sett skulle det vara möjligt att komma åt alla `AdapterFactory`-implementeringar från [ OSGi](/help/sites-deploying/configuring-osgi.md)-tjänstmiljön och titta på deras&quot;adaptable&quot; (sources and target)-konfigurationer, men inte att mappa dem till varandra. I slutändan beror detta på den interna logiken, som måste dokumenteras. Därför refererar vi till detta.
+I det första fallet kan Java™-dokumenten ange vad `adaptTo-targets` är möjligt. Detta är dock ofta inte möjligt för vissa underklasser, t.ex. JCR-baserade resurser. I det senare fallet är implementeringar av `AdapterFactory` vanligtvis en del av de privata klasserna i ett paket och exponeras därför inte i ett klient-API och inte heller listas i Java™-dokument. Teoretiskt sett skulle det vara möjligt att komma åt alla `AdapterFactory`-implementeringar från [&#x200B; OSGi](/help/sites-deploying/configuring-osgi.md)-tjänstmiljön och titta på deras&quot;adaptable&quot; (sources and target)-konfigurationer, men inte att mappa dem till varandra. I slutändan beror detta på den interna logiken, som måste dokumenteras. Därför refererar vi till detta.
 
 ## Referens {#reference}
 

@@ -147,7 +147,7 @@ Gör följande för att konfigurera MySQL-databasen:
 
       * **Transaktionsisolering**: Ange värdet **READ_COMMTED**.
 
-   Lämna övriga egenskaper med standardvärdena [för ](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) och välj **Spara**.
+   Lämna övriga egenskaper med standardvärdena [för &#x200B;](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) och välj **Spara**.
 
    En konfiguration som liknar följande skapas.
 

@@ -46,7 +46,7 @@ Mer information om redigerbara externa SPA:er i AEM finns i artikeln [Redigera e
 
 ## Begränsningar {#limitations}
 
-* RemotePage-komponenten förväntar sig att implementeringen tillhandahåller ett tillgångsmanifest som den [ som finns här.](https://github.com/shellscape/webpack-manifest-plugin) RemotePage-komponenten har bara testats för att fungera med React Framework (och Next.js via komponenten remote-page-next) och stöder därför inte fjärrinläsning av program från andra ramverk, som Angular.
+* RemotePage-komponenten förväntar sig att implementeringen tillhandahåller ett tillgångsmanifest som den [&#x200B; som finns här.](https://github.com/shellscape/webpack-manifest-plugin) RemotePage-komponenten har bara testats för att fungera med React Framework (och Next.js via komponenten remote-page-next) och stöder därför inte fjärrinläsning av program från andra ramverk, som Angular.
 * Intern CSS som är definierad i programmets HTML-rotfil och infogad CSS på DOM-rotnoden är inte tillgänglig vid fjärråtergivning i AEM.
 
 ## Teknisk information {#technical-details}

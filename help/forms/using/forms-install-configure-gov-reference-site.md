@@ -246,7 +246,7 @@ Det här avsnittet innehåller information och instruktioner om konfigurationen 
 
    1. **Tjänstrot:**, till exempel, `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **Autentiseringstyp:** OAuth 2.0
-   1. **Autentiseringsinställningar** (se [Konfigurationsinställningar för MS® Dynamics ](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) för att samla in den här informationen):
+   1. **Autentiseringsinställningar** (se [Konfigurationsinställningar för MS® Dynamics &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) för att samla in den här informationen):
 
       1. Klient-ID - även kallat program-ID
       1. Klienthemlighet

@@ -50,7 +50,7 @@ Maskinöversättningstjänsten översätter omedelbart ditt innehåll i adaptiv 
 
 [Dokumentinställningar](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
-1. [Anpassa profileringsinformationen för postens ](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)-dokument och se till att webbläsarens språkområde är inställt på samma språk som du har lokaliserat det anpassade formuläret till med datorspråket. Webbläsarens språkområde hjälper till att lokalisera varumärkesinformationen i urkunder.
+1. [Anpassa profileringsinformationen för postens &#x200B;](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)-dokument och se till att webbläsarens språkområde är inställt på samma språk som du har lokaliserat det anpassade formuläret till med datorspråket. Webbläsarens språkområde hjälper till att lokalisera varumärkesinformationen i urkunder.
 1. Om du vill visa det lokaliserade postdokumentet väljer du Generera förhandsgranskning. Registerdokumentet PDF skapas och öppnas på en ny flik i webbläsaren.
 
 ## Lokalisera en anpassningsbar form och dess urkunder med mänsklig översättning {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
@@ -65,7 +65,7 @@ Utför följande steg för att lokalisera ett formulär och dess urkunder med pe
 
 1. [Koppla sidorna på din språkinställning](/help/sites-administering/tc-tic.md) till översättningstjänsten och ramverkskonfigurationerna.
 
-1. [Identifiera den typ av innehåll ](/help/sites-administering/tc-rules.md) som ska översättas.
+1. [Identifiera den typ av innehåll &#x200B;](/help/sites-administering/tc-rules.md) som ska översättas.
 
 1. [Förbered innehållet för översättning](/help/sites-administering/tc-prep.md) genom att skapa språkinställningen och skapa rotsidorna för språkkopior.
 

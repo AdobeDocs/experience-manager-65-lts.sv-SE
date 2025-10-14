@@ -145,7 +145,7 @@ Du kan redigera en del direkt när du har skapat den. Du kan även öppna den fr
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Välj [!UICONTROL Template Merge] **[!UICONTROL Merge]** Lägg till resurser![ på sidan ](assets/do-not-localize/assets_add_icon.png).
+1. Välj [!UICONTROL Template Merge] **[!UICONTROL Merge]** Lägg till resurser![&#x200B; på sidan &#x200B;](assets/do-not-localize/assets_add_icon.png).
 
 1. Navigera till platsen för den del av materialet som du vill sammanfoga och markera miniatyrbilderna för den del som du vill sammanfoga.
 

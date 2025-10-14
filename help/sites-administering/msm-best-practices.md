@@ -31,7 +31,7 @@ MSM är ett konfigurerbart ramverk för automatisering av innehållsdistribution
 >
 >Mer information om hur du arbetar med MSM finns i kunskapsbasartiklarna:
 >
->* [Felsökning av MSM-problem och vanliga frågor ](troubleshoot-msm.md)
+>* [Felsökning av MSM-problem och vanliga frågor &#x200B;](troubleshoot-msm.md)
 >
 
 >[!NOTE]
@@ -188,7 +188,7 @@ Därför rekommenderar vi att du *endast* använder `onModify` utlösare om för
 
 Kom ihåg följande:
 
-* Förutom att anpassa utrullningsåtgärder kan MSM även anpassa nodegenskaper som introduceras. Med konfigurationen [MSM OSGi kan du undanta nodtyperna ](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) från att kopieras från källan till live-kopian.
+* Förutom att anpassa utrullningsåtgärder kan MSM även anpassa nodegenskaper som introduceras. Med konfigurationen [MSM OSGi kan du undanta nodtyperna &#x200B;](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) från att kopieras från källan till live-kopian.
 
 ## Ytterligare information {#further-information}
 

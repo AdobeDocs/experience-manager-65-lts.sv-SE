@@ -166,7 +166,7 @@ Omindexering utan band minimerar effekten av omindexering på AEM-instanser som 
 
 Detta tillåter indexdefinitioner för leverans via innehållspaketet, vilket senare resulterar i omindexering genom att omindexeringsflaggan ställs in på `true`. Detta fungerar för mindre uppsättningar där omindexering inte tar lång tid.
 
-Mer information finns i [dokumentationen ](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) för att kontrollera ACS-index.
+Mer information finns i [dokumentationen &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) för att kontrollera ACS-index.
 
 ### Skapa och uppdatera indexdefinitioner på tarMK med oak-run.jar {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 

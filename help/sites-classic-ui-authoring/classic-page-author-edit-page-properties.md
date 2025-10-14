@@ -155,7 +155,7 @@ Egenskaperna fördelas på flera flikar:
 
 * **Personalization**
 
-  Välj ett [varumärke om du vill ange ett omfång för ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+  Välj ett [varumärke om du vill ange ett omfång för &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
 ### Behörigheter {#permissions}
 

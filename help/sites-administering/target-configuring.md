@@ -84,7 +84,7 @@ För att göra det anger du vilken A4T-molnkonfiguration som ska ansluta din Ado
    >När du konfigurerar A4T med AEM kanske du ser att en Configuration-referens saknas. Så här kan du välja analysramverket:
    >
    >1. Navigera till **Verktyg** > **Allmänt** > **CRXDE Lite**.
-   >1. Navigera till dialogrutan [A4T Analytics Configuration ](#a4t-analytics-config-dialog) (se nedan)
+   >1. Navigera till dialogrutan [A4T Analytics Configuration &#x200B;](#a4t-analytics-config-dialog) (se nedan)
    >1. Ange egenskapen **disable** till **false**.
    >1. Klicka på **Spara alla**.
 

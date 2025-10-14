@@ -469,7 +469,7 @@ Ange start- och slutdatumintervallet som du vill ha videodata för och välj sed
 
 Om du använder ett visningsprogram som inte är installerat från Dynamic Media, eller om du har skapat en anpassad visningsförinställning baserad på ett videoredigeringsprogram som är klart att användas, krävs inga ytterligare steg för att visa videorapporter. Om du har skapat ett eget videovisningsprogram baserat på SDK-API:t för HTML5 Viewer ska du följa de här stegen för att se till att videovisningsprogrammet skickar spårningshändelser till videorapporter för dynamiska media.
 
-Använd [referenshandboken för Adobe Dynamic Media Viewer](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources) och [HTML5 Viewer SDK ](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) för att skapa egna videovisningsprogram.
+Använd [referenshandboken för Adobe Dynamic Media Viewer](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources) och [HTML5 Viewer SDK &#x200B;](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) för att skapa egna videovisningsprogram.
 
 **Så här visar du videorapporter baserade på ett videovisningsprogram som du har skapat med Dynamic Media HTML5 Viewer SDK:**
 
@@ -809,7 +809,7 @@ Mer information om hur du använder JSON-funktionen i en URL finns i [Servera st
 
    Kontrollera att filen du skapar följer standarden WebVTT (Web Video Text Tracks). Bildtextens filnamnstillägg är `.vtt`. Du kan läsa mer om bildtextstandarden WebVTT.
 
-   Se [WebVTT: Textspår för webbvideo ](https://w3c.github.io/webvtt/).
+   Se [WebVTT: Textspår för webbvideo &#x200B;](https://w3c.github.io/webvtt/).
 
    Det finns många webbplatser som innehåller både kostnadsfria och premiumverktyg och tjänster som du kan använda för att skapa WebVTT-bildtexter/bildtextfiler utanför Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
@@ -886,7 +886,7 @@ I exemplet ovan är `Chapter 1` referensidentifieraren och valfri. Referenstiden
 
 Eftersom du använder ett videovisningsprogram för HTML5 bör du kontrollera att den kapitelfil du skapar följer standarden WebVTT (Web Video Text Tracks). Kapitelfiltillägget är `.vtt`. Du kan läsa mer om bildtextstandarden WebVTT.
 
-Se [WebVTT: Textspår för webbvideo ](https://w3c.github.io/webvtt/)
+Se [WebVTT: Textspår för webbvideo &#x200B;](https://w3c.github.io/webvtt/)
 
 **Så här lägger du till kapitelnavigering:**
 

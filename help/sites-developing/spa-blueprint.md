@@ -153,7 +153,7 @@ Behållaren hämtar de underordnade komponenterna dynamiskt från arkivet för b
 
 ### Sida {#page}
 
-Komponenten `Page` utökar komponenten `Container`. En behållare är en komponent som är avsedd att innehålla och återge underordnade komponenter, inklusive underordnade sidor. För att göra det itererar behållaren över modellens `:itemsOrder`-, `:items`- och `:children`-egenskaper. Komponenten `Page` hämtar de underordnade komponenterna dynamiskt från arkivet för biblioteket [ ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` ansvarar för att instansiera underordnade komponenter.
+Komponenten `Page` utökar komponenten `Container`. En behållare är en komponent som är avsedd att innehålla och återge underordnade komponenter, inklusive underordnade sidor. För att göra det itererar behållaren över modellens `:itemsOrder`-, `:items`- och `:children`-egenskaper. Komponenten `Page` hämtar de underordnade komponenterna dynamiskt från arkivet för biblioteket [&#x200B; ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` ansvarar för att instansiera underordnade komponenter.
 
 ### Responsivt rutnät {#responsive-grid}
 

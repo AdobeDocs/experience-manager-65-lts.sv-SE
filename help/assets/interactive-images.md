@@ -31,7 +31,7 @@ Se hur interaktiva bilder fungerar på webbsidan ovan genom att gå till följan
 
 ## Se hur interaktiva bildbanderoller skapas {#watch-how-interactive-image-banners-are-created}
 
-Spela upp en genomgång om [hur interaktiva bildbanderoller skapas](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minuter och 33 sekunder). Du får också lära dig hur du förhandsgranskar, redigerar och levererar interaktiva bildbanderoller.
+Spela upp en genomgång om [hur interaktiva bildbanderoller skapas](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner) (10 minuter och 33 sekunder). Du får också lära dig hur du förhandsgranskar, redigerar och levererar interaktiva bildbanderoller.
 
 ## Snabbstart: Interaktiva bilder {#quick-start-interactive-images}
 
@@ -49,7 +49,7 @@ Interactive Images:
 Om du använder Adobe Experience Manager Sites, Adobe Experience Manager e-handel eller båda är det här steget inte nödvändigt.
 
 1. **(Valfritt) Skapa en förinställning för Interactive Image Viewer** - Anpassa den grafiska bild som används för att representera aktiveringspunkter. Det är inte nödvändigt att skapa en egen förinställning för Interactive Image Viewer om du tänker använda den färdiga Interactive Image Viewer-förinställningen `Shoppable_Banner` i stället.
-Se [ (Valfritt) Skapa en förinställning för Interactive Image Viewer ](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
+Se [&#x200B; (Valfritt) Skapa en förinställning för Interactive Image Viewer &#x200B;](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
 1. **Överför en bildbanderoll** - Överför bildbanderoller som du vill göra interaktiva.
 Se [Överför en bildbanderoll](#uploading-an-image-banner).
@@ -122,10 +122,10 @@ Titta på följande exempel på QuickView-URL:er och deras resulterande hotspot-
     <td><p>En SKU, hittades i frågesträngen.</p> </td>
     <td><p>De inspelade URL:erna för snabbvyn är bland annat följande:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>Den enda variabeldelen i URL:en är värdet på strängparametern productId= och det är tydligt ett SKU-värde. Därför behöver dina aktiveringspunkter bara SKU-fält med värden som <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -141,9 +141,9 @@ Titta på följande exempel på QuickView-URL:er och deras resulterande hotspot-
     <td><p>SKU och kategori-ID i frågesträngen.</p> </td>
     <td><p>De inspelade URL:erna för snabbvyn är bland annat följande:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>I det här fallet finns det två olika delar i URL:en. SKU:n lagras i parametern <code>prodId</code> och kategori-ID:t <code></code> lagras i parametern <code>category=</code>.</p> <p>Därför är hotspot-definitionerna par. Det vill säga ett SKU-värde och en extra variabel som kallas <code>categoryId</code>. De resulterande paren är följande:</p>
     <ul>
       <li><p>SKU är <strong><code>305466</code></strong> och <code>categoryId</code> är <code>1100004</code>.</p> </li>
@@ -240,7 +240,7 @@ Alternativen Ångra och Gör om, nära det övre högra hörnet på sidan, stöd
 
 När du är klar med att skapa en interaktiv bild kan du använda Förhandsgranska för att se hur den interaktiva bilden ser ut för kunderna.
 
-Se [ (Valfritt) Förhandsvisa interaktiva bilder ](#optional-previewing-interactive-images).
+Se [&#x200B; (Valfritt) Förhandsvisa interaktiva bilder &#x200B;](#optional-previewing-interactive-images).
 
 >[!NOTE]
 >

@@ -29,8 +29,8 @@ En variabel i en arbetsflödesmodell är ett sätt att lagra ett värde baserat 
 I AEM arbetsflödesmodeller kan du
 
 * [Skapa en variabel](../../forms/using/variable-in-aem-workflows.md#create-a-variable) för en datatyp baserat på den informationstyp som du vill lagra i den.
-* [Ange ett värde för variabeln ](../../forms/using/variable-in-aem-workflows.md#set-a-variable) med hjälp av arbetsflödessteget Ange variabel.
-* [Använd variabeln ](../../forms/using/variable-in-aem-workflows.md#use-a-variable) i alla AEM Forms-arbetsflödessteg för att hämta det lagrade värdet och i stegen ELLER Dela och Gå till för att definiera ett routningsuttryck.
+* [Ange ett värde för variabeln &#x200B;](../../forms/using/variable-in-aem-workflows.md#set-a-variable) med hjälp av arbetsflödessteget Ange variabel.
+* [Använd variabeln &#x200B;](../../forms/using/variable-in-aem-workflows.md#use-a-variable) i alla AEM Forms-arbetsflödessteg för att hämta det lagrade värdet och i stegen ELLER Dela och Gå till för att definiera ett routningsuttryck.
 
 Variabler är ett tillägg till det befintliga [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) -gränssnittet. Du kan använda [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) i ECMAScript för att komma åt metadata som sparats med variabler.
 

@@ -178,7 +178,7 @@ Som standard visas taggen `titles` i sidegenskaperna på sidspråket. Dialogruta
 
 Som standard visas taggen `titles` enligt sidspråket i dialogrutan Sidegenskaper.
 
-I allmänhet hämtas taggens språk från sidspråket om sidspråket är tillgängligt. När [`tag`-widgeten ](/help/sites-developing/building.md#tagging-on-the-client-side) används i andra fall (till exempel i formulär eller i dialogrutor) beror taggspråket på sammanhanget.
+I allmänhet hämtas taggens språk från sidspråket om sidspråket är tillgängligt. När [`tag`-widgeten &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) används i andra fall (till exempel i formulär eller i dialogrutor) beror taggspråket på sammanhanget.
 
 >[!NOTE]
 >

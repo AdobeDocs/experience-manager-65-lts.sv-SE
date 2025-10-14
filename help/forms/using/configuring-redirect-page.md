@@ -46,4 +46,4 @@ Formulärförfattare kan använda följande parametrar som skickas till sidan Ta
 
 * **Skicka till Forms-arbetsflöde**: Utdataparametrar som returneras från formulärarbetsflöden skickas.
 
-* **Skicka till REST-slutpunkt**: Parametrar som lagts till för mappning mellan fältparametrar skickas. Parametrarna `status` och `owner` skickas inte i den här sändningsåtgärden. Mer information finns i [Konfigurera åtgärden Skicka till REST-slutpunkt ](../../forms/using/configuring-submit-actions.md).
+* **Skicka till REST-slutpunkt**: Parametrar som lagts till för mappning mellan fältparametrar skickas. Parametrarna `status` och `owner` skickas inte i den här sändningsåtgärden. Mer information finns i [Konfigurera åtgärden Skicka till REST-slutpunkt &#x200B;](../../forms/using/configuring-submit-actions.md).

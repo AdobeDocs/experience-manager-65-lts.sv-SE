@@ -109,7 +109,7 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
    * widget_write
    * workflow_read
 
-   Stegvis information om hur du konfigurerar OAuth-inställningar för ett [!DNL Adobe Sign]-program och hämtar nycklarna finns i [Konfigurera autentiseringsinställningar för programmets ](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) utvecklardokumentation.
+   Stegvis information om hur du konfigurerar OAuth-inställningar för ett [!DNL Adobe Sign]-program och hämtar nycklarna finns i [Konfigurera autentiseringsinställningar för programmets &#x200B;](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) utvecklardokumentation.
 
    ![OAuth-konfiguration](assets/oauthconfig_new.png)
 

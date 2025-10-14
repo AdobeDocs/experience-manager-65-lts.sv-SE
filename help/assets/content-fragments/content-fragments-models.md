@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Modeller för innehållsfragment {#content-fragment-models}
 
-Content Fragment Models i AEM definierar innehållsstrukturen för dina [innehållsfragment, ](/help/assets/content-fragments/content-fragments.md) som en grund för ditt headless-innehåll.
+Content Fragment Models i AEM definierar innehållsstrukturen för dina [innehållsfragment, &#x200B;](/help/assets/content-fragments/content-fragments.md) som en grund för ditt headless-innehåll.
 
 Om du vill använda modeller för innehållsfragment kan du:
 

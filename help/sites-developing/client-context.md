@@ -381,7 +381,7 @@ Sessionsarkiv är inte tillgängliga förrän de har lästs in och initierats me
 * Svarstider för XHR-begäranden
 * Dynamiska ändringar i sessionsarkivet
 
-Använd [CQ_Analytics.ClientContextUtils](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextutils) -objektets [ onStoreRegistered](/help/sites-developing/ccjsapi.md#onstoreregistered-storename-callback)- och [onStoreInitialized](/help/sites-developing/ccjsapi.md#onstoreinitialized-storename-callback-delay) -metoder för att komma åt sessionsarkiv endast när de är tillgängliga. Med dessa metoder kan du registrera händelseavlyssnare som reagerar på sessionens registrerings- och initieringshändelser.
+Använd [CQ_Analytics.ClientContextUtils](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextutils) -objektets [&#x200B; onStoreRegistered](/help/sites-developing/ccjsapi.md#onstoreregistered-storename-callback)- och [onStoreInitialized](/help/sites-developing/ccjsapi.md#onstoreinitialized-storename-callback-delay) -metoder för att komma åt sessionsarkiv endast när de är tillgängliga. Med dessa metoder kan du registrera händelseavlyssnare som reagerar på sessionens registrerings- och initieringshändelser.
 
 >[!CAUTION]
 >

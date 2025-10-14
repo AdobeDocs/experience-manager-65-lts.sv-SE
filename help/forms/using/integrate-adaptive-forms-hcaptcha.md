@@ -60,13 +60,13 @@ Så här integrerar du AEM Forms med tjänsten Captcha®:
    1. Välj en konfigurationsbehållare, skapad eller uppdaterad, enligt beskrivningen i föregående avsnitt. Välj **[!UICONTROL Create]**.
 
       ![Configuration Captcha®](assets/config-hcaptcha.png)
-   1. Ange **[!UICONTROL Title]**, <!--**[!UICONTROL Name]**--> **[!UICONTROL Site Key]** och **[!UICONTROL Secret Key]** för hCaptcha®-tjänsten [ som hämtats i Förutsättning](#prerequisite).
+   1. Ange **[!UICONTROL Title]**, <!--**[!UICONTROL Name]**--> **[!UICONTROL Site Key]** och **[!UICONTROL Secret Key]** för hCaptcha®-tjänsten [&#x200B; som hämtats i Förutsättning](#prerequisite).
    1. Klicka på **[!UICONTROL Create]**.
 
       ![Konfigurera Cloud Service för att ansluta din AEM Forms-miljö till Captcha®](assets/create-hcaptcha-config.png)
 
    >[!NOTE]
-   > Användarna behöver inte ändra [Verifierings-URL:en för klientsidan ](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) och [Verifierings-URL:en för serversidan](https://docs.hcaptcha.com/#verify-the-user-response-server-side) eftersom de redan är förfyllda för hCaptcha®-validering.
+   > Användarna behöver inte ändra [Verifierings-URL:en för klientsidan &#x200B;](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) och [Verifierings-URL:en för serversidan](https://docs.hcaptcha.com/#verify-the-user-response-server-side) eftersom de redan är förfyllda för hCaptcha®-validering.
 
    När hCAPTCHA-tjänsten har konfigurerats kan den användas i ditt adaptiva formulär.
 

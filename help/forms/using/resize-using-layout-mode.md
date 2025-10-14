@@ -50,7 +50,7 @@ Välj **Layout** i listrutan som visas högst upp i det adaptiva formulärredige
    * **[!UICONTROL Revert breakpoint layout]**: Ångra alla ändringar av storleksändring och använd standardlayout på komponenten.
    * **[!UICONTROL Float to new line]**: Skift komponenten till nästa rad om det finns flera komponenter på samma rad.
 
-   Du kan också använda alternativet **[!UICONTROL Revert breakpoint layout]** ( ![ Återställ brytpunkt ](assets/reverttopreviouslypublishedversion.png)) på panelnivå för att ångra alla ändringar av storleksändring.
+   Du kan också använda alternativet **[!UICONTROL Revert breakpoint layout]** ( ![&#x200B; Återställ brytpunkt &#x200B;](assets/reverttopreviouslypublishedversion.png)) på panelnivå för att ångra alla ändringar av storleksändring.
 
    >[!NOTE]
    >

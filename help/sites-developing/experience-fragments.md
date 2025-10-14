@@ -132,7 +132,7 @@ Detta gör att användare kan skapa upplevelsefragment i /content/experience-fra
 
 [Utveckla komponenter](/help/sites-developing/components.md) för användning med/i Experience Fragments följer standardrutiner.
 
-Den enda ytterligare konfigurationen är att se till att komponenterna är [tillåtna i mallen, vilket uppnås med innehållsprincipen ](/help/sites-developing/page-templates-editable.md#content-policies).
+Den enda ytterligare konfigurationen är att se till att komponenterna är [tillåtna i mallen, vilket uppnås med innehållsprincipen &#x200B;](/help/sites-developing/page-templates-editable.md#content-policies).
 
 ## Experience Fragment Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
 

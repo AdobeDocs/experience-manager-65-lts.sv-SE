@@ -192,7 +192,7 @@ Se till exempel:
 >Se:
 >
 >* AEM Gems-sessionen på [Anpassa dialogfält](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=sv-SE).
->* den relaterade exempelkoden som beskrivs i [Kodexempel - Anpassa dialogrutefält ](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
+>* den relaterade exempelkoden som beskrivs i [Kodexempel - Anpassa dialogrutefält &#x200B;](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
 #### Skapa ett nytt fält {#creating-a-new-field}
@@ -203,7 +203,7 @@ Om du vill skapa en widget som ska användas i en komponentdialogruta för det b
 
 >[!NOTE]
 >
->Mer information om GRE-gränssnittet finns i [dokumentationen för GRÄNSSNITTET ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Mer information om GRE-gränssnittet finns i [dokumentationen för GRÄNSSNITTET &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Om du ser dialogrutan som en enkel behållare för ett formulärelement kan du även se det primära innehållet i dialogrutan som formulärfält. När du skapar ett formulärfält måste du skapa en resurstyp. Det motsvarar att skapa en komponent. För att du ska få hjälp med den uppgiften erbjuder GRA UI en generisk fältkomponent att ärva från (med `sling:resourceSuperType`):
 
@@ -450,7 +450,7 @@ När du migrerar en komponent som har utformats för användning med det klassis
 
    * Migrera [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code)-kod som använder klassiska gränssnittsspecifika funktioner
    * RTE-plugin, mer information finns i [Konfigurera RTF-redigeraren](/help/sites-administering/rich-text-editor.md).
-   * [Migrera `cq:listener` kod ](#migrating-cq-listener-code) som använder funktioner som är specifika för det klassiska användargränssnittet
+   * [Migrera `cq:listener` kod &#x200B;](#migrating-cq-listener-code) som använder funktioner som är specifika för det klassiska användargränssnittet
 
 * Dialogrutor
 

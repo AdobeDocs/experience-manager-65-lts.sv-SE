@@ -134,7 +134,7 @@ Följande referenser är tillgängliga när du vill länka direkt till ett skrip
 
 Så här definierar du det nya segmentet:
 
-1. När [har öppnat segmenten](/help/sites-administering/segmentation.md#accessing-segments) [navigerar ](#organizing-segments) till mappen där du vill skapa segmentet.
+1. När [har öppnat segmenten](/help/sites-administering/segmentation.md#accessing-segments) [navigerar &#x200B;](#organizing-segments) till mappen där du vill skapa segmentet.
 
 1. Klicka på knappen Skapa och välj **Skapa ContextHub-segment**.
 

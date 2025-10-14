@@ -174,7 +174,7 @@ I följande Java-kodexempel skapas ett PDF-dokument med namnet *Loan.pdf*. Det h
 
 >[!NOTE]
 >
->Innan du kör den här snabbstarten måste du skapa ett AEM Forms-program med namnet Applications/FormsApplication. Skapa en mapp i programmet som heter FormsFolder och placera XDP-filen i mappen. Mer information finns i [Skapa ett PDF-dokument ](/help/forms/developing/creating-document-output-streams.md)*.*
+>Innan du kör den här snabbstarten måste du skapa ett AEM Forms-program med namnet Applications/FormsApplication. Skapa en mapp i programmet som heter FormsFolder och placera XDP-filen i mappen. Mer information finns i [Skapa ett PDF-dokument &#x200B;](/help/forms/developing/creating-document-output-streams.md)*.*
 
 ```java
  /*

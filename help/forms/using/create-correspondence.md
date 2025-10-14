@@ -245,7 +245,7 @@ Du kan göra layout- och innehållsrelaterade ändringar för att se till att br
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   Dialogrutan Utkastbokstavsnamn visas med bokstavskod-ID:t. Du kan också redigera detta ID. Anteckna brev-ID:t och välj sedan **Klar**. Du kan senare använda detta ID för att [läsa in utkastet ](submit-letter-topostprocess.md#reloaddraft) igen.
+   Dialogrutan Utkastbokstavsnamn visas med bokstavskod-ID:t. Du kan också redigera detta ID. Anteckna brev-ID:t och välj sedan **Klar**. Du kan senare använda detta ID för att [läsa in utkastet &#x200B;](submit-letter-topostprocess.md#reloaddraft) igen.
 
 1. Om du vill förhandsgranska bokstaven som en förenklad PDF med exakt layout och sidbrytningar så som den kommer att skickas, väljer du ![förhandsgranska](assets/preview.png)).
 

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Kom igång med AEM Headless {#getting-started}
 
-I den här delen av [AEM Headless Developer Journey ](overview.md) får du lära dig mer om vad som krävs för att du ska kunna komma igång med ditt eget projekt med AEM Headless.
+I den här delen av [AEM Headless Developer Journey &#x200B;](overview.md) får du lära dig mer om vad som krävs för att du ska kunna komma igång med ditt eget projekt med AEM Headless.
 
 ## Story hittills {#story-so-far}
 
@@ -237,7 +237,7 @@ Utvecklare bör tänka på några grundläggande rekommendationer när de planer
 * Använd alltid beständiga frågor i AEM för bästa resultat. Dessa diskuteras senare under resan.
 * GraphQL är deklarativt och följer motto&quot;Fråga efter exakt det du behöver och få exakt det&quot;. Det innebär att du alltid undviker `select *`-typfrågor som du kan skapa i en relationsdatabas när du skapar GraphQL-frågor.
 
-För en [vanlig headless-implementering med AEM ](#level-1) behöver utvecklaren ingen kodkunskap om AEM.
+För en [vanlig headless-implementering med AEM &#x200B;](#level-1) behöver utvecklaren ingen kodkunskap om AEM.
 
 ### Prestandakrav {#performance-requirements}
 
@@ -285,7 +285,7 @@ Vi rekommenderar att du går vidare till nästa del av den Headless-utvecklingsr
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - Den här dokumentationsresan ger dig en bred förståelse för headless-teknik, hur AEM fungerar som headless-innehåll och hur du kan översätta det.
 
 * [AEM Headless-självstudiekurser](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=sv-SE) - Använd de här praktiska självstudiekurserna för att utforska hur du kan använda de olika alternativen för att leverera innehåll till headless-slutpunkter med AEM och välja det som passar dig bäst.
-* [Headless Content Management Using GraphQL API:er](https://experienceleague.adobe.com/sv?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Följ den här kursen för en översikt över GraphQL API:t som implementerats i AEM. Autentisering via AdobeID krävs.
+* [Headless Content Management Using GraphQL API:er](https://experienceleague.adobe.com/sv?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Följ den här kursen för en översikt över GraphQL API:t som implementerats i AEM. Autentisering via AdobeID krävs.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Det här GitHub-projektet innehåller exempelprogram som framhäver AEM GraphQL API:er.
 * [Authoring Concepts](/help/sites-authoring/author.md) - Teknisk dokumentation för redigeringsmiljön i AEM inklusive information om konfiguration för författarpublicering
 * [Publicera sidor](/help/sites-authoring/publishing-pages.md) - teknisk dokumentation för publicering av innehåll på AEM

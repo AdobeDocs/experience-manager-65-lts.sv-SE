@@ -26,7 +26,7 @@ En författare kan stöta på följande funktionella begränsningar när han ell
 
 ### Länkar som inte är aktiva {#links-not-active}
 
-Länkarna är inte aktiva när [en sida ](/help/sites-authoring/editing-content.md) redigeras.
+Länkarna är inte aktiva när [en sida &#x200B;](/help/sites-authoring/editing-content.md) redigeras.
 
 * [Växla till **förhandsgranskningsläget**](/help/sites-authoring/editing-content.md#preview-mode) om du vill navigera med hjälp av länkarna i ditt innehåll.
 

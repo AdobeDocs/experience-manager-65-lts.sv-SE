@@ -133,7 +133,7 @@ Så här uppdaterar du registret så att grundläggande autentisering tillåts �
 
 #### Konfiguration av Windows 8 {#windows-configuration}
 
-För Windows 8 ändrar du registerposten [ enligt beskrivningen för Windows 7 och senare](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Skrivbordsmiljö måste dock aktiveras för att registerposten ska kunna visas innan du utför den här åtgärden.
+För Windows 8 ändrar du registerposten [&#x200B; enligt beskrivningen för Windows 7 och senare](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Skrivbordsmiljö måste dock aktiveras för att registerposten ska kunna visas innan du utför den här åtgärden.
 
 Om du vill aktivera Skrivbordsmiljö öppnar du **Serverhanteraren**, **Funktioner**, **Lägg till funktioner** och sedan **Skrivbordsmiljö**.
 

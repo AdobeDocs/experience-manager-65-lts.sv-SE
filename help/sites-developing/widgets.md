@@ -411,8 +411,8 @@ Den anpassade `multifield`-widgeten (xtype = `ejstcustom`):
 * Utökar widgeten ` [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)`.
 * Har tre fält: `hiddenField` (Textfield), `allowField` (ComboBox) och `otherField` (Textfield)
 * Åsidosätter `CQ.Ext.Component#initComponent` för att lägga till de tre fälten:
-   * `allowField` är ett [ CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) -objekt av typen select. optionsProvider är en konfiguration av Selection-objektet som initieras med optionsProvider-konfigurationen för CustomWidget som definierats i dialogrutan
-   * `otherField` är ett [ CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) -objekt
+   * `allowField` är ett [&#x200B; CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) -objekt av typen select. optionsProvider är en konfiguration av Selection-objektet som initieras med optionsProvider-konfigurationen för CustomWidget som definierats i dialogrutan
+   * `otherField` är ett [&#x200B; CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) -objekt
 * Åsidosätter metoderna `setValue`, `getValue`, och `getRawValue` för [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) för att ange och hämta värdet för CustomWidget med formatet:
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`.
 * Registrerar sig som `ejstcustom`-xtype:
@@ -621,7 +621,7 @@ Den JavaScript-kod som är inbäddad i komponent-jsp:
 
 * Definierar objektet `grid` genom att försöka hämta fönsterkomponenten från sidan:
   `var grid = CQ.Ext.getCmp("<%= node.getName() %>-grid");`
-* Om `grid` inte finns definieras ett [ CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) -objekt ( `gridPanel`) genom att metoden `getGridPanel()` anropas (se nedan). Den här metoden definieras i `defaultgrid.js`.
+* Om `grid` inte finns definieras ett [&#x200B; CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) -objekt ( `gridPanel`) genom att metoden `getGridPanel()` anropas (se nedan). Den här metoden definieras i `defaultgrid.js`.
 * `grid` är ett ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`-objekt baserat på den fördefinierade GridPanel-panelen och visas: `grid.show();`
 * Om det finns `grid` visas den baserat på egenskaperna width, height och dockad som hämtats från databasen.
 

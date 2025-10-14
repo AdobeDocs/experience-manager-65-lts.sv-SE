@@ -146,7 +146,7 @@ Agentgränssnittet har inbyggt stöd för 210 specialtecken. Administratören ka
 
 ### Dokumentfragment {#document-fragments}
 
-![ ](do-not-localize/contentoptionsdocfragments.png)
+![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
 
 * **Upp- och nedpilar**: pilar som flyttar dokumentfragment uppåt eller nedåt i interaktiv kommunikation.
 * **Ta bort**: Ta bort dokumentfragmentet från den interaktiva kommunikationen om det tillåts.

@@ -108,7 +108,7 @@ Urbane-temat betonar ett minimalistiskt och funktionellt utseende på ditt formu
 
 I temat U.S. Web Design Standards, som namnet antyder, används teckensnitt och format som beskrivs på webbplatsen Draft U.S. Web Design Standards. Webbstandarden används av federala organisationer för att skapa enhetliga webbupplevelser på statliga webbplatser.
 
-![USA Standardtema för webbdesign ](assets/us-web-standards.png)
+![USA Standardtema för webbdesign &#x200B;](assets/us-web-standards.png)
 
 <!--[Click to enlarge
 

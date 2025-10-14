@@ -78,7 +78,7 @@ Dessutom är kortkommandon samma för alla språk och tangentbordslayouter.
 >
 >AEM kortkommandon kan störa skärmläsare, vissa webbläsarfunktioner och andra tillgänglighetsverktyg.
 >
->Adobe rekommenderar [att AEM kortkommandon ](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) inaktiveras när en skärmläsare används.
+>Adobe rekommenderar [att AEM kortkommandon &#x200B;](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) inaktiveras när en skärmläsare används.
 
 ## Inaktivera kortkommandon {#deactivating-keyboard-shortcuts}
 

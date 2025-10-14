@@ -214,7 +214,7 @@ Den nya utrullningskonfigurationen är sedan tillgänglig för dig när du stäl
    * **Namn**: `cq:trigger`
 
      **Typ**: `String`
-     **Värde**: Utlösaren [som ska användas ](/help/sites-administering/msm-sync.md#rollout-triggers). Välj bland:
+     **Värde**: Utlösaren [som ska användas &#x200B;](/help/sites-administering/msm-sync.md#rollout-triggers). Välj bland:
       * `rollout`
       * `modification`
       * `publish`
@@ -247,7 +247,7 @@ Följ anvisningarna i det här avsnittet för att utveckla en `LiveActionFactory
 
 1. [Skapa maven-projektet](#create-the-maven-project) och importera det till Eclipse.
 1. [Lägg till beroenden](#add-dependencies-to-the-pom-file) i POM-filen.
-1. [Implementera `LiveActionFactory`-gränssnittet ](#implement-liveactionfactory) och distribuera OSGi-paketet.
+1. [Implementera `LiveActionFactory`-gränssnittet &#x200B;](#implement-liveactionfactory) och distribuera OSGi-paketet.
 1. [Skapa utrullningskonfigurationen](#create-the-example-rollout-configuration).
 1. [Skapa live-kopian](#create-the-live-copy).
 

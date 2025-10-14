@@ -59,7 +59,7 @@ Så här kommer du igång snabbt med Spin Sets:
    >
    >Du kan också skapa rotationsuppsättningar automatiskt med hjälp av [förinställningar för gruppuppsättningar](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Viktigt!** Gruppuppsättningar skapas av IPS (Image Production System) som en del av tillgångsintag och är endast tillgängliga i läget Dynamic Media - Scene7.
 
-1. Ställ in [förinställningar för Vyhanteraren ](/help/assets/managing-viewer-presets.md) efter behov.
+1. Ställ in [förinställningar för Vyhanteraren &#x200B;](/help/assets/managing-viewer-presets.md) efter behov.
 
    Administratörer kan skapa eller ändra visningsförinställningar för rotationsuppsättningar. Om du vill visa rotationsuppsättningen med en visningsförinställning markerar du rotationsuppsättningen och väljer **Visningsprogram** i listrutan till vänster.
 

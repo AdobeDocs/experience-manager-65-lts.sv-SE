@@ -51,7 +51,7 @@ En `WorkflowModel` representerar en definition (modell) av ett arbetsflöde. Den
 
 Arbetsflödesmodeller är versionshanterade. När du kör en arbetsflödesinstans används och behålls arbetsflödets körningsmodell, så som den är tillgänglig när arbetsflödet startades.
 
-En körningsmodell [ genereras när **Synkronisering** aktiveras i arbetsflödesmodellredigeraren](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
+En körningsmodell [&#x200B; genereras när **Synkronisering** aktiveras i arbetsflödesmodellredigeraren](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
 
 Redigeringar av arbetsflödesmodellen som inträffar, eller körningsmodeller som genereras, eller båda, *efter*, tillämpas inte på den instansen.
 

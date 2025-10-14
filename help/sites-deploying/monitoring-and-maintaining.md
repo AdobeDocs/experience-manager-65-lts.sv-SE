@@ -284,7 +284,7 @@ Loggnivåerna är följande:
 I vissa fall kanske du vill skapa en anpassad loggfil med en annan loggnivå. Gör följande i databasen:
 
 1. Om den inte finns skapar du en konfigurationsmapp ( `sling:Folder`) för projektet `/apps/<project-name>/config`.
-1. Under `/apps/<project-name>/config` skapar du en nod för den nya [loggningskonfigurationen för Apache Sling ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
+1. Under `/apps/<project-name>/config` skapar du en nod för den nya [loggningskonfigurationen för Apache Sling &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
    * Namn: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
@@ -383,7 +383,7 @@ I vissa fall kanske du vill skapa en anpassad loggfil med en annan loggnivå. G�
    >
    >Om inget explicit skrivprogram är konfigurerat genereras automatiskt ett implicit skrivprogram baserat på standardvärdet.
 
-   Under `/apps/<project-name>/config` skapar du en nod för den nya [konfigurationen för Apache Sling Logging Writer ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
+   Under `/apps/<project-name>/config` skapar du en nod för den nya [konfigurationen för Apache Sling Logging Writer &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
 
    * Namn: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (skrivprogram)
 
@@ -673,7 +673,7 @@ Vissa av dessa verktyg är beroende av operativsystemet.
 
 Den här filen registrerar grundläggande information om alla förfrågningar som görs till AEM. Därigenom kan värdefulla slutsatser dras.
 
-`request.log` erbjuder ett inbyggt sätt att se hur lång tid det tar att begära. I utvecklingssyfte är det användbart att `tail -f` `request.log` och hålla utkik efter långsamma svarstider. Om du vill analysera ett större `request.log` rekommenderar Adobe [användning av `rlog.jar`, vilket gör att du kan sortera och filtrera efter svarstider ](#using-rlog-jar-to-find-requests-with-long-duration-times).
+`request.log` erbjuder ett inbyggt sätt att se hur lång tid det tar att begära. I utvecklingssyfte är det användbart att `tail -f` `request.log` och hålla utkik efter långsamma svarstider. Om du vill analysera ett större `request.log` rekommenderar Adobe [användning av `rlog.jar`, vilket gör att du kan sortera och filtrera efter svarstider &#x200B;](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
 Adobe rekommenderar att du isolerar de &quot;långsamma&quot; sidorna från `request.log` och sedan justerar dem individuellt för att få bättre prestanda. Inkludera prestandamått per komponent eller använd ett prestandaprofileringsverktyg som ` [yourkit](https://www.yourkit.com/)`.
 

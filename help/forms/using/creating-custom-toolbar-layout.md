@@ -30,7 +30,7 @@ Exempellayout för verktygsfältet
 
 Adaptiva formulär har en uppsättning färdiga layouter:
 
-![Verktygsfältslayouter är tillgängliga direkt ](assets/toolbar1.png)
+![Verktygsfältslayouter är tillgängliga direkt &#x200B;](assets/toolbar1.png)
 
 Verktygsfältslayouter som finns färdiga
 

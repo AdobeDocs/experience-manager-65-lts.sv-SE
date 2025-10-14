@@ -416,7 +416,7 @@ Vissa visningsprogramförinställningar har exklusiva inställningar som kan på
 
 Se [Om du vill skapa en förinställning för Interactive Viewer](#special-considerations-for-creating-an-interactive-viewer-preset) bör du tänka på detta.
 
-Se [Specialöverväganden för att skapa en visningsförinställning för Carousel Banner ](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
+Se [Specialöverväganden för att skapa en visningsförinställning för Carousel Banner &#x200B;](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
 
 **Så här skapar du en visningsförinställning:**
 

@@ -207,7 +207,7 @@ Du skapar en **adaptiv mall** och använder temat för mallen. Du kan sedan anv�
 
 När du har skapat ett adaptivt formulärtema utför du följande steg för att använda det här temat i en adaptiv form:
 
-1. Om du vill ta med temat som skapats i [ för att skapa ett anpassat formulärtema ](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) skapar du en anpassad sida av typen `cq:Component`.
+1. Om du vill ta med temat som skapats i [&#x200B; för att skapa ett anpassat formulärtema &#x200B;](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) skapar du en anpassad sida av typen `cq:Component`.
 
    Exempel: `/apps/myAfCustomizations/myAfPages/forestPage`
 

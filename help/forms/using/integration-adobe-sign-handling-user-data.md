@@ -32,4 +32,4 @@ Användardata samlas in i avtalet men sparas inte i någon av tjänsttabellerna.
 
 I [!DNL Adobe Sign] finns ett webbprogram som gör att deltagare kan söka efter avtal och vid behov ta bort dem. Mer information finns i [Adobe Sign - funktion: Ta bort användarinformation](https://helpx.adobe.com/se/sign/help/adobesign_gdpr_user_deletion.html).
 
-Avtalsdata för adaptiva formulär som har konfigurerats att använda Forms Portal-åtgärden för att skicka sparas också i Forms Portal-datalagret. Information om hur du får åtkomst till och tar bort data från Forms Portal-datalagret finns i [Forms Portal | Hantera användardata ](/help/forms/using/forms-portal-handling-user-data.md).
+Avtalsdata för adaptiva formulär som har konfigurerats att använda Forms Portal-åtgärden för att skicka sparas också i Forms Portal-datalagret. Information om hur du får åtkomst till och tar bort data från Forms Portal-datalagret finns i [Forms Portal | Hantera användardata &#x200B;](/help/forms/using/forms-portal-handling-user-data.md).

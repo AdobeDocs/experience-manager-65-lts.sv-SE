@@ -143,7 +143,7 @@ Med AEM uppdaterat och konfigurerat kan du skapa en lokal universell redigerings
 
 ### Uppdatera Dispatcher {#update-dispatcher}
 
-Om AEM är konfigurerat och en lokal Universal Editor-tjänst körs måste du tillåta en omvänd proxy för den nya tjänsten [ i dispatchern.](https://experienceleague.adobe.com/sv/docs/experience-manager-dispatcher/using/dispatcher)
+Om AEM är konfigurerat och en lokal Universal Editor-tjänst körs måste du tillåta en omvänd proxy för den nya tjänsten [&#x200B; i dispatchern.](https://experienceleague.adobe.com/sv/docs/experience-manager-dispatcher/using/dispatcher)
 
 1. Justera värdfilen för författarinstansen så att den innehåller en omvänd proxy.
 
@@ -156,7 +156,7 @@ Om AEM är konfigurerat och en lokal Universal Editor-tjänst körs måste du ti
 
    >[!NOTE]
    >
-   >8080 är standardporten. Om du ändrade detta med parametern `UES_PORT` i [din `.env`-fil ](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) måste du justera portvärdet här i enlighet med detta.
+   >8080 är standardporten. Om du ändrade detta med parametern `UES_PORT` i [din `.env`-fil &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) måste du justera portvärdet här i enlighet med detta.
 
 1. Starta om Apache.
 

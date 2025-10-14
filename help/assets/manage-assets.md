@@ -57,7 +57,7 @@ Du kan överföra olika typer av resurser (inklusive bilder, PDF-filer, RAW-file
 
 >[!NOTE]
 >
->I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av resurser 2 GB eller mindre. Information om hur du konfigurerar överföring av resurser som är större än 2 GB upp till 15 GB finns i [ (Valfritt) Konfigurera dynamiska media - Scene7-läge för överföring av resurser som är större än 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+>I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av resurser 2 GB eller mindre. Information om hur du konfigurerar överföring av resurser som är större än 2 GB upp till 15 GB finns i [&#x200B; (Valfritt) Konfigurera dynamiska media - Scene7-läge för överföring av resurser som är större än 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!IMPORTANT]
 >
@@ -166,7 +166,7 @@ Med Dynamic Media kan du batchöverföra resurser via FTP-servern. Om du tänker
 
 >[!NOTE]
 >
->I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av resurser 2 GB eller mindre. Information om hur du konfigurerar överföring av resurser som är större än 2 GB upp till 15 GB finns i [ (Valfritt) Konfigurera dynamiska media - Scene7-läge för överföring av resurser som är större än 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+>I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av resurser 2 GB eller mindre. Information om hur du konfigurerar överföring av resurser som är större än 2 GB upp till 15 GB finns i [&#x200B; (Valfritt) Konfigurera dynamiska media - Scene7-läge för överföring av resurser som är större än 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!NOTE]
 >
@@ -691,7 +691,7 @@ Med redigeringsverktygen i gränssnittet [!DNL Assets] kan du utföra små redig
 
 1. Markera området som ska beskäras och ändra storlek på det eller flytta det på bilden.
 
-1. Använd alternativen i verktygsfältet **[!UICONTROL Undo]** ![Ångra ](assets/do-not-localize/undo.png) och **[!UICONTROL Redo]** ![Gör om ](assets/do-not-localize/redo.png) för att återgå till den obeskurna bilden eller behålla den beskurna bilden.
+1. Använd alternativen i verktygsfältet **[!UICONTROL Undo]** ![Ångra &#x200B;](assets/do-not-localize/undo.png) och **[!UICONTROL Redo]** ![Gör om &#x200B;](assets/do-not-localize/redo.png) för att återgå till den obeskurna bilden eller behålla den beskurna bilden.
 1. Klicka på lämpligt **[!UICONTROL Rotate]**-alternativ för att rotera bilden medsols eller motsols.
 
    ![Roteringsalternativ medsols och motsols](assets/do-not-localize/rotate-options.png)
@@ -771,7 +771,7 @@ Videoanteckningar stöds bara i webbläsare med HTML5-kompatibla videoformat. Vi
 
    Ange önskad färg i rutan **[!UICONTROL Annotation Color]** och klicka sedan på **[!UICONTROL Accept]**.
 
-   ![Välj anteckningsfärg i Användarinställningar för att ange färg för användarens persona ](assets/Annotation-color.png)
+   ![Välj anteckningsfärg i Användarinställningar för att ange färg för användarens persona &#x200B;](assets/Annotation-color.png)
 
 >[!NOTE]
 >

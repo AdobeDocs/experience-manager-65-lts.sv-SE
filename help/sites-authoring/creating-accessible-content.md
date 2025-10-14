@@ -483,7 +483,7 @@ Kontrollera att det finns information om färgen, oavsett var den används för 
 
 Kontrollera till exempel att information som anges av färg också finns explicit i texten.
 
-Om färg används som en referenspunkt för att ge information bör du ange en extra visuell referenspunkt, som att ändra formatet (till exempel fet, kursiv) eller teckensnitt. Detta hjälper personer med nedsatt syn eller som har nedsatt färgseende att identifiera informationen. Den kan dock inte användas helt eftersom den inte hjälper personer som inte kan se sidan alls. Därför är det (ibland) användbart att tillhandahålla dold text eller att använda programmatiska lösningar, som t.ex. [ARIA (Accessible Rich Internet Applications) ](https://www.w3.org/WAI/standards-guidelines/aria/), för att förmedla informationen till icke-synkade användare.
+Om färg används som en referenspunkt för att ge information bör du ange en extra visuell referenspunkt, som att ändra formatet (till exempel fet, kursiv) eller teckensnitt. Detta hjälper personer med nedsatt syn eller som har nedsatt färgseende att identifiera informationen. Den kan dock inte användas helt eftersom den inte hjälper personer som inte kan se sidan alls. Därför är det (ibland) användbart att tillhandahålla dold text eller att använda programmatiska lösningar, som t.ex. [ARIA (Accessible Rich Internet Applications) &#x200B;](https://www.w3.org/WAI/standards-guidelines/aria/), för att förmedla informationen till icke-synkade användare.
 
 #### Mer information - Färganvändning (1.4.1) {#more-information-use-of-color}
 
@@ -1135,7 +1135,7 @@ Om det finns två komponenter på en webbsida som båda har samma funktioner som
 
 #### Hur man uppfyller kraven - konsekvent identifiering (3.2.4) {#how-to-meet-consistent-identification}
 
-Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas ](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification).
+Följ riktlinjerna under [Så här uppfyller du kriterierna för att lyckas &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification).
 
 #### Mer information - Konsekvent identifiering (3.2.4) {#more-information-consistent-identification}
 

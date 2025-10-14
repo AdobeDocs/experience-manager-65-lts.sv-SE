@@ -97,13 +97,13 @@ Grundfunktionerna i textredigeraren aktiveras, eller inaktiveras, av värdet fö
 
 I följande tabell visas de aktuella plugin-programmen:
 
-* Plugin-ID:n med en länk till API-dokumentationen. ID används som nodnamn när [ett plugin-program ](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin) aktiveras.
+* Plugin-ID:n med en länk till API-dokumentationen. ID används som nodnamn när [ett plugin-program &#x200B;](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin) aktiveras.
 * Tillåtna värden för egenskapen `features`.
 * En beskrivning av de funktioner som tillhandahålls av plugin-programmet.
 
 | Plug-in-ID | funktioner | Beskrivning |
 |--- |--- |--- |
-| redigera | cut copy paste-default paste-plaintext paste-wordhtml | [Klipp ut, kopiera och klistra in ](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| redigera | cut copy paste-default paste-plaintext paste-wordhtml | [Klipp ut, kopiera och klistra in &#x200B;](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | findreplace | sök och ersätt | Sök och ersätt. |
 | format | fet kursiv understrykning | [Grundläggande textformatering](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | image | image | Grundläggande bildstöd (dra från innehåll eller Innehållssökning). Beroende på webbläsaren har stödet olika beteenden för författare |
@@ -384,4 +384,4 @@ Verifiera också att koden och nodstrukturen för implementering av flera fält 
 
 **Konfiguration som är tillgänglig för administratörer är inte tillgänglig för författare**
 
-Om uppdateringarna av gränssnittskonfigurationerna återspeglas för administratörer men inte för författarkonton kontrollerar du att konfigurationsnoden inte har namnet `config`. Använd egenskapen [`configPath` ](/help/sites-developing/components-basics.md#cq-inplaceediting).
+Om uppdateringarna av gränssnittskonfigurationerna återspeglas för administratörer men inte för författarkonton kontrollerar du att konfigurationsnoden inte har namnet `config`. Använd egenskapen [`configPath` &#x200B;](/help/sites-developing/components-basics.md#cq-inplaceediting).

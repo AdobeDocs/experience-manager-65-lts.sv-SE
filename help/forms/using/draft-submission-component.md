@@ -24,7 +24,7 @@ Komponenten Utkast och inskickningar visar alla formulär som är i utkastläge 
 
 Komponenten Utkast och inskickningar har två flikar: Utkast och inskickningar.
 
-Om du vill att ett anpassat formulär ska kunna skickas på fliken Skicka anger du **åtgärden Skicka** till **[Forms Portal-åtgärden ](../../forms/using/configuring-submit-actions.md). Alternativt kan** aktivera alternativet Skicka i Forms Portal. När en användare skickar formuläret läggs formuläret till på fliken Skicka.
+Om du vill att ett anpassat formulär ska kunna skickas på fliken Skicka anger du **åtgärden Skicka** till **[Forms Portal-åtgärden &#x200B;](../../forms/using/configuring-submit-actions.md). Alternativt kan** aktivera alternativet Skicka i Forms Portal. När en användare skickar formuläret läggs formuläret till på fliken Skicka.
 
 Funktionen Utkast är aktiverad direkt. När en användare klickar på **Spara** i ett anpassat formulär läggs formuläret till på fliken Utkast.
 

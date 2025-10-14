@@ -266,7 +266,7 @@ AEM Forms visar metadatamappningar för de formulärtyper som stöds i det här 
 
 1. Alla resurstyper som du klickar på öppnar en lista som innehåller alternativet `extendedmetadata`. Redigera schemat.
 
-1. Markera kryssrutan bredvid `extendedmetadata` och klicka sedan på ikonen Redigera ![ aem6forms_edit](assets/aem6forms_edit.png) som visas i verktygsfältet.
+1. Markera kryssrutan bredvid `extendedmetadata` och klicka sedan på ikonen Redigera ![&#x200B; aem6forms_edit](assets/aem6forms_edit.png) som visas i verktygsfältet.
 
 1. AEM Forms öppnar metadataschredigeraren/formulärbyggaren för den valda resurstypen (i det här fallet adaptiv form).
 

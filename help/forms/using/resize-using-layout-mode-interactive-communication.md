@@ -44,7 +44,7 @@ Välj **Layout** i listrutan som visas högst upp i redigeringsgränssnittet fö
    * **Överordnad:** Markera den överordnade komponenten för en komponent.
    * **Flyt till ny rad:** Skifta komponenten till nästa rad om det finns flera komponenter inom samma rad.
 
-   Du kan ångra alla storleksändringar och använda standardlayout på panelen som innehåller storleksändrade komponenter med alternativet **[!UICONTROL Revert breakpoint layout]** ( ![Återställ brytpunkt ](assets/reverttopreviouslypublishedversion.png)). Markera den överordnade komponenten för den storleksändrade komponenten för att visa alternativet.
+   Du kan ångra alla storleksändringar och använda standardlayout på panelen som innehåller storleksändrade komponenter med alternativet **[!UICONTROL Revert breakpoint layout]** ( ![Återställ brytpunkt &#x200B;](assets/reverttopreviouslypublishedversion.png)). Markera den överordnade komponenten för den storleksändrade komponenten för att visa alternativet.
 
    >[!NOTE]
    >

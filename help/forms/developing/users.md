@@ -543,7 +543,7 @@ Utför följande uppgifter för att programmässigt hantera användare, grupper 
 
 1. Skapa en DirectoryManagerService-klient.
 
-   Skapa ett `DirectoryManagerServiceClient`-objekt med hjälp av dess konstruktor och skicka ett `ServiceClientFactory`-objekt som innehåller anslutningsegenskaper. Mer information finns i [Ange anslutningsegenskaper ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Skapa ett `DirectoryManagerServiceClient`-objekt med hjälp av dess konstruktor och skicka ett `ServiceClientFactory`-objekt som innehåller anslutningsegenskaper. Mer information finns i [Ange anslutningsegenskaper &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Anropa lämpliga användar- eller gruppåtgärder.
 

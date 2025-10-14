@@ -192,7 +192,7 @@ Om XDP-filen innehåller bilder (eller andra resurser som fragment) placerar du 
 
 >[!NOTE]
 >
->En fullständig snabbstart som skapar ett PDF-dokument genom att referera till en XDP-fil i ett Forms-program finns i [Snabbstart (EJB-läge): Skapa ett PDF-dokument baserat på en program-XDP-fil med Java API ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) .
+>En fullständig snabbstart som skapar ett PDF-dokument genom att referera till en XDP-fil i ett Forms-program finns i [Snabbstart (EJB-läge): Skapa ett PDF-dokument baserat på en program-XDP-fil med Java API &#x200B;](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) .
 
 **Hämta resultatet av åtgärden**
 
@@ -244,7 +244,7 @@ Skapa ett PDF-dokument med hjälp av utdata-API (Java):
 
    >[!NOTE]
    >
-   >Du kan inte ange linjärt PDF-alternativ med `RenderOptionsSpec`-objektets `setLinearizedPDF`-metod om PDF-indatadokumentet är certifierat eller digitalt signerat. (Se [Signera PDF-dokument digitalt ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Du kan inte ange linjärt PDF-alternativ med `RenderOptionsSpec`-objektets `setLinearizedPDF`-metod om PDF-indatadokumentet är certifierat eller digitalt signerat. (Se [Signera PDF-dokument digitalt &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Skapa ett PDF-dokument.
 
@@ -261,7 +261,7 @@ Skapa ett PDF-dokument med hjälp av utdata-API (Java):
 
    >[!NOTE]
    >
-   >När du genererar ett PDF-dokument genom att anropa metoden `generatePDFOutput` kan du inte sammanfoga data med ett XFA PDF-formulär som är signerat eller certifierat. (Se [Signera och certifiera dokument digitalt ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >När du genererar ett PDF-dokument genom att anropa metoden `generatePDFOutput` kan du inte sammanfoga data med ett XFA PDF-formulär som är signerat eller certifierat. (Se [Signera och certifiera dokument digitalt &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -269,7 +269,7 @@ Skapa ett PDF-dokument med hjälp av utdata-API (Java):
 
    >[!NOTE]
    >
-   >Du kan också skapa ett PDF-dokument genom att anropa `OutputClient`-objektets `generatePDFOutput2`-metod. (Se [Skicka dokument i innehållstjänster (borttaget) till utdatatjänsten ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Du kan också skapa ett PDF-dokument genom att anropa `OutputClient`-objektets `generatePDFOutput2`-metod. (Se [Skicka dokument i innehållstjänster (borttaget) till utdatatjänsten &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Hämta resultatet av åtgärden.
 
@@ -340,7 +340,7 @@ Skapa ett PDF-dokument med hjälp av Output API (webbtjänsten):
 
    >[!NOTE]
    >
-   >Du kan inte ange linjärt PDF-alternativ med `RenderOptionsSpec`-objektets `linearizedPDF`-medlem om PDF-indatadokumentet är certifierat eller digitalt signerat. (Se [Signera PDF-dokument digitalt ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Du kan inte ange linjärt PDF-alternativ med `RenderOptionsSpec`-objektets `linearizedPDF`-medlem om PDF-indatadokumentet är certifierat eller digitalt signerat. (Se [Signera PDF-dokument digitalt &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Skapa ett PDF-dokument.
 
@@ -358,11 +358,11 @@ Skapa ett PDF-dokument med hjälp av Output API (webbtjänsten):
 
    >[!NOTE]
    >
-   >När du genererar ett PDF-dokument genom att anropa metoden `generatePDFOutput` kan du inte sammanfoga data med ett XFA PDF-formulär som är signerat eller certifierat. (Se [Signera och certifiera dokument digitalt ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >När du genererar ett PDF-dokument genom att anropa metoden `generatePDFOutput` kan du inte sammanfoga data med ett XFA PDF-formulär som är signerat eller certifierat. (Se [Signera och certifiera dokument digitalt &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >Du kan också skapa ett PDF-dokument genom att anropa `OutputClient`-objektets `generatePDFOutput2`-metod. (Se [Skicka dokument i innehållstjänster (borttaget) till utdatatjänsten ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Du kan också skapa ett PDF-dokument genom att anropa `OutputClient`-objektets `generatePDFOutput2`-metod. (Se [Skicka dokument i innehållstjänster (borttaget) till utdatatjänsten &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Hämta resultatet av åtgärden.
 
@@ -835,9 +835,9 @@ Du kan hämta Loan.xdp programmatiskt från AEM Forms-databasen och skicka det t
 
 Du kan skapa en PDF baserad på en XDP-fil i databasen på något av två sätt. Du kan skicka XDP-platsen med referens eller så kan du hämta XDP-filen från databasen programmässigt och skicka den till utdatatjänsten i en XDP-fil.
 
-[Snabbstart (EJB-läge): Skapa ett PDF-dokument baserat på en program-XDP-fil med Java-API:t ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) (visar hur du skickar platsen för XDP-filen med referens).
+[Snabbstart (EJB-läge): Skapa ett PDF-dokument baserat på en program-XDP-fil med Java-API:t &#x200B;](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) (visar hur du skickar platsen för XDP-filen med referens).
 
-[Snabbstart (EJB-läge): Skickar ett dokument i AEM Forms-databasen till utdatatjänsten med Java-API:t ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (visar hur du hämtar XDP-filen programmatiskt från AEM Forms-databasen och skickar den till utdatatjänsten i en `com.adobe.idp.Document`-instans). (I det här avsnittet beskrivs hur du utför den här uppgiften)
+[Snabbstart (EJB-läge): Skickar ett dokument i AEM Forms-databasen till utdatatjänsten med Java-API:t &#x200B;](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (visar hur du hämtar XDP-filen programmatiskt från AEM Forms-databasen och skickar den till utdatatjänsten i en `com.adobe.idp.Document`-instans). (I det här avsnittet beskrivs hur du utför den här uppgiften)
 
 >[!NOTE]
 >

@@ -62,7 +62,7 @@ Eftersom strukturella element är tillgängliga i textredigeraren via alternativ
 
 ## Användning av källredigeringsfunktionen {#use-of-the-source-edit-feature}
 
-I vissa fall måste innehållsförfattare granska och justera HTML källkod som skapats med RTE. En del innehåll som skapats i en textredigerare kan till exempel kräva ytterligare kod för att säkerställa överensstämmelse med WCAG 2.0. Detta kan du göra med alternativet [källredigering](/help/sites-administering/rich-text-editor.md#aboutplugins) i textredigeraren. Du kan ange funktionen [`sourceedit` i `misctools` plugin ](/help/sites-administering/rich-text-editor.md#aboutplugins).
+I vissa fall måste innehållsförfattare granska och justera HTML källkod som skapats med RTE. En del innehåll som skapats i en textredigerare kan till exempel kräva ytterligare kod för att säkerställa överensstämmelse med WCAG 2.0. Detta kan du göra med alternativet [källredigering](/help/sites-administering/rich-text-editor.md#aboutplugins) i textredigeraren. Du kan ange funktionen [`sourceedit` i `misctools` plugin &#x200B;](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >

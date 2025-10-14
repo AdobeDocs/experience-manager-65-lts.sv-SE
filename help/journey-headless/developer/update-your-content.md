@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Så här uppdaterar du innehåll via AEM Assets API:er {#update-your-content}
 
-I den här delen av [AEM Headless Developer Journey ](overview.md) får du lära dig hur du använder REST API för att komma åt och uppdatera innehållet i dina innehållsfragment.
+I den här delen av [AEM Headless Developer Journey &#x200B;](overview.md) får du lära dig hur du använder REST API för att komma åt och uppdatera innehållet i dina innehållsfragment.
 
 ## Story hittills {#story-so-far}
 

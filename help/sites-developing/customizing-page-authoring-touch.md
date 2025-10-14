@@ -257,4 +257,4 @@ Om du vill ha ett anpassat beteende för en sådan aktivering kan du täcka öve
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. Uppdatera [arbetsflödesmodellen](/help/sites-developing/workflows-models.md) och relaterade konfigurationer/skript efter behov.
-1. Ta bort rättigheten till [`replicate`-åtgärden ](/help/sites-administering/security.md#actions) från alla lämpliga användare för alla relevanta sidor. Om du vill att det här arbetsflödet ska aktiveras som en standardåtgärd när någon av användarna försöker publicera (eller replikera) en sida.
+1. Ta bort rättigheten till [`replicate`-åtgärden &#x200B;](/help/sites-administering/security.md#actions) från alla lämpliga användare för alla relevanta sidor. Om du vill att det här arbetsflödet ska aktiveras som en standardåtgärd när någon av användarna försöker publicera (eller replikera) en sida.

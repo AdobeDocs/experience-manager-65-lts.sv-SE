@@ -39,7 +39,7 @@ I det här exemplet har en användare tryckt på eller klickat på ett bildschem
 
 ## Se hur karusellbanners skapas {#watch-how-carousel-banners-are-created}
 
-Spela upp en genomgång om [hur karusellbanderoller skapas](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)&#x200B;(10 minuter och 33 sekunder). Du får också lära dig hur du förhandsgranskar, redigerar och levererar karusellbanderoller.
+Spela upp en genomgång om [hur karusellbanderoller skapas](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)&#x200B;(10 minuter och 33 sekunder). Du får också lära dig hur du förhandsgranskar, redigerar och levererar karusellbanderoller.
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Så här kommer du igång snabbt med Carousel banners:
 
    Lägg till en eller flera hotspot-områden eller bildscheman i en bildbanderoll och koppla dem till en åtgärd som en länk, en snabbvy eller ett Experience Fragment. När du har lagt till aktiveringspunkter eller bildscheman avslutar du den här uppgiften genom att publicera karuselluppsättningen. Med Publicering skapas den inbäddningskod som du kan använda för att kopiera och tillämpa på webbplatsens landningssida.
 
-   Se [(Valfritt) Förhandsgranska karusellbanderoller ](#optional-previewing-carousel-banners) - valfritt. Om du vill kan du visa en representation av karuselluppsättningen och testa dess interaktivitet.
+   Se [(Valfritt) Förhandsgranska karusellbanderoller &#x200B;](#optional-previewing-carousel-banners) - valfritt. Om du vill kan du visa en representation av karuselluppsättningen och testa dess interaktivitet.
 
 1. [Publicera Carousel-banners](#publishing-carousel-banners).
 
@@ -139,10 +139,10 @@ Titta på följande exempel på QuickView-URL:er och deras resulterande hotspot-
    <td>En SKU, hittades i frågesträngen.</td>
    <td><p>De inspelade URL:erna för snabbvyn är bland annat följande:</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>Den enda variabeldelen i URL:en är värdet på frågesträngsparametern <code>productId=</code>, och det är tydligt ett SKU-värde. Därför behöver aktiveringspunkter och bildscheman bara SKU-fält med värden som <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -158,9 +158,9 @@ Titta på följande exempel på QuickView-URL:er och deras resulterande hotspot-
    <td>SKU och kategori-ID i frågesträngen.</td>
    <td><p>De inspelade URL:erna för snabbvyn är bland annat följande:</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>I det här fallet finns det två olika delar i URL:en. SKU:n lagras i parametern <code>prodId</code> och kategori-ID:t lagras i parametern <code>category=</code>.</p> <p>Definitionerna av hotspot/bildschema är par. Det vill säga ett SKU-värde och en extra variabel som kallas <code>categoryId</code>. De resulterande paren är följande:</p>
     <ul>
      <li><p>SKU är <strong><code>305466</code></strong> och <code>categoryId</code> är <code>1100004</code>.</p> </li>
@@ -225,7 +225,7 @@ Mer information om hur du överför bildbanderoller finns i [Överför resurser]
    >
    >Se [Specialöverväganden för Carousel-banners](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) för detaljerade anvisningar och mer information om visningsprogrammet.
 
-   Du kan också förhandsgranska hur karusellbanderollen visas. Se [(Valfritt) Förhandsgranska karusellbanderoller ](#optional-previewing-carousel-banners).
+   Du kan också förhandsgranska hur karusellbanderollen visas. Se [(Valfritt) Förhandsgranska karusellbanderoller &#x200B;](#optional-previewing-carousel-banners).
 
 1. Välj **[!UICONTROL Save]** när du är klar.
 
@@ -247,7 +247,7 @@ Kom ihåg att spara ditt arbete när du lägger till hotspot-områden eller bild
 
 När du är klar med att skapa en karusellbanderoll kan du använda Förhandsgranska för att se hur karusellbanderollen ser ut för kunderna.
 
-Se [(Valfritt) Förhandsgranska karusellbanderoller ](#optional-previewing-carousel-banners).
+Se [(Valfritt) Förhandsgranska karusellbanderoller &#x200B;](#optional-previewing-carousel-banners).
 
 >[!NOTE]
 >

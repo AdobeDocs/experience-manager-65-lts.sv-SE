@@ -54,7 +54,7 @@ Så här skapar du en ExactTarget-konfiguration i molntjänster:
 
    ExactTarget har konfigurerats. Du kan redigera konfigurationen genom att klicka på **Redigera**. Du kan gå till ExactTarget genom att klicka på **Gå till ExactTarget**.
 
-1. AEM har nu en funktion för datatillägg. Du kan importera ExactTarget-datatilläggskolumner. Den kan konfigureras genom att klicka på plustecknet (+) som visas förutom den EXactTarget-konfiguration som skapades. Alla befintliga datatillägg kan väljas i listrutan. Mer information om hur du konfigurerar datatillägg finns i [ExactTarget-dokumentationen](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5).
+1. AEM har nu en funktion för datatillägg. Du kan importera ExactTarget-datatilläggskolumner. Den kan konfigureras genom att klicka på plustecknet (+) som visas förutom den EXactTarget-konfiguration som skapades. Alla befintliga datatillägg kan väljas i listrutan. Mer information om hur du konfigurerar datatillägg finns i [ExactTarget-dokumentationen](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&type=5).
 
    Importerade datatilläggskolumner kan senare användas via komponenten **Text och Personalization**.
 

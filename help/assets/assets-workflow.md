@@ -72,7 +72,7 @@ Så här använder du ett arbetsflöde för en resurs:
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Klicka **[!UICONTROL Actions]** ![nedåt ](assets/do-not-localize/chevron-up-icon.png).
+1. Klicka **[!UICONTROL Actions]** ![nedåt &#x200B;](assets/do-not-localize/chevron-up-icon.png).
 1. Klicka på **[!UICONTROL Start Workflow]**. Välj en arbetsflödesmodell i listan i dialogrutan **[!UICONTROL Start Workflow]**.
 
    ![starta arbetsflöde](assets/start-workflow.png)

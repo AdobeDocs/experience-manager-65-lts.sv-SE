@@ -33,4 +33,4 @@ Så här konfigurerar du referenspunktsfiltertjänsten:
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
-Mer information finns i [OSGI-konfigurationsinställningarna](/help/sites-deploying/osgi-configuration-settings.md) och [ Säkerhetschecklista - Problem med förfalska begäran mellan webbplatser](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery).
+Mer information finns i [OSGI-konfigurationsinställningarna](/help/sites-deploying/osgi-configuration-settings.md) och [&#x200B; Säkerhetschecklista - Problem med förfalska begäran mellan webbplatser](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery).

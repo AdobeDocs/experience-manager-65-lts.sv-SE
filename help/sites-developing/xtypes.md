@@ -74,7 +74,7 @@ Nedan visas de tillgängliga xtyperna i Adobe Experience Manager:
 
   [CQ.wcm.msm.BlueprintStatus](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus)
 
-  Med BlueprintStatus kan du visa och redigera en utkast och dess Live-kopior-relationer. Bläddringen görs via en [CQ.wcm.msm.BlueprintStatus.Tree](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus.Tree), en utgåva via en [ CQ.wcm.msm.BlueprintConfig](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig) och en [ CQ.wcm.msm.LiveCopyProperties](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties).
+  Med BlueprintStatus kan du visa och redigera en utkast och dess Live-kopior-relationer. Bläddringen görs via en [CQ.wcm.msm.BlueprintStatus.Tree](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus.Tree), en utgåva via en [&#x200B; CQ.wcm.msm.BlueprintConfig](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig) och en [&#x200B; CQ.wcm.msm.LiveCopyProperties](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties).
 
 * box
 
@@ -94,7 +94,7 @@ Nedan visas de tillgängliga xtyperna i Adobe Experience Manager:
 
   [CQ.form.BrowseField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.BrowseField)
 
-  **Inaktuellt: Använd [ CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.PathField) i stället**
+  **Inaktuellt: Använd [&#x200B; CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.PathField) i stället**
 
 * bulkeditor
 
@@ -266,7 +266,7 @@ Nedan visas de tillgängliga xtyperna i Adobe Experience Manager:
 
   [CQ.Ext.DataView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.DataView)
 
-  En mekanism för att visa data med anpassade layoutmallar och formatering. DataView använder en [CQ.Ext.XTemplate](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.XTemplate) som sin interna mallmetod och är bunden till en [ CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Store) så att vyn uppdateras automatiskt när data i arkivet ändras så att ändringarna återspeglas.
+  En mekanism för att visa data med anpassade layoutmallar och formatering. DataView använder en [CQ.Ext.XTemplate](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.XTemplate) som sin interna mallmetod och är bunden till en [&#x200B; CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Store) så att vyn uppdateras automatiskt när data i arkivet ändras så att ändringarna återspeglas.
 
 * datafält
 
@@ -308,7 +308,7 @@ Nedan visas de tillgängliga xtyperna i Adobe Experience Manager:
 
   [CQ.Ext.data.DirectStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.DirectStore)
 
-  Liten hjälpklass för att skapa en [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Store) som konfigurerats med en [ CQ.Ext.data.DirectProxy](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) och [ CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader) för att göra det enklare att interagera med en [ CQ.Ext.Direct](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Direct) Server-side [Provider](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.direct.Provider).
+  Liten hjälpklass för att skapa en [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Store) som konfigurerats med en [&#x200B; CQ.Ext.data.DirectProxy](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) och [&#x200B; CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader) för att göra det enklare att interagera med en [&#x200B; CQ.Ext.Direct](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Direct) Server-side [Provider](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.direct.Provider).
 
 * visningsfält
 
@@ -618,7 +618,7 @@ Nedan visas de tillgängliga xtyperna i Adobe Experience Manager:
 
   [CQ.form.PathCompletion](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.PathCompletion)
 
-  **Inaktuellt: Använd [ CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.PathField) i stället**
+  **Inaktuellt: Använd [&#x200B; CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.PathField) i stället**
 
 * pathfield
 
@@ -820,7 +820,7 @@ Nedan visas de tillgängliga xtyperna i Adobe Experience Manager:
 
   [CQ.form.TableEdit](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.TableEdit)
 
-  **Inaktuell: Använd [ CQ.form.TableEdit2](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.TableEdit2) i stället.**
+  **Inaktuell: Använd [&#x200B; CQ.form.TableEdit2](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.TableEdit2) i stället.**
 
 * tableEdit2
 

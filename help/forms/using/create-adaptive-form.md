@@ -150,7 +150,7 @@ Komponenter är byggstenar i en adaptiv form. AEM [!DNL Forms] innehåller mång
     </tbody> 
    </table>
 
-1. Dra en **[!UICONTROL Submit Button]**-komponent till det adaptiva formuläret. Placera den före sidfotskomponenten. Öppna komponentens egenskaper, ändra elementnamn till `address_addition_update_submit`, välj ![ aem_6_3_forms_save](assets/aem_6_3_forms_save.png). Formulärets layout är fullständig och formuläret ser ut så här:
+1. Dra en **[!UICONTROL Submit Button]**-komponent till det adaptiva formuläret. Placera den före sidfotskomponenten. Öppna komponentens egenskaper, ändra elementnamn till `address_addition_update_submit`, välj ![&#x200B; aem_6_3_forms_save](assets/aem_6_3_forms_save.png). Formulärets layout är fullständig och formuläret ser ut så här:
 
    ![adaptive-form-with-all-the-components](assets/adaptive-form-with-all-the-components.png)
 

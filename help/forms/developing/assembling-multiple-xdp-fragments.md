@@ -207,7 +207,7 @@ Sammanställa flera XDP-fragment med Assembler Service API (Java):
 **Se även**
 
 [Sammanställer flera XDP-fragment](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[ Snabbstart (SOAP-läge): Sammanställa flera XDP-fragment med Java API ](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[&#x200B; Snabbstart (SOAP-läge): Sammanställa flera XDP-fragment med Java API &#x200B;](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 [Inkludera AEM Forms Java-biblioteksfiler](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Ange anslutningsegenskaper](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 

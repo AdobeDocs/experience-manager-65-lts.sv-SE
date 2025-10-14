@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Läs om CMS Headless Development {#learn-about}
 
-I den här delen av [AEM Headless Developer Journey ](overview.md) får du lära dig mer om headless-teknik och varför du skulle använda den.
+I den här delen av [AEM Headless Developer Journey &#x200B;](overview.md) får du lära dig mer om headless-teknik och varför du skulle använda den.
 
 ## Syfte {#objective}
 

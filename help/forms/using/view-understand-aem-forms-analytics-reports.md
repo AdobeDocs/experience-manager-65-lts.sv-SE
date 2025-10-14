@@ -126,7 +126,7 @@ I tabellerna Webbläsardistribution, Operativsystemsdistribution och Språkdistr
 
 Om du vill filtrera analysdata ytterligare kan du klicka på en post i någon av tabellerna. Om du till exempel klickar på Google Chrome i tabellen Webbläsardistribution återges rapporten igen med data som är relevanta för Google Chrome webbläsare enligt följande:
 
-![Filter som används på analysrapport - Google Chrome ](assets/filter-1.png)
+![Filter som används på analysrapport - Google Chrome &#x200B;](assets/filter-1.png)
 
 Om du visar panelrapporten när du har använt ett filter visas även panelrapportdata enligt det använda filtret.
 

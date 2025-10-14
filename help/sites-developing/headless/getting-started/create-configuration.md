@@ -24,7 +24,7 @@ När det gäller headless content management i AEM kan du tänka dig en konfigur
 
 >[!NOTE]
 >
->Om du är bekant med [sidmallar i en AEM-implementering i full hög ](/help/sites-authoring/templates.md) är användningen av konfigurationer för hantering av innehållsmodeller likartad.
+>Om du är bekant med [sidmallar i en AEM-implementering i full hög &#x200B;](/help/sites-authoring/templates.md) är användningen av konfigurationer för hantering av innehållsmodeller likartad.
 
 ## Så här skapar du en konfiguration {#how-to-create-a-configuration}
 

@@ -1103,7 +1103,7 @@ Det krävs ett lokalt användarkonto för att köra PDF Generator-tjänsten. Anv
 
 ### Konfigurera timeout-inställningar {#configure-the-time-out-settings}
 
-1. Leta reda på och öppna tjänsten [ i ](http://localhost:4502/system/console/configMgr)AEM konfigurationshanterare **[!UICONTROL Jacorb ORB Provider]**.
+1. Leta reda på och öppna tjänsten [&#x200B; i &#x200B;](http://localhost:4502/system/console/configMgr)AEM konfigurationshanterare **[!UICONTROL Jacorb ORB Provider]**.
 
    Lägg till följande i fältet **[!UICONTROL Custom Properties.name]** och klicka på **[!UICONTROL Save]**. Tidsgränsen för väntande svar (kallas även CORBA-klienttimeout) anges till 600 sekunder.
 
@@ -1156,7 +1156,7 @@ I Microsoft® Windows använder PDF Generator-tjänsten Adobe Acrobat för att k
 
       Acrobat är konfigurerat att köras med PDF Generator-tjänsten.
 
-1. Kör [Systemberedskapsverktyget ](#SRT) för att validera Acrobat-installationen.
+1. Kör [Systemberedskapsverktyget &#x200B;](#SRT) för att validera Acrobat-installationen.
 
 ### (Endast Windows) Konfigurera primär väg för konvertering från HTML till PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
@@ -1343,7 +1343,7 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
 * Kontrollera att 32-bitars [version](/help/sites-deploying/technical-requirements.md) av Microsoft Office som stöds är installerad och att dialogrutorna för att öppna är avbrutna för alla program.
 * Se till att en PDF Generator-användare läggs till i PDF konfigurationsgränssnitt.
-* Kontrollera att PDF Generator-användaren är medlem i en administratörsgrupp och att privilegiet [Ersätt en token ](#grant-the-replace-a-process-level-token-privilege) för processnivå har angetts för användaren.
+* Kontrollera att PDF Generator-användaren är medlem i en administratörsgrupp och att privilegiet [Ersätt en token &#x200B;](#grant-the-replace-a-process-level-token-privilege) för processnivå har angetts för användaren.
 * Se till att användaren är konfigurerad i PDF Generator UI och utför följande åtgärder:
    1. Logga in på Microsoft® Windows med PDF Generator-användare.
    1. Öppna Microsoft® Office- eller OpenOffice-program och avbryt alla dialogrutor.
@@ -1357,7 +1357,7 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
 * Installera den version av OpenOffice som stöds. AEM Forms stöder både 32- och 64-bitarsversioner. När du har installerat öppnar du alla OpenOffice-program, avbryter alla dialogrutor och stänger programmen. Öppna programmen igen och se till att ingen dialogruta visas när du öppnar ett OpenOffice-program.
 
-* Skapa en miljövariabel `OpenOffice_PATH` och ställ in den så att den pekar på OpenOffice-installationen anges i [ console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) - eller dt-profilen (enhetsträd).
+* Skapa en miljövariabel `OpenOffice_PATH` och ställ in den så att den pekar på OpenOffice-installationen anges i [&#x200B; console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) - eller dt-profilen (enhetsträd).
 * Om det uppstår problem när du installerar OpenOffice kontrollerar du att [32-bitars bibliotek](#extrarequirements) som krävs för OpenOffice-installation är tillgängliga.
 
 +++

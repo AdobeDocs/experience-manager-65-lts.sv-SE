@@ -386,7 +386,7 @@ I följande Java™-kodexempel läggs en bevakad mappslutpunkt till i en tjänst
 
 ## QuickStart: Lägga till en e-postslutpunkt med Java™ API {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-I följande Java™-kodexempel läggs en e-postslutpunkt till i en tjänst med namnet *MyApplication/EncryptDocument* t. (Se [Lägga till e-postslutpunkter ](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints) .)
+I följande Java™-kodexempel läggs en e-postslutpunkt till i en tjänst med namnet *MyApplication/EncryptDocument* t. (Se [Lägga till e-postslutpunkter &#x200B;](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints) .)
 
 >[!NOTE]
 >

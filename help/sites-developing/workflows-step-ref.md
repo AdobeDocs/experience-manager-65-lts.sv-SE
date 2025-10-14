@@ -172,7 +172,7 @@ function check(){
 
 ### Simulera en for-slinga med hjälp av regeldefinition {#simulateforloop}
 
-Du kan också simulera en for-slinga med hjälp av Regeldefinition som routningsuttryck. [Skapa en **count**-variabel ](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) med datatypen Long. Använd **Uttryck** som mappningsläge i steget **[Ange variabel](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)** för att ange värdet för variabeln **count** till **count + 1** för varje körning av steget **Ange variabel** .
+Du kan också simulera en for-slinga med hjälp av Regeldefinition som routningsuttryck. [Skapa en **count**-variabel &#x200B;](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) med datatypen Long. Använd **Uttryck** som mappningsläge i steget **[Ange variabel](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)** för att ange värdet för variabeln **count** till **count + 1** för varje körning av steget **Ange variabel** .
 
 ![Simulerar en for-slinga](assets/variable_use_case_count_new.png)
 

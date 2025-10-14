@@ -25,7 +25,7 @@ AEM tillhandahåller en inbyggd koppling för [Microsoft Translator](https://www
 
 Följande procedur skapar en Microsoft Translator-konfiguration.
 
-1. I [navigeringspanelen klickar du ](/help/sites-authoring/basic-handling.md#first-steps) på **Verktyg** > **Molntjänster** > **Översättningsmolntjänster**.
+1. I [navigeringspanelen klickar du &#x200B;](/help/sites-authoring/basic-handling.md#first-steps) på **Verktyg** > **Molntjänster** > **Översättningsmolntjänster**.
 1. Navigera till den plats där du vill skapa konfigurationen. Normalt finns det i platsroten eller så kan det vara en global standardkonfiguration.
 1. Klicka på knappen **Skapa**.
 1. Definiera konfigurationen.

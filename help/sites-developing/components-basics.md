@@ -546,7 +546,7 @@ Konfigurationen är gemensam för det beröringsaktiverade och klassiska använd
 
 Redigeringsbeteendet för en komponent konfigureras genom att en `cq:editConfig`-nod av typen `cq:EditConfig` läggs till under komponentnoden (av typen `cq:Component`) och genom att specifika egenskaper och underordnade noder läggs till. Följande egenskaper och underordnade noder är tillgängliga:
 
-* [`cq:editConfig`-nodegenskaper ](#configuring-with-cq-editconfig-properties):
+* [`cq:editConfig`-nodegenskaper &#x200B;](#configuring-with-cq-editconfig-properties):
 
    * `cq:actions` ( `String array`): definierar de åtgärder som kan utföras på komponenten.
    * `cq:layout` ( `String`): definierar hur komponenten redigeras i det klassiska användargränssnittet.
@@ -558,7 +558,7 @@ Redigeringsbeteendet för en komponent konfigureras genom att en `cq:editConfig`
    * `cq:inherit` ( `Boolean`): definierar om saknade värden ärvs från komponenten som den ärver från.
    * `dialogLayout` (String): definierar hur dialogrutan ska öppnas.
 
-* [`cq:editConfig` underordnade noder ](#configuring-with-cq-editconfig-child-nodes):
+* [`cq:editConfig` underordnade noder &#x200B;](#configuring-with-cq-editconfig-child-nodes):
 
    * `cq:dropTargets` (nodtyp `nt:unstructured`): definierar en lista med släppmål som kan acceptera en släppning från en resurs i innehållssökaren
 

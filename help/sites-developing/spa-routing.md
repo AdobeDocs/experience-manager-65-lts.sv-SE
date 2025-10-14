@@ -38,7 +38,7 @@ En detaljerad beskrivning finns i avsnittet [PageModelManager](/help/sites-devel
 
 ## Manuell kontra automatisk modellroutning {#manual-vs-automatic-model-routing}
 
-`ModelRouter` automatiserar hämtning av fragment av modellen. Men som alla automatiserade verktyg har de begränsningar som behövs. Vid behov kan `ModelRouter` inaktiveras eller konfigureras för att ignorera sökvägar med hjälp av metaegenskaper (se avsnittet Metaegenskaper i [ SPA Page Component ](/help/sites-developing/spa-page-component.md) -dokumentet). Utvecklare på klientsidan kan sedan implementera sitt eget modellroutningslager genom att begära att `PageModelManager` läser in ett givet fragment av modellen med funktionen `getData()`.
+`ModelRouter` automatiserar hämtning av fragment av modellen. Men som alla automatiserade verktyg har de begränsningar som behövs. Vid behov kan `ModelRouter` inaktiveras eller konfigureras för att ignorera sökvägar med hjälp av metaegenskaper (se avsnittet Metaegenskaper i [&#x200B; SPA Page Component &#x200B;](/help/sites-developing/spa-page-component.md) -dokumentet). Utvecklare på klientsidan kan sedan implementera sitt eget modellroutningslager genom att begära att `PageModelManager` läser in ett givet fragment av modellen med funktionen `getData()`.
 
 >[!NOTE]
 >

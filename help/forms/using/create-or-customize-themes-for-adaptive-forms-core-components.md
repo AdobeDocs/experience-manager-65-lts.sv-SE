@@ -62,7 +62,7 @@ AEM Forms 6.5 innehåller följande teman för Core Components based Adaptive Fo
 * [Offentligt tema](https://github.com/adobe/aem-forms-theme-public)
 * [Tillverkningstema](https://github.com/adobe/aem-forms-theme-manufacturing)
 
-Du kan [anpassa något av dessa teman och skapa ett ](#customize-a-theme-core-components)-tema.
+Du kan [anpassa något av dessa teman och skapa ett &#x200B;](#customize-a-theme-core-components)-tema.
 
 ## Anpassa ett tema {#customize-a-theme-core-components-based-adaptive-forms}
 

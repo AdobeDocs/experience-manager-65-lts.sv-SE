@@ -81,7 +81,7 @@ Nu är du redo att sätta igång med din Adobe Headless-resa. Vi rekommenderar a
 Adobe vill dock att du ska lyckas när du börjar med ditt AEM Headless-projekt, oavsett din inlärningsstil. Så tänk på de här två alternativen.
 
 * Om du föredrar att **lära dig mer om headless-koncept och AEM headless-tekniker** bör du fortsätta din AEM-resa så som du rekommenderas i nästa granskning av dokumentet [Så här modellerar du ditt innehåll som AEM Content Models](model-your-content.md) där du får lära dig att modellera din innehållsstruktur i AEM.
-* Om du föredrar att **lära dig genom att göra** kan du gå direkt till självstudiekursen [Komma igång med AEM Headless ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=sv-SE) där du kommer direkt till AEM Headless-utvecklingen genom att implementera ett enkelt projekt för att visa AEM headless-innehåll.
+* Om du föredrar att **lära dig genom att göra** kan du gå direkt till självstudiekursen [Komma igång med AEM Headless &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=sv-SE) där du kommer direkt till AEM Headless-utvecklingen genom att implementera ett enkelt projekt för att visa AEM headless-innehåll.
 
 ## Ytterligare resurser {#additional-resources}
 

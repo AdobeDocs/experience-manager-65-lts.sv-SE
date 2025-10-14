@@ -1247,7 +1247,7 @@ Se [Leverera Dynamic Media Assets](/help/assets/delivering-dynamic-media-assets.
   </tr>
   <tr>
    <td>Kopiera en visningsprogramURL</td>
-   <td><p>I dialogrutan Kopiera URL visas en URL som liknar följande (URL är endast avsedd som exempel):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Där <code>PUBLISHNODE</code> refererar till den vanliga Experience Manager-publiceringsnoden och <code>IMAGESERVICEPUBLISHNODE</code> refererar till bildtjänstens URL.</p> <p>Se även <a href="/help/assets/delivering-dynamic-media-assets.md">Leverera Dynamic Media Assets</a>.</p> </td>
+   <td><p>I dialogrutan Kopiera URL visas en URL som liknar följande (URL är endast avsedd som exempel):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>Där <code>PUBLISHNODE</code> refererar till den vanliga Experience Manager-publiceringsnoden och <code>IMAGESERVICEPUBLISHNODE</code> refererar till bildtjänstens URL.</p> <p>Se även <a href="/help/assets/delivering-dynamic-media-assets.md">Leverera Dynamic Media Assets</a>.</p> </td>
   </tr>
   <tr>
    <td>Kopiera inbäddningskod för ett visningsprogram</td>

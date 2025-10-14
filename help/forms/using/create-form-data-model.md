@@ -90,7 +90,7 @@ Gör följande för att konfigurera din [!DNL MySQL]-databas:
       * **Valideringsfråga:** Ange en SELECT-fråga för SQL för att validera anslutningar från poolen. Frågan måste returnera minst en rad. **Välj till exempel &#42; från kundinformation**.
       * **Transaktionsisolering**: Ange värdet **READ_COMMTED**.
 
-        Lämna övriga egenskaper med standardvärdena [och ](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) och välj **[!UICONTROL Save]**.
+        Lämna övriga egenskaper med standardvärdena [och &#x200B;](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) och välj **[!UICONTROL Save]**.
 
         En konfiguration som liknar följande skapas.
 

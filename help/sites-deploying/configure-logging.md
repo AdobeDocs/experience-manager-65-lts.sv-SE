@@ -136,7 +136,7 @@ Du kan definiera ett eget par för loggare/skrivare:
    1. Ange loggaren.
    1. Konfigurera de andra parametrarna efter behov.
 
-1. Skapa en instans av fabrikskonfigurationen [Konfiguration för Apache Sling Logging Writer ](/help/sites-deploying/osgi-configuration-settings.md).
+1. Skapa en instans av fabrikskonfigurationen [Konfiguration för Apache Sling Logging Writer &#x200B;](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Ange loggfilen - den måste matcha den som har angetts för loggaren.
    1. Konfigurera de andra parametrarna efter behov.

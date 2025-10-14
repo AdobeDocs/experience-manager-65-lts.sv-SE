@@ -27,7 +27,7 @@ Utför följande steg för att konfigurera serversidesloggar:
 
 1. Gå till `https://'[server]:[port]'/system/console/configMgr`. Leta reda på och öppna alternativet *Loggningskonfiguration för parenteser*. En dialogruta visas:
 
-   ![ Dialogrutan Konfiguration av loggningslogg för parenteser ](assets/logconfig.png)
+   ![&#x200B; Dialogrutan Konfiguration av loggningslogg för parenteser &#x200B;](assets/logconfig.png)
 
    Konfigurationsalternativet Loggningslogg för Apace Sling
 

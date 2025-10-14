@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # ContextHub JavaScript API Reference{#contexthub-javascript-api-reference}
 
-ContextHub JavaScript API är tillgängligt för dina skript när [ContextHub-komponenten har lagts till på sidan ](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
+ContextHub JavaScript API är tillgängligt för dina skript när [ContextHub-komponenten har lagts till på sidan &#x200B;](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
 
 ## ContextHub-konstanter {#contexthub-constants}
 
@@ -713,7 +713,7 @@ Avbinder en funktion från en händelse.
 
 * **namn:** Namnet [på den händelse](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) som du avbinder funktionen för.
 
-* **väljare:** Väljaren som identifierar bindningen. (Se parametern `selector` för funktionerna [ on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) och [ once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents)).
+* **väljare:** Väljaren som identifierar bindningen. (Se parametern `selector` för funktionerna [&#x200B; on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) och [&#x200B; once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents)).
 
 **Returnerar**
 
@@ -725,7 +725,7 @@ Bindar en funktion till en händelse. Funktionen anropas varje gång händelsen 
 
 **Parametrar**
 
-* **name:** (String) Namnet [på händelsen ](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) som du binder funktionen till.
+* **name:** (String) Namnet [på händelsen &#x200B;](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) som du binder funktionen till.
 
 * **hanterare:** (Funktion) Funktionen som ska bindas till händelsen.
 * **selector:** (String) En unik identifierare för bindningen. Du behöver väljaren för att identifiera bindningen om du vill använda funktionen `off` för att ta bort bindningen.
@@ -767,7 +767,7 @@ Bindar en funktion till en händelse. Funktionen anropas bara en gång för den 
 
 **Parametrar**
 
-* **name:** (String) Namnet [på händelsen ](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) som du binder funktionen till.
+* **name:** (String) Namnet [på händelsen &#x200B;](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) som du binder funktionen till.
 
 * **hanterare:** (Funktion) Funktionen som ska bindas till händelsen.
 * **selector:** (String) En unik identifierare för bindningen. Du behöver väljaren för att identifiera bindningen om du vill använda funktionen `off` för att ta bort bindningen.

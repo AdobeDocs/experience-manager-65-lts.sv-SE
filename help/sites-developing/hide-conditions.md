@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Använda Dölj villkor {#using-hide-conditions}
 
-Dölj villkor kan användas för att avgöra om en komponentresurs återges eller inte. Ett exempel på detta är när en mallskapare konfigurerar listkomponenten [Core Component ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=sv-SE) i [mallredigeraren](/help/sites-authoring/templates.md) och bestämmer sig för att inaktivera alternativen för att skapa listan baserat på underordnade sidor. Om du inaktiverar det här alternativet i designdialogrutan ställs en egenskap in så att det dolda villkoret utvärderas när listkomponenten återges och alternativet att visa underordnade sidor inte visas.
+Dölj villkor kan användas för att avgöra om en komponentresurs återges eller inte. Ett exempel på detta är när en mallskapare konfigurerar listkomponenten [Core Component &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=sv-SE) i [mallredigeraren](/help/sites-authoring/templates.md) och bestämmer sig för att inaktivera alternativen för att skapa listan baserat på underordnade sidor. Om du inaktiverar det här alternativet i designdialogrutan ställs en egenskap in så att det dolda villkoret utvärderas när listkomponenten återges och alternativet att visa underordnade sidor inte visas.
 
 ## Ökning {#overview}
 
@@ -77,7 +77,7 @@ Om en mallskapare väljer att inaktivera alternativet med underordnade sidor, st
 
 1. Värdet för `disableChildren` hämtas från designkonfigurationen och uttrycket `${cqDesign.disableChildren}` utvärderas till `false`, vilket innebär att alternativet inte återges som en del av komponenten.
 
-   Du kan visa det dolda uttrycket som värdet för egenskapen `granite:hide` [ i GitHub](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
+   Du kan visa det dolda uttrycket som värdet för egenskapen `granite:hide` [&#x200B; i GitHub](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
 
 1. Alternativet **Underordnade sidor** återges inte längre för sidförfattaren när listkomponenten används.
 

@@ -196,7 +196,7 @@ Skillnaderna mellan GRUI och ExtJS (används för det klassiska användargränss
 
 ### Granite UI Foundation Components {#granite-ui-foundation-components}
 
-[Grund-gränssnittskomponenterna ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) innehåller de grundläggande byggstenarna som behövs för att skapa ett användargränssnitt. De omfattar bland annat följande:
+[Grund-gränssnittskomponenterna &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) innehåller de grundläggande byggstenarna som behövs för att skapa ett användargränssnitt. De omfattar bland annat följande:
 
 * Knapp
 * Hyperlänk

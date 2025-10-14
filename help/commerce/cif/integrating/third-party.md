@@ -51,7 +51,7 @@ Rekommendationen för prestandakrävande komponenter på klientsidan är att kom
 
 Adobe rekommenderar att du använder [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html) för integreringslagret. Det ingår i CIF-tillägget för tredje part. Eftersom det fungerar med en mikrotjänstliknande metod är det lämpligt att integrera flera lösningar på ett enkelt sätt.
 
-Referensimplementeringen [av ](https://github.com/adobe/commerce-cif-graphql-integration-reference) är en bra utgångspunkt för att skapa integreringen med din e-handelslösning. Även om det har stöd för GraphQL kan det även integreras med andra typer av API som REST.
+Referensimplementeringen [av &#x200B;](https://github.com/adobe/commerce-cif-graphql-integration-reference) är en bra utgångspunkt för att skapa integreringen med din e-handelslösning. Även om det har stöd för GraphQL kan det även integreras med andra typer av API som REST.
 
 Det här integreringslagret behövs inte om ett lager från tredje part är tillgängligt (till exempel Mulesoft) eller om integreringen byggs ovanpå tredjepartslösningen.
 

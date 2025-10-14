@@ -68,7 +68,7 @@ Implementeringen av PrincipalSetPolicy som används för att representera CUG:er
 * CUG-principer kan kapslas, en kapslad CUG startar en ny CUG utan att ärva huvuduppsättningen i CUG-filen för överordnad.
 * Om utvärdering är aktiverat ärvs effekten av principen till hela underträdet ned till nästa kapslade CUG.
 
-Dessa CUG-principer distribueras till en AEM-instans via en separat autentiseringsmodul som kallas ekaauktoriseringskug. Den här modulen har en egen åtkomststyrningshantering och behörighetsutvärdering. Med andra ord, standardkonfigurationen för AEM levereras en konfiguration för Oak innehållsdatabas som kombinerar flera auktoriseringsmekanismer. Mer information finns på [den här sidan i dokumentationen för Apache Oak ](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
+Dessa CUG-principer distribueras till en AEM-instans via en separat autentiseringsmodul som kallas ekaauktoriseringskug. Den här modulen har en egen åtkomststyrningshantering och behörighetsutvärdering. Med andra ord, standardkonfigurationen för AEM levereras en konfiguration för Oak innehållsdatabas som kombinerar flera auktoriseringsmekanismer. Mer information finns på [den här sidan i dokumentationen för Apache Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
 
 I den här sammansatta konfigurationen ersätter inte en ny CUG det befintliga åtkomstkontrollsinnehållet som är kopplat till målnoden. Det är i stället ett tillägg som också kan tas bort senare utan att den ursprungliga åtkomstkontrollen påverkas. Som standard är det en åtkomstkontrollista i AEM.
 

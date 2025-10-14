@@ -447,7 +447,7 @@ Lägg till följande i den tillagda klientbiblioteksmappen:
 
    ![XML för anpassat funktionsfilter](assets/custom-function-filterxml.png)
 
-1. Bygg den nya klientbiblioteksmappen i din AEM-miljö genom att följa stegen i avsnittet [Skapa ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
+1. Bygg den nya klientbiblioteksmappen i din AEM-miljö genom att följa stegen i avsnittet [Skapa &#x200B;](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
 
 ## Skapa och driftsätt anpassade funktioner via CRXDE{#create-add-custom-function}
 
@@ -658,7 +658,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 Låt oss lära oss hur anpassade funktioner använder fält och globala objekt med hjälp av ett `Contact Us`-formulär med olika användningar.
 
-![Kontakta oss ](/help/forms/using/assets/contact-us-form.png)
+![Kontakta oss &#x200B;](/help/forms/using/assets/contact-us-form.png)
 
 #### **Använd skiftläge**: Visa en panel med regeln `SetProperty`
 
@@ -981,7 +981,7 @@ Om de anpassade funktionerna ändras blir cachningen ogiltig och den tolkas.
 
 ## Felsökning {#troubleshooting}
 
-* Användaren måste se till att kärnkomponenten och specifikationsversionen för [är inställd på den senaste versionen ](https://github.com/adobe/aem-core-forms-components/tree/release/650). För befintliga AEM-projekt och -formulär finns det dock ytterligare steg att utföra:
+* Användaren måste se till att kärnkomponenten och specifikationsversionen för [är inställd på den senaste versionen &#x200B;](https://github.com/adobe/aem-core-forms-components/tree/release/650). För befintliga AEM-projekt och -formulär finns det dock ytterligare steg att utföra:
 
    * För AEM-projektet bör användaren ersätta alla instanser av `submitForm('custom:submitSuccess', 'custom:submitError')` med `submitForm()` och distribuera projektet.
 

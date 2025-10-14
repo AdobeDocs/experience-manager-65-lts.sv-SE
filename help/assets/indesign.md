@@ -20,7 +20,7 @@ ht-degree: 0%
 * En proxyarbetare som definierar och hanterar en viss uppgift.
 Dessa kan omfatta en mängd olika uppgifter, till exempel att använda en [!DNL InDesign Server] för att bearbeta filer.
 
-Om du vill överföra filer till [!DNL Experience Manager Assets] som du har skapat med [!DNL Adobe InDesign] används en proxy. Detta använder en proxyarbetare för att kommunicera med [!DNL Adobe InDesign Server], där [ skript](https://helpx.adobe.com/se/indesign/using/scripting.html) körs för att extrahera metadata och generera olika återgivningar för [!DNL Experience Manager Assets]. Proxyarbetaren aktiverar tvåvägskommunikation mellan [!DNL InDesign Server] och [!DNL Experience Manager]-instanserna i en molnkonfiguration.
+Om du vill överföra filer till [!DNL Experience Manager Assets] som du har skapat med [!DNL Adobe InDesign] används en proxy. Detta använder en proxyarbetare för att kommunicera med [!DNL Adobe InDesign Server], där [&#x200B; skript](https://helpx.adobe.com/se/indesign/using/scripting.html) körs för att extrahera metadata och generera olika återgivningar för [!DNL Experience Manager Assets]. Proxyarbetaren aktiverar tvåvägskommunikation mellan [!DNL InDesign Server] och [!DNL Experience Manager]-instanserna i en molnkonfiguration.
 
 >[!NOTE]
 >

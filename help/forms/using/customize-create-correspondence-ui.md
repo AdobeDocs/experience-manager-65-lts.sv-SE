@@ -24,7 +24,7 @@ Med Correspondence Management kan ni ommärka sin lösningsmall för att få ett
 
 Du kan ändra logotypen i användargränssnittet Create Correspondence med din organisations logotyp.
 
-![Den anpassade ikonen i gränssnittet Skapa korrespondens ](assets/0_1_introscreenshot.png)
+![Den anpassade ikonen i gränssnittet Skapa korrespondens &#x200B;](assets/0_1_introscreenshot.png)
 
 Den anpassade ikonen i gränssnittet Skapa korrespondens
 

@@ -74,7 +74,7 @@ Sidan kan innehålla antingen ett enda innehållsfragment eller flera komponente
 
   >[!NOTE]
   >
-  >Även om det inte är en standardimplementering stöds [flera väljare, ](json-exporter-components.md#multiple-selectors) men `model` måste vara den första.
+  >Även om det inte är en standardimplementering stöds [flera väljare, &#x200B;](json-exporter-components.md#multiple-selectors) men `model` måste vara den första.
 
 ### Ytterligare information {#further-information}
 

@@ -69,7 +69,7 @@ Följande steg krävs för att aktivera användarsynkronisering, följt av avsni
 
 ### Förutsättningar {#prerequisites}
 
-1. Om användare och användargrupper redan har skapats på en publiceringsinstans rekommenderar vi att du [synkroniserar ](#manually-syncing-users-and-user-groups) användardata manuellt till alla publiceringsinstanser innan du konfigurerar och aktiverar användarsynkronisering.
+1. Om användare och användargrupper redan har skapats på en publiceringsinstans rekommenderar vi att du [synkroniserar &#x200B;](#manually-syncing-users-and-user-groups) användardata manuellt till alla publiceringsinstanser innan du konfigurerar och aktiverar användarsynkronisering.
 
 När användarsynkroniseringen är aktiverad synkroniseras endast nyskapade användare och grupper.
 
@@ -453,7 +453,7 @@ Om följande syns i loggen:
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-Verifiera sedan att avsnittet [2. Skapa auktoriserad användare ](#createauthuser) följdes korrekt.
+Verifiera sedan att avsnittet [2. Skapa auktoriserad användare &#x200B;](#createauthuser) följdes korrekt.
 
 I det här avsnittet beskrivs hur du skapar en behörig användare, som finns på alla publiceringsinstanser, och identifierar dem i OSGi-konfigurationen för den hemliga providern. Som standard är användaren `admin`.
 
@@ -481,7 +481,7 @@ Som medlem i gruppen `administrators` bör den auktoriserade användaren ha föl
 
 Om Sling ID matchar mellan två eller flera publiceringsinstanser misslyckas synkroniseringen av användargruppen.
 
-Se avsnitt [9. Unikt försäljnings-ID ](#unique-sling-id)
+Se avsnitt [9. Unikt försäljnings-ID &#x200B;](#unique-sling-id)
 
 ### Synkronisera användare och användargrupper manuellt {#manually-syncing-users-and-user-groups}
 

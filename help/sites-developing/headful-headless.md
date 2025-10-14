@@ -46,7 +46,7 @@ I nästa avsnitt beskrivs dessa integreringsnivåer mer ingående.
 
 >[!NOTE]
 >
->Du kan förstås även återimplementera SPA för webben som en fullt fungerande AEM SPA [ med AEM SPA Editor-ramverket.](/help/sites-developing/spa-walkthrough.md) Om du redan har AEM och vill skapa en webshop eller annan SPA rekommenderas den här metoden, men det är utanför omfånget för det här dokumentet.
+>Du kan förstås även återimplementera SPA för webben som en fullt fungerande AEM SPA [&#x200B; med AEM SPA Editor-ramverket.](/help/sites-developing/spa-walkthrough.md) Om du redan har AEM och vill skapa en webshop eller annan SPA rekommenderas den här metoden, men det är utanför omfånget för det här dokumentet.
 
 ## SPA-integreringsnivåer {#integration-levels}
 

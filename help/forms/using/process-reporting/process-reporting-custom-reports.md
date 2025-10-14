@@ -640,7 +640,7 @@ Förutsättningarna för att skapa ett separat användargränssnitt för att vis
    * **description**- Anger rapportens enradsbeskrivning. Du kan lämna beskrivningsfältet tomt.
    * **ikon**- Anger bilden som ska representera rapporten i pictorially. Du kan lämna ikonfältet tomt.
 
-   ![Egenskaper för nod ](assets/node_properties_new.png)
+   ![Egenskaper för nod &#x200B;](assets/node_properties_new.png)
 
    Egenskaper för nod
 

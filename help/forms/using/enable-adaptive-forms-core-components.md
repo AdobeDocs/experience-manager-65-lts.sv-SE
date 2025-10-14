@@ -106,7 +106,7 @@ Så här skapar du ett AEM Archetype 41- eller [senare](https://github.com/adobe
 
       >[!WARNING]
       >
-      >* När du skapar ett Arketype-projekt med version 45 ställer `[AEM Archetype Project Folder]/pom.xml` först in versionen för formulärets kärnkomponenter till 1.1.28. Innan du bygger eller driftsätter Archetype-projektet ska du uppdatera formulärkärnkomponentens version till 1.1.26. Den senaste versionen finns i [ AEM 6.5 Forms-versionshistoriken ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=sv-SE#aem-as-form-version-history) .
+      >* När du skapar ett Arketype-projekt med version 45 ställer `[AEM Archetype Project Folder]/pom.xml` först in versionen för formulärets kärnkomponenter till 1.1.28. Innan du bygger eller driftsätter Archetype-projektet ska du uppdatera formulärkärnkomponentens version till 1.1.26. Den senaste versionen finns i [&#x200B; AEM 6.5 Forms-versionshistoriken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=sv-SE#aem-as-form-version-history) .
 
       >[!NOTE]
       >

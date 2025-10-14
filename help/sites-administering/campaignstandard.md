@@ -30,13 +30,13 @@ Tack vare den här integreringen kan AEM och Adobe Campaign Standard användas o
 
 Konfigurationen av integreringen mellan AEM och Adobe Campaign Standard kräver flera steg i båda lösningarna.
 
-1. [Konfigurera ](#aemserver-user)
-1. [Verifiera ](#resource-type-filter)
+1. [Konfigurera &#x200B;](#aemserver-user)
+1. [Verifiera &#x200B;](#resource-type-filter)
 1. [Skapa en AEM-specifik mall för e-postleverans i Campaign](#aem-email-delivery-template)
 1. [Konfigurera Campaign-integrering i AEM](#campaign-integration)
 1. [Konfigurera replikering till AEM Publish Instance](#replication)
 1. [Konfigurera AEM Externalizer](#externalizer)
-1. [Konfigurera ](#campaign-remote-user)
+1. [Konfigurera &#x200B;](#campaign-remote-user)
 1. [Konfigurera AEM externa konto i Campaign](#acc-external-user)
 
 Det här dokumentet leder dig igenom dessa steg i detalj.
@@ -219,7 +219,7 @@ Precis som du behöver en användare i Adobe Campaign som AEM kan använda för 
 
 ## Konfigurera AEM externa konto i Campaign {#acc-external-user}
 
-När du [skapade en AEM-specifik e-postleveransmall ](#aem-email-delivery-template) angav du att mallen ska använda det `aemInstance` externa kontot för att kommunicera med AEM. Om du vill aktivera dubbelriktad kommunikation mellan båda lösningarna måste du konfigurera det här kontot i Adobe Campaign.
+När du [skapade en AEM-specifik e-postleveransmall &#x200B;](#aem-email-delivery-template) angav du att mallen ska använda det `aemInstance` externa kontot för att kommunicera med AEM. Om du vill aktivera dubbelriktad kommunikation mellan båda lösningarna måste du konfigurera det här kontot i Adobe Campaign.
 
 1. Logga in i Adobe Campaign som administratör.
 

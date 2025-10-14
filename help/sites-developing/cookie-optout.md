@@ -46,7 +46,7 @@ Använd JavaScript på klientsidan för att ringa Adobe Granite-avanmälningstj�
 * Avgör om webbläsaren innehåller en cookie som anger att användaren inte godkänner användningen av cookies för spårning.
 * Avgör om en viss cookie kan användas.
 
-Klientbiblioteksmappen [granite.utils ](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) innehåller objektet Granite.OptOutUtil. Lägg till följande kod i sidhuvud-JSP för att inkludera en länk till JavaScript-biblioteket:
+Klientbiblioteksmappen [granite.utils &#x200B;](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) innehåller objektet Granite.OptOutUtil. Lägg till följande kod i sidhuvud-JSP för att inkludera en länk till JavaScript-biblioteket:
 
 `<ui:includeClientLib categories="granite.utils" />`
 

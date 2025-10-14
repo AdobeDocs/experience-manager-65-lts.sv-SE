@@ -45,7 +45,7 @@ Det här dokumentet förutsätter att du redan är bekant med att skapa och redi
 >[!NOTE]
 >
 >Följande självstudiekurs kan också vara intressant för att konfigurera en redigerbar sidmall i ett nytt projekt:
->[Komma igång med AEM Sites del 2 - Skapa en bassida och mall ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=sv-SE)
+>[Komma igång med AEM Sites del 2 - Skapa en bassida och mall &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=sv-SE)
 
 ## Skapa en ny mall {#creating-a-new-template}
 
@@ -236,7 +236,7 @@ Så här skapar du en mapp:
 
 När mallmapparna har skapats (antingen med CRXDE eller med Configuration Browser) måste åtkomstkontrollistor definieras för rätt grupper för mallmapparna för att säkerställa att de är skyddade.
 
-Mallmapparna för referensimplementeringen [`We.Retail` ](/help/sites-developing/we-retail.md) kan användas som exempel.
+Mallmapparna för referensimplementeringen [`We.Retail` &#x200B;](/help/sites-developing/we-retail.md) kan användas som exempel.
 
 #### Mallförfattargruppen {#the-template-authors-group}
 
@@ -600,13 +600,13 @@ Diagrammet ovan visar hur mallar, innehåll och komponenter samverkar:
 Den resulterande sidan som refererar till mallen. Innehållet styr hela processen. Enligt definitionerna får den åtkomst till rätt mall och komponenter.
 
 * Konfiguration - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
-[ Mallen och relaterade innehållsprinciper ](#template-definitions) definierar sidkonfigurationen.
+[&#x200B; Mallen och relaterade innehållsprinciper &#x200B;](#template-definitions) definierar sidkonfigurationen.
 
 * Modell - OSGi-paket
 [OSGI-paketen](/help/sites-deploying/osgi-configuration-settings.md) implementerar funktionen.
 
 * Visa - `/apps/<my-site>/components`
-I både författar- och publiceringsmiljöer återges innehållet av [ components ](/help/sites-developing/components.md) .
+I både författar- och publiceringsmiljöer återges innehållet av [&#x200B; components &#x200B;](/help/sites-developing/components.md) .
 
 När en sida återges:
 

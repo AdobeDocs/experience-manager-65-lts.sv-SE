@@ -139,9 +139,9 @@ Utför följande steg för att lägga till fält i ett adaptivt formulär och an
 
    **A.** Markera och lägg till [!DNL Adobe Sign] fält. **B.** Expandera [!DNL Adobe Sign]-blocket till helskärmsläge
 
-1. Välj ikonen **[!UICONTROL Adobe Sign]Field** ![ aem_6_3_adobesign](assets/aem_6_3_adobesign.png) . Här visas alternativ för att markera och lägga till [!DNL Adobe Sign] fält.
+1. Välj ikonen **[!UICONTROL Adobe Sign]Field** ![&#x200B; aem_6_3_adobesign](assets/aem_6_3_adobesign.png) . Här visas alternativ för att markera och lägga till [!DNL Adobe Sign] fält.
 
-   Expandera det nedrullningsbara fältet **[!UICONTROL Type]** för att markera ett [!DNL Adobe Sign]-fält och välj ikonen Klar ![ aem_6_3_forms_save](assets/aem_6_3_forms_save.png) för att lägga till det markerade fältet i [!DNL Adobe Sign] -blocket. Listrutan **[!UICONTROL Type]** innehåller fälttyperna Signatur, Signerarinformation och Data. [!DNL Adobe Sign]-integrering med AEM [!DNL Forms]-supportfält visas endast i listrutan [!UICONTROL Type]. Mer information om [!DNL Adobe Sign] fält finns i [Adobe Sign-dokumentation](https://helpx.adobe.com/se/sign/help/field-types.html).
+   Expandera det nedrullningsbara fältet **[!UICONTROL Type]** för att markera ett [!DNL Adobe Sign]-fält och välj ikonen Klar ![&#x200B; aem_6_3_forms_save](assets/aem_6_3_forms_save.png) för att lägga till det markerade fältet i [!DNL Adobe Sign] -blocket. Listrutan **[!UICONTROL Type]** innehåller fälttyperna Signatur, Signerarinformation och Data. [!DNL Adobe Sign]-integrering med AEM [!DNL Forms]-supportfält visas endast i listrutan [!UICONTROL Type]. Mer information om [!DNL Adobe Sign] fält finns i [Adobe Sign-dokumentation](https://helpx.adobe.com/se/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -294,7 +294,7 @@ Utför följande steg för att konfigurera signaturstegskomponenten:
    * **[!UICONTROL Template message]:** Ange meddelandet som ska visas när signaturen för PDF läses in. [!DNL Adobe Sign] tjänster tar lite tid att förbereda och läsa in signaturens PDF.
    * **[!UICONTROL Signing Service]:** Välj alternativet **[!DNL Adobe Sign]**.
 
-   * **[!UICONTROL Use legacy E-sign component]**: Om du använder respektive adaptiva formulär i [ AEM Forms Workspace](../../forms/using/introduction-html-workspace.md), appen AEM [!DNL Forms] eller det underliggande adaptiva formuläret har en äldre e-signeringskomponent, väljer du alternativet **Använd äldre e-signeringskomponent**.
+   * **[!UICONTROL Use legacy E-sign component]**: Om du använder respektive adaptiva formulär i [&#x200B; AEM Forms Workspace](../../forms/using/introduction-html-workspace.md), appen AEM [!DNL Forms] eller det underliggande adaptiva formuläret har en äldre e-signeringskomponent, väljer du alternativet **Använd äldre e-signeringskomponent**.
 
    * **[!UICONTROL Configuration]**: Välj en konfiguration ([!DNL Adobe Sign] Cloud Service). Listrutan är bara tillgänglig om alternativet **Använd äldre e-signeringskomponent** är aktiverat.
 

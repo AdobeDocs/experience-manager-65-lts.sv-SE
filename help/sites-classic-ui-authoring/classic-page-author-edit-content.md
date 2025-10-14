@@ -101,7 +101,7 @@ Detta gäller för följande tillgångstyper (vissa kommer att vara beroende av 
 
 >[!NOTE]
 >
->Det här beteendet kan konfigureras för din installation. Mer information finns i [Konfigurera ett styckesystem så att en komponentinstans skapas när du drar en resurs ](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance).
+>Det här beteendet kan konfigureras för din installation. Mer information finns i [Konfigurera ett styckesystem så att en komponentinstans skapas när du drar en resurs &#x200B;](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance).
 
 Så här skapar du en komponent genom att dra en av resurstyperna ovan:
 
@@ -271,7 +271,7 @@ När du ångrar eller gör om borttagning, tillägg eller omplacering av ett ell
 
 >[!NOTE]
 >
->Systemadministratören kan [konfigurera olika aspekter av funktionerna Ångra/Gör om ](/help/sites-administering/config-undo.md) enligt kraven för din instans.
+>Systemadministratören kan [konfigurera olika aspekter av funktionerna Ångra/Gör om &#x200B;](/help/sites-administering/config-undo.md) enligt kraven för din instans.
 
 AEM lagrar en historik över åtgärder som du utför och i vilken ordning du utförde dem. Du ångrar därför flera åtgärder i den ordning som du utförde dem. Sedan kan du använda gör om för att återanvända en eller flera av åtgärderna.
 

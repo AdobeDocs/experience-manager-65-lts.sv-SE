@@ -278,7 +278,7 @@ Ringdiagram i webbkanalen i en interaktiv kommunikation
 
 Genom att använda funktioner i ett diagram kan du rita data som inte tillhandahålls direkt av formulärdatamodellen. I det här exemplet använder vi ett kreditkortsexempel för att förstå hur summerings- och frekvensfunktioner kan användas i diagrammet.
 
-![Linjediagram utan funktion med två transaktioner av typen Debit for AirBnB ](assets/line_chart_web_new.png)
+![Linjediagram utan funktion med två transaktioner av typen Debit for AirBnB &#x200B;](assets/line_chart_web_new.png)
 
 Linjediagram utan en funktion med två&quot;Debit for AirBnB&quot;-transaktioner
 

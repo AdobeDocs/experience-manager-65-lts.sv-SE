@@ -31,7 +31,7 @@ Välj om du vill ha det globala verktygsfältet för redigering. Det här verkty
    * Behåll dolda
 
 * **Personifiera som**
-Med funktionen [Personifiera som ](/help/sites-administering/security.md#impersonating-another-user) kan en användare arbeta för en annan användares räkning.
+Med funktionen [Personifiera som &#x200B;](/help/sites-administering/security.md#impersonating-another-user) kan en användare arbeta för en annan användares räkning.
 
 * **Språk**
 Språket som ska användas för redigeringsmiljöns användargränssnitt. Välj önskat språk i listan.

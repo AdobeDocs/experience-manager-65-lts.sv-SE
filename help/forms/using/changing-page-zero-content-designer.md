@@ -29,7 +29,7 @@ Sidnollinnehåll visas som standard när ett visningsprogram som inte är från 
 
 1. Klicka på **[!UICONTROL File]** > **[!UICONTROL Form Properties]**.
 
-1. I dialogrutan [!UICONTROL Form Properties] klickar du på ![ plus](assets/plus.png) (plusikonen) för att lägga till en anpassad egenskap.
+1. I dialogrutan [!UICONTROL Form Properties] klickar du på ![&#x200B; plus](assets/plus.png) (plusikonen) för att lägga till en anpassad egenskap.
 
 1. Ange **_pagezerocontent** som egenskapens namn.
 1. Lägg till det nya sidans nollmeddelande i RTF-format som värde. Till exempel:
