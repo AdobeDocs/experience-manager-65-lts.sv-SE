@@ -72,7 +72,7 @@ När du är klar med självstudiekursen i det sista exempelavsnittet ser den slu
 
 Interaktiva videosteg:
 
-1. **(Valfritt) Identifiera QuickView-variabler** - Börja med att identifiera dynamiska variabler som används av den befintliga QuickView-implementeringen. Du använder variablerna för att mappa produktminiatyrbilder till deras motsvarande produkt-snabbvyn när du skapar en interaktiv video. Se [ (valfritt) Identifiera QuickView-variabler ](#optional-identifying-quickview-variables).
+1. **(Valfritt) Identifiera QuickView-variabler** - Börja med att identifiera dynamiska variabler som används av den befintliga QuickView-implementeringen. Du använder variablerna för att mappa produktminiatyrbilder till deras motsvarande produkt-snabbvyn när du skapar en interaktiv video. Se [&#x200B; (valfritt) Identifiera QuickView-variabler &#x200B;](#optional-identifying-quickview-variables).
    *Det här steget krävs bara om alla följande är true*:
    * Du vill lägga till interaktivitet i videon genom att aktivera snabbvyn.
    * Din implementering av Experience Manager *använder inte* ett ramverk för e-handelsintegrering för att hämta produktdata till Experience Manager från en e-handelslösning som IBM® WebSphere® Commerce, Elastic Path, Hybris eller Intershop.
@@ -151,10 +151,10 @@ Titta på följande exempel på QuickView-URL:er och deras resulterande miniatyr
     <td><p>En SKU, hittades i frågesträngen.</p> </td>
     <td><p>De inspelade URL:erna för snabbvyn är bland annat följande:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>Den enda variabeldelen i URL:en är värdet på frågesträngsparametern <code>productId=</code>, och det är tydligt ett SKU-värde. Därför behöver dina miniatyrbilder bara SKU-fält med värden som <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -170,9 +170,9 @@ Titta på följande exempel på QuickView-URL:er och deras resulterande miniatyr
     <td><p>SKU och kategori-ID i frågesträngen.</p> </td>
     <td><p>De inspelade URL:erna för snabbvyn är bland annat följande:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>I det här fallet finns det två olika delar i URL:en. SKU:n lagras i parametern <code>prodId</code> och kategori-ID:t lagras i parametern <code>category=</code>.</p> <p>Miniatyrbildsdefinitionerna är par. Det vill säga ett SKU-värde och en extra variabel som kallas <code>categoryId</code>. De resulterande paren är följande:</p>
     <ul>
       <li>SKU är <code>305466</code> och <code>categoryId</code> är <code>1100004</code></li>
@@ -661,27 +661,27 @@ Processen med att skapa en URL för snabbvyn är motsatt till processen att iden
   <tbody>
   <tr>
     <td><p>En SKU, som finns i frågesträngen</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td>En SKU, finns i URL-sökvägen</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td><p>SKU och kategori-ID i frågesträngen</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   </tbody>
 </table>

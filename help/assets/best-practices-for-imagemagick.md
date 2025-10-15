@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ImageMagick är ett plugin-program för att skapa, redigera, komponera och konvertera bitmappsbilder. Den kan läsa och skriva bilder i olika format (över 200), bland annat PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF och SVG. Använd ImageMagick för att ändra storlek, vända, spegla, rotera, förvränga, skeva och omforma bilder. Du kan också justera bildfärger, använda olika specialeffekter eller rita text, linjer, polygoner, ellipser och kurvor med ImageMagick.
 
-Använd mediehanteraren [!DNL Adobe Experience Manager] från kommandoraden för att bearbeta bilder via ImageMagick. Information om hur du arbetar med olika filformat med ImageMagick finns i [Assets-filformat ](/help/assets/assets-file-format-best-practices.md). Mer information om alla filformat som stöds finns i [Format som stöds av Assets](/help/assets/assets-formats.md).
+Använd mediehanteraren [!DNL Adobe Experience Manager] från kommandoraden för att bearbeta bilder via ImageMagick. Information om hur du arbetar med olika filformat med ImageMagick finns i [Assets-filformat &#x200B;](/help/assets/assets-file-format-best-practices.md). Mer information om alla filformat som stöds finns i [Format som stöds av Assets](/help/assets/assets-formats.md).
 
 Om du vill bearbeta stora filer med ImageMagick bör du tänka på högre minneskrav än vanligt, möjliga ändringar av IM-policyer och den övergripande inverkan på prestanda. Minneskraven beror på olika faktorer som upplösning, bitdjup, färgprofil och filformat. Om du tänker bearbeta mycket stora filer med ImageMagick bör du testa servern [!DNL Experience Manager] korrekt. Äntligen finns det resurser som kan vara till hjälp.
 
