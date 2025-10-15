@@ -7,9 +7,9 @@ role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: e432b4e74f453ed222b2a295f1a6ef9e7b409223
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2643'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,7 @@ Dessutom anger du sökvägen till ImageMagick:s tillfälliga mapp i filen `confi
 
 >[!NOTE]
 >
->ImageMagick `policy.xml`- och `configure.xml`-filerna är tillgängliga på `/usr/lib64/ImageMagick-&#42;/config/` i stället för på `/etc/ImageMagick/`.Mer information om var konfigurationsfilerna finns i [ImageMagick-dokumentationen](https://www.imagemagick.org/script/resources.php).
+>ImageMagick `policy.xml`- och `configure.xml`-filerna är tillgängliga på `/usr/lib64/ImageMagick-&#42;/config/` i stället för på `/etc/ImageMagick/`. Mer information om var konfigurationsfilerna finns i dokumentationen för ImageMagick (`https://www.imagemagick.org/script/resources.php`-webbplatsen).
 
 Om du använder [!DNL Experience Manager] på Adobe Managed Services (AMS) kan du kontakta Adobe kundsupport om du tänker bearbeta många stora PSD- eller PSB-filer. Samarbeta med Adobe kundsupportrepresentant för att implementera de bästa metoderna för driftsättningen av AMS och för att välja de bästa möjliga verktygen och modellerna för Adobe egna format. [!DNL Experience Manager] kan inte bearbeta PSB-filer med hög upplösning som är större än 30000 x 23000 pixlar.
 

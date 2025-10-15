@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: f96a2642-f923-481e-9735-14a62a80e6f1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2046'
 ht-degree: 1%
 
 ---
@@ -123,7 +123,7 @@ Följande metoder måste implementeras:
 
 Här är en exempelmall:
 
-paketera my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler utökar com.day.cq.dam.core.AbstractAssetHandler { // implementera relevanta delar }
+paketera my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler utökar com.day.cq.dam.core.AbstractAssetHandler { // implementera relevanta delar }
 
 Gränssnittet och klasserna omfattar:
 
@@ -449,7 +449,7 @@ Med [!DNL Experience Manager] kan du köra valfritt kommandoradsverktyg i ett ar
 
 Följande konverteringar kan köras och lagras automatiskt i [!DNL Assets]:
 
-* EPS- och AI-omvandling med [ImageMagick](https://www.imagemagick.org/script/index.php) och [Ghostscript](https://www.ghostscript.com/).
+* EPS- och AI-omvandling med ImageMagick (`https://www.imagemagick.org/script/index.php` webbplats) och [Ghostscript](https://www.ghostscript.com/).
 * FLV-videotranskodning med [FFmpeg](https://ffmpeg.org/).
 * MP3-kodning med [LAME](https://lame.sourceforge.io/).
 * Ljudbearbetning med [SOX](https://sourceforge.net/projects/sox/).
@@ -476,7 +476,7 @@ Använd [!DNL ImageMagick] om du vill göra det. [!DNL ImageMagick] är ett kost
 
 Installera [!DNL ImageMagick] på disken som är värd för servern [!DNL Experience Manager]:
 
-1. Installera [!DNL ImageMagick]: Se [ImageMagick-dokumentation](https://www.imagemagick.org/script/download.php).
+1. Installera [!DNL ImageMagick]: Se dokumentationen för ImageMagick på webbplatsen `https://www.imagemagick.org/script/download.php`.
 1. Konfigurera verktyget så att du kan köra `convert` med kommandoraden.
 1. Kör följande kommando `convert -h` på kommandoraden för att se om verktyget är korrekt installerat.
 
@@ -488,7 +488,7 @@ Installera [!DNL ImageMagick] på disken som är värd för servern [!DNL Experi
 
 1. Om du vill se om verktyget fungerar som det ska lägger du till en JPG-bild i arbetskatalogen och kör kommandot convert `<image-name>.jpg -flip <image-name>-flipped.jpg` på kommandoraden. En speglad bild läggs till i katalogen. Lägg sedan till kommandoradssteget i arbetsflödet för **[!UICONTROL DAM Update Asset]**.
 1. Gå till konsolen **[!UICONTROL Workflow]**.
-1. Redigera modellen **[!UICONTROL DAM Update Asset]** på fliken **[!UICONTROL Models]**.
+1. Redigera modellen **[!UICONTROL Models]** på fliken **[!UICONTROL DAM Update Asset]**.
 1. Ändra [!UICONTROL Arguments] för **[!UICONTROL Web enabled rendition]**-steget till: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.
 1. Spara arbetsflödet.
 

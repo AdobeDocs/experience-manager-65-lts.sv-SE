@@ -6,7 +6,7 @@ role: Admin
 feature: Renditions,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 258c0d5e-ce2a-48c5-be79-bf5fac70ca96
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ImageMagick är ett plugin-program för att skapa, redigera, komponera och konvertera bitmappsbilder. Den kan läsa och skriva bilder i olika format (över 200), bland annat PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF och SVG. Använd ImageMagick för att ändra storlek, vända, spegla, rotera, förvränga, skeva och omforma bilder. Du kan också justera bildfärger, använda olika specialeffekter eller rita text, linjer, polygoner, ellipser och kurvor med ImageMagick.
 
-Använd mediehanteraren [!DNL Adobe Experience Manager] från kommandoraden för att bearbeta bilder via ImageMagick. Information om hur du arbetar med olika filformat med ImageMagick finns i [Assets-filformat &#x200B;](/help/assets/assets-file-format-best-practices.md). Mer information om alla filformat som stöds finns i [Format som stöds av Assets](/help/assets/assets-formats.md).
+Använd mediehanteraren [!DNL Adobe Experience Manager] från kommandoraden för att bearbeta bilder via ImageMagick. Information om hur du arbetar med olika filformat med ImageMagick finns i [Assets-filformat ](/help/assets/assets-file-format-best-practices.md). Mer information om alla filformat som stöds finns i [Format som stöds av Assets](/help/assets/assets-formats.md).
 
 Om du vill bearbeta stora filer med ImageMagick bör du tänka på högre minneskrav än vanligt, möjliga ändringar av IM-policyer och den övergripande inverkan på prestanda. Minneskraven beror på olika faktorer som upplösning, bitdjup, färgprofil och filformat. Om du tänker bearbeta mycket stora filer med ImageMagick bör du testa servern [!DNL Experience Manager] korrekt. Äntligen finns det resurser som kan vara till hjälp.
 
@@ -29,7 +29,7 @@ Om du vill bearbeta stora filer med ImageMagick bör du tänka på högre minnes
 
 Det finns flera versioner av installationsfilerna för ImageMagic för olika operativsystem. Använd rätt version för ditt operativsystem.
 
-1. Hämta rätt [ImageMagick-installationsfiler](https://www.imagemagick.org/script/download.php) för ditt operativsystem.
+1. Hämta rätt ImageMagick-installationsfiler (`https://www.imagemagick.org/script/download.php` webbplats) för ditt operativsystem.
 1. Om du vill installera ImageMagick på den disk som är värd för servern [!DNL Experience Manager] startar du installationsfilen.
 
 1. Ange miljövariabeln path till installationskatalogen för ImageMagic.
@@ -39,9 +39,9 @@ Det finns flera versioner av installationsfilerna för ImageMagic för olika ope
 
 Du kan ställa in kommandoradens processsteg för ditt särskilda användningsfall. Utför följande steg för att generera en vänd bild och miniatyrbilder (140x100, 48x48, 319x319 och 1280x1280) varje gång du lägger till en JPEG-bildfil i `/content/dam` på [!DNL Experience Manager]-servern:
 
-1. Gå till arbetsflödeskonsolen (`https://[aem_server]:[port]/workflow`) på servern [!DNL Experience Manager] och öppna arbetsflödesmodellen **[!UICONTROL DAM Update Asset]**.
-1. Öppna steget **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** från arbetsflödesmodellen **[!UICONTROL DAM Update Asset]**.
-1. Lägg till `image/jpeg` i listan **[!UICONTROL Mime Types]** i **[!UICONTROL Arguments tab]**.
+1. Gå till arbetsflödeskonsolen ([!DNL Experience Manager]) på servern `https://[aem_server]:[port]/workflow` och öppna arbetsflödesmodellen **[!UICONTROL DAM Update Asset]**.
+1. Öppna steget **[!UICONTROL DAM Update Asset]** från arbetsflödesmodellen **[!UICONTROL EPS thumbnails (powered by ImageMagick)]**.
+1. Lägg till **[!UICONTROL Arguments tab]** i listan `image/jpeg` i **[!UICONTROL Mime Types]**.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
 
@@ -70,7 +70,7 @@ Du kan ställa in kommandoradens processsteg för ditt särskilda användningsfa
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. Lägg till MIME-typen `image/jpeg` under **[!UICONTROL Skip List]** på fliken **[!UICONTROL Web Enabled Image]**. Klicka på **[!UICONTROL OK]** om du vill spara ändringarna.
+1. Lägg till MIME-typen **[!UICONTROL Web Enabled Image]** under `image/jpeg` på fliken **[!UICONTROL Skip List]**. Klicka på **[!UICONTROL OK]** om du vill spara ändringarna.
 
    ![web_enabled](assets/web_enabled.png)
 
