@@ -21,13 +21,13 @@ ht-degree: 0%
 
 Installationen av funktionspaket 18912 är *valfri*.
 
-Med funktionspaketet 18912 kan du massimportera mediefiler direkt till Dynamic Media - Scene7-läge på Adobe Experience Manager via FTP. Du kan också migrera resurser från Dynamic Media Classic till Dynamic Media - Scene7-läge i Experience Manager. Funktionspaketet är tillgängligt från [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+Med funktionspaketet 18912 kan du massimportera mediefiler direkt till Dynamic Media - Scene7-läge på Adobe Experience Manager via FTP. Du kan också migrera resurser från Dynamic Media Classic till Dynamic Media - Scene7-läge i Experience Manager. Funktionspaketet är tillgängligt från [Adobe Professional Services](https://business.adobe.com/se/customers/consulting-services/main.html).
 
 >[!IMPORTANT]
 >
 >Du kan använda funktionspaketet för att migrera resurser på egen hand från Dynamic Media Classic till Dynamic Media - Scene7 i Experience Manager. Du kan också massmigrera resurser med FTP-funktionen i Dynamic Media Classic. Adobe rekommenderar *inte* att du använder någon av dessa metoder på grund av komplexiteten.
 >
->Det här paketet med flyttningsfunktioner stöds *endast* som en del av ett migreringsprojekt när det görs via [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+>Det här paketet med flyttningsfunktioner stöds *endast* som en del av ett migreringsprojekt när det görs via [Adobe Professional Services](https://business.adobe.com/se/customers/consulting-services/main.html).
 
 Innan du installerar funktionspaketet skapar du en tjänstanvändare och skickar informationen till Adobe support.
 

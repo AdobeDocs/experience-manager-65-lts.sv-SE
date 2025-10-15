@@ -70,7 +70,7 @@ Adobe rekommenderar att man hanterar marknadsföringsrelaterade data och marknad
 
 ## 14. Hur ser ett företag till att PCI-kompatibiliteten följs när det använder AEM för hela presentationslagret?
 
-Adobe rekommenderar att du använder abstrakta betalningsmetoder. Om du gör det kommer webbläsarklienten att kommunicera direkt med betalgatewayleverantören så att Adobe inte håller eller godkänner kortinnehavarens datum eller handelslösningarna. Den här metoden kräver endast en nivå 3 PCI-kompatibilitet. Det finns dock ytterligare saker att tänka på som helt PCI-kompatibla, till exempel hur medarbetarna interagerar med systemet och data. Mer information om Adobe Commerce PCI-kompatibilitet finns i [PCI-kompatibilitet](https://business.adobe.com/products/magento/pci-compliance.html)
+Adobe rekommenderar att du använder abstrakta betalningsmetoder. Om du gör det kommer webbläsarklienten att kommunicera direkt med betalgatewayleverantören så att Adobe inte håller eller godkänner kortinnehavarens datum eller handelslösningarna. Den här metoden kräver endast en nivå 3 PCI-kompatibilitet. Det finns dock ytterligare saker att tänka på som helt PCI-kompatibla, till exempel hur medarbetarna interagerar med systemet och data. Mer information om Adobe Commerce PCI-kompatibilitet finns i [PCI-kompatibilitet](https://business.adobe.com/se/products/magento/pci-compliance.html)
 
 ## 15. Om jag använder molnversionerna av AEM och Adobe Commerce, är denna gemensamma lösning PCI-kompatibel?
 

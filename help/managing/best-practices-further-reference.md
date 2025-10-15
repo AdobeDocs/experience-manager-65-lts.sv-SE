@@ -28,7 +28,7 @@ Den här sidan innehåller mer information om hur du kan arbeta vidare med och/e
 
 ### Funktioner i AEM {#features-within-aem}
 
-När du implementerar AEM (särskilt för första gången) ska du kontrollera vilka områden du vill ha eller behöver i [funktionerna och arbetsflödena i AEM](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html).
+När du implementerar AEM (särskilt för första gången) ska du kontrollera vilka områden du vill ha eller behöver i [funktionerna och arbetsflödena i AEM](https://business.adobe.com/se/products/experience-manager/adobe-experience-manager.html).
 
 Ta en titt på de funktioner i AEM som du använder och hur designen påverkas, till exempel:
 

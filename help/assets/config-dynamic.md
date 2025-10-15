@@ -169,7 +169,7 @@ Du kan välja att implementera Dynamic Media endast för bildåtergivning, endas
 
 ## Aktivera dynamiska media {#enabling-dynamic-media}
 
-[Dynamiska media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) är inaktiverat som standard. Om du vill utnyttja Dynamic Media-funktionerna måste du aktivera Dynamic Media genom att använda körningsläget `dynamicmedia` på samma sätt som du skulle göra, till exempel `publish`. Kontrollera [tekniska krav](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on) innan du aktiverar.
+[Dynamiska media](https://business.adobe.com/se/products/experience-manager/assets/dynamic-media.html) är inaktiverat som standard. Om du vill utnyttja Dynamic Media-funktionerna måste du aktivera Dynamic Media genom att använda körningsläget `dynamicmedia` på samma sätt som du skulle göra, till exempel `publish`. Kontrollera [tekniska krav](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on) innan du aktiverar.
 
 >[!NOTE]
 >

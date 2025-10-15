@@ -37,7 +37,7 @@ Document Security Server är den centrala komponenten som Document Security utf�
 
 På dokumentsäkerhetsservern finns ett webbaserat gränssnitt (webbsida) för att skapa profiler, hantera principskyddade dokument och övervaka händelser som är kopplade till principskyddade dokument. Administratörer kan också konfigurera globala alternativ som användarautentisering, granskning och meddelanden för inbjudna användare samt hantera inbjudna användarkonton.
 
-Servern ingår i AEM Forms Document Security-tillägget. Du kan kontakta AEM Forms [säljteam](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) för att köpa Document Security-tillägget.
+Servern ingår i AEM Forms Document Security-tillägget. Du kan kontakta AEM Forms [säljteam](https://business.adobe.com/se/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) för att köpa Document Security-tillägget.
 
 ### Skydda dokument {#protect-documents}
 

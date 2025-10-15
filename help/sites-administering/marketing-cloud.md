@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Integrera med Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Experience Cloud](https://business.adobe.com/products/marketing-cloud/main.html) innehåller kraftfulla webbanalyser och webboptimeringsprodukter som levererar användbara realtidsdata och insikter för att driva framgångsrika onlineinitiativ. Det erbjuder en integrerad och öppen plattform för optimering av onlineverksamhet. Molnet består av integrerade program som samlar in och släpper loss kraften i kundinsikterna för att optimera kundvärvning, konvertering och lojalitet samt skapar och distribuerar innehåll.
+[Adobe Experience Cloud](https://business.adobe.com/se/products/marketing-cloud/main.html) innehåller kraftfulla webbanalyser och webboptimeringsprodukter som levererar användbara realtidsdata och insikter för att driva framgångsrika onlineinitiativ. Det erbjuder en integrerad och öppen plattform för optimering av onlineverksamhet. Molnet består av integrerade program som samlar in och släpper loss kraften i kundinsikterna för att optimera kundvärvning, konvertering och lojalitet samt skapar och distribuerar innehåll.
 
 Med Adobe Experience Manager (AEM) kan du smidigt integrera med följande Adobe Experience Cloud-produkter:
 
@@ -33,7 +33,7 @@ Dessutom kan du [integrera AEM med Creative Cloud](/help/assets/aem-cc-integrati
 
 ## Integrera med Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) är den branschledande lösningen som ger digitala marknadsförare en plats där de kan mäta, analysera och optimera integrerade data från alla onlineinitiativ över flera marknadsföringskanaler. Det ger marknadsförarna användbar webbanalysinformation i realtid om digitala strategier och marknadsföringsinitiativ. Adobe Analytics hjälper marknadsförarna att snabbt identifiera de mest lönsamma vägarna via en webbplats, segmentera trafiken för att hitta värdefulla webbbesökare, avgöra var besökarna navigerar bort från webbplatsen och identifiera viktiga framgångsmått för webbkampanjer.
+[Adobe Analytics](https://business.adobe.com/se/products/analytics/adobe-analytics.html) är den branschledande lösningen som ger digitala marknadsförare en plats där de kan mäta, analysera och optimera integrerade data från alla onlineinitiativ över flera marknadsföringskanaler. Det ger marknadsförarna användbar webbanalysinformation i realtid om digitala strategier och marknadsföringsinitiativ. Adobe Analytics hjälper marknadsförarna att snabbt identifiera de mest lönsamma vägarna via en webbplats, segmentera trafiken för att hitta värdefulla webbbesökare, avgöra var besökarna navigerar bort från webbplatsen och identifiera viktiga framgångsmått för webbkampanjer.
 
 Du kan använda Adobe Analytics för att analysera data från dina webbplatser.
 
@@ -52,7 +52,7 @@ Du kan också använda guiden [Anmäl dig](/help/sites-administering/opt-in.md) 
 
 ## Integrera med Adobe Target {#integrating-with-adobe-target}
 
-[Adobe Target](https://business.adobe.com/products/target/adobe-target.html) används av marknadsförare för att utforma och köra onlinetester, skapa direktsända målgruppssegment (baserat på beteende) och automatisera målgruppsanpassningen för innehåll och onlineupplevelser.
+[Adobe Target](https://business.adobe.com/se/products/target/adobe-target.html) används av marknadsförare för att utforma och köra onlinetester, skapa direktsända målgruppssegment (baserat på beteende) och automatisera målgruppsanpassningen för innehåll och onlineupplevelser.
 
 Dagens onlinekonsumenter har ständigt nya behov och förväntar sig relevant, till och med personaliserat innehåll från en mängd olika webbplatser och innehållskällor som de kan välja bland. För att engagera en webbpublik är det viktigt att marknadsförarna snabbt kan identifiera vilka erbjudanden och vilket innehåll som är relevanta och övertygande för deras målgrupper. Med denna kunskap i ryggen behöver marknadsförarna möjlighet att kontinuerligt utveckla sina webbplatser och rikta lämpligt innehåll till olika målgrupper.
 
@@ -82,7 +82,7 @@ Mer information om hur Adobe Experience Manager kan integreras med Dynamic Media
 
 ## Integrera med Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-[Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) ger marknadsförarna intuitiva verktyg för att snabbt och enkelt hantera ett obegränsat antal taggar från Adobe och tredje part. Du får större kontroll och flexibilitet att optimera praktiskt taget allt på webben samtidigt som du minskar beroendet av IT-resurser.
+[Adobe Dynamic Tag Management](https://business.adobe.com/se/products/experience-platform/adobe-experience-platform.html) ger marknadsförarna intuitiva verktyg för att snabbt och enkelt hantera ett obegränsat antal taggar från Adobe och tredje part. Du får större kontroll och flexibilitet att optimera praktiskt taget allt på webben samtidigt som du minskar beroendet av IT-resurser.
 
 [Integrera Adobe Dynamic Tag Management](/help/sites-administering/dtm.md) med AEM så att du kan använda dina dynamiska Tag Management-webbegenskaper för att spåra AEM webbplatser.
 
@@ -100,6 +100,6 @@ Integreringen med Audience Manager har tagits bort i AEM 6.3.
 
 ## Integrera med Adobe Campaign {#integrating-with-adobe-campaign}
 
-Med [Adobe Campaign](https://business.adobe.com/products/campaign/adobe-campaign.html) kan du hantera e-postleveransinnehåll direkt i Adobe Experience Manager.
+Med [Adobe Campaign](https://business.adobe.com/se/products/campaign/adobe-campaign.html) kan du hantera e-postleveransinnehåll direkt i Adobe Experience Manager.
 
 Mer information om hur AEM integreras med Adobe Campaign finns i [Integrera med Adobe Campaign](/help/sites-administering/campaignstandard.md).

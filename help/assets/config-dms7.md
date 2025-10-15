@@ -43,7 +43,7 @@ Med den nya arkitekturen ansvarar Experience Manager för primära källfiler oc
 
 ## Aktivera Dynamic Media i Scene7-läge {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamiska media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) är inaktiverat som standard. För att kunna utnyttja Dynamic Media-funktionerna måste du aktivera dem.
+[Dynamiska media](https://business.adobe.com/se/products/experience-manager/assets/dynamic-media.html) är inaktiverat som standard. För att kunna utnyttja Dynamic Media-funktionerna måste du aktivera dem.
 
 >[!WARNING]
 >
@@ -75,7 +75,7 @@ Om du vill migrera anpassade förinställningar och konfigurationer för visning
 
 Installationen av funktionspaket 18912 är *valfri*.
 
-Med funktionspaketet 18912 kan du antingen importera resurser gruppvis via FTP eller migrera resurser från antingen Dynamic Media - hybrid-läge eller Dynamic Media Classic till Dynamic Media - Scene7-läge i Experience Manager. Den är tillgänglig från [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+Med funktionspaketet 18912 kan du antingen importera resurser gruppvis via FTP eller migrera resurser från antingen Dynamic Media - hybrid-läge eller Dynamic Media Classic till Dynamic Media - Scene7-läge i Experience Manager. Den är tillgänglig från [Adobe Professional Services](https://business.adobe.com/se/customers/consulting-services/main.html).
 
 Mer information finns i [Installera funktionspaket 18912 för migrering av gruppresurser](/help/assets/bulk-ingest-migrate.md).
 
@@ -247,7 +247,7 @@ I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av res
 Om du tänker använda den här funktionen bör du vara medveten om följande krav och punkter:
 
 * Du måste köra Experience Manager 6.5 LTS i läget Dynamic Media - Scene7.
-* Den här stora överföringsfunktionen stöds bara för [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html)-kunder.
+* Den här stora överföringsfunktionen stöds bara för [*Managed Services*](https://business.adobe.com/se/products/experience-manager/managed-services.html)-kunder.
 * Kontrollera att din Experience Manager-instans är konfigurerad med Amazon S3 eller Microsoft® Azure Blob Storage.
 
   >[!NOTE]

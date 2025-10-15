@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Konfigurera Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) hjälper dig att hantera resurser genom att leverera visuella marknadsförings- och marknadsföringsresurser på begäran, automatiskt skalade för konsumtion på webben, mobiler och sociala webbplatser. Med hjälp av en uppsättning primära källresurser genererar och levererar Dynamic Media flera varianter av multimediematerial i realtid via sitt globala, skalbara, prestandaoptimerade nätverk.
+[Dynamic Media](https://business.adobe.com/se/products/experience-manager/assets/dynamic-media.html) hjälper dig att hantera resurser genom att leverera visuella marknadsförings- och marknadsföringsresurser på begäran, automatiskt skalade för konsumtion på webben, mobiler och sociala webbplatser. Med hjälp av en uppsättning primära källresurser genererar och levererar Dynamic Media flera varianter av multimediematerial i realtid via sitt globala, skalbara, prestandaoptimerade nätverk.
 
 >[!NOTE]
 >
