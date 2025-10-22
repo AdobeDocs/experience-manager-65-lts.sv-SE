@@ -7,10 +7,10 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 1eb3dda408e165f1d57c4bdfb2d724e38d00c9b7
+source-git-commit: 79a9184fdae1cbb96172c6f507d0b326c7828551
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 3%
+source-wordcount: '932'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ Experience Hub introducerar en central startpunkt för hantering av innehåll, r
 
 Se en snabb genomgång av den omdesignade arbetsytan i AEM Experience Hub (2 minuter, 39 sekunder).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475196/?learn=on&enablevpops&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -31,7 +31,7 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    ![Adobe Experience Cloud hemsida](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
-1. Klicka på **Experience Manager**&#x200B;[**i grupperingen** Snabbåtkomst](https://experience.adobe.com).
+1. Klicka på **Experience Manager**[**i grupperingen** Snabbåtkomst](https://experience.adobe.com).
 1. Vid första åtkomsten tilldelas du förinställningen **Innehållsförfattare** (visas i det övre högra hörnet på sidan). Den styr widgetar, navigeringsobjekt och innehåll som du ser.
 
    Du kan när som helst ändra den här förinställningen.
@@ -80,6 +80,68 @@ I avsnittet **Senaste**, som visas i bilden nedan, visas sidor som du nyligen ha
 Om det inte finns någon AEM Cloud-tjänst för produktion eller Managed Services-miljöer visas markeringsalternativen som nedtonade (inte tillgängliga).
 
 ![Experience Hub inga produktionsmiljöer](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
+
+## Vanliga frågor och svar {#faq}
+
++++**Vad är huvudsyftet med Adobe Experience Hub i Adobe Experience Manager?**
+
+Adobe Experience Hub är en central startpunkt för hantering av innehåll, resurser och webbplatser inom Adobe Experience Manager som levererar en personaliserad upplevelse baserad på användarroller och mål.
+
++++
+
++++**Hur anpassar sig Experience Hub efter olika användarroller?**
+
+Experience Hub visar rollbaserade vyer och snabba åtgärder för författare, tillgångsbibliotek, administratörer och IT. Varje roll får snabb tillgång till de verktyg och funktioner som den behöver.
+
++++
+
++++**Vilka funktioner har Experience Hub navigering och layout?**
+
+Experience Hub använder en enhetlig vänsternavigering för att ordna AEM grundfunktioner, anpassningsbara widgetar och snabba åtgärder. Den här layouten skapar en ordnad, effektiv arbetsyta.
+
++++
+
++++**Hur kan användare anpassa sin Experience Hub-arbetsyta?**
+
+Användare kan lägga till, ta bort, ändra storlek på och ordna om widgetar och anpassa snabba åtgärder för att anpassa arbetsytan efter deras behov och önskemål.
+
++++
+
++++**Vilka typer av åtgärder kan utföras snabbt med Experience Hub?**
+
+Experience Hub erbjuder snabbfunktioner för viktiga uppgifter som att skapa innehåll, överföra resurser eller hantera teamåtkomst, anpassade efter användarens roll.
+
++++
+
++++**Hur underlättar Experience Hub navigering till olika AEM-funktioner?**
+
+Experience Hub huvudnavigering under **Verktyg** eller **Tjänster** ger snabb åtkomst till AEM-funktioner som Assets, Sites, Forms, Content Fragments och Launches.
+
++++
+
++++**Vilken betydelse har widgetar i Experience Hub?**
+
+Widgetar i Experience Hub är anpassningsbara element som hjälper användare att hantera sitt arbete på ett effektivt sätt, t.ex. spåra senaste aktiviteter och hålla dig informerad om produktuppdateringar.
+
++++
+
++++**Hur kan användare hantera flera AEM-miljöer med Experience Hub?**
+
+Användarna kan välja vilken miljö de vill ha och fästa favoriter för att behålla dem överst. Genvägar öppnar lösningar och sidor i dessa miljöer.
+
++++
+
++++**Vilken roll spelar AI-assistenten i AEM?**
+
+AI Assistant i AEM är tillgänglig för användare som har uppfyllt nödvändiga kriterier och som ger ytterligare support och insikter inom organisationen.
+
++++
+
++++**Vad händer om det inte finns någon AEM Cloud-produktionstjänst eller Managed Services-miljö?**
+
+Om det inte finns några produktionsmiljöer visas markeringsalternativen i Experience Hub nedtonade och otillgängliga.
+
++++
 
 ## AI Assistant i AEM
 
