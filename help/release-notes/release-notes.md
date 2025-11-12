@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
+source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
 workflow-type: tm+mt
-source-wordcount: '7319'
+source-wordcount: '7381'
 ht-degree: 0%
 
 ---
@@ -503,7 +503,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -609,6 +609,18 @@ När du aktiverar SSL-funktionen i AEM-distributioner finns det ett känt proble
 **Lösning:**
 Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorrigering [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) som åtgärdar det här problemet. Försök inte aktivera SSL-funktioner förrän du har implementerat den nödvändiga snabbkorrigeringen.
 
+### Tom behörighetssida i säkerhetsgränssnittet på AEM 6.5 LTS SP1
+
+>[!NOTE]
+>
+> Problemet förekommer endast i AEM 6.5 LTS SP1.
+
+När du öppnar sidan Behörigheter under Verktyg -> Säkerhet i AEM 6.5 LTS SP1 visas en tom sida i stället för att behörigheter för en användare eller grupp visas.
+
+**Lösning:**
+En snabbkorrigering, [ cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) , finns tillgänglig för att lösa problemet.
+
+
 ## OSGi-paket och innehållspaket som ingår{#osgi-bundles-and-content-packages-included}
 
 Följande textdokument innehåller en lista över de OSGi-paket och innehållspaket som ingår i den här [!DNL Experience Manager] 6.5 LTS-, Service Pack 1-versionen:
@@ -621,5 +633,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
