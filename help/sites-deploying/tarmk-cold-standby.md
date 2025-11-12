@@ -317,7 +317,7 @@ Om den primära instansen av någon anledning inte fungerar kan du ange att en a
    ```
 
 1. Lägg till den nya primära till belastningsutjämnaren.
-1. Skapa och starta en ny standby-instans. Mer information finns i proceduren ovan om [Skapa en väntelägesinställning för AEM tarMK ](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
+1. Skapa och starta en ny standby-instans. Mer information finns i proceduren ovan om [Skapa en väntelägesinställning för AEM tarMK &#x200B;](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 
 ## Använda snabbkorrigeringar i en konfiguration för vänteläge i kallt format {#applying-hotfixes-to-a-cold-standby-setup}
 
@@ -325,7 +325,7 @@ Det rekommenderade sättet att tillämpa snabbkorrigeringar i ett kallt väntel�
 
 Du kan göra detta genom att följa stegen nedan:
 
-1. Stoppa synkroniseringsprocessen på den kalla standby-instansen genom att gå till JMX-konsolen och använda **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**bean. Mer information om hur du gör detta finns i avsnittet [Övervakning](#monitoring).
+1. Stoppa synkroniseringsprocessen på den kalla standby-instansen genom att gå till JMX-konsolen och använda **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**&#x200B;bean. Mer information om hur du gör detta finns i avsnittet [Övervakning](#monitoring).
 1. Stoppa kallstartsinstansen.
 1. Installera snabbkorrigeringen på den primära instansen. Mer information om hur du installerar en snabbkorrigering finns i [Arbeta med paket](/help/sites-administering/package-manager.md).
 1. Testa instansen efter problem efter installationen.

@@ -996,7 +996,7 @@ I följande exempel visas ett exempelformulär. Den består av **Form**-komponen
 
 >[!NOTE]
 >
->Information om hur du utvecklar och anpassar formulär finns på [Forms-sidan ](/help/sites-developing/developing-forms.md) för utveckling. Den här möjligheten innefattar att bland annat lägga till åtgärder, begränsningar, förhandsladda fält och använda skript för att anropa en tjänst till åtgärd.
+>Information om hur du utvecklar och anpassar formulär finns på [Forms-sidan &#x200B;](/help/sites-developing/developing-forms.md) för utveckling. Den här möjligheten innefattar att bland annat lägga till åtgärder, begränsningar, förhandsladda fält och använda skript för att anropa en tjänst till åtgärd.
 
 ### Inställningar som är gemensamma för (många) formulärkomponenter {#settings-common-to-many-form-components}
 

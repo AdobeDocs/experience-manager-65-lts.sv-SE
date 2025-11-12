@@ -48,7 +48,7 @@ Se även [Valfritt - Konfigurera och konfigurera Dynamic Media - Scene7-lägesin
    * Fliken [Illustrator](#illustrator-tab)
 
    ![Sidan Allmänna inställningar för dynamiska media](/help/assets/assets-dm/dm-general-settings.png)
-   *Sidan Allmänna inställningar för dynamiska media, med fliken **[!UICONTROL Image Editing]**markerad.*<br><br>
+   *Sidan Allmänna inställningar för dynamiska media, med fliken **[!UICONTROL Image Editing]**&#x200B;markerad.*<br><br>
 
 1. När du är klar väljer du **[!UICONTROL Save]** i sidans övre högra hörn.
 
