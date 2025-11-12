@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
+source-git-commit: d286db53c2f9605794bdadcc876b5069037edde3
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1562'
 ht-degree: 2%
 
 ---
@@ -195,7 +195,7 @@ Så här jämför du en tidigare version med den aktuella sidan:
 
    ![Sidversioner visas - välj version](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Välj **Jämför med aktuell**. [Sidskillnaden &#x200B;](/help/sites-authoring/page-diff.md) öppnas och skillnaderna visas.
+1. Välj **Jämför med aktuell**. [Sidskillnaden ](/help/sites-authoring/page-diff.md) öppnas och skillnaderna visas.
 
 ## Timewarp {#timewarp}
 
@@ -203,7 +203,7 @@ Timewarp är en funktion som har utformats för att simulera en sidas *publicera
 
 >[!TIP]
 >
->[Timewarp kan också användas med Launches för att förhandsgranska framtiden](/help/sites-authoring/launches.md) när du kör AEM 6.5.10.0 eller senare.
+>[Timewarp kan också användas med Launches (Starta) för att förhandsgranska framtiden](/help/sites-authoring/launches.md).
 
 Att skapa innehåll är en pågående och samarbetsorienterad process. Syftet med Timewarp är att författarna ska kunna spåra den publicerade webbplatsen över tid för att hjälpa dem förstå hur innehållet har ändrats. Den här funktionen använder sidversionerna för att avgöra status för publiceringsmiljön:
 

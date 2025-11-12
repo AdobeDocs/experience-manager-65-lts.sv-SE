@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager (AEM) och Web Accessibility Guidelines
 description: En introduktion till Adobe Experience Manager (AEM) och Web Accessibility Guidelines
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 exl-id: 3df5379b-a66f-4d74-bbb1-75440324ef98
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 311bbd8aa4622c95980ff0889ba22a64dd6586a1
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 62%

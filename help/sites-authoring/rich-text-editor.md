@@ -1,13 +1,13 @@
 ---
 title: Använda RTF-redigeraren för att skapa innehåll
-description: Använda RTF-redigeraren för att skapa innehåll i Adobe Experience Manager 6.5.
+description: Använda RTF-redigeraren för att skapa innehåll i Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 01c2a67a-7168-4362-ad7d-f4990ea43ed8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7fcb784124027df87bf41cc6169815d755cea6d7
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 RTE (Rich Text Editor) är en grundläggande byggsten för att infoga textinnehåll i AEM. Den utgör grunden för olika komponenter, bland annat följande:
 
-* [Text](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/wcm-components/text)
-* [Tabell](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [Text](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [Tabell](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Direktredigering {#in-place-editing}
 

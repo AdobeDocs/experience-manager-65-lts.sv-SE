@@ -1,15 +1,11 @@
 ---
 title: Checklista - ytterligare referens
 description: Läs mer om detaljerad information som går igenom och/eller förstärker de dokument och principer som omfattas av checklistan Hantera projekt - Bästa metoder.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 15d9c2ac-0b13-4839-a873-bc884ee69132
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2efe81437790352d674bdb0e9cc9ff524fd00487
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 0%
@@ -28,7 +24,7 @@ Den här sidan innehåller mer information om hur du kan arbeta vidare med och/e
 
 ### Funktioner i AEM {#features-within-aem}
 
-När du implementerar AEM (särskilt för första gången) ska du kontrollera vilka områden du vill ha eller behöver i [funktionerna och arbetsflödena i AEM](https://business.adobe.com/se/products/experience-manager/adobe-experience-manager.html).
+När du implementerar AEM (särskilt för första gången) ska du kontrollera vilka områden du vill ha eller behöver i [funktionerna och arbetsflödena i AEM](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html).
 
 Ta en titt på de funktioner i AEM som du använder och hur designen påverkas, till exempel:
 

@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2468'
 ht-degree: 1%
 
 ---
@@ -395,10 +395,6 @@ Status för asynkrona jobb kan kontrolleras på kontrollpanelen [**Async Jobs St
 >[!NOTE]
 >
 >Mer information om asynkron jobbbearbetning och hur du konfigurerar gränsen för åtgärder för att flytta/byta namn på sidor finns i dokumentet [Asynkrona jobb](/help/sites-administering/asynchronous-jobs.md) i användarhandboken för administration.
-
->[!NOTE]
->
->Asynkron bearbetning av sidflyttning kräver AEM 6.5.3.0 eller senare.
 
 ### Ta bort en sida {#deleting-a-page}
 

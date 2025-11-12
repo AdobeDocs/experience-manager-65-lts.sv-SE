@@ -1,17 +1,13 @@
 ---
 title: Checklistan
 description: Projektchecklistor är avsedda som en uppsättning bästa metoder för projektleverans. De vägleder dig genom alla faser i projektets livscykel och ger dig möjlighet att övervaka din nuvarande status på hög nivå.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 4a7d8228-101a-47bd-9bcf-d521a69d87a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 343fe14be5c85eecdd34f7428460ee016e97734b
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -51,6 +47,6 @@ För att kunna leverera ett projekt av hög kvalitet måste du fylla i alla obje
 
    >[!NOTE]
    >
-   >Det finns ingen direkt 1:1-relation mellan de enskilda dokumenten och slutprodukterna.
+   >Det finns ingen direkt :1-relation mellan enskilda obligatoriska dokument och slutprodukter.
 
 1. Baserat på statusvärdena för **[Obligatoriska dokument](/help/managing/best-practices.md#required-documents)** och **[slutprodukter](/help/managing/best-practices.md#deliverables)** uppdateras arbetsbladen **[Projektpulsslag](/help/managing/best-practices.md#project-heartbeat-dashboard)** och **[Status efter roll](/help/managing/best-practices.md#status-by-role)** automatiskt så att du får en aktuell indikation på projektets förlopp och hälsa.

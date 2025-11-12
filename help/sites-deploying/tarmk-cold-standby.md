@@ -10,9 +10,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
 workflow-type: tm+mt
-source-wordcount: '2672'
+source-wordcount: '2680'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Tack vare kapaciteten för vänteläge i kallt läge för Tjärmikrokärnan kan en eller flera Adobe Experience Manager-instanser i vänteläge (AEM) ansluta till en primär instans. Synkroniseringsprocessen är bara ett sätt, vilket innebär att den bara utförs från den primära instansen till standby-instansen.
 
-Syftet med standby-instanserna är att garantera en live-datakopia av huvuddatabasen och se till att det går snabbt att växla utan dataförlust om mallsidan inte är tillgänglig av någon anledning.
+Syftet med standby-instanserna är att garantera en live-datakopia av huvuddatabasen och säkerställa en snabb växling utan dataförlust om den primära instansen inte är tillgänglig av någon anledning.
 
 Innehållet synkroniseras linjärt mellan den primära instansen och standby-instansen utan några integritetskontroller för att filer eller databaser är skadade. På grund av den här designen är standby-instanser exakta kopior av den primära instansen och kan inte bidra till att minska inkonsekvenser i primära instanser.
 
@@ -43,7 +43,7 @@ Innehållet synkroniseras linjärt mellan den primära instansen och standby-ins
 
 ## Så här fungerar det {#how-it-works}
 
-På den primära AEM-instansen öppnas en TCP-port och lyssnar på inkommande meddelanden. För närvarande finns det två typer av meddelanden som slavarna skickar till mallsidan:
+På den primära AEM-instansen öppnas en TCP-port och lyssnar på inkommande meddelanden. För närvarande finns det två typer av meddelanden som vänteläge skickar till den primära:
 
 * ett meddelande som begär segment-ID för aktuellt huvud
 * ett meddelande som begär segmentdata med ett angivet ID
@@ -72,7 +72,7 @@ I vänteläge kan du förvänta dig hög förbrukning av CPU under synkroniserin
 
 #### Dokumentskydd {#security}
 
-Om man utgår ifrån att alla instanser körs i samma säkerhetszon för intranätet minskar risken för säkerhetsöverträdelse avsevärt. Du kan dock lägga till ett extra säkerhetslager genom att aktivera SSL-anslutningar mellan slavarna och mallsidan. På så sätt minskar risken för att data äventyras av en man-in-the-middle.
+Om man utgår ifrån att alla instanser körs i samma säkerhetszon för intranätet minskar risken för säkerhetsöverträdelse avsevärt. Du kan dock lägga till ett extra säkerhetslager genom att aktivera SSL-anslutningar mellan standby och de primära instanserna. På så sätt minskar risken för att data äventyras av en man-in-the-middle.
 
 Du kan dessutom ange vilka standby-instanser som tillåts ansluta genom att begränsa IP-adressen för inkommande begäranden. Detta bör bidra till att garantera att ingen i intranätet kan kopiera databasen.
 
@@ -93,7 +93,7 @@ Du kan dessutom ange vilka standby-instanser som tillåts ansluta genom att begr
 
 Om du vill skapa ett kalliget TjärMK-vänteläge skapar du först standby-instanserna genom att utföra en kopia av hela installationsmappen för det primära till en ny plats. Du kan sedan starta varje instans med ett körningsläge som anger dess roll ( `primary` eller `standby`).
 
-Nedan visas proceduren som måste följas för att skapa en konfiguration med en master- och en standby-instans:
+Nedan visas proceduren som måste följas för att skapa en konfiguration med en primär och en standby-instans:
 
 1. Installera AEM.
 
@@ -218,7 +218,7 @@ Tjänsten kan även konfigureras via webbkonsolen genom att:
 >
 >Du kan när som helst kontrollera rollen för en instans genom att kontrollera om körningslägena **primär** eller **standby** finns i webbkonsolen för delningsinställningar.
 >
->Detta kan du göra genom att gå till *https://localhost:4502/system/console/status-slingsettings* och kontrollera raden **&quot;Körningslägen&quot;**.
+>Detta kan du göra genom att gå till *https://localhost:4502/system/console/status-slingssettings* och kontrollera raden **&quot;Run Modes&quot;** .
 
 ## Första synkroniseringen {#first-time-synchronization}
 
@@ -317,7 +317,7 @@ Om den primära instansen av någon anledning inte fungerar kan du ange att en a
    ```
 
 1. Lägg till den nya primära till belastningsutjämnaren.
-1. Skapa och starta en ny standby-instans. Mer information finns i proceduren ovan om [Skapa en väntelägesinställning för AEM tarMK &#x200B;](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
+1. Skapa och starta en ny standby-instans. Mer information finns i proceduren ovan om [Skapa en väntelägesinställning för AEM tarMK ](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 
 ## Använda snabbkorrigeringar i en konfiguration för vänteläge i kallt format {#applying-hotfixes-to-a-cold-standby-setup}
 
@@ -325,7 +325,7 @@ Det rekommenderade sättet att tillämpa snabbkorrigeringar i ett kallt väntel�
 
 Du kan göra detta genom att följa stegen nedan:
 
-1. Stoppa synkroniseringsprocessen på den kalla standby-instansen genom att gå till JMX-konsolen och använda **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**&#x200B;bean. Mer information om hur du gör detta finns i avsnittet [Övervakning](#monitoring).
+1. Stoppa synkroniseringsprocessen på den kalla standby-instansen genom att gå till JMX-konsolen och använda **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**bean. Mer information om hur du gör detta finns i avsnittet [Övervakning](#monitoring).
 1. Stoppa kallstartsinstansen.
 1. Installera snabbkorrigeringen på den primära instansen. Mer information om hur du installerar en snabbkorrigering finns i [Arbeta med paket](/help/sites-administering/package-manager.md).
 1. Testa instansen efter problem efter installationen.
@@ -336,7 +336,7 @@ Du kan göra detta genom att följa stegen nedan:
 
 ## Övervakning {#monitoring}
 
-Funktionen visar information med JMX eller MBeans. Detta gör att du kan inspektera det aktuella läget för standby och master med [JMX-konsolen](/help/sites-administering/jmx-console.md). Informationen finns i MBean på `type org.apache.jackrabbit.oak:type="Standby"`med namnet `Status`.
+Funktionen visar information med JMX eller MBeans. Detta gör att du kan inspektera det aktuella läget för standby och primär med [JMX-konsolen](/help/sites-administering/jmx-console.md). Informationen finns i MBean på `type org.apache.jackrabbit.oak:type="Standby"`med namnet `Status`.
 
 **Standby**
 
@@ -365,7 +365,7 @@ När du observerar den primära informationen visas viss allmän information med
 
 * `Mode:` visar alltid värdet `primary`.
 
-Dessutom kan information för upp till tio klienter (väntelägesinstanser) som är anslutna till mallen hämtas. MBean-ID:t är instansens UUID. Det finns inga anropbara metoder för dessa MBeans, men några användbara skrivskyddade attribut:
+Dessutom går det att hämta information för upp till tio klienter (standby-instanser) som är anslutna till den primära. MBean-ID:t är instansens UUID. Det finns inga anropbara metoder för dessa MBeans, men några användbara skrivskyddade attribut:
 
 * `Name:` klientens ID.
 * `LastSeenTimestamp:` tidsstämpeln för den senaste begäran i en textbeteckning.

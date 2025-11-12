@@ -1,16 +1,11 @@
 ---
 title: Ordlista
 description: I den här ordlistan visas (i alfabetisk ordning) information om alla slutdokument i projektchecklistan.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fb979ab973476212aeed9ce86d3251eb1aedcb8c
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 0%
@@ -64,11 +59,11 @@ Utbildning för personal som ska producera (skriva) innehåll för lösningen. M
 
 ### AEM Certification Exam {#aem-certification-exam}
 
-Se till att rätt personer är registrerade för att genomföra relevanta [certifieringsprov](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Se till att rätt personer är registrerade för att genomföra relevanta [certifieringsprov](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager).
 
 ### AEM Certified {#aem-certified}
 
-Kontrollera att rätt person har klarat de relevanta [certifieringsproven](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Kontrollera att rätt person har klarat de relevanta [certifieringsproven](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager).
 
 ### AEM Technical Training {#aem-technical-training}
 

@@ -1,16 +1,13 @@
 ---
 title: Bästa praxis för hantering av SEO och URL
 description: Läs mer om SEO:s bästa praxis och rekommendationer för en AEM-implementering.
-topic-tags: managing
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
 workflow-type: tm+mt
-source-wordcount: '3523'
+source-wordcount: '3475'
 ht-degree: 38%
 
 ---
@@ -52,7 +49,6 @@ Här följer några allmänna tips om hur du skapar URL:er för SEO:
    * När du använder väljare på en sida är det bäst att använda väljare som har ett semantiskt värde.
    * Om en användare inte kan läsa URL:en kan inte en sökmotor heller göra det.
    * Till exempel:
-
      `mybrand.com/products/product-detail.product-category.product-name.html`
 är att föredra framför `mybrand.com/products/product-detail.1234.html`
 
@@ -254,10 +250,9 @@ Det finns dock ett enklare sätt att hantera detta problem:
 
 1. **SlingResourceResolver-regler**
 
-   Du kan konfigurera Sling Resource Resolver med webbkonsolen (till exempel localhost:4502/system/console/configMgr):
+   Med webbkonsolen (till exempel localhost:4502/system/console/configMgr) kan du konfigurera Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
-
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Adobe rekommenderar att du bygger ut de mappningar som krävs för att korta ned URL:er som reguljära uttryck och sedan definierar du dessa konfigurationer under en OsgiConfignode, `config.publish`, som ingår i ditt bygge.
@@ -365,12 +360,6 @@ Crawlers använder XML-webbplatskartor för att bättre förstå webbplatsernas 
 
 AEM använder modulen [Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap) för att generera XML-webbplatskartor, som innehåller ett stort antal alternativ för utvecklare och redigerare att hålla en platskarta för XML i XML-innehåll uppdaterad.
 
->[!NOTE]
->
->Finns som produktfunktion sedan Adobe Experience Manager version 6.5.11.0.
-> 
->För äldre versioner kan du registrera en Sling Servlet själv för att lyssna efter ett `sitemap.xml`-samtal. Använd resursen som tillhandahålls via serverletens API för att leta upp den aktuella sidan och dess underordnade för att skapa en `sitemap.xml`-fil.
-
 Modulen Apache Sling Sitemap skiljer mellan en platskarta på den översta nivån och en kapslad platskarta, som båda genereras för en resurs som har egenskapen `sling:sitemapRoot` inställd på `true`. I allmänhet återges platskartor med hjälp av väljare på sökvägen till platskartan på den översta nivån i trädet, vilket är den resurs som inte har något annat överordnat objekt för platskartan. Den här platskartan på den översta nivån visar också platskartsindexet, som vanligtvis är det som en webbplatsägare skulle konfigurera i sökmotorns konfigurationsportal eller lägga till i webbplatsens `robots.txt`.
 
 Ta till exempel en plats som definierar en platskarta på den översta nivån på `my-page` och en kapslad platskarta på `my-page/news` för att generera en dedikerad platskarta för sidorna i nyhetsunderträdet. De resulterande, relevanta URL-adresserna skulle
@@ -398,7 +387,7 @@ AEM Sites innehåller en standardimplementering av en `SitemapGenerator` som gå
 För att begränsa innehållet i en webbplatskarta kan följande gränssnitt implementeras vid behov:
 
 * [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) kan implementeras för att dölja sidor från XML-webbplatskartor som genereras av den AEM Sites-specifika platskartegeneratorn
-* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) or [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) kan implementeras för att filtrera bort produkter eller kategorier från XML-webbplatskartor som genereras av de [Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=sv-SE) -specifika webbplatskartgeneratorerna
+* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) or [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) kan implementeras för att filtrera bort produkter eller kategorier från XML-webbplatskartor som genereras av de [Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) -specifika webbplatskartgeneratorerna
 
 Om standardimplementeringarna inte fungerar för ett visst användningsfall, eller om tilläggspunkterna inte är tillräckligt flexibla, ska du implementera en anpassad `SitemapGenerator` för att få full kontroll över innehållet i en genererad platskarta. I följande exempel används standardimplementeringens logik för AEM Sites. Den använder [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) som startpunkt för att gå igenom ett sidträd:
 

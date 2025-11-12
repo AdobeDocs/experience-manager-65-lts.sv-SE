@@ -1,18 +1,14 @@
 ---
 title: Konfigurera allmänna inställningar för dynamiska media
 description: Lär dig hantera allmänna inställningar i Dynamic Media. Du kan ange namnet på publiceringsservern och namnet på den ursprungliga servern här och ange ett alternativ för att skriva över bilder. Det finns också standardalternativ för överföring av oskarp maskering av bilder och överföringsalternativ för hur du vill bearbeta PostScript-, Adobe Photoshop-, PDF- och Adobe Illustrator-filer.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: 99cd5f46-f1aa-46f5-b112-311724e00490
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 298d0505a6c0561202e77008b3c352066d4e72b7
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2307'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 Konfigurationen av **[!UICONTROL Dynamic Media General Settings]** är bara tillgänglig om:
 
 * Du kör Dynamic Media i Scene7-läge. Se [Aktivera dynamiska media i Scene7-läge](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Du har en *befintlig* **[!UICONTROL Dynamic Media Configuration]** (i **[!UICONTROL Cloud Services]**) i Adobe Experience Manager 6.5.11 eller senare. Se [Skapa en dynamisk mediekonfiguration i molntjänster](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Du har en *befintlig* **[!UICONTROL Dynamic Media Configuration]** (i **[!UICONTROL Cloud Services]**). Se [Skapa en dynamisk mediekonfiguration i molntjänster](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Du är systemadministratör för Experience Manager med administratörsbehörighet.
 
 Dynamic Media General Settings är avsedd att användas av erfarna webbplatsutvecklare och programmerare. Adobe Dynamic Media rekommenderar användare som ändrar dessa publiceringsinställningar att känna till Dynamic Media i Adobe Experience Manager och grundläggande bildbehandlingsteknik.
@@ -52,7 +48,7 @@ Se även [Valfritt - Konfigurera och konfigurera Dynamic Media - Scene7-lägesin
    * Fliken [Illustrator](#illustrator-tab)
 
    ![Sidan Allmänna inställningar för dynamiska media](/help/assets/assets-dm/dm-general-settings.png)
-   *Sidan Allmänna inställningar för dynamiska media, med fliken **[!UICONTROL Image Editing]**&#x200B;markerad.*<br><br>
+   *Sidan Allmänna inställningar för dynamiska media, med fliken **[!UICONTROL Image Editing]**markerad.*<br><br>
 
 1. När du är klar väljer du **[!UICONTROL Save]** i sidans övre högra hörn.
 
@@ -86,7 +82,7 @@ När du skapar ett konto tillhandahåller Adobe Dynamic Media automatiskt de ser
 
   Kontrollerar bevarande av befintliga manuella beskärningsdefinitioner.
 
-  Se även `preserveCrop` i [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=sv-SE) och [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=sv-SE), båda i referenshandboken för Dynamic Media Viewer.
+  Se även `preserveCrop` i [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) och [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), båda i referenshandboken för Dynamic Media Viewer.
 
 ## Standardalternativ för överföring {#default-upload-options}
 

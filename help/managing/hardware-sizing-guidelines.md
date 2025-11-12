@@ -1,11 +1,11 @@
 ---
 title: Riktlinjer för maskinvarans storlek
 description: Dessa riktlinjer för storleksändring ger en uppskattning av de maskinvaruresurser som krävs för att driftsätta ett AEM-projekt.
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a5e7c2326785d6801601eabc71647923ba854f04
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 0%
@@ -107,7 +107,7 @@ Alla system körs, men det finns bättre datorprestanda. Den extra prestandan ä
 Beräkningen av hur många klusternoder som behövs baseras på de grundläggande kraven och specifika användningsfall för det aktuella webbprojektet:
 
 * När det gäller felsäkerhet är det nödvändigt att för alla miljöer fastställa hur allvarligt felet är och hur lång tid det tar för en klusternod att återställa felet.
-* När det gäller skalbarhet är antalet skrivåtgärder den viktigaste faktorn. Belastningsutjämning kan upprättas för åtgärder som enbart använder systemet för att bearbeta läsåtgärder. Mer information finns i [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE).
+* När det gäller skalbarhet är antalet skrivåtgärder den viktigaste faktorn. Belastningsutjämning kan upprättas för åtgärder som enbart använder systemet för att bearbeta läsåtgärder. Mer information finns i [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 
 ### Maskinvarurekommendationer {#hardware-recommendations}
 

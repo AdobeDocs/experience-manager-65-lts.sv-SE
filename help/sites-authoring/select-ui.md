@@ -1,13 +1,13 @@
 ---
 title: Välja användargränssnitt i AEM
-description: Konfigurera vilket gränssnitt du använder för Adobe Experience Manager 6.5.
+description: Konfigurera vilket gränssnitt du använder för att arbeta i Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d8057cf9ee86c2ec9c1f556fa7c18f98797fe982
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Detta anger att användargränssnittet ska vara standard när sidor redigeras, m
 * [Växlar till det klassiska användargränssnittet för den aktuella sessionen](#switching-to-classic-ui-for-the-current-session)
 Växlar till det klassiska användargränssnittet för den aktuella sessionen.
 
-* När det gäller [sidredigering gör systemet vissa åsidosättningar i relation till användargränssnittet &#x200B;](#ui-overrides-for-the-editor).
+* När det gäller [sidredigering gör systemet vissa åsidosättningar i relation till användargränssnittet ](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >
@@ -104,11 +104,9 @@ De inställningar som definieras av en användare eller systemadministratör kan
 * När du redigerar sidor:
 
    * Den klassiska redigeraren måste användas när sidan öppnas med `cf#` i URL:en. Till exempel:
-
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * Användning av den pekaktiverade redigeraren är tvingad när `/editor.html` används i URL:en eller när en pekenhet används. Till exempel:
-
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Alla tvång är tillfälliga och gäller endast för webbläsarsessionen

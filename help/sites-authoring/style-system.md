@@ -1,16 +1,13 @@
 ---
 title: Formatsystem
 description: Med Style System kan mallskapare definiera formatklasser i en komponents innehållsprincip så att en innehållsförfattare kan markera dem när komponenten på en sida redigeras. Dessa format kan vara alternativa visuella varianter av en komponent, vilket gör den mer flexibel.
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: a3d42a73-e1b2-4f76-b98a-89cd98eea2c9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1b01d338c8400f38e4f062cb3ee592062f560a67
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1292'
 ht-degree: 1%
 
 ---
@@ -62,9 +59,9 @@ Följande diagram visar arkitekturen i Style System.
 
 ## Använd {#use}
 
-För att demonstrera funktionen använder vi [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)-implementeringen av kärnkomponentens [title-komponent](https://www.adobe.com/go/aem_cmp_title_v2) som exempel.
+För att demonstrera funktionen använder vi [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)-implementeringen av kärnkomponentens [title-komponent](https://www.adobe.com/go/aem_cmp_title_v2) som exempel.
 
-I följande avsnitt [Som innehållsförfattare](#as-a-content-author) och [&#x200B; som mallskapare](#as-a-template-author) beskrivs hur du testar funktionaliteten i Style System med Style System of WKND.
+I följande avsnitt [Som innehållsförfattare](#as-a-content-author) och [ som mallskapare](#as-a-template-author) beskrivs hur du testar funktionaliteten i Style System med Style System of WKND.
 
 Om du vill använda Style System för dina egna komponenter gör du följande:
 
@@ -85,7 +82,7 @@ Om du vill använda Style System för dina egna komponenter gör du följande:
 
    >[!NOTE]
    >
-   >I det här exemplet utesluter formaten **Färger** (**Svart**, **Vit** och **Grå**) varandra, medan alternativen **Format** (**Understruken**, **Högerjustera** och **Mini Spacing**&rbrace;) kan kombineras. Detta kan [konfigureras i mallen som mallskapare](#as-a-template-author).
+   >I det här exemplet utesluter formaten **Färger** (**Svart**, **Vit** och **Grå**) varandra, medan alternativen **Format** (**Understruken**, **Högerjustera** och **Mini Spacing**}) kan kombineras. Detta kan [konfigureras i mallen som mallskapare](#as-a-template-author).
 
 ### Som mallskapare {#as-a-template-author}
 
@@ -129,7 +126,7 @@ När komponenten är konfigurerad infogas de format som har konfigurerats av sid
 
 ### Aktivera fliken Format i dialogrutan Redigera {#enable-styles-tab-edit}
 
-Från och med AEM version 6.5.3.0 finns nu en valfri formatflik i dialogrutan Redigera. Till skillnad från fliken Design Dialog är fliken i dialogrutan Redigera inte nödvändig för att formatsystemet ska fungera, men den är ett valfritt gränssnitt där en innehållsförfattare kan ange format.
+Nu finns det en flik för valfria format i dialogrutan Redigera. Till skillnad från fliken Design Dialog är fliken i dialogrutan Redigera inte nödvändig för att formatsystemet ska fungera, men den är ett valfritt gränssnitt där en innehållsförfattare kan ange format.
 
 Fliken för redigeringsdialogrutan kan läggas in på ungefär samma sätt som fliken för designdialogrutan:
 

@@ -1,14 +1,13 @@
 ---
 title: Tillgängliga funktioner och gränssnitt för  [!DNL Experience Manager Assets]
-description: Se hur tillgänglighetsfunktionerna i  [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] kan hjälpa användare med funktionshinder.
-contentOwner: AG
+description: Se hur tillgänglighetsfunktionerna i  [!DNL Adobe Experience Manager] 6.5 LTS [!DNL Assets] kan hjälpa användare med funktionshinder.
 feature: Asset Management
 role: User, Architect, Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 61a1bb55f4b8da8c421f51ee203ca8e433a73a64
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1880'
 ht-degree: 0%
 
 ---

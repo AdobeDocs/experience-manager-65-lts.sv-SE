@@ -1,15 +1,11 @@
 ---
 title: Arbeta med Adobe Campaign
 description: Adobe Campaign är en uppsättning lösningar som gör att ni kan personalisera och leverera kampanjer i alla kanaler, både online och offline.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 4a659a56-ba49-4bfa-8fc2-e0d033f27809
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: f9995f10cd8cc282cbc3ce2cb2df1b4591594139
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%

@@ -7,9 +7,9 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1823'
 ht-degree: 3%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 3%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=sv-SE) |
-| AEM 6.5 | Den här artikeln |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM 6.5 LTS | Den här artikeln |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
@@ -83,7 +83,7 @@ Med en metadataprofil kan du använda standardmetadata för resurser i en mapp. 
    >
    >Om du lägger till ett standardvärde till en ny metadataegenskap (som inte finns på noden `/jcr:content/metadata`) visas inte egenskapen och dess värde på objektets [!UICONTROL Properties] -sida som standard. Om du vill visa den nya egenskapen på resursens [!UICONTROL Properties]-sida ändrar du motsvarande schemaformulär.
 
-1. (Valfritt) Lägg till fler komponenter i [!UICONTROL Edit Form] på fliken **[!UICONTROL Build Form]** och konfigurera deras egenskaper på fliken **[!UICONTROL Settings]**. Följande egenskaper är tillgängliga på fliken **[!UICONTROL Build Form]**:
+1. (Valfritt) Lägg till fler komponenter i **[!UICONTROL Build Form]** på fliken [!UICONTROL Edit Form] och konfigurera deras egenskaper på fliken **[!UICONTROL Settings]**. Följande egenskaper är tillgängliga på fliken **[!UICONTROL Build Form]**:
 
 | Komponent | Egenskaper |
 | ----------------------------- | ----------------------------------------------------------------------- |
@@ -118,7 +118,7 @@ Med en metadataprofil kan du använda standardmetadata för resurser i en mapp. 
 1. Klicka på **[!UICONTROL Delete]** i dialogrutan för att bekräfta borttagningsåtgärden. Metadataprofilen tas bort från listan.
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/se/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -146,7 +146,7 @@ Med [!DNL Adobe Experience Manager Assets] kan du skapa metadatascheman för res
 Använd schemaredigeraren för mappmetadata i Forms för att skapa och redigera metadatascheman för mappar.
 
 1. I gränssnittet [!DNL Experience Manager] går du till **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
-1. Klicka på **[!UICONTROL Create]** på sidan [!UICONTROL Folder Metadata Schema Forms].
+1. Klicka på [!UICONTROL Folder Metadata Schema Forms] på sidan **[!UICONTROL Create]**.
 1. Ange ett namn för formuläret och klicka på **[!UICONTROL Create]**. Det nya schemaformuläret visas på sidan [!UICONTROL Schema Forms].
 
 ### Redigera schemaformulär för mappmetadata {#edit-folder-metadata-schema-forms}
@@ -251,7 +251,7 @@ Om du konfigurerar ett metadataram för en mapp lagras sökvägen till schemafor
 
 Du kan tilldela ett mappmetadatchema när du skapar en mapp. Om det finns minst ett mappmetadatchema i systemet visas en extra lista i dialogrutan **[!UICONTROL Create Folder]**. Du kan välja önskat schema. Som standard är inget schema valt.
 
-1. Klicka på **[!UICONTROL Create]** i verktygsfältet i användargränssnittet för [!DNL Experience Manager Assets].
+1. Klicka på [!DNL Experience Manager Assets] i verktygsfältet i användargränssnittet för **[!UICONTROL Create]**.
 1. Ange en rubrik och ett namn för mappen.
 1. Välj önskat schema i listan Mappmetadatamatchema. Klicka sedan på **[!UICONTROL Create]**.
 
@@ -272,13 +272,13 @@ Ange metadatavärden i de olika fälten och klicka på **[!UICONTROL Save]** fö
 
 * Om du vill importera metadata för anpassade namnutrymmen måste du först registrera namnutrymmena.
 * Egenskapsväljaren visar egenskaper som används i schemaredigerare och sökformulär. Egenskapsväljaren väljer inte metadataegenskaper för en resurs.
-* Det kan finnas befintliga metadataprofiler sedan du uppgraderade till [!DNL Experience Manager] 6.5. Om du efter uppgraderingen använder en sådan profil i mappen [!UICONTROL Properties] på fliken [!UICONTROL Metadata Profiles] visas inte metadatafälten. Om du däremot använder en ny metadataprofil visas formulärfälten, men de är inte tillgängliga som förväntat. Funktionsbortfall är inte kvar, men om du vill se (ej tillgängliga) formulärfält redigerar du och sparar de befintliga metadataprofilerna.
+* Du kan ha befintliga metadataprofiler sedan du uppgraderade till [!DNL Experience Manager] 6.5 LTS. Om du tillämpar en sådan profil i mappen [!UICONTROL Properties] på fliken [!UICONTROL Metadata Profiles] efter uppgraderingen visas inte metadatafälten. Om du däremot använder en ny metadataprofil visas formulärfälten, men de är inte tillgängliga som förväntat. Funktionsbortfall är inte kvar, men om du vill se (ej tillgängliga) formulärfält redigerar du och sparar de befintliga metadataprofilerna.
 
 >[!MORELIKETHIS]
 >
 >* [Metadatabegrepp och -förståelse](metadata-concepts.md).
 >* [Redigera metadataegenskaper för flera samlingar](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Import och export av metadata i Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=sv-SE).
+>* [Import och export av metadata i Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Profiler för att bearbeta metadata, bilder och videor](processing-profiles.md).
 >* [Bästa tillvägagångssätt för att ordna dina digitala resurser så att de använder bearbetningsprofiler](/help/assets/organize-assets.md).
 >* [XMP tillbakaskrivning](/help/assets/xmp-writeback.md).

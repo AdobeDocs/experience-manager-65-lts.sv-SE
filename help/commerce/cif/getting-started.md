@@ -6,9 +6,9 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 0b337740dffb9e6421e6d2c44a1ae222dfa37711
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,15 @@ För att komma igång med AEM Content och Commerce måste du installera AEM Cont
 
 Introduktionen av AEM Content och Commerce är en tvåstegsprocess:
 
-1. Installera AEM Content och Commerce Add-on för AEM 6.5
+1. Installera AEM Content and Commerce Add-on for AEM 6.5 LTS
 
 2. Koppla samman AEM med e-handelslösningen
 
-### Installera AEM Content och Commerce Add-on för AEM 6.5 {#install-add-on}
+### Installera AEM Content and Commerce Add-on for AEM 6.5 LTS {#install-add-on}
 
-Hämta och installera AEM Commerce Add-On för AEM 6.5 från portalen [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+Hämta och installera AEM Commerce Add-On för AEM 6.5 LTS från portalen [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-Starta och installera AEM 6.5 Service Pack. Vi rekommenderar att du installerar det senaste tillgängliga Service Pack-paketet.
+Starta och installera AEM 6.5 LTS Service Pack. Vi rekommenderar att du installerar det senaste tillgängliga Service Pack-paketet.
 
 >[!NOTE]
 >

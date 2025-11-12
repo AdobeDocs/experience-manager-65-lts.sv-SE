@@ -1,11 +1,11 @@
 ---
 title: En snabbguide till WCAG 2.1
 description: A Quick Guide to Web Content Accessibility Guidelines (WCAG) version 2.1.
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 exl-id: 57afd8bf-c6d6-47ab-9a30-c5830bc5ea51
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 5aafd5e1ba5e2202f941975d292a3e242363601a
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 87%

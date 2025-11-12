@@ -1,14 +1,13 @@
 ---
 title: Konverteringsbibliotek för bildbehandling
 description: Lär dig hur du konfigurerar och använder Adobe Imaging Transcoding Library, en bildbehandlingslösning som kan utföra grundläggande bildhanteringsfunktioner, inklusive kodning, omkodning, bildomsampling och storleksändring.
-contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -76,7 +75,7 @@ Om du vill konfigurera ITL-bearbetning skapar du en konfigurationsfil och uppdat
 
 Om du vill konfigurera biblioteket skapar du en CONF-fil som anger biblioteken med följande steg. Du behöver administratörs- eller rotbehörigheter.
 
-1. Hämta paketet [Imaging Transcoding Library från Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) och installera det med Package Manager. Paketet är kompatibelt med [!DNL Experience Manager] 6.5.
+1. Hämta paketet [Imaging Transcoding Library från Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) och installera det med Package Manager. Paketet är kompatibelt med [!DNL Experience Manager] 6.5 LTS.
 
 1. Om du vill veta ett paket-ID för `com.day.cq.dam.cq-dam-switchengine` loggar du in på webbkonsolen och klickar på **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]**. Du kan även öppna paketkonsolen genom att gå till URL:en för `https://[aem_server:[port]/system/console/bundles/`. Leta reda på paketet `com.day.cq.dam.cq-dam-switchengine` och dess ID.
 
@@ -94,14 +93,14 @@ Om du vill konfigurera biblioteket skapar du en CONF-fil som anger biblioteken m
 
 1. Kör kommandot `ldconfig` om du vill skapa nödvändiga länkar och cacheminne.
 
-1. Redigera `.bash_profile`-filen i det konto som används för att starta [!DNL Experience Manager]. Lägg till `LD_LIBRARY_PATH` genom att lägga till följande.
+1. Redigera [!DNL Experience Manager]-filen i det konto som används för att starta `.bash_profile`. Lägg till `LD_LIBRARY_PATH` genom att lägga till följande.
 
    ```shell
    LD_LIBRARY_PATH=.
    export LD_LIBRARY_PATH
    ```
 
-1. Använd kommandot `echo $LD_LIBRARY_PATH` om du vill vara säker på att värdet för sökvägen är `.`. Utdata ska bara vara `.`. Om värdet inte är `.` startar du om sessionen.
+1. Använd kommandot `.` om du vill vara säker på att värdet för sökvägen är `echo $LD_LIBRARY_PATH`. Utdata ska bara vara `.`. Om värdet inte är `.` startar du om sessionen.
 
 ### Konfigurera arbetsflödet för [!UICONTROL DAM Update Asset] {#configure-dam-asset-update-workflow}
 
@@ -109,7 +108,7 @@ Uppdatera arbetsflödet [!UICONTROL DAM Update Asset] så att biblioteket använ
 
 1. I användargränssnittet för [!DNL Experience Manager] väljer du **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
-1. Öppna arbetsflödesmodellen **[!UICONTROL DAM Update Asset]** på sidan **[!UICONTROL Workflow Models]** i redigeringsläge.
+1. Öppna arbetsflödesmodellen **[!UICONTROL Workflow Models]** på sidan **[!UICONTROL DAM Update Asset]** i redigeringsläge.
 
 1. Öppna arbetsflödessteget **[!UICONTROL Process Thumbnails]**. På fliken **[!UICONTROL Thumbnails]** lägger du till de MIME-typer som du vill hoppa över standardprocessen för generering av miniatyrbilder för i listan **[!UICONTROL Skip Mime Types]**.
 Om du till exempel vill skapa miniatyrer för en TIFF-bild med hjälp av Imaging Transcoding Library, anger du `image/tiff` i fältet **[!UICONTROL Skip Mime Types]**.

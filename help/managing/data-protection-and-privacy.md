@@ -1,18 +1,13 @@
 ---
 title: Dataskydd och dataintegritet - Adobe Experience Manager beredskap
 description: Läs mer om Adobe Experience Manager stöd för de olika dataskydds- och datasekretessreglerna. Den innehåller EU:s allmänna dataskyddsförordning (GDPR), Kaliforniens konsumentintegritetslag (Consumer Privacy Act) och hur man följer den när man genomför ett nytt AEM-projekt.
-contentOwner: AEM Docs
-topic-tags: introduction, grdp
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4a93e17da1157253a681bf8b3a38252962d8fb59
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -81,7 +76,7 @@ För Adobe Experience Manager:
 
 Adobe tillhandahåller procedurer för hantering av sekretessförfrågningar relaterade till åtkomst, borttagning och avanmälan för Adobe Experience Manager. Ibland finns det API:er som kan anropas från en kundutvecklad portal eller skript som kan hjälpa till med automatisering.
 
-Följande diagram visar hur ett arbetsflöde för sekretesspolicy kan se ut (illustreras med Adobe Experience Manager 6.5):
+I följande diagram visas hur ett arbetsflöde för sekretesspolicy kan se ut:
 
 ![Dataskydd och sekretess](assets/data-protection-and-privacy-01.png)
 
@@ -109,7 +104,7 @@ Mer information finns i följande:
 
 * [Adobe Target - Integritetsöversikt](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Adobe Analytics arbetsflöde för datasekretess](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=sv-SE)
+* [Adobe Analytics arbetsflöde för datasekretess](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Forms {#aem-forms}
 
