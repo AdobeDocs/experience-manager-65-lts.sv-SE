@@ -84,4 +84,4 @@ Medlemmar i användargruppen analytics-administrators kan konfigurera konsolen S
 >
 >På grund av säkerhetsändringar i Adobe Analytics API är det inte längre möjligt att använda den version av Activity Map som ingår i AEM.
 >
->Plugin-programmet [ActivityMap som tillhandahålls av Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) bör nu användas.
+>Plugin-programmet [ActivityMap som tillhandahålls av Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=sv-SE) bör nu användas.

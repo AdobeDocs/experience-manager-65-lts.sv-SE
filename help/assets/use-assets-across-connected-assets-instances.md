@@ -19,7 +19,7 @@ ht-degree: 14%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=sv-SE) |
 | AEM 6.5 LTS | Den här artikeln |
 
 
@@ -42,7 +42,7 @@ För författarna till [!DNL Sites] är fjärrresurserna tillgängliga som skriv
 Innan du använder eller konfigurerar den här funktionen bör du kontrollera följande:
 
 * Användarna ingår i rätt användargrupper för varje distribution.
-* Ett av villkoren som stöds är uppfyllt för [!DNL Adobe Experience Manager]-distributionstyper. [!DNL Experience Manager] 6.5 LTS [!DNL Assets] fungerar med [!DNL Experience Manager] as a Cloud Service. Mer information om hur den här funktionen fungerar i [!DNL Experience Manager] som [!DNL Cloud Service] finns i [Ansluten Assets i Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
+* Ett av villkoren som stöds är uppfyllt för [!DNL Adobe Experience Manager]-distributionstyper. [!DNL Experience Manager] 6.5 LTS [!DNL Assets] fungerar med [!DNL Experience Manager] as a Cloud Service. Mer information om hur den här funktionen fungerar i [!DNL Experience Manager] som [!DNL Cloud Service] finns i [Ansluten Assets i Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=sv-SE).
 
   | | [!DNL Sites] som en [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 LTS [!DNL Sites] på AMS | [!DNL Experience Manager] 6.5 LTS [!DNL Sites] lokal |
   |---|---|---|---|
@@ -134,7 +134,7 @@ Följ de här stegen för att konfigurera anslutningsmöjligheter för anslutna 
    >
    >Alla återgivningar som är tillgängliga på fjärrdistributionen hämtas när författare hämtar en resurs. Om du vill skapa fler återgivningar av en hämtad resurs hoppar du över det här konfigurationssteget. Arbetsflödet [!UICONTROL DAM Update Asset] aktiveras och skapar fler återgivningar. Dessa återgivningar är bara tillgängliga på den lokala distributionen av [!DNL Sites] och inte på den fjärranslutna DAM-distributionen.
 
-1. Lägg till distributionen [!DNL Sites] som ett tillåtet ursprung i CORS-konfigurationen i distributionen [!DNL Assets]. Mer information finns i [förstå CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
+1. Lägg till distributionen [!DNL Sites] som ett tillåtet ursprung i CORS-konfigurationen i distributionen [!DNL Assets]. Mer information finns i [förstå CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=sv-SE).
 
 1. Konfigurera [stöd för samma webbplats-cookie](/help/sites-administering/same-site-cookie-support.md).
 
@@ -173,7 +173,7 @@ På fjärrdistribution av [!DNL Assets] i [!UICONTROL Dynamic Media sync mode] v
    * På lokal [!DNL Sites] väljer du [!UICONTROL Dynamic Media sync mode] i **[!UICONTROL Disabled by default]**. Distributionen [!DNL Sites] måste ha skrivskyddad åtkomst till kontot [!DNL Dynamic Media].
    * På lokal [!DNL Sites] väljer du **[!UICONTROL Publish Assets]** i alternativet **[!UICONTROL Selective Publish]**. Välj inte **[!UICONTROL Sync All Content]**.
 
-1. Aktivera [[!DNL Dynamic Media] stöd i Image Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Med den här funktionen aktiveras [Image-komponenten](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) som standard för att visa [!DNL Dynamic Media] bilder när [!DNL Dynamic Media] bilder används av författare på webbsidor i lokal [!DNL Sites]-distribution.
+1. Aktivera [[!DNL Dynamic Media] stöd i Image Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=sv-SE#dynamic-media). Med den här funktionen aktiveras [Image-komponenten](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) som standard för att visa [!DNL Dynamic Media] bilder när [!DNL Dynamic Media] bilder används av författare på webbsidor i lokal [!DNL Sites]-distribution.
 
 ## Använd fjärrresurser {#use-remote-assets}
 
@@ -316,7 +316,7 @@ Du kan lägga till resurser i distributionen [!DNL Sites], men dessa resurser ka
 
 * Konfigurera [Assets Insight](/help/assets/asset-insights.md)-funktionen för instansen [!DNL Sites] om du vill få information om resursanvändning.
 
-* Du kan inte dra fjärrresursen till dialogrutan [Konfigurera bildkomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). Du kan dock dra fjärrresursen direkt till bildkomponenten på sidan Platser utan att klicka på **[!UICONTROL Configure]**.
+* Du kan inte dra fjärrresursen till dialogrutan [Konfigurera bildkomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=sv-SE#configure-dialog). Du kan dock dra fjärrresursen direkt till bildkomponenten på sidan Platser utan att klicka på **[!UICONTROL Configure]**.
 
 ### Tillstånd och resurshantering {#permissions-and-managing-assets}
 

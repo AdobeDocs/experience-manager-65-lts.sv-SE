@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=sv-SE) |
 | AEM 6.5 LTS | Den här artikeln |
 
 <!-- old content
@@ -463,9 +463,9 @@ Användarna kan se egenskaperna för både, licensierade och olicensierade resur
 
 >[!MORELIKETHIS]
 >
->* [Videosjälvstudiekurs om hur du använder [!DNL Adobe Stock] resurser med [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [[!DNL Adobe Stock] Hjälp om företagsplan](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] Vanliga frågor](https://helpx.adobe.com/stock/faq.html)
+>* [Videosjälvstudiekurs om hur du använder [!DNL Adobe Stock] resurser med [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=sv-SE)
+>* [[!DNL Adobe Stock] Hjälp om företagsplan](https://helpx.adobe.com/se/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Vanliga frågor](https://helpx.adobe.com/se/stock/faq.html)
 
 
 <!--old content

@@ -82,7 +82,7 @@ När du skapar ett konto tillhandahåller Adobe Dynamic Media automatiskt de ser
 
   Kontrollerar bevarande av befintliga manuella beskärningsdefinitioner.
 
-  Se även `preserveCrop` i [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) och [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), båda i referenshandboken för Dynamic Media Viewer.
+  Se även `preserveCrop` i [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=sv-SE) och [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=sv-SE), båda i referenshandboken för Dynamic Media Viewer.
 
 ## Standardalternativ för överföring {#default-upload-options}
 
