@@ -3,13 +3,13 @@ title: AI i AEM 6.5 LTS
 description: Läs om AI i Adobe Experience Manager 6.5 LTS
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: 1faef2add55c8dd7d548a5b2613537566289fc83
+exl-id: 312e1d66-ba2e-4b9a-a679-4e44112f3222
+source-git-commit: 20978122a1d4e935e1384674dd5503f3cc807ef5
 workflow-type: tm+mt
 source-wordcount: '82'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
-
 
 # AI i AEM {#ai-in-aem}
 
@@ -23,6 +23,6 @@ AI är en integrerad del av Adobe Experience Manager, som används för att hjä
 
 * [Adobe AI - översikt](https://www.adobe.com/ai/overview.html)
 
-* [Generativ AI i Experience Cloud-produkter](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/generative-ai)
+* [Generativ AI i Experience Cloud-produkter](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [Generativ AI i Experience Cloud-produkter - Adobe Experience Manager](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/generative-ai#aem)
+   * [Generativ AI i Experience Cloud-produkter - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)

@@ -24,16 +24,16 @@ Målet med den här självstudiekursen är att lära en utvecklare som är nybö
 
 ![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-[WKND Developer Tutorial är tillgänglig här](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE) och vägleder dig genom att skapa ett AEM-projekt med hjälp av de senaste teknikerna och bästa metoderna.
+[WKND Developer Tutorial är tillgänglig här](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) och vägleder dig genom att skapa ett AEM-projekt med hjälp av de senaste teknikerna och bästa metoderna.
 
 ## Kärnbegrepp {#core-concepts}
 
 I självstudiekursen används många kraftfulla funktioner i AEM. Webbplatsen kommer att implementeras med:
 
-* [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE)
+* [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Sling Models](https://sling.apache.org/documentation/bundles/models.html)
 * [Pekgränssnitt](/help/sites-developing/touch-ui-concepts.md)
-* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE)
+* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Redigerbara mallar](/help/sites-developing/page-templates-editable.md)
 
 Gå igenom självstudiekursen innan du går in på de ovanstående begreppen i detalj.
