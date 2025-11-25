@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e0fb43e63eb876049447d12ab379fd92aa1ee4b6
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2350'
 ht-degree: 4%
 
 ---
@@ -407,6 +407,12 @@ Med variationer kan du ta **mallinnehållet** och ändra det efter syfte (om det
 
 Så här skapar du en variant:
 
+>[!NOTE]
+>
+>Variationer lägger till bearbetningstid i ett innehållsfragment, i författarmiljön och även vid leverans. Vi rekommenderar att du håller antalet variationer till ett hanterbart minimum.
+>
+>Ett tips är att inte överskrida tio varianter per innehållsfragment.
+
 1. Öppna fragmentet och se till att sidopanelen är synlig.
 1. Välj **Variationer** i ikonfältet på sidpanelen.
 1. Välj **Skapa variant**.
@@ -468,7 +474,7 @@ När du redigerar en variant har du tillgång till åtgärden för att synkronis
 
 >[!CAUTION]
 >
->Synkronisering är bara tillgängligt för att kopiera ändringar *från **mastern**&#x200B;till varianten*.
+>Synkronisering är bara tillgängligt för att kopiera ändringar *från **mastern**till varianten*.
 >
 >Endast varianternas aktuella element synkroniseras.
 >
