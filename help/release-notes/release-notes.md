@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+source-git-commit: 5dfcc115fd2e1991a8a4701597b0fb25b374e3ee
 workflow-type: tm+mt
-source-wordcount: '7381'
+source-wordcount: '7405'
 ht-degree: 0%
 
 ---
@@ -410,6 +410,7 @@ Ett hjälpmedelsproblem har korrigerats där platshållare felaktigt visades som
 * Användare kunde inte använda tidslinjefunktionen i PDF-filer i AEM-formulär. Det här problemet påverkade användarnas möjlighet att spåra dokumentändringar och revisioner effektivt. När du överför någon PDF under avsnittet Forms och dokument i AEM formulärområde fungerar inte tidslinjevyn. (FORMS-1908)
 * Användarna får ett null-pekarundantag när de interagerar med OData. Detta orsakar avbrott i datahämtningsprocesserna. (FORMS-20348)
 * Tog bort biblioteket google.common.collect efter borttagningen av Guava, ett Java-bibliotek med öppen källkod. Denna uppdatering ger bättre kompatibilitet och prestanda för företagskunder som använder Adaptive Forms. (FORMS-17031)
+* När SSV (Server-Side Validation) är aktiverat kan det hända att det inte går att skicka formulär. Kontakta [Adobe Support](https://business.adobe.com/in/support/main.html) om du råkar ut för det här problemet. (FORMS-21966)
 
 ### Forms Captcha
 
@@ -503,7 +504,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -618,7 +619,7 @@ Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorr
 När du öppnar sidan Behörigheter under Verktyg -> Säkerhet i AEM 6.5 LTS SP1 visas en tom sida i stället för att behörigheter för en användare eller grupp visas.
 
 **Lösning:**
-En snabbkorrigering, [&#x200B; cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) , finns tillgänglig för att lösa problemet.
+En snabbkorrigering, [ cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) , finns tillgänglig för att lösa problemet.
 
 
 ## OSGi-paket och innehållspaket som ingår{#osgi-bundles-and-content-packages-included}
@@ -633,5 +634,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
