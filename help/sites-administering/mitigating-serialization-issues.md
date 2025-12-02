@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ Du kan konfigurera blockeringslista och tillåtelselista genom att följa instru
 Medlet är avsett att bidra till att minska de senaste kända sårbara klasserna. Om ditt projekt avserialiserar otillförlitliga data kan det fortfarande vara känsligt för denial of service-attacker, slut på minnesattacker och okända framtida avserialiseringsattacker.
 
 Adobe stöder officiellt Java™ 6, 7 och 8. Adobe förståelse är dock att NotSoSerial även stöder Java™ 5.
+
+>[!WARNING]
+>
+>NotSoSerial ska inte användas med Java™ 17 eller senare.
 
 ## Installera agenten {#installing-the-agent}
 
