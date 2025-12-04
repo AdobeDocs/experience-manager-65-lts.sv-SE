@@ -5,13 +5,12 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: bb270a983d9d3f7d116a179886daf763e7e2341e
+source-git-commit: fbe90ee89a2c20496800b545ec5637e829e7c7d7
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
 
 ---
-
 
 # Programfixar för Adobe Experience Manager Forms 6.5 LTS{#aem-form-hotfix}
 
@@ -37,7 +36,7 @@ I den här artikeln listas de viktiga korrigeringar som har implementerats för 
     <ul>
     <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-win-pkg-6.1.176-RHF-002.zip">Programfix2 för AEM Service Pack 6.5 LTS i Windows</a></li>
     <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]hotfix-on-add-on/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">Hotfix2 för AEM Service Pack 6.5 LTS i Linux</a></li>
-     <li>OSX- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">Programfix2 för AEM Service Pack 6.5 LTS i OSX</a></li>
+     <li>MacOS- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">Programfix2 för AEM Service Pack 6.5 LTS på MacOS</a></li>
     <td>
     <ul>
     <li>Förbättrad tillförlitlighet när det gäller inskickning av formulär genom att åtgärda ett problem där inskickning kan misslyckas när serversidesvalidering (SSV) har aktiverats Om du får problem kontaktar du [Adobe Experience Manager Forms Support](https://business.adobe.com/in/support/main.html)
