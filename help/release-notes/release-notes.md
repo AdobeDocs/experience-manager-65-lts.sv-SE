@@ -603,7 +603,7 @@ Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorr
 När du öppnar sidan Behörigheter under Verktyg -> Säkerhet i AEM 6.5 LTS SP1 visas en tom sida i stället för att behörigheter för en användare eller grupp visas.
 
 **Lösning:**
-En snabbkorrigering, [ cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) , finns tillgänglig för att lösa problemet.
+En snabbkorrigering, [&#x200B; cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) , finns tillgänglig för att lösa problemet.
 
 
 ## OSGi-paket och innehållspaket som ingår{#osgi-bundles-and-content-packages-included}
