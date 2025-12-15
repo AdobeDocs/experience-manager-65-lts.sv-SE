@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: cb22ff03-6de1-4cab-8a3e-d3d0fa1d29e2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1728'
 ht-degree: 6%
 
 ---
@@ -34,6 +34,10 @@ När du har definierat dina [modeller för innehållsfragment](#creating-a-conte
 >
 >* när du redigerar sidor, se [Sidredigering med innehållsfragment](/help/sites-authoring/content-fragments.md).
 >* för [Headless Content Delivery med Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+
+>[!NOTE]
+>
+>Observera [Bästa praxis](/help/assets/content-fragments/content-fragments.md#best-practices) när du arbetar med modeller för innehållsfragment och innehållsfragment.
 
 >[!NOTE]
 >
@@ -123,7 +127,7 @@ Markera fragmentet för att visa verktygsfältet med tillämpliga åtgärder:
 
 >[!NOTE]
 >
->Många av dessa är [standardåtgärder för Assets](/help/assets/manage-assets.md) och/eller [AEM-datorprogrammet](https://helpx.adobe.com/se/experience-manager/desktop-app/aem-desktop-app.html).
+>Många av dessa är [standardåtgärder för Assets](/help/assets/manage-assets.md) och/eller [AEM-datorprogrammet](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## Öppna fragmentredigeraren {#opening-the-fragment-editor}
 
@@ -366,7 +370,7 @@ Innehållsfragment måste publiceras för användning i publiceringsmiljön. De 
 
 * Efter skapande; använder [åtgärder som är tillgängliga i Assets-konsolen](#actions-for-a-content-fragment-assets-console).
 * Från [redigeraren för innehållsfragment](#toolbar-actions-in-the-content-fragment-editor).
-* När du [publicerar en sida som använder fragmentet &#x200B;](/help/sites-authoring/content-fragments.md#publishing) visas fragmentet i sidreferenserna.
+* När du [publicerar en sida som använder fragmentet ](/help/sites-authoring/content-fragments.md#publishing) visas fragmentet i sidreferenserna.
 
 >[!CAUTION]
 >
