@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
+source-git-commit: 5c7ead37f55175bb565f8661c0c156f76f135131
 workflow-type: tm+mt
 source-wordcount: '1563'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Om du kör Oracle Java 17 eller Java 21 måste ytterligare växlar läggas till 
 * [Endast Forms] nedan är ett exempel som kontrollerar att AEM Forms fungerar med Java 17/Java21. Inkludera följande JVM-parametrar:
 
 ```shell
---add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## Körningslägen {#run-modes}
