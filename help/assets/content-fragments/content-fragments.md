@@ -44,7 +44,7 @@ På den här och följande sidor beskrivs hur du skapar, konfigurerar, underhål
 * [Markering](/help/assets/content-fragments/content-fragments-markdown.md) - använder markeringssyntax för ditt fragment
 * [Använder associerat innehåll](/help/assets/content-fragments/content-fragments-assoc-content.md) - lägger till associerat innehåll
 * [Metadata - Fragmentegenskaper](/help/assets/content-fragments/content-fragments-metadata.md) - visa och redigera fragmentegenskaperna
-* Använd [Content Fragments tillsammans med GraphQL för att leverera innehåll ](/help/assets/content-fragments/content-fragments-graphql.md) som kan användas i dina program. Om du vill ha hjälp med detta kan du förhandsgranska [JSON-utdata](/help/assets/content-fragments/content-fragments-json-preview.md).
+* Använd [Content Fragments tillsammans med GraphQL för att leverera innehåll &#x200B;](/help/assets/content-fragments/content-fragments-graphql.md) som kan användas i dina program. Om du vill ha hjälp med detta kan du förhandsgranska [JSON-utdata](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -199,7 +199,7 @@ Resurserna för innehållsfragmentet består av följande delar (antingen direkt
 
    * Assets (bilder) infogade i det faktiska fragmentet och används som det interna innehållet i ett fragment.
    * Är inbäddade i fragmentets styckesystem.
-   * Kan formateras när [fragmentet används/refereras på en sida ](/help/sites-authoring/content-fragments.md).
+   * Kan formateras när [fragmentet används/refereras på en sida &#x200B;](/help/sites-authoring/content-fragments.md).
    * Kan endast läggas till, tas bort från eller flyttas inom ett fragment med fragmentredigeraren. Dessa åtgärder kan inte utföras i sidredigeraren.
    * Det går bara att lägga till, ta bort eller flytta inom ett fragment med formatet [RTF i fragmentredigeraren](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Kan endast läggas till i flerradiga textelement (alla fragmenttyper).

@@ -370,7 +370,7 @@ Innehållsfragment måste publiceras för användning i publiceringsmiljön. De 
 
 * Efter skapande; använder [åtgärder som är tillgängliga i Assets-konsolen](#actions-for-a-content-fragment-assets-console).
 * Från [redigeraren för innehållsfragment](#toolbar-actions-in-the-content-fragment-editor).
-* När du [publicerar en sida som använder fragmentet ](/help/sites-authoring/content-fragments.md#publishing) visas fragmentet i sidreferenserna.
+* När du [publicerar en sida som använder fragmentet &#x200B;](/help/sites-authoring/content-fragments.md#publishing) visas fragmentet i sidreferenserna.
 
 >[!CAUTION]
 >
