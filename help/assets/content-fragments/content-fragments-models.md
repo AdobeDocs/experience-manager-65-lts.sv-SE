@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2326'
 ht-degree: 1%
 
 ---
 
 # Modeller för innehållsfragment {#content-fragment-models}
 
-Content Fragment Models i AEM definierar innehållsstrukturen för dina [innehållsfragment, &#x200B;](/help/assets/content-fragments/content-fragments.md) som en grund för ditt headless-innehåll.
+Content Fragment Models i AEM definierar innehållsstrukturen för dina [innehållsfragment, ](/help/assets/content-fragments/content-fragments.md) som en grund för ditt headless-innehåll.
 
 Om du vill använda modeller för innehållsfragment kan du:
 
@@ -109,13 +109,6 @@ Det finns ett urval datatyper som du kan använda för att definiera din modell:
    * Lägg till ett eller flera fält med en enda textrad. Den maximala längden kan definieras
 * **Flerradstext**
    * Ett textområde som kan vara RTF, Oformaterad text eller Markering
-
-     >[!NOTE]
-     >
-     >Av prestandaskäl bör du inte ha fler än tio RTF-fält i en modell.
-     >
-     >Om det behövs rekommenderar vi att du använder [kapslade innehållsfragment](#fragment-reference-nested-fragments).
-
 * **Number**
    * Lägg till ett eller flera numeriska fält
 * **Boolean**

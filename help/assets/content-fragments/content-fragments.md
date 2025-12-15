@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7b5a9485-8d07-434e-9871-5f97d6781eaf
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2329'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ På den här och följande sidor beskrivs hur du skapar, konfigurerar, underhål
 * [Markering](/help/assets/content-fragments/content-fragments-markdown.md) - använder markeringssyntax för ditt fragment
 * [Använder associerat innehåll](/help/assets/content-fragments/content-fragments-assoc-content.md) - lägger till associerat innehåll
 * [Metadata - Fragmentegenskaper](/help/assets/content-fragments/content-fragments-metadata.md) - visa och redigera fragmentegenskaperna
-* Använd [Content Fragments tillsammans med GraphQL för att leverera innehåll &#x200B;](/help/assets/content-fragments/content-fragments-graphql.md) som kan användas i dina program. Om du vill ha hjälp med detta kan du förhandsgranska [JSON-utdata](/help/assets/content-fragments/content-fragments-json-preview.md).
+* Använd [Content Fragments tillsammans med GraphQL för att leverera innehåll ](/help/assets/content-fragments/content-fragments-graphql.md) som kan användas i dina program. Om du vill ha hjälp med detta kan du förhandsgranska [JSON-utdata](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Dessa innehållsfragment kan sedan sammanställas för att ge upplevelser över 
 >
 >Upplevelsefragment kan innehålla innehåll i form av innehållsfragment, men inte tvärtom.
 >
->Mer information finns i [Om innehållsfragment och upplevelsefragment i AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=sv-SE#content-fragments).
+>Mer information finns i [Om innehållsfragment och upplevelsefragment i AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >
@@ -199,7 +199,7 @@ Resurserna för innehållsfragmentet består av följande delar (antingen direkt
 
    * Assets (bilder) infogade i det faktiska fragmentet och används som det interna innehållet i ett fragment.
    * Är inbäddade i fragmentets styckesystem.
-   * Kan formateras när [fragmentet används/refereras på en sida &#x200B;](/help/sites-authoring/content-fragments.md).
+   * Kan formateras när [fragmentet används/refereras på en sida ](/help/sites-authoring/content-fragments.md).
    * Kan endast läggas till, tas bort från eller flyttas inom ett fragment med fragmentredigeraren. Dessa åtgärder kan inte utföras i sidredigeraren.
    * Det går bara att lägga till, ta bort eller flytta inom ett fragment med formatet [RTF i fragmentredigeraren](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Kan endast läggas till i flerradiga textelement (alla fragmenttyper).
@@ -321,7 +321,7 @@ Undvik djup eller överdriven kapsling av innehållsfragment med Content Fragmen
 
 Omfattande användning av Content Fragment-referenser kan i hög grad påverka systemets prestanda, användargränssnittets svarstider och körningen av GraphQL-frågor. Målet är att inte kapsla mer än tio nivåer.
 
-### Antal datafält och datatyper per per modell  {#number-of-data-fields-and-types-per-model}
+### Antal datafält och datatyper per per modell {#number-of-data-fields-and-types-per-model}
 
 Inkludera endast de datafält och datatyper som modellen verkligen behöver.
 
@@ -329,9 +329,15 @@ Inkludera endast de datafält och datatyper som modellen verkligen behöver.
 
 ### RTF-fält {#rich-text-fields}
 
-Använd RTF-fält (datatypen **Flera rader**) med hänsyn till detta.
+Använd RTF-fält (datatypen **Flera rader**) med hänsyn till:
 
-Begränsa antalet RTF-fält per modell. Även mängden text som lagras i varje fragment och mängden HTML-formatering. Mycket stort RTF-innehåll kan påverka systemets prestanda negativt.
+* Fält
+
+  Begränsa antalet RTF-fält per modell. Av prestandaskäl bör du inte ha fler än tio RTF-fält i en modell. Om det behövs rekommenderar vi att du använder [kapslade innehållsfragment](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content).
+
+* Innehåll
+
+  Du bör också begränsa mängden text som lagras i varje fragment och mängden HTML-formatering. Mycket stort RTF-innehåll kan påverka systemets prestanda negativt.
 
 ### Antal variationer {#number-of-variations}
 
