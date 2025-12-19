@@ -5,7 +5,7 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 7ea96536f3047e31f4d2122a61def2b068757d6a
+source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
@@ -49,7 +49,6 @@ I den här artikeln listas de viktiga korrigeringar som har implementerats för 
   </tr>
   <tbody>
 </table>
-
 
 ## Hämta och installera en OSGi-hotfix {#download-install-hotfix}
 

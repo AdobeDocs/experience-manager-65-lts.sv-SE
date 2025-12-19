@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0d68ed7cb5fe2bf942ffc62f99da9b005ce00410
+source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
 workflow-type: tm+mt
-source-wordcount: '7405'
+source-wordcount: '7476'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,11 @@ ht-degree: 0%
 
 [!DNL Experience Manager] 6.5 LTS, SP1 innehåller nya funktioner, viktiga förbättringar som kunden efterfrågat samt felkorrigeringar. Det innehåller även förbättringar av prestanda, stabilitet och säkerhet som släppts sedan den första tillgängligheten av 6,5 LTS i mars 2025. [Installera detta Service Pack](#install-update) på 6.5 LTS.
 
-<!-- ## Key features and enhancements -->
+## Viktiga funktioner och förbättringar
+
+### Forms
+
+AEM 6.5 Forms LTS on JEE finns nu att köpa. Mer information om miljöer som stöds finns i dokumentet om kombinationer av plattformar som stöds. Installationslänkar finns på AEM Forms versionssida.
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -213,10 +217,7 @@ Ett problem har korrigerats där synkronisering av resurser från fjärr-DAM til
 
 #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp1}
 
-
-
 ### [!DNL Forms]{#forms-65-lts-sp1}
-
 
 #### Forms Designer 
 
@@ -231,8 +232,6 @@ Ett problem har korrigerats där synkronisering av resurser från fjärr-DAM til
 #### [!DNL Adaptive Forms] {#adaptive-forms-65-lts-sp1}
 
 #### [!DNL Forms Designer] {#forms-designer-65-lts-sp1} -->
-
-
 
 ### Foundation {#foundation-65-lts-sp1}
 
@@ -501,7 +500,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -603,8 +602,11 @@ Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorr
 När du öppnar sidan Behörigheter under Verktyg -> Säkerhet i AEM 6.5 LTS SP1 visas en tom sida i stället för att behörigheter för en användare eller grupp visas.
 
 **Lösning:**
-En snabbkorrigering, [&#x200B; cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) , finns tillgänglig för att lösa problemet.
+En snabbkorrigering, [ cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) , finns tillgänglig för att lösa problemet.
 
+### Forms JEE
+
+* Användare i Linux-miljöer kan råka ut för installationsfel eller fel i Configuration Manager-skript (LCM) på grund av radslut i Windows-stil. Konvertera alla .sh-filer med hjälp av dos2unix innan du kör installationsprogrammet eller LCM för att förhindra körningsfel.
 
 ## OSGi-paket och innehållspaket som ingår{#osgi-bundles-and-content-packages-included}
 
@@ -618,5 +620,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
