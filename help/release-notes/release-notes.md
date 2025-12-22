@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0a050ebdc32e127a093270be91f1eed59f8f4654
+source-git-commit: 6fdc7449673bede6a35151d4e7b97c6aa1605d4e
 workflow-type: tm+mt
-source-wordcount: '7478'
+source-wordcount: '7477'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ### Forms
 
-AEM 6.5 Forms LTS on JEE finns nu att köpa. Mer information om miljöer som stöds finns i dokumentet [Kombinationer av plattformar som stöds](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms). Installationslänkar finns på sidan [AEM Forms-versioner](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+AEM 6.5 Forms LTS on JEE finns nu att köpa. Mer information om miljöer som stöds finns i dokumentet [Kombinationer av plattformar som stöds](/help/forms/using/aem-forms-jee-supported-platforms.md). Installationslänkar finns på sidan [AEM Forms-versioner](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -500,7 +500,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -602,7 +602,7 @@ Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorr
 När du öppnar sidan Behörigheter under Verktyg -> Säkerhet i AEM 6.5 LTS SP1 visas en tom sida i stället för att behörigheter för en användare eller grupp visas.
 
 **Lösning:**
-En snabbkorrigering, [&#x200B; cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) , finns tillgänglig för att lösa problemet.
+En snabbkorrigering, [ cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) , finns tillgänglig för att lösa problemet.
 
 ### Forms JEE
 
@@ -620,5 +620,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
