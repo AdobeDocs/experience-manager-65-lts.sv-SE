@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ### Forms
 
-AEM 6.5 Forms LTS on JEE finns nu att köpa. Mer information om miljöer som stöds finns i dokumentet [Kombinationer av plattformar som stöds](/help/forms/using/aem-forms-jee-supported-platforms.md). Installationslänkar finns på sidan [AEM Forms-versioner](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+AEM 6.5 Forms LTS on JEE finns nu att köpa. Mer information om miljöer som stöds finns i dokumentet [Kombinationer av plattformar som stöds](/help/forms/using/aem-forms-jee-supported-platforms.md). Installationslänkar finns på sidan [AEM Forms-versioner](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -503,7 +503,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
