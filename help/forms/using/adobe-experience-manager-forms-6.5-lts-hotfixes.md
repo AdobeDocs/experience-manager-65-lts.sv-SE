@@ -4,7 +4,7 @@ description: Innehåller information om hur du hämtar och installerar en progra
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 504240bdad9e964460a9fcdc555228c7cb02e314
+source-git-commit: 979a817293034d09189417cdf729f476c77cdde3
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
@@ -15,6 +15,7 @@ ht-degree: 0%
 # Programfixar för Adobe Experience Manager Forms 6.5 LTS{#aem-form-hotfix}
 
 I den här artikeln listas de viktiga korrigeringar som har implementerats för att åtgärda kända fel, förbättra systemstabiliteten och förbättra prestanda i AEM Forms 6.5 LTS.
+
 
 >[!NOTE]
 >
