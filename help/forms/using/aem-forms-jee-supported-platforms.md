@@ -8,9 +8,9 @@ docset: aem65
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: f3ee715a8f65c6ea781948064a83f59097b3ceae
+source-git-commit: 4097adf1dd533bbf21c8635a1948f9ef4c294896
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '2982'
 ht-degree: 0%
 
 ---
@@ -371,48 +371,35 @@ AEM Forms App har nu stöd för Apache Cordova. Följande plattformsspecifika ve
    <th><p><strong>Format som stöds för konvertering till PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/se/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 Classic track</a> senaste versionen</td>
-   <td>XPS, bildformat (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF och DWF</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> senaste versionen</td>
+   <td>XPS, bildformat (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML och HTML</td>
   </tr>
-  <tr>
-   <td>Microsoft® Office 2019</td>
+
+<tr>
+   <td>Microsoft® Office 2021 Professional Plus, återförsäljning och volymlicenser</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF och TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect 2020<br /> </td>
-   <td>WP, WPD</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2019<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2019<br /> </td>
-   <td>MPP</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.10</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, bildformat (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, JPC, HTML, HTM, RTF och TXT</td>
+   <td>
+    <strong>OpenOffice 4.1.15</strong>   </td>
+   <td>
+    ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, bildformat (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, JPC, HTML, HTM, RTF och TXT<br>
+
+</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->PDF Generator har endast stöd för engelska, franska, tyska och japanska versioner av de operativsystem och program som stöds.
->
->Dessutom:
->
->- PDF Generator har endast stöd för 32-bitarsversionen av Microsoft® Office Professional Plus och andra program som krävs för konvertering.
->- Installationen av Microsoft® Office Professional Plus kan använda volymlicenser baserade på Retail eller MAK/KMS/AD.
+>- PDF Generator har endast stöd för engelska, franska, tyska och japanska versioner av de operativsystem och program som stöds.
+>- PDF Generator kräver Adobe Acrobat Pro DC (32-bitars) för att kunna utföra konverteringen.
+>- PDF Generator stöder endast 32-bitarsversionen av Microsoft® Office Professional Plus och andra program som krävs för konvertering.
 >- Om en Microsoft® Office-installation inaktiveras eller inte licensieras av någon anledning, t.ex. en volymlicensierad installation som inte kan hitta en KMS-värd inom en angiven period, kan konverteringen misslyckas tills installationen har licensierats på nytt och återaktiverats.
 >- PDF Generator stöder inte Microsoft® Office 365.
->- PDF Generator-konverteringar för OpenOffice stöds endast i Windows och Linux®.
+>- PDF Generator-konverteringar för OpenOffice stöds både i Windows och Linux®.
 >- Funktionerna OCR PDF, Optimize PDF och Export PDF stöds endast i Windows.
->- En version av Acrobat medföljer AEM Forms för att aktivera PDF Generator-funktioner. Programmeringsversionen får endast användas med AEM Forms under AEM Forms-licensens löptid för användning med AEM Forms PDF Generator. Mer information finns i AEM Forms produktbeskrivning för din distribution ([On-Premise](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-manager-on-premise.html) eller [Managed Services](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-manager-managed-services.html))
->- PDF Generator-tjänsten stöder inte Microsoft® Windows 10.
->- PDF Generator kan inte konvertera filer med Microsoft® Visio 2019.
->- PDF Generator kan inte konvertera filer med Microsoft® Project 2019.
+>- PDF Generator-tjänsten stöder inte Microsoft® Windows 11
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
@@ -657,7 +644,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/se/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -740,7 +727,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/se/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -809,7 +796,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/se/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |
