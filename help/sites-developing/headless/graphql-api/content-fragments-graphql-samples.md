@@ -5,9 +5,9 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c2947923fb83b57bc0e1c068af52558dd0a04867
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1577'
 ht-degree: 0%
 
 ---
@@ -229,7 +229,7 @@ Den här exempelfrågan är en enkel fråga som returnerar `name` av alla poster
 
 **Exempelfråga**
 
-```xmgraphqll
+```graphql
 query {
   cityList {
     items {
@@ -1738,10 +1738,10 @@ Följande fragment används för rätt modell.
 
 | Namn | Land | Population | Kategorier |
 |--- |--- |--- |--- |
-| Basel | Schweiz | 172258 | stad:emea |
-| Berlin | Tyskland | 3669491 | stad:huvudstad<br>stad:emea |
-| Bucharest | Rumänien | 1821000 |  stad:huvudstad<br>stad:emea |
+| Basel | Schweiz | 172258 | stad :emea |
+| Berlin | Tyskland | 3669491 | city:capital<br>city:emea |
+| Bucharest | Rumänien | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
-| San Jose |  USA |  102635 |  stad:na |
-| Stuttgart |  Tyskland |  634830 |  stad:emea |
-|  Zürich |  Schweiz |  415367 |  stad:huvudstad<br>stad:emea |
+| San Jose |  USA |  102635 |  stad :na |
+| Stuttgart |  Tyskland |  634830 |  stad :emea |
+|  Zürich |  Schweiz |  415367 |  city:capital<br>city:emea |
