@@ -19,11 +19,11 @@ Innan du använder tjänsten för smart innehåll bör du kontrollera följande:
 
 * [Integrera med Adobe Developer Console](#integrate-adobe-io).
 * [Logga in på tjänsten för smart innehåll](#training-the-smart-content-service).
-* Installera den senaste [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Installera den senaste [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=sv-SE).
 
 >[!IMPORTANT]
 >
->Mer information om konfigurationen av smarta taggar i AEM 6.5 finns i [Förbered Assets för smart taggning](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/config-smart-tagging).
+>Mer information om konfigurationen av smarta taggar i AEM 6.5 finns i [Förbered Assets för smart taggning](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/administer/config-smart-tagging).
 
 **Nya användare**
 
@@ -270,4 +270,4 @@ Om du vill kontrollera om Smart Content Service är utbildad i dina taggar i öv
 >
 >* [Översikt och utbildning av smarta taggar](enhanced-smart-tags.md)
 >* [Felsökning av smarta taggar för OAuth-autentiseringsuppgifter](config-oauth.md)
->* [Videosjälvstudiekurs om smarta taggar](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [Videosjälvstudiekurs om smarta taggar](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=sv-SE)
