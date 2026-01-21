@@ -10,7 +10,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -29,7 +29,7 @@ AEM uppgraderingsprocess måste noggrant hanteras i planerings-, analys- och kö
 
 >[!NOTE]
 >
->Uppgraderingen till AEM 6.5 LTS stöds från de senaste 6 servicepaketen
+>Uppgraderingen till AEM 6.5 LTS är tillgänglig för alla 6.5 Service Packs som stöds.
 
 Det är viktigt att du kör ett operativsystem som stöds, Java™-miljön, httpd och Dispatcher-versionen. Mer information finns i de [tekniska kraven för AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). Uppgradering av dessa komponenter måste ingå i din uppgraderingsplan och bör ske innan du uppgraderar AEM.
 
