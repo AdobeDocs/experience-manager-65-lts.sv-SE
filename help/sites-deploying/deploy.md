@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 0%
@@ -137,7 +137,7 @@ I följande avsnitt beskriver vi den **fristående installationen**. Mer informa
 
    Installationsplats för UNIX®: **/opt/aem**
 
-   Installationsplats för Windows: **`C:\Program Files\aem`**
+   Installationsplats för Windows: **`C:\aem`**
 
    Det är också vanligt att du installerar exempelinstanser i en mapp direkt på skrivbordet. I vilket fall som helst avser Adobe denna plats i allmänhet som:
 
