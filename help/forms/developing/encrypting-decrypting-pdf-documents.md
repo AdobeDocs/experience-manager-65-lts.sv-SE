@@ -874,7 +874,7 @@ Lås upp ett krypterat PDF-dokument med krypterings-API (Java):
 
 [Sammanfattning av steg](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Snabbstart (SOAP-läge): Låsa upp ett krypterat PDF-dokument med Java API ](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) (SOAP-läge)
+[Snabbstart (SOAP-läge): Låsa upp ett krypterat PDF-dokument med Java API &#x200B;](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) (SOAP-läge)
 
 [Använda användningsbehörighet för PDF-dokument](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 

@@ -80,7 +80,7 @@ Du kan välja ikonen **Konfigurera** ![konfigurera](assets/configure.png) om du 
    * **Mallmeddelande:** Ange meddelandet som ska visas när signaturen PDF läses in. Adobe Sign-tjänster tar lite tid att förbereda och läsa in signaturer i PDF.
    * **Signeringstjänst:** Välj alternativet **Klottsignatur** .
 
-   * **CSS-klass**: Ange CSS-klass för klientbiblioteket, om sådan finns. Använd [teman](../../forms/using/themes.md) och [ infogade format](../../forms/using/inline-style-adaptive-forms.md) i stället för CSS-klassen.
+   * **CSS-klass**: Ange CSS-klass för klientbiblioteket, om sådan finns. Använd [teman](../../forms/using/themes.md) och [&#x200B; infogade format](../../forms/using/inline-style-adaptive-forms.md) i stället för CSS-klassen.
 
    Välj ikonen Klar ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) för att spara ändringarna. Signaturen har konfigurerats.
 
