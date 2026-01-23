@@ -1,15 +1,15 @@
 ---
 title: Lagringsinställningar för databasautentiseringsuppgifter (Elytron-baserad)
-description: JBoss EAP 8 har stöd för Elytron-autentiseringsarkiv för säker lösenordshantering i AEM Forms, med automatiserade skript för konfiguration av domänläge.
+description: JBoss EAP 8 har stöd för Elytron-autentiseringsarkiv för säker lösenordshantering för databaser i AEM Forms för konfiguration av domänläge.
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---

@@ -1,15 +1,15 @@
 ---
 title: Skriptkörning misslyckas på AEM Forms 6.5 LTS med JBoss EAP 8 (Linux)
-description: om du vill konfigurera JBoss EAP 8.0 (AEM Forms 6.5.1 LTS) i en Linux-miljö kan du råka ut för vissa fel när du kör gränssnittsskript eller startfiler
+description: Om du konfigurerar JBoss EAP 8.0 i en Linux-miljö kan du råka ut för vissa fel när du kör gränssnittsskript eller startfiler
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
