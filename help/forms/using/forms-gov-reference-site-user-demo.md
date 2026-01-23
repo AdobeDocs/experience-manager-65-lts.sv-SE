@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Följande grupper ingår också:
 1. **Länkar**: Högst upp på huvudmenyn på webbplatsen Web.Gov.
 1. **Användarinstruktioner**: En uppsättning numeriska steg som ska följas när användaren navigerar i användarens berättelse.
 1. **Forms Portal**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
-1. **Mobilvy**:Vi.Gov-användare för att replikera en mobilvy med en webbläsare som har ändrat storlek.
+1. **Mobilvy**:We.Användaren Gov för att replikera en mobilvy med en webbläsare som har ändrat storlek.
 1. **Skrivbordsvy**: We.gov användare för att visa en demo på en bärbar eller stationär dator.
 1. **Pre-screener Form**: Formulär på startsidan för Web.Gov-webbplatsen.
 1. **Anpassat formulär**: Registreringsansökningsformulär för We.gov.

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '4830'
+source-wordcount: '4829'
 ht-degree: 0%
 
 ---
@@ -290,7 +290,7 @@ Information om CRX-databasen
   </tr>
   <tr>
    <td>option.observation.supported</td>
-   <td>true anger att asynkron observation av databasändringar stöds. Stöd för asynkron observation gör det möjligt för applikationer att ta emot och besvara meddelanden om varje ändring allt eftersom den inträffar.</td>
+   <td>true anger att asynkron observation av databasändringar stöds. Stöd för asynkron observation gör att applikationerna kan ta emot och besvara meddelanden om varje ändring när den inträffar.</td>
   </tr>
   <tr>
    <td>query.jcrscore</td>
@@ -691,7 +691,7 @@ Statistisk information om databasfrågor.
 * **Domän:**.adobe.granite.replication
 * **Typ:** agent
 * **Namn:** inget värde
-* **Egenskaper:** {id=*Namn*}, där *Namn* är värdet för agentens namnegenskap.
+* **Egenskaper:** {id="*Name*"}, där *Name* är värdet för agentens namnegenskap.
 
 ### Attribut {#attributes-3}
 

@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -193,7 +193,7 @@ I följande två exempel illustreras definitionen:
 
 AEM använder LESS för att generera delar av den CSS som behövs, och dessa måste ingå i dina projekt.
 
-Du måste också skapa ett [klientbibliotek](https://experienceleague.adobe.com/docs/?lang=sv-SE) för att kunna tillhandahålla ytterligare konfigurations- och funktionsanrop. Följande LESS-extrakt är ett exempel på det minsta som du måste lägga till i projektet:
+Du måste också skapa ett [klientbibliotek](https://experienceleague.adobe.com/docs/) för att kunna tillhandahålla ytterligare konfigurations- och funktionsanrop. Följande LESS-extrakt är ett exempel på det minsta som du måste lägga till i projektet:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";

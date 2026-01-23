@@ -11,7 +11,7 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 42c85231-9e65-4c3c-8b86-3efdaa577161
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '5333'
 ht-degree: 0%
@@ -654,7 +654,7 @@ I följande exempel visas innehållet i en jndi.properties-fil som används för
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
-**WebLogic (på engelska)**
+**WebLogic**
 
 I följande exempel visas innehållet i en jndi.properties-fil som används för att ansluta till AEM Forms som distribueras på WebLogic.
 
@@ -679,11 +679,11 @@ I följande exempel visas innehållet i en jndi.properties-fil som används för
 
 **Se även**
 
-[Inklusive AEM Forms Java-biblioteksfiler](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inkludera AEM Forms Java-biblioteksfiler](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Skicka data till AEM Forms-tjänster med Java API](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
 
-[Anropa en tjänst med hjälp av ett Java-klientbibliotek](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
+[Anropa en tjänst med ett Java-klientbibliotek](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
 ## Skicka data till AEM Forms-tjänster med Java API {#passing-data-to-aem-forms-services-using-the-java-api}
 
@@ -701,7 +701,7 @@ Objektet `com.adobe.idp.Document` försöker identifiera innehållstypen med hj�
 
 Om det finns sidofiler i samma filsystem går det snabbare att skapa ett `com.adobe.idp.Document`-objekt. Om det finns filer som kan användas i fjärranslutna filsystem måste en kopieringsåtgärd utföras, vilket påverkar prestandan.
 
-Ett program kan innehålla datatyperna `com.adobe.idp.Document` och `org.w3c.dom.Document`. Se dock till att du kvalificerar datatypen `org.w3c.dom.Document` fullständigt. Information om hur du konverterar ett `org.w3c.dom.Document`-objekt till ett `com.adobe.idp.Document`-objekt finns i [Snabbstart (EJB-läge): Förifyll Forms med flödeslayouter med Java API &#x200B;](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api) .
+Ett program kan innehålla datatyperna `com.adobe.idp.Document` och `org.w3c.dom.Document`. Se dock till att du kvalificerar datatypen `org.w3c.dom.Document` fullständigt. Information om hur du konverterar ett `org.w3c.dom.Document`-objekt till ett `com.adobe.idp.Document`-objekt finns i [Snabbstart (EJB-läge): Förifyll Forms med flödeslayouter med Java API ](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api) .
 
 >[!NOTE]
 >
@@ -829,7 +829,7 @@ URL:en som anges för objektet `com.adobe.idp.Document` läses alltid på den si
      Document doc = new Document(new java.net.URL("file:c:/temp/input.pdf"));
 ```
 
-Filen c:/temp/input.pdf måste finnas på klientdatorn (inte på serverdatorn). Klientdatorn är den plats där URL:en läses och där `com.adobe.idp.Document` objektet skapades.
+Filen c:/temp/input.pdf måste finnas på klientdatorn (inte på serverdatorn). Klientdatorn är där URL:en läses och där `com.adobe.idp.Document`-objektet skapades.
 
 **Skapa ett dokument baserat på innehåll som är tillgängligt från en URL**
 
@@ -845,14 +845,14 @@ Filen c:/temp/input.pdf måste finnas på klientdatorn (inte på serverdatorn). 
 
 [Anropa AEM Forms med Java API](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
-[Ställa in anslutningsegenskaper](invoking-aem-forms-using-java.md#setting-connection-properties)
+[Ange anslutningsegenskaper](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Hantering av returnerade dokument {#handling-returned-documents}
+### Hantera returnerade dokument {#handling-returned-documents}
 
-Tjänståtgärder som returnerar ett PDF-dokument (eller andra datatyper, t.ex. XML-data) som ett utdatavärde returnerar ett `com.adobe.idp.Document` objekt. När du har fått ett `com.adobe.idp.Document` objekt kan du konvertera det till följande format:
+Tjänståtgärder som returnerar ett PDF-dokument (eller andra datatyper som XML-data) som ett utdatavärde returnerar ett `com.adobe.idp.Document`-objekt. När du har tagit emot ett `com.adobe.idp.Document`-objekt kan du konvertera det till följande format:
 
-* Ett `java.io.File` objekt
-* Ett `java.io.InputStream` objekt
+* Ett `java.io.File`-objekt
+* Ett `java.io.InputStream`-objekt
 * En bytearray
 
 Följande kodrad konverterar ett `com.adobe.idp.Document`-objekt till ett `java.io.InputStream`-objekt. Anta att `myPDFDocument` representerar ett `com.adobe.idp.Document`-objekt:
@@ -962,7 +962,7 @@ AEM Forms tjänståtgärder kan anropas med hjälp av en tjänsts starkt typbest
 
 Om du vill utföra en tjänståtgärd anropar du en metod som tillhör Java-objektet. Ett Java-klientbibliotek innehåller metoder som vanligtvis mappar en-till-en med serviceåtgärder. Ange nödvändiga anslutningsegenskaper när du använder ett Java-klientbibliotek. (Se [Ange anslutningsegenskaper](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-När du har angett anslutningsegenskaper skapar du ett `ServiceClientFactory`-objekt som används för att instansiera ett Java-objekt som gör att du kan anropa en tjänst. Varje tjänst som har ett Java-klientbibliotek har ett motsvarande klientobjekt. Om du till exempel vill anropa databastjänsten skapar du ett `ResourceRepositoryClient`-objekt med hjälp av dess konstruktor och skickar objektet `ServiceClientFactory`. Objektet `ServiceClientFactory` ansvarar för att underhålla de anslutningsinställningar som krävs för att anropa AEM Forms-tjänster.
+När du har angett anslutningsegenskaper skapar du ett `ServiceClientFactory`-objekt som används för att instansiera ett Java-objekt som gör att du kan anropa en tjänst. Varje tjänst som har ett Java-klientbibliotek har ett motsvarande klientobjekt. Om du till exempel vill anropa databastjänsten skapar du ett `ResourceRepositoryClient`-objekt med hjälp av dess konstruktor och skickar objektet `ServiceClientFactory`. Objektet `ServiceClientFactory` ansvarar för att upprätthålla de anslutningsinställningar som krävs för att anropa AEM Forms-tjänster.
 
 Även om det är snabbt att hämta en `ServiceClientFactory` är det en del overheadkostnader som uppstår när fabriken används för första gången. Det här objektet är optimerat för återanvändning och därför, när det är möjligt, ska du använda samma `ServiceClientFactory`-objekt när du skapar flera Java-klientobjekt. Det innebär att du inte ska skapa ett separat `ServiceClientFactory`-objekt för varje klientbiblioteksobjekt som du skapar.
 
@@ -974,12 +974,12 @@ Det finns en inställning för användarhantering som styr livslängden för SAM
 
 Du kan anropa databastjänsten med hjälp av ett Java-klientbibliotek och genom att utföra följande steg:
 
-1. Inkludera JAR-klientfiler, till exempel adobe-repository-client.jar, i Java-projektets klassökväg. Mer information om platsen för dessa filer finns i [Inkludera AEM Forms Java-biblioteksfiler](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+1. Inkludera JAR-klientfiler, till exempel adobe-database-client.jar, i Java-projektets klassökväg. Mer information om platsen för dessa filer finns i [Inkludera AEM Forms Java-biblioteksfiler](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Ange anslutningsegenskaper som krävs för att anropa en tjänst.
 1. Skapa ett `ServiceClientFactory`-objekt genom att anropa `ServiceClientFactory`-objektets statiska `createInstance`-metod och skicka `java.util.Properties`-objektet som innehåller anslutningsegenskaper.
-1. Skapa ett `ResourceRepositoryClient` objekt med hjälp av dess konstruktor och skicka `ServiceClientFactory` objektet. Använd objektet `ResourceRepositoryClient` för att anropa åtgärder för databastjänsten.
-1. Skapa ett `RepositoryInfomodelFactoryBean` objekt med hjälp av dess konstruktor och skicka `null`. Med det här objektet kan du skapa ett `Resource` objekt som representerar det innehåll som läggs till i databasen.
-1. Skapa ett `Resource` objekt genom att `RepositoryInfomodelFactoryBean` anropa objektets `newImage` metod och skicka följande värden:
+1. Skapa ett `ResourceRepositoryClient`-objekt med hjälp av dess konstruktor och skicka `ServiceClientFactory`-objektet. Använd objektet `ResourceRepositoryClient` för att anropa databastjänståtgärder.
+1. Skapa ett `RepositoryInfomodelFactoryBean`-objekt med hjälp av dess konstruktor och skicka `null`. Med det här objektet kan du skapa ett `Resource`-objekt som representerar innehållet som läggs till i databasen.
+1. Skapa ett `Resource`-objekt genom att anropa `RepositoryInfomodelFactoryBean`-objektets `newImage`-metod och skicka följande värden:
 
    * Ett unikt ID-värde genom att ange `new Id()`.
    * Ett unikt UUID-värde genom att ange `new Lid()`.
@@ -991,8 +991,8 @@ Du kan anropa databastjänsten med hjälp av ett Java-klientbibliotek och genom 
 1. Skapa ett `com.adobe.idp.Document`-objekt genom att skicka ett `java.io.FileInputStream`-objekt som lagrar XDP-filen som ska läggas till i databasen. (Se [Skapa ett dokument baserat på ett InputStream-objekt](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
 1. Lägg till innehållet i `com.adobe.idp.Document`-objektet till `ResourceContent`-objektet genom att anropa `ResourceContent`-objektets `setDataDocument`-metod. Skicka objektet `com.adobe.idp.Document`.
 1. Ange MIME-typen för XDP-filen som ska läggas till i databasen genom att anropa `ResourceContent`-objektets `setMimeType`-metod och skicka `application/vnd.adobe.xdp+xml`.
-1. Lägg till innehållet i objektet `ResourceContent` till objektet `Resource` genom att anropa metoden `setContent` för objektet `Resource` och skicka objektet `ResourceContent`.
-1. Lägg till en beskrivning av resursen genom att anropa metoden `setDescription` för objektet `Resource` och skicka ett strängvärde som representerar en beskrivning av resursen.
+1. Lägg till innehållet i objektet `ResourceContent` till objektet `Resource` genom att anropa metoden `Resource` för objektet `setContent` och skicka objektet `ResourceContent`.
+1. Lägg till en beskrivning av resursen genom att anropa metoden `Resource` för objektet `setDescription` och skicka ett strängvärde som representerar en beskrivning av resursen.
 1. Lägg till formulärdesignen i databasen genom att anropa `ResourceRepositoryClient`-objektets `writeResource`-metod och skicka följande värden:
 
    * Ett strängvärde som anger sökvägen till resurssamlingen som innehåller den nya resursen

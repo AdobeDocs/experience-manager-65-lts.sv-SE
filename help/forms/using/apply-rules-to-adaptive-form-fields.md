@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: cb00bc09-580a-4c73-b202-d4110fa2f645
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Varje kund tilldelas ett unikt Kund-ID-nummer som hjälper till att identifiera 
 
    ![whenCustomeridischanged](assets/whencustomeridischanged.png)
 
-1. Välj **[!UICONTROL Invoke Service]** i listrutan **[!UICONTROL Select Action]** i programsatsen **[!UICONTROL THEN]**.
+1. Välj **[!UICONTROL THEN]** i listrutan **[!UICONTROL Invoke Service]** i programsatsen **[!UICONTROL Select Action]**.
 1. Välj tjänsten **[!UICONTROL Retrieve Shipping Address]** i listrutan **[!UICONTROL Select]**.
 1. Dra och släpp fältet **[!UICONTROL Customer ID]** från fliken Formulärobjekt till fältet **[!UICONTROL Drop object or select here]** i rutan **[!UICONTROL INPUT]**.
 
@@ -82,7 +82,7 @@ När kundinformationen har hämtats från databasen kan du uppdatera leveransadr
 
    ![skicka-är-klickad](assets/submit-is-clicked.png)
 
-1. Välj alternativet **[!UICONTROL + Add Statement]** i alternativet **[!UICONTROL THEN]**. Välj **[!UICONTROL Invoke Service]** i listrutan **[!UICONTROL Select Action]**.
+1. Välj alternativet **[!UICONTROL THEN]** i alternativet **[!UICONTROL + Add Statement]**. Välj **[!UICONTROL Invoke Service]** i listrutan **[!UICONTROL Select Action]**.
 1. Välj tjänsten **[!UICONTROL Update Shipping Address]** i listrutan **[!UICONTROL Select]**.
 
    ![update-shipping-address](assets/update-shipping-address.png)
@@ -116,7 +116,7 @@ Följande procedur visar hur du skapar en regel som visar ett felmeddelande om d
 
    ![whenCustomeridischanged](assets/whencustomeridischanged.png)
 
-   Välj **[!UICONTROL Invoke Service]** i listrutan **[!UICONTROL Select Action]** i programsatsen **[!UICONTROL THEN]**.
+   Välj **[!UICONTROL THEN]** i listrutan **[!UICONTROL Invoke Service]** i programsatsen **[!UICONTROL Select Action]**.
 
 1. Växla från **[!UICONTROL Visual Editor]** till **[!UICONTROL Code Editor]**. Växelkontrollen finns till höger i fönstret. Kodredigeraren öppnas och visar kod som liknar följande:
 
