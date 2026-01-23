@@ -174,7 +174,7 @@ Underordnade till sidan ärver kopplingen till ramverket. Om du till exempel ass
 
 1. I konsolen **Platser** väljer du den sida som du vill konfigurera med spårning.
 1. Öppna **[Sidegenskaperna](/help/sites-authoring/editing-page-properties.md)**, antingen direkt från konsolen eller sidredigeraren.
-1. Öppna fliken** Cloud Services**.
+1. Öppna fliken **&#x200B; Cloud Services**.
 
 1. Använd listrutan **Lägg till konfiguration** för att välja **Adobe Analytics** bland de tillgängliga alternativen. Om arv är plats inaktiverar du det innan väljaren blir tillgänglig.
 
