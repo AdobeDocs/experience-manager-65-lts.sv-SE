@@ -8,7 +8,7 @@ feature: Accessibility
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 0aebf16a-4115-4656-b583-1a293478c9a1
-source-git-commit: 33f9dccea41417e84d8fdd0aac25a7e1e6327aac
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Fokusförflyttningen följer det naturliga elementet i användargränssnittet p�
 * I redigeraren för bildbeskärning/smart beskärning kan du göra följande:
    * Använd piltangenterna för att beskära bildrutestorleken, flytta bilden eller båda.
    * Det första `Tab` steget markerar hela bildramen. Du kan sedan använda piltangenterna på tangentbordet för att flytta ramen.
-   * De följande fyra `Tab` stoppen är ramens fyra hörn. När fokus placeras på ett ramhörn markeras hörnet. Återigen kan du använda piltangenterna på tangentbordet för att flytta det fokuserade hörnet.
+   * De följande fyra `Tab` stoppen är ramens fyra hörn. När fokus placeras i ett ramhörn markeras hörnet. Återigen kan du använda piltangenterna på tangentbordet för att flytta det fokuserade hörnet.
 Se [Redigera den smarta beskärningen eller den smarta färgrutan för en enskild bild](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
@@ -52,12 +52,12 @@ Elementen i användargränssnittet i [!DNL Dynamic Media] fungerar med hjälpmed
 
 Alla [!DNL Dynamic Media]-visningsprogramkomponenter som är färdiga att användas stöder tangentbordstillgänglighet för dina kunder.
 
-Se [Tangentbordstillgänglighet och navigering](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=sv-SE) i referenshandboken för dynamiska medievyer.
+Se [Tangentbordstillgänglighet och navigering](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) i referenshandboken för dynamiska medievyer.
 
 ## Stöd för hjälpfunktioner i [!DNL Dynamic Media] visningsprogram {#assistive-technology-support-for-dm-viewers}
 
 Alla [!DNL Dynamic Media]-visningsprogramkomponenter har stöd för ARIA-roller (Accessible Rich Internet Applications) och attribut för att förbättra integrationen med hjälpmedelstekniker som skärmläsare.
-Läs hjälpavsnittet **Stöd för hjälpfunktioner** i avsnittet om anpassning av visningsprogram i referenshandboken för dynamiska medievyer. Se till exempel [Teknikstöd](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=sv-SE) för Video Viewer eller [Teknikstöd](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=sv-SE#viewers-for-aem-assets-only) för Interactive Image Viewer.
+Läs hjälpavsnittet **Stöd för hjälpfunktioner** i avsnittet om anpassning av visningsprogram i referenshandboken för dynamiska medievyer. Se till exempel [Teknikstöd](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) för Video Viewer eller [Teknikstöd](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) för Interactive Image Viewer.
 
 ## Stöd för undertexter i Dynamic Media {#closed-caption-support}
 

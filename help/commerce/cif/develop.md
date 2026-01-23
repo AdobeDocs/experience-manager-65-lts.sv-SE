@@ -9,9 +9,9 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ En lokal utvecklingsmiljö rekommenderas för CIF-projekt.
 
 >[!NOTE]
 >
->Följande instruktioner hjälper dig att konfigurera en lokal AEM-utvecklingsmiljö för AEM Commerce med CIF med fokus på AEM 6.5 LTS). Om du använder AEM as a Cloud Service kan du läsa dokumentationen till [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=sv-SE) .
+>Följande instruktioner hjälper dig att konfigurera en lokal AEM-utvecklingsmiljö för AEM Commerce med CIF med fokus på AEM 6.5 LTS). Om du använder AEM as a Cloud Service kan du läsa dokumentationen till [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) .
 
 AEM Commerce Add-On för AEM, s.k. CIF Add-On, finns även för lokal utveckling och tillhandahålls som ett AEM-paket. Den kan hämtas från [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) som ett funktionspaket.
 
@@ -159,7 +159,7 @@ AEM Commerce Add-On och CIF Core Components ansluter till GraphQL-slutpunkten f�
 
 CIF-tillägget tillhandahåller en GraphQL-proxyserver på `/api/graphql`. Om du inte tänker använda en lokal AEM Dispatcher rekommenderar vi att du även konfigurerar GraphQL proxyserver.
 
-Navigera till http://localhost:4502/system/console/configMgr och skapa en OSGI-konfiguration för tjänsten `Adobe CIF GraphQL Proxy Configuration`. Använd samma GraphQL-slutpunkt i e-handelssystemet som för GraphQL-klienten ovan.
+Gå till http://localhost:4502/system/console/configMgr och skapa en OSGI-konfiguration för tjänsten `Adobe CIF GraphQL Proxy Configuration`. Använd samma GraphQL-slutpunkt i e-handelssystemet som för GraphQL-klienten ovan.
 
 ## Ytterligare resurser
 

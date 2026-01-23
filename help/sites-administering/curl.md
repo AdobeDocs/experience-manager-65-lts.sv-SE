@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 1%
@@ -36,7 +36,7 @@ På grund av Sling-ramverkets RESTful-karaktär, som AEM bygger på, kan de fles
 
 ## Hämtar cURL {#downloading-curl}
 
-cURL är en standarddel av macOS och vissa Linux-miljöer. Det finns dock för de flesta operativsystem. De senaste nedladdningarna finns på [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
+cURL är en standarddel av macOS och vissa Linux-miljöer. Det är dock tillgängligt för de flesta operativsystem. De senaste nedladdningarna finns på [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
 
 Källdatabasen för cURL finns även på GitHub.
 
@@ -61,7 +61,7 @@ I följande steg beskrivs hur du gör detta genom att skapa en ny sida i webblä
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. Kopiera cURL-kommandot till en textredigerare och ta bort alla rubriker från kommandot, som börjar med `-H` (markerat med blått i bilden nedan) och lägger till rätt autentiseringsparameter, till exempel `-u <user>:<password>`.
+1. Kopiera kommandot cURL till en textredigerare och ta bort alla rubriker från kommandot, som börjar med `-H` (markerat i blått i bilden nedan) och lägger till rätt autentiseringsparameter, till exempel `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 

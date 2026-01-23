@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1745'
 ht-degree: 2%
 
 ---
@@ -44,8 +44,8 @@ Några av funktionerna i taggar i AEM:
    * En tagg som inte är en behållartagg kallas lövtagg
    * Ett taggnamnutrymme är antingen en lövtagg eller behållartagg
 
-* Taggar används av [sökkomponenten](https://helpx.adobe.com/se/experience-manager/core-components/using/quick-search.html) för att underlätta sökning efter innehåll.
-* Taggar används av [Teaser-komponenten](https://helpx.adobe.com/se/experience-manager/core-components/using/teaser.html) som övervakar en användares taggmoln för att tillhandahålla riktat innehåll.
+* Taggar används av [sökkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) för att underlätta sökning efter innehåll.
+* Taggar används av [Teaser-komponenten](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html) som övervakar en användares taggmoln för att tillhandahålla riktat innehåll.
 * Om taggning är en viktig aspekt av ditt innehåll
 
    * se till att paketera taggar med de sidor där de används
@@ -252,7 +252,7 @@ Taggbehörigheter är [&#39;secure (as default)&#39;](/help/sites-administering/
       * till exempel gå till http://localhost:4502/useradmin
 
    * i den vänstra rutan markerar den grupp (eller användare) för vilken [läsbehörighet](/help/sites-administering/security.md#permissions) ska beviljas
-   * i den högra rutan letar du reda på **Path &#x200B;** to the Tag Namespace
+   * i den högra rutan letar du reda på **Path **to the Tag Namespace
 
       * till exempel `/content/cq:tags/mycommunity`
 
@@ -289,7 +289,7 @@ När alla översättningar har angetts väljer du **Spara** för att avsluta red
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-I allmänhet hämtas det språk som valts för taggen från sidspråket, när det är tillgängligt. När [`tag`-widgeten &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) används i andra fall (till exempel i formulär eller i dialogrutor) beror taggspråket på sammanhanget.
+I allmänhet hämtas det språk som valts för taggen från sidspråket, när det är tillgängligt. När [`tag`-widgeten ](/help/sites-developing/building.md#tagging-on-the-client-side) används i andra fall (till exempel i formulär eller i dialogrutor) beror taggspråket på sammanhanget.
 
 I stället för att använda sidspråkinställningen används användarspråkinställningen i taggningskonsolen. I taggningskonsolen för taggen Animals visas Animaux för en användare som anger språket som franska i sina användaregenskaper.
 

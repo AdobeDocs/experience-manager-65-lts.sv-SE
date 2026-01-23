@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Personalization kan användas i många fall, till exempel:
 
 ### Intranätsidor {#intranet-pages}
 
-* Innehåll kan erbjudas baserat på en användares plats, avdelning och/eller roll, som redan definierats i ett internt nätverk.
+* Innehåll kan erbjudas baserat på en användares plats, avdelning och/eller roll - som redan definierats i ett internt nätverk.
 * Beroende på vilket alternativ som är tillgängligt kan användaren göra fler val.
 
 ### Specifika, begränsade, målanvändargrupper - extranät {#extranets}

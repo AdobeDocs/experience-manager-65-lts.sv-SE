@@ -5,9 +5,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ På fliken Assets i redigerarens sidpanel kan du få tillgång till produktdata 
 
 ![Panelen Produktdata](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
-I motsats till resurser kan produkter läggas till på en sida (vilket skapar en produktlaserkomponent som standard) eller komponenter (som för närvarande stöds är produktteaser och produktkarusell).
+I motsats till resurser kan produkter dras och släppas på en sida (vilket skapar en produktlaserkomponent som standard) eller komponenter (som för närvarande stöds är produktsuddgummi och produktkarusell).
 
 ### Lägga till länkar i textfält med RTE {#rte}
 
@@ -80,7 +80,7 @@ Då skapas en platshållarlänk som ersätts med en riktig länk när sidan åte
 
 ### Åtkomst till associerat produktinnehåll {#associated-content}
 
-Om 1:n-produkterna känns igen på en sida visas automatiskt fliken &quot;Associerat Commerce-innehåll&quot; på sidopanelen. På den här fliken kan författare snabbt komma åt AEM-innehåll som taggats med produkten (mer information finns i [Förbättra produktdata med associerat AEM-innehåll](./enrich-product-associated-content.md)). På den här fliken finns listrutor som du kan använda för att filtrera efter innehållstyp och specifika produkter om det finns flera produkter på sidan. Det fungerar precis som att använda innehåll från fliken&quot;Assets&quot;.
+Om den universella redigeraren känner igen :n produkter på en sida visas automatiskt fliken&quot;Associerat Commerce-innehåll&quot; på sidopanelen. På den här fliken kan författare snabbt komma åt AEM-innehåll som taggats med produkten (mer information finns i [Förbättra produktdata med associerat AEM-innehåll](./enrich-product-associated-content.md)). På den här fliken finns listrutor som du kan använda för att filtrera efter innehållstyp och specifika produkter om det finns flera produkter på sidan. Det fungerar precis som att använda innehåll från fliken&quot;Assets&quot;.
 
 ![Panelen Produktdata](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 

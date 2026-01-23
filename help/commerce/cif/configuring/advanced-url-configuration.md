@@ -11,7 +11,7 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Om du vill konfigurera tjänsten `UrlProvider` enligt SEO-kraven och behöver et
 
 >[!NOTE]
 >
->Sedan version 2.0.0 av AEM CIF Core Components innehåller URL-providerkonfigurationen endast fördefinierade url-format, i stället för det kostnadsfria format som kan konfigureras i 1.x-versioner. Dessutom har användningen av väljare för att skicka data i URL-adresser ersatts med suffix.
+>Sedan version 2.0.0 av AEM CIF Core Components tillhandahåller URL-providerkonfigurationen endast fördefinierade url-format, i stället för det kostnadsfria format som kan konfigureras i 1.x-versioner. Dessutom har användningen av väljare för att skicka data i URL-adresser ersatts med suffix.
 
 ### URL-format för produktsida {#product}
 

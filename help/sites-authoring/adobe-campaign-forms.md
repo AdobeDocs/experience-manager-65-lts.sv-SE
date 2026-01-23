@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: 3bc6f5aab61b6ea0ae1d6d909bf2d36fd7e4dbe4
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Först och främst bör du kontrollera anslutningen mellan författaren och publ
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
-1. På sidan, i komponenten **Formulärstart**, väljer du vilken typ av formulär det är - **Prenumerera, Avsluta prenumeration,** eller **Spara profil**. Du kan bara ha en typ per formulär. Du kan nu [redigera formulärets innehåll](#editing-form-content).
+1. På sidan i komponenten **Formulärstart** väljer du vilken typ av formulär det är - **Prenumerera, Avsluta prenumeration,** eller **Spara profil**. Du kan bara ha en typ per formulär. Du kan nu [redigera formulärets innehåll](#editing-form-content).
 
 ## Redigera formulärinnehåll {#editing-form-content}
 
@@ -126,7 +126,7 @@ När du har skapat ett formulär och redigerat formulärinnehållet kanske du vi
 
 >[!NOTE]
 >
->Du måste ha en **krypterad primärnyckel** i varje formulär. I Komponenter väljer du Adobe Campaign så att bara de komponenterna visas.
+>Du måste ha en **krypterad primärnyckel** på varje formulär. I Komponenter väljer du Adobe Campaign så att bara de komponenterna visas.
 >
 >I den här proceduren anger du telefonnumret manuellt, men i praktiken får användarna en länk till den här sidan (om de vill avbeställa, prenumerera eller uppdatera din profil) i ett nyhetsbrev. Paketet uppdateras automatiskt beroende på användaren.
 >

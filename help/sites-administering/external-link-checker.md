@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 3fafb5e6-f5ac-4c11-809f-6cb2c5269377
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Länkkontrollen körs automatiskt så att skribenterna kan få hjälp med sina l
 * Visar en lista över alla externa länkar i innehållet
 * Utföra länktomformningar
 
-Länkkontrollen innehåller flera [konfigurationsalternativ](#configuring), till exempel definition av intern validering, som tillåter att vissa länkar eller länkmönster utelämnas från validering, och skrivregler för omskrivning av länkar.
+Länkkontrollen innehåller flera [konfigurationsalternativ](#configuring), till exempel definition av intern validering, som tillåter att vissa länkar eller länkmönster utelämnas från validering, samt skrivregler för omskrivning av länkar.
 
 Länkkontrollen verifierar både [interna länkar](#internal) och [externa länkar.](#external)
 
@@ -35,7 +35,7 @@ Länkkontrollen verifierar både [interna länkar](#internal) och [externa länk
 Interna länkar är länkar till annat innehåll i din AEM-databas. Du kan lägga till interna länkar med sökvägsväljaren i textredigeraren eller med en anpassad komponent. Till exempel:
 
 * Din sida `/content/wknd/us/en/adventures/ski-touring.html`
-* Innehåller en länk till `/content/wknd/us/en/adventures/extreme-ironing.html` i en [textkomponent.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=sv-SE)
+* Innehåller en länk till `/content/wknd/us/en/adventures/extreme-ironing.html` i en [textkomponent.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Interna länkar valideras så snart innehållsförfattaren lägger till en intern länk på en sida. Om länken blir ogiltig:
 
@@ -49,7 +49,7 @@ Interna länkar valideras så snart innehållsförfattaren lägger till en inter
 Externa länkar är länkar till innehåll utanför din AEM-databas. Externa länkar kan läggas till med RTE eller med en anpassad komponent. Till exempel:
 
 * Din sida `/content/wknd/us/en/adventures/ski-touring.html`
-* Innehåller en länk till `https://bunwarmerthermalunderwear.com` i en [textkomponent.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=sv-SE)
+* Innehåller en länk till `https://bunwarmerthermalunderwear.com` i en [textkomponent.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Externa länkar valideras för syntax och genom att deras tillgänglighet kontrolleras. Den här kontrollen utförs asynkront på en konfigurerbar intern. Om länkkontrollen hittar en ogiltig extern länk:
 

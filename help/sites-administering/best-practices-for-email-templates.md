@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >Den här artikeln gäller de inaktuella Foundation Components-baserade e-postkomponenterna för AEM.
 >
->Användare uppmuntras att använda de moderna e-postkomponenterna för [kärnkomponenter.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=sv-SE)
+>Användare uppmuntras att använda de moderna e-postkomponenterna för [kärnkomponenter.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 I det här dokumentet beskrivs några av de bästa sätten att arbeta med e-postdesign, vilket resulterar i en välutvecklad mall för e-postkampanjer.
 

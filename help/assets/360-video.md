@@ -10,7 +10,7 @@ feature: 360 VR Video
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '1139'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Välj [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer
 
 Du kan använda Adobe Premier Pro för att visa och redigera 360/VR-film. Du kan till exempel placera logotyper och text på rätt sätt i en scen och använda effekter och övergångar som är särskilt utformade för ekvirektangulära medier.
 
-Se [Redigera 360/VR-video](https://helpx.adobe.com/se/premiere-pro/how-to/edit-360-vr-video.html).
+Se [Redigera 360/VR-video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Ladda upp material som ska användas med 360-videovisningsprogrammet {#uploading-assets-for-use-with-the-video-viewer}
 
@@ -51,7 +51,7 @@ Se [Redigera 360/VR-video](https://helpx.adobe.com/se/premiere-pro/how-to/edit-3
 
 **Överför resurser som ska användas med 360-videovisningsprogrammet:**
 
-1. Skapade en mapp som är dedikerad till ditt 360-videomaterial.
+1. Skapa en mapp som är dedikerad till ditt 360-videomaterial.
 1. [Använd en adaptiv videoprofil i mappen](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    Om du återger 360-videoinnehåll ställs högre krav på källvideoupplösning och för kodad återgivningsupplösning än standardvideoinnehåll som inte är 360.
@@ -121,7 +121,7 @@ Se [Lägg till Assets för dynamiska media på sidor](/help/assets/adding-dynami
    * Dra muspekaren över videon om du vill ändra visningsvinkeln för den statiska scenen.
    * Markera videoklippets **[!UICONTROL Play]**-knapp om du vill påbörja uppspelningen. När videon spelas upp drar du muspekaren över videon för att ändra visningsvinkeln.
 
-   ![En skärmbild av den internationella rymdstationen som flyter i yttre rymden med jorden och solen i bakgrunden &#x200B;](assets/6_5_360video-preview-video360-social.png)*En 360-videobandbild.*
+   ![En skärmbild av den internationella rymdstationen som flyter i yttre rymden med jorden och solen i bakgrunden ](assets/6_5_360video-preview-video360-social.png)*En 360-videobandbild.*
 
    * Välj **[!UICONTROL Video360VR]** i visningslistan.
 
