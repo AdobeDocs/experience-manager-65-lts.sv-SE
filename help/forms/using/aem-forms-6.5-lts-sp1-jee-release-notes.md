@@ -4,7 +4,7 @@ description: Hitta versionsinformation, nyheter, installationsanvisningar och en
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: b172fd1c328f54e759be59d5e7fd24be6f0d59e9
+source-git-commit: 27ec3c516b0746fd7e0d82f86750fbb4ef410711
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 0%
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 
 # Versionsinformation om Adobe Experience Manager (AEM) Forms 6.5 LTS SP1 på JEE
-
 
 ## Versionsinformation
 
@@ -68,7 +67,7 @@ Mer information finns i **Migrering från javax till jakarta Namespace**.
 
 ## Uppgradera
 
-Detaljerade uppgraderingsinstruktioner finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/sv/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+Detaljerade uppgraderingsinstruktioner finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Installation
 
