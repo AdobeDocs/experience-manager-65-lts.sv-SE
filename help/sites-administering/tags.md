@@ -44,8 +44,8 @@ Några av funktionerna i taggar i AEM:
    * En tagg som inte är en behållartagg kallas lövtagg
    * Ett taggnamnutrymme är antingen en lövtagg eller behållartagg
 
-* Taggar används av [sökkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) för att underlätta sökning efter innehåll.
-* Taggar används av [Teaser-komponenten](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html) som övervakar en användares taggmoln för att tillhandahålla riktat innehåll.
+* Taggar används av [sökkomponenten](https://helpx.adobe.com/se/experience-manager/core-components/using/quick-search.html) för att underlätta sökning efter innehåll.
+* Taggar används av [Teaser-komponenten](https://helpx.adobe.com/se/experience-manager/core-components/using/teaser.html) som övervakar en användares taggmoln för att tillhandahålla riktat innehåll.
 * Om taggning är en viktig aspekt av ditt innehåll
 
    * se till att paketera taggar med de sidor där de används

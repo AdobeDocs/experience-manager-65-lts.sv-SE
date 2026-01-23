@@ -51,7 +51,7 @@ Innan du fortsätter bör du kontrollera att du kan logga in på Adobe Analytics
 
 ### Konfigurera AEM för användning av Adobe Analytics datacenter {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [datacenter](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) samlar in, bearbetar och lagrar data som är kopplade till din Adobe Analytics-rapportserie. Konfigurera AEM för att använda det datacenter som är värd för Adobe Analytics rapporteringsprogram. Datacentret omnämns i ditt avtal. Kontakta en administratör i organisationen om du vill ha den här informationen.
+Adobe Analytics [datacenter](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=sv-SE) samlar in, bearbetar och lagrar data som är kopplade till din Adobe Analytics-rapportserie. Konfigurera AEM för att använda det datacenter som är värd för Adobe Analytics rapporteringsprogram. Datacentret omnämns i ditt avtal. Kontakta en administratör i organisationen om du vill ha den här informationen.
 
 Använd följande om det behövs för att dirigera till rätt datacenter: `https://api.omniture.com/`.
 
@@ -86,7 +86,7 @@ Använd [webbkonsolen för att konfigurera OSGi-paketet](/help/sites-deploying/c
 >
 >På grund av säkerhetsändringar i Adobe Analytics API är det inte längre möjligt att använda den version av Activity Map som ingår i AEM.
 >
->Plugin-programmet [ActivityMap som tillhandahålls av Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) bör nu användas.
+>Plugin-programmet [ActivityMap som tillhandahålls av Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=sv-SE) bör nu användas.
 
 ## Konfigurera för Activity Map {#configuring-for-the-activity-map}
 
@@ -94,7 +94,7 @@ Använd [webbkonsolen för att konfigurera OSGi-paketet](/help/sites-deploying/c
 >
 >På grund av säkerhetsändringar i Adobe Analytics API är det inte längre möjligt att använda den version av Activity Map som ingår i AEM.
 >
->Plugin-programmet [ActivityMap som tillhandahålls av Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) bör nu användas.
+>Plugin-programmet [ActivityMap som tillhandahålls av Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=sv-SE) bör nu användas.
 
 ## Skapa ett Adobe Analytics Framework {#creating-a-adobe-analytics-framework}
 
@@ -183,7 +183,7 @@ Underordnade till sidan ärver kopplingen till ramverket. Om du till exempel ass
 1. Välj **Spara och stäng**.
 1. Om du vill aktivera sidan och alla anslutna konfigurationer/filer **[Publicera](/help/sites-authoring/publishing-pages.md)** sidan.
 1. Det sista steget är att gå till sidan i publiceringsinstansen och söka efter ett nyckelord (till exempel getFin) med komponenten **Search**.
-1. Du kan sedan kontrollera anropen till Adobe Analytics med ett lämpligt verktyg, till exempel [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).
+1. Du kan sedan kontrollera anropen till Adobe Analytics med ett lämpligt verktyg, till exempel [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=sv-SE).
 1. I exemplet som anges ska anropet innehålla det värde som anges (dvs. eggplant) i eVar7 och händelselistan ska innehålla event3.
 
 ### Sidvyer {#page-views}
