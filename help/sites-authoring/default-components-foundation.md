@@ -1408,7 +1408,7 @@ Komponenten för filöverföring ger användaren en funktion för att välja och
 
 >[!NOTE]
 >
->Du kan skapa en anpassad överföringskomponent för att överföra filer till en Sling-server. Mer information finns i [Överföra filer till Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276).
+>Du kan skapa en anpassad överföringskomponent för att överföra filer till en Sling-server. Mer information finns i [Överföra filer till Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=sv).
 
 ### Dolt fält {#hidden-field}
 

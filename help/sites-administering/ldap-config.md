@@ -43,7 +43,7 @@ Om du vill att LDAP ska fungera med AEM måste du skapa tre OSGi-konfigurationer
 >
 >Titta på [Oak modul för extern inloggning - autentiserar med LDAP och bortom](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=sv-SE) för att kunna identifiera externa inloggningsmoduler.
 >
->Ett exempel på hur du konfigurerar Experience Manager med Apache DS finns i [Konfigurera Adobe Experience Manager 6.5 så att den använder Apache Directory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
+>Ett exempel på hur du konfigurerar Experience Manager med Apache DS finns i [Konfigurera Adobe Experience Manager 6.5 så att den använder Apache Directory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=sv)
 
 ## Konfigurera LDAP-identitetsleverantören {#configuring-the-ldap-identity-provider}
 

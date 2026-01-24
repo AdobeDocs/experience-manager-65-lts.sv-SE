@@ -51,7 +51,7 @@ Det här dokumentet förutsätter att du redan är bekant med att skapa och redi
 
 Skapandet av redigerbara mallar görs huvudsakligen med [mallkonsolen och mallredigeraren](/help/sites-authoring/templates.md) av en mallskapare. I det här avsnittet ges en översikt över processen och en beskrivning av vad som händer på teknisk nivå.
 
-Mer information om hur du använder redigerbara mallar i ett AEM-projekt finns i [Skapa ett AEM-projekt med Lazybone](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
+Mer information om hur du använder redigerbara mallar i ett AEM-projekt finns i [Skapa ett AEM-projekt med Lazybone](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=sv).
 
 När du skapar en redigerbar mall:
 

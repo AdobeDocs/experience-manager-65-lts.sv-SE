@@ -234,7 +234,7 @@ Om du till exempel vill inaktivera mål för titelkomponenterna på Geometrixx d
 >
 >Om du inte använder DTM skickar du en orderbekräftelse till Adobe Target.
 
-Om du vill följa upp hur webbplatsen fungerar skickar du inköpsinformation från orderbekräftelsesidan till Adobe Target. (Se [Skapa en orderConfirmPage Mbox](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) och [Order Confirmation Mbox - Lägg till anpassade parametrar.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target känner igen mbox-data som orderbekräftelsedata när ditt MBox-namn är `orderConfirmPage` och använder följande specifika parameternamn:
+Om du vill följa upp hur webbplatsen fungerar skickar du inköpsinformation från orderbekräftelsesidan till Adobe Target. (Se [Skapa en orderConfirmPage Mbox](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) och [Order Confirmation Mbox - Lägg till anpassade parametrar.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=sv)) Adobe Target känner igen mbox-data som orderbekräftelsedata när ditt MBox-namn är `orderConfirmPage` och använder följande specifika parameternamn:
 
 * productPurchasedId: En lista med ID:n som identifierar de köpta produkterna.
 * orderId: Orderns ID.
