@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
+source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
 workflow-type: tm+mt
-source-wordcount: '7355'
+source-wordcount: '7751'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,91 @@ ht-degree: 0%
 
 ### Forms
 
-AEM 6.5 Forms LTS on JEE finns nu att köpa. Mer information om miljöer som stöds finns i dokumentet [Kombinationer av plattformar som stöds](/help/forms/using/aem-forms-jee-supported-platforms.md). Installationslänkar finns på sidan [AEM Forms-versioner](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+AEM 6.5 Forms LTS on JEE finns nu att köpa. Mer information om miljöer som stöds finns i dokumentet [Kombinationer av plattformar som stöds](/help/forms/using/aem-forms-jee-supported-platforms.md). Installationslänkar finns på sidan [AEM Forms-versioner](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+
+#### Vad ingår i AEM Forms 6.5 LTS SP1?
+
+**Java Support-uppdateringar**
+
+Stöd för nyare Java-versioner har införts:
+
+* Java™ 17
+* Java™ 21
+
+**Supportuppdateringar för programservrar**
+
+* Stöd för JBoss EAP 8 har lagts till.
+* Det äldre PicketBox-säkerhetsramverket har tagits bort.
+* Elytron-baserade arkiv med autentiseringsuppgifter stöds nu för säker hantering av autentiseringsuppgifter.
+
+**Konfiguration: Autentiseringsarkiv (Elytron-baserad)**
+
+AEM Forms på JBoss EAP 8 använder Elytron för att hantera säkra inloggningsuppgifter. Kunderna måste konfigurera ett Elytron-baserat autentiseringsarkiv för autentiseringsuppgifter för att säkerställa att servern startas korrekt och att databasautentiseringen är säker.
+
+Konfigurationsinformation finns i installations- och konfigurationshandboken.
+
+**Plattforms- och kompatibilitetsändringar**
+
+* Stöd för serverspecifikation 5+
+* Baserat på efterlevnad av Jakarta EE 9
+
+**Krav för namnområdesmigrering**
+
+* Jakarta EE 9 introducerar en namnområdesändring från `javax.*` till `jakarta.*`
+* Alla **anpassade DSC:er** måste migreras till namnutrymmet `jakarta.*`
+* AEM Forms 6.5 LTS SP1 stöder **endast Jakarta EE 9+-baserade programservrar**
+
+Mer information finns i **Migrering från javax till jakarta Namespace**.
+
+**Migrering från javax till jakarta Namespace**
+
+#### Migrering från `javax` till `jakarta`-namnområde
+
+Från och med **AEM Forms 6.5 LTS SP1** stöds endast programservrar som implementerar **Jakarta Servlet API 5/6**. Med **Jakarta EE 9 och senare** gick alla API:er från namnområdet `javax.{}` till `jakarta.`.
+
+Därför måste **alla anpassade DSC:er använda `jakarta` namespace**. Anpassade komponenter som skapats med `javax.{}` API:er är **inte kompatibla** med de programservrar som stöds.
+
+**Migreringsalternativ för anpassade DSC:er**
+
+Du kan migrera befintliga anpassade DSC:er på något av följande sätt:
+
+**Alternativ 1: Source-kodmigrering (rekommenderas)**
+
+* Uppdatera alla importsatser från `javax.{}` till `jakarta.`
+* Återskapa och kompilera om de anpassade DSC-projekten
+* Distribuera om de uppdaterade komponenterna till programservern
+
+**Fördelar:**
+
+* Garanterar långsiktig kompatibilitet med Jakarta EE 9+
+* Passar bäst för projekt som underhålls aktivt
+
+**Alternativ 2: Binär migrering med Eclipse-transformator**
+
+* Använd verktyget **Eclipse Transformer** för att konvertera kompilerade binärfiler (`.jar`, `.war`) från `javax` till `jakarta`
+* Inga källkodsändringar eller omkompilering krävs
+* Distribuera om de omformade binärfilerna till programservern
+
+>[!NOTE]
+>
+> Binär omformning utförs på **bytekodnivå**.
+
+Nedan visas vanliga exempel på namnutrymmesändringar som krävs under migreringen:
+
+Före (javax)    Efter (jakarta)
+javax.servlet. **jakarta.servlet**
+javax.servlet.http. **jakarta.servlet.http.**
+
+**Exempelimportmappningar**
+
+I följande tabell visas vanliga namnområdesändringar som krävs vid migrering från `javax` till `jakarta`:
+
+| Före (`javax`) | Efter (`jakarta`) |
+| ---------------------- | ------------------------ |
+| `javax.servlet.*` | `jakarta.servlet.*` |
+| `javax.servlet.http.*` | `jakarta.servlet.http.*` |
+
+Använd dessa mappningar som referens när du uppdaterar anpassad DSC-källkod eller validerar transformerade binärfiler.
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -448,6 +532,7 @@ Eclipse Jetty 11.0.x används som servermotor för QuickStart.
 ### Uppgradera {#upgrade}
 
 * Mer information om uppgraderingsproceduren finns i [uppgraderingsdokumentationen](/help/sites-deploying/upgrade.md).
+* Detaljerade uppgraderingsinstruktioner finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bästa tillvägagångssätt för AEM 6.5 LTS Service Pack-uppgraderingar
 
@@ -503,7 +588,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -520,14 +605,15 @@ Hitta den fullständiga matrisen med plattformar som stöds, inklusive supportni
 
 <!-- CARRY OVER EACH RELEASE -->
 
-Adobe granskar kontinuerligt produktfunktionerna för att förbättra kundens värde genom att modernisera eller ersätta äldre funktioner. Dessa ändringar görs med stor noggrannhet för bakåtkompatibilitet.
+Adobe granskar och utvecklar kontinuerligt produktfunktioner för att ge större kundvärde genom att modernisera eller ersätta äldre funktioner. Dessa ändringar implementeras med noggrant övervägande av bakåtkompatibilitet.
 
-Följande regler gäller för att informera om den förestående borttagningen eller ersättningen av Adobe Experience Manager-funktioner (AEM):
+För att säkerställa transparens och möjliggöra korrekt planering följer Adobe den här borttagningsprocessen för Adobe Experience Manager (AEM):
 
-1. Föråldringsanmälan kommer först. Funktionerna är fortfarande tillgängliga, men har inte förbättrats ytterligare.
-1. Borttagning av föråldrade funktioner sker tidigast i följande större version. Det faktiska måldatumet för borttagning planeras att tillkännages senare.
+* Föråldringen tillkännages först. Föråldrade funktioner är fortfarande tillgängliga men har inte förbättrats längre.
 
-Den här processen ger kunderna minst en releasecykel för att anpassa implementeringen till en ny version eller en efterföljare till en borttagningsfunktion, innan den faktiska borttagningen.
+* Borttagning sker inte tidigare än nästa större release. Tidslinjen för planerad borttagning kommuniceras separat.
+
+* Kunder får minst en releasecykel för att gå över till alternativ som stöds innan en funktion tas bort.
 
 ### Föråldrade funktioner {#deprecated-features}
 
@@ -543,6 +629,10 @@ Kunderna rekommenderas att granska om de använder funktionen/funktionen i den a
 ### Borttagna funktioner {#removed-features}
 
 I det här avsnittet listas funktioner som har tagits bort från AEM 6.5 LTS. Tidigare versioner hade dessa funktioner markerats som föråldrade.
+
+* Stöd för RDBMK för CRX-databasbeständighet har tagits bort.
+
+* I klustrade miljöer är nu MongoMK det enda alternativet som stöds för databasbeständighet.
 
 | Område | Funktion | Ersättning | Version (SP) |
 | --- | --- | --- | --- |
@@ -621,5 +711,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
