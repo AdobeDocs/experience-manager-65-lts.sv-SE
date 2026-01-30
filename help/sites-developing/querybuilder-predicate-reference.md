@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2291'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,13 @@ ht-degree: 0%
 * [tagsearch](/help/sites-developing/querybuilder-predicate-reference.md#tagsearch)
 * [type](/help/sites-developing/querybuilder-predicate-reference.md#type)
 
-### boolproperty {#boolproperty}
+### `boolproperty` {#boolproperty}
 
-Matchar JCR BOOLEAN-egenskaper. Endast värdena `true` och `false` godkänns. Om `false` matchar det om egenskapen har värdet `false` eller om den inte finns alls. Detta kan vara användbart för att kontrollera om det finns booleska flaggor som bara är inställda när de är aktiverade.
+Matchar JCR BOOLEAN-egenskaper. Endast värdena `true` och `false` godkänns. Om värdet är `false` matchar det om egenskapen har värdet `false` eller om den inte finns alls. Användbar för att kontrollera om det finns booleska flaggor som bara är inställda när de är aktiverade.
 
 Den ärvda parametern `operation` har ingen betydelse.
 
-Stöder extrahering av ansikten. Tillhandahåller bucket för varje `true`- eller `false`-värde, men bara för befintliga egenskaper.
+Den stöder extrahering av ansikten. Tillhandahåller bucket för varje `true`- eller `false`-värde, men bara för befintliga egenskaper.
 
 #### Egenskaper {#properties}
 
@@ -76,24 +76,24 @@ Relativ sökväg till egenskap, till exempel `myFeatureEnabled` eller `jcr:conte
 * **värde**
 Värde att kontrollera egenskap för, `true` eller `false`.
 
-### innehållfragment {#contentfragment}
+### `contentfragment` {#contentfragment}
 
 Begränsar resultatet till innehållsfragment.
 
-Filtrering stöds inte.
+Det stöder inte filtrering.
 
-Stöder inte facetextrahering.
+Det stöder inte facetextrahering.
 
 #### Egenskaper {#properties-1}
 
 * **innehållfragment**
 Den kan användas med vilket värde som helst för att kontrollera om det finns innehållsfragment.
 
-### dateComparison {#datecomparison}
+### `dateComparison` {#datecomparison}
 
 Jämför två JCR DATE-egenskaper med varandra. Du kan testa om de är lika, olika, större än eller större än eller lika med.
 
-Detta är ett predikat som bara kan filtreras och det går inte att använda ett sökindex.
+Ett predikat som bara kan filtreras och som inte kan använda ett sökindex.
 
 #### Egenskaper {#properties-2}
 
@@ -109,16 +109,16 @@ Detta är ett predikat som bara kan filtreras och det går inte att använda ett
 
   &quot; `equals`&quot; för exakt matchning, &quot; `!=`&quot; för likhetsjämförelse, &quot; `greater`&quot; för egenskap1 större än egenskap 2, &quot; `>=`&quot; för egenskap 1 större än eller lika med egenskap 2. Standardvärdet är `equals`.
 
-### daterange {#daterange}
+### `daterange` {#daterange}
 
-Matchar JCR DATE-egenskaper mot ett datum/tidsintervall. Detta använder ISO8601
+Matchar JCR DATE-egenskaper mot ett datum- och tidsintervall. Använder ISO8601
 format för datum och tider ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) och tillåter även partiella representationer, som `YYYY-MM-DD`. Alternativt kan tidsstämpeln anges i antal millisekunder sedan 1970 i UTC-tidszonen, UNIX®-tidsformatet.
 
 Du kan söka efter vad som helst mellan två tidsstämplar, vad som helst nyare eller äldre än ett visst datum, och du kan även välja mellan inkluderande och öppna intervall.
 
-Stöder extrahering av ansikten. Innehåller fickorna&quot;idag&quot;,&quot;den här veckan&quot;,&quot;den här månaden&quot;,&quot;de senaste tre månaderna&quot;,&quot;det här året&quot;,&quot;det senaste året&quot; och&quot;tidigare än det senaste året&quot;.
+Den stöder extrahering av ansikten. Tillhandahåller&quot;idag&quot;,&quot;den här veckan&quot;,&quot;den här månaden&quot;,&quot;de senaste tre månaderna&quot;,&quot;det här året&quot;,&quot;det senaste året&quot; och&quot;tidigare än förra året&quot;.
 
-Filtrering stöds inte.
+Det stöder inte filtrering.
 
 #### Egenskaper {#properties-3}
 
@@ -146,13 +146,13 @@ Filtrering stöds inte.
 
   ID för den tidszon som ska användas när den inte anges som en ISO-8601-datumsträng. Standardvärdet är systemets standardtidszon.
 
-### exkluderingar {#excludepaths}
+### `excludepaths` {#excludepaths}
 
 Utesluter noder från resultatet där deras sökväg matchar ett reguljärt uttryck.
 
-Detta är ett predikat som bara kan filtreras och det går inte att använda ett sökindex.
+Ett predikat som bara kan filtreras och som inte kan använda ett sökindex.
 
-Stöder inte facetextrahering.
+Det stöder inte facetextrahering.
 
 #### Egenskaper {#properties-4}
 
@@ -160,13 +160,13 @@ Stöder inte facetextrahering.
 
   Reguljära uttryck matchade mot resultatsökvägar, utan matchande sökvägar från resultatet.
 
-### fulltext {#fulltext}
+### `fulltext` {#fulltext}
 
 Söker efter termer i fulltextindexet.
 
-Filtrering stöds inte.
+Det stöder inte filtrering.
 
-Stöder inte facetextrahering.
+Det stöder inte facetextrahering.
 
 #### Egenskaper {#properties-5}
 
@@ -178,9 +178,9 @@ Stöder inte facetextrahering.
 
   Den relativa sökvägen som ska sökas i egenskapen eller undernoden. Den här egenskapen är valfri.
 
-### grupp {#group}
+### `group` {#group}
 
-Tillåter att kapslade villkor skapas. Grupper kan innehålla kapslade grupper. Allt i en fråga i frågebyggaren ingår implicit i en rotgrupp som även kan ha parametrarna `p.or` och `p.not`.
+Gör att kapslade villkor kan skapas. Grupper kan innehålla kapslade grupper. Allt i en fråga i frågebyggaren ingår implicit i en rotgrupp som även kan ha parametrarna `p.or` och `p.not`.
 
 Exempel på matchning av en av två egenskaper mot ett värde:
 
@@ -192,7 +192,7 @@ group.2_property=navTitle
 group.2_property.value=My Page
 ```
 
-Detta är begreppsmässigt `(1_property` ELLER `2_property)`.
+`(1_property` ELLER `2_property)`.
 
 Exempel för kapslade grupper:
 
@@ -205,9 +205,9 @@ group.2_group.path=/content/dam/geometrixx
 group.2_group.type=dam:Asset
 ```
 
-Detta söker efter termen **Hantering** på sidor i `/content/geometrixx/en` eller i resurser i `/content/dam/geometrixx`.
+Söker efter termen **Hantering** på sidor i `/content/geometrixx/en` eller i resurser i `/content/dam/geometrixx`.
 
-Detta är begreppsmässigt `fulltext AND ( (path AND type) OR (path AND type) )`. Sådana ELLER-kopplingar behöver bra index för att fungera.
+Konceptuellt `fulltext AND ( (path AND type) OR (path AND type) )`. Sådana ELLER-kopplingar behöver bra index för att fungera.
 
 #### Egenskaper {#properties-6}
 
@@ -231,7 +231,7 @@ Detta är begreppsmässigt `fulltext AND ( (path AND type) OR (path AND type) )`
 
 Begränsar resultatet till objekt där den aktuella sessionen har angivna [JCR-behörigheter.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-Detta är ett predikat som bara kan filtreras och det går inte att använda ett sökindex. Det stöder inte facetextrahering.
+Ett predikat som bara kan filtreras och som inte kan använda ett sökindex. Det stöder inte facetextrahering.
 
 #### Egenskaper {#properties-7}
 
@@ -239,27 +239,27 @@ Detta är ett predikat som bara kan filtreras och det går inte att använda ett
 
   Kommaavgränsade JCR-behörigheter som den aktuella användarsessionen måste ALLA ha noden i fråga. Till exempel `jcr:write`, `jcr:modifyAccessControl`.
 
-### språk {#language}
+### `language` {#language}
 
 Söker efter CQ-sidor på ett visst språk. Det här tittar både på sidspråksegenskapen och sidsökvägen, som ofta innehåller språket eller språket i en webbplatsstruktur på den översta nivån.
 
-Detta är ett predikat som bara kan filtreras och det går inte att använda ett sökindex.
+Ett predikat som bara kan filtreras och som inte kan använda ett sökindex.
 
-Stöder extrahering av ansikten. Tillhandahåller bucket för varje unik språkkod.
+Den stöder extrahering av ansikten. Tillhandahåller bucket för varje unik språkkod.
 
 #### Egenskaper {#properties-8}
 
 * **språk**
 
-  ISO-språkkod, till exempel `de`
+  ISO-språkkod, till exempel `de`.
 
-### huvudtillgång {#mainasset}
+### `mainasset` {#mainasset}
 
-Kontrollerar om en nod är en DAM-huvudresurs och inte en underresurs. Detta är i stort sett alla noder som inte finns i en delresursnod. Detta söker inte efter nodtypen `dam:Asset`. Om du vill använda det här predikatet, ange `mainasset=true` eller `mainasset=false`, finns det inga fler egenskaper.
+Kontrollerar om en nod är en DAM-huvudresurs och inte en underresurs. I princip finns alla noder inte i en delresursnod. Söker inte efter nodtypen `dam:Asset`. Om du vill använda det här predikatet anger du `mainasset=true` eller `mainasset=false`, det finns inga fler egenskaper.
 
-Detta är ett predikat som bara kan filtreras och det går inte att använda ett sökindex.
+Ett predikat som bara kan filtreras och som inte kan använda ett sökindex.
 
-Stöder facet-extrahering och ger två möjligheter för huvud- och delresurser.
+Det har stöd för facetteextrahering och har två klot för huvud- och delresurser.
 
 #### Egenskaper {#properties-9}
 
@@ -271,7 +271,7 @@ Stöder facet-extrahering och ger två möjligheter för huvud- och delresurser.
 
 Söker efter objekt som är medlemmar i en specifik [snedresurssamling](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
-Detta är ett predikat som bara kan filtreras och det går inte att använda ett sökindex. Stöder inte facetextrahering.
+Ett predikat som bara kan filtreras och som inte kan använda ett sökindex. Det stöder inte facetextrahering.
 
 #### Egenskaper {#properties-10}
 
@@ -279,11 +279,11 @@ Detta är ett predikat som bara kan filtreras och det går inte att använda ett
 
   Sökväg till Sling-resurssamling.
 
-### nodename {#nodename}
+### `nodename` {#nodename}
 
 Matchar JCR-nodnamn.
 
-Stöder extrahering av ansikten. Anger bucket för varje unikt nodnamn (filnamn).
+Den stöder extrahering av ansikten. Anger bucket för varje unikt nodnamn (filnamn).
 
 #### Egenskaper {#properties-11}
 
@@ -291,13 +291,13 @@ Stöder extrahering av ansikten. Anger bucket för varje unikt nodnamn (filnamn)
 
   Nodnamnsmönster som tillåter jokertecken: `*` = vilket eller inget tecken, `?` = valfritt tecken, `[abc]` = endast tecken inom hakparenteser.
 
-### inte utgånget {#notexpired}
+### `notexpired` {#notexpired}
 
-Matchar objekt genom att kontrollera om en JCR DATE-egenskap är större eller lika med den aktuella servertiden. Detta kan användas för att kontrollera en `expiresAt`-liknande datumegenskap och begränsa till endast de som ännu inte har gått ut ( `notexpired=true`) eller som redan har gått ut ( `notexpired=false`).
+Matchar objekt genom att kontrollera om en JCR DATE-egenskap är större eller lika med den aktuella servertiden. Kan användas för att kontrollera en `expiresAt`-liknande datumegenskap och begränsa till endast de som ännu inte har gått ut ( `notexpired=true`) eller som redan har gått ut ( `notexpired=false`).
 
-Filtrering stöds inte.
+Det stöder inte filtrering.
 
-Stöder facet-extrahering på samma sätt som daterange-predikatet.
+Det stöder facetextrahering på samma sätt som daterange-predikatet.
 
 #### Egenskaper {#properties-12}
 
@@ -309,9 +309,9 @@ Stöder facet-extrahering på samma sätt som daterange-predikatet.
 
   Relativ sökväg till egenskapen `DATE` som ska kontrolleras (obligatoriskt).
 
-### orderby {#orderby}
+### `orderby` {#orderby}
 
-Låter resultaten sorteras. Om det krävs en ordning efter flera egenskaper måste predikatet läggas till flera gånger med hjälp av talprefixet, till exempel `1_orderby=first`, `2_oderby=second`.
+Gör att resultaten kan sorteras. Om det krävs en ordning efter flera egenskaper måste predikatet läggas till flera gånger med hjälp av talprefixet, till exempel `1_orderby=first`, `2_oderby=second`.
 
 #### Egenskaper {#properties-13}
 
@@ -327,35 +327,36 @@ Låter resultaten sorteras. Om det krävs en ordning efter flera egenskaper mås
 
   Om värdet är `ignore` blir sorteringsskiftläget okänsligt, vilket innebär att&quot;a&quot; kommer före&quot;B&quot;. Om det är tomt eller utelämnas är sorteringen skiftlägeskänslig, vilket innebär att&quot;B&quot; kommer före&quot;a&quot;
 
-### bana {#path}
+### `path` {#path}
 
 Söker i en viss bana.
 
-Stöder inte facetextrahering.
+Det stöder inte facetextrahering.
 
 #### Egenskaper {#properties-14}
 
 * **sökväg**
 
-  Banmönster. Beroende på hur exakt det är, matchar antingen hela underträdet (som att lägga till `//*` i XPath, men observera att detta inte inkluderar bassökvägen) (exact=false, standard) eller bara en exakt sökvägsmatchning, som kan innehålla jokertecken ( `*`). Om du anger sig själv genomsöks hela underträdet inklusive basnoden.
+  Banmönster. När det är `exact=false` (standard) matchar sökningen hela underträdet under den angivna sökvägen, ungefär som när `//*` läggs till i XPath, men den innehåller inte själva bassökvägen. När `exact=true` matchar sökningen endast den exakta sökvägen, som kan innehålla `*` jokertecken. Om `self` anges inkluderas basnoden och hela underträdet i sökningen.
+
 
 * **exact**
 
-  Om `exact` är true/on måste den exakta sökvägen matcha, men den kan innehålla enkla jokertecken ( `*`) som matchar namn, men inte `/`. Om det är false (standard) inkluderas alla underordnade (valfritt).
+  Om `exact` är true (på) måste den exakta sökvägen matcha, men den kan innehålla enkla jokertecken ( `*`) som matchar namn, men inte `/`. Om det är false (standard) inkluderas alla underordnade (valfritt).
 
 * **flat**
 
-  Söker bara efter direkt underordnade objekt (som att lägga till `/*` i XPath) (används bara om `exact` inte är sant, valfritt).
+  Söker bara efter direkt underordnade (som att lägga till `/*` i `xpath`) (används bara om `exact` inte är sant, valfritt).
 
 * **self**
 
   Söker i underträdet men inkluderar basnoden som angetts som sökväg (inga jokertecken).
 
-### property {#property}
+### `property` {#property}
 
 Matchar JCR-egenskaper och deras värden.
 
-Stöder extrahering av ansikten. Innehåller grupper för varje unikt egenskapsvärde i resultatet.
+Den stöder extrahering av ansikten. Innehåller grupper för varje unikt egenskapsvärde i resultatet.
 
 #### Egenskaper {#properties-15}
 
@@ -377,19 +378,19 @@ Stöder extrahering av ansikten. Innehåller grupper för varje unikt egenskapsv
 
 * **operation**
 
-  &quot;`equals`&quot; för exakt matchning (standard), &quot; `unequals`&quot; för jämförelse av olikhet, &quot; `like`&quot; för användning av funktionen `jcr:like` xpath (valfri), &quot; `not`&quot; för ingen matchning (t.ex. &quot;`not(@prop)`&quot; i xpath ignoreras value param) eller &quot; `exists`&quot; för existenskontroll (värdet kan vara true - egenskapen måste finnas, standardvärdet - eller false - samma som &quot; `not`&quot;) .
+  Använd `equals` för en exakt matchning (standard) och `unequals` för en jämförelse av olikhet. Använd `like` för att använda den valfria `jcr:like` XPath-funktionen. Använd `not` om du inte har någon matchning (till exempel `not(@prop)` i XPath). I det här fallet ignoreras parametern `value`. Använd `exists` för att kontrollera om en egenskap finns: `true` (standard) kräver egenskapen och `false` är ekvivalent med `not`.
 
 * **djup**
 
-  Antal jokernivåer under vilka egenskapen/den relativa sökvägen kan finnas (till exempel `property=size depth=2` kontrollerar nod/storlek, nod/&ast;/size och node/&ast;/&ast;/size).
+  Ett antal jokernivåer under vilka egenskapen och den relativa sökvägen kan finnas. `property=size depth=2` kontrollerar till exempel nod och storlek, nod/&amp;ast;/size och node/&amp;ast;/&amp;ast;/size.
 
-### rangeProperty {#rangeproperty}
+### `rangeproperty` {#rangeproperty}
 
-Matchar en JCR-egenskap mot ett intervall. Detta gäller för egenskaper med linjära typer som `LONG`, `DOUBLE` och `DECIMAL`. För `DATE`, se daterange-predikatet med optimerade indata för datumformat.
+Matchar en JCR-egenskap mot ett intervall. Gäller för egenskaper med linjära typer, som `LONG`, `DOUBLE` och `DECIMAL`. För `DATE`, se daterange-predikatet med optimerade indata för datumformat.
 
 Du kan definiera en nedre gräns och en övre gräns eller endast en av dem. Åtgärden (t.ex. &quot;mindre än&quot; eller &quot;mindre eller lika med&quot;) kan också anges individuellt för den nedre och övre gränsen.
 
-Stöder inte facetextrahering.
+Det stöder inte facetextrahering.
 
 #### Egenskaper {#properties-16}
 
@@ -403,7 +404,7 @@ Stöder inte facetextrahering.
 
 * **lowerOperation**
 
-  &quot; `>`&quot; (standard) eller &quot; `>=`&quot;, gäller för `lowerValue`
+  &quot; `>`&quot; (standard) eller &quot; `>=`&quot; gäller för `lowerValue`
 
 * **upperBound**
 
@@ -411,15 +412,15 @@ Stöder inte facetextrahering.
 
 * **upperOperation**
 
-  &quot; `<`&quot; (standard) eller &quot; `<=`&quot;, gäller för `lowerValue`
+  &quot; `<`&quot; (standard) eller &quot; `<=`&quot; gäller för `lowerValue`
 
 * **decimal**
 
   &quot; `true`&quot; om egenskapen checked är av typen Decimal
 
-### relativ {#relativedaterange}
+### `relativedaterange` {#relativedaterange}
 
-Matchar `JCR DATE`-egenskaper mot ett datum/tidsintervall med tidsförskjutningar i förhållande till den aktuella servertiden. Du kan ange `lowerBound` och `upperBound` med antingen ett millisekundvärde eller bugzilla-syntaxen `1s 2m 3h 4d 5w 6M 7y` (en sekund, två minuter, tre timmar, fyra dagar, fem veckor, sex månader, sju år). Prefix med `-` om du vill ange en negativ förskjutning före den aktuella tiden. Om du bara anger `lowerBound` eller `upperBound` blir den andra standardvärdet 0, vilket innebär den aktuella tiden.
+Matchar `JCR DATE`-egenskaper mot ett datum och ett tidsintervall med tidsförskjutningar i förhållande till den aktuella servertiden. Du kan ange `lowerBound` och `upperBound` med antingen ett millisekundsvärde eller bugzilla-syntaxen `1s 2m 3h 4d 5w 6M 7y`. Prefix med `-` om du vill ange en negativ förskjutning före den aktuella tiden. Om du bara anger `lowerBound` eller `upperBound` blir den andra standardvärdet 0, vilket innebär den aktuella tiden.
 
 Till exempel:
 
@@ -431,9 +432,9 @@ Till exempel:
 
 Den tar inte hänsyn till skottår och alla månader är 30 dagar.
 
-Filtrering stöds inte.
+Det stöder inte filtrering.
 
-Stöder facet-extrahering på samma sätt som daterange-predikatet.
+Det stöder facetextrahering på samma sätt som daterange-predikatet.
 
 #### Egenskaper {#properties-17}
 
@@ -445,9 +446,9 @@ Stöder facet-extrahering på samma sätt som daterange-predikatet.
 
   Nedre datumgräns i millisekunder eller `1s 2m 3h 4d 5w 6M 7y` (en sekund, två minuter, tre timmar, fyra dagar, fem veckor, sex månader, sju år) i förhållande till aktuell servertid, använd &quot;-&quot; för negativ offset.
 
-### root {#root}
+### `root` {#root}
 
-Rotpredikatgrupp. Stöder alla funktioner i en grupp och låter dig ange globala frågeparametrar.
+Rotpredikatgrupp. Den har stöd för alla funktioner i en grupp och gör att du kan ange globala frågeparametrar.
 
 Namnet &quot;root&quot; används aldrig i en fråga, det är implicit.
 
@@ -463,11 +464,12 @@ Namnet &quot;root&quot; används aldrig i en fråga, det är implicit.
 
 * **p.gissningssumma**
 
-  Rekommenderas: undvik att beräkna den totala resultatsumman som kan vara kostsam. Antingen ett tal som anger den högsta totalsumman som ska räknas upp till (till exempel 1000, ett tal som ger användarna tillräckligt med feedback på grovstorleken och exakta tal för mindre resultat) eller `true` för att räkna endast upp till det minsta nödvändiga `p.offset` + `p.limit`.
+  Om du vill undvika kostnaden för att beräkna en fullständig resultatsumma ska du inte räkna alla träffar. Ställ i stället in en maximal summa att räkna upp till (till exempel `1000`) för att ge användarna en grov storlek och exakta summor för mindre resultat. Eller ange det till `true` så att det bara räknas upp till det minsta antal som krävs: `p.offset + p.limit`.
+
 
 * **p.excerpt**
 
-  Om värdet är `true`, inkluderar du det fullständiga textutdraget i resultatet.
+  Om värdet är `true` inkluderar du utdrag av fullständig text i resultatet.
 
 * **p.hits**
 
@@ -479,21 +481,23 @@ Namnet &quot;root&quot; används aldrig i en fråga, det är implicit.
 
    * **full**:
 
-     Sling JSON-återgivning av noden, med `jcr:path` som anger träffens sökväg: som standard visas bara nodens direkta egenskaper, inklusive ett djupare träd med `p.nodedepth=N`, med 0 som betyder hela det oändliga underträdet, lägg till `p.acls=true` för att inkludera JCR-behörigheten för den aktuella sessionen på det angivna resultatobjektet (mappningar: `create` = `add_node`, `modify` = `set_property`, `delete` =  `remove`).
+     Resultaten återges som Sling JSON för varje nod, där `jcr:path` visar träffsökvägen. Som standard innehåller svaret bara nodens direkta egenskaper. Använd `p.nodedepth=N` för att inkludera djupare innehåll, där `0` returnerar hela underträdet. Ange `p.acls=true` så att den aktuella sessionens JCR-behörigheter inkluderas för varje objekt (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+
 
    * **selektiv**:
 
-     Endast egenskaper som anges i `p.properties`, som är en blankstegsavgränsad (använd&quot;+&quot; i URL:er) lista med relativa sökvägar. Om den relativa sökvägen har ett djup > 1 representeras de som underordnade objekt. Den speciella jcr:path-egenskapen innehåller sökvägen till träffen
+     Svaret innehåller bara de egenskaper som anges i `p.properties`, som är en blankstegsavgränsad lista med relativa sökvägar (använd `+` i URL-adresser). Om en relativ bana har ett djup som är större än 1, kapslas den in som underordnade objekt. Den speciella `jcr:path`-egenskapen innehåller alltid träffsökvägen.
 
-### sparad fråga {#savedquery}
 
-Inkluderar alla predikat för en beständig frågebyggarfråga i den aktuella frågan som ett undergruppsprediat.
+### `savedquery` {#savedquery}
 
-Detta kör inte en extra fråga utan utökar den aktuella frågan.
+Den innehåller alla predikat för en beständig fråga i den aktuella frågan som ett undergruppspredikat.
+
+Den kör inte en extra fråga utan utökar den aktuella frågan.
 
 Frågor kan sparas programmatiskt med `QueryBuilder#storeQuery()`. Formatet kan vara en strängegenskap med flera rader eller en `nt:file`-nod som innehåller frågan som en textfil i Java™-egenskapsformat.
 
-Stöder inte facetextrahering för predikaten i den sparade frågan.
+Det stöder inte facetextrahering för predikaten i den sparade frågan.
 
 #### Egenskaper {#properties-19}
 
@@ -501,11 +505,11 @@ Stöder inte facetextrahering för predikaten i den sparade frågan.
 
   Sökväg till den sparade frågan (String-egenskapen eller `nt:file`-noden).
 
-### liknande {#similar}
+### `similar` {#similar}
 
 Likhetssökning med JCR XPath:s `rep:similar()`.
 
-Filtrering stöds inte. Stöder inte facetextrahering.
+Det stöder inte filtrering. Det stöder inte facetextrahering.
 
 #### Egenskaper {#properties-20}
 
@@ -515,17 +519,17 @@ Absolut sökväg till noden som liknande noder ska hittas för.
 * **lokal**
 En relativ sökväg till en underordnad nod eller `.` för den aktuella noden (valfritt, standardvärdet är `.`).
 
-### tag {#tag}
+### `tag` {#tag}
 
 Söker efter innehåll som har taggats med en eller flera taggar genom att ange sökvägar för taggtiteln.
 
-Stöder extrahering av ansikten. Tillhandahåller bucket för varje unik tagg med hjälp av den aktuella taggtitelsökvägen.
+Den stöder extrahering av ansikten. Tillhandahåller bucket för varje unik tagg med hjälp av den aktuella taggtitelsökvägen.
 
 #### Egenskaper {#properties-21}
 
 * **tagg**
 
-  Taggtitelsökväg som du vill söka efter, t.ex. &quot;Resursegenskaper : Orientation / Landscape&quot;.
+  Taggtitelsökväg som du vill söka efter, t.ex. &quot;Resursegenskaper: Orientering / Liggande&quot;.
 
 * **N_värde**
 
@@ -535,11 +539,11 @@ Stöder extrahering av ansikten. Tillhandahåller bucket för varje unik tagg me
 
   Egenskap (eller relativ sökväg till egenskap) som ska kontrolleras (standard `cq:tags`)
 
-### tagid {#tagid}
+### `tagid` {#tagid}
 
 Söker efter innehåll som taggats med en eller flera taggar genom att ange tagg-ID:n.
 
-Stöder extrahering av ansikten. Tillhandahåller bucket för varje unik tagg med deras aktuella tagg-ID.
+Den stöder extrahering av ansikten. Tillhandahåller bucket för varje unik tagg med deras aktuella tagg-ID.
 
 #### Egenskaper {#properties-22}
 
@@ -549,17 +553,17 @@ Stöder extrahering av ansikten. Tillhandahåller bucket för varje unik tagg me
 
 * **N_värde**
 
-  Använd `1_value`, `2_value`, ... för att kontrollera om det finns flera taggar (i kombination med `OR` som standard, med `AND` if och=true) (sedan 5.6).
+  Använd `1_value`, `2_value`, ... för att kontrollera om det finns flera `tagids` (i kombination med `OR` som standard, med `AND` if och=true) (sedan 5.6).
 
 * **egenskap**
 
   Egenskap (eller relativ sökväg till egenskap) som ska undersökas (standard `cq:tags`).
 
-### tagsearch {#tagsearch}
+### `tagsearch` {#tagsearch}
 
-Söker efter innehåll som taggats med en eller flera taggar genom att ange nyckelord. Detta söker först efter taggar som innehåller dessa nyckelord i sina titlar och begränsar sedan resultatet till endast objekt som taggats med dessa.
+Söker efter innehåll som taggats med en eller flera taggar genom att ange nyckelord. Söker först efter taggar som innehåller dessa nyckelord i sina titlar och begränsar sedan resultatet till endast taggade objekt.
 
-Stöder inte facetextrahering.
+Det stöder inte facetextrahering.
 
 #### Egenskaper {#Properties-1}
 
@@ -579,11 +583,11 @@ Stöder inte facetextrahering.
 
   (bool) Sök i hela taggens fulltext, det vill säga alla titlar, beskrivning och så vidare. Har prioritet framför&quot;l `ang`&quot;.
 
-### type {#type}
+### `type` {#type}
 
-Begränsar resultaten till en viss JCR-nodtyp, både primär nodtyp och blandningstyp. Detta söker även efter undertyper av den nodtypen. Databasens sökindex måste omfatta nodtyperna för effektiv körning.
+Begränsar resultaten till en viss JCR-nodtyp, både den primära nodtypen eller mixtypen och söker efter undertyper av den nodtypen. Databasens sökindex måste omfatta nodtyperna för effektiv körning.
 
-Stöder extrahering av ansikten. Innehåller grupper för varje unik typ i resultatet.
+Den stöder extrahering av ansikten. Innehåller grupper för varje unik typ i resultatet.
 
 #### Egenskaper {#Properties-2}
 
