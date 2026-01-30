@@ -33,7 +33,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >* 64-bitarsversionen av Designer introducerades med AEM 6.5 Forms Service Pack 19 (6.5.19.0).
->* 32-bitarsversionen av Designer har tagits bort sedan [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) släpptes.
+>* 32-bitarsversionen av Designer har tagits bort sedan [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) släpptes.
 > * De plattformar som stöds för Forms Designer är anpassade efter de plattformar som stöds av AEM Forms. [Klicka här](/help/sites-deploying/technical-requirements.md) om du vill veta mer om vilka plattformar som stöds för Forms Designer
 
 Mer information om hur du installerar Forms Designer finns på [Frågor och svar](#fandq).
@@ -89,8 +89,8 @@ Det finns två fall när den senaste versionen av AEM Forms Designer 6.5.16.0 up
 Om du använder ett fristående installationsprogram för AEM Forms Designer utför du följande steg:
 
 1. Innan du installerar **AEM Forms Designer6.5.16.0** måste användare avinstallera tidigare versioner.
-1. Hämta och installera [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) från AEM formulärversionssida.
-1. När installationen av **AEM Forms Designer6.5.15.0** har slutförts hämtar och installerar du [&#x200B; AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) genom att dubbelklicka på den hämtade installationsfilen.
+1. Hämta och installera [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) från AEM formulärversionssida.
+1. När installationen av **AEM Forms Designer6.5.15.0** har slutförts hämtar och installerar du [&#x200B; AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) genom att dubbelklicka på den hämtade installationsfilen.
 
 +++
 
@@ -98,7 +98,7 @@ Om du använder ett fristående installationsprogram för AEM Forms Designer utf
 
 Om du använder ett fristående installationsprogram för AEM Forms Designer utför du följande steg:
 
-1. Hämta den senaste versionen av AEM Forms Designer från [portalen för programvarudistribution](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#).
+1. Hämta den senaste versionen av AEM Forms Designer från [portalen för programvarudistribution](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#).
 1. Installera den senaste versionen av AEM Forms Designer genom att dubbelklicka på den hämtade installationsfilen.
 
 +++
