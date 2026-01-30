@@ -1,6 +1,6 @@
 ---
 title: Genomgång av referenswebbplatsen för förnyelse av autoförsäkring
-description: Läs mer om referenssajten för förnyelse av autoförsäkring genom genomgång.
+description: Läs mer om referenswebbplatsen"We.Finance" Auto Insurance Renewal genom en genomgång.
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -9,57 +9,57 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 3f9f1a20-9029-4e30-9c9d-ef452512f7e9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c0bf6864bb344e582c4f88371c892d401ce2827c
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
-# Genomgång av referenswebbplatsen för förnyelse av autoförsäkring{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
+# Genomgång av referenswebbplatsen för förnyelse av automatisk försäkring för `We.Finance`{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
-## Scenario för referenswebbplats för ekonomi  {#we-finance-reference-site-scenario}
+## Scenario för `We.Finance`-referensplats  {#we-finance-reference-site-scenario}
 
-Webbplatsen We.Finance är en sajt för finansiella tjänster som hjälper dig att lära dig AEM Forms interaktiva kommunikationsfunktioner.
+Webbplatsen `We.Finance` är en webbplats för finansiella tjänster som är utformad för att hjälpa dig att lära dig AEM Forms interaktiva kommunikationsfunktioner.
 
-Läs en detaljerad genomgång av ett fall där vi.Finance Auto Insurance visar hur AEM-blanketter och dess integrering med Microsoft® Dynamics hjälper till att personalisera kundupplevelsen i ett finansföretag. Den interaktiva genomgången är utformad för att underlätta implementering av komplexa digitala transaktioner och kundkommunikation i ett finansföretag.
+Läs en detaljerad genomgång av ett `We.Finance` Auto Insurance-exempel som visar hur AEM-formulär och dess integrering med Microsoft® Dynamics hjälper till att personalisera kundupplevelsen i ett finansföretag. Den interaktiva genomgången är utformad för att underlätta implementering av komplexa digitala transaktioner och kundkommunikation i ett finansföretag.
 
 **Resan börjar med användningsexemplet:**
 
-Sarah Rose är en befintlig We.Finance-kund och har köpt en bilförsäkring. Det är årets tid för Sarah att förnya sin försäkring. Gloria Rios är sin försäkringsagent. Vi.Finance skickar en påminnelse till Sarah om att förnya sin policy. Sarah följer instruktionerna i e-postmeddelandet och slutför processen.
+Sarah Rose är en befintlig `We.Finance`-kund och har köpt en policy för automatisk försäkring. Det är årets tid för Sarah att förnya sin försäkring. Gloria Rios är sin försäkringsagent. Webbplatsen `We.Finance` skickar en påminnelse med e-post till Sarah om sin förnyelse av principen. Sarah följer instruktionerna i e-postmeddelandet och slutför processen.
 
 ## Genomgång av självförsäkringsprogram {#auto-insurance-application-walkthrough}
 
-Scenariot för automatisk försäkring för Web.Finance är en visuell berättarröst för användaren och baseras på två personligheter:
+Scenariot `We.Finance` Auto-Insurance är en visuell berättarröst för användaren och baseras på två profiler:
 
-* Sarah Rose, en We.Finance-kund
-* Gloria Rios, försäkringsagent, We.Finance
+* Sarah Rose, en `We.Finance`-kund
+* Gloria Rios, försäkringsagent, `We.Finance`
 
-### Gloria skickar ett meddelande om förnyelse av försäkringsavtal från We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
+### Gloria skickar ett meddelande om förnyelse av försäkringsavtal från `We.Finance` {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria loggar in på AEM-instansen, klickar på **Förnyelse av automatisk försäkring** och klickar sedan på **Användargränssnittet för Open Agent**. Klicket fyller i försäkringsdokumentet med information om Sarah Rose. Gloria klickar på **Skicka** och ett meddelande visas på skärmen&quot;Inskickning initierad&quot; och sedan om några sekunder&quot;Inskickad klar&quot;.
+Gloria loggar in på AEM-instansen, klickar på **Förnyelse av automatisk försäkring** och klickar sedan på **Användargränssnittet för Open Agent**. Klicket fyller i försäkringsdokumentet med information om Sarah Rose. Gloria klickar på **Submit** och ett meddelande visas på skärmen&quot;Submission Initiated&quot; (Sändningen har initierats) och sedan om några sekunder&quot;Submit Successful&quot; (Skickades utan fel).
 
-Sarah får ett mejl med rubriken&quot;Din förnyelse av autoförsäkring&quot;.
+Sarah får ett mejl med texten&quot;Your Auto Insurance Renewal&quot;.
 
 ![Agentgränssnitt](assets/agent_ui_email_new.png)
 
 #### Se det själv {#see-it-yourself}
 
-Gå till **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents** > **We.Finance** > **Autoförsäkring**. Välj den automatiska försäkringsförnyelsen **interaktiv kommunikation** och klicka på **Öppna agentgränssnittet**. Den interaktiva kommunikationen öppnas i agentens användargränssnitt. Ange en giltig e-postadress så att de kan ta emot e-postmeddelandet med det bifogade principdokumentet och klicka på Skicka.
+Gå till **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents** > **`We.Finance`** > **Automatisk försäkring**. Välj den automatiska försäkringsförnyelsen **interaktiv kommunikation** och klicka på **Öppna agentgränssnittet**. Den interaktiva kommunikationen öppnas i agentens användargränssnitt. Ange en giltig e-postadress så att de kan ta emot e-postmeddelandet med det bifogade principdokumentet och klicka på Skicka.
 
 Du kan komma åt och granska den interaktiva kommunikationen om förnyelse av autoförsäkring direkt från `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
-### Sarah får ett meddelande om förnyelse av försäkringsavtal från We.Finance och bestämmer sig för att förnya {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
+### Sarah får ett meddelande om förnyelse av försäkringsavtal från `We.Finance` och bestämmer sig för att förnya {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
-Sarah får ett mejl med en bilaga från We.Finance som påminner Sarah om att hennes policy för autoförsäkring håller på att löpa ut. Den bifogade filen är en tryckt version av Sarah&#39;s Auto Insurance Brev.
+Sarah får ett e-postmeddelande med en bifogad fil från `We.Finance`, som påminner Sarah om att hennes policy för autoförsäkring håller på att upphöra att gälla. Den bifogade filen är en tryckt version av Sarah&#39;s Auto Insurance Brev.
 
-Sarah klickar på **Förnya nu** och är dirigerad till webbversionen av sitt Autofyringsbrev. Utöver det här brevet hittar Sarah hur lång tid som återstår för sin policy innan den går ut. Sidan ger Sarah en grundläggande översikt över sin försäkringsinformation, t.ex. försäkringsnummer, förfallobelopp och annan information som rabatterbjudanden och förmånsersättningar. Sarah klickar igen på **Förnya nu** längst ned i principen.
+Sarah klickar på alternativet **Förnya nu** och är dirigerad till webbversionen av sitt Autofoningsbrev. Utöver det här brevet hittar Sarah hur lång tid som återstår i policyn innan det går ut. Sidan innehåller en översikt över försäkringsvillkoren. Här finns information om Policynummer, Belopp att betala, Rabatterbjudanden och Förmånsbelöningar. **Förnya nu** klickas längst ned i principen.
 
 ![ref1](assets/ref1.png)
 
 #### Så här fungerar det {#how-it-works}
 
-Utdata för webb och utskrift av autofyrningsbrevet skapas med hjälp av flerkanalsfunktionerna i Interactive Communications.
+Utdata för webb och utskrift av autofyrningsbrevet skapas med hjälp av flerkanalsfunktionerna i interaktiv kommunikation.
 
 Knappen Förnya nu i e-postmeddelandet är länkad till programmet Förnya automatiskt, som är en interaktiv kommunikation i en publiceringsinstans.
 
@@ -75,7 +75,7 @@ Du kan kontrollera den detaljerade sammanfattningen av din automatiska försäkr
 
 ### Sarah kommer till betalningssidan {#sarah-reaches-the-payment-page}
 
-Vi.Finance tar Sarah till betalningssidan. Sarah omkontrollerar sitt principnummer och utgångsdatum med sina register. Till höger på sidan kontrollerar Sarah betalningssammanfattningen för förnyelsen med en premiumrabatt på 10 % på det totala beloppet.
+På webbplatsen `We.Finance` kommer Sarah till betalningssidan. Sarah omkontrollerar sitt principnummer och utgångsdatum med sina register. Till höger på sidan kontrollerar Sarah betalningssammanfattningen för förnyelsen med en premiumrabatt på 10 % på det totala beloppet.
 
 #### Så här fungerar det {#how-it-works-1}
 

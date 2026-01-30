@@ -9,76 +9,77 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 71a49353-5273-46ee-a1ff-5bbfe5b6b0b4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c0bf6864bb344e582c4f88371c892d401ce2827c
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
 
-# Implementering av referens för Vi.butik{#we-retail-reference-implementation}
+# Referensimplementering för `We.Retail`{#we-retail-reference-implementation}
 
 ## Introduktion {#introduction}
 
-Vi.Retail är en referensimplementering och exempelinnehåll som illustrerar det rekommenderade sättet att konfigurera en onlinenärvaro med Adobe Experience Manager.
+`We.Retail`-sidorna är en referensimplementering och exempelinnehåll som illustrerar det rekommenderade sättet att konfigurera en onlinenärvaro med Adobe Experience Manager.
 
-Vi.Retail använder de senaste Adobe Experience Manager-teknikerna (AEM) som HTML, responsiva layouter, redigerbara mallar, kärnkomponenter med mera.
+Webbplatsen `We.Retail` använder de senaste Adobe Experience Manager-teknikerna (AEM) som HTML, responsiva layouter, redigerbara mallar, kärnkomponenter och mycket annat.
 
 Även om det visar en vertikal butiksadress kan sajten konfigureras på alla vertikala ytor, och endast produktkatalogen och kundvagnsfunktionerna är butiksspecifika.
 
 ## Funktioner {#features}
 
-AEM standardreferensimplementering, We.Retail, visar några av de mest kraftfulla funktionerna i AEM.
+Som AEM standardimplementering av referenser visar `We.Retail` några av de mest kraftfulla funktionerna i AEM.
 
 | **Funktion** | **Beskrivning** | **Intresserad?** |
 |---|---|---|
-| [Globaliserad webbplatsstruktur](/help/sites-administering/tc-bp.md) | Vi.Retail innehåller språkmallar som kopieras live till landsspecifika sajter. | [Prova!](/help/sites-developing/we-retail-globalized-site-structure.md) |
+| [Globaliserad webbplatsstruktur](/help/sites-administering/tc-bp.md) | `We.Retail` innehåller primära språksidor som kopieras live till landsspecifika webbplatser. | [Prova!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Responsiv layout](/help/sites-authoring/responsive-layout.md) | Alla sidor har en responsiv layout som anpassar sig dynamiskt till skärm- och enhetsstorlek. | [Prova!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Redigerbara mallar](/help/sites-developing/page-templates-editable.md) | Alla sidor är baserade på redigerbara mallar, som gör att icke-utvecklare kan anpassa och anpassa mallarna. | [Prova!](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML-mallspråk](https://experienceleague.adobe.com/sv/docs/experience-manager-htl/content/overview) | Alla komponenter är baserade på HTML |  |
-| [Kärnkomponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/introduction) | Alla komponenter baseras på de nya kärnkomponenterna och är mer användbara och användarkonfigurerbara. | [Prova!](/help/sites-developing/we-retail-core-components.md) |
-| [Innehållsfragment](/help/assets/content-fragments/content-fragments.md) | Avsnittet&quot;We.Retail Experiences&quot; visar möjligheterna att återanvända innehåll med hjälp av innehållsfragment. | [Testa dem!](/help/sites-developing/we-retail-content-fragments.md) |
+| [HTML-mallspråk](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) | Alla komponenter är baserade på HTML |  |
+| [Kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) | Alla komponenter baseras på de nya kärnkomponenterna och är mer användbara och användarkonfigurerbara. | [Prova!](/help/sites-developing/we-retail-core-components.md) |
+| [Innehållsfragment](/help/assets/content-fragments/content-fragments.md) | I avsnittet `We.Retail`-upplevelser visas möjligheten att återanvända innehåll med hjälp av innehållsfragment. | [Testa dem!](/help/sites-developing/we-retail-content-fragments.md) |
 | [Experience Fragments](/help/sites-authoring/experience-fragments.md) | Ett Experience Fragment är en grupp med en eller flera komponenter, inklusive innehåll och layout, som kan refereras till på sidor. | [Testa dem!](/help/sites-developing/we-retail-experience-fragments.md) |
 
-## Komma igång {#getting-started}
+## Kom igång {#getting-started}
 
-Vi.Retail levereras som AEM exempelinnehåll. Om du vill använda programmet startar du bara [AEM på samma sätt som du skulle göra](/help/sites-deploying/deploy.md#getting-started) och ser till att exempelinnehåll inte är inaktiverat.
-
->[!CAUTION]
->
->Installera inte We.Retail på produktionsinstanser. Produktionsinstanser ska startas i `nosamplecontent` [körningsläge](/help/sites-deploying/configure-runmodes.md).
+Webbplatsen `We.Retail` levereras som AEM exempelinnehåll. Om du vill använda programmet startar du bara [AEM på samma sätt som du skulle göra](/help/sites-deploying/deploy.md#getting-started) och ser till att exempelinnehåll inte är inaktiverat.
 
 >[!CAUTION]
 >
->Vi.Retail baseras på den senaste AEM-tekniken och stöder därför inte [klassisk gränssnittsredigering](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
+>Installera inte `We.Retail` på produktionsinstanser. Produktionsinstanser ska startas i `nosamplecontent` [körningsläge](/help/sites-deploying/configure-runmodes.md).
 
-### Senaste version {#latest-version}
+>[!CAUTION]
+>
+>Webbplatsen `We.Retail` är baserad på den senaste AEM-tekniken och stöder därför inte [klassisk gränssnittsredigering](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
-Även om vi.Retail distribueras med AEM kan uppdateringar av innehållet och dess funktioner göras efter releasen. Därför är det möjligt att [hämta den senaste versionen från GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) och sedan [ladda upp](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) och [installera](/help/sites-administering/package-manager.md#installing-packages) den som ett paket på din AEM-instans.
+### Senaste versionen {#latest-version}
 
-### Steg 1 {#first-steps}
+Även om `We.Retail` distribueras med AEM-versionen kan uppdateringar av innehållet och dess funktioner göras efter utgåvan. Därför är det möjligt att [hämta den senaste versionen från GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) och sedan [ladda upp](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) och [installera](/help/sites-administering/package-manager.md#installing-packages) den som ett paket på din AEM-instans.
 
-1. När AEM har startats (och/eller vi.Retail har installerats) är webbplatsen **We.Retail** tillgänglig i [Sites console](/help/sites-authoring/basic-handling.md#global-navigation).
+### Första steget {#first-steps}
+
+1. När AEM har startats (och/eller `We.Retail` har installerats) är platsen **`We.Retail`** tillgänglig i [Platskonsolen](/help/sites-authoring/basic-handling.md#global-navigation).
 1. Följande sida kan till exempel öppnas och den ska se ut som den visas i [appendix](#appendix) nedan:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
 
-## Vi.Detaljhandel &amp; Geometrixx {#we-retail-geometrixx}
+## `We.Retail` &amp; Geometrixx {#we-retail-geometrixx}
 
-Geometrixx och dess många medarbetare fungerade som exempelinnehåll i tidigare versioner av AEM. Sedan version 6.3 har We.Retail varit exempelinnehållet som levereras med AEM och fungerar som den nya standardimplementeringen av referenser.
+Geometrixx och dess många medarbetare fungerade som exempelinnehåll i tidigare versioner av AEM. Sedan version 6.3 har `We.Retail` varit det exempelinnehåll som levereras med AEM och fungerar som den nya standardimplementeringen av referenser.
 
-Vi.Detaljhandeln är tekniskt sett mer robust och utnyttjar den senaste AEM-tekniken för att vara mer flexibel och skalbar, samtidigt som vi visar på de senaste funktionerna i produkten.
+Webbplatsen `We.Retail` är tekniskt mer robust och utnyttjar den senaste AEM-tekniken för att vara mer flexibel och skalbar, samtidigt som den visar de senaste funktionerna i produkten.
 
 ### Funktionsjämförelse {#feature-comparison}
 
-Tabellen nedan ger en översikt över de viktigaste funktionerna i We.Retail jämfört med Geometrixx.
+I följande tabell visas en översikt över de viktigaste funktionerna som är tillgängliga i `We.Retail` jämfört med Geometrixx.
 
 * **Tillgänglig** innebär att exempel på funktionen finns i exempelinnehållet.
-* **Inte tillgängligt** betyder att exempel på funktionen inte är tillgängliga i exempelinnehållet, men inte betyder att själva funktionen inte är det.
+* **Inte tillgängligt** betyder att exempelinnehållet saknar exempel på funktioner, men funktionen kan fortfarande vara tillgänglig.
 
-| **Funktion** | **We.Retail** | **Geometrixx** |
+
+| **Funktion** | **`We.Retail`** | **Geometrixx** |
 |---|---|---|
-| Globaliserad webbplatsstruktur | Språkmallsidor som live-kopieras till landsspecifika webbplatser | Inte tillgängligt |
+| Globaliserad webbplatsstruktur | Huvudspråkssidor kopieras live till landsspecifika webbplatser | Inte tillgängligt |
 | Innehållsfragment | Tillgänglig | Inte tillgängligt |
 | Upplevelsefragment | Tillgänglig | Inte tillgängligt |
 | Responsiv layout | För alla sidor | Endast Geometrixx Media |
@@ -97,7 +98,7 @@ Tabellen nedan ger en översikt över de viktigaste funktionerna i We.Retail jä
 
 ## Contribute {#contribute}
 
-Vi.Retail har släppts som ett öppen källkodsprojekt och den senaste versionen av källkoden kan hämtas från GitHub.
+Webbplatsen `We.Retail` har släppts som ett öppen källkodsprojekt och den senaste versionen av källkoden kan hämtas från GitHub.
 
 KOD PÅ GITHUB
 
@@ -114,6 +115,6 @@ Du kan fritt göra gafflar eller bidra med [pull-begäranden](https://github.com
 
 ## Förhandsgranska {#preview}
 
-Förhandsgranskning av välkomstsidan för Vi.Retail:
+Förhandsgranskning av välkomstsidan `We.Retail`:
 
 ![screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
