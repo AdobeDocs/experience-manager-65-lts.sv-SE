@@ -382,7 +382,7 @@ Den stöder extrahering av ansikten. Innehåller grupper för varje unikt egensk
 
 * **djup**
 
-  Ett antal jokernivåer under vilka egenskapen och den relativa sökvägen kan finnas. `property=size depth=2` kontrollerar till exempel nod och storlek, nod/&amp;ast;/size och node/&amp;ast;/&amp;ast;/size.
+  Ett antal jokernivåer under vilka egenskapen och den relativa sökvägen kan finnas. `property=size depth=2` kontrollerar till exempel nod och storlek, nod/&ast;/size och node/&ast;/&ast;/size.
 
 ### `rangeproperty` {#rangeproperty}
 
