@@ -442,7 +442,7 @@ ht-degree: 1%
          + [Plattformar som stöds för AEM-formulär på JEE](/help/forms/using/aem-forms-jee-supported-platforms.md)
          + [Installera och distribuera AEM Forms 6.5 LTS på JEE med JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf)
          + [Installera och distribuera AEM Forms på JEE för JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf)
-         + [Förbereder installation av AEM Forms (en server](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf))
+         + [Förbereder installation av AEM Forms (en server)](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
       + Installera AEM Forms på OSGi {#osgi-installation}
          + [Plattformar som stöds för AEM-formulär på OSGi](/help/forms/using/supported-platforms.md)
          + [Installera och konfigurera dokumenttjänster](/help/forms/using/install-configure-document-services.md)
