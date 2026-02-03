@@ -4,10 +4,7 @@ description: Hitta databasens inställningar för arkiv med autentiseringsuppgif
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
