@@ -9,27 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: d317274f-2c9a-4809-b43e-2efebc8fcb3f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
-# AEM Forms Workspace Architecture {#aem-forms-workspace-architecture}
+# AEM Forms arbetsytearkitektur {#aem-forms-workspace-architecture}
 
-AEM Forms arbetsyta är ett webbprogram som finns på CRX™. När arbetsytan öppnas i en webbläsare öppnas en CRX-resurs och programmet återges som en HTML-sida i webbläsaren.
+AEM Forms arbetsyta är ett webbprogram som finns på CRX™. När en arbetsyta öppnas i en webbläsare öppnas en CRX-resurs och programmet återges som en HTML-sida i webbläsaren.
 
-Programmet får åtkomst till AEM Forms-servern på REST-slutpunkter för att göra följande:
+Programmet får åtkomst till AEM Forms Server på REST-slutpunkter för att göra följande:
 
 * Hämta användaruppgifter, processstartpunkter, processhistorik och användarinformation
 * Utför åtgärd för uppgifter
 * Frågeuppgifter i databasen
 * Uppdatera användarinställningar med mera
 
-AEM Forms-servern har åtkomst till AEM Forms-databasen via JDBC. Databasen innehåller uppgifter, processer och instanser, användare och relaterad information.
+AEM Forms Server har åtkomst till AEM Forms-databasen via JDBC. Databasen innehåller uppgifter, processer och instanser, användare och relaterad information.
 
-AEM Forms arbetsyta är utformad i modulära JavaScript™-komponenter som kan anpassas individuellt och återanvändas i andra webbprogram. Komponenterna baseras på BackBone, ett JavaScript-bibliotek som ger struktur åt webbprogram. En detaljerad artikel som beskriver interaktionen mellan komponenter med BackBone är [här](/help/forms/using/backbone-interaction.md). Komponenternas ordning i mappstrukturen för CRX beskrivs i [den här](/help/forms/using/folder-structure.md) artikeln.
+Arbetsytan i AEM Forms är utformad för modulära JavaScript-komponenter som kan anpassas individuellt och återanvändas i andra webbprogram. Komponenterna baseras på BackBone, som är ett JavaScript-bibliotek som ger struktur åt webbprogram. En detaljerad artikel som beskriver interaktionen mellan komponenter med BackBone är [här](/help/forms/using/backbone-interaction.md). Komponenternas ordning i mappstrukturen för CRX beskrivs i [den här](/help/forms/using/folder-structure.md) artikeln.
 
 Paket som levereras för AEM Forms arbetsyta:
 
