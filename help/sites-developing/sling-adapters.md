@@ -76,7 +76,7 @@ Det finns olika sätt att implementera `Adaptable.adaptTo()`:
 
 * En kombination av båda.
 
-I det första fallet kan Java™-dokumenten ange vad `adaptTo-targets` är möjligt. Men för vissa underklasser, som JCR-baserade resurser, är det ofta inte möjligt. I det senare fallet är implementeringar av `AdapterFactory` vanligtvis en del av de privata klasserna i ett paket och exponeras därför inte i ett klient-API eller listas i Java™-dokument. Teoretiskt sett skulle det vara möjligt att komma åt alla `AdapterFactory`-implementeringar från [ OSGi](/help/sites-deploying/configuring-osgi.md)-tjänstmiljön och titta på deras&quot;adaptable&quot; (sources and target)-konfigurationer, men inte att mappa dem till varandra. I slutändan beror det på den interna logiken, som måste dokumenteras. Därför referensen.
+I det första fallet kan Java™-dokumenten ange vad `adaptTo-targets` är möjligt. Men för vissa underklasser, som JCR-baserade resurser, är det ofta inte möjligt. I det senare fallet är implementeringar av `AdapterFactory` vanligtvis en del av de privata klasserna i ett paket och exponeras därför inte i ett klient-API eller listas i Java™-dokument. Teoretiskt sett skulle det vara möjligt att komma åt alla `AdapterFactory`-implementeringar från [&#x200B; OSGi](/help/sites-deploying/configuring-osgi.md)-tjänstmiljön och titta på deras&quot;adaptable&quot; (sources and target)-konfigurationer, men inte att mappa dem till varandra. I slutändan beror det på den interna logiken, som måste dokumenteras. Därför referensen.
 
 ## Referens {#reference}
 
@@ -305,7 +305,7 @@ Inga mål ännu, men implementerar Adaptable och kan användas som källa i en a
  </tbody>
 </table>
 
-**Komponenten [](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/components/Component.html)** anpassas till:
+**Komponenten [&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/components/Component.html)** anpassas till:
 
 | [Resurs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) | Komponentens resurs. |
 | --- | --- |
@@ -338,7 +338,7 @@ Inga mål ännu, men implementerar Adaptable och kan användas som källa i en a
 
 #### Dokumentskydd {#security}
 
-**Behörighetsbar**, **Användare och **Grupp** kan anpassas till:
+**Behörighetsbar**, **Användare och &#x200B;** Grupp** kan anpassas till:
 
 | [Nod](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | Returnerar hemnoden för användaren/gruppen. |
 | --- | --- |
