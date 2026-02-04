@@ -228,7 +228,7 @@ Det här avsnittet innehåller information och instruktioner om konfigurationen 
 **Referenser:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Konfigurerar Microsoft® Dynamics för AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [Konfigurerar Microsoft® Dynamics för AEM Forms](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### Molntjänsten MS® Dynamics OData {#ms-dynamics-odata-cloud-service}
 
@@ -483,7 +483,7 @@ För att installera och konfigurera AEM Forms med Adobe Forms måste användare 
 
 Läs följande innan du läser ytterligare instruktioner:
 
-* [Konfigurera den automatiska formulärkonverteringstjänsten](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [Konfigurera den automatiska formulärkonverteringstjänsten](https://experienceleague.adobe.com/sv/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### Skapa en IMS-konfiguration - del 1 {#creating-ims-config}
 
@@ -582,7 +582,7 @@ När IMS-konfigurationen är klar kan du fortsätta att granska molnkonfiguratio
 
 1. De två värdena för kryssrutorna var tomma för den här konfigurationen.
 
-   Mer information om de här alternativen finns i [Konfigurera molntjänsten](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   Mer information om de här alternativen finns i [Konfigurera molntjänsten](https://experienceleague.adobe.com/sv/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Konfigurera molnkonfiguration (`We.Finance` AFC-produktion) {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +612,7 @@ När IMS-konfigurationen är klar kan du fortsätta att skapa molnkonfiguratione
 
 1. De två värdena för kryssrutorna var tomma för den här konfigurationen.
 
-   * Mer information om de här alternativen finns i [Konfigurera molntjänsten](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   * Mer information om de här alternativen finns i [Konfigurera molntjänsten](https://experienceleague.adobe.com/sv/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Testa formulärkonverteringen (Anmälningsprogram för Web.GOV) {#test-forms-conversion}
 
@@ -652,7 +652,7 @@ När konfigurationen är klar kan användare testa den genom att överföra ett 
 
 #### Kända fel och anteckningar {#known-issues-notes}
 
-Tjänsten Automated Forms Conversion innehåller [bästa praxis, kända komplexa mönster](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) och [kända fel](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#). Granska informationen innan du börjar använda tjänsten AEM Forms Automated Forms Conversion.
+Tjänsten Automated Forms Conversion innehåller [bästa praxis, kända komplexa mönster](https://experienceleague.adobe.com/sv/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) och [kända fel](https://experienceleague.adobe.com/sv/docs/aem-forms-automated-conversion-service/using/known-issues#). Granska informationen innan du börjar använda tjänsten AEM Forms Automated Forms Conversion.
 
 1. Skapa formuläret med Generera adaptiva formulär utan aktiverade databindningar om du vill binda formuläret till en FDM efter konverteringen.
 
