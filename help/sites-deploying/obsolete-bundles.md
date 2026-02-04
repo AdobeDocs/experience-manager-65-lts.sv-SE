@@ -101,5 +101,5 @@ Följande paket ingår inte i en ny AEM 6.5 LTS-instans. Efter uppgraderingen ka
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core (Kan ersättas med [AEM 6.5 LTS-kompatibel version](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions))
+* com.adobe.cq.core.wcm.components.core (Kan ersättas med [AEM 6.5 LTS-kompatibel version](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/versions))
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (Kan ersättas med AEM 6.5 LTS-kompatibel version)
