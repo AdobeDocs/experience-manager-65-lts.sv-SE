@@ -9,9 +9,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
@@ -101,5 +101,5 @@ Följande paket ingår inte i en ny AEM 6.5 LTS-instans. Efter uppgraderingen ka
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core (Kan ersättas med AEM 6.5 LTS-kompatibel version)
+* com.adobe.cq.core.wcm.components.core (Kan ersättas med [AEM 6.5 LTS-kompatibel version](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions))
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (Kan ersättas med AEM 6.5 LTS-kompatibel version)
