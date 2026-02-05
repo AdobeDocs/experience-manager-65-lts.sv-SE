@@ -35,7 +35,7 @@ Först måste en delningsmodell definieras för komponenten.
 
 >[!NOTE]
 >
->Ett exempel på hur du använder segmentmodeller finns i [Developing Sling Model Exporters in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter).
+>Ett exempel på hur du använder segmentmodeller finns i [Developing Sling Model Exporters in AEM](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter).
 
 Implementeringsklassen för Sling-modellen måste kommenteras med följande:
 
@@ -77,7 +77,7 @@ Modellgränssnittet måste kommenteras korrekt för att definiera vilka metoder 
 
 ## Exempel {#example}
 
-Core Components har stöd för JSON-export sedan version [1.1.0 av kärnkomponenterna](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) och kan användas som referens.
+Core Components har stöd för JSON-export sedan version [1.1.0 av kärnkomponenterna](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/introduction) och kan användas som referens.
 
 Ett exempel finns i Sling Model-implementeringen av Image Core-komponenten och dess kommenterade gränssnitt.
 
@@ -91,8 +91,8 @@ Koden för den här sidan finns på GitHub
 
 ## Relaterad dokumentation {#related-documentation}
 
-* Avsnittet [Innehållsfragment i användarhandboken för Assets](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)
+* Avsnittet [Innehållsfragment i användarhandboken för Assets](https://experienceleague.adobe.com/sv/docs/experience-manager-64/assets/home#)
 * [Modeller för innehållsfragment](/help/assets/content-fragments/content-fragments-models.md)
 * [Skapa med innehållsfragment](/help/sites-authoring/content-fragments.md)
 * [JSON-exporterare för innehållstjänster](/help/sites-developing/json-exporter.md)
-* [Kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) och komponenten [Innehållsfragment](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
+* [Kärnkomponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/introduction) och komponenten [Innehållsfragment](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)

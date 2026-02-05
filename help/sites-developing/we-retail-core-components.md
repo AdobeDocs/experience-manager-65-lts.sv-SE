@@ -86,10 +86,10 @@ De centrala komponenterna är moderna, flexibla komponenter som är enkla att ut
 
 ## Se även {#further-information}
 
-Mer information om kärnkomponenter finns i redigeringsguiden [Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) för en översikt över funktioner. I guiden [Utveckla kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) finns en teknisk översikt.
+Mer information om kärnkomponenter finns i redigeringsguiden [Core Components](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/introduction) för en översikt över funktioner. I guiden [Utveckla kärnkomponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/developing/overview) finns en teknisk översikt.
 
 
 
-Mer information om kärnkomponenterna finns i redigeringsdokumentet [Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction). Där finns en översikt över kärnkomponentfunktioner, och i utvecklardokumentet [Developing Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) finns teknisk information.
+Mer information om kärnkomponenterna finns i redigeringsdokumentet [Core Components](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/introduction). Där finns en översikt över kärnkomponentfunktioner, och i utvecklardokumentet [Developing Core Components](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/developing/overview) finns teknisk information.
 
 Du kanske också vill undersöka [redigerbara mallar](/help/sites-developing/we-retail-editable-templates.md). Mer information om redigerbara mallar finns i redigeringsdokumentet [Skapa sidmallar](/help/sites-authoring/templates.md) eller i utvecklardokumentet Sida [Mallar - Redigerbar](/help/sites-developing/page-templates-editable.md).
