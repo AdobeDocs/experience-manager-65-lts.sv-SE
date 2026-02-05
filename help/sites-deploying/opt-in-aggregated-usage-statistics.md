@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 410691eb-27a9-4f8e-b926-01027c7f84d4
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
-# Insamling av aggregerad användningsstatistik{#opting-into-aggregated-usage-statistics-collection}
+# Anmäl dig till aggregerad användningsstatistik Samling{#opting-into-aggregated-usage-statistics-collection}
 
 ## Introduktion {#introduction}
 
@@ -27,17 +27,17 @@ Du kan välja att samla in användningsstatistik med hjälp av Touch-gränssnitt
 
 >[!NOTE]
 >
->Det finns olika regler för skydd av personuppgifter och integritet, bland annat GDPR och CCPA. AEM Sites hjälper sina kunder med sina skyldigheter när det gäller skydd av personuppgifter och integritet. På den här sidan får kunderna hjälp med att välja (eller inte) av Aggregated Usage Statistics Collection.
+>Det finns olika regler för skydd av personuppgifter och integritet, bland annat GDPR och CCPA. AEM Sites hjälper sina kunder med sina skyldigheter när det gäller skydd av personuppgifter och integritet. På den här sidan får kunderna hjälp med att välja (eller inte) i samlingen Aggregated Usage Statistics.
 >
 >Mer information finns också i [Adobe Sekretesscenter](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->Du kan när som helst avanmäla dig genom att antingen använda [webbkonsolen](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) eller genom att inte välja avanmälningsalternativet på AEM avanmälningsskärm.
+>Du kan när som helst avanmäla dig genom att använda [webbkonsolen]&#x200B;(/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console, eller välja avanmälningsalternativet på AEM avanmälningsskärm.
 
-## Anmäl dig med Touch-gränssnittet {#opt-in-by-using-the-touch-ui}
+## Anmäl dig genom att använda pekgränssnittet {#opt-in-by-using-the-touch-ui}
 
-Första gången du startar AEM kan du välja att använda Touch-gränssnittet på följande sätt:
+Första gången du startar AEM kan du välja att använda pekgränssnittet på följande sätt:
 
 1. Klicka på ikonen **Inkorg** (klocka) på navigeringsskärmen i AEM.
 
@@ -47,7 +47,7 @@ Första gången du startar AEM kan du välja att använda Touch-gränssnittet p�
 
    ![usage_StatisticsNavigationScreen2](assets/usage_statisticsnavigationscreen2.png)
 
-1. Välj **Tillåt insamling av aggregerad användningsstatistik** på skärmen för anmälan.
+1. På skärmen för anmälan klickar du på alternativet **[!UICONTROL Allow collection of aggregated usage statistics]**.
 
    ![usage_staticScreen](assets/usage_statisticsopt-inscreen.png)
 
@@ -55,7 +55,7 @@ Första gången du startar AEM kan du välja att använda Touch-gränssnittet p�
 
 ## Anmäl dig med webbkonsolen {#opt-in-by-using-the-web-console}
 
-Du kan välja att delta (eller välja bort) genom att använda webbkonsolen på följande sätt:
+Du kan välja att delta (eller avanmäla dig) genom att använda webbkonsolen på följande sätt:
 
 1. På navigeringsskärmen i AEM klickar du på **Verktyg** och sedan på **Åtgärder**.
 
@@ -65,7 +65,7 @@ Du kan välja att delta (eller välja bort) genom att använda webbkonsolen på 
 
    ![usage_StatisticsSoundconsole](assets/usage_statisticswebconsole.png)
 
-1. Sök efter **Samlad användningsstatistik**.
+1. Sök efter **Samling med aggregerad användningsstatistik**.
 1. Klicka på ikonen **Redigera** .
 
    ![usage_StatisticsCollectionEdit](assets/usage_statisticscollectionedit.png)

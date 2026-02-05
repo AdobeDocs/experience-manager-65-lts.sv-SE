@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: aeb8e954-dd6c-4e18-bb78-6eaac86fa4b9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -24,18 +24,18 @@ Komponenter kan anpassas för att generera JSON-export av deras innehåll basera
 
 JSON-exporten baseras på [Sling Models](https://sling.apache.org/documentation/bundles/models.html) och ramverket [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (som i sin tur är beroende av [Jackson-anteckningar](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-Det innebär att komponenten måste ha en Sling-modell om den måste exportera JSON. Följ därför de här två stegen för att aktivera JSON-export för alla komponenter.
+Detta innebär att komponenten måste ha en Sling-modell om den måste exportera JSON. Följ därför de här två stegen för att aktivera JSON-export för alla komponenter.
 
 * [Definiera en segmentmodell för komponenten](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Anteckna gränssnittet för segmenteringsmodellen](#annotate-the-sling-model-interface)
 
-## Definiera en delningsmodell för komponenten {#define-a-sling-model-for-the-component}
+## Definiera en segmentmodell för komponenten {#define-a-sling-model-for-the-component}
 
-Först måste en segmentmodell definieras för komponenten.
+Först måste en delningsmodell definieras för komponenten.
 
 >[!NOTE]
 >
->Ett exempel på hur du använder segmentmodeller finns i [Developing Sling Model Exporters in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=sv-SE).
+>Ett exempel på hur du använder segmentmodeller finns i [Developing Sling Model Exporters in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter).
 
 Implementeringsklassen för Sling-modellen måste kommenteras med följande:
 
@@ -45,13 +45,13 @@ Implementeringsklassen för Sling-modellen måste kommenteras med följande:
 @JsonSerialize(as = MyComponent.class)
 ```
 
-Detta garanterar att din komponent kan exporteras fristående med väljaren `.model` och tillägget `.json`.
+Om du gör det kan du se till att din komponent exporteras fristående med `.model`-väljaren och `.json`-tillägget.
 
-Detta anger dessutom att klassen Sling Model kan anpassas till gränssnittet `ComponentExporter`.
+Dessutom anges att klassen Sling Model kan anpassas till gränssnittet `ComponentExporter`.
 
 >[!NOTE]
 >
->Jackson-anteckningar anges inte på klassnivå för Sling Model, utan på gränssnittsnivå för Model. Detta för att säkerställa att JSON-exporten betraktas som en del av komponent-API:t.
+>Jackson-anteckningar anges inte på klassnivå för Sling Model, utan på gränssnittsnivå för Model. Detta är för att säkerställa att JSON-exporten betraktas som en del av komponent-API:t.
 
 >[!NOTE]
 >
@@ -69,15 +69,15 @@ I så fall måste väljaren `model` vara den första väljaren och tillägget m�
 
 ## Anteckna gränssnittet för segmenteringsmodellen {#annotate-the-sling-model-interface}
 
-Modellgränssnittet bör implementera gränssnittet `ComponentExporter` (eller `ContainerExporter` om det finns en behållarkomponent) för att JSON-exportramverket ska kunna användas.
+För att JSON-exportramverket ska kunna bearbeta det måste modellgränssnittet implementera gränssnittet `ComponentExporter` (eller `ContainerExporter` för en behållarkomponent).
 
-Motsvarande Sling Model-gränssnitt ( `MyComponent`) kommenteras sedan med [&#x200B; Jackson-anteckningar &#x200B;](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) för att definiera hur det ska exporteras (serialiseras).
+Motsvarande Sling Model-gränssnitt ( `MyComponent`) kommenteras sedan med [ Jackson-anteckningar ](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) för att definiera hur det ska exporteras (serialiseras).
 
-Modellgränssnittet måste vara korrekt kommenterat för att definiera vilka metoder som ska serialiseras. Som standard serialiseras alla metoder som respekterar den vanliga namnkonventionen för get-ters och hämtar JSON-egenskapsnamnen naturligt från get-namnen. Detta kan förhindras eller åsidosättas med `@JsonIgnore` eller `@JsonProperty` för att byta namn på JSON-egenskapen.
+Modellgränssnittet måste kommenteras korrekt för att definiera vilka metoder som ska serialiseras. Som standard serialiseras alla metoder som respekterar den vanliga namnkonventionen för get-ters och härleder deras JSON-egenskapsnamn naturligt från get-namnen. Den här metoden kan förhindras eller åsidosättas med `@JsonIgnore` eller `@JsonProperty` för att byta namn på JSON-egenskapen.
 
 ## Exempel {#example}
 
-Core Components har stöd för JSON-export sedan version [1.1.0 av kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) och kan användas som referens.
+Core Components har stöd för JSON-export sedan version [1.1.0 av kärnkomponenterna](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) och kan användas som referens.
 
 Ett exempel finns i Sling Model-implementeringen av Image Core-komponenten och dess kommenterade gränssnitt.
 
@@ -85,16 +85,14 @@ KOD PÅ GITHUB
 
 Koden för den här sidan finns på GitHub
 
-* [Öppna aem-core-wcm-components-projekt på GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
-* Hämta projektet som [en ZIP-fil](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip)
+* [Öppna aem-core-wcm-components-projekt på GitHub](https://github.com/adobe/aem-core-wcm-components)
+* Hämta projektet som [en ZIP-fil](https://codeload.github.com/adobe/aem-core-wcm-components/zip/main)
+
 
 ## Relaterad dokumentation {#related-documentation}
 
-Mer information finns i följande:
-
-* Avsnittet [Innehållsfragment i användarhandboken för Assets](https://helpx.adobe.com/se/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
-
+* Avsnittet [Innehållsfragment i användarhandboken för Assets](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)
 * [Modeller för innehållsfragment](/help/assets/content-fragments/content-fragments-models.md)
 * [Skapa med innehållsfragment](/help/sites-authoring/content-fragments.md)
 * [JSON-exporterare för innehållstjänster](/help/sites-developing/json-exporter.md)
-* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) och komponenten [Innehållsfragment](https://helpx.adobe.com/se/experience-manager/core-components/using/content-fragment-component.html)
+* [Kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) och komponenten [Innehållsfragment](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)

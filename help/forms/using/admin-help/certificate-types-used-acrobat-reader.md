@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 253e2b5a39fd4c2fe7ab9aeaafb72930b4aa39ff
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ Certifikatgranskaren ger följande information om certifikatet:
 * Certifikatets eget namn
 * Certifikatprofiler
 * Giltighetsperiod
-* Användningsrättigheter för Acrobat Reader DC-tillägg
+* Användarrättigheter för Acrobat Reader DC Extensions
 
 ## Certifikatets eget namn {#certificate-friendly-name}
 
-Det &quot;egna&quot; namnet på ett Acrobat Reader DC-tilläggscertifikat är en sträng som beskriver certifikatets egenskaper, som i följande exempel:
+Det &quot;egna&quot; namnet på ett Acrobat Reader DC Extensions-certifikat är en sträng som beskriver certifikatets egenskaper, som i följande exempel:
 
 ÄR 2D-streckkod, fullständig produktion V6.1 P8 0002054
 
@@ -47,7 +47,7 @@ Strängen innehåller följande element:
 
 ## Certifikatprofiler {#certificate-profiles}
 
-I följande tabell visas de certifikatprofiler som du kan stöta på när du analyserar tilläggscertifikat för Acrobat Reader DC.
+I följande tabell visas de certifikatprofiler som du kan stöta på när du analyserar Acrobat Reader DC Extensions-certifikat.
 
 <table>
  <thead>
@@ -109,37 +109,37 @@ I följande tabell visas de certifikatprofiler som du kan stöta på när du ana
   </tr>
   <tr>
    <td><p>I10</p></td>
-   <td><p>Forms; kan användas av OEM-tillverkare</p></td>
+   <td><p>Forms; OEM-tillverkare kan använda Forms</p></td>
    <td><p>Max</p></td>
    <td><p>Produktion och utvärdering</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
-   <td><p>Forms; kan användas av OEM-tillverkare</p></td>
+   <td><p>Forms; OEM:er kan använda Forms.</p></td>
    <td><p>Max</p></td>
    <td><p>Produktion och utvärdering</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
-   <td><p>Endast signatur; kan användas av OEM-tillverkare</p></td>
+   <td><p>Endast signatur; OEM-tillverkare får endast använda signatur</p></td>
    <td><p>Max</p></td>
    <td><p>Produktion och utvärdering</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
-   <td><p>Endast offlinekommentering - kan användas av OEM-tillverkare</p></td>
+   <td><p>Endast offlinekommentarer; OEM-tillverkare kan använda offlinekommentarer</p></td>
    <td><p>Max</p></td>
    <td><p>Produktion och utvärdering</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
-   <td><p>Endast kommentarer; kan användas av OEM-tillverkare</p></td>
+   <td><p>Endast kommentarer; OEM-tillverkare kan bara använda kommentarer</p></td>
    <td><p>Max</p></td>
    <td><p>Produktion och utvärdering</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
-   <td><p>Fullständiga behörigheter; kan användas av OEM-tillverkare</p></td>
+   <td><p>Fullständig behörighet; OEM-tillverkare kan använda fullständig behörighet</p></td>
    <td><p>Max</p></td>
    <td><p>Produktion och utvärdering</p></td>
   </tr>
@@ -148,21 +148,21 @@ I följande tabell visas de certifikatprofiler som du kan stöta på när du ana
 
 ## Giltighetsperiod {#validity-period}
 
-Utvärderingscertifikat utfärdas till kunder och utvecklare så att de kan utvärdera och utveckla produktexempel. Dessa certifikats giltighetstid är mellan 60 och 90 dagar. De löper ut i slutet av den andra månaden efter den månad då uppgifterna om utfärdandet daterades.
+Utvärderingscertifikat utfärdas till kunder och utvecklare så att de kan utvärdera och utveckla produktexempel. Dessa certifikats giltighetstid är mellan 60 och 90 dagar. De upphör att gälla i slutet av den andra månaden efter den då uppgifterna om utgivningen togs.
 
 Certifikat för partnerintegrering utfärdas till Adobe affärspartners för att stödja programutveckling, integrering, prototyper och demonstration. Dessa intyg är giltiga i två år från och med utfärdandedagen.
 
-Adobe certifikat för intern användning används inom Adobe för att stödja programutveckling, integrering, prototyper och demonstration. Dessa intyg är giltiga i två år från och med utfärdandedagen.
+Adobe Internal Use Certificates används i Adobe för programutveckling, integrering, prototypframtagning och demonstration. Dessa intyg är giltiga i två år från och med utfärdandedagen.
 
 Produktionscertifikat utfärdas till kunder som har köpt Acrobat Reader DC-tillägg. Dessa certifikat är giltiga för den maximala period som tillåts av certifikatutfärdaren (CA), som visas som *Max* i tabellen Certifikatprofiler.
 
-## Användningsrättigheter för Acrobat Reader DC-tillägg {#acrobat-reader-dc-extensions-usage-rights}
+## Användarrättigheter för Acrobat Reader DC Extensions {#acrobat-reader-dc-extensions-usage-rights}
 
-När du granskar Acrobat Reader DC-tilläggscertifikatet i Certifikatgranskaren kan du välja användningsbehörighetsobjektet på fliken Information (om den är konfigurerad) för att se en detaljerad lista över de användningsrättigheter för Adobe Reader som certifikatet kan aktivera. De användarrättigheter som är aktiverade för ett visst dokument kan vara en delmängd av de som är aktiverade av certifikatet.
+När du undersöker Acrobat Reader DC Extensions-certifikatet i Certifikatgranskaren kan du välja användningsbehörighetsobjektet på fliken Information (om den är konfigurerad). Du kan se en lista över de användningsrättigheter för Adobe Reader som certifikatet kan aktivera. De användarrättigheter som är aktiverade för ett visst dokument kan vara en delmängd av de rättigheterna som är aktiverade av certifikatet.
 
 Om det krävs kommentarer online i en icke-samarbetsmiljö kontaktar du Adobe Support för mer information. Egenskapen Mode matchar distributionstypen och är antingen *produktion* eller *utvärdering*.
 
-Tillåtna användningsrättigheter för Acrobat Reader DC-tillägg består av ett eller flera specifika element. Dessa element används i olika kombinationer för att uppnå olika typer av licensierad produktfunktionalitet.
+Tillåtna användningsrättigheter för Acrobat Reader DC Extensions består av ett eller flera specifika element. Dessa element används i olika kombinationer för att uppnå olika typer av licensierad produktfunktionalitet.
 
 <table>
  <thead>
@@ -174,7 +174,7 @@ Tillåtna användningsrättigheter för Acrobat Reader DC-tillägg består av et
  <tbody>
   <tr>
    <td><p>FormFillInAndSave</p></td>
-   <td><p>Fyll i formulärfält och spara filer lokalt.</p></td>
+   <td><p>Fyll i formulärfälten och spara filerna lokalt.</p></td>
   </tr>
   <tr>
    <td><p>FormImportExport</p></td>
@@ -225,4 +225,4 @@ Tillåtna användningsrättigheter för Acrobat Reader DC-tillägg består av et
 
 >[!NOTE]
 >
->Användningsrättigheter för Acrobat Reader DC-tillägg kan endast licensieras från Adobe i vissa kombinationer som fungerar tillsammans. Det går inte att licensiera dessa funktioner separat. Om du vill ha information om vilka kombinationer av användarrättigheter som finns kan du kontakta en AEM-handläggare.
+>Användningsrättigheter för Acrobat Reader DC Extensions kan endast licensieras från Adobe i vissa kombinationer som fungerar tillsammans. Det går inte att licensiera dessa funktioner separat. Om du vill ha information om vilka kombinationer av användarrättigheter som finns kan du kontakta en AEM-handläggare.
