@@ -71,7 +71,7 @@ I så fall måste väljaren `model` vara den första väljaren och tillägget m�
 
 För att JSON-exportramverket ska kunna bearbeta det måste modellgränssnittet implementera gränssnittet `ComponentExporter` (eller `ContainerExporter` för en behållarkomponent).
 
-Motsvarande Sling Model-gränssnitt ( `MyComponent`) kommenteras sedan med [ Jackson-anteckningar ](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) för att definiera hur det ska exporteras (serialiseras).
+Motsvarande Sling Model-gränssnitt ( `MyComponent`) kommenteras sedan med [&#x200B; Jackson-anteckningar &#x200B;](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) för att definiera hur det ska exporteras (serialiseras).
 
 Modellgränssnittet måste kommenteras korrekt för att definiera vilka metoder som ska serialiseras. Som standard serialiseras alla metoder som respekterar den vanliga namnkonventionen för get-ters och härleder deras JSON-egenskapsnamn naturligt från get-namnen. Den här metoden kan förhindras eller åsidosättas med `@JsonIgnore` eller `@JsonProperty` för att byta namn på JSON-egenskapen.
 

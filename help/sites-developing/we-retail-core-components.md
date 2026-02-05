@@ -57,7 +57,7 @@ De centrala komponenterna är moderna, flexibla komponenter som är enkla att ut
 
 1. På sidan Tack markerar du textkomponenten och klickar på ikonen Avbryt arv på komponentens Redigera-meny.
 
-   [`We.Retail` har en global webbplatsstruktur ](/help/sites-developing/we-retail-globalized-site-structure.md) där innehåll överförs från den primära språkwebbplatsen till [aktiva kopior via en mekanism som kallas arv](/help/sites-administering/msm.md). Arvet måste därför avbrytas om en användare ska kunna redigera text manuellt.
+   [`We.Retail` har en global webbplatsstruktur &#x200B;](/help/sites-developing/we-retail-globalized-site-structure.md) där innehåll överförs från den primära språkwebbplatsen till [aktiva kopior via en mekanism som kallas arv](/help/sites-administering/msm.md). Arvet måste därför avbrytas om en användare ska kunna redigera text manuellt.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
