@@ -4,7 +4,7 @@ description: JBoss EAP 8 har stöd för Elytron-autentiseringsarkiv för säker 
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 ## Konfigurera databasens autentiseringsuppgiftslagring med Elytron
 
 JBoss EAP 8 använder **Elytron-autentiseringslager** för att hantera databaslösenord säkert för AEM Forms-distributioner. Adobe tillhandahåller **automatiserade skript** som gör det enklare att skapa och konfigurera det Elytron-baserade arkivet med autentiseringsuppgifter i domänläge.
+
 
 Installationen måste slutföras **innan JBoss-domänkontrollanten** startas.
 
