@@ -1,5 +1,5 @@
 ---
-title: Integrera Create Correspondence UI med din anpassade portal
+title: Integrering av Create Correspondence Solution med din anpassade portal
 description: Lär dig hur du integrerar ett gränssnitt för korrespondens med din anpassade portal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,22 +9,22 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 496b125b-b091-4843-ba9f-2479dbeba07b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
-# Integrera Create Correspondence UI med din anpassade portal{#integrating-create-correspondence-ui-with-your-custom-portal}
+# Integrering av `Create Correspondence`-lösningen med din anpassade portal{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Ökning {#overview}
 
-I den här artikeln beskrivs hur du kan integrera Create Correspondence Solution med din miljö.
+I den här artikeln beskrivs hur du kan integrera `Create Correspondence`-lösningen med din miljö.
 
 ## URL-baserat anrop {#url-based-invocation}
 
-Ett sätt att anropa programmet Create Correspondence från en anpassad portal är att förbereda URL:en med följande frågeparametrar:
+Ett sätt att anropa programmet `Create Correspondence` från en anpassad portal är att förbereda URL:en med följande frågeparametrar:
 
 * identifieraren för bokstavsmallen (med parametern cmLetterId).
 
@@ -39,16 +39,16 @@ Den anpassade portalen skulle till exempel förbereda URL:en som\
 
 >[!NOTE]
 >
->Innan du anropar programmet Create Correspondence sparar och överför du data för att anropa användargränssnittet Create Correspondence på angiven dataURL. Detta kan antingen göras från den anpassade portalen eller genom en annan back end-process.
+>Innan du anropar programmet `Create Correspondence` sparar och överför du data för att anropa användargränssnittet `Create Correspondence` på den angivna dataURL:en. Den här processen kan utföras antingen från den anpassade portalen eller genom en annan back end-process.
 
 ## Inline databaserat anrop {#inline-data-based-invocation}
 
-Ett annat (och säkrare) sätt att anropa programmet Create Correspondence kan vara att bara trycka på URL:en på https://&#39;[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html medan du skickar parametrar och data för att anropa programmet Create Correspondence som en POST-begäran (dölja dem för slutanvändaren). Det innebär också att du nu kan skicka XML-data för Create Correspondence-programmet (som en del av samma begäran, med parametern cmData), vilket inte var möjligt/idealiskt i den tidigare metoden.
+Ett annat säkrare sätt att anropa programmet `Create Correspondence` är att gå till URL:en på https://&#39;[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html. Kör den här URL:en när du skickar parametrar och data för att anropa programmet `Create Correspondence` som en POST-begäran, och dölja dem för slutanvändaren. Det här arbetsflödet innebär också att du nu kan skicka XML-data för det infogade programmet `Create Correspondence` (som en del av samma begäran, med parametern `cmData`). Det här arbetsflödet var inte möjligt eller idealiskt i det tidigare arbetssättet.
 
 ### Parametrar för att ange bokstav {#parameters-for-specifying-letter}
 
 | **Namn** | **Typ** | **Beskrivning** |
-|---|---|---|
+| --- | --- | --- |
 | cmLetterInstanceId | Sträng | Bokstavsinstansens identifierare. |
 | cmLetterId | Sträng | Namnet på brevmallen. |
 
@@ -66,17 +66,17 @@ Parametrarnas ordning i tabellen anger inställningarna för parametrar som anv�
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>XML-data från en källfil med hjälp av grundläggande protokoll som cq, ftp, http eller file.<br /> </td> 
+   <td>XML-data från en källfil med hjälp av grundläggande protokoll, t.ex. cq, ftp, http eller file.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>Sträng</td> 
-   <td>Använda XML-data som är tillgängliga i Letter Instance.</td> 
+   <td>Använda XML-data som är tillgängliga i bokstavsinstans.</td> 
   </tr>
   <tr>
    <td>cmUseTestData</td> 
    <td>Boolean</td> 
-   <td>Om du vill återanvända testdata som bifogats i dataordlistan.</td> 
+   <td>Om du vill återanvända testdata som är bifogade i en dataordlista.</td> 
   </tr>
  </tbody>
 </table>
@@ -105,4 +105,4 @@ Parametrarnas ordning i tabellen anger inställningarna för de parametrar som a
  </tbody>
 </table>
 
-Om du använder http- eller cq-protokoll för cmDataURL bör URL:en för http/cq vara anonym.
+Om du använder http- eller cq-protokoll för `cmDataURL` måste URL:en för `http/cq` vara anonym.

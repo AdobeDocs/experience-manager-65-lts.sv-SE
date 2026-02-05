@@ -5,18 +5,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
 # Komponenter{#components}
 
-Adobe Experience Manager (AEM) innehåller flera färdiga komponenter som ger omfattande funktionalitet för webbplatsförfattare. De är tillgängliga när [en sida redigeras](/help/sites-authoring/editing-content.md) och grupperas efter huvudfunktionsområdet (kallas komponentgrupp) för att underlätta filtreringen.
+Adobe Experience Manager (AEM) innehåller flera färdiga komponenter som ger omfattande funktionalitet för webbplatsförfattare. De är tillgängliga när du [redigerar en sida](/help/sites-authoring/editing-content.md). De grupperar dem efter ett funktionsområde som kallas komponentgrupp för att underlätta filtreringen.
 
-Komponenterna är tillgängliga när du [redigerar en sida](/help/sites-authoring/editing-content.md). För att underlätta filtreringen grupperas komponenterna efter huvudfunktionsområdet (det vill säga komponentgruppen).
+Komponenterna är tillgängliga när du [redigerar en sida](/help/sites-authoring/editing-content.md). Gruppera komponenterna efter deras huvudsakliga funktionsområde (komponentgruppen) för att underlätta filtreringen.
 
 >[!NOTE]
 >
@@ -38,9 +38,9 @@ Du kan markera en komponent och dra den till önskad plats på sidan. Du kan sed
 Mer information om hur du lägger till komponenter på en sida finns i [Redigera sidinnehåll](/help/sites-authoring/editing-content.md).
 Komponenterna sorteras efter olika kategorier som kallas komponentgrupper. Exempel på sådana komponentgrupper är:
 
-* **We.Retail**: Inkluderar de kärnkomponenter som proxyiserats för användning med referensimplementeringen [We.Retail](/help/sites-developing/we-retail.md).
+* **WeRetail**: Inkluderar de kärnkomponenter som proxyiserats för användning med referensimplementeringen [WeRetail](/help/sites-developing/we-retail.md).
 
-* **We.Retail Commerce**: Innehåller handelskomponenter som t.ex. kundvagnar och produktrutnät
+* **WeRetail Commerce**: Innehåller handelskomponenter som t.ex. kundvagnar och produktrutnät
 
 * **Allmänt**: Innehåller layoutbehållaren och Experience Fragment
 
@@ -52,11 +52,11 @@ Komponenterna sorteras efter olika kategorier som kallas komponentgrupper. Exemp
 
 På följande sidor finns länkar till ytterligare viktig information om komponenter:
 
-* [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) - Core-komponenterna erbjuder flexibla och funktionsrika redigeringsfunktioner, som tillhandahåller viktiga innehållstyper för att skapa sidor.
+* [Kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) - Kärnkomponenterna erbjuder flexibel och funktionsrik redigeringsfunktionalitet, som tillhandahåller viktiga innehållstyper för att skapa sidor.
 
 ### Konfigurera komponenter {#configuring-components}
 
 Förutom de komponenter som författare kan komma åt i en standardinstallation finns det även andra komponenter.
 
-* Om sidan är baserad på den rekommenderade, moderna, redigerbara mallen kan du [redigera mallen](/help/sites-authoring/templates.md) aktivera/inaktivera dessa och redigera parametrar för specifika komponenter.
-* Om sidan är baserad på en statisk mall kan du använda [designläget](/help/sites-authoring/default-components-designmode.md#enable-disable-components) för att aktivera/inaktivera dessa och redigera parametrar för specifika komponenter.
+* Om sidan är baserad på den rekommenderade, moderna, redigerbara mallen kan du [ändra mallen](/help/sites-authoring/templates.md), aktivera eller inaktivera den och redigera parametrar för specifika komponenter.
+* Om sidan är baserad på en statisk mall kan du använda [designläget](/help/sites-authoring/default-components-designmode.md#enable-disable-components) för att aktivera eller inaktivera dem och redigera parametrar för specifika komponenter.

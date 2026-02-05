@@ -1,6 +1,6 @@
 ---
-title: API:er för att arbeta med inskickade formulär på formulärportalen
-description: AEM Forms tillhandahåller API:er som du kan använda för att fråga efter och vidta åtgärder för skickade formulärdata i formulärportalen.
+title: API:er för att arbeta med inskickade formulär på Forms Portal
+description: AEM Forms tillhandahåller API:er som du kan använda för att fråga efter och vidta åtgärder för skickade formulärdata i Forms Portal.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
@@ -8,22 +8,22 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
 
-# API:er för att arbeta med inskickade formulär på formulärportalen {#apis-to-work-with-submitted-forms-on-forms-portal}
+# API:er för att arbeta med inskickade formulär på Forms Portal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms tillhandahåller API:er som du kan använda för att fråga efter formulärdata som skickas via formulärportalen. Dessutom kan du publicera kommentarer eller uppdatera egenskaper för skickade formulär med de API:er som beskrivs i det här dokumentet.
+AEM Forms tillhandahåller API:er som du kan använda för att fråga efter formulärdata som skickas via Forms Portal. Dessutom kan du publicera kommentarer eller uppdatera egenskaper för skickade formulär med de API:er som beskrivs i det här dokumentet.
 
 >[!NOTE]
 >
->Användare som ska anropa API:erna måste läggas till i granskningsgruppen enligt beskrivningen i [Associera granskare som skickar in till ett formulär](/help/forms/using/adding-reviewers-form.md).
+>Användare som anropar API:erna måste läggas till i gruppen Granskare. Se [Koppla granskare som skickar in svar till ett formulär](/help/forms/using/adding-reviewers-form.md).
 
-## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Returnerar en lista med alla giltiga formulär.
 
@@ -57,7 +57,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Returnerar information om alla skickade formulär. Du kan dock använda URL-parametrar för att begränsa resultaten.
 
@@ -85,11 +85,11 @@ Ange följande parametrar i begärande-URL:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (valfritt)</td>
-   <td>Anger egenskapen för sorteringsresultat. Standardvärdet är <strong>jcr:lastModified</strong>, som sorterar resultat baserat på den senaste ändringstiden.</td>
+   <td>Anger egenskapen för sorteringsresultat. Standardvärdet är <code>jcr:lastModified</code>, vilket sorterar resultat baserat på den senaste ändringstiden.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (valfritt)</td>
-   <td>Anger sorteringsordningen för resultat. Standardvärdet är <strong>desc</strong>, vilket sorterar resultatet i fallande ordning. Du kan ange <code>asc</code> om du vill sortera resultaten i stigande ordning.</td>
+   <td>Anger sorteringsordningen för resultat. Standardvärdet är <code>desc</code>, vilket sorterar resultatet i fallande ordning. Du kan ange <code>asc</code> om du vill sortera resultaten i stigande ordning.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (valfritt)</td>
@@ -97,7 +97,7 @@ Ange följande parametrar i begärande-URL:
   </tr>
   <tr>
    <td><code>search</code> <br /> (valfritt)</td>
-   <td>Söker efter det angivna värdet i formuläregenskaper och returnerar formulär med matchande värden. Standardvärdet är <strong> </strong>.</td>
+   <td>Söker efter det angivna värdet i formuläregenskaper och returnerar formulär med matchande värden. Standardvärdet är <code>""</code>.</td>
   </tr>
  </tbody>
 </table>
@@ -127,7 +127,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
-## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
+## POST `/content/forms/portal/submission.review.json?func=addComment` {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
 Lägger till en kommentar i den angivna skicka-instansen.
 
@@ -158,7 +158,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Returnerar alla kommentarer som har publicerats på den angivna inskickningsinstansen.
 
@@ -196,7 +196,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## POST `/content/forms/portal/submission.review.json?func=updateSubmission` {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 Uppdaterar värdet för den angivna egenskapen i den angivna formulärinstansen.
 
@@ -212,7 +212,7 @@ Ange följande parametrar i begärande-URL:
 
 ### Svar {#response-4}
 
-Returnerar ett JSON-objekt med information om den publicerade uppdateringen.
+Det returnerar ett JSON-objekt med information om den publicerade uppdateringen.
 
 ### Exempel {#example-4}
 
