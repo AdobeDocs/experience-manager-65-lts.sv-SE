@@ -52,7 +52,7 @@ Komponenterna sorteras efter olika kategorier som kallas komponentgrupper. Exemp
 
 På följande sidor finns länkar till ytterligare viktig information om komponenter:
 
-* [Kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) - Kärnkomponenterna erbjuder flexibel och funktionsrik redigeringsfunktionalitet, som tillhandahåller viktiga innehållstyper för att skapa sidor.
+* [Kärnkomponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/introduction) - Kärnkomponenterna erbjuder flexibel och funktionsrik redigeringsfunktionalitet, som tillhandahåller viktiga innehållstyper för att skapa sidor.
 
 ### Konfigurera komponenter {#configuring-components}
 
