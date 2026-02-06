@@ -9,16 +9,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
 
 # Anpassade nodtyper{#custom-node-types}
 
-Eftersom Adobe Experience Manager (AEM) är baserat på Sling och använder en JCR-databas är de nodtyper som erbjuds av båda dessa tillgängliga för användning:
+Eftersom Adobe Experience Manager (AEM) är baserat på Sling och använder en JCR-databas är de nodtyper som erbjuds av båda tillgängliga för användning med följande:
 
 * [JCR-nodtyper](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Dela nodtyper](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -27,7 +27,7 @@ Förutom dessa nodtyper finns det ett antal anpassade nodtyper i AEM.
 
 ## Granskning {#audit}
 
-### cq:AuditEvent {#cq-auditevent}
+### `cq:AuditEvent` {#cq-auditevent}
 
 **Beskrivning**
 
@@ -55,7 +55,7 @@ Definierar nodtypen för en granskningshändelsenod.
 
 ## Kommentar {#comment}
 
-### cq:Comment {#cq-comment}
+### `cq:Comment` {#cq-comment}
 
 **Beskrivning**
 
@@ -74,7 +74,7 @@ Definierar nodtypen för en kommentarnod.
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq:CommentAttachment {#cq-commentattachment}
+### `cq:CommentAttachment` {#cq-commentattachment}
 
 **Beskrivning**
 
@@ -86,7 +86,7 @@ Definierar nodtypen för en `commentattachment`-nod
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq:CommentContent {#cq-commentcontent}
+### `cq:CommentContent` {#cq-commentcontent}
 
 **Beskrivning**
 
@@ -103,7 +103,7 @@ Definierar nodtypen för en kommentarinnehållsnod
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq:GeoLocation {#cq-geolocation}
+### `cq:GeoLocation` {#cq-geolocation}
 
 **Beskrivning**
 
@@ -118,7 +118,7 @@ En blandning som definierar en geografisk plats i decimalgrader (DD)
 * `- latitude (double)`
 * `- longitude (double)`
 
-### cq:bakåtspårning {#cq-trackback}
+### `cq:Trackback` {#cq-trackback}
 
 **Beskrivning**
 
@@ -130,7 +130,7 @@ Definierar nodtypen för en bakåtspårningsnod.
 
 ## Core {#core}
 
-### cq:Sida {#cq-page}
+### `cq:Page` {#cq-page}
 
 **Beskrivning**
 
@@ -144,17 +144,17 @@ Definierar CQ-standardsidan.
    * `+ jcr:content (nt:base) = nt:unstructured copy primary`
    * `+ * (nt:base) = nt:base version`
 
-### cq:PseudoPage {#cq-pseudopage}
+### `cq:PseudoPage` {#cq-pseudopage}
 
 **Beskrivning**
 
-Definierar en blandningstyp som markerar noder som pseudosidor. Med andra ord innebär det att de kan anpassas för redigeringsstöd för Page och WCM.
+Den här blandningstypen markerar noder som pseudosidor. Med andra ord innebär det att de kan anpassas för redigeringsstöd för Page och WCM.
 
 **Definition**
 
 * `[cq:PseudoPage] mixin`
 
-### cq:PageContent {#cq-pagecontent}
+### `cq:PageContent` {#cq-pagecontent}
 
 **Beskrivning**
 
@@ -166,7 +166,7 @@ Definierar standardnoden för sidinnehåll, med de minimala egenskaper som anvä
 * `@prop cq:allowedTemplates` - Lista med reguljära uttryck som används för att bestämma sökvägarna till den tillåtna mallen.
 * `@prop pageTitle` - Rubrik visas i taggen `<title>`.
 * `@prop navTitle` - Titel som används i navigering.
-* `@prop hideInNav` - Anger om sidan ska döljas i navigeringen.
+* `@prop hideInNav` - Anger om sidan är dold i navigeringen.
 * `@prop onTime` - Tid när sidan blir giltig.
 * `@prop offTime` - Tid när den här sidan blir ogiltig.
 * `@prop cq:lastModified` - Datum då sidan (eller dess stycken) senast ändrades.
@@ -178,6 +178,7 @@ Definierar standardnoden för sidinnehåll, med de minimala egenskaper som anvä
 >Det är inte obligatoriskt för sidinnehåll att använda den här typen.
 
 **Definition**
+
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
    * `- cq:template (string)`
    * `- cq:allowedTemplates (string) multiple`
@@ -191,7 +192,7 @@ Definierar standardnoden för sidinnehåll, med de minimala egenskaper som anvä
    * `- cq:designPath (string)`
    * `- jcr:language (string)`
 
-### cq:Template {#cq-template}
+### `cq:Template` {#cq-template}
 
 **Beskrivning**
 
@@ -223,7 +224,7 @@ Definierar en CQ-mall.
    * `- allowedChildren (string) multiple`
    * `- ranking (long)`
 
-### cq:Component {#cq-component}
+### `cq:Component` {#cq-component}
 
 **Beskrivning**
 
@@ -238,9 +239,9 @@ Definierar en CQ-komponent.
 * `@prop cq:isContainer` - Anger om det är en behållarkomponent. Tvingar cellnamnen för de underordnade komponenterna att användas i stället för sökvägsnamn. `parsys` är till exempel en behållarkomponent. Om det här värdet inte har definierats görs kontrollen utifrån om det finns en `cq:childEditConfig`.
 * `@prop cq:noDecoration` - Om värdet är true ritas inga `div`-dekorationstaggar när den här komponenten inkluderas.
 * `@node cq:editConfig` - Den konfiguration som definierar parametrarna för redigeringsfältet.
-* `@node cq:childEditConfig` - Redigeringskonfigurationen som ärvs av underordnade komponenter.
+* `@node cq:childEditConfig` - Redigeringskonfigurationen ärvs av underordnade komponenter.
 * `@node cq:htmlTag` - Definierar ytterligare taggattribut som läggs till i den omgivande `div` -taggen när komponenten inkluderas.
-* `@node icon.png`- En fil som innehåller en karakteristisk ikon.
+* `@node icon.png` - En fil som innehåller en karakteristisk ikon.
 * `@node thumbnail.png` - En fil som innehåller en karakteristisk miniatyrbild.
 * `@prop allowedParents` - Mönster för reguljära uttryck som avgör vilka sökvägar för komponenter som tillåts som överordnade komponenter.
 * `@prop allowedChildren` - Mönster för reguljära uttryck som avgör vilka sökvägar för komponenter som tillåts som underordnade komponenter.
@@ -271,33 +272,33 @@ Definierar en CQ-komponent.
    * `- componentGroup (string)`
    * `+ cq:infoProviders (nt:base) = nt:unstructured copy`
 
-### cq:ComponentMixin {#cq-componentmixin}
+### `cq:ComponentMixin` {#cq-componentmixin}
 
 **Beskrivning**
 
-Definierar en CQ-komponent som blandningstyp.
+Definierar en CQ-komponent som en blandningstyp.
 
 **Definition**
 
 `[cq:ComponentMixin] > cq:Component mixin`
 
-### cq:EditConfig {#cq-editconfig}
+### `cq:EditConfig` {#cq-editconfig}
 
 **Beskrivning**
 
-Definierar konfigurationen för&quot;redigeringsfältet&quot;.
+Definierar konfigurationen för `editbar`.
 
 * `@prop cq:dialogMode` - Dialogrutans läge:
    * `floating` - för en normal, flytande dialogruta
    * `inline` - infogad redigering
    * `auto` - automatisk identifiering (beroende på tillgängligt utrymme)
-* `@node cq:inplaceEditing` - Redigeringskonfiguration för den här komponenten infogas.
+* `@node cq:inplaceEditing` - Redigeringskonfigurationen för den här komponenten är på plats.
 * `@prop cq:layout`- Redigeringsfältets layout:
    * `editbar` - redigeringsfält
    * `rollover` - rulla över bildruta
    * `auto` - automatisk identifiering
 * `@node cq:formParameters` - Ytterligare parametrar att lägga till i dialogformuläret.
-* `@prop cq:actions`- Lista över åtgärder (redigeringsfältsknappar eller menyalternativ).
+* `@prop cq:actions` - Lista med åtgärder (redigeringsfältsknappar eller menyalternativ).
 * `@node cq:actionConfigs` - Widget-konfigurationer för redigeringsfält eller menyalternativ.
 * `@prop cq:emptyText` - Text som ska visas om det inte finns något visuellt innehåll.
 * `@node cq:dropTargets` - Samling med `{@link cq:DropTargetConfig}` noder.
@@ -313,7 +314,7 @@ Definierar konfigurationen för&quot;redigeringsfältet&quot;.
    * `+ cq:dropTargets (nt:base) = nt:unstructured`
    * `+ cq:listeners (nt:base) = cq:EditListenersConfig`
 
-### cq:DropTargetConfig {#cq-droptargetconfig}
+### `cq:DropTargetConfig` {#cq-droptargetconfig}
 
 **Beskrivning**
 
@@ -331,7 +332,7 @@ Konfigurerar ett släppmål för en komponent. Namnet på den här noden använd
    * `- propertyName (string)`
    * `+ parameters (nt:base) = nt:unstructured`
 
-### cq:VirtualComponent {#cq-virtualcomponent}
+### `cq:VirtualComponent` {#cq-virtualcomponent}
 
 **Beskrivning**
 
@@ -340,7 +341,7 @@ Definierar en virtuell CQ-komponent. Används för närvarande endast för den n
 * `@prop jcr:title` - Den här komponentens namn.
 * `@prop jcr:description` - Beskrivning av den här komponenten.
 * `@node cq:editConfig` - Redigera konfiguration som definierar parametrarna för redigeringsfältet.
-* `@node cq:childEditConfig`- Redigera konfiguration som ärvs av underordnade komponenter.
+* `@node cq:childEditConfig` - Redigera konfiguration som ärvts av underordnade komponenter.
 * `@node icon.png` - En fil som innehåller en karakteristisk ikon.
 * `@node thumbnail.png` - En fil som innehåller en karakteristisk miniatyrbild.
 * `@prop allowedParents` - Mönster för reguljära uttryck för att bestämma sökvägar för komponenter som tillåts som överordnade komponenter.
@@ -360,7 +361,7 @@ Definierar en virtuell CQ-komponent. Används för närvarande endast för den n
 `- allowedChildren (string) multiple`
 `- componentGroup (string)`
 
-### cq:EditListenersConfig {#cq-editlistenersconfig}
+### `cq:EditListenersConfig` {#cq-editlistenersconfig}
 
 **Beskrivning**
 
@@ -392,7 +393,7 @@ Definierar de (klientsidan) avlyssnare som ska köras i en edit-händelse. Värd
 
 ## DAM {#dam}
 
-### dam:AssetContent {#dam-assetcontent}
+### `dam:AssetContent` {#dam-assetcontent}
 
 **Beskrivning**
 
@@ -404,7 +405,7 @@ Innehåll i en DAM-resurs.
    * `+ metadata (nt:unstructured)`
    * `+ renditions (nt:folder)`
 
-### dam:Asset {#dam-asset}
+### `dam:Asset` {#dam-asset}
 
 **Beskrivning**
 
@@ -416,7 +417,7 @@ DAM-resurs.
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### dam:Miniatyr {#dam-thumbnail}
+### `dam:Thumbnail` {#dam-thumbnail}
 
 **Beskrivning**
 
@@ -430,7 +431,7 @@ Miniatyrbild som representerar en DAM-resurs.
 
 ## Leveransbehållarlista {#delivery-container-list}
 
-### cq:containerList {#cq-containerlist}
+### `cq:containerList` {#cq-containerlist}
 
 **Beskrivning**
 
@@ -443,14 +444,14 @@ Behållarlista.
 
 ## Leveranssida {#delivery-page}
 
-### cq:Cq4PageAttributes {#cq-cq-pageattributes}
+### `cq:Cq4PageAttributes` {#cq-cq-pageattributes}
 
 **Beskrivning**
 
-Nodtypen `cq:attributes` är för ContentBus-versionstaggar. Den här noden har bara en serie egenskaper, varav tre är fördefinierade&quot;skapad&quot;,&quot;csd&quot; och&quot;tidsstämpel&quot;.
+Nodtypen `cq:attributes` är för ContentBus-versionstaggar. Den här noden har bara en serie egenskaper av vilka tre är fördefinierade: `created`, `csd` och `timestamp`.
 
 * `@prop created (long) mandatory copy` - Tidsstämpel för när versionsinformationen skapades, vanligtvis tiden för incheckning av den tidigare versionen eller tiden då sidan skapades.
-* `@prop csd (string) mandatory copy` - csd-standardattribut, kopia av egenskapen cq:csd för sidnoden
+* `@prop csd (string) mandatory copy` - Standardattributet `csd`, kopia av egenskapen `cq:csd` för sidnoden
 * `@prop timestamp (long) mandatory copy` - Tidsstämpel för senaste versionsändring, vanligtvis incheckningstid.
 * `@prop * (string) copy` - Ytterligare attribut, versionsindelade med den överordnade noden.
 
@@ -462,7 +463,7 @@ Nodtypen `cq:attributes` är för ContentBus-versionstaggar. Den här noden har 
    * `- timestamp (long) mandatory copy`
    * `- &ast; (string) copy`
 
-### cq:Cq4ContentPage {#cq-cq-contentpage}
+### `cq:Cq4ContentPage` {#cq-cq-contentpage}
 
 **Beskrivning**
 
@@ -472,7 +473,7 @@ Objekten i en `cq:Cq4ContentPage` är:
 
 * `@prop cq:csd` - Sidans ContentBus-värdepapperscentral.
 * `@node cq:content` - Sidans innehåll. Den underordnade noden finns inte om sidnoden är i läget &quot;Befintlig utan innehåll&quot; eller &quot;Borttagen&quot;.
-* `@node cq:attributes` - Listan med sidattribut, som tidigare kallades versionstaggar. Den här noden är obligatorisk för typen cq:contentPage. Attributnoden får en ny version när sidan får en ny version.
+* `@node cq:attributes` - Listan med sidattribut, som tidigare kallades versionstaggar. Den här noden är obligatorisk för typen `cq:contentPage`. Attributnoden får en ny version när sidnoden får en ny version.
 
 **Definition**
 
@@ -482,16 +483,16 @@ Objekten i en `cq:Cq4ContentPage` är:
 
 ## Importör {#importer}
 
-### cq:PollConfig {#cq-pollconfig}
+### `cq:PollConfig` {#cq-pollconfig}
 
 **Beskrivning**
 
 Avsökningskonfiguration.
 
 * `@prop source (String) mandatory` - URI för datakälla. Obligatoriskt och får inte vara tomt.
-* `@prop target (String)` - Målplatsen där data som hämtats från datakällan lagras. Valfritt och standard är cq:PollConfig-noden.
+* `@prop target (String)` - Målplatsen där data som hämtats från datakällan lagras. Valfritt och standardvärdet är cq:PollConfig-noden.
 * `@prop interval (Long)` - Intervallet i sekunder som nya eller uppdaterade data från datakällan ska avsökas. Valfritt och standardvärdet är 30 minuter (1 800 sekunder).
-* [Skapar anpassade dataimporteringstjänster för Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [Skapar anpassade dataimporteringstjänster för Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **Definition**
 
@@ -501,11 +502,11 @@ Avsökningskonfiguration.
    * `- target (String)`
    * `- interval (Long)`
 
-### cq:PollConfigFolder {#cq-pollconfigfolder}
+### `cq:PollConfigFolder` {#cq-pollconfigfolder}
 
 **Beskrivning**
 
-Använd den primära nodtypen för att enkelt skapa avsökningskonfigurationsnoder.
+Använd den primära nodtypen för att enkelt skapa avfrågningskonfigurationsnoder.
 
 **Definition**
 
@@ -513,7 +514,7 @@ Använd den primära nodtypen för att enkelt skapa avsökningskonfigurationsnod
 
 ## Plats {#location}
 
-### cq:GeoLocation {#cq-geolocation-1}
+### `cq:GeoLocation` {#cq-geolocation-1}
 
 **Beskrivning**
 
@@ -531,7 +532,7 @@ En blandning som definierar en geografisk plats i decimalgrader (DD).
 
 ## Mailer {#mailer}
 
-### cq:mailerMessage {#cq-mailermessage}
+### `cq:mailerMessage` {#cq-mailermessage}
 
 **Beskrivning**
 
@@ -547,7 +548,7 @@ MailerService-nodtyper. Mejlaren använder noder som har den här mixinen som ro
 
 ## MSM {#msm}
 
-### cq:LiveRelationship {#cq-liverelationship}
+### `cq:LiveRelationship` {#cq-liverelationship}
 
 **Beskrivning**
 
@@ -560,7 +561,7 @@ Definierar en LiveRelationship-blandning. En primär källnod (kontrollnod) och 
    * `- cq:lastRolledoutBy (string)`
    * `- cq:sourceUUID (string)`
 
-### cq:LiveSync {#cq-livesync}
+### `cq:LiveSync` {#cq-livesync}
 
 **Beskrivning**
 
@@ -577,7 +578,7 @@ Definierar en LiveSync-blandning. Om en nod ingår i en LiveRelationship med en 
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq:LiveSyncCanceled {#cq-livesynccancelled}
+### `cq:LiveSyncCancelled` {#cq-livesynccancelled}
 
 **Beskrivning**
 
@@ -590,7 +591,7 @@ Definierar en LiveSyncCanceled-blandning. Avbryt LiveSync-beteendet för en live
 * `[cq:LiveSyncCancelled] > cq:LiveRelationship mixin`
    * `- cq:isCancelledForChildren (boolean)`
 
-### cq:LiveSyncAction {#cq-livesyncaction}
+### `cq:LiveSyncAction` {#cq-livesyncaction}
 
 **Beskrivning**
 
@@ -603,7 +604,7 @@ Definierar en LiveSyncAction som är kopplad till en LiveSync.
 
 * `[cq:LiveSyncAction] > nt:unstructured`
 
-### cq:LiveSyncConfig {#cq-livesyncconfig}
+### `cq:LiveSyncConfig` {#cq-livesyncconfig}
 
 **Beskrivning**
 
@@ -616,11 +617,11 @@ Konfiguration av Live Sync.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-I AEM 5.4 ska följande läggas till i slutet av listan:
+För AEM 5.4 ska följande läggas till i slutet av listan:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
-### cq:BlueprintAction {#cq-blueprintaction}
+### `cq:BlueprintAction` {#cq-blueprintaction}
 
 **Beskrivning**
 
@@ -632,7 +633,7 @@ Funktionsmakro för utkast
 
 ## Plattform {#platform}
 
-### cq:Console {#cq-console}
+### `cq:Console` {#cq-console}
 
 **Beskrivning**
 
@@ -645,14 +646,14 @@ Definierar nodtypen för en konsolnod.
 
 ## Replikering {#replication}
 
-### cq:ReplicationStatus {#cq-replicationstatus}
+### `cq:ReplicationStatus` {#cq-replicationstatus}
 
 **Beskrivning**
 
 Definierar blandning av information om replikeringsstatus.
 
 * `@prop cq:lastPublished` - Det datum då sidan senast publicerades (används inte längre).
-* `@prop cq:lastPublishedBy`- Användaren som publicerade sidan senast (används inte längre).
+* `@prop cq:lastPublishedBy` - Användaren som publicerade sidan senast (används inte längre).
 * `@prop cq:lastReplicated` - Det datum då sidan senast replikerades.
 * `@prop cq:lastReplicatedBy` - Användaren som replikerade sidan senast.
 * `@prop cq:lastReplicationAction` - Replikeringsåtgärden: aktivera eller inaktivera.
@@ -671,21 +672,21 @@ Definierar blandning av information om replikeringsstatus.
 
 ## Dokumentskydd {#security}
 
-### cq:ApplicationPrivilege {#cq-applicationprivilege}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege}
 
 **Beskrivning**
 
-Definierar ett programprivilegium.
+Den definierar ett programprivilegium.
 
 **Definition**
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq:PrivilegeAcl {#cq-privilegeacl}
+### `cq:PrivilegeAcl` {#cq-privilegeacl}
 
 **Beskrivning**
 
-Definierar en åtkomstkontrollista för programbehörighet.
+Den definierar en åtkomstkontrollista för programbehörighet.
 
 * `@prop cq:isPathDependent`
 * `@node * ACEs`
@@ -696,11 +697,11 @@ Definierar en åtkomstkontrollista för programbehörighet.
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq:PrivilegeAce {#cq-privilegeace}
+### `cq:PrivilegeAce` {#cq-privilegeace}
 
 **Beskrivning**
 
-Definierar en ACE för programbehörighet.
+Den definierar en ACE för ett programprivilegium.
 
 * `@prop path`
 * `@prop deny`
@@ -711,21 +712,21 @@ Definierar en ACE för programbehörighet.
    * `- path mandatory`
    * `- deny (boolean)`
 
-### cq:ApplicationPrivilege {#cq-applicationprivilege-1}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege-1}
 
 **Beskrivning**
 
-Definierar ett programprivilegium.
+Den definierar ett programprivilegium.
 
 **Definition**
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq:PrivilegeAcl {#cq-privilegeacl-1}
+### `cq:PrivilegeAcl` {#cq-privilegeacl-1}
 
 **Beskrivning**
 
-Definierar en åtkomstkontrollista för programbehörighet.
+Den definierar en åtkomstkontrollista för programbehörighet.
 
 * `@prop cq:isPathDependent`
 * `@node * ACEs`
@@ -736,11 +737,11 @@ Definierar en åtkomstkontrollista för programbehörighet.
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq:PrivilegeAce {#cq-privilegeace-1}
+### `cq:PrivilegeAce` {#cq-privilegeace-1}
 
 **Beskrivning**
 
-Definierar en ACE för programbehörighet.
+Den definierar en ACE för ett programprivilegium.
 
 * `@prop path`
 * `@prop deny`
@@ -753,11 +754,11 @@ Definierar en ACE för programbehörighet.
 
 ## Platsimportör {#site-importer}
 
-### cq:ComponentExtractorSource {#cq-componentextractorsource}
+### `cq:ComponentExtractorSource` {#cq-componentextractorsource}
 
 **Beskrivning**
 
-Definierar en blandningstyp som markerar filer som kan öppnas med komponentextraheraren.
+Definierar en blandningstyp som markerar filer som kan öppnas med en komponentextraherare.
 
 **Definition**
 
@@ -765,7 +766,7 @@ Definierar en blandningstyp som markerar filer som kan öppnas med komponentextr
 
 ## Taggar {#tagging}
 
-### cq:Tagg {#cq-tag}
+### `cq:Tag` {#cq-tag}
 
 **Beskrivning**
 
@@ -779,7 +780,7 @@ Definierar en enskild tagg, men kan även innehålla taggar, vilket skapar en ta
    * `- * (undefined)`
    * `+ * (nt:base) = cq:Tag version`
 
-### cq:Taggbar {#cq-taggable}
+### `cq:Taggable` {#cq-taggable}
 
 **Beskrivning**
 
@@ -792,7 +793,7 @@ Abstrakt basblandning för taggningsbart innehåll.
 * `[cq:Taggable]`
    * `- cq:tags (string) multiple`
 
-### cq:OwnerTaggable {#cq-ownertaggable}
+### `cq:OwnerTaggable` {#cq-ownertaggable}
 
 **Beskrivning**
 
@@ -802,22 +803,22 @@ Endast författare/ägare får tagga innehållet (modererad/administrerad taggni
 
 * `[cq:OwnerTaggable] > cq:Taggable`
 
-### cq:UserTaggable {#cq-usertaggable}
+### `cq:UserTaggable` {#cq-usertaggable}
 
 **Beskrivning**
 
-Alla användare/offentliga webbplatser kan tagga innehållet (Web2.0-format), som används i cq:userContent.
+Alla användare och offentliga webbplatser kan tagga innehållet (Web2.0-format) som används i `cq:userContent`.
 
 **Definition**
 
 * `[cq:UserTaggable] > cq:Taggable`
    * `mixin`
 
-### cq:AllowsUserContent {#cq-allowsusercontent}
+### `cq:AllowsUserContent` {#cq-allowsusercontent}
 
 **Beskrivning**
 
-Lägger till en `cq:userContent`-undernod som kan ändras av användare. Varje användare har sin egen `cq:userContent/<userid>`-undernod, som vanligtvis har mixin `cq:UserTaggable`.
+Lägger till en `cq:userContent`-undernod som användare kan redigera. Varje användare har sin egen `cq:userContent/<userid>`-undernod, som vanligtvis har mixin `cq:UserTaggable`.
 
 **Definition**
 
@@ -831,11 +832,11 @@ Utökad variant, definierar mer explicit trädet `cq:userContent`
    * `mixin`
    * `+ cq:userContent (cq:UserContent)`
 
-### cq:UserContent {#cq-usercontent}
+### `cq:UserContent` {#cq-usercontent}
 
 **Beskrivning**
 
-Kan ändras av användare.
+Användare kan redigera det.
 
 **Definition**
 
@@ -845,7 +846,7 @@ Kan ändras av användare.
    * `// other content`
    * `+ * (nt:base)`
 
-### cq:UserData {#cq-userdata}
+### `cq:UserData` {#cq-userdata}
 
 **Beskrivning**
 
@@ -857,7 +858,7 @@ Användardata
 
 ## Widgetar {#widgets}
 
-### cq:ClientLibraryFolder {#cq-clientlibraryfolder}
+### `cq:ClientLibraryFolder` {#cq-clientlibraryfolder}
 
 **Beskrivning**
 
@@ -869,7 +870,7 @@ Klientbiblioteksmapp
    * `- categories (string) multiple`
    * `- dependencies (string) multiple`
 
-### cq:Widget {#cq-widget}
+### `cq:Widget` {#cq-widget}
 
 **Beskrivning**
 
@@ -883,7 +884,7 @@ Widget
    * `- title (string)`
    * `+ items (nt:base) = cq:WidgetCollection copy`
 
-### cq:WidgetCollection {#cq-widgetcollection}
+### `cq:WidgetCollection` {#cq-widgetcollection}
 
 **Beskrivning**
 
@@ -895,7 +896,7 @@ Widget-samling
    * `orderable`
    * `+ * (cq:Widget) = cq:Widget copy`
 
-### cq:Dialog {#cq-dialog}
+### `cq:Dialog` {#cq-dialog}
 
 **Beskrivning**
 
@@ -905,7 +906,7 @@ Dialog
 
 * `[cq:Dialog] > cq:Widget orderable`
 
-### cq:Panel {#cq-panel}
+### `cq:Panel` {#cq-panel}
 
 **Beskrivning**
 
@@ -915,7 +916,7 @@ Panel
 
 `[cq:Panel] > cq:Widget orderable`
 
-### cq:TabPanel {#cq-tabpanel}
+### `cq:TabPanel` {#cq-tabpanel}
 
 **Beskrivning**
 
@@ -926,7 +927,7 @@ Panelen Tabb
 * `[cq:TabPanel]` > `cq:Panel orderable`
    * `- activeTab (long)`
 
-### cq:Fält {#cq-field}
+### `cq:Field` {#cq-field}
 
 **Beskrivning**
 
@@ -941,7 +942,7 @@ Fält
 
 ## Wiki {#wiki}
 
-### wiki:ämne {#wiki-topic}
+### `wiki:Topic` {#wiki-topic}
 
 **Beskrivning**
 
@@ -962,7 +963,7 @@ Wiki-ämne
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:användare {#wiki-user}
+### `wiki:User` {#wiki-user}
 
 **Beskrivning**
 
@@ -973,7 +974,7 @@ Wiki-användare
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:egenskaper {#wiki-properties}
+### `wiki:Properties` {#wiki-properties}
 
 **Beskrivning**
 
@@ -987,7 +988,7 @@ Wiki-egenskaper
 
 ## Arbetsflöde {#workflow}
 
-### cq:Arbetsflöde {#cq-workflow}
+### `cq:Workflow` {#cq-workflow}
 
 **Beskrivning**
 
@@ -1012,7 +1013,7 @@ Representerar en arbetsflödesinstans.
    * `+ metaData (nt:unstructured)`
    * `+ workItems (nt:unstructured)`
 
-### cq:WorkItem {#cq-workitem}
+### `cq:WorkItem` {#cq-workitem}
 
 **Beskrivning**
 
@@ -1030,7 +1031,7 @@ Arbetsobjekt.
    * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
    * `+ metaData (nt:unstructured)`
 
-### cq:Nyttolast {#cq-payload}
+### `cq:Payload` {#cq-payload}
 
 **Beskrivning**
 
@@ -1047,7 +1048,7 @@ Nyttolast
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq:WorkflowData {#cq-workflowdata}
+### `cq:WorkflowData` {#cq-workflowdata}
 
 **Beskrivning**
 
@@ -1061,11 +1062,12 @@ Arbetsflödesdata
    * `+ payload (cq:Payload)`
    * `+ metaData (nt:unstructured) copy`
 
-### cq:WorkflowModel {#cq-workflowmodel}
+### `cq:WorkflowModel` {#cq-workflowmodel}
 
 **Beskrivning**
 
 Tilldela arbetsflödeskonfiguration automatiskt. Konfigurationen följer den här strukturen nedan:
+
 * `workflows`
    * `+ name1`
       * `- cq:path`
@@ -1086,7 +1088,7 @@ Tilldela arbetsflödeskonfiguration automatiskt. Konfigurationen följer den hä
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq:WorkflowNode {#cq-workflownode}
+### `cq:WorkflowNode` {#cq-workflownode}
 
 **Beskrivning**
 
@@ -1106,7 +1108,7 @@ Arbetsflödesnod
    * `+ timeoutConfiguration (nt:unstructured)`
       * `copy`
 
-### cq:WorkflowTransition {#cq-workflowtransition}
+### `cq:WorkflowTransition` {#cq-workflowtransition}
 
 **Beskrivning**
 
@@ -1121,7 +1123,7 @@ Arbetsflödesövergång
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq:OrTab {#cq-ortab}
+### `cq:OrTab` {#cq-ortab}
 
 **Beskrivning**
 
@@ -1130,10 +1132,10 @@ Eller tabb
 **Definition**
 
 * `[cq:OrTab]`
-   * `- workflowId (String) // not compulsory as this node will already be attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already be attached to the workflow node`
    * `- nodeId (String)`
 
-### cq:Wait {#cq-wait}
+### `cq:Wait` {#cq-wait}
 
 **Beskrivning**
 
@@ -1142,11 +1144,11 @@ Vänta
 **Definition**
 
 * `[cq:Wait]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- destNodeId (String)`
    * `- fromNodeId (String)`
 
-### cq:WorkflowStack {#cq-workflowstack}
+### `cq:WorkflowStack` {#cq-workflowstack}
 
 **Beskrivning**
 
@@ -1159,7 +1161,7 @@ Arbetsflödesstack
    * `- parentInstanceId (String)`
    * `- nodeId (String)`
 
-### cq:ProcessStack {#cq-processstack}
+### `cq:ProcessStack` {#cq-processstack}
 
 **Beskrivning**
 
@@ -1168,12 +1170,12 @@ Processstapel
 **Definition**
 
 * `[cq:ProcessStack]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- containerWorkflowModelId (String)`
    * `- containerWorkflowNodeId`
    * `- containerWorkflowEndNodeId // still needed (if name already defines that id)`
 
-### cq:WorkflowLauncher {#cq-workflowlauncher}
+### `cq:WorkflowLauncher` {#cq-workflowlauncher}
 
 **Beskrivning**
 
