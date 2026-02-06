@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 Som en del av [integreringen av AEM och Adobe Target](/help/sites-administering/target.md) måste du registrera dig hos Adobe Target, konfigurera replikeringsagenten och säkra aktivitetsinställningar på publiceringsnoden.
 
-## Registrering hos Adobe Target {#registering-with-adobe-target}
+## Registrera dig hos Adobe Target {#registering-with-adobe-target}
 
 Om du vill integrera AEM med Adobe Target måste du ha ett giltigt Adobe Target-konto. Det här kontot måste ha minst behörighet på **godkännarnivå**. När du registrerar dig hos Adobe Target får du en klientkod. Du behöver klientkoden och inloggningsnamnet och lösenordet för Adobe Target för att ansluta AEM till Adobe Target.
 
-Klientkoden identifierar Adobe Target-kundkontot när Adobe Target-servern anropas.
+Klientkoden identifierar Adobe Target kundkonto när Adobe Target-servern anropas.
 
 >[!NOTE]
 >
->Ditt konto måste också aktiveras av Target-teamet för att integreringen ska kunna användas.
+>Målgruppen måste aktivera ditt konto för att kunna använda integreringen.
 >
->Kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=sv-SE) om så inte är fallet.
+>Kontakta [Adobe kundtjänst](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information) om så inte är fallet.
 
 ## Aktivera målreplikeringsagenten {#enabling-the-target-replication-agent}
 
@@ -44,21 +44,21 @@ Test- och Target [replication agent](/help/sites-deploying/replication.md) måst
 
    >[!NOTE]
    >
-   >När du konfigurerar replikeringsagenten Test och Target, på fliken **Transport**, anges URI som standard till **tnt:///**. Ersätt inte denna URI med **https://admin.testandtarget.omniture.com**.
+   >När du konfigurerar Test- och Target-replikeringsagenten anges URI som standard till **på fliken** Transport`tnt:///`. Ersätt inte denna URI med `https://admin.testandtarget.omniture.com`.
    >
-   >Om du försöker testa anslutningen med **tnt:///** genereras ett fel. Detta är förväntat eftersom denna URI endast är avsedd för internt bruk. Använd inte med **Testa anslutning**.
+   >Om du försöker testa anslutningen med `tnt:///` visas ett fel som är det förväntade beteendet. Orsaken är att URI:n endast är avsedd för internt bruk. Använd inte med **Testa anslutning**.
 
-## Skydda noden Aktivitetsinställningar {#securing-the-activity-settings-node}
+## Skydda noden för aktivitetsinställningar {#securing-the-activity-settings-node}
 
 Skydda aktivitetsinställningsnoden **cq:ActivitySettings** på publiceringsinstansen så att den inte är tillgänglig för vanliga användare. Noden för aktivitetsinställningar ska bara vara tillgänglig för tjänsten som hanterar aktivitetssynkroniseringen till Adobe Target.
 
-Noden **cq:ActivitySettings** är tillgänglig i CRXDE lite under `/content/campaigns/*nameofbrand*`* *under aktivitetsnoden jcr:content;* *till exempel, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Den här noden skapas bara efter att du har angett en komponent som mål.
+Noden **cq:ActivitySettings** är tillgänglig i CRXDE Lite under `/content/campaigns/*nameofbrand*`* *under noden för aktiviteter `jcr:content`. Exempel: `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Den här noden skapas bara efter att du har angett en komponent som mål.
 
-Noden **cq:ActivitySettings** under aktivitetens jcr:content skyddas av följande åtkomstkontrollistor:
+Noden **cq:ActivitySettings** under aktivitetens `jcr:content` skyddas av följande åtkomstkontrollistor:
 
-* Neka alla för alla
-* Tillåt jcr:read,rep:write för&quot;target-activity-authors&quot; (författaren är medlem i den här gruppen utanför rutan)
-* Tillåt jcr:read,rep:write för &quot;target service&quot;
+* Neka alla för alla.
+* Tillåt `jcr:read,rep:write` för `target-activity-authors` (författaren är medlem i den här gruppen utanför rutan).
+* Tillåt `jcr:read,rep:write` för `targetservice`.
 
 Dessa inställningar ser till att normala användare inte har tillgång till nodegenskaperna. Använd samma åtkomstkontrollista vid författare och publicering. Mer information finns i [Användaradministration och -säkerhet](/help/sites-administering/security.md).
 
@@ -70,7 +70,7 @@ När du redigerar en aktivitet i Adobe Target pekar URL:en på **localhost** om 
 >
 >Se även [Lägg till molnkonfigurationen](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
-Så här konfigurerar du AEM externalizer:
+Så här konfigurerar du AEM Externalizer:
 
 >[!NOTE]
 >
