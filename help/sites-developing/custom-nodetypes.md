@@ -492,7 +492,7 @@ Avsökningskonfiguration.
 * `@prop source (String) mandatory` - URI för datakälla. Obligatoriskt och får inte vara tomt.
 * `@prop target (String)` - Målplatsen där data som hämtats från datakällan lagras. Valfritt och standardvärdet är cq:PollConfig-noden.
 * `@prop interval (Long)` - Intervallet i sekunder som nya eller uppdaterade data från datakällan ska avsökas. Valfritt och standardvärdet är 30 minuter (1 800 sekunder).
-* [Skapar anpassade dataimporteringstjänster för Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
+* [Skapar anpassade dataimporteringstjänster för Adobe Experience Manager](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **Definition**
 
