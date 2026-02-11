@@ -9,9 +9,9 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
 exl-id: 93126750-4645-4084-a21b-5362e3cc08a9
-source-git-commit: e2c8f98fbf31680782c7f0cf190d894d819d7219
+source-git-commit: 19c58198faab2bbacd4b02e0fd38c21c0222ee72
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,10 @@ ht-degree: 0%
 
 Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
 
-Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=sv-SE).
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html).
 
 
-AEM 6.5 LTS Forms innehåller flera nya funktioner och förbättringar som effektiviserar skapandet, hanteringen och användarupplevelsen med formulär och korrespondenser. Mer information om alla nya funktioner och förbättringar i AEM 6.5 LTS finns i [Sammanfattningsdokument om nya funktioner](https://experienceleague.adobe.com/sv/docs/experience-manager-65-lts/content/release-notes/release-notes).
+AEM 6.5 LTS Forms innehåller flera nya funktioner och förbättringar som effektiviserar skapandet, hanteringen och användarupplevelsen med formulär och korrespondenser. Mer information om alla nya funktioner och förbättringar i AEM 6.5 LTS finns i [Sammanfattningsdokument om nya funktioner](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/release-notes/release-notes).
 
 Du kan uppgradera din befintliga LiveCycle- eller AEM Forms-installation för att få tillgång till nya funktioner och förbättringar som erbjuds i AEM 6.5 LTS Forms samtidigt som befintliga data, processer och resurser bevaras intakta. Vid uppgradering bevaras också metadata och processernas status. Du kan välja ett uppgraderingsalternativ för att komma igång med uppgraderingen.
 
@@ -55,9 +55,13 @@ Du kan uppgradera direkt från:
 
 * AEM 6.5.23.0 Forms på JEE
 
+#### Hur uppgraderar jag Adobe Experience Manager Forms (AEM Forms) på JEE? {#how-do-i-upgrade-aem-forms-on-jee}
+
+Om du vill ha stegvisa PDF-filer för uppgradering (JBoss-nyckelserver, enskild server och kluster) läser du [Arbetsflöde för installation och uppgradering av AEM Forms i JEE](/help/forms/using/aem-forms-jee-installation-upgrade-documentation.md).
+
 
 <!--
-AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE).
+AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 **Full installer**: You can use the full installer to set up fresh AEM Forms instances or perform upgrades from AEM 6.5.x.x Forms on JEE to AEM 6.5.18.0 Forms on JEE.
 
