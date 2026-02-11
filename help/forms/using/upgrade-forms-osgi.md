@@ -32,7 +32,7 @@ När du har uppgraderat till Service Pack AEM Forms 6.5.22.0 följer du de här 
    1. Öppna [Pakethanteraren](/help/sites-administering/package-manager.md) och klicka på **[!UICONTROL Upload Package]** för att överföra paketet.
    1. Markera paketet och klicka på **[!UICONTROL Install]**.
 
-      Du kan också hämta paketet med hjälp av den direktlänk som finns i artikeln [AEM Forms-utgåvor](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) .
+      Du kan också hämta paketet med hjälp av den direktlänk som finns i artikeln [AEM Forms-utgåvor](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) .
 
       När paketet har installerats uppmanas du att starta om AEM-instansen. **Stoppa inte servern omedelbart.** Innan du stoppar AEM Forms-servern väntar du tills meddelandena ServiceEvent REGISTERED och ServiceEvent UNREGISTERED inte visas i filen &lt;crx-database>/error.log och loggen är stabil. Observera också att ett fåtal paket kan vara i installerat läge. Du kan ignorera dessa paketen.
 
@@ -52,7 +52,7 @@ När du har uppgraderat till Service Pack AEM Forms 6.5.22.0 följer du de här 
 
      Migreringsverktyget gör att anpassningsbara formulär och korrespondenshanteringsresurser i tidigare versioner blir kompatibla med AEM 6.5-formulär. Du kan hämta verktyget från AEM Software Distribution. Stegvis information om hur du konfigurerar och använder migreringsverktyget finns i [migreringsverktyget](../../forms/using/migration-utility.md).
 
-     Om du använder [Exempel för att integrera utkast och inskickskomponent](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) med databasen och uppgradera från en tidigare version kör du följande SQL-frågor när du har utfört uppgraderingen:
+     Om du använder [Exempel för att integrera utkast och inskickskomponent](https://helpx.adobe.com/se/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) med databasen och uppgradera från en tidigare version kör du följande SQL-frågor när du har utfört uppgraderingen:
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -93,7 +93,7 @@ När du har uppgraderat till Service Pack AEM Forms 6.5.22.0 följer du de här 
 
    >[!NOTE]
    >
-   >I AEM 6.4 Forms har strukturen för crx-database ändrats. Om du uppgraderar från 6.3 Forms till AEM 6.5 Forms kan du använda de nya anpassningsmöjligheterna som du skapar på nytt. En fullständig lista över ändrade sökvägar finns i [Omstrukturering av Forms-databaser i AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >I AEM 6.4 Forms har strukturen för crx-database ändrats. Om du uppgraderar från 6.3 Forms till AEM 6.5 Forms kan du använda de nya anpassningsmöjligheterna som du skapar på nytt. En fullständig lista över ändrade sökvägar finns i [Omstrukturering av Forms-databaser i AEM](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
 
 
 ## Distribuera AEM på JBoss EAP 8 (Windows)
@@ -395,8 +395,8 @@ För produktionsmiljöer:
 ### Relaterad dokumentation
 
 * [JBoss EAP 8-dokumentation](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
-* [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65.html)
-* [AEM installations- och distributionshandbok](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)
+* [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=sv-SE)
+* [AEM installations- och distributionshandbok](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=sv-SE)
 
 ### Dokumentinformation
 
