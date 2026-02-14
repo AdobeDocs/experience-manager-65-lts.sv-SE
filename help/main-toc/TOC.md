@@ -1297,7 +1297,7 @@ ht-degree: 1%
          + Universell redigerare {#universal-editor}
             + [Introduktion](/help/sites-developing/universal-editor/introduction.md)
       + Hybrid och SPA AEM Development {#spas}
-         + [Hybrid och SPA med AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [Hybrid och SPA med AEM](https://business.adobe.com/se/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Borttagning av SPA-redigerare](/help/sites-developing/spa-editor-deprecation.md)
          + [Introduktion och genomgång av SPA](/help/sites-developing/spa-walkthrough.md)
          + [SPA WKND - självstudiekurs](/help/sites-developing/spa-wknd.md)
