@@ -43,7 +43,7 @@ Med den nya arkitekturen ansvarar Experience Manager för primära källfiler oc
 
 ## Aktivera Dynamic Media i Scene7-läge {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamiska media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) är inaktiverat som standard. För att kunna utnyttja Dynamic Media-funktionerna måste du aktivera dem.
+[Dynamiska media](https://business.adobe.com/se/products/experience-manager/assets/dynamic-media.html) är inaktiverat som standard. För att kunna utnyttja Dynamic Media-funktionerna måste du aktivera dem.
 
 >[!WARNING]
 >
@@ -75,13 +75,13 @@ Om du vill migrera anpassade förinställningar och konfigurationer för visning
 
 Installationen av funktionspaket 18912 är *valfri*.
 
-Med funktionspaketet 18912 kan du antingen importera resurser gruppvis via FTP eller migrera resurser från antingen Dynamic Media - hybrid-läge eller Dynamic Media Classic till Dynamic Media - Scene7-läge i Experience Manager. Den är tillgänglig från [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+Med funktionspaketet 18912 kan du antingen importera resurser gruppvis via FTP eller migrera resurser från antingen Dynamic Media - hybrid-läge eller Dynamic Media Classic till Dynamic Media - Scene7-läge i Experience Manager. Den är tillgänglig från [Adobe Professional Services](https://business.adobe.com/se/customers/consulting-services/main.html).
 
 Mer information finns i [Installera funktionspaket 18912 för migrering av gruppresurser](/help/assets/bulk-ingest-migrate.md).
 
 ## Skapa en dynamisk mediekonfiguration i molntjänster {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=sv-SE#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -246,7 +246,7 @@ I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av res
 Om du tänker använda den här funktionen bör du vara medveten om följande krav och punkter:
 
 * Du måste köra Experience Manager 6.5 LTS i läget Dynamic Media - Scene7.
-* Den här stora överföringsfunktionen stöds bara för [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html)-kunder.
+* Den här stora överföringsfunktionen stöds bara för [*Managed Services*](https://business.adobe.com/se/products/experience-manager/managed-services.html)-kunder.
 * Kontrollera att din Experience Manager-instans är konfigurerad med Amazon S3 eller Microsoft® Azure Blob Storage.
 
   >[!NOTE]
@@ -465,7 +465,7 @@ Det finns två element för definition, Matcha och Basnamn. Med dessa fält kan 
 
 **Så här konfigurerar du standardnamn:**
 
-1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) och logga sedan in på ditt konto.
+1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=sv-SE#getting-started) och logga sedan in på ditt konto.
 
    Dina inloggningsuppgifter och inloggningsuppgifter tillhandahölls av Adobe vid tidpunkten för etableringen. Om du inte har den här informationen kan du kontakta Adobe kundsupport.
 
@@ -499,7 +499,7 @@ Du kan antingen använda formulärfältsmetoden för att definiera en gruppupps�
 
 **Så här skapar du en gruppuppsättningsförinställning:**
 
-1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) och logga sedan in på ditt konto.
+1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=sv-SE#getting-started) och logga sedan in på ditt konto.
 
    Dina inloggningsuppgifter och inloggningsuppgifter tillhandahölls av Adobe vid tidpunkten för etableringen. Om du inte har den här informationen kan du kontakta Adobe kundsupport.
 
@@ -555,7 +555,7 @@ När rotationsuppsättningen överförs och publiceras aktiverar du namnet på d
 
 **Så här skapar du en gruppuppsättningsförinställning för automatisk generering av en 2D-snurpuppsättning:**
 
-1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) och logga sedan in på ditt konto.
+1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=sv-SE#getting-started) och logga sedan in på ditt konto.
 
    Dina inloggningsuppgifter och inloggningsuppgifter tillhandahölls av Adobe vid tidpunkten för etableringen. Om du inte har den här informationen kan du kontakta Adobe kundsupport.
 
