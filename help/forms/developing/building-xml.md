@@ -7,7 +7,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2f49cb29-698b-43ab-971f-81e2b18e6fa9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Inom ramen för standarduppsättningen med AEM Forms på JEE-tjänster som är t
 
 Den här självstudiekursen genererar inte alla program- och processgenereringar, men för instruktionens skull har ett program med namnet&quot;DemoApplication02&quot; skapats. Om ett program redan har skapats måste du skapa en process i det här programmet för att anropa executeScript-tjänsten. Så här lägger du till en process i programmet som innehåller tjänsten `Execute Script`:
 
-1. Högerklicka på programmet och välj **[!UICONTROL New]**. Välj **[!UICONTROL Process]** på den utfällbara menyn **[!UICONTROL New]**. Namnge processen, lägg till en beskrivning om det behövs och välj den ikon som du vill ska representera processen. I den här självstudiekursen har vi skapat en process och gett den namnet `executeScriptDemoProcess`.
+1. Högerklicka på programmet och välj **[!UICONTROL New]**. Välj **[!UICONTROL New]** på den utfällbara menyn **[!UICONTROL Process]**. Namnge processen, lägg till en beskrivning om det behövs och välj den ikon som du vill representera processen. I den här självstudiekursen har vi skapat en process och gett den namnet `executeScriptDemoProcess`.
 1. Definiera startpunkterna eller välj att lägga till startpunkterna senare.
 1. Processen skapas nu och ska öppnas automatiskt i fönstret [!UICONTROL Process Design]. I det här fönstret klickar du på ikonen Aktivitetsväljaren högst upp i fönstret Processdesign och drar den nya aktiviteten till simbanan. Nu ska [!UICONTROL Define Activity Window] visas (se figur nedan).
    ![Definiera aktivitet](assets/define-activity.jpg)

@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1581'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 En användare med administratörsåtkomst i [!DNL Adobe Experience Manager] konfigurerar den utökade anslutningen efter installation. Instruktioner om hur du installerar finns i [Installera anslutningsprogrammet](/help/assets/workfront-integrations.md).
@@ -59,8 +59,8 @@ Så här prenumererar du på händelserna:
 ### Konfiguration av länkad mappstruktur {#linked-folder-structure}
 
 1. Gå till fliken Projektlänkade mappar i molntjänsterna.
-1. Länkad mappsökväg: Välj en mapp i DAM där du vill skapa de länkade mapparna. Om det lämnas tomt används /content/dam som standard. Se till att metadatamatchemat för Workfront Tools och Workfront-mappen för länkade mappar har tillämpats på den markerade mappen.
-1. Länkad mappstruktur: Ange kommaavgränsade värden. Varje värde ska vara `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name eller något &quot;Literal String Value&quot; (det sista med citattecken). Den är för närvarande inställd på Portfolio, Program, Year, DE:Project Type, Name.
+1. Länkad mappens överordnade sökväg: Välj en mapp i DAM där du vill skapa de länkade mapparna. Om det lämnas tomt används /content/dam som standard. Se till att metadatamatchemat för Workfront Tools och Workfront-mappen för länkade mappar har tillämpats på den markerade mappen.
+1. Länkad mappstruktur: Ange kommaavgränsade värden. Varje värde ska vara `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name eller något &quot;Literal String Value&quot; (det sista med citattecken). Den är för närvarande inställd på Portfolio,Program,Year,DE:Project Type,Name.
 1. Konfigurera behörigheter: Lägg till `jcr:all permissions`-behörigheter i `/conf/workfront-tools/settings/cloudconfigs` för gruppen `wf-workfront-users`.
 1. Skapa länkad mapptitel i Workfront med hjälp av kryssrutan Mappstrukturnamn bör vara markerad om mappens titel i Workfront ska innehålla alla mappar i strukturen. I annat fall är det den sista mappens namn.
 1. Med undermappsmappar kan du ange en lista med mappar som ska skapas som en underordnad mapp till den länkade mappen.
@@ -82,7 +82,7 @@ Så här konfigurerar du mappningarna:
 1. Lägg till `jcr:read`-behörigheter i `/conf/global/settings/dam/adminui-extension/foldermetadataschema` för gruppen `wf-workfront-users`.
 1. Navigera till **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Markera det mappmetadatamatchschema som du vill redigera och klicka på Redigera.
-1. Markera det formulärfält för mappmetadatamatchema som du vill redigera och välj fliken Inställningar på den högra panelen.
+1. Markera det formulärfält för mappmetadataram som du vill redigera och välj fliken Inställningar på den högra panelen.
 1. I fältet [!UICONTROL Mapped from Workfront Field] markerar du namnet på det Workfront-fält som du vill mappa till den valda AEM-mappegenskapen. Tillgängliga alternativ är:
 
    * Anpassade formulärfält för projekt
@@ -107,7 +107,7 @@ Så här konfigurerar du mappningarna:
    * Anpassade formulärfält för uppgift
    * Projektöversiktsfält (ID, namn, beskrivning eller referensnummer)
 
-1. Om fältet [!DNL Workfront] som valts i [!UICONTROL Workfront Custom Form Field] är ett Workfront-användartypfält måste du ange vilket Workfront-användarfält du vill mappa. Om du vill göra det markerar du Hämta värde från objektfältet som refereras till av Workfront och anger sedan namnet på [!UICONTROL Workfront User Custom Form Field] som värdet ska mappas från.
+1. Om det [!DNL Workfront]-fält som är markerat i [!UICONTROL Workfront Custom Form Field] är ett Workfront-användartypfält måste du ange vilket Workfront-användarfält du vill mappa. Om du vill göra det markerar du Hämta värde från objektfältet som refereras till av Workfront och anger sedan namnet på [!UICONTROL Workfront User Custom Form Field] som värdet ska mappas från.
 
    ![konfiguration för metadatamappning](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -151,7 +151,7 @@ Redigera egenskaperna för **[!UICONTROL Workfront - Set Status]** på fliken **
 
 ## Synkronisering av kommentarer {#comments-sync}
 
-1. Gå till **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]** i [!DNL Experience Manager], markera konfigurationen och välj **[!UICONTROL Properties]**.
+1. Gå till [!DNL Experience Manager] > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** i **[!UICONTROL Workfront Tools Configuration]**, markera konfigurationen och välj **[!UICONTROL Properties]**.
 
    ![kommentarsynkronisering](/help/assets/assets/comments-sync1.png)
 

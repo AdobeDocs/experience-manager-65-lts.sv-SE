@@ -12,7 +12,7 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '2455'
 ht-degree: 0%
@@ -152,7 +152,7 @@ När du återger ett interaktivt formulär kan du definiera URI-värden, t.ex. m
 * Klicka på Skicka när du designar formulärdesignen i Designer
 * Genom att använda Forms klient-API för tjänster
 
-Om mål-URL:en definieras i formulärdesignen, ska du inte åsidosätta den med Forms klient-API. Det innebär att om du anger mål-URL:en med Forms API återställs den angivna URL:en i formulärdesignen till den som anges med API:t. Om du vill skicka PDF-formuläret till den mål-URL som anges i formulärdesignen, anger du mål-URL:en automatiskt till en tom sträng.
+Om mål-URL:en definieras i formulärdesignen, ska du inte åsidosätta den med Forms klient-API. Det innebär att om du anger mål-URL:en med Forms API återställs den angivna URL:en i formulärdesignen till den som anges med API:t. Om du vill skicka PDF-formuläret till mål-URL:en som anges i formulärdesignen anger du mål-URL:en automatiskt till en tom sträng.
 
 Om du har ett formulär som innehåller en skicka-knapp och en beräkningsknapp (med ett motsvarande skript som körs på servern) kan du programmässigt definiera den URL som formuläret skickas till för att köra skriptet. Använd knappen Skicka i formulärdesignen för att ange den URL som formulärdata ska skickas till. (Se [Beräkna formulärdata](/help/forms/developing/calculating-form-data.md).)
 
@@ -227,7 +227,7 @@ Metoden `renderPDFForm2` accepterar en `com.adobe.idp.Document`-instans som inne
 
 1. Skriv formulärdataströmmen till klientens webbläsare
 
-   * Skapa ett `com.adobe.idp.Document`-objekt genom att anropa metoden `getOutputContent` för `FormsResult`-objektet.
+   * Skapa ett `com.adobe.idp.Document`-objekt genom att anropa metoden `FormsResult` för `getOutputContent`-objektet.
    * Hämta innehållstypen för objektet `com.adobe.idp.Document` genom att anropa dess `getContentType`-metod.
    * Ange innehållstypen för objektet `javax.servlet.http.HttpServletResponse` genom att anropa dess `setContentType`-metod och skicka innehållstypen för objektet `com.adobe.idp.Document`.
    * Skapa ett `javax.servlet.ServletOutputStream`-objekt som används för att skriva formulärdataströmmen till klientwebbläsaren genom att anropa `javax.servlet.http.HttpServletResponse`-objektets `getOutputStream`-metod.

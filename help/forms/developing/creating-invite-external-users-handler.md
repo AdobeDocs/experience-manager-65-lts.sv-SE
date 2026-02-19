@@ -7,7 +7,7 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 5e1f1f3c-a2f3-4bf1-ba96-a02f8b16c180
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -93,7 +93,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
     local_user.setEmail( email_address ); 
     local_user.setEmailAliases( aliases ); 
          
-    //  You may wish to disable the local user until, for example, his registration is processed by a confirmation link 
+    //  You may want to disable the local user until, for example, his registration is processed by a confirmation link 
     //local_user.setDisabled( true ); 
  
     DirectoryManager directory_manager = new DirectoryManagerServiceClient( _factory ); 
@@ -244,7 +244,7 @@ Så här lägger du till externa användare att bjuda in med administrationskons
 
 1. Logga in på administrationskonsolen.
 1. Klicka på **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuration]** > Inbjuden **[!UICONTROL User Registration]**.
-1. Aktivera registrering av inbjudna användare genom att markera rutan **[!UICONTROL Enable invited user registration]**. Klicka på **[!UICONTROL No]** under **[!UICONTROL Use Built-in registration system]**. Spara inställningarna.
+1. Aktivera registrering av inbjudna användare genom att markera rutan **[!UICONTROL Enable invited user registration]**. Klicka på **[!UICONTROL Use Built-in registration system]** under **[!UICONTROL No]**. Spara inställningarna.
 1. På startsidan för administrationskonsolen klickar du på **[!UICONTROL Settings]** > **[!UICONTROL User Management]** > **[!UICONTROL Domain Management]**.
 1. Klicka på **[!UICONTROL New Local Domain]**. På följande sida skapar du en domän med namnet och identifierarvärdet `EDC_EXTERNAL_REGISTERED`. Spara ändringarna.
 1. På startsidan för administrationskonsolen klickar du på **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Invited and Local Users]**. Sidan **[!UICONTROL Add Invited User]** visas.

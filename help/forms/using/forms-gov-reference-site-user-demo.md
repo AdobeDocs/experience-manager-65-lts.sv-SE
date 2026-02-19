@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 0%
@@ -499,7 +499,7 @@ George godkänner Ayas ansökan, och tack vare ett befintligt automatiserat arbe
 
    ![Listvy i listrutan Visa](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Välj **Visningsinställning** på samma meny och markera de kolumner som du vill visa i avsnittet **Analytics**.
+1. På samma meny väljer du **Visningsinställning** och markerar de kolumner som du vill visa i avsnittet **Analytics**.
 
    ![Konfigurera visning av kolumner](/help/forms/using/assets/view_setting_analytics.jpg)
 
