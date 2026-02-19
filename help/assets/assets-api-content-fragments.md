@@ -6,9 +6,9 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1939'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,20 @@ ht-degree: 0%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
-
 ## Ökning {#overview}
+
+>[!CAUTION]
+>
+>Stöd för innehållsfragment i Assets HTTP API är nu [föråldrat](/help/release-notes/release-notes.md#deprecated-features).
+>
+>Den har ersatts av [OpenAPI:er för hantering av innehållsfragment och innehållsfragmentmodeller](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/).
+
+>[!NOTE]
+>
+>Den senaste informationen om Experience Manager API:er finns på [Adobe Experience Manager API:er](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 Läs om stödet för innehållsfragment i Assets HTTP API, en viktig del av AEM headless-leveransfunktion.
 
@@ -40,7 +49,7 @@ Med API:t kan du använda Adobe Experience Manager som ett headless CMS (Content
 
 Exempelvis kräver Single Page Applications (SPA), ramverksbaserade eller anpassade, innehåll som tillhandahålls via HTTP API, ofta i JSON-format.
 
-[AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) innehåller ett mycket omfattande, flexibelt och anpassningsbart API som kan hantera nödvändiga läsåtgärder i detta syfte, och vars JSON-utdata kan anpassas, men de kräver AEM WCM-kunskaper (Web Content Management) för implementering eftersom de måste finnas på sidor som är baserade på dedikerade AEM-mallar. Alla SPA-utvecklingsorganisationer har inte direkt tillgång till sådan kunskap.
+[AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) innehåller ett mycket omfattande, flexibelt och anpassningsbart API som kan hantera nödvändiga läsåtgärder i detta syfte, och vars JSON-utdata kan anpassas, men de kräver AEM WCM-kunskaper (Web Content Management) för implementering eftersom de måste finnas på sidor som är baserade på dedikerade AEM-mallar. Alla SPA-utvecklingsorganisationer har inte direkt tillgång till sådan kunskap.
 
 Detta är när Assets REST API kan användas. Med det kan utvecklare komma åt resurser (till exempel bilder och innehållsfragment) direkt, utan att först behöva bädda in dem på en sida, och leverera innehållet i serialiserat JSON-format.
 
@@ -153,8 +162,8 @@ Om Assets REST API används i en miljö utan särskilda autentiseringskrav måst
 >
 >Mer information finns i:
 >
->* [CORS/AEM förklarar](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=sv-SE)
->* [Video - Utveckla för CORS med AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=sv-SE)
+>* [CORS/AEM förklarar](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Video - Utveckla för CORS med AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 I miljöer med specifika autentiseringskrav rekommenderas OAuth.
@@ -395,4 +404,4 @@ Här finns detaljerade API-referenser:
 Mer information finns i:
 
 * [Assets HTTP API-dokumentation](/help/assets/mac-api-assets.md)
-* [AEM Gem-session: OAuth](https://helpx.adobe.com/se/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem-session: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

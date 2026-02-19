@@ -7,7 +7,7 @@ feature: Assets HTTP API,Developer Tools
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7bb4aec8-e6c0-416a-a318-d3120f9688c4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f0385f595035dfd0dce77fc7eb8b2413eaf5431a
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 ## Ökning {#overview}
@@ -36,7 +36,7 @@ Efter [!UICONTROL Off Time] är en resurs och dess återgivningar inte tillgäng
 
 >[!CAUTION]
 >
->[HTTP API uppdaterar metadataegenskaperna &#x200B;](#update-asset-metadata) i namnområdet `jcr`. Experience Manager användargränssnitt uppdaterar emellertid metadataegenskaperna i namnområdet `dc`.
+>[HTTP API uppdaterar metadataegenskaperna ](#update-asset-metadata) i namnområdet `jcr`. Experience Manager användargränssnitt uppdaterar emellertid metadataegenskaperna i namnområdet `dc`.
 
 ## Innehållsfragment {#content-fragments}
 
@@ -318,6 +318,6 @@ Tar bort en resurs (-tree) vid den angivna sökvägen.
 
 ## Tips och begränsningar {#tips-best-practices-limitations}
 
-* [HTTP API uppdaterar metadataegenskaperna &#x200B;](#update-asset-metadata) i namnområdet `jcr`. Experience Manager användargränssnitt uppdaterar emellertid metadataegenskaperna i namnområdet `dc`.
+* [HTTP API uppdaterar metadataegenskaperna ](#update-asset-metadata) i namnområdet `jcr`. Experience Manager användargränssnitt uppdaterar emellertid metadataegenskaperna i namnområdet `dc`.
 
 * Assets HTTP API returnerar inte alla metadata. Namnutrymmena är hårdkodade och endast dessa namnutrymmen returneras. Fullständiga metadata finns i resurssökvägen `/jcr_content/metadata.json`.
