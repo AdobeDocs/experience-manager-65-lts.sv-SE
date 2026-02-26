@@ -48,7 +48,7 @@ Genomgången baseras på standardfunktionerna i AEM och exempelprogrammet WKND S
 >
 >Det här dokumentet använder [WKND Spa Project-programmet](https://github.com/adobe/aem-guides-wknd-spa) endast i demonstrationssyfte. Använd inte för projektarbete.
 >
->Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) som stöder SPA-projekt med React eller Angular och använder SPA SDK.
+>Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE) som stöder SPA-projekt med React eller Angular och använder SPA SDK.
 
 ### Vad är en SPA? {#what-is-a-spa}
 
