@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c275e55834c2375fbc23d0bbc209760062e6c2bc
+source-git-commit: 0268920d3c4895a1c52fbc36f537a02d1424c2a4
 workflow-type: tm+mt
-source-wordcount: '6197'
+source-wordcount: '6243'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ En funktion som växlar felrapporterad API-status för sidhantering. Uppdatering
 * Startar Redigera visar nu lokaliserad feltext i stället för den hårdkodade `Provided path is not a launch`-strängen. Gränssnittet återger nu översatta meddelanden mellan språk när Edit (Redigera) får en ogiltig startsökväg. (SITES-33360)
 * AEM 6.5 LTS innehåller nu startfunktionen för OpenAPI. Uppdateringen innehåller startpaket för API, innehållspaket och nödvändiga Quickstart-artefakter i paritet och aktiverar Content Fragment Launches OpenAPI scenarios with stable CI validation. (SITES-32050)
 * Öppnar gränssnittet lokaliserar nu malletiketten Åsidosatt. Information om åsidosättning av mallar visar nu översatt text i stället för en sträng med enbart engelska. (SITES-29525)
-* En lokaliseringsnyckel som saknas i **Platser** > **Startar** > **Redigera** har åtgärdats av AEM. Användarna ser nu ett översatt felmeddelande i stället för strängen&quot;Det går inte att uppdatera startkällistan&quot;. (SITES-21499)
+* En lokaliseringsnyckel som saknas i **Platser** > **Startar** > **Redigera** har åtgärdats av AEM. Användarna ser nu ett översatt felmeddelande i stället för strängen &quot;Det gick inte att uppdatera källistan&quot;. (SITES-21499)
 * Startgränssnittet visar nu lokaliserade statusetiketter och åtgärder. I förhandsvisningsområdet visas översatt text för **Borttaget**, **Nytt** och **Visa** i stället för på engelska i Raw-format. (SITES-13540)
 * Startskapande visar nu lokaliserade felmeddelanden. Gränssnittet visar inte längre rå engelska strängar, som `Unable to create launch page`, `Source root resource is not a page` eller `Mandatory parameter is missing`. (SITES-13085)
 
@@ -322,7 +322,7 @@ AEM 6.5 LTS Service Pack 2 kräver S3 Connector 1.60.10 eller senare. S3-datalag
 
 #### Quickstart{#foundation-quickstart-65-lts-sp2}
 
-* Sling uppdaterar tillåtelselista för administratörsinloggning så att den omfattar även terminologi och nya konfigurations-PID:n. Den här ändringen överensstämmer med Sling JCR Base 3.2.0. GRANITE-63756
+* Sling uppdaterar tillåtelselista för administratörsinloggning så att den omfattar även terminologi och nya konfigurations-PID:n. Den här ändringen överensstämmer med Sling JCR Base 3.2.0. (63756)
 
   **Effekt**
 
@@ -386,12 +386,38 @@ Eclipse Jetty 11.0.x används som servermotor för QuickStart.
 
 ### Uberjar-förpackning {#uber-jar-packaging}
 
-* Det finns en liten skillnad i förpackningen till AEM 6.5 LTS. Mer information finns i [Uppdatera AEM Uber Jar-versionen](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
+UberJar för AEM 6.5 LTS SP2 använder AEM 6.5 LTS UberJar version 6.6.0. Du kan hämta motsvarande UberJar-artefakter från Maven Central Repository. Till skillnad från AEM 6.5 separerar AEM 6.5 LTS publika API:er och inaktuella API:er till två olika artefakter.
+
+Använd följande för att kompilera mot de offentliga API:erna:
+
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.0</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
+
+Om koden också är beroende av inaktuella API:er lägger du till följande:
+
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.0</version>
+    <classifier>deprecated-apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
+
+Se även [Uppdatera AEM Uber Jar-versionen](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 ### Uppgradera {#upgrade}
 
 * Mer information om uppgraderingsproceduren finns i [uppgraderingsdokumentationen](/help/sites-deploying/upgrade.md).
-* Detaljerade uppgraderingsinstruktioner finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/sv/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Mer information om uppgraderingar finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bästa tillvägagångssätt för AEM 6.5 LTS Service Pack-uppgraderingar
 
@@ -447,7 +473,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 ## Plattformar som stöds {#supported-platforms}
@@ -479,10 +505,10 @@ Kunderna rekommenderas att granska om de använder funktionen/funktionen i den a
 
 | Område | Funktion | Ersättning | Version (SP) |
 | --- | --- | --- | --- |
-| Quickstart | Mongo-API:er | Mongo-API:er är nu föråldrade och är planerade att tas bort i framtida versioner. | 6.5 TS SP2 |
-| Sites | Stöd för innehållsfragment i AEM Assets REST API | AEM 6.5 LTS SP2 innehåller moderna OpenAPI:er för Content Fragment och Model Management, så de äldre slutpunkterna för Content Fragment Support i AEM Assets REST API är nu inaktuella.<br>Adobe har för avsikt att hålla dessa äldre slutpunkter tillgängliga tills ett meddelande om att de har upphört att gälla. Adobe planerar inga ytterligare förbättringar för de borttagna slutpunkterna. | 6.5 LTS SP2 |
+| Snabbstart | Mongo API:er | Mongo API:er är nu föråldrade och planeras tas bort i framtida versioner. | 6.5 TS SP2 |
+| Sites | Stöd för Content Fragment i AEM Assets REST API | AEM 6.5 LTS SP2 har moderna OpenAPI:er för innehålls-, fragment- och modellhantering, så de äldre supportslutpunkterna för Content Fragment i AEM Assets REST API har nu tagits bort.<br>Adobe har för avsikt att ha de här äldre slutpunkterna tillgängliga till slutet av livscykeln. Adobe planerar inga ytterligare förbättringar av de inaktuella slutpunkterna. | 6.5 LTS SP2 |
 | Sites | [SPA-redigerare](/help/sites-developing/spa-overview.md) | De redigerare som rekommenderas för att hantera headless-innehåll i AEM är:<br>- [Universell redigerare](/help/sites-developing/universal-editor/introduction.md) för visuell redigering.<br>- [Innehållsfragmentredigeraren](/help/assets/content-fragments/content-fragments-managing.md) för formulärbaserad redigering. | 6,5 LTS GA |
-| [!DNL Foundation] | Stöd för com.adobe.granite.oauth.server | Integrering med Adobe IMS |  |
+| [!DNL Foundation] | Stöd för com.adobe.granite.oauth.server | Adobe IMS-integrering |  |
 
 ### Borttagna funktioner {#removed-features}
 
@@ -502,9 +528,9 @@ I det här avsnittet listas funktioner som har tagits bort från AEM 6.5 LTS. Ti
 | Granit | Paketet `com.adobe.granite.socketio` har tagits bort. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Granit | `com.adobe.granite.crx-explorer` stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Granit | `crx2oak` stöds inte. | Välj den relevanta versionen av [Oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
-| Adobe | `com.adobe.cq.cq-searchpromote-integration` stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
-| Guava | Alla guava-beroenden har nu tagits bort i AEM och därför ingår inte paketet `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` i AEM. | Kunderna kan själva lägga till guava om de är beroende av guava eller ersätta guava-kod med java-samlingar eller andra alternativ om det är möjligt. | 6,5 LTS GA |
-| `We.Retail` | `We-retail` exempelplats stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
+| Adobe | `com.adobe.cq.cq-searchpromote-integration` stöds inte. | Det finns ingen ersättning. | 6,5 LTS GA |
+| Guava | Alla guava-beroenden har nu tagits bort i AEM och därför ingår inte `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002`-paketet i AEM. | Kunderna kan lägga till guava på egen hand om de är beroende av guava eller ersätta guava kod med java samlingar eller andra alternativ om möjligt. | 6,5 LTS GA |
+| `We.Retail` | Exempelplatsen `We-retail` stöds inte. | Det finns ingen ersättning. | 6,5 LTS GA |
 | Öppna Source | Paketet `oak-solr-osgi` stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Öppna Source | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` och `org.apache.sling.atom.taglib` stöds inte. | Det finns ingen ersättningsprodukt. | 6,5 LTS GA |
 | Öppna Source | `org.apache.commons.io` paket exporteras nu från `org.apache.commons.commons-io`. | Ingen ändring krävs. | 6,5 LTS GA |
@@ -517,11 +543,11 @@ I det här avsnittet listas funktioner som har tagits bort från AEM 6.5 LTS. Ti
 
 ### Databasfel vid onlinekompaktion efter offlinekomprimering (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
-Användare kan uppleva att databasen skadas vid onlinekomprimering om offlinekomprimering tidigare har körts i JCR-databasen. En `SegmentNotFoundException` (SNFE) kan förekomma i det här scenariot och kan leda till att databasen skadas.
+Användare kan uppleva att databasen är skadad vid onlinekomprimering om offlinekomprimering tidigare har körts i JCR-databasen. En `SegmentNotFoundException` (SNFE) kan förekomma i det här scenariot och kan leda till att databasen skadas.
 
-Installera snabbkorrigeringen ( Package Manager) för att lösa problemet. Du kan hämta snabbkorrigeringen från [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Eftersom snabbkorrigeringen innehåller ett paket med `oak-segment-tar` på låg nivå startas instansen om efter installationen.
+Du löser problemet genom att installera programfixen från [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Eftersom snabbkorrigeringen innehåller ett paket med `oak-segment-tar` på låg nivå startas instansen om efter installationen.
 
-Planera till exempel driftstopp vid användning. För offlinekomprimering använder du motsvarande [ekrun jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) som också finns i Programvarudistribution.
+Planera för driftstopp för instansen när den används. För offlinekomprimering använder du motsvarande [ekrun jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) som också finns i Programvarudistribution.
 
 >[!NOTE]
 >
@@ -580,5 +606,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
