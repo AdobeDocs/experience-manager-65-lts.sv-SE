@@ -4,9 +4,9 @@ description: Läs om flexibiliteten i Universal Editor och hur det kan hjälpa d
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
+source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Universal Editor är en mångsidig visuell editor som ingår i Adobe Experience 
 * Författare drar nytta av den universella redigerarens flexibilitet. Det har stöd för samma enhetliga visuella redigering för alla former av AEM headless-innehåll.
 * Utvecklarna drar nytta av universella redigerares mångsidighet eftersom den även stöder en sann frikoppling av implementeringen. Det gör att utvecklare kan använda praktiskt taget vilket ramverk eller vilken arkitektur de vill, utan att det medför några begränsningar för SDK eller teknik.
 
-Mer information finns i [AEM as a Cloud Service-dokumentationen för Universal Editor](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+Mer information finns i [AEM as a Cloud Service-dokumentationen för Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 ## Arkitektur {#architecture}
 
@@ -39,15 +39,19 @@ Universell redigerare är en tjänst som fungerar tillsammans med AEM för att s
 Följande har stöd för Universal Editor:
 
 * AEM 6.5 LTS GA
-   * Både lokal värdtjänst och Adobe Managed Services (AMS) stöds.
-* [AEM 6.5](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-   * Både lokala värdtjänster och AMS-värdtjänster stöds.
-* [AEM as a Cloud Service](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (release `2023.8.13099` eller senare)
+   * Både lokal värdtjänst och Adobe Managed Services (AMS)* stöds.
+* [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+   * Både lokal värdtjänst och AMS* stöds.
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (release `2023.8.13099` eller senare)
 
 Det här dokumentet fokuserar på AEM 6.5 LTS-stöd i Universal Editor. Om du vill använda den universella redigeraren med AEM 6.5 LTS behöver du följande:
 
 * AEM 6.5 LTS GA
 * Dispatcher är korrekt konfigurerat
+
+>[!NOTE]
+>
+>*Om du använder Adobe Managed Services (AMS) kan du kontakta en Customer Success Engineer (CSE) om du vill använda Universal Editor.
 
 ## Inställningar {#setup}
 
@@ -136,15 +140,15 @@ Exempelmappningar:
 Med AEM uppdaterat och konfigurerat kan du skapa en lokal universell redigeringstjänst för lokal utveckling och testning.
 
 1. Installera Node.js version >=20.
-1. Hämta och packa upp den senaste universella redigeringstjänsten från [Programvarudistribution](https://experienceleague.adobe.com/sv/docs/experience-cloud/software-distribution/home)
+1. Hämta och packa upp den senaste universella redigeringstjänsten från [Programvarudistribution](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home)
 1. Konfigurera den universella redigeringstjänsten med hjälp av miljövariabler eller filen `.env`.
-   * [Mer information finns i dokumentationen för AEM as a Cloud Service Universal Editor.](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [Mer information finns i dokumentationen för AEM as a Cloud Service Universal Editor.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Observera att du kan behöva använda alternativet `UES_MAPPING` om intern IP-omskrivning krävs.
 1. Kör `universal-editor-service.cjs`
 
 ### Uppdatera Dispatcher {#update-dispatcher}
 
-Om AEM är konfigurerat och en lokal Universal Editor-tjänst körs måste du tillåta en omvänd proxy för den nya tjänsten [i Dispatcher.](https://experienceleague.adobe.com/sv/docs/experience-manager-dispatcher/using/dispatcher)
+Om AEM är konfigurerat och en lokal Universal Editor-tjänst körs måste du tillåta en omvänd proxy för den nya tjänsten [i Dispatcher.](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher)
 
 1. Justera författarinstansens värdfil så att den innehåller en omvänd proxy.
 
@@ -157,7 +161,7 @@ Om AEM är konfigurerat och en lokal Universal Editor-tjänst körs måste du ti
 
    >[!NOTE]
    >
-   >8080 är standardporten. Om du ändrade detta med parametern `UES_PORT` i [din `.env`-fil &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) måste du justera portvärdet här i enlighet med detta.
+   >8080 är standardporten. Om du ändrade detta med parametern `UES_PORT` i [din `.env`-fil ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) måste du justera portvärdet här i enlighet med detta.
 
 1. Starta om Apache.
 
@@ -165,7 +169,7 @@ Om AEM är konfigurerat och en lokal Universal Editor-tjänst körs måste du ti
 
 Med AEM uppdaterad och en lokal Universal Editor-tjänst kan du börja redigera headless-innehåll med hjälp av Universell Editor.
 
-Ditt program måste dock vara instrumenterat för att du ska kunna använda den universella redigeraren. Det innefattar att inkludera metataggar för att instruera redigeraren hur och var innehållet ska sparas. Information om den här instrumenteringen finns i [Universal Editor-dokumentationen för AEM as a Cloud Service.](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
+Ditt program måste dock vara instrumenterat för att du ska kunna använda den universella redigeraren. Det innefattar att inkludera metataggar för att instruera redigeraren hur och var innehållet ska sparas. Information om den här instrumenteringen finns i [Universal Editor-dokumentationen för AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
 
 Observera att följande dokumentation för Universal Editor med AEM as a Cloud Service gäller när du använder den med AEM 6.5 LTS.
 
@@ -185,7 +189,7 @@ Observera att följande dokumentation för Universal Editor med AEM as a Cloud S
 
 >[!TIP]
 >
->En omfattande utvecklarguide till Universal Editor finns i [Universal Editor Overview for AEM Developers](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) i AEM as a Cloud Service-dokumentationen. Observera ändringarna i AEM 6.5 LTS som beskrivs i detta avsnitt.
+>En omfattande utvecklarguide till Universal Editor finns i [Universal Editor Overview for AEM Developers](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) i AEM as a Cloud Service-dokumentationen. Observera ändringarna i AEM 6.5 LTS som beskrivs i detta avsnitt.
 
 ## Skillnader mellan AEM 6.5 LTS och AEM as a Cloud Service {#differences}
 
