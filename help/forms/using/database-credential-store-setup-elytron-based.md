@@ -4,13 +4,13 @@ description: JBoss EAP 8 har stöd för Elytron-autentiseringsarkiv för säker 
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: d7a9502b-8d6a-4d83-9b1f-0c82cbf34b70
+source-git-commit: 58f549aaf5f248c2382477790c825bba1d737137
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
-
 
 # Lagringsinställningar för databasautentiseringsuppgifter (Elytron-baserad)
 
@@ -186,5 +186,5 @@ Alla alias refererar till samma databaslösenord som lagras i arkivet för auten
 
 >[!NOTE]
 >
->* Konfigurera bara arkivet för autentiseringsuppgifter på den primära noden.
->* Sekundära noder använder automatiskt den domänkonfiguration som synkroniseras från den primära noden.
+>* Kopiera den arkivfil för autentiseringsuppgifter (cred-store.p12) som skapats på primär till var och en av slavnoderna.
+
