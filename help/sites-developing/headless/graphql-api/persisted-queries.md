@@ -265,7 +265,7 @@ Observera att `%3B` är UTF-8-kodning för `;` och `%3D` är kodning för `=`. F
 
 ## Cachelagra beständiga frågor {#caching-persisted-queries}
 
-Beständiga frågor rekommenderas eftersom de kan cachelagras på [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) - och CDN-lagren (Content Delivery Network), vilket i slutänden förbättrar prestandan för det begärande klientprogrammet.
+Beständiga frågor rekommenderas eftersom de kan cachelagras på [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE) - och CDN-lagren (Content Delivery Network), vilket i slutänden förbättrar prestandan för det begärande klientprogrammet.
 
 Som standard gör AEM cachen ogiltig baserat på en TTL-definition (Time To Live). Dessa TTL:er kan definieras med följande parametrar. Dessa parametrar kan nås på olika sätt, med variationer i namnen beroende på vilken mekanism som används:
 
