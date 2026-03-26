@@ -315,7 +315,7 @@ Dessa kan skrivas över:
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-* [ på nivån för beständig fråga](#cache-persisted-query-level). Detta innebär att frågan skickas till AEM med cURL i kommandoradsgränssnittet och att den beständiga frågan publiceras.
+* [&#x200B; på nivån för beständig fråga](#cache-persisted-query-level). Detta innebär att frågan skickas till AEM med cURL i kommandoradsgränssnittet och att den beständiga frågan publiceras.
 
 * [med en OSGi-konfiguration](#cache-osgi-configration)
 
