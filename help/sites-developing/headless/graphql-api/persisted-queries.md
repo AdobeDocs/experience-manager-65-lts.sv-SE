@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
 exl-id: 686d5510-8cdb-49eb-9ed0-f360be9bdc6d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 0%
@@ -71,7 +71,7 @@ GraphiQL IDE är den **föredragna** metoden för beständiga frågor. Så här 
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -117,7 +117,7 @@ GraphiQL IDE är den **föredragna** metoden för beständiga frågor. Så här 
 
    ```shell
    $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -143,7 +143,7 @@ GraphiQL IDE är den **föredragna** metoden för beständiga frågor. Så här 
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
        -d \
@@ -156,7 +156,7 @@ GraphiQL IDE är den **föredragna** metoden för beständiga frågor. Så här 
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
        -d \
@@ -169,7 +169,7 @@ GraphiQL IDE är den **föredragna** metoden för beständiga frågor. Så här 
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-parameters" \
        -d \
@@ -265,7 +265,7 @@ Observera att `%3B` är UTF-8-kodning för `;` och `%3D` är kodning för `=`. F
 
 ## Cachelagra beständiga frågor {#caching-persisted-queries}
 
-Beständiga frågor rekommenderas eftersom de kan cachelagras på [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE) - och CDN-lagren (Content Delivery Network), vilket i slutänden förbättrar prestandan för det begärande klientprogrammet.
+Beständiga frågor rekommenderas eftersom de kan cachelagras på [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) - och CDN-lagren (Content Delivery Network), vilket i slutänden förbättrar prestandan för det begärande klientprogrammet.
 
 Som standard gör AEM cachen ogiltig baserat på en TTL-definition (Time To Live). Dessa TTL:er kan definieras med följande parametrar. Dessa parametrar kan nås på olika sätt, med variationer i namnen beroende på vilken mekanism som används:
 
@@ -315,7 +315,7 @@ Dessa kan skrivas över:
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-* [&#x200B; på nivån för beständig fråga](#cache-persisted-query-level). Detta innebär att frågan skickas till AEM med cURL i kommandoradsgränssnittet och att den beständiga frågan publiceras.
+* [ på nivån för beständig fråga](#cache-persisted-query-level). Detta innebär att frågan skickas till AEM med cURL i kommandoradsgränssnittet och att den beständiga frågan publiceras.
 
 * [med en OSGi-konfiguration](#cache-osgi-configration)
 
