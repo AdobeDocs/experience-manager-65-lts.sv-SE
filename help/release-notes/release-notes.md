@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 68bcdfff6ea13c7d392991eba9df957bd5ab1523
+source-git-commit: a3d1ebd3e1c4adba80fb63f0138d662a6d056cc6
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6403'
 ht-degree: 0%
 
 ---
@@ -239,14 +239,18 @@ Assets Relate fungerar nu för filnamn som innehåller blanksteg. Uppdaterad Rel
 
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
 
-
 <!--
+#### Forms Designer-->
+
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
-#### Forms Designer
 
 #### Forms
 
+* I AEM Forms 6.5 LTS-klusterdistributioner på JBoss EAP 8 innehåller `domain/configuration/domain_oracle.xml` inte längre någon dubbletttagg `<security>` som orsakade ogiltig XML och förhindrar att domänkontrollanten startar. (FORMS-24687)
+* I körklart uppgraderingsläge tillämpas uppdateringen av databasporten i `lc_turnkey.xml` nu korrekt under uppgraderingen och refererar inte längre till det gamla portvärdet. (FORMS-24689)
+* När JBoss EAP 8.0 konfigureras i Linux orsakar inte längre gränssnittsskript som ändrats i Windows `/bin/sh^M: bad interpreter or $'\r': command not found` fel på grund av radslut i CRLF. (FORMS-2468)
+<!--
 #### Forms JEE 
 
 #### Forms Captcha {#forms-captcha-65-lts-sp2}
@@ -417,7 +421,7 @@ Se även [Uppdatera AEM Uber Jar-versionen](/help/sites-deploying/upgrading-code
 ### Uppgradera {#upgrade}
 
 * Mer information om uppgraderingsproceduren finns i [uppgraderingsdokumentationen](/help/sites-deploying/upgrade.md).
-* Detaljerade uppgraderingsinstruktioner finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/sv/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaljerade uppgraderingsinstruktioner finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bästa tillvägagångssätt för AEM 6.5 LTS Service Pack-uppgraderingar
 
@@ -473,7 +477,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 ## Plattformar som stöds {#supported-platforms}
@@ -541,6 +545,14 @@ I det här avsnittet listas funktioner som har tagits bort från AEM 6.5 LTS. Ti
 
 ## Kända fel {#known-issues}
 
+### AEM Forms
+
+* **FORMS-24690:** I Configuration Manager misslyckas databasinitieringen under bootstrap när AEM Forms 6.5 LTS JEE körs i turnkey-läge med anpassad konfiguration om ingen modul har valts.
+
+* **FORMS-24692:** E-posttjänsten kan misslyckas med att upprätta en TLS-socketanslutning, vilket gör att e-postleveransen misslyckas.
+
+* **FORMS-24741:** I AEM Forms 6.5 LTS JEE i Linux kan Configuration Manager misslyckas om OSFileSetIntendedFor inte har angetts korrekt. Uppdatera det till Linux i de konfigurationsfiler som krävs innan du kör Configuration Manager.
+
 ### Databasfel vid onlinekompaktion efter offlinekomprimering (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
 Användare kan uppleva att databasen är skadad vid onlinekomprimering om offlinekomprimering tidigare har körts i JCR-databasen. En `SegmentNotFoundException` (SNFE) kan förekomma i det här scenariot och kan leda till att databasen skadas.
@@ -606,5 +618,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
