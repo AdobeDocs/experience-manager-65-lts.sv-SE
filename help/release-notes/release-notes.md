@@ -5,12 +5,13 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 449f466473a3696d2ae8a7b91bd762765ddeac5b
+source-git-commit: f1dbf625f1cb42feaede7acb0dee073ac78ebab3
 workflow-type: tm+mt
-source-wordcount: '6983'
+source-wordcount: '7002'
 ht-degree: 0%
 
 ---
+
 
 # Aktuell versionsinformation för Adobe Experience Manager 6.5 LTS, SP2 {#release-notes}
 
@@ -43,6 +44,10 @@ ht-degree: 0%
 AEM 6.5 LTS SP2 innehåller nu OpenAPI:er för [Content Fragment och Model Management](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/) och [Launches](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/launches/). Dessa API:er ger åtkomst till innehållsfragment och starter för redigering och schemaläggning. De använder samma moderna OpenAPI:er som AEM as a Cloud Service.
 
 **AEM Forms**
+
+**Vad ingår i AEM Forms 6.5 LTS SP2**
+
+* Stöd för RDBMK med JBOSS EAP 8.0  har lagts till.
 
 * Förbättrad användarupplevelse i den visuella regelredigeraren. Uppdateringen innehåller:
 
@@ -463,7 +468,7 @@ Se även [Uppdatera AEM Uber Jar-versionen](/help/sites-deploying/upgrading-code
 ### Uppgradera {#upgrade}
 
 * Mer information om uppgraderingsproceduren finns i [uppgraderingsdokumentationen](/help/sites-deploying/upgrade.md).
-* Detaljerade uppgraderingsinstruktioner finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/sv/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaljerade uppgraderingsinstruktioner finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bästa tillvägagångssätt för AEM 6.5 LTS Service Pack-uppgraderingar
 
@@ -519,7 +524,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 ## Plattformar som stöds {#supported-platforms}
@@ -658,5 +663,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
