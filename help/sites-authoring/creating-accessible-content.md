@@ -235,7 +235,7 @@ Exakta detaljer om hur du skapar ljudbeskrivad video ligger utanför den här ha
 * [Så här uppfyller du kriterierna 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/se/products/encore.html) - a DVD authoring software tool
 -->
 
 ### Bildtexter (Live) (1.2.4)  {#captions-live}

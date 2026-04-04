@@ -127,7 +127,7 @@ Med ett offentligt certifikat kan du autentisera din profil på Adobe Developer 
 
    >[!NOTE]
    >
-   >URL:en som angetts som [!UICONTROL Service URL] är inte tillgänglig via webbläsaren och genererar ett 404-fel. Konfigurationen fungerar korrekt med samma värde som parametern [!UICONTROL Service URL]. Den övergripande servicestatusen och underhållsschemat finns på [https://status.adobe.com](https://status.adobe.com).
+   >URL:en som angetts som [!UICONTROL Service URL] är inte tillgänglig via webbläsaren och genererar ett 404-fel. Konfigurationen fungerar korrekt med samma värde som parametern [!UICONTROL Service URL]. Den övergripande servicestatusen och underhållsschemat finns på [https://status.adobe.com/sv-se](https://status.adobe.com/sv-se).
 
 1. Klicka på **[!UICONTROL Download Public Certificate for OAuth Integration]** och hämta den offentliga certifikatfilen `AEM-SmartTags.crt`. Dessutom behöver du inte längre överföra det här certifikatet till Adobe utvecklarkonsol.
 

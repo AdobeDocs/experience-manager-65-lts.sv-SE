@@ -24,7 +24,7 @@ Om du vill överföra filer till [!DNL Experience Manager Assets] som du har ska
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] erbjuds som två separata erbjudanden. [Adobe InDesign](https://www.adobe.com/products/indesign.html) som används för att utforma sidlayouter för tryck och digital distribution. Med [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) kan du skapa automatiserade dokument med programkod baserat på vad du har skapat med [!DNL InDesign]. Det fungerar som en tjänst som erbjuder ett gränssnitt till dess [ExtendScript](https://helpx.adobe.com/se/indesign/using/scripting.html)-motor. Skripten skrivs i [!DNL ExtendScript], som liknar [!DNL JavaScript].
+>[!DNL Adobe InDesign] erbjuds som två separata erbjudanden. [Adobe InDesign](https://www.adobe.com/se/products/indesign.html) som används för att utforma sidlayouter för tryck och digital distribution. Med [Adobe InDesign Server](https://www.adobe.com/se/products/indesignserver.html) kan du skapa automatiserade dokument med programkod baserat på vad du har skapat med [!DNL InDesign]. Det fungerar som en tjänst som erbjuder ett gränssnitt till dess [ExtendScript](https://helpx.adobe.com/se/indesign/using/scripting.html)-motor. Skripten skrivs i [!DNL ExtendScript], som liknar [!DNL JavaScript].
 
 ## Hur extraheringen fungerar {#how-the-extraction-works}
 
@@ -238,4 +238,4 @@ Du kan ändra administratörens standardautentiseringsuppgifter (användarnamn o
 
 >[!MORELIKETHIS]
 >
->* [Om Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+>* [Om Adobe InDesign Server](https://www.adobe.com/se/products/indesignserver/faq.html)
