@@ -297,7 +297,7 @@ Om du redigerar målinnehåll måste du klicka på **Starta målanpassning** inn
    >Administratörer kan bestämma om den här konfigurationen måste anges på **https://&lt;värd>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   >Om du vill att användare ska ange en plats markerar du kryssrutan **Tvinga plats **.
+   >Om du vill att användare ska ange en plats markerar du kryssrutan **Tvinga plats &#x200B;**.
 
 1. Välj den upplevelse som du vill skapa erbjudandet för.
 1. Skapa erbjudandet:

@@ -108,7 +108,7 @@ Varje användare kan ange vissa egenskaper för sig själv.
 
 * **Använd klassisk redigeringsmiljö**
 
-  Med det här alternativet aktiveras [klassisk gränssnittsbaserad ](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-sidredigering. Standardgränssnittet används som standard.
+  Med det här alternativet aktiveras [klassisk gränssnittsbaserad &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-sidredigering. Standardgränssnittet används som standard.
 
 * **Aktivera Assets hemsida**
 

@@ -65,7 +65,7 @@ På-/avaktiveringstiden för en sida är ett praktiskt sätt att tillfälligt d�
 * **I tid** - Det datum och den tidpunkt då den publicerade sidan visas (återges) i publiceringsmiljön. Sidan måste publiceras, antingen manuellt eller med förkonfigurerad automatisk replikering.
 
    * Om den redan är [publicerad](/help/sites-authoring/publishing-pages.md) är den här sidan tillgänglig på publiceringsinstansen, men den behåller vilande (dold) tills återgivningen sker vid den angivna tidpunkten.
-   * Om den inte publiceras och [konfigureras för automatisk replikering ](/help/sites-deploying/replication.md) publiceras sidan automatiskt och återges sedan vid den angivna tidpunkten.
+   * Om den inte publiceras och [konfigureras för automatisk replikering &#x200B;](/help/sites-deploying/replication.md) publiceras sidan automatiskt och återges sedan vid den angivna tidpunkten.
    * Om sidan inte är publicerad och inte konfigurerad för automatisk replikering publiceras den inte automatiskt. Därför visas 404 när ett försök görs att komma åt sidan.
 
 * **Fråntid** - Ungefär som och ofta används i kombination med **På tid**, definierar detta den tidpunkt då den publicerade sidan döljs i publiceringsmiljön.
@@ -203,7 +203,7 @@ Använd fliken **Behörigheter** för att definiera vilka användare, grupper el
 
 >[!CAUTION]
 >
->På fliken **Behörigheter** kan du redigera CUG-konfigurationer baserat på förekomsten av `granite:AuthenticationRequired`-mixinen. Om sidbehörigheter konfigureras med inaktuella CUG-konfigurationer, baserat på förekomsten av egenskapen `cq:cugEnabled`, visas ett varningsmeddelande och CUG-behörigheterna kan inte redigeras. Autentiseringskravet på fliken [ Avancerat](/help/sites-authoring/editing-page-properties.md#advanced) kan inte heller redigeras.
+>På fliken **Behörigheter** kan du redigera CUG-konfigurationer baserat på förekomsten av `granite:AuthenticationRequired`-mixinen. Om sidbehörigheter konfigureras med inaktuella CUG-konfigurationer, baserat på förekomsten av egenskapen `cq:cugEnabled`, visas ett varningsmeddelande och CUG-behörigheterna kan inte redigeras. Autentiseringskravet på fliken [&#x200B; Avancerat](/help/sites-authoring/editing-page-properties.md#advanced) kan inte heller redigeras.
 >
 >
 >I så fall måste CUG-behörigheterna redigeras i det [klassiska användargränssnittet](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -223,7 +223,7 @@ Den här fliken visas bara för sidor som fungerar som utkast. Utkast fungerar s
 
 ### Live Copy {#live-copy}
 
-Den här fliken visas bara för sidor som har konfigurerats som live-kopior. Precis som med [utkast är ](#blueprint) Live-kopior en del av [Multi Site Management (Hantering av flera webbplatser).](/help/sites-administering/msm.md)
+Den här fliken visas bara för sidor som har konfigurerats som live-kopior. Precis som med [utkast är &#x200B;](#blueprint) Live-kopior en del av [Multi Site Management (Hantering av flera webbplatser).](/help/sites-administering/msm.md)
 
 * **Synkronisera** - Synkroniserar Live-kopia med utkast, med lokala ändringar
 * **Återställ** - Återställer Live Copy till läget för utkast och tar bort lokala ändringar

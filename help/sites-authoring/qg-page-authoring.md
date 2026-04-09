@@ -126,7 +126,7 @@ Hur du väljer en sida beror på vilken vy du använder i konsolen:
 
 [Snabbåtgärder](/help/sites-authoring/basic-handling.md#quick-actions) är tillgängliga:
 
-1. [Navigera till sidan ](#finding-your-page) som du vill vidta åtgärder på.
+1. [Navigera till sidan &#x200B;](#finding-your-page) som du vill vidta åtgärder på.
 1. Håll muspekaren över kortet som representerar den resurs du behöver. Snabbåtgärderna visas:
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)

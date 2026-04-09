@@ -41,7 +41,7 @@ Om du vill visa information om en viss komponent klickar du på den önskade res
   På fliken Egenskaper kan du:
 
    * Visa komponentens allmänna egenskaper.
-   * Visa hur ikonen eller förkortningen [ har definierats ](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) för komponenten.
+   * Visa hur ikonen eller förkortningen [&#x200B; har definierats &#x200B;](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) för komponenten.
 
       * Om du klickar på ikonens källa kommer du till den komponenten.
 

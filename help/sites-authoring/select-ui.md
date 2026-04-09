@@ -27,7 +27,7 @@ Detta anger att användargränssnittet ska vara standard när sidor redigeras, m
 * [Växlar till det klassiska användargränssnittet för den aktuella sessionen](#switching-to-classic-ui-for-the-current-session)
 Växlar till det klassiska användargränssnittet för den aktuella sessionen.
 
-* När det gäller [sidredigering gör systemet vissa åsidosättningar i relation till användargränssnittet ](#ui-overrides-for-the-editor).
+* När det gäller [sidredigering gör systemet vissa åsidosättningar i relation till användargränssnittet &#x200B;](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >

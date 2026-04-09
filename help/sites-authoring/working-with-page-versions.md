@@ -195,7 +195,7 @@ Så här jämför du en tidigare version med den aktuella sidan:
 
    ![Sidversioner visas - välj version](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Välj **Jämför med aktuell**. [Sidskillnaden ](/help/sites-authoring/page-diff.md) öppnas och skillnaderna visas.
+1. Välj **Jämför med aktuell**. [Sidskillnaden &#x200B;](/help/sites-authoring/page-diff.md) öppnas och skillnaderna visas.
 
 ## Timewarp {#timewarp}
 

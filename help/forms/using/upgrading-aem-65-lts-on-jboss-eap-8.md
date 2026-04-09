@@ -22,7 +22,7 @@ Den här guiden innehåller stegvisa instruktioner för uppgradering av en befin
 >
 >Det här är en kritisk uppgraderingsprocedur. Utför alltid uppgraderingen i en icke-produktionsmiljö först och upprätthåll fullständiga säkerhetskopior.
 >
-> ** FÖRUTSÄTTNINGAR:** Fullständig säkerhetskopiering av systemet och en dokumenterad återställningsplan är obligatoriska innan du fortsätter.
+> **&#x200B; FÖRUTSÄTTNINGAR:** Fullständig säkerhetskopiering av systemet och en dokumenterad återställningsplan är obligatoriska innan du fortsätter.
 
 ## Krav före uppgradering
 

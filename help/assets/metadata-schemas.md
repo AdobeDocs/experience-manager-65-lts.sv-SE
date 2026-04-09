@@ -141,7 +141,7 @@ Om du väljer alternativet **[!UICONTROL Required]** kan du söka efter resurser
 
 Om du lägger till komponenten Sammanhangsbaserade metadata på en flik i ett schemaformulär, visas komponenten som en lista på egenskapssidan med resurser som det aktuella schemat används på. Listan innehåller alla andra flikar förutom den flik som du tillämpade på komponenten Sammanhangsberoende metadata på. För närvarande innehåller den här funktionen grundläggande funktioner för att styra visningen av metadata baserat på sammanhanget.
 
-![Sammanhangsberoende metadatakomponentflikar för resursegenskaper ](assets/metadata-contextual-component-list.png)
+![Sammanhangsberoende metadatakomponentflikar för resursegenskaper &#x200B;](assets/metadata-contextual-component-list.png)
 
 Om du vill visa en flik på egenskapssidan förutom fliken där komponenten Sammanhangsberoende metadata används, väljer du fliken i listan. Fliken läggs till på egenskapssidan.
 

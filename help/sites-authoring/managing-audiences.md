@@ -65,7 +65,7 @@ När du använder mer än en regel kombineras dessa regler av operatorn AND, vil
 
 >[!NOTE]
 >
->Om du inte ser **Create Target Audience **på menyn **Create** har du inte de behörigheter som krävs för att skapa en målgrupp. Du behöver skrivbehörighet under **/etc/segmentering** för att kunna skapa målgrupper. Gruppens innehållsförfattare har skrivbehörighet som standard.
+>Om du inte ser **Create Target Audience &#x200B;** på menyn **Create** har du inte de behörigheter som krävs för att skapa en målgrupp. Du behöver skrivbehörighet under **/etc/segmentering** för att kunna skapa målgrupper. Gruppens innehållsförfattare har skrivbehörighet som standard.
 
 Så här skapar du en Adobe Target-publik:
 
@@ -73,7 +73,7 @@ Så här skapar du en Adobe Target-publik:
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. I publikkonsolen klickar du på **Skapa** och sedan** Skapa målpublik**.
+1. I publikkonsolen klickar du på **Skapa** och sedan **&#x200B; Skapa målpublik**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 

@@ -474,7 +474,7 @@ I **strukturläge** i mallredigeraren:
 
   >[!NOTE]
   >
-  >[Innehållsprinciper för komponenter som implementerar textredigeraren](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) kan bara definieras för alternativ som är tillgängliga för textredigeraren via dess gränssnittsinställningar. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Innehållsprinciper för komponenter som implementerar textredigeraren](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) kan bara definieras för alternativ som är tillgängliga för textredigeraren via dess gränssnittsinställningar. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Princip och egenskaper (layoutbehållare)**
 
@@ -566,7 +566,7 @@ I **strukturläge** i mallredigeraren:
 
 >[!NOTE]
 >
->**Inledande innehåll** kan användas för redigeringsläge för sidor som skapas med den mallen. Profiler definieras därför inte i **Inledande innehåll** utan i [**Struktur** ](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) .
+>**Inledande innehåll** kan användas för redigeringsläge för sidor som skapas med den mallen. Profiler definieras därför inte i **Inledande innehåll** utan i [**Struktur** &#x200B;](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) .
 
 * Olåsta komponenter som är tillgängliga för redigering markeras. När de är markerade har de en blå kantlinje:
 

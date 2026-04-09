@@ -227,7 +227,7 @@ När du skapar projektet och lägger till användare till de olika rollerna skap
 
 Ett projekt med namnet Myproject skulle till exempel ha tre grupper, **MyProject Owners**, **MyProject Editors**, **MyProject Observers**.
 
-Om projektet tas bort tas dessa grupper endast bort om du väljer lämpligt alternativ [ när du tar bort projektet.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) En administratör kan även ta bort grupper manuellt i **Verktyg** > **Dokumentskydd** > **Grupper**.
+Om projektet tas bort tas dessa grupper endast bort om du väljer lämpligt alternativ [&#x200B; när du tar bort projektet.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) En administratör kan även ta bort grupper manuellt i **Verktyg** > **Dokumentskydd** > **Grupper**.
 
 ## Ytterligare resurser {#additional-resources}
 

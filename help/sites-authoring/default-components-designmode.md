@@ -43,7 +43,7 @@ Innehållet på en produktsida kan till exempel innehålla ett styckesystem som 
 
 >[!NOTE]
 >
->Mer information om [ finns i ](/help/sites-developing/components.md)Utveckla komponenter[ och ](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)Riktlinjer för användning av mallar och komponenter`parsys`.
+>Mer information om [&#x200B; finns i &#x200B;](/help/sites-developing/components.md)Utveckla komponenter[&#x200B; och &#x200B;](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)Riktlinjer för användning av mallar och komponenter`parsys`.
 
 >[!CAUTION]
 >
