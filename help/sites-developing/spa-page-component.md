@@ -92,7 +92,7 @@ Meta-resursegenskaperna som beskriver SPA-innehållet:
 >
 >Det här dokumentet använder appen We.Retail Journal endast i demonstrationssyfte. Använd inte för projektarbete.
 >
->Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), som stöder SPA-projekt med React eller Angular och använder SPA SDK. Alla SPA-projekt på AEM ska baseras på Maven Archetype för SPA Starter Kit.
+>Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE), som stöder SPA-projekt med React eller Angular och använder SPA SDK. Alla SPA-projekt på AEM ska baseras på Maven Archetype för SPA Starter Kit.
 
 ## Synkronisering av sidredigeringsövertäckning {#page-editor-overlay-synchronization}
 

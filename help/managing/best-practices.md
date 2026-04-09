@@ -183,7 +183,7 @@ Att planera utvecklingsarbetet är avgörande för att säkerställa att projekt
 
    * Processer för varje miljö, t.ex. krav på driftsättning och underhåll
    * Underhållsaktiviteter (Datastore GC, TarPM-optimering och så vidare)
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)-cachelagring
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE)-cachelagring
    * [Klustring](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publicera/författarresurs
    * Prestanda för klientsidan (JS minify, concat, css sprites, total number of http requests, and others)
 
@@ -234,7 +234,7 @@ Att planera utvecklingsarbetet är avgörande för att säkerställa att projekt
 
   Innan utveckling bör alla supportprocesser som krävs för att driftsätta, frisläppa, testa och rapportera problem fastställas.
 
-  Se även [Adobe supportportal](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support).
+  Se även [Adobe supportportal](https://experienceleague.adobe.com/sv?support-solution=General&support-tab=home#support).
 
 ### Planering och drift {#operations-planning-and-operations}
 
@@ -623,8 +623,8 @@ Dessutom är följande avsnitt av AEM dokumentation av särskilt intresse (lista
 
       * [Utveckla - grunderna](/help/sites-developing/the-basics.md)
       * [MSM-koncept](/help/sites-administering/msm.md)
-      * [HTML-mallspråk (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+      * [HTML-mallspråk (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE)
 
 * Relaterad dokumentation
 
-   * Adobe Experience Cloud - [Planering för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [Planering för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=sv-SE)

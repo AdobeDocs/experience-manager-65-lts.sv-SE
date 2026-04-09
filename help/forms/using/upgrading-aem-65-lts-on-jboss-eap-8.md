@@ -550,8 +550,8 @@ Om uppgraderingen misslyckas och inte kan lösas:
 ## Relaterad dokumentation
 
 - [Migreringshandbok för JBoss EAP 8](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- [Adobe Experience Manager 6.5 - uppgraderingshandbok](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
-- [AEM installerar Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+- [Adobe Experience Manager 6.5 - uppgraderingshandbok](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=sv-SE)
+- [AEM installerar Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=sv-SE)
 
 ## Dokumentinformation
 

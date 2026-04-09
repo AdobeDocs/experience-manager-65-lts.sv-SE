@@ -50,7 +50,7 @@ Vilken som är den lämpligaste ersättningen för SPA-redigeraren beror på din
 
 * **[Den universella redigeraren](/help/sites-developing/universal-editor/introduction.md)** är den bästa direkta ersättningen för SPA-redigeraren.
    * Universal Editor är också en visuell redigerare och har tagits fram specifikt för fristående implementeringar som innehåller all Adobe-funktionalitet från SPA Editor.
-   * Den universella redigeraren har också [släppts för AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) och stöder därför både AMS- och lokala användningsfall utöver molntjänster.
+   * Den universella redigeraren har också [släppts för AEM as a Cloud Service](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) och stöder därför både AMS- och lokala användningsfall utöver molntjänster.
 * **[Innehållsfragmentsredigeraren](/help/assets/content-fragments/content-fragments-managing.md)** är ett alternativ för dem som föredrar en formulärbaserad redigerare.
    * Innehållsfragmentsredigeraren passar bäst när innehållet är strukturerat som innehållsfragment i stället för som sidor.
 
@@ -64,7 +64,7 @@ Universell redigerare har många fördelar, vilket gör migrering till en bra l�
 * **Framtidsgranskning:** AEM färdplan prioriterar den universella redigeraren som visuell redigerare. Genom att använda det får du tillgång till de senaste innovationerna och förbättringarna.
 * **Förenklad integrering:** Det krävs ingen AEM-specifik SDK för att använda den universella redigeraren, vilket reducerar tilllåsning av högtalarsystem.
 * **Använd din egen app:** Den universella redigeraren har stöd för alla webbramverk och -arkitekturer, vilket gör att du kan börja använda programmet utan att behöva göra en komplex omfaktorisering.
-* **Utbyggbarhet:** Den universella redigeraren drar nytta av ett robust [tilläggsramverk,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) inklusive integreringar med GenAI, Workfront med flera.
+* **Utbyggbarhet:** Den universella redigeraren drar nytta av ett robust [tilläggsramverk,](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) inklusive integreringar med GenAI, Workfront med flera.
 
 Det finns ingen direkt migreringsväg från SPA-redigeraren till den universella redigeraren. Detta beror på de två teknikernas grundläggande skillnader.
 

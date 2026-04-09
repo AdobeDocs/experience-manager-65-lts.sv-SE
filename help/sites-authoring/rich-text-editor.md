@@ -16,8 +16,8 @@ ht-degree: 0%
 
 RTE (Rich Text Editor) är en grundläggande byggsten för att infoga textinnehåll i AEM. Den utgör grunden för olika komponenter, bland annat följande:
 
-* [Text](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
-* [Tabell](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [Text](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/wcm-components/text)
+* [Tabell](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Direktredigering {#in-place-editing}
 

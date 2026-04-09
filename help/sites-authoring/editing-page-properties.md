@@ -41,7 +41,7 @@ Egenskaperna fördelas på flera flikar.
 
 #### Varumärke {#branding}
 
-Använd en enhetlig varumärkesidentitet på alla sidor genom att lägga till en instruktionsmarginal till varje sidrubrik. Den här funktionen kräver att du använder Page Component från version 2.14.0 eller senare av [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+Använd en enhetlig varumärkesidentitet på alla sidor genom att lägga till en instruktionsmarginal till varje sidrubrik. Den här funktionen kräver att du använder Page Component från version 2.14.0 eller senare av [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE)
 
 * **Åsidosätt** - Markera för att definiera instruktionsmarginalen för varumärket på den här sidan.
    * Värdet ärvs av alla underordnade sidor såvida inte deras **Åsidosätt**-värden också har angetts.
@@ -95,7 +95,7 @@ Om Vanity-URL:en till exempel är inställd på `welcome` till den sida som iden
 >* Använd inte regex-mönster.
 >* Ska inte anges till en befintlig sida.
 
-Konfigurera Dispatcher för att aktivera åtkomst till mål-URL:er. Mer information finns i [Aktivera åtkomst till Vanity-URL:er](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls).
+Konfigurera Dispatcher för att aktivera åtkomst till mål-URL:er. Mer information finns i [Aktivera åtkomst till Vanity-URL:er](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#enabling-access-to-vanity-urls-vanity-urls).
 
 * **Lägg till** - Tryck eller klicka för att lägga till en fågel-URL.
 * **Ta bort** - Tryck eller klicka för att ta bort en fågel-URL.
@@ -195,7 +195,7 @@ Välj ett [varumärke om du vill ange ett omfång för målanpassning.](/help/si
 
 ### Behörigheter {#permissions}
 
-Använd fliken **Behörigheter** för att definiera vilka användare, grupper eller [stängda användargrupper (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) som kan komma åt och/eller ändra sidan.
+Använd fliken **Behörigheter** för att definiera vilka användare, grupper eller [stängda användargrupper (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=sv-SE) som kan komma åt och/eller ändra sidan.
 
 * [Lägg till behörigheter](/help/sites-administering/user-group-ac-admin.md)
 * [Redigera stängd användargrupp](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)

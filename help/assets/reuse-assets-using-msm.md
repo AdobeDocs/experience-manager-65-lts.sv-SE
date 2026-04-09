@@ -19,7 +19,7 @@ ht-degree: 9%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=sv-SE) |
 | AEM 6.5 | Den här artikeln |
 
 MSM-funktionaliteten (Multi Site Manager) i [!DNL Adobe Experience Manager] gör att användare kan återanvända innehåll som har skapats en gång och återanvänds på flera webbplatser. Samma sak är tillgängligt för digitala resurser som MSM för funktionen [!DNL Assets]. Med MSM för [!DNL Assets] kan du:

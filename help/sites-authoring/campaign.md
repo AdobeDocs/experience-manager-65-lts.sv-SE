@@ -260,7 +260,7 @@ På så sätt kan ni leverera innehållet. Du ser om ett nyhetsbrev är länkat 
 
 Så här länkar du en sida som skapats i AEM med ett e-postmeddelande från Adobe Campaign:
 
-1. Skapa ett e-postmeddelande baserat på en AEM-specifik e-postmall. Mer information finns i [Skapa e-postmeddelanden i Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html).
+1. Skapa ett e-postmeddelande baserat på en AEM-specifik e-postmall. Mer information finns i [Skapa e-postmeddelanden i Adobe Campaign Standard](https://helpx.adobe.com/se/campaign/standard/channels/using/creating-an-email.html).
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

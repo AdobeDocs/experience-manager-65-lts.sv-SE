@@ -59,7 +59,7 @@ Följande diagram visar arkitekturen i Style System.
 
 ## Använd {#use}
 
-För att demonstrera funktionen använder vi [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)-implementeringen av kärnkomponentens [title-komponent](https://www.adobe.com/go/aem_cmp_title_v2) som exempel.
+För att demonstrera funktionen använder vi [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)-implementeringen av kärnkomponentens [title-komponent](https://www.adobe.com/go/aem_cmp_title_v2) som exempel.
 
 I följande avsnitt [Som innehållsförfattare](#as-a-content-author) och [&#x200B; som mallskapare](#as-a-template-author) beskrivs hur du testar funktionaliteten i Style System med Style System of WKND.
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >GDPR används som exempel i avsnitten nedan, men de ingående detaljerna gäller alla dataskydds- och sekretessbestämmelser, såsom GDPR och CCPA.
 
-Europeiska unionens allmänna dataskyddsförordning om integritetsskydd får verkan från och med maj 2018. Se sidan [GDPR på Adobe Privacy Center](https://business.adobe.com/privacy/general-data-protection-regulation.html).
+Europeiska unionens allmänna dataskyddsförordning om integritetsskydd får verkan från och med maj 2018. Se sidan [GDPR på Adobe Privacy Center](https://business.adobe.com/se/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >

@@ -176,8 +176,8 @@ Du kan anropa [batch-API:t](https://developer.adobe.com/experience-manager/refer
 Innan du distribuerar Java™-servern måste du se till att du har en interaktiv kommunikation och att motsvarande datafiler är klara. Så här skapar och distribuerar du Java™-servleten:
 
 1. Logga in på din AEM-instans och skapa en interaktiv kommunikation. [Klicka här](assets/SimpleMediumIC.zip) om du vill använda den interaktiva kommunikation som anges i exempelkoden nedan.
-1. [Skapa och distribuera ett AEM-projekt med Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) på din AEM-instans.
-1. Lägg till [AEM Forms Client SDK version 6.0.12 eller senare](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) i listan över beroenden för POM-filen i ditt AEM-projekt. Exempel:
+1. [Skapa och distribuera ett AEM-projekt med Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=sv-SE) på din AEM-instans.
+1. Lägg till [AEM Forms Client SDK version 6.0.12 eller senare](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) i listan över beroenden för POM-filen i ditt AEM-projekt. Exempel:
 
    ```xml
        <dependency>
@@ -327,7 +327,7 @@ Innan du distribuerar Java™-servern måste du se till att du har en interaktiv
    * När du anger WEB-alternativet genereras en JSON-fil per post. Du kan använda JSON-filen för att [förifylla en webbmall](#web-template).
    * När du anger både PRINT- och WEB-alternativ genereras både PDF-dokument och en JSON-fil per post.
 
-1. [Använd maven för att distribuera den uppdaterade koden till din AEM-instans](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
+1. [Använd maven för att distribuera den uppdaterade koden till din AEM-instans](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=sv-SE).
 1. Om du vill generera den interaktiva kommunikationen anropar du batch-API:t. Batch-API-utskriften returnerar en ström av PDF- och JSON-filer beroende på antalet poster. Du kan använda JSON-filen för att [förifylla en webbmall](#web-template). Om du använder ovanstående kod distribueras API:t på `http://localhost:4502/bin/batchServlet`. Koden skriver ut och returnerar en ström av en PDF- och en JSON-fil.
 
 ### Fyll i en webbmall i förväg {#web-template}
@@ -363,4 +363,4 @@ Förutom att spara data i filsystemet kan du lagra JSON-filer i CRX-databasen, f
 
 >[!NOTE]
 >
->Endast CRX-protokoll är aktiverat som standard. Information om hur du aktiverar andra protokoll som stöds finns i [Konfigurera förifyllningstjänsten med Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Endast CRX-protokoll är aktiverat som standard. Information om hur du aktiverar andra protokoll som stöds finns i [Konfigurera förifyllningstjänsten med Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=sv-SE).
