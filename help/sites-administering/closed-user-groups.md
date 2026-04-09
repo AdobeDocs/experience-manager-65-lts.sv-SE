@@ -10,9 +10,9 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '6662'
+source-wordcount: '6654'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Den nya implementeringen har utformats för att skapa en gräns mellan autentise
 
 På samma sätt kan ett visst träd markeras med ett autentiseringskrav utan att ändra den gällande behörighetsinställningen. Kombinationerna och resultaten visas i avsnittet [Kombinera CUG-principer och autentiseringskrav](/help/sites-administering/closed-user-groups.md#combining-cug-policies-and-the-authentication-requirement).
 
-## Ökning {#overview}
+## Översikt {#overview}
 
 ### Behörighet: Begränsa läsåtkomst {#authorization-restricting-read-access}
 
@@ -68,7 +68,7 @@ Implementeringen av PrincipalSetPolicy som används för att representera CUG:er
 * CUG-principer kan kapslas, en kapslad CUG startar en ny CUG utan att ärva huvuduppsättningen i CUG-filen för överordnad.
 * Om utvärdering är aktiverat ärvs effekten av principen till hela underträdet ned till nästa kapslade CUG.
 
-Dessa CUG-principer distribueras till en AEM-instans via en separat autentiseringsmodul som kallas ekaauktoriseringskug. Den här modulen har en egen åtkomststyrningshantering och behörighetsutvärdering. Med andra ord, standardkonfigurationen för AEM levereras en konfiguration för Oak innehållsdatabas som kombinerar flera auktoriseringsmekanismer. Mer information finns på [den här sidan i dokumentationen för Apache Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
+Dessa CUG-principer distribueras till en AEM-instans via en separat autentiseringsmodul som kallas ekaauktoriseringskug. Den här modulen har en egen åtkomststyrningshantering och behörighetsutvärdering. Med andra ord, standardkonfigurationen för AEM levereras en konfiguration för Oak innehållsdatabas som kombinerar flera auktoriseringsmekanismer. Mer information finns på [den här sidan i dokumentationen för Apache Oak ](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
 
 I den här sammansatta konfigurationen ersätter inte en ny CUG det befintliga åtkomstkontrollsinnehållet som är kopplat till målnoden. Det är i stället ett tillägg som också kan tas bort senare utan att den ursprungliga åtkomstkontrollen påverkas. Som standard är det en åtkomstkontrollista i AEM.
 
@@ -688,7 +688,7 @@ Nya installationer av AEM använder som standard de nya implementeringarna både
 |---|---|
 | Sökvägar som stöds `/content` | Åtkomststyrningshantering för CUG-principer är aktiverat. |
 | CUG-utvärdering aktiverad FALSE | Utvärdering av behörighet är inaktiverad. CUG-profiler träder inte i kraft. |
-| Rankning | 200 | Se Oak dokumentation. |
+| Rankning \|200 | Se Oak dokumentation. |
 
 >[!NOTE]
 >
@@ -700,7 +700,7 @@ Nya installationer av AEM använder som standard de nya implementeringarna både
 |---|---|
 | Sökvägar som stöds `/content` | Åtkomststyrningshantering för CUG-principer aktiveras under de konfigurerade sökvägarna. |
 | CUG Evaluation Enabled TRUE | Behörighetsutvärderingen aktiveras under de konfigurerade sökvägarna. CUG-profiler börjar gälla `Session.save()`. |
-| Rankning | 200 | Se Oak dokumentation. |
+| Rankning \|200 | Se Oak dokumentation. |
 
 | **&quot;Exkluderingslista för Apache Jackrabbit Oak CUG&quot;** | **Förklaring** |
 |---|---|
@@ -802,7 +802,7 @@ Den här förändringen från kvarvarande JCR-egenskaper till en dedikerad åtko
 
 Skapa CUG-principer på JCR-noden som definierar det underträd som ska ha begränsad läsåtkomst. Detta är sannolikt en AEM-sida om CUG förväntas påverka hela trädet.
 
-Om du placerar CUG-principen endast vid jcr:content-noden under en viss sida, begränsas endast åtkomsten till innehållet s.str för en viss sida, men det kommer inte att gälla för några jämställda eller underordnade sidor. Detta kan vara ett giltigt användningssätt och det är möjligt att göra detta med en databasredigerare där du kan använda detaljerat åtkomstinnehåll. Den kontrasterar emellertid den tidigare implementeringen där placeringen av en cq:cugEnabled-egenskap på jcr:content-noden mappades om internt till sidnoden. Mappningen utförs inte längre.
+Om du placerar CUG-principen endast på jcr:content-noden som finns under en viss sida begränsas bara åtkomsten till innehållet s.str för en viss sida, men det kommer inte att gälla för några jämställda eller underordnade sidor. Detta kan vara ett giltigt användningssätt och det är möjligt att göra detta med en databasredigerare där du kan använda detaljerat åtkomstinnehåll. Den kontrasterar emellertid den tidigare implementeringen där placeringen av en cq:cugEnabled-egenskap på jcr:content-noden har mappats om internt till sidnoden. Mappningen utförs inte längre.
 
 **Behörighetsutvärdering med CUG-principer**
 
@@ -845,11 +845,11 @@ Skapa autentiseringskrav på JCR-noden som definierar det underträd som ska und
 
 Om du bara placerar CUG-principen vid jcr:content-noden som finns under en viss sida begränsas endast åtkomsten till innehållet. Däremot påverkas inte sidnoden och inte heller underordnade sidor.
 
-Detta kan vara ett giltigt scenario och är möjligt med en databasredigerare där du kan placera mixinen på valfri nod. Beteendet står dock i kontrast till den tidigare implementeringen, där en cq:cugEnabled- eller cq:cugLoginPage-egenskap placerades internt på jcr:content-noden. Mappningen utförs inte längre.
+Detta kan vara ett giltigt scenario och är möjligt med en databasredigerare där du kan placera mixinen på valfri nod. Beteendet står dock i kontrast till den tidigare implementeringen, där placeringen av en cq:cugEnabled- eller cq:cugLoginPage-egenskap på jcr:content-noden slutligen mappades om internt till sidnoden. Mappningen utförs inte längre.
 
 #### Konfigurerade sökvägar som stöds {#configured-supported-paths}
 
-Både blandningstypen `granite:AuthenticationRequired` och egenskapen granite:loginPath respekteras endast inom det omfång som definieras av konfigurationsalternativet **Supported Paths** som finns med **Adobe Granite Authentication Requirement och Login Path Handler**. Om inga sökvägar anges är funktionen för autentiseringskrav inaktiverad helt. I det här fallet börjar blandningstyp eller -egenskap gälla när den läggs till eller ställs in på en viss JCR-nod.
+Både blandningstypen `granite:AuthenticationRequired` och granite:loginPath-egenskapen respekteras endast inom det omfång som definieras av konfigurationsalternativet **Supported Paths** som finns med **Adobe Granite Authentication Requirement och Login Path Handler**. Om inga sökvägar anges är funktionen för autentiseringskrav inaktiverad helt. I det här fallet börjar blandningstyp eller -egenskap gälla när den läggs till eller ställs in på en viss JCR-nod.
 
 ### Mappning av JCR-innehåll, OSGi-tjänster och konfigurationer {#mapping-of-jcr-content-osgi-services-and-configurations}
 

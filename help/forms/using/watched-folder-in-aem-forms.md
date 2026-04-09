@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 632ecead-f57d-4b43-8a3d-f2b0b8fe1115
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '7164'
+source-wordcount: '7136'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,9 @@ Du kan använda [filmönster](../../forms/using/watched-folder-in-aem-forms.md#p
    * Filer med specifika namn, till exempel data&#42;, skulle exkludera filer och mappar med namnen data1, data2 och så vidare.
    * Filer med sammansatta uttryck i namnet och tillägget, som i följande exempel:
 
-      * Data[0-9][0-9][0-9].[d][aA]&#39;port&#39;
-      * &#42;.[d][Aa]&#39;port&#39;
-      * &#42;.[xx][mm][Ll]
+      * Data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+      * &#42;.`[dD][Aa]`&#39;port&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 Mer information om filmönster finns i [Om filmönster](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
@@ -115,10 +115,10 @@ Mer information om filmönster finns i [Om filmönster](../../forms/using/watche
 
 * Filer med sammansatta uttryck i namnet och tillägget, som i följande exempel:
 
-   * Data[0-9][0-9][0-9].[d][aA]&#39;port&#39;
+   * Data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
 
-      * &#42;.[d][Aa]&#39;port&#39;
-      * &#42;.[xx][mm][Ll]
+      * &#42;.`[dD][Aa]`&#39;port&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 Mer information om filmönster finns i [Om filmönster](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -297,7 +297,7 @@ Om du tänker placera dina skript på en anpassad plats, är det troligt att sta
 1. Skapa en systemanvändare programmatiskt eller via konsolen https://&#39;[server]:[port]/crx/explorer. Du kan också använda en befintlig systemanvändare. Det är viktigt att du arbetar med systemanvändare här i stället för med vanliga användare.
 1. Ge läsbehörighet till den nyskapade eller befintliga systemanvändaren på den anpassade plats där skripten lagras. Du kan ha flera anpassade platser. Ange minst läsbehörighet för alla anpassade platser.
 1. I Felix konfigurationskonsol (/system/console/configMgr) letar du reda på tjänstanvändarmappningen för de bevakade mapparna. Mappningen ser ut som &#39;Mappning: adobe-aemds-core-watch-folder=..&#39;.
-1. Klicka på mappningen. För posten &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39; ändrar du fd-service till ID:t för den anpassade systemanvändaren. Klicka på Spara.
+1. Klicka på mappningen. För posten adobe-aemds-core-watch-folder:scripts=fd-service ändrar du fd-service till ID:t för den anpassade systemanvändaren. Klicka på Spara.
 
 Nu kan du använda konfigurerad anpassad plats för att spara skripten.
 
@@ -568,9 +568,9 @@ Administratörer kan ange vilken typ av fil som kan anropa en tjänst. Du kan sk
 * Filer med specifika namn, till exempel data.&#42;
 * Filer med sammansatta uttryck i namnet och tillägget, som i följande exempel:
 
-   * Data[0-9][0-9][0-9].[d][aA]&#39;port&#39;
-   * &#42;.[d][Aa]&#39;port&#39;
-   * &#42;.[xx][mm][Ll]
+   * Data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+   * &#42;.`[dD][Aa]`&#39;port&#39;
+   * &#42;.`[Xx][Mm][Ll]`
 
 * Administratören kan definiera filmönstret för utdatamappen där resultaten ska lagras. För utdatamappar (resultat, bevarande och fel) kan administratören ange något av följande filmönster:
 * %Y = år (full)
@@ -663,7 +663,7 @@ ECMAScript använder PDF Generator createPDF API för att konvertera Microsoft W
 
 1. Öppna CRXDE lite i ett webbläsarfönster. https://&#39;[server]:[port]/crx/de/
 
-1. Navigera till mappen /etc/fd/watchfolder/config/ och skapa en nod av typen nt:undefined.
+1. Navigera till mappen /etc/fd/watchfolder/config/ och skapa en nod av typen nt:unstructured.
 
    ![configure-the-watch-folder-pdf](assets/configure-the-watched-folder-pdf.png)
 

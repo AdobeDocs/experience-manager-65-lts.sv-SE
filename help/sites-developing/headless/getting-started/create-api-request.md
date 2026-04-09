@@ -3,9 +3,9 @@ title: Komma åt och leverera innehållsfragment Headless Quick Start Guide
 description: Lär dig hur du använder AEM Assets REST API för att hantera innehållsfragment och GraphQL API för rubrikfri leverans av innehåll i innehållsfragment.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: a5f7f0b9-7779-49c3-b79f-3dd3762c746a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Lär dig hur du använder AEM Assets REST API för att hantera innehållsfragmen
 
 ## Vad är GraphQL och Assets REST API:er? {#what-are-the-apis}
 
-[Nu när du har skapat några innehållsfragment &#x200B;](create-content-fragment.md) kan du använda AEM API:er för att leverera dem utan problem.
+[Nu när du har skapat några innehållsfragment ](create-content-fragment.md) kan du använda AEM API:er för att leverera dem utan problem.
 
 * [Med GraphQL-API:t](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) kan du skapa begäranden om åtkomst till och leverans av innehållsfragment.
    * Om du vill använda detta måste [slutpunkter definieras och aktiveras i AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint), och om det behövs måste [GraphiQL-gränssnittet vara installerat](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
@@ -37,10 +37,9 @@ Informationsarkitekterna måste utforma frågor så att deras kanalslutpunkter k
    * På den vänstra panelen kan du skapa din fråga.
    * Resultatet visas på den högra panelen.
    * Frågeredigeraren har funktioner för kodkomplettering och snabbtangenter för att enkelt köra frågan.
-
      ![GraphiQL-redigerare](assets/graphiql.png)
 
-1. Om du utgår ifrån att den modell du skapade anropades med fälten `firstName`, `lastName` och `position` kan du skapa en enkel fråga för att hämta innehållet i innehållsfragmentet.`person`
+1. Om du utgår ifrån att den modell du skapade anropades med fälten `person`, `firstName` och `lastName` kan du skapa en enkel fråga för att hämta innehållet i innehållsfragmentet.`position`
 
    ```text
    query 
@@ -68,7 +67,6 @@ Informationsarkitekterna måste utforma frågor så att deras kanalslutpunkter k
    * **Dokument** längst upp till höger på sidan om du vill visa sammanhangsberoende dokumentation som hjälper dig att skapa frågor som anpassar sig efter dina egna modeller.
    * **Historik** i det övre verktygsfältet om du vill visa tidigare frågor.
    * **Spara som** och **Spara** om du vill spara dina frågor. Därefter kan du visa och hämta dem från panelen **Beständiga frågor** och **Publicera**.
-
      ![GraphiQL-dokumentation](assets/graphiql-documentation.png)
 
 GraphQL möjliggör strukturerade frågor som inte bara kan rikta sig till specifika datauppsättningar eller enskilda dataobjekt, utan även kan leverera specifika element i objekten, kapslade resultat, har stöd för frågevariabler och mycket annat.

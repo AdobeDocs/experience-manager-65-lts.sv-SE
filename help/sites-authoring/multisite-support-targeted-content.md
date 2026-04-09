@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 058f0019-68c2-4769-b49d-c1e251196ff1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 5%
@@ -57,7 +57,7 @@ En webbplats eller en live-kopia länkar till ett område som innehåller de akt
 >* När du synkroniserar med Adobe Target krävs en Adobe Target-licens.
 >
 
-## Användningsexempel {#use-cases}
+## Användningsfall {#use-cases}
 
 Du kan konfigurera stöd för flera webbplatser för riktat innehåll på flera olika sätt, beroende på hur det används. I det här avsnittet beskrivs hur detta teoretiskt skulle fungera med ett varumärke. I [Exempel: Innehåll som är baserat på geometri](#example-targeting-content-based-on-geography) som mål kan du dessutom se ett verkligt program för att målinrikta innehåll på flera webbplatser.
 

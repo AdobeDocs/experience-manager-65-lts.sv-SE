@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+role: Admin,Developer,Leader,User
 exl-id: 826dafb8-db6c-4fe4-8b3d-edf7215dc571
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 0%
@@ -50,7 +50,7 @@ AEM har en [tjänst för cookie-avanmälan](/help/sites-developing/cookie-optout
 
 AEM Sites innehåller en valfri integrering med Enhanced Insights by Analytics som använder funktioner i Adobe Analytics On-Demand Service.
 
-Mer information om hur du hanterar förfrågningar om registrerade GDPR-data relaterade till Adobe Analytics finns i [Adobe Analytics och GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=sv-SE).
+Mer information om hur du hanterar förfrågningar om registrerade GDPR-data relaterade till Adobe Analytics finns i [Adobe Analytics och GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Förbättrade Personalization efter Target {#enhanced-personalization-by-target}
 
@@ -68,7 +68,7 @@ Som standard lagras inte dessa besökardata i AEM. AEM skickar regler till datal
 >
 >Före Adobe AEM (CQ) 5.6 skickade ClientContext (en tidigare version av ContextHub) data till servern, men lagrade dem inte.
 >
->Adobe AEM 6.4 och tidigare versioner är nu EOL och omfattas inte av denna dokumentation. Se [Äldre versioner av Adobe Experience Manager, CQ och CRX dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+>Adobe AEM 6.4 och tidigare versioner är nu EOL och omfattas inte av denna dokumentation. Se [Äldre versioner av Adobe Experience Manager, CQ och CRX dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Implementera anmälan/avanmälan {#implementing-opt-in-opt-out}
 

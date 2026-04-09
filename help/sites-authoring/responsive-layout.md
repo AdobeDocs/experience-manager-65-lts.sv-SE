@@ -3,9 +3,9 @@ title: Responsiv layout för dina innehållssidor
 description: Med Adobe Experience Manager kan du realisera en responsiv layout för dina sidor med hjälp av komponenten Layout Container.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
-source-git-commit: e4d365adbfc08ddd51af692237779ed4e11c532d
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Med AEM kan du ha en responsiv layout för dina sidor med komponenten **Layoutbe
 >
 >Information om hur du konfigurerar layoutbehållaren för dina platser för webbplatsadministratörer och utvecklare finns i dokumentet [Konfigurera layoutbehållaren och layoutläget.](/help/sites-administering/configuring-responsive-layout.md)
 
-## Ökning {#overview}
+## Översikt {#overview}
 
 Komponenten **Layoutbehållare** innehåller ett styckesystem där du kan placera komponenter i ett responsivt rutnät. Rutnätet kan ändra layouten beroende på enhetens/fönstrets storlek och format. Komponenten används tillsammans med [**layoutläget**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) som gör att du kan skapa och redigera den responsiva layouten beroende på enhet.
 

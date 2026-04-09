@@ -2,11 +2,11 @@
 title: Skapa översättningsprojekt
 description: Lär dig hur du skapar översättningsprojekt i  [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Translation
 solution: Experience Manager, Experience Manager Assets
 exl-id: e6b78580-a96e-4560-8f25-b62bb04b060e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 11%
@@ -69,7 +69,7 @@ Om du använder det här alternativet kopieras resurser som ska översättas til
 
 1. I listan **[!UICONTROL Target Languages]** väljer du de språk som du vill skapa en mappstruktur för.
 
-1. Välj **[!UICONTROL Create a new translation project]** i listan **[!UICONTROL Project]**.
+1. Välj **[!UICONTROL Project]** i listan **[!UICONTROL Create a new translation project]**.
 
 1. Ange en titel för projektet i fältet **[!UICONTROL Project Title]**.
 

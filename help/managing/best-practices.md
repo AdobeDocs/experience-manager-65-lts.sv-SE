@@ -3,9 +3,9 @@ title: Hantera projekt - checklista för bästa praxis
 description: För att hantera ett projekt som ska implementera Adobe Experience Manager (AEM) krävs planering och förståelse. Projektchecklistor är avsedda som en uppsättning bästa metoder för projektleverans. De vägleder dig genom alla faser i projektets livscykel och ger dig en högnivåövervakning av din status.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
-source-git-commit: 58c2f666ef6fd89fc42f5d969d1ef1626e45fe45
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3212'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Kalkylbladet **Projektpulsslag** innehåller en grafisk översikt över kritiska
 
 ## Status efter roll {#status-by-role}
 
-Kalkylbladet **Status efter roll** visar detaljerad beskrivning av [**Hälsa**, **Kvalitet och &#x200B;** Fullständighet&#x200B;**](#projectheartbeat) av &#x200B;** [Fas](#phases-and-milestones)**&#x200B; och &#x200B;** [Persona](#persona)**.
+Kalkylbladet **Status efter roll** visar detaljerad beskrivning av [**Hälsa**, **Kvalitet och **Fullständighet**](#projectheartbeat) av **[Fas](#phases-and-milestones)** och **[Persona](#persona)**.
 
 ## Faser och milstolpar {#phases-and-milestones}
 
@@ -183,7 +183,7 @@ Att planera utvecklingsarbetet är avgörande för att säkerställa att projekt
 
    * Processer för varje miljö, t.ex. krav på driftsättning och underhåll
    * Underhållsaktiviteter (Datastore GC, TarPM-optimering och så vidare)
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE)-cachelagring
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)-cachelagring
    * [Klustring](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publicera/författarresurs
    * Prestanda för klientsidan (JS minify, concat, css sprites, total number of http requests, and others)
 
@@ -234,7 +234,7 @@ Att planera utvecklingsarbetet är avgörande för att säkerställa att projekt
 
   Innan utveckling bör alla supportprocesser som krävs för att driftsätta, frisläppa, testa och rapportera problem fastställas.
 
-  Se även [Adobe supportportal](https://experienceleague.adobe.com/sv?support-solution=General&support-tab=home#support).
+  Se även [Adobe supportportal](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support).
 
 ### Planering och drift {#operations-planning-and-operations}
 
@@ -623,8 +623,8 @@ Dessutom är följande avsnitt av AEM dokumentation av särskilt intresse (lista
 
       * [Utveckla - grunderna](/help/sites-developing/the-basics.md)
       * [MSM-koncept](/help/sites-administering/msm.md)
-      * [HTML-mallspråk (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=sv-SE)
+      * [HTML-mallspråk (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 * Relaterad dokumentation
 
-   * Adobe Experience Cloud - [Planering för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=sv-SE)
+   * Adobe Experience Cloud - [Planering för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

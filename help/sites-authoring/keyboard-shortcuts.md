@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: bff562ff-bf0e-4f56-afd2-77907ec01e2c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Dessutom är kortkommandon samma för alla språk och tangentbordslayouter.
 >
 >AEM kortkommandon kan störa skärmläsare, vissa webbläsarfunktioner och andra tillgänglighetsverktyg.
 >
->Adobe rekommenderar [att AEM kortkommandon &#x200B;](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) inaktiveras när en skärmläsare används.
+>Adobe rekommenderar [att AEM kortkommandon ](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) inaktiveras när en skärmläsare används.
 
 ## Inaktivera kortkommandon {#deactivating-keyboard-shortcuts}
 

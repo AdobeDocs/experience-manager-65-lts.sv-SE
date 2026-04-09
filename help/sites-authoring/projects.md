@@ -3,9 +3,9 @@ title: Projekt
 description: Med projekt kan du gruppera resurser i en enhet vars gemensamma, delade miljö gör det enkelt att hantera dina projekt.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 1%
@@ -227,7 +227,7 @@ När du skapar projektet och lägger till användare till de olika rollerna skap
 
 Ett projekt med namnet Myproject skulle till exempel ha tre grupper, **MyProject Owners**, **MyProject Editors**, **MyProject Observers**.
 
-Om projektet tas bort tas dessa grupper endast bort om du väljer lämpligt alternativ [&#x200B; när du tar bort projektet.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) En administratör kan även ta bort grupper manuellt i **Verktyg** > **Dokumentskydd** > **Grupper**.
+Om projektet tas bort tas dessa grupper endast bort om du väljer lämpligt alternativ [ när du tar bort projektet.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) En administratör kan även ta bort grupper manuellt i **Verktyg** > **Dokumentskydd** > **Grupper**.
 
 ## Ytterligare resurser {#additional-resources}
 
@@ -236,4 +236,4 @@ Mer information om hur du använder projekt finns i följande ytterligare dokume
 * [Hantera projekt](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Arbeta med uppgifter](/help/sites-authoring/task-content.md)
 * [Arbeta med projektarbetsflöden](/help/sites-authoring/projects-with-workflows.md)
-* [Kreativt projekt- och PIM-integrering](/help/sites-authoring/managing-product-information.md)
+* [Integrering av Creative Project och PIM](/help/sites-authoring/managing-product-information.md)

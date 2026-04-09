@@ -1,12 +1,12 @@
 ---
 title: Integrering av [!DNL Experience Manager Assets] med  [!DNL Adobe Workfront]
 description: Introduktion till integrering mellan  [!DNL Assets] och [!DNL Workfront]
-role: Admin,Leader,Architect
+role: Admin,Leader,Developer
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 5181d278-2e6e-41f7-891e-1067a03de016
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 [!DNL Adobe Workfront] är ett program för arbetshantering som hjälper dig att hantera hela arbetscykeln på ett och samma ställe. Integrationen mellan [!DNL Workfront] och [!DNL Adobe Experience Manager Assets] gör att organisationer kan förbättra innehållets hastighet och time-to-market genom att knyta samman arbete och hantering av digitala resurser. När man arbetar i Workfront får man tillgång till dokument och bilder.
@@ -51,7 +51,7 @@ Nedan följer information om de funktioner som är tillgängliga genom olika typ
 | Funktion | Beskrivning | [!DNL Workfront] och [!DNL Assets Essentials] *Ingen koppling (ej i kartong)* | [!DNL Workfront for Experience Manager enhanced connector] *Kräver anslutning* | Workfront och [!DNL Experience Manager as a Cloud Service] *Ingen koppling (färdig)* |
 |----|----|----|-----|-----|
 | Distributionsmetoder | Lämpligt för vilket [!DNL Assets]-erbjudande. | Grundläggande om resurser | Adobe Managed Services, lokal | Cloud Service |
-| **Allmänt** |
+| **Allmänt** | | | | |
 | Skicka digitala filer från [!DNL Workfront] till [!DNL Assets] | Den senaste versionen av ett WF-dokument kan överföras till AEM Assets som är länkat som en ny version av dokumentet. | ✓ | ✓ | ✓ |
 | Länka AEM-mappar manuellt till Workfront-objekt | Befintliga AEM-mappar kan länkas som en Workfront-mapp och dess underordnade resurser länkas som nya Workfront-dokument. | ✓ | ✓ | ✓ |
 | Länka [!DNL Assets] till Workfront-objekt | Befintliga resurser i AEM kan länkas till ett nytt Workfront-dokument eller som en ny version av ett befintligt dokument. | ✓ | ✓ | ✓ |
@@ -70,7 +70,7 @@ Nedan följer information om de funktioner som är tillgängliga genom olika typ
 | Synkronisering av kommentarer | Synkronisera kommentarer automatiskt för resurser från [!DNL Workfront] till [!DNL Assets] | Nej | ✓ | Nej |
 | Stöd för flera Workfront-miljöer som ansluter till en enda AEM-miljö | Användare från flera Workfront-miljöer kan ansluta till en enda AEM-miljö. | ✓ | Nej | ✓ |
 | Stöd för flera AEM-miljöer som ansluter till en enda Workfront-miljö | Användare i en enda Workfront-miljö kan skicka eller länka resurser mellan flera AEM-miljöer. | ✓ | ✓ | ✓ |
-| **Metadata** |
+| **Metadata** | | | | |
 | Mappa metadata för Workfront-resurser till AEM Assets | Workfront-objekt och anpassade formuläregenskaper kan mappas till egenskaper för AEM-objektmetadata. Värden överförs vid den initiala överföringen/länken. | ✓ | ✓ | ✓ |
 | Skapa automatiskt anpassad Forms för dokument i Workfront | Bifoga skräddarsydda blanketter i Workfront-dokument, uppgifter och ärenden med AEM arbetsflöden. | Nej | ✓ | Nej |
 | Automatisk dubbelriktad uppdatering av metadata mellan AEM Assets och Workfront | Uppdatera automatiskt metadata mellan AEM Assets och Workfront. Resursen måste först flyttas från Workfront till AEM och Workfront metadata måste mappas till AEM för att dubbelriktade metadatauppdateringar ska fungera. | Nej | ✓ | Nej |
@@ -79,7 +79,7 @@ Nedan följer information om de funktioner som är tillgängliga genom olika typ
 | Mappa Workfront-metadata till AEM Assets-mappar | Synkronisera Workfront projektmetadata med länkade AEM-mappar. | Nej | ✓ | ✓ |
 | AEM metadatauppdateringar med nya versioner | En konfiguration i AEM kan göras för att avgöra om en nyversion av en resurs i Workfront också ska pushas med ändringar i dess metadata. | Nej | ✓ | Nej |
 | Uppdatera automatiskt AEM-metadata om ändringar i anpassade Forms i Workfront | Med AEM kan du prenumerera på uppdateringarna av dokumentformulären i Workfront. Detta innebär att eventuella uppdateringar av Workfront-dokumentets anpassade formulärmetadata redigerar värdena för de mappade AEM-metadatafälten. | Nej | ✓ | Nej |
-| **Arbetsflöden (färdiga)** |
-| Skapa ny korrekturversion på länkade Assets | När en resurs länkas i Workfront kan ett korrektur genereras automatiskt. | Nej | Egen | Nej |
+| **Arbetsflöden (färdiga)** | | | | |
+| Skapa ny korrekturversion på länkade Assets | När en resurs länkas i Workfront kan ett korrektur genereras automatiskt. | Nej | Anpassad | Nej |
 | Ange status för Workfront-objekt | Ange objektstatus för Workfront baserat på konfigurerbara villkor med AEM-arbetsflöden | Nej | ✓ | Kommande |
 | Publicera Assets i AEM Publish Environment eller Brand Portal | Ge Workfront-användare möjlighet att automatiskt publicera länkade resurser i en AEM Publish-miljö eller Brand Portal. | Nej | ✓ | Kommande |

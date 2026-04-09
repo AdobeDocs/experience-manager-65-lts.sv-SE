@@ -3,9 +3,9 @@ title: Arbeta med innehållssidversioner
 description: Skapa, jämföra och återställa versioner av en sida i Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: d286db53c2f9605794bdadcc876b5069037edde3
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 2%
@@ -195,7 +195,7 @@ Så här jämför du en tidigare version med den aktuella sidan:
 
    ![Sidversioner visas - välj version](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Välj **Jämför med aktuell**. [Sidskillnaden &#x200B;](/help/sites-authoring/page-diff.md) öppnas och skillnaderna visas.
+1. Välj **Jämför med aktuell**. [Sidskillnaden ](/help/sites-authoring/page-diff.md) öppnas och skillnaderna visas.
 
 ## Timewarp {#timewarp}
 

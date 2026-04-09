@@ -3,9 +3,9 @@ title: Första steget för författare när de skapar innehåll i AEM
 description: Upptäck de viktigaste begreppen för att skapa innehåll och framtagning i AEM 6.5 LTS. Du hittar även information om hur du använder taggar, mallar och andra sidfunktioner.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
-source-git-commit: 31370571843508acfb5d1e5cc491fdb043153a8f
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 6%

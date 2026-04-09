@@ -11,7 +11,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 470636ce-3934-4aac-80ff-1fe6bd84455e
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Meta-resursegenskaperna som beskriver SPA-innehållet:
 >
 >Standardmodellväljaren anges statiskt när Sling Model-representationen av en komponent begärs.
 
-## Metaegenskaper {#meta-properties}
+## Meta Properties {#meta-properties}
 
 * `cq:wcmmode`: Redigerarnas WCM-läge (till exempel sida, mall)
 * `cq:pagemodel_root_url`: URL för appens rotmodell. Viktigt vid direkt åtkomst till en underordnad sida eftersom den underordnade sidmodellen är ett fragment av appens rotmodell. ` [PageModelManager](/help/sites-developing/spa-page-component.md)` komponerar sedan systematiskt om den inledande programmodellen när programmet anges från dess rotstartpunkt.
@@ -92,7 +92,7 @@ Meta-resursegenskaperna som beskriver SPA-innehållet:
 >
 >Det här dokumentet använder appen We.Retail Journal endast i demonstrationssyfte. Använd inte för projektarbete.
 >
->Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE), som stöder SPA-projekt med React eller Angular och använder SPA SDK. Alla SPA-projekt på AEM ska baseras på Maven Archetype för SPA Starter Kit.
+>Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), som stöder SPA-projekt med React eller Angular och använder SPA SDK. Alla SPA-projekt på AEM ska baseras på Maven Archetype för SPA Starter Kit.
 
 ## Synkronisering av sidredigeringsövertäckning {#page-editor-overlay-synchronization}
 

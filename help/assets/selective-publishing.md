@@ -10,7 +10,7 @@ role: User, Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: 64468f78-2dc1-4e42-a8c6-3cb81bca0e05
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 0%
@@ -124,11 +124,11 @@ Se [Skapa en dynamisk mediekonfiguration](#configuring-dynamic-media-cloud-servi
    | **[!UICONTROL Now]** | Välj att publicera resurserna direkt. |
    | **[!UICONTROL Later]** | Välj det här alternativet om du vill publicera resurserna ett visst datum och en viss tid. |
 
-1. Välj **[!UICONTROL Next]** i det övre högra hörnet på sidan **[!UICONTROL Manage Publication]**.
+1. Välj **[!UICONTROL Manage Publication]** i det övre högra hörnet på sidan **[!UICONTROL Next]**.
 1. Gör något av följande på sidan **[!UICONTROL Manage Publication - Scope]**:
 
    * Om det behövs väljer du en eller flera resurser som du vill ta bort från publiceringen.
-   * Välj **[!UICONTROL Publish]** eller **[!UICONTROL Publish to Dynamic Media]** i det övre högra hörnet på sidan **[!UICONTROL Manage Publication - Scope]**.
+   * Välj **[!UICONTROL Manage Publication - Scope]** eller **[!UICONTROL Publish]** i det övre högra hörnet på sidan **[!UICONTROL Publish to Dynamic Media]**.
 1. Välj **[!UICONTROL OK]**.
 
 ### Avpublicera utvalda resurser från Dynamic Media eller Experience Manager med Manage Publication {#selective-unpublish-manage-publication}
@@ -156,10 +156,10 @@ Se [Skapa en dynamisk mediekonfiguration](#configuring-dynamic-media-cloud-servi
    | **[!UICONTROL Now]** | Välj det här alternativet om du vill avpublicera resurserna direkt. |
    | **[!UICONTROL Later]** | Välj det här alternativet om du vill avpublicera resurserna ett visst datum och en viss tid. |
 
-1. Välj **[!UICONTROL Next]** i det övre högra hörnet på sidan **[!UICONTROL Manage Publication]**.
+1. Välj **[!UICONTROL Manage Publication]** i det övre högra hörnet på sidan **[!UICONTROL Next]**.
 1. Gör något av följande på sidan **[!UICONTROL Manage Publication - Scope]**:
    * Markera en eller flera resurser som du vill ta bort från avpubliceringen.
-   * Välj **[!UICONTROL Unpublish]** eller **[!UICONTROL Unpublish from Dynamic Media]** i det övre högra hörnet på sidan **[!UICONTROL Manage Publication - Scope]**.
+   * Välj **[!UICONTROL Manage Publication - Scope]** eller **[!UICONTROL Unpublish]** i det övre högra hörnet på sidan **[!UICONTROL Unpublish from Dynamic Media]**.
 1. Välj **[!UICONTROL OK]**.
 
 ## Publicera material till Dynamic Media eller Experience Manager med Snabbpublicering {#quick-publish-aem-dm}
@@ -186,7 +186,7 @@ Du kan använda **[!UICONTROL Quick Publish]** för enkla resursaktiveringsären
 1. Välj något av följande alternativ i menylistan **[!UICONTROL Quick Publish]**.
 
    | Snabbpublicering, alternativ | Vad det gör |
-   | --- | --- | 
+   | --- | --- |
    | Publicera till Experience Manager | Publicerar de markerade resurserna direkt till Experience Manager. |
    | Publicera till Brand Portal | Publicerar de markerade resurserna direkt till **[!UICONTROL Brand Portal]**.<br>Det här alternativet är bara tillgängligt om din Experience Manager Assets-instans redan har konfigurerat **[!UICONTROL Brand Portal]**. |
    | Publicera till Dynamic Media | Publicerar de valda resurserna direkt till Dynamic Media.<br>En resurs måste synkroniseras till Dynamic Media. Om det behövs kontrollerar du att **[!UICONTROL Sync mode]** i en mapps egenskaper redan är inställda på **[!UICONTROL Sync everything in this folder subtree to Dynamic Media]**. |
@@ -214,7 +214,7 @@ Se även [Söka efter resurser i Experience Manager](/help/assets/search-assets.
 Du kan också använda de här kryssrutorna med **[!UICONTROL Publish]**-sökpredikatet för att förfina sökresultaten för **[!UICONTROL Published]**- och **[!UICONTROL Unpublished]** Experience Manager-resurser.
 1. Gör något av följande:
    * Markera en eller flera resurser som du vill publicera eller avpublicera.
-   * Välj **[!UICONTROL Select All]** i det övre högra hörnet på sidan **[!UICONTROL Search Results]**.
+   * Välj **[!UICONTROL Search Results]** i det övre högra hörnet på sidan **[!UICONTROL Select All]**.
 1. Välj **[!UICONTROL Manage Publication]** i verktygsfältet. Markera ellipsikonen i verktygsfältet så att du kan öppna **[!UICONTROL Manage Publication]**.
 1. Välj önskad åtgärd på sidan **[!UICONTROL Manage Publication - Options]**.
 
@@ -236,8 +236,8 @@ Du kan också använda de här kryssrutorna med **[!UICONTROL Publish]**-sökpre
    | Nu | Den valda åtgärden utförs omedelbart. |
    | Senare | Den valda åtgärden körs på det valda datumet och den valda tiden. |
 
-1. Välj **[!UICONTROL Next]** i det övre högra hörnet på sidan **[!UICONTROL Manage Publication - Options]**.
-1. (Valfritt) Granska kolumnen **[!UICONTROL Publish Target]** i tabellen på sidan **[!UICONTROL Manage Publication - Scope]** för de valda resurserna.
+1. Välj **[!UICONTROL Manage Publication - Options]** i det övre högra hörnet på sidan **[!UICONTROL Next]**.
+1. (Valfritt) Granska kolumnen **[!UICONTROL Manage Publication - Scope]** i tabellen på sidan **[!UICONTROL Publish Target]** för de valda resurserna.
 
    | Publicera Assets-inställning i Dynamic Media Configuration | Markerad åtgärd | Publiceringsmål |
    | --- | --- | --- |
@@ -268,7 +268,6 @@ Du kan använda **[!UICONTROL Timeline]** med **[!UICONTROL Card view]**, **[!UI
 När du använder **[!UICONTROL List View]** visas en extra kolumn för publiceringstillståndet **[!UICONTROL Dynamic Media]**.
    * En mapp som är konfigurerad att synkronisera till dynamiska media visar kolumnen **[!UICONTROL Dynamic Media]** som standard.
    * En mapp som är *inte* konfigurerad att synkronisera till dynamiska media visar inte kolumnen Dynamiska media.
-
      ![Listvy och tidslinje](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Felsök selektiv publicering {#selective-publish-troubleshoot}

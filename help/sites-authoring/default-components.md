@@ -3,9 +3,9 @@ title: Standardkomponenter
 description: Adobe Experience Manager innehåller ett antal färdiga komponenter som ger omfattande funktionalitet för webbplatsförfattare.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
-source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Komponenterna sorteras efter olika kategorier som kallas komponentgrupper. Exemp
 
 På följande sidor finns länkar till ytterligare viktig information om komponenter:
 
-* [Kärnkomponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/introduction) - Kärnkomponenterna erbjuder flexibel och funktionsrik redigeringsfunktionalitet, som tillhandahåller viktiga innehållstyper för att skapa sidor.
+* [Kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) - Kärnkomponenterna erbjuder flexibel och funktionsrik redigeringsfunktionalitet, som tillhandahåller viktiga innehållstyper för att skapa sidor.
 
 ### Konfigurera komponenter {#configuring-components}
 

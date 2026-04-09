@@ -3,9 +3,9 @@ title: Headless and Headless in AEM
 description: AEM-projekt kan implementeras i en headful och headless-modell, men valet är inte binärt. AEM ger flexibilitet att utnyttja fördelarna med båda modellerna i ett och samma projekt.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: ba7f8ad9-807b-48d9-a4eb-da0a60d2494a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe Experience Manager-projekt kan implementeras i både headful och headless-modeller, men valet är inte binärt. AEM ger flexibilitet att utnyttja fördelarna med båda modellerna i ett och samma projekt. Det här dokumentet innehåller en översikt över de olika modellerna och en beskrivning av nivåerna av SPA-integrering.
 
-## Ökning {#overview}
+## Översikt {#overview}
 
 AEM har kraftfulla verktyg för att hantera både framtagning av innehåll och distribution av det på en och samma plattform. Detta är en traditionell&quot;headful&quot; modell för innehållshantering, där innehållsförfattare och utvecklare arbetar på samma plattform för att leverera upplevelserna till innehållskunderna.
 
@@ -46,7 +46,7 @@ I nästa avsnitt beskrivs dessa integreringsnivåer mer ingående.
 
 >[!NOTE]
 >
->Du kan förstås även återimplementera SPA för webben som en fullt fungerande AEM SPA [&#x200B; med AEM SPA Editor-ramverket.](/help/sites-developing/spa-walkthrough.md) Om du redan har AEM och vill skapa en webshop eller annan SPA rekommenderas den här metoden, men det är utanför omfånget för det här dokumentet.
+>Du kan förstås även återimplementera SPA för webben som en fullt fungerande AEM SPA [ med AEM SPA Editor-ramverket.](/help/sites-developing/spa-walkthrough.md) Om du redan har AEM och vill skapa en webshop eller annan SPA rekommenderas den här metoden, men det är utanför omfånget för det här dokumentet.
 
 ## SPA-integreringsnivåer {#integration-levels}
 

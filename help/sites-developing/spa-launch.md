@@ -11,7 +11,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aa4471bf-8477-4377-b474-861269f69334
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Adobe Experience Platform Launch rekommenderas för att implementera Analytics, 
 
 ## Självstudiekurs {#tutorial}
 
-Om du vill veta hur du integrerar din SPA med Adobe Experience Platform Launch kan du läsa [den här artikeln och självstudiekursen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=sv-SE) som guidar dig genom Launch-konfigurationen och implementera Experience Cloud som byggts med Angular eller React.
+Om du vill veta hur du integrerar din SPA med Adobe Experience Platform Launch kan du läsa [den här artikeln och självstudiekursen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html) som guidar dig genom Launch-konfigurationen och implementera Experience Cloud som byggts med Angular eller React.
 
 >[!NOTE]
 >

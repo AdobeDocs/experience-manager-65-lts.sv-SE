@@ -3,9 +3,9 @@ title: Skapa en guide till Headless-konfiguration
 description: Skapa en konfiguration som ett första steg i arbetet med headless i AEM 6.5.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 6792f5c0-074e-4465-9b84-8be78abd6b8f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -24,7 +24,7 @@ När det gäller headless content management i AEM kan du tänka dig en konfigur
 
 >[!NOTE]
 >
->Om du är bekant med [sidmallar i en AEM-implementering i full hög &#x200B;](/help/sites-authoring/templates.md) är användningen av konfigurationer för hantering av innehållsmodeller likartad.
+>Om du är bekant med [sidmallar i en AEM-implementering i full hög ](/help/sites-authoring/templates.md) är användningen av konfigurationer för hantering av innehållsmodeller likartad.
 
 ## Så här skapar du en konfiguration {#how-to-create-a-configuration}
 

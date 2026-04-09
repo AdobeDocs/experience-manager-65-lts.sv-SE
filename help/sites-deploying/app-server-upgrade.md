@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0b4d1cb7-b3a7-4bcd-ad37-d718b2a0abd5
-source-git-commit: 1d0fe9ee81a2e38f7887b6f884a13d1ba1462304
+source-git-commit: 835530039678bc16a6de87b8d580be91a2026f94
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 0%
@@ -20,5 +20,5 @@ Följ guiden som är specifik för de olika programservrar som stöds av AEM:
 
 * [Uppgradera steg för programserverinstallationer (WebSphere Liberty)](/help/sites-deploying/app-server-upgrade-wlp.md)
 * [Uppgradera steg för programserverinstallationer (Tomcat)](/help/sites-deploying/app-server-upgrade-tomcat.md)
-* [Uppgradera steg för AEM 6.5 LTS i JBOSS EAP 8 (Windows)](/help/forms/using/upgrading-aem-6.5-lts-on-jboss-eap-8)
+* [Uppgradera steg för AEM 6.5 LTS i JBOSS EAP 8 (Windows)](/help/forms/using/upgrading-aem-65-lts-on-jboss-eap-8.md)
 

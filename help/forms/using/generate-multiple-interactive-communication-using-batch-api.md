@@ -9,7 +9,7 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 92bb4045-ed22-4cc3-9365-65cb39b3c82d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Så här skapar du interaktiv kommunikation från poster som sparats i en JSON-f
    1. Ange **[!UICONTROL Name]** och fysisk **[!UICONTROL Path]** för mappen. Exempel: `c:\batchprocessing`.
    1. Välj alternativet **[!UICONTROL Service]** i fältet **[!UICONTROL Process File Using]**.
    1. Välj tjänsten **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** i fältet **[!UICONTROL Service Name]**.
-   1. Ange en **[!UICONTROL Output File Pattern]**. Till exempel anger %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=sv-SE#about-file-patterns) att den bevakade mappen kan hitta indatafiler i en undermapp till mappen Bevakade mappar\indata.
+   1. Ange en **[!UICONTROL Output File Pattern]**. Till exempel anger %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) att den bevakade mappen kan hitta indatafiler i en undermapp till mappen Bevakade mappar\indata.
 1. Konfigurera avancerade parametrar:
    1. Öppna fliken **[!UICONTROL Advanced]** och lägg till följande anpassade egenskaper:
 
@@ -147,14 +147,14 @@ Du kombinerar data (poster) som sparats i en extern datakälla med en interaktiv
    1. Ange **[!UICONTROL Name]** och fysisk **[!UICONTROL Path]** för mappen. Exempel: `c:\batchprocessing`.
    1. Välj alternativet **[!UICONTROL Service]** i fältet **[!UICONTROL Process File Using]**.
    1. Välj tjänsten **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** i fältet **[!UICONTROL Service Name]**.
-   1. Ange en **[!UICONTROL Output File Pattern]**. Till exempel anger %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=sv-SE#about-file-patterns) att den bevakade mappen kan hitta indatafiler i en undermapp till mappen Bevakade mappar\indata.
+   1. Ange en **[!UICONTROL Output File Pattern]**. Till exempel anger %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) att den bevakade mappen kan hitta indatafiler i en undermapp till mappen Bevakade mappar\indata.
 1. Konfigurera avancerade parametrar:
    1. Öppna fliken **[!UICONTROL Advanced]** och lägg till följande anpassade egenskaper:
 
       | Egenskap | Typ | Beskrivning |
       |--- |--- |--- |
       | templatePath | Sträng | Ange sökvägen till den interaktiva kommunikationsmall som ska användas. Exempel: /content/dam/formsanddocuments/testsample/mediumic. Det är en obligatorisk egenskap. |
-      | recordPath | Sträng | Värdet i fältet recordPath hjälper till att ange namnet på en interaktiv kommunikation. Du kan ange sökvägen till ett fält i en post som värde för fältet recordPath. Om du till exempel anger /employee/Id blir värdet på id-fältet namn för motsvarande interaktiva kommunikation. Standardvärdet är ett [slumpmässigt UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
+      | recordPath | Sträng | Värdet i fältet recordPath hjälper till att ange namnet på en interaktiv kommunikation. Du kan ange sökvägen till ett fält i en post som värde för fältet recordPath. Om du till exempel anger /employee/Id blir värdet på id-fältet namn för motsvarande interaktiva kommunikation. Standardvärdet är ett [slumpmässigt UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | Boolean | Ange värdet som Sant. Standardvärdet är false. När värdet är true läser batch-API:t data från den konfigurerade formulärdatamodellen och fyller i dem till den interaktiva kommunikationen. När usePrefillService är inställt på true behandlas indata-JSON-data (för varje post) som FDM-argument. |
       | batchType | Sträng | Ange värdet PRINT, WEB eller WEB_AND_PRINT. Standardvärdet är WEB_AND_PRINT. |
       | locale | Sträng | Ange språkinställningen för interaktiv kommunikation vid utdata. Körklara tjänster använder inte språkområdesalternativet, men du kan skapa en anpassad tjänst för att generera lokaliserad interaktiv kommunikation. Standardvärdet är en_US. |
@@ -176,8 +176,8 @@ Du kan anropa [batch-API:t](https://developer.adobe.com/experience-manager/refer
 Innan du distribuerar Java™-servern måste du se till att du har en interaktiv kommunikation och att motsvarande datafiler är klara. Så här skapar och distribuerar du Java™-servleten:
 
 1. Logga in på din AEM-instans och skapa en interaktiv kommunikation. [Klicka här](assets/SimpleMediumIC.zip) om du vill använda den interaktiva kommunikation som anges i exempelkoden nedan.
-1. [Skapa och distribuera ett AEM-projekt med Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=sv-SE) på din AEM-instans.
-1. Lägg till [AEM Forms Client SDK version 6.0.12 eller senare](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) i listan över beroenden för POM-filen i ditt AEM-projekt. Exempel:
+1. [Skapa och distribuera ett AEM-projekt med Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) på din AEM-instans.
+1. Lägg till [AEM Forms Client SDK version 6.0.12 eller senare](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) i listan över beroenden för POM-filen i ditt AEM-projekt. Exempel:
 
    ```xml
        <dependency>
@@ -327,7 +327,7 @@ Innan du distribuerar Java™-servern måste du se till att du har en interaktiv
    * När du anger WEB-alternativet genereras en JSON-fil per post. Du kan använda JSON-filen för att [förifylla en webbmall](#web-template).
    * När du anger både PRINT- och WEB-alternativ genereras både PDF-dokument och en JSON-fil per post.
 
-1. [Använd maven för att distribuera den uppdaterade koden till din AEM-instans](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=sv-SE).
+1. [Använd maven för att distribuera den uppdaterade koden till din AEM-instans](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
 1. Om du vill generera den interaktiva kommunikationen anropar du batch-API:t. Batch-API-utskriften returnerar en ström av PDF- och JSON-filer beroende på antalet poster. Du kan använda JSON-filen för att [förifylla en webbmall](#web-template). Om du använder ovanstående kod distribueras API:t på `http://localhost:4502/bin/batchServlet`. Koden skriver ut och returnerar en ström av en PDF- och en JSON-fil.
 
 ### Fyll i en webbmall i förväg {#web-template}
@@ -363,4 +363,4 @@ Förutom att spara data i filsystemet kan du lagra JSON-filer i CRX-databasen, f
 
 >[!NOTE]
 >
->Endast CRX-protokoll är aktiverat som standard. Information om hur du aktiverar andra protokoll som stöds finns i [Konfigurera förifyllningstjänsten med Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=sv-SE).
+>Endast CRX-protokoll är aktiverat som standard. Information om hur du aktiverar andra protokoll som stöds finns i [Konfigurera förifyllningstjänsten med Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

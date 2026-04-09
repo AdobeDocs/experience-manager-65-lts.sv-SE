@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4923'
 ht-degree: 2%
 
 ---
@@ -266,7 +266,7 @@ I det här avsnittet skapar du följande sidor som alla använder innehållsmall
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Öppna [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) i en ny webbläsarflik eller ett nytt fönster för att visa sidan Produkter:
+1. Öppna [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) på en ny webbläsarflik eller i ett nytt fönster för att visa sidan Produkter:
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -329,7 +329,7 @@ I det här avsnittet skapar du flera skript som varje skript skapar en del av si
 
 1. Skapa filen `left.jsp` under `/apps/mywebsite/components/contentpage` i CRXDE Lite:
 
-   1. Högerklicka på noden `/apps/mywebsite/components/contentpage` och välj sedan **Skapa &#x200B;** och sedan **Skapa fil**.
+   1. Högerklicka på noden `/apps/mywebsite/components/contentpage` och välj sedan **Skapa **och sedan **Skapa fil**.
 
    1. I fönstret skriver du `left.jsp` som **Namn** och klickar på **OK**.
 
@@ -922,7 +922,7 @@ Skapa en dialogruta där du kan konfigurera logotypkomponenten i designläge. Di
       * **Titel:** `Logo (Design)`
 
 1. Högerklicka på noden tab1 i grenen design_dialog och klicka på Ta bort. Klicka på Spara alla.
-1. Skapa en nod med namnet `img` av typen `cq:Widget` under `design_dialog/items/items`noden. Lägg till följande egenskaper och klicka sedan på Spara alla:
+1. Skapa en nod med namnet `design_dialog/items/items` av typen `img` under `cq:Widget`noden. Lägg till följande egenskaper och klicka sedan på Spara alla:
 
    | Namn | Typ | Värde |
    |---|---|---|
@@ -1172,7 +1172,7 @@ I det här avsnittet beskrivs hur du skapar bildskriptet.
 
 1. Spara ändringarna.
 
-#### Skapa Image cq:editConfig-noden {#creating-the-image-cq-editconfig-node}
+#### Skapar bildens cq:editConfig-nod {#creating-the-image-cq-editconfig-node}
 
 Med nodtypen `cq:editConfig` kan du konfigurera vissa beteenden för komponenter när du redigerar deras egenskaper.
 
@@ -1183,7 +1183,7 @@ I det här avsnittet använder du en cq:editConfig-nod för att dra resurser fr�
    * Namn: cq:editConfig.
    * Typ: cq:EditConfig.
 
-1. Skapa en nod på följande sätt under noden cq:editConfig:
+1. Skapa en nod enligt följande under noden cq:editConfig:
 
    * Namn: cq:dropTargets.
    * Typ: cq:DropTargetConfig.
@@ -1191,13 +1191,13 @@ I det här avsnittet använder du en cq:editConfig-nod för att dra resurser fr�
 1. Skapa en nod enligt följande under noden cq:dropTargets:
 
    * Namn: bild.
-   * Typ: nt:ostrukturerad.
+   * Typ: nt:unstructured.
 
 1. I CRXDE anger du egenskaperna enligt följande:
 
 | Namn | Typ | Värde |
 |---|---|---|
-| acceptera | Sträng | image/(gif | jpeg | png) |
+| acceptera | Sträng | image/(gif\|jpeg\|png) |
 | grupper | Sträng | media |
 | propertyName | Sträng | ./imageReference |
 
@@ -1530,6 +1530,6 @@ För den här komponenten kan du ange flera parametrar i både redigeringsläge 
    ```
 
 1. Spara ändringarna.
-1. Läs in sidan **&#x200B; Products** på nytt i webbläsaren. Hela sidan ser ut så här:
+1. Läs in sidan** Products** på nytt i webbläsaren. Hela sidan ser ut så här:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

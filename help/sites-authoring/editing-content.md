@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 2%
@@ -182,7 +182,7 @@ Detta gäller för följande tillgångstyper (vissa är beroende av sidan/stycke
   </tr>
   <tr>
    <td>Dokument</td>
-   <td>Ladda ned</td>
+   <td>Ladda ner</td>
   </tr>
   <tr>
    <td>Produkt</td>
@@ -201,7 +201,7 @@ Detta gäller för följande tillgångstyper (vissa är beroende av sidan/stycke
 
 >[!NOTE]
 >
->Det här beteendet kan konfigureras för din installation. Mer information finns i [Konfigurera ett styckesystem så att en komponentinstans skapas när du drar en resurs &#x200B;](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance).
+>Det här beteendet kan konfigureras för din installation. Mer information finns i [Konfigurera ett styckesystem så att en komponentinstans skapas när du drar en resurs ](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance).
 
 Så här skapar du en komponent genom att dra en av resurstyperna ovan:
 
@@ -348,7 +348,7 @@ För specifika komponenttyper kan du dra och släppa resurser från resursläsar
 | **Resurstyp** | **Komponenttyp** |
 |---|---|
 | Bild | Bild |
-| Dokument | Ladda ned |
+| Dokument | Ladda ner |
 | Produkt | Produkt |
 | Video | Flash |
 | Innehållsfragment | Innehållsfragment |
@@ -568,7 +568,7 @@ Med följande ikoner kan du ångra eller göra om en åtgärd. Dessa visas i ver
 
 >[!NOTE]
 >
->Systemadministratören kan [konfigurera olika aspekter av funktionerna Ångra/Gör om &#x200B;](/help/sites-administering/config-undo.md) enligt kraven för din instans.
+>Systemadministratören kan [konfigurera olika aspekter av funktionerna Ångra/Gör om ](/help/sites-administering/config-undo.md) enligt kraven för din instans.
 
 AEM lagrar en historik över åtgärder som du utför och i vilken ordning du utförde dem. Den här funktionen innebär att du kan ångra flera åtgärder i den ordning som du utförde dem och göra om dem för att återanvända en eller flera av åtgärderna, om det behövs.
 

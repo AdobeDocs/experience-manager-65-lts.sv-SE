@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '10339'
+source-wordcount: '10332'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,6 @@ Läs mer om [Bästa tillvägagångssätt för att ordna digitala resurser så at
    * Förhandsgranska och publicera videomaterial
 
       * Visa källvideon och de kodade återgivningarna av videon tillsammans med tillhörande miniatyrer:
-
         [Förhandsgranska videoklipp](managing-video-assets.md#upload-and-preview-video-assets) eller [Förhandsgranska resurser](previewing-assets.md)
         [Visa videoåtergivningar](video-renditions.md)
         [Hantera videorenderingar](manage-assets.md#managing-renditions)
@@ -76,11 +75,9 @@ Läs mer om [Bästa tillvägagångssätt för att ordna digitala resurser så at
    * Arbeta med videometadata
 
       * Visa egenskaperna för en kodad videoåtergivning, t.ex. bildrutefrekvens, ljud- och videobithastighet samt kodek:
-
         [Visa egenskaper för videoåtergivning](video-renditions.md)
 
       * Redigera egenskaperna för video, till exempel titel, beskrivning och taggar, anpassade metadatafält:
-
         [Redigera videoegenskaper](manage-assets.md#editing-properties)
 
       * [Hantera metadata för digitala resurser](metadata.md)
@@ -105,11 +102,9 @@ Läs mer om [Bästa tillvägagångssätt för att ordna digitala resurser så at
    * Om du använder ett webbinnehållshanteringssystem från en annan leverantör kan du länka eller bädda in videor på dina webbsidor.
 
       * Integrera video med URL:
-
         [Länka URL:er till ditt webbprogram](linking-urls-to-yourwebapplication.md).
 
       * Integrera video med inbäddad kod på en webbsida:
-
         [Bädda in videovisningsprogrammet på en webbsida](embed-code.md).
 
    * [Generera videorapporter](#viewing-video-reports).
@@ -145,7 +140,7 @@ Följande stöds för hantering av enstaka video och adaptiva videouppsättninga
 * Ordna, bläddra bland och sök videoklipp med fullt stöd för metadata för effektiv hantering av videomaterial.
 * Leverera adaptiva videouppsättningar till webben, datorer och mobila enheter som iPhone, iPad, Android™, BlackBerry® och Windows Phone.
 
-Adaptiv videoströmning stöds på olika iOS-plattformar. Se [Referenshandbok för dynamiska mediavisare](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
+Adaptiv videoströmning stöds på olika iOS-plattformar. Se [Referenshandbok för dynamiska mediavisare](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 Dynamic Media har stöd för videouppspelning i mobiler för MP4 H.264-video. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -161,7 +156,7 @@ Du kan hitta Windows-enheter som stöder det här videoformatet på följande pl
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Se även [Visningsprogram för Experience Manager Assets och Dynamic Media Classic](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) och [Visningsprogram endast för Experience Manager-resurser](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Se även [Visningsprogram för Experience Manager Assets och Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) och [Visningsprogram endast för Experience Manager-resurser](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Bästa praxis: Använda videovisningsprogrammet för HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -179,7 +174,7 @@ Genom att kombinera följande i en enda spelare:
 
 Ni kan nå ut med ert multimediematerial till både dator- och mobilanvändare och få en smidig videoupplevelse.
 
-Se även [Om HTML5-visningsprogram](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Se även [Om HTML5-visningsprogram](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Uppspelning av video på stationära datorer och mobila enheter med videovisningsprogrammet för HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -328,7 +323,7 @@ I följande tabell beskrivs hur formelresultaten översätts till vanliga altern
 | 1,78 | 16:9 |
 | 0,56 | 9:16 |
 
-En video som till exempel är 1440 bredd × 1080 höjd har proportionerna 1440/1080 eller 1,33. I det här fallet väljer du en förinställning för videokodning med 4:3-proportioner för att koda videofilen.
+En video som till exempel är 1440 bredd × 1080 höjd har proportionerna 1440/1080 eller 1,33. I det här fallet väljer du en förinställning för videokodning med proportionerna 4:3 för att koda videofilen.
 
 ### Bithastighet {#bitrate}
 
@@ -469,7 +464,7 @@ Ange start- och slutdatumintervallet som du vill ha videodata för och välj sed
 
 Om du använder ett visningsprogram som inte är installerat från Dynamic Media, eller om du har skapat en anpassad visningsförinställning baserad på ett videoredigeringsprogram som är klart att användas, krävs inga ytterligare steg för att visa videorapporter. Om du har skapat ett eget videovisningsprogram baserat på SDK-API:t för HTML5 Viewer ska du följa de här stegen för att se till att videovisningsprogrammet skickar spårningshändelser till videorapporter för dynamiska media.
 
-Använd [referenshandboken för Adobe Dynamic Media Viewer](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources) och [HTML5 Viewer SDK &#x200B;](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) för att skapa egna videovisningsprogram.
+Använd [referenshandboken för Adobe Dynamic Media Viewer](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) och [HTML5 Viewer SDK ](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) för att skapa egna videovisningsprogram.
 
 **Så här visar du videorapporter baserade på ett videovisningsprogram som du har skapat med Dynamic Media HTML5 Viewer SDK:**
 
@@ -611,7 +606,7 @@ Tillagda bildtexter och bildtexter stöds med formaten WebVTT och Adobe `.vtt`. 
 
      Om det behövs kan du ändra eller redigera metadata för ljudspåret senare. När videon publiceras återspeglas dessa uppgifter på offentliga URL:er i publicerade videor.
 
-1. Välj **[!UICONTROL Save]** i den nedrullningsbara listan **[!UICONTROL Save & Close]** i det övre högra hörnet på sidan. Filerna överförs och metadatabearbetningen börjar, vilket visas i kolumnen **Status** i gränssnittet.
+1. Välj **[!UICONTROL Save & Close]** i den nedrullningsbara listan **[!UICONTROL Save]** i det övre högra hörnet på sidan. Filerna överförs och metadatabearbetningen börjar, vilket visas i kolumnen **Status** i gränssnittet.
 
    >[!NOTE]
    >
@@ -692,7 +687,7 @@ Alla överförda ljudspårsfiler kan dock anges som standardljud som spelas upp 
 1. Välj fliken **[!UICONTROL Captions & Audio Tracks]** på sidan Egenskaper.
 1. Under rubriken **Ljudspår** väljer du den ljudspårsfil som du vill ange som videons standard.
 1. Välj **[!UICONTROL Set as default]**.
-Välj **[!UICONTROL Replace]** i dialogrutan **Ange som standard**.
+Välj **i dialogrutan** Ange som standard **[!UICONTROL Replace]**.
 
    ![Rubriken Ljudspår med namnet på den valda ljudspårsfilen och markerad&quot;Ange som standard&quot;-knapp.](assets-dm/msma-defaultaudiotrack2.png)*Anger standardljudspåret för en video.*
 
@@ -801,7 +796,7 @@ Se även [Hjälpmedel i dynamiska media](/help/assets/accessibility-dm.md).
 
 Dynamic Media konverterar bildtextfiler till JSON-format (JavaScript Object Notation). Den här konverteringen innebär att du kan bädda in JSON-texten på en webbsida som en dold men fullständig utskrift av videon. Sökmotorerna kan sedan crawla och indexera innehållet så att videoklippen blir lättare att hitta och ge kunderna ytterligare information om videoinnehållet.
 
-Mer information om hur du använder JSON-funktionen i en URL finns i [Servera statiskt innehåll (inte bildinnehåll)](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
+Mer information om hur du använder JSON-funktionen i en URL finns i [Servera statiskt innehåll (inte bildinnehåll)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
 
 **Så här lägger du till undertexter i en video:**
 
@@ -809,7 +804,7 @@ Mer information om hur du använder JSON-funktionen i en URL finns i [Servera st
 
    Kontrollera att filen du skapar följer standarden WebVTT (Web Video Text Tracks). Bildtextens filnamnstillägg är `.vtt`. Du kan läsa mer om bildtextstandarden WebVTT.
 
-   Se [WebVTT: Textspår för webbvideo &#x200B;](https://w3c.github.io/webvtt/).
+   Se [WebVTT: Textspår för webbvideo ](https://w3c.github.io/webvtt/).
 
    Det finns många webbplatser som innehåller både kostnadsfria och premiumverktyg och tjänster som du kan använda för att skapa WebVTT-bildtexter/bildtextfiler utanför Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
@@ -886,7 +881,7 @@ I exemplet ovan är `Chapter 1` referensidentifieraren och valfri. Referenstiden
 
 Eftersom du använder ett videovisningsprogram för HTML5 bör du kontrollera att den kapitelfil du skapar följer standarden WebVTT (Web Video Text Tracks). Kapitelfiltillägget är `.vtt`. Du kan läsa mer om bildtextstandarden WebVTT.
 
-Se [WebVTT: Textspår för webbvideo &#x200B;](https://w3c.github.io/webvtt/)
+Se [WebVTT: Textspår för webbvideo ](https://w3c.github.io/webvtt/)
 
 **Så här lägger du till kapitelnavigering:**
 
@@ -1121,7 +1116,7 @@ Följande är ett exempel på ovanstående API som använder serverlets skrivna 
 
 >[!TAB Lägg till beroende i pom.xml]
 
-+++**Lägg till beroende i pom.xml**
++++**Lägg till beroende i pom.xml** 
 
 ```java
 dependency> 
@@ -1136,7 +1131,7 @@ dependency>
 
 >[!TAB Exempelserverlet]
 
-+++**Exempelserverlet**
++++**Exempelserverlet** 
 
 ```java
 @Component
@@ -1215,7 +1210,7 @@ public class ManifestServlet extends HttpServlet {
 
 >[!TAB Svarsklass för server]
 
-+++**Svarsklass för server**
++++**Svarsklass för server** 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1245,7 +1240,7 @@ public abstract class VideoResponse {
 
 >[!TAB Konstantfiler refereras i serverlet]
 
-+++**Konstantfiler refereras i serverlet**
++++**Konstantfiler refereras i serverlet** 
 
 ```java
 public final class Constants { 
@@ -1264,7 +1259,7 @@ public final class Constants {
 
 >[!TAB ServletContext]
 
-+++**ServletContext**
++++**ServletContext** 
 
 Montera ovanstående servett med en `servletContext`. Följande är ett exempel på `servletContext`.
 

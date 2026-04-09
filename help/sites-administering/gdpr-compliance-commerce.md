@@ -1,25 +1,25 @@
 ---
-title: AEM Commerce - beredskap för GDPR
+title: AEM Commerce - GDPR-beredskap
 description: Lär dig mer om hur du hanterar GDPR-förfrågningar i AEM Commerce och hur du använder dem.
 contentOwner: carlino
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+role: Admin,Developer,Leader,User
 exl-id: 2d7ae2ad-a7ad-4b7d-bfa4-167caa49a087
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# AEM Commerce - beredskap för GDPR{#aem-commerce-gdpr-readiness}
+# AEM Commerce - GDPR-beredskap{#aem-commerce-gdpr-readiness}
 
 >[!IMPORTANT]
 >
 >GDPR används som exempel i avsnitten nedan, men de ingående detaljerna gäller alla dataskydds- och sekretessbestämmelser, såsom GDPR och CCPA.
 
-Europeiska unionens allmänna dataskyddsförordning om integritetsskydd får verkan från och med maj 2018. Se sidan [GDPR på Adobe Privacy Center](https://business.adobe.com/se/privacy/general-data-protection-regulation.html).
+Europeiska unionens allmänna dataskyddsförordning om integritetsskydd får verkan från och med maj 2018. Se sidan [GDPR på Adobe Privacy Center](https://business.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >

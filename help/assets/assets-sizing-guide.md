@@ -2,11 +2,11 @@
 title: Storleksstödlinje för [!DNL Assets]
 description: Bästa tillvägagångssätt för att fastställa effektiva mått för att uppskatta infrastrukturen och resurserna som krävs för att distribuera  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d88e3ca9-f80d-48f5-857a-eaf71dcb9226
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 0%
@@ -59,7 +59,7 @@ De exempeldata som finns i verktyget visar hur viktigt det är att utföra de an
 
 För stora datalager kan du implementera ett delat datalager antingen via ett delat fildatalager på en nätverksansluten enhet eller via ett Amazon S3-datalager. I det här fallet behöver enskilda instanser inte behålla en kopia av binärfilerna. Dessutom underlättar ett delat datalager binär replikering utan extra intervall och minskar bandbredden som används för att replikera resurser till publiceringsmiljöer.
 
-#### Användningsexempel {#use-cases}
+#### Användningsfall {#use-cases}
 
 Datalagret kan delas mellan en primär författarinstans och en väntande författarinstans för att minimera den tid det tar att uppdatera standby-instansen med ändringar som görs i den primära instansen. Du kan också dela datalagret mellan författaren och publiceringsinstanserna för att minimera trafiken under replikeringen.
 

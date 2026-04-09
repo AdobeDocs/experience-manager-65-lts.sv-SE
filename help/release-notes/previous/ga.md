@@ -3,8 +3,9 @@ title: Versionsinformation för  [!DNL Adobe Experience Manager] 6.5 LTS
 description: Hitta aktuella versionsuppgifter för Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 922b2391b45ac1a08987f286cdbd736fe9a383c8
+role: User,Admin,Developer
+exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 1%
@@ -153,4 +154,4 @@ Kontakta Adobe kundsupport om du får det här problemet. Det finns en snabbkorr
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/customer-one/using/home).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/customer-one/using/home).

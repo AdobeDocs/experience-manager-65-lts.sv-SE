@@ -8,12 +8,12 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2919'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -105,7 +105,7 @@ Följande konsoler finns i Navigation:
    <td>Med den här konsolen kan du skapa, hantera och bearbeta dina <a href="/help/forms/using/introduction-aem-forms.md">formulär och dokument</a>.</td>
   </tr>
   <tr>
-   <td>Personalization</td>
+   <td>Personalisering</td>
    <td>Den här konsolen innehåller ett <a href="/help/sites-authoring/personalization.md">ramverk med verktyg för att skapa riktat innehåll och presentera personaliserade upplevelser</a>.</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ Rubriken visas alltid längst upp på skärmen. De flesta alternativen i huvudet
 
   Du kan också använda [kortkommandot](/help/sites-authoring/keyboard-shortcuts.md) `/` (snedstreck) för att starta sökningen från en konsol.
 
-* [Lösningar](https://business.adobe.com/se/)
+* [Lösningar](https://business.adobe.com/)
 
   ![Lösningar](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -556,7 +556,7 @@ De här alternativen är tillgängliga via markeringen bredvid fältet **Komment
 
 ### Referenser {#references}
 
-**Referenser** visar anslutningar till den valda resursen. I **Platser**-konsolen [&#128279;](/help/sites-authoring/author-environment-tools.md#showingpagereferences) visar till exempel referenser för sidor:
+**Referenser** visar anslutningar till den valda resursen. I **Platser**-konsolen [ ](/help/sites-authoring/author-environment-tools.md#showingpagereferences) visar till exempel referenser för sidor:
 
 * [Ritningar](/help/sites-administering/msm.md)
 * [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)

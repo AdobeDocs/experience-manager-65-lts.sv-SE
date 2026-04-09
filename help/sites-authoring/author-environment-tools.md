@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2211'
 ht-degree: 3%
@@ -137,7 +137,7 @@ Om du vill lägga till en resurs på sidan markerar och drar du den till önskad
 I det övre verktygsfältet i resursläsaren kan du filtrera resurserna efter:
 
 * Namn
-* Bana
+* Sökväg
 * Typ av resurs som bilder, manuskript, dokument, videor, sidor, stycken och produkter
 * Resursegenskaper som Orientation (stående, liggande, fyrkantig) och Style (färg, monokrom, gråskala)
 

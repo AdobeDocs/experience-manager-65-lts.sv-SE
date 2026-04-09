@@ -3,9 +3,9 @@ title: Kom igång med AEM headless translation
 description: Lär dig hur du organiserar rubrikfritt innehåll och hur AEM översättningsverktyg fungerar.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: beebb7b6-5ed8-4cec-84cf-fa90b2ef711a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
@@ -88,7 +88,6 @@ Eftersom innehållsmodellerna definierar innehållsstrukturen måste du veta vil
 1. **Modellredigeraren för innehållsfragment** öppnas.
    1. Den vänstra kolumnen innehåller modellens fält. Den här kolumnen intresserar oss.
    1. Den högra kolumnen innehåller de fält som kan läggas till i modellen. Den här kolumnen kan vi ignorera.
-
       ![Modellredigerare för innehållsfragment](assets/content-fragment-model-editor.png)
 1. Klicka på ett av modellens fält. AEM markerar det och informationen om det fältet visas i den högra kolumnen.
    ![Information om modellredigeraren för innehållsfragment](assets/content-fragment-model-editor-detail.png)
@@ -195,5 +194,5 @@ Vi rekommenderar att du går vidare till nästa del av den headless-översättni
 * [Konfigurerar översättningsintegreringsramverket](/help/sites-administering/tc-tic.md) - Lär dig hur du konfigurerar översättningsintegreringsramverket så att det integreras med översättningstjänster från tredje part.
 * [Hantera översättningsprojekt](/help/sites-administering/tc-manage.md) - Lär dig hur du skapar och hanterar både maskinöversättningsprojekt och mänskliga översättningsprojekt i AEM.
 * En [introduktion till AEM som Headless CMS](/help/sites-developing/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=sv-SE)
-* [Självstudiekurser för Headless i AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=sv-SE)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Självstudiekurser för Headless i AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

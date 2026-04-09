@@ -5,10 +5,10 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
-source-git-commit: c2947923fb83b57bc0e1c068af52558dd0a04867
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '1577'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -1717,22 +1717,22 @@ Följande fragment används för rätt modell.
 
 | Namn | Förnamn | Utmärkelser |
 |--- |--- |--- |
-| Lincoln |  Adobe | |
-| Smith | Adam |   |
-| Slade |  Rensare |  Gameblitz<br>Gamestar |
-| Marmor |  Duke |   |   |
-|  Smith |  Joe |   |
-| Beskär |  Lara | Gamestar |
-| Caulfield |  Max |  Gameblitz |
-|  Jobb |  Steve |   |
+| Lincoln | Adobe | |
+| Smith | Adam | |
+| Slade | Rensare | Gameblitz<br>Gamestar |
+| Marmor | Duke | |
+| Smith | Joe | |
+| Beskär | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| Jobb | Steve | |
 
 #### Utmärkelse {#fragment-award}
 
 | Genväg/ID | Titel |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### Ort {#fragment-city}
 

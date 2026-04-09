@@ -8,11 +8,11 @@ topic-tags: personalization
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: b5fc6cf5-fffd-4ee9-91d4-d10e532c3a11
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1936'
 ht-degree: 10%
 
 ---
@@ -80,7 +80,7 @@ Lägg till en aktivitet eller redigera en befintlig aktivitet för att fokusera 
 * **Målinriktningsmotor:** Antingen [AEM](/help/sites-authoring/personalization.md#aem) eller [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) som motor för målinriktat innehåll.
 
 * **Välj en målkonfiguration:** (Endast Adobe Target) Den molnkonfiguration som den här aktiviteten ska använda för att ansluta till Adobe Target. Det här alternativet visas bara när Adobe Target har valts som målinriktningsmotor.
-* **Aktivitetstyp: &#x200B;** Aktivitetstyp - A/B-test eller målinriktad upplevelse
+* **Aktivitetstyp: **Aktivitetstyp - A/B-test eller målinriktad upplevelse
 * **Mål:** (Valfritt) En beskrivning av aktiviteten.
 * **Upplevelser:** Mappningar mellan målgruppsnamn och de marknadssegment som ni riktar in er på.
 * **Trafikprocent:** Om A/B-test är valt kan du ändra hur mycket trafik (i procent) som går till varje upplevelse.
@@ -108,7 +108,7 @@ Så här lägger du till en aktivitet:
 1. Lägg till en eller flera upplevelser till aktiviteten. Klicka på **Lägg till upplevelse**.
 1. Om ni använder AEM för målinriktning eller Adobe Target för upplevelser:
 
-   1. Klicka på **Välj publik &#x200B;** och välj det segment som upplevelsen ska rikta in sig på.
+   1. Klicka på **Välj publik **och välj det segment som upplevelsen ska rikta in sig på.
    1. Klicka på **Lägg till upplevelse**, skriv ett namn och klicka på **OK**.
 
    1. Klicka på **Nästa**.

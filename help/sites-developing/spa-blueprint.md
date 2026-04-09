@@ -10,7 +10,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 798b9ad8-47fa-432d-8887-9de63c20cfca
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Sidans innehållsstruktur lagras i AEM. Sidans modell används för att mappa oc
 
 SPA-komponenterna måste vara synkroniserade med sidmodellen och uppdateras om innehållet ändras i enlighet med detta. Ett mönster som använder dynamiska komponenter måste användas för att instansiera komponenter i farten efter den angivna sidmodellstrukturen.
 
-### Metafält {#meta-fields}
+### Meta-fält {#meta-fields}
 
 Sidmodellen använder JSON-modellens exporterare, som i sin tur är baserad på API:t [Sling Model](https://sling.apache.org/documentation/bundles/models.html) . De exporterbara snedsättningsmodellerna visar följande fältlista för att de underliggande biblioteken ska kunna tolka datamodellen:
 
@@ -153,7 +153,7 @@ Behållaren hämtar de underordnade komponenterna dynamiskt från arkivet för b
 
 ### Sida {#page}
 
-Komponenten `Page` utökar komponenten `Container`. En behållare är en komponent som är avsedd att innehålla och återge underordnade komponenter, inklusive underordnade sidor. För att göra det itererar behållaren över modellens `:itemsOrder`-, `:items`- och `:children`-egenskaper. Komponenten `Page` hämtar de underordnade komponenterna dynamiskt från arkivet för biblioteket [&#x200B; ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` ansvarar för att instansiera underordnade komponenter.
+Komponenten `Page` utökar komponenten `Container`. En behållare är en komponent som är avsedd att innehålla och återge underordnade komponenter, inklusive underordnade sidor. För att göra det itererar behållaren över modellens `:itemsOrder`-, `:items`- och `:children`-egenskaper. Komponenten `Page` hämtar de underordnade komponenterna dynamiskt från arkivet för biblioteket [ ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` ansvarar för att instansiera underordnade komponenter.
 
 ### Responsivt rutnät {#responsive-grid}
 

@@ -3,10 +3,10 @@ title: Redigera sidegenskaper
 description: Definiera de egenskaper som krävs för en sida i Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5148afb9-f447-4475-a15c-1fa345325711
 mini-toc-levels: 2
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Egenskaperna fördelas på flera flikar.
 
 #### Varumärke {#branding}
 
-Använd en enhetlig varumärkesidentitet på alla sidor genom att lägga till en instruktionsmarginal till varje sidrubrik. Den här funktionen kräver att du använder Page Component från version 2.14.0 eller senare av [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE)
+Använd en enhetlig varumärkesidentitet på alla sidor genom att lägga till en instruktionsmarginal till varje sidrubrik. Den här funktionen kräver att du använder Page Component från version 2.14.0 eller senare av [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
 * **Åsidosätt** - Markera för att definiera instruktionsmarginalen för varumärket på den här sidan.
    * Värdet ärvs av alla underordnade sidor såvida inte deras **Åsidosätt**-värden också har angetts.
@@ -65,7 +65,7 @@ På-/avaktiveringstiden för en sida är ett praktiskt sätt att tillfälligt d�
 * **I tid** - Det datum och den tidpunkt då den publicerade sidan visas (återges) i publiceringsmiljön. Sidan måste publiceras, antingen manuellt eller med förkonfigurerad automatisk replikering.
 
    * Om den redan är [publicerad](/help/sites-authoring/publishing-pages.md) är den här sidan tillgänglig på publiceringsinstansen, men den behåller vilande (dold) tills återgivningen sker vid den angivna tidpunkten.
-   * Om den inte publiceras och [konfigureras för automatisk replikering &#x200B;](/help/sites-deploying/replication.md) publiceras sidan automatiskt och återges sedan vid den angivna tidpunkten.
+   * Om den inte publiceras och [konfigureras för automatisk replikering ](/help/sites-deploying/replication.md) publiceras sidan automatiskt och återges sedan vid den angivna tidpunkten.
    * Om sidan inte är publicerad och inte konfigurerad för automatisk replikering publiceras den inte automatiskt. Därför visas 404 när ett försök görs att komma åt sidan.
 
 * **Fråntid** - Ungefär som och ofta används i kombination med **På tid**, definierar detta den tidpunkt då den publicerade sidan döljs i publiceringsmiljön.
@@ -95,7 +95,7 @@ Om Vanity-URL:en till exempel är inställd på `welcome` till den sida som iden
 >* Använd inte regex-mönster.
 >* Ska inte anges till en befintlig sida.
 
-Konfigurera Dispatcher för att aktivera åtkomst till mål-URL:er. Mer information finns i [Aktivera åtkomst till Vanity-URL:er](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#enabling-access-to-vanity-urls-vanity-urls).
+Konfigurera Dispatcher för att aktivera åtkomst till mål-URL:er. Mer information finns i [Aktivera åtkomst till Vanity-URL:er](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls).
 
 * **Lägg till** - Tryck eller klicka för att lägga till en fågel-URL.
 * **Ta bort** - Tryck eller klicka för att ta bort en fågel-URL.
@@ -117,7 +117,7 @@ Konfigurera Dispatcher för att aktivera åtkomst till mål-URL:er. Mer informat
 
 #### Konfiguration {#configuration}
 
-* **Ärvs från &lt;*path*>** - Aktivera/inaktivera arv av **molnkonfigurationen** för sidan
+* **Ärvd från &lt;*sökväg*>** - Aktivera/inaktivera arv av **molnkonfigurationen** för sidan
 * **Molnkonfiguration** - Sökvägen till konfigurationen
 
 #### Mallinställningar {#templates}
@@ -177,7 +177,7 @@ STthis-avsnittet används för att välja och konfigurera sidans miniatyrbild. D
 * **Ärvd från** - För Live-kopior och språkkopior ärvs molnkonfigurationer som standard från utkast.
    * Avmarkera för att åsidosätta arv
 
-### Personalization {#personalization}
+### Personalisering {#personalization}
 
 #### ContextHub-konfigurationer {#contexthub}
 
@@ -195,7 +195,7 @@ Välj ett [varumärke om du vill ange ett omfång för målanpassning.](/help/si
 
 ### Behörigheter {#permissions}
 
-Använd fliken **Behörigheter** för att definiera vilka användare, grupper eller [stängda användargrupper (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=sv-SE) som kan komma åt och/eller ändra sidan.
+Använd fliken **Behörigheter** för att definiera vilka användare, grupper eller [stängda användargrupper (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) som kan komma åt och/eller ändra sidan.
 
 * [Lägg till behörigheter](/help/sites-administering/user-group-ac-admin.md)
 * [Redigera stängd användargrupp](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
@@ -203,7 +203,7 @@ Använd fliken **Behörigheter** för att definiera vilka användare, grupper el
 
 >[!CAUTION]
 >
->På fliken **Behörigheter** kan du redigera CUG-konfigurationer baserat på förekomsten av `granite:AuthenticationRequired`-mixinen. Om sidbehörigheter konfigureras med inaktuella CUG-konfigurationer, baserat på förekomsten av egenskapen `cq:cugEnabled`, visas ett varningsmeddelande och CUG-behörigheterna kan inte redigeras. Autentiseringskravet på fliken [&#x200B; Avancerat](/help/sites-authoring/editing-page-properties.md#advanced) kan inte heller redigeras.
+>På fliken **Behörigheter** kan du redigera CUG-konfigurationer baserat på förekomsten av `granite:AuthenticationRequired`-mixinen. Om sidbehörigheter konfigureras med inaktuella CUG-konfigurationer, baserat på förekomsten av egenskapen `cq:cugEnabled`, visas ett varningsmeddelande och CUG-behörigheterna kan inte redigeras. Autentiseringskravet på fliken [ Avancerat](/help/sites-authoring/editing-page-properties.md#advanced) kan inte heller redigeras.
 >
 >
 >I så fall måste CUG-behörigheterna redigeras i det [klassiska användargränssnittet](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -223,7 +223,7 @@ Den här fliken visas bara för sidor som fungerar som utkast. Utkast fungerar s
 
 ### Live Copy {#live-copy}
 
-Den här fliken visas bara för sidor som har konfigurerats som live-kopior. Precis som med [utkast är &#x200B;](#blueprint) Live-kopior en del av [Multi Site Management (Hantering av flera webbplatser).](/help/sites-administering/msm.md)
+Den här fliken visas bara för sidor som har konfigurerats som live-kopior. Precis som med [utkast är ](#blueprint) Live-kopior en del av [Multi Site Management (Hantering av flera webbplatser).](/help/sites-administering/msm.md)
 
 * **Synkronisera** - Synkroniserar Live-kopia med utkast, med lokala ändringar
 * **Återställ** - Återställer Live Copy till läget för utkast och tar bort lokala ändringar

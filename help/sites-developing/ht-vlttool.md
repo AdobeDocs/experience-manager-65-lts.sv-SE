@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: 46f191d9-b667-44e3-83e9-7988fffb0ecf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 0%
@@ -389,7 +389,7 @@ vlt import http://localhost:4502/crx . /
 
 ### Utcheckning (co) {#checkout-co}
 
-Utför en första utcheckning från en JCR-databas till det lokala filsystemet från &lt;uri> till det lokala filsystemet på &lt;local-path>. Du kan också lägga till ett &lt;jcrPath>-argument för att checka ut en underkatalog till fjärrträdet. Workspace-filter kan anges som kopieras till META-INF-katalogen.
+Utför en första utcheckning från en JCR-databas till det lokala filsystemet från &lt;uri> till det lokala filsystemet på &lt;local-path>. Du kan också lägga till ett &lt;jcrPath>-argument för att checka ut en underkatalog till fjärrträdet. Workspace-filter som kopieras till META-INF-katalogen kan anges.
 
 #### Syntax {#syntax-2}
 
@@ -443,7 +443,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | utskriftsformat för snabbkorrigeringslänkar (namn,id), till exempel `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | utskriftsformat för snabbkorrigeringslänkar (namn,id), till exempel `[CQ520_HF_%s`\|`%s]` |
 | `-v (--verbose)` | utförlig utskrift |
 | `-q (--quiet)` | så lite som möjligt |
 | `<localPaths> [<localPaths> ...]` | lokal sökväg |

@@ -3,9 +3,9 @@ title: Skapa innehållssidor i AEM
 description: Vilka uppgifter som ska utföras när en innehållssida redigeras i Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: fafe6322-1dc3-4637-8a8a-33143af04c30
-source-git-commit: d95f583bab511c923453a7bb4bcbb726355987b0
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%

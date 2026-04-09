@@ -3,12 +3,12 @@ title: Starthandbok för Headless
 description: Med den här snabbstartsguiden lär du dig grunderna i Adobe Experience Manager (AEM) 6.5, de kraftfulla headless-funktionerna som Content Models, Content Fragments och GraphQL API.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 867613e7-59fe-4948-a19a-bd196aec737b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

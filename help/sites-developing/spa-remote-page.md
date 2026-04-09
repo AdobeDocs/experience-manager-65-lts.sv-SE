@@ -6,7 +6,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 9c8dff52-3860-4f71-a0d9-993574f1d654
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 När du bestämmer vilken nivå av integration du vill ha mellan det externa SPA-programmet och AEM är det ofta tydligt att du behöver kunna visa och redigera SPA-programmet inom AEM. RemotePage-komponenten är en anpassad sidkomponent för just detta ändamål.
 
-## Ökning {#overview}
+## Översikt {#overview}
 
 RemotePage-komponenten hämtar alla nödvändiga resurser från programmets genererade `asset-manifest.json` och använder den för att återge SPA i AEM.
 
@@ -46,7 +46,7 @@ Mer information om redigerbara externa SPA:er i AEM finns i artikeln [Redigera e
 
 ## Begränsningar {#limitations}
 
-* RemotePage-komponenten förväntar sig att implementeringen tillhandahåller ett tillgångsmanifest som den [&#x200B; som finns här.](https://github.com/shellscape/webpack-manifest-plugin) RemotePage-komponenten har bara testats för att fungera med React Framework (och Next.js via komponenten remote-page-next) och stöder därför inte fjärrinläsning av program från andra ramverk, som Angular.
+* RemotePage-komponenten förväntar sig att implementeringen tillhandahåller ett tillgångsmanifest som den [ som finns här.](https://github.com/shellscape/webpack-manifest-plugin) RemotePage-komponenten har bara testats för att fungera med React Framework (och Next.js via komponenten remote-page-next) och stöder därför inte fjärrinläsning av program från andra ramverk, som Angular.
 * Intern CSS som är definierad i programmets HTML-rotfil och infogad CSS på DOM-rotnoden är inte tillgänglig vid fjärråtergivning i AEM.
 
 ## Teknisk information {#technical-details}

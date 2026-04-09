@@ -3,9 +3,9 @@ title: Skapa innehållsfragmentmodeller Headless Quick Start Guide
 description: Definiera strukturen för det innehåll som du skapar och betjänar med headless-funktionerna i Adobe Experience Manager (AEM) genom att använda Content Fragment-modeller.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 768a5d73-521f-47a5-b4a3-d1b0b77798f7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Definiera strukturen för det innehåll som du skapar och betjänar med headless
 
 ## Vad är Content Fragment Models? {#what-are-content-fragment-models}
 
-[Nu när du har skapat en konfiguration &#x200B;](create-configuration.md) kan du använda den för att skapa modeller för innehållsfragment.
+[Nu när du har skapat en konfiguration ](create-configuration.md) kan du använda den för att skapa modeller för innehållsfragment.
 
 Modeller för innehållsfragment definierar strukturen för data och innehåll som du skapar och hanterar i AEM. De fungerar som en sorts ställningar för ert innehåll. När du väljer att skapa innehåll väljer författarna bland de innehållsfragmentsmodeller du definierar, som vägleder dem när de skapar innehåll.
 

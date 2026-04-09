@@ -2,10 +2,10 @@
 title: AEM Documentation Journeys
 description: Dokumentation Journeys innehåller en berättande struktur i AEM-dokumentationen genom att sammanfoga komplexa och skilda funktioner för att lösa ett affärsmål på bästa sätt. Resorna är utformade med AEM nybörjare i åtanke och presenterar koncept och funktioner för att uppnå ett mål från A till Ö.
 solution: Experience Manager, Experience Manager Sites
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 feature: Administering
 exl-id: 5de9469f-b92f-42f6-a187-0c6835ad972c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Dokumentation Journeys innehåller en berättande struktur i AEM-dokumentationen
 
 En dokumentationsresa knyter ihop många olika och komplexa ämnen och funktioner genom att tillhandahålla en berättarröst som hjälper läsaren, som kan vara nybörjare på AEM, att förstå och lösa ett affärsproblem från början till slut, samtidigt som man antar minimala tidigare ämnesområden eller AEM kunskaper.
 
-Dokumentation Journeys står i kontrast till AEM befintliga tekniska dokument som huvudsakligen fokuserar på en enda funktion och dokumentation av arbetsmomenten, och som förutsätter att man är bekant med AEM. Genom att fokusera på koncepten och ge detaljerad information till den befintliga tekniska dokumentationen ger Documentation Journeys läsarna nya möjligheter att förstå hur plattformen kan användas med hjälp av bästa praxis för att hantera vanliga affärsbehov och arbetsflöden. Av den anledningen fungerar Dokumentationsresor som ett komplement till och inte som ersättning för [AEM befintliga tekniska dokumentation.](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=sv-SE)
+Dokumentation Journeys står i kontrast till AEM befintliga tekniska dokument som huvudsakligen fokuserar på en enda funktion och dokumentation av arbetsmomenten, och som förutsätter att man är bekant med AEM. Genom att fokusera på koncepten och ge detaljerad information till den befintliga tekniska dokumentationen ger Documentation Journeys läsarna nya möjligheter att förstå hur plattformen kan användas med hjälp av bästa praxis för att hantera vanliga affärsbehov och arbetsflöden. Av den anledningen fungerar Dokumentationsresor som ett komplement till och inte som ersättning för [AEM befintliga tekniska dokumentation.](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 
 ### Learning by Narrative {#narrative}
 

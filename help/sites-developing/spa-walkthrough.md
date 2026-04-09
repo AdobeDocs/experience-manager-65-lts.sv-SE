@@ -8,7 +8,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
 index: false
-source-git-commit: 97f3bbc3eb5b4119accf2d93fb63bec35fd56c44
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -34,12 +34,12 @@ Målet med denna introduktion och genomgång är att visa för en AEM-utvecklare
 
 ## Krav {#requirements}
 
-Genomgången baseras på standardfunktionerna i AEM och exempelprogrammet WKND SPA Project. Om du vill följa med i den här genomgången måste du ha följande tillgängligt.
+Genomgången baseras på AEM standardfunktioner och exempelprogrammet WKND SPA Project. Om du vill följa med i den här genomgången måste du ha följande till hands.
 
 * [AEM version 6.5.4 eller senare](/help/release-notes/release-notes.md)
-   * Du måste ha administratörsbehörighet till systemet.
+   * Du måste ha administratörsbehörighet för systemet.
 * [Exempelprogrammet WKND SPA Project är tillgängligt på GitHub](https://github.com/adobe/aem-guides-wknd-spa)
-   * Hämta den [&#x200B; senaste versionen av React-appen.](https://github.com/adobe/aem-guides-wknd-spa/releases) Namnet liknar `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+   * Hämta den [ senaste versionen av React-appen.](https://github.com/adobe/aem-guides-wknd-spa/releases) Namnet liknar `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
    * Hämta de [senaste exempelbilderna](https://github.com/adobe/aem-guides-wknd-spa/releases) för appen. Namnet liknar `wknd-spa-sample-images-X.Y.Z.zip`.
    * [Använd pakethanteraren](/help/sites-administering/package-manager.md) för att installera paketen på samma sätt som andra paket i AEM.
    * Appen behöver inte installeras med Maven för den här genomgången.
@@ -48,7 +48,7 @@ Genomgången baseras på standardfunktionerna i AEM och exempelprogrammet WKND S
 >
 >Det här dokumentet använder [WKND Spa Project-programmet](https://github.com/adobe/aem-guides-wknd-spa) endast i demonstrationssyfte. Använd inte för projektarbete.
 >
->Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE) som stöder SPA-projekt med React eller Angular och använder SPA SDK.
+>Alla AEM-projekt ska använda [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) som stöder SPA-projekt med React eller Angular och använder SPA SDK.
 
 ### Vad är en SPA? {#what-is-a-spa}
 
@@ -77,13 +77,13 @@ Genom att vara snabbare, smidigare och mer som ett systemspecifikt program blir 
 **Utvecklare**
 
 * Utvecklarna vill att det ska finnas tydliga skillnader mellan innehåll och presentation.
-* Ren separation gör systemet mer utbyggbart och möjliggör en oberoende utveckling av fronten.
+* Ren separation gör systemet mer utbyggbart och möjliggör oberoende frontendutveckling.
 
-### Hur fungerar ett SPA? {#how-does-a-spa-work}
+### Hur fungerar en SPA? {#how-does-a-spa-work}
 
-Huvudtanken med SPA är att samtalen och beroendet av en server minskas för att minimera fördröjningar orsakade av serveranrop så att SPA närmar sig svarstiden för ett inbyggt program.
+Den främsta idén bakom ett SPA är att anrop och beroende av en server minskas för att minimera fördröjningar som orsakas av serveranrop så att SPA närmar sig svarstiden för ett systemspecifikt program.
 
-På en traditionell, sekventiell webbsida läses endast de data in som behövs för den direkta sidan. Det innebär att när besökaren flyttar till en annan sida, anropas servern för de ytterligare resurserna. Ytterligare anrop kan behövas när besökaren interagerar med element på sidan. Dessa anrop kan ge en känsla av fördröjning eller fördröjning eftersom sidan måste hinna ifatt besökarens önskemål.
+På en traditionell, sekventiell webbsida läses bara de data som behövs för den omedelbara sidan in. Det innebär att när besökaren flyttar till en annan sida anropas servern för de extra resurserna. Ytterligare anrop kan behövas eftersom besökaren interagerar med element på sidan. Dessa anrop kan ge en känsla av fördröjning eller fördröjning eftersom sidan måste hinna ifatt besökarens önskemål.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
@@ -111,7 +111,7 @@ När en SPA har byggts för att använda AEM SPA Editor märker innehållsförfa
 
    ![Steg 2](assets/spa-walkthrough-step-2.png)
 
-1. Redigera innehållet som vanligt i AEM. Ändringarna sparas.
+1. Redigera materialet som vanligt i AEM. Ändringarna sparas.
 
    ![Steg 3](assets/spa-walkthrough-step-3.png)
 
@@ -141,15 +141,15 @@ Att se hur en SPA fungerar för slutanvändaren och sedan inspektera SPA-sidan h
 
 ### Använda ett SPA-program {#using-an-spa-application}
 
-1. Läs in programmet WKND SPA Project på publiceringsservern eller med alternativet **Visa som publicerat** på menyn **Sidinformation** i sidredigeraren.
+1. Läs in WKND SPA-projektprogrammet på publiceringsservern eller med alternativet **Visa som publicerad** på menyn **Sidinformation** i sidredigeraren.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
    ![Steg 1](assets/spa-walkthrough-step-1-1.png)
 
-   Observera sidstrukturen, inklusive navigering till underordnade sidor, väderwidget och artiklar.
+   Lägg märke till sidstrukturen, inklusive navigering till underordnade sidor, väderwidget och artiklar.
 
-1. Gå till en underordnad sida via menyn och se att sidan läses in omedelbart utan att behöva uppdatera.
+1. Navigera till en underordnad sida via menyn och se att sidan läses in omedelbart utan att behöva uppdateras.
 
    ![Steg 2](assets/spa-walkthrough-step-1-2.png)
 
@@ -235,9 +235,9 @@ I följande avsnitt ska vi titta närmare på det avtal som gör det möjligt f�
 
    `data-cq-data-path="/content/wknd-spa-react/us/en/home/jcr:content/root/responsivegrid/text`
 
-   Den här sökvägen möjliggör hämtning och association för varje komponents redigeringskonfigurationsobjekt.
+   Den här sökvägen tillåter hämtning och associering av konfigurationsobjektet för redigeringssammanhanget för varje komponent.
 
-   Det här är det enda markeringsattribut som krävs för att redigeraren ska känna igen detta som en redigerbar komponent i SPA. Baserat på det här attributet avgör SPA Editor vilken redigerbar konfiguration som är associerad med komponenten, så att rätt bildruta, verktygsfält och så vidare läses in.
+   Det här är det enda markeringsattribut som krävs för att redigeraren ska kunna identifiera det som en redigerbar komponent i SPA-filen. Utifrån det här attributet avgör SPA-redigeraren vilken redigerbar konfiguration som är kopplad till komponenten, så att rätt bildruta, verktygsfält och så vidare läses in.
 
    Vissa specifika klassnamn läggs också till för att markera platshållare och för att dra och släppa resurser.
 

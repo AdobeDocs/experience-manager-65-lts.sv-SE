@@ -3,9 +3,9 @@ title: Redigering
 description: Concepts of authoring and publishing in Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
-source-git-commit: 71ea867e240d76a2a881f6e7d65b83979b558f46
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
@@ -81,4 +81,4 @@ Normalt ligger publiceringsmiljön innanför den demilitariserade zonen, dvs. ä
 
 #### Dispatcher {#dispatcher}
 
-**[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE)** implementerar belastningsutjämning och cachning för att optimera prestanda för besökare på din webbplats.
+**[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)** implementerar belastningsutjämning och cachning för att optimera prestanda för besökare på din webbplats.

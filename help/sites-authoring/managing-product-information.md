@@ -1,26 +1,26 @@
 ---
-title: Kreativt projekt- och PIM-integrering
-description: Creative Project effektiviserar hela arbetsflödet för fotografering, inklusive generering av en fotoplåtningsförfrågan, överföring av en fotoplåtning, samarbete i en fotoplåtning och paketering av godkända mediefiler
+title: Integrering av Creative Project och PIM
+description: 'Creative Project effektiviserar hela arbetsflödet för fotografering: skapa en bildplåtningsförfrågan, ladda upp en fotoplåtning, samarbeta i en fotoplåtning och paketera godkända mediefiler'
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 4531a41c-99fa-4e98-b4f4-f8fc92ed9095
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 0%
 
 ---
 
-# Kreativt projekt- och PIM-integrering {#creative-project-and-pim-integration}
+# Integrering av Creative Project och PIM {#creative-project-and-pim-integration}
 
-Om du är marknadsförare eller kreatör kan du använda verktygen i Adobe Experience Manager (AEM) för att hantera e-handelsrelaterade produktfotografier och tillhörande kreativa processer inom organisationen.
+Om du är marknadsförare eller kreatör kan du använda Creative Project-verktygen i Adobe Experience Manager (AEM) för att hantera e-handelsrelaterade produktfotografier och tillhörande kreativa processer inom organisationen.
 
-Du kan använda Creative Project för att effektivisera följande uppgifter i arbetsflödet för fotografering:
+Du kan använda Creative Project till att effektivisera följande uppgifter i arbetsflödet för fotografering:
 
 * Generera en begäran om fotofotografering
 * Överföra en fototagning
@@ -33,7 +33,7 @@ Du kan använda Creative Project för att effektivisera följande uppgifter i ar
 
 ## Fotofotograferingsarbetsflöden  {#exploring-product-photo-shoot-workflows}
 
-Creative Project innehåller olika projektmallar som uppfyller olika projektkrav. Mallen **Produktfotoprojekt** är tillgänglig direkt. Den här mallen innehåller arbetsflöden för fotoplåtning där du kan initiera och hantera begäranden om produktfotografering. Det innehåller även en rad uppgifter som gör att du kan få digitala bilder för produkter genom lämpliga gransknings- och godkännandeprocesser.
+Creative Project innehåller olika projektmallar för olika projektbehov. Mallen **Produktfotoprojekt** är tillgänglig direkt. Den här mallen innehåller arbetsflöden för fotoplåtning där du kan initiera och hantera begäranden om produktfotografering. Det innehåller även en rad uppgifter som gör att du kan få digitala bilder för produkter genom lämpliga gransknings- och godkännandeprocesser.
 
 ## Skapa ett produktfotoprojekt {#create-a-product-photo-shoot-project}
 
@@ -194,7 +194,7 @@ Aktiviteten **Skapa lista över scenbilder** gör det möjligt för projektägar
 
    ![Visa tagningslista](assets/chlimage_1-148a.png)
 
-   Om du vill redigera befintliga data eller lägga till nya data klickar du på **Redigera** i verktygsfältet. Endast fälten **Product &#x200B;** och **Description** kan redigeras.
+   Om du vill redigera befintliga data eller lägga till nya data klickar du på **Redigera** i verktygsfältet. Endast fälten **Product **och **Description** kan redigeras.
 
    ![Redigera tagningslista](assets/chlimage_1-149a.png)
 

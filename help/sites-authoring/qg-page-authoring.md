@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5a962fd3-33bb-44df-a48d-416a04f393eb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 4%
@@ -126,7 +126,7 @@ Hur du väljer en sida beror på vilken vy du använder i konsolen:
 
 [Snabbåtgärder](/help/sites-authoring/basic-handling.md#quick-actions) är tillgängliga:
 
-1. [Navigera till sidan &#x200B;](#finding-your-page) som du vill vidta åtgärder på.
+1. [Navigera till sidan ](#finding-your-page) som du vill vidta åtgärder på.
 1. Håll muspekaren över kortet som representerar den resurs du behöver. Snabbåtgärderna visas:
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)

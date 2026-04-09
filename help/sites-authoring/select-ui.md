@@ -3,9 +3,9 @@ title: Välja användargränssnitt i AEM
 description: Konfigurera vilket gränssnitt du använder för att arbeta i Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
-source-git-commit: d8057cf9ee86c2ec9c1f556fa7c18f98797fe982
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Detta anger att användargränssnittet ska vara standard när sidor redigeras, m
 * [Växlar till det klassiska användargränssnittet för den aktuella sessionen](#switching-to-classic-ui-for-the-current-session)
 Växlar till det klassiska användargränssnittet för den aktuella sessionen.
 
-* När det gäller [sidredigering gör systemet vissa åsidosättningar i relation till användargränssnittet &#x200B;](#ui-overrides-for-the-editor).
+* När det gäller [sidredigering gör systemet vissa åsidosättningar i relation till användargränssnittet ](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >

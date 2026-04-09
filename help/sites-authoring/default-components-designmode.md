@@ -3,9 +3,9 @@ title: Konfigurera standardkomponenter i designläge
 description: Konfigurera Adobe Experience Manager-komponenter i designläge.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 679ec753-1beb-49d2-9ed3-ee9abdd5f1a9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Innehållet på en produktsida kan till exempel innehålla ett styckesystem som 
 
 >[!NOTE]
 >
->Mer information om `parsys` finns i [Utveckla komponenter](/help/sites-developing/components.md) och [Riktlinjer för användning av mallar och komponenter](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components).
+>Mer information om [ finns i ](/help/sites-developing/components.md)Utveckla komponenter[ och ](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)Riktlinjer för användning av mallar och komponenter`parsys`.
 
 >[!CAUTION]
 >

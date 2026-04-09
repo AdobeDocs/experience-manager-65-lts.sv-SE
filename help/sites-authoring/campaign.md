@@ -7,11 +7,11 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 1d621e12-6da5-4b49-98c9-3fb9b8189ff7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2769'
 ht-degree: 2%
 
 ---
@@ -198,7 +198,7 @@ Du kan förhandsgranska hur nyhetsbrevet kommer att se ut och förhandsgranska p
 
    >[!NOTE]
    >
-   >Om du använder Adobe Campaign Standard och exempelmallen genererar två anpassningsblock som visar det ursprungliga innehållet - **&quot;&lt;%@ include view=&quot;MirrorPage&quot; %>&quot;** och **&quot;&lt;%@ include view=&quot;UnsubscriptionLink&quot; %>&quot;** - fel när du importerar innehållet under leveransen. Du kan justera dessa genom att markera motsvarande block med hjälp av personaliseringsblockväljaren.
+   >Om du använder Adobe Campaign Standard och exempelmallen genererar två anpassningsblock som visar det ursprungliga innehållet - **&quot;&lt;%@ include view=&quot;MirrorPage&quot; %>&quot;** och **&quot;&lt;%@ include view=&quot;UnsubscriptionLink&quot; %>&quot;** - fel när de används importerar innehållet under leveransen. Du kan justera dessa genom att markera motsvarande block med hjälp av personaliseringsblockväljaren.
 
 1. Om du vill förhandsgranska personaliseringen öppnar du ContextHub genom att klicka/trycka på motsvarande ikon i verktygsfältet. Anpassningsfältets taggar ersätts nu av startdata för den valda personen. Se hur variablerna anpassar sig när du byter profil i ContextHub.
 
@@ -260,7 +260,7 @@ På så sätt kan ni leverera innehållet. Du ser om ett nyhetsbrev är länkat 
 
 Så här länkar du en sida som skapats i AEM med ett e-postmeddelande från Adobe Campaign:
 
-1. Skapa ett e-postmeddelande baserat på en AEM-specifik e-postmall. Mer information finns i [Skapa e-postmeddelanden i Adobe Campaign Standard](https://helpx.adobe.com/se/campaign/standard/channels/using/creating-an-email.html).
+1. Skapa ett e-postmeddelande baserat på en AEM-specifik e-postmall. Mer information finns i [Skapa e-postmeddelanden i Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html).
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
