@@ -9,16 +9,16 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
 
 # Tjänstanvändare i Adobe Experience Manager (AEM) {#service-users-in-aem}
 
-## Ökning {#overview}
+## Översikt {#overview}
 
 Det huvudsakliga sättet att få en administrativ session eller resurslösare i AEM var att använda metoderna `SlingRepository.loginAdministrative()` och `ResourceResolverFactory.getAdministrativeResourceResolver()` från Sling.
 
@@ -119,27 +119,39 @@ Om du vill ersätta administratörssessionen med en tjänstanvändare utför du 
 
 När du har verifierat att ingen användare i listan över AEM-tjänstanvändare kan användas för ditt användningsfall och att motsvarande RTC-problem har godkänts lägger du till den nya användaren i standardinnehållet.
 
-Vi rekommenderar att du skapar en tjänstanvändare som kan använda databasutforskaren på *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
+>[!IMPORTANT]
+>
+>CRX Explorer (`/crx/explorer/index.jsp`) är inte tillgänglig i AEM 6.5 LTS-miljöer och får inte användas för att skapa tjänstanvändare. Befintliga tjänstanvändare som skapats via CRX Explorer fortsätter att fungera. För nya användare av tjänster använder du en av de metoder som beskrivs nedan.
 
-Målet är att hämta en giltig `jcr:uuid`-egenskap som är obligatorisk för att skapa användaren via en innehållspaketinstallation.
+>[!NOTE]
+>
+>Det finns inga blandningstyper som är associerade med tjänstanvändare på JCR-nodnivå. Det innebär att systemanvändarnoder inte har åtkomstkontrollprinciper som är kopplade direkt till dem. Åtkomstkontroll hanteras i stället separat, till exempel via RepoInit ACL-satser eller ACL-konfiguration på databasnivå.
 
-Du kan skapa tjänstanvändare genom att:
+### Använda Sling-databasinitiering (RepoInit) {#creating-service-user-repoinit}
 
-1. Gå till databasutforskaren på *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
-1. Logga in som administratör genom att trycka på länken **Logga in** i skärmens övre vänstra hörn.
-1. Skapa och namnge sedan systemanvändaren. Om du vill skapa användaren som ett system anger du den mellanliggande sökvägen som `system` och lägger till valfria undermappar beroende på dina behov:
+Rekommenderat tillvägagångssätt är att använda [Sling Repository Initialization (RepoInit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) för att skapa tjänstanvändare. Med RepoInit kan du definiera tjänstanvändare och deras åtkomstkontrollistor deklarativt med ett enkelt skriptspråk.
 
-   ![chlimage_1-102](assets/chlimage_1-102a.png)
+Om du vill skapa en tjänstanvändare med RepoInit lägger du till en `scripts`-egenskap i en OSGi-konfiguration för `org.apache.sling.jcr.repoinit.RepositoryInitializer`:
 
-1. Kontrollera att din systemanvändarnod ser ut så här:
+```
+create service user my-service-user with path system/cq
 
-   ![chlimage_1-103](assets/chlimage_1-103a.png)
+set ACL for my-service-user
+    allow jcr:read on /content
+end
+```
 
-   >[!NOTE]
-   >
-   >Det finns inga blandningstyper som är associerade med tjänstanvändare. Det innebär att det inte finns några åtkomstkontrollprinciper för systemanvändare.
+Direktivet `with path system/cq` placerar tjänstanvändaren under `/home/users/system/cq` i databasen. Du kan välja en sökväg som matchar projektets organisationsstruktur (till exempel `system/myproject`). Om de mellanliggande sökvägsnoderna inte finns använder du `with forced path` för att skapa dem automatiskt.
 
-När du lägger till motsvarande .content.xml till innehållet i ditt paket måste du se till att du har angett `rep:authorizableId` och att den primära typen är `rep:SystemUser`. Det borde se ut så här:
+Det här tillvägagångssättet rekommenderas eftersom:
+
+* Definierar tjänstanvändare och behörigheter som kod, vilket gör dem versionskontrollerade och reproducerbara
+* Hanterar automatiskt skapande under databasinitiering
+* Fungerar i både AEM 6.5 LTS- och AEM as a Cloud Service-miljöer, även om det kan finnas mindre syntaxskillnader mellan Sling-versionerna - se RepoInit-dokumentationen för målplattformen
+
+### Använda ett innehållspaket {#creating-service-user-content-package}
+
+Du kan också skapa en tjänstanvändare genom att ta med en `.content.xml` i ditt innehållspaket. Kontrollera att du har angett `rep:authorizableId` och att den primära typen är `rep:SystemUser`. En giltig `jcr:uuid`-egenskap krävs för att användaren ska kunna skapas korrekt under installationen av innehållspaketet. Du kan generera ett UUID med en vanlig UUID v4-generator (t.ex. kommandoradsverktyget `uuidgen` eller någon annan UUID-generator online). `.content.xml` ska se ut så här:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
