@@ -4,17 +4,17 @@ description: Hitta databasens inställningar för arkiv med autentiseringsuppgif
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
+source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
 
-
 # Installationsguide för databasarkiv (fristående läge)
 
-## Ökning
+## Översikt
 
 Den här guiden täcker **databasens konfiguration för autentiseringsuppgifter** för AEM Forms JEE på JBoss/Red Hat EAP i **fristående läge**. Detta krävs vid manuell installation.
 
@@ -67,11 +67,11 @@ Använd de angivna skripten för att skapa databasens autentiseringsuppgiftslage
 
 #### I Windows:
 
-**Skriptplats:** `create-elytron-cred-standalone.bat`
+**Skript:** `create-elytron-cred-standalone.bat`
 
-`batch cd path\to\script\location create-elytron-cred-standalone.bat`
+Hämta skriptet `create-elytron-cred-standalone.bat` från [portalen för programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip).
 
-**Skriptet frågar efter:**
+**Skriptet uppmanar dig att ange:**
 1. **JBOSS_HOME-sökväg** (t.ex. `C:\Adobe\Adobe_Experience_Manager_Forms\jboss`)
 2. **Konfigurationsfilnamn** (t.ex. `lc_oracle.xml`, `lc_mysql.xml` eller `lc_mssql.xml`)
 3. **Lösenord för arkivering av autentiseringsuppgifter** (detta skyddar nyckelfilen - kom ihåg det här lösenordet)
@@ -91,11 +91,11 @@ Använd de angivna skripten för att skapa databasens autentiseringsuppgiftslage
 
 #### I Linux:
 
-**Skriptplats:** `create-elytron-cred-standalone.sh`
+**Skript** `create-elytron-cred-standalone.sh`
 
-`bash cd /path/to/script/location chmod +x create-elytron-cred-standalone.sh./create-elytron-cred-standalone.sh`
+Hämta skriptet `create-elytron-cred-standalone.sh` från [portalen för programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip).
 
-**Skriptet frågar efter:**
+**Skriptet uppmanar dig att ange:**
 
 1. **JBOSS_HOME-sökväg** (t.ex. `/opt/Adobe/Adobe_Experience_Manager_Forms/jboss`)
 2. **Konfigurationsfilnamn** (t.ex. `lc_oracle.xml`, `lc_mysql.xml` eller `lc_mssql.xml`)
@@ -296,4 +296,3 @@ ERROR: Configuration file not found
 
 - Variabel: `-DCS_PASS=password`
 - Fil: `standalone.conf.bat` (Windows) eller `standalone.conf` (Linux)
-
