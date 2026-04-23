@@ -450,7 +450,7 @@ Se även [Uppdatera AEM Uber Jar-versionen](/help/sites-deploying/upgrading-code
 ### Uppgradera {#upgrade}
 
 * Mer information om uppgraderingsproceduren finns i [uppgraderingsdokumentationen](/help/sites-deploying/upgrade.md).
-* Detaljerade uppgraderingsinstruktioner finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaljerade uppgraderingsinstruktioner finns i [uppgraderingshandboken för AEM Forms 6.5 LTS SP1 på JEE](https://experienceleague.adobe.com/sv/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bästa tillvägagångssätt för AEM 6.5 LTS Service Pack-uppgraderingar
 
@@ -506,7 +506,7 @@ Detaljerade instruktioner finns i [uppgraderingsdokumentationen](/help/sites-dep
 
 ## Installera och uppdatera AEM Forms-tillägg {#install-update-aem-forms-add-on}
 
-Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Mer information finns i [Utföra en lokal uppgradering](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 ## Plattformar som stöds {#supported-platforms}
@@ -646,5 +646,5 @@ Följande textdokument innehåller en lista över de OSGi-paket och innehållspa
 Dessa webbplatser är bara tillgängliga för kunder. Kontakta din kontoansvarige på Adobe om du är kund och behöver åtkomst.
 
 * [Nedladdning av produkt på licensing.adobe.com](https://licensing.adobe.com/)
-* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Kontakta Adobe kundsupport](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
