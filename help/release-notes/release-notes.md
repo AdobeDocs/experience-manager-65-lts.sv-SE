@@ -587,7 +587,7 @@ Användare kan uppleva att databasen är skadad vid onlinekomprimering om offlin
 
 Du löser problemet genom att installera programfixen från [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Eftersom snabbkorrigeringen innehåller ett paket med `oak-segment-tar` på låg nivå startas instansen om efter installationen.
 
-Planera för driftstopp för instansen när den används. För offlinekomprimering använder du motsvarande [`oak-run` jar ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) som också finns i Programvarudistribution.
+Planera för driftstopp för instansen när den används. För offlinekomprimering använder du motsvarande [`oak-run` jar &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) som också finns i Programvarudistribution.
 
 >[!NOTE]
 >
