@@ -108,7 +108,7 @@ I följande tabell beskrivs några möjliga strategier för att minimera säkerh
  </tbody> 
 </table>
 
-Mer säkerhetsinformation för ditt operativsystem finns i [&quot;Säkerhetsinformation för operativsystem&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+Mer säkerhetsinformation för ditt operativsystem finns i [&quot;Säkerhetsinformation för operativsystem&quot;](https://helpx.adobe.com/se/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Installation {#installation}
 
@@ -270,11 +270,11 @@ Configuration Manager använde en serverlet som distribuerats på programservern
 
 Med Configuration Manager kan du överföra autentiseringsuppgifter för Acrobat Reader DC-tillägg till AEM Forms på JEE-förtroendearkivet. Detta innebär att åtkomst till pålitlighetslagerautentiseringstjänsten via fjärrprotokoll (SOAP och EJB) har aktiverats som standard. Den här åtkomsten behövs inte längre när du har överfört rättighetsinformationen med Configuration Manager eller om du bestämmer dig för att använda administrationskonsolen senare för att hantera autentiseringsuppgifter.
 
-Du kan inaktivera fjärråtkomst till alla Trust Store-tjänster genom att följa stegen i avsnittet [Inaktiverar icke nödvändig fjärråtkomst till tjänster](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+Du kan inaktivera fjärråtkomst till alla Trust Store-tjänster genom att följa stegen i avsnittet [Inaktiverar icke nödvändig fjärråtkomst till tjänster](https://helpx.adobe.com/se/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Inaktivera all icke nödvändig anonym åtkomst**
 
-Vissa Forms Server-tjänster har åtgärder som kan anropas av en anonym anropare. Om anonym åtkomst till de här tjänsterna inte krävs inaktiverar du den genom att följa stegen i [Inaktiverar onödvändig anonym åtkomst till tjänster](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Vissa Forms Server-tjänster har åtgärder som kan anropas av en anonym anropare. Om anonym åtkomst till de här tjänsterna inte krävs inaktiverar du den genom att följa stegen i [Inaktiverar onödvändig anonym åtkomst till tjänster](https://helpx.adobe.com/se/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Ändra standardadministratörslösenordet {#change-the-default-administrator-password}
 
@@ -410,7 +410,7 @@ Som en extra försiktighetsåtgärd bör du överväga att använda databaslever
 * HSM-PIN-krypteringsnyckel för Trust Store
 * Hash för lokalt användarlösenord
 
-Mer information om leverantörsspecifika verktyg finns i [&quot;Databassäkerhetsinformation&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Mer information om leverantörsspecifika verktyg finns i [&quot;Databassäkerhetsinformation&quot;](https://helpx.adobe.com/se/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### LDAP-säkerhet {#ldap-security}
 

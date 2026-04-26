@@ -31,4 +31,4 @@ Funktionen för att identifiera dubbletter har nu aktiverats i [!DNL Assets]. N�
 >[!MORELIKETHIS]
 >
 >* [Duplicera resurser i befintlig databas (en självstudiekurs från en community-medlem)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [Identifiera duplicerade resurser i AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)
+>* [Identifiera duplicerade resurser i AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html?lang=sv-SE)

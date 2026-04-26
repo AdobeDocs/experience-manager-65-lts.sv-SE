@@ -176,7 +176,7 @@ Mer information om användarhantering i AEM (inklusive tilldelning av åtkomstr�
 
 Dispatcher är Adobe Experience Manager verktyg för cachning, belastningsutjämning eller både och. Den kan användas med en webbserver i företagsklass.
 
-Mer information finns i [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html), särskilt [Konfigurera Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) för mer konfigurationsinformation.
+Mer information finns i [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE), särskilt [Konfigurera Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE) för mer konfigurationsinformation.
 
 ### Konfigurera AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 

@@ -35,7 +35,7 @@ Trust Store kan innehålla mer än en autentiseringsuppgift för Acrobat Reader 
 
 >[!NOTE]
 >
->Du kan också importera och ta bort autentiseringsuppgifter via programmering. (Se [Programmering med AEM-formulär](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).)
+>Du kan också importera och ta bort autentiseringsuppgifter via programmering. (Se [Programmering med AEM-formulär](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE).)
 
 ## Importera autentiseringsuppgifter för Acrobat Reader DC Extensions {#import-a-acrobat-reader-dc-extensions-credential}
 
