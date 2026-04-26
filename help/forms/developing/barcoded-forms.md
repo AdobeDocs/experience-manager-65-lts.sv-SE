@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations, Barcoded Forms
 hide: true
 hidefromtoc: true
 exl-id: 71dc8036-f9a3-4e00-bce1-3f162428053d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1934'
 ht-degree: 0%
 
 ---

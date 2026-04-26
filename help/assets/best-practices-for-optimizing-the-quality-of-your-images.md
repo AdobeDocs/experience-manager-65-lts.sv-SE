@@ -9,10 +9,10 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 3%
+source-wordcount: '1488'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Manager innehåller över 100 kommandon för leverans av dynami
 
 * JPG eller PNG är de bästa sätten att leverera bilder med god kvalitet och hanterbar storlek och vikt.
 * Om inget formatkommando anges i URL:en används JPG som standard för leverans av dynamiska bilder.
-* JPG komprimerar 10:1 och ger vanligtvis mindre bildfilsstorlekar. PNG komprimeras med ett förhållande på cirka 2:1, förutom ibland när bilder innehåller en vit bakgrund. Vanligtvis är PNG-filer större än JPG-filer.
+* JPG komprimerar med förhållandet 10:1 och ger vanligtvis mindre bildfiler. PNG komprimeras med ett förhållande på cirka 2:1, förutom ibland när bilder innehåller en vit bakgrund. Vanligtvis är PNG-filer större än JPG-filer.
 * JPG använder förstörande komprimering, vilket innebär att bildelement (pixlar) tas bort under komprimeringen. PNG använder däremot förlustfri komprimering.
 * JPG komprimerar ofta fotografiska bilder med bättre återgivning än syntetiska bilder med skarpa kanter och kontrast.
 * Om dina bilder innehåller genomskinlighet bör du använda PNG eftersom JPG inte stöder genomskinlighet.
@@ -48,8 +48,10 @@ Bildskärpa är den mest komplicerade aspekten när det gäller att styra bilder
 
 Best practices white paper [Öka skärpan i bilder i Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) som även gäller för Experience Manager.
 
-<!-- To be reviewed and updated: Broken link.
-See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
+<!--
+To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+-->
 
 Med Experience Manager kan du öka skärpan i bilder vid intag, vid leverans eller både och. Vanligtvis kan du skärpa upp bilder med bara en metod eller med en annan, men inte med båda metoderna. Att skärpa bilderna vid leverans, på en URL-adress, ger oftast bäst resultat.
 
@@ -67,7 +69,7 @@ Det finns två metoder för bildskärpa:
 
       * **[!UICONTROL *threshold *]**(0-255, effektkänslighet.)
 
-            Den här parametern avgör hur annorlunda de pixlar som ska göras skarpare måste vara jämfört med det omgivande området innan de betraktas som kantpixlar och filtret gör dem skarpare. Parametern **[!UICONTROL threshold]** hjälper dig att undvika att göra områden med liknande färger för mycket skarpare, till exempel hudtoner. Ett tröskelvärde på 12 ignorerar till exempel små variationer i hudtonens ljusstyrka för att undvika att lägga till ”brus”, men lägger ändå till kantkontrast i områden med hög kontrast, till exempel där ögonfransarna möter huden.
+            Den här parametern avgör hur annorlunda de skärpa som måste anges måste vara för de omgivande pixlarna innan de betraktas som kantpixlar och filtret gör dem skarpare. Parametern **[!UICONTROL threshold]** hjälper dig att undvika att göra områden med liknande färger för mycket skarpare, till exempel hudtoner. Ett tröskelvärde på 12 ignorerar till exempel små variationer i hudtonens intensitet för att undvika att lägga till&quot;brus&quot;, medan kantkontrasten läggs till i områden med hög kontrast, till exempel där ögonfransarna möter hud.
         
         Mer information om hur du ställer in de här tre parametrarna, inklusive de bästa sätten att använda med filtret, finns i följande resurser:
 
@@ -126,4 +128,4 @@ När du experimenterar kan följande allmänna förslag vara användbara för at
 
 * Testa olika parametrar i realtid direkt på en URL.
 * Det är en god vana att gruppera kommandona Dynamic Media Image Serving i en bildförinställning. En bildförinställning är i princip URL-kommandomakron med anpassade förinställningsnamn som `$thumb_low$` och `&product_high$`. Det anpassade förinställningsnamnet i en URL-sökväg anropar de här förinställningarna. Den här funktionen hjälper dig att hantera kommandon och kvalitetsinställningar för olika användningsmönster för bilder på webbplatsen och förkortar den totala längden på URL-adresser.
-* Experience Manager har också mer avancerade sätt att finjustera bildkvaliteten, t.ex. genom att lägga på skärpa vid inhämtning. I avancerade fall där det finns alternativ för att justera och optimera återgivningsresultat kan [Adobe Professional Services](https://business.adobe.com/se/customers/consulting-services/main.html) hjälpa dig med anpassade insikter och metodtips.
+* Experience Manager har också mer avancerade sätt att finjustera bildkvaliteten, t.ex. genom att lägga på skärpa vid inhämtning. I avancerade fall där det finns alternativ för att justera och optimera återgivningsresultat kan [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) hjälpa dig med anpassade insikter och metodtips.

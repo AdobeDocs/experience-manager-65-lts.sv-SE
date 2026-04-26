@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,6 @@ Skapa ett DX-dokument dynamiskt och demontera ett PDF-dokument med Assembler Ser
    * Skapa ett Java `DocumentBuilder`-objekt genom att anropa `DocumentBuilderFactory`-objektets `newDocumentBuilder`-metod.
    * Anropa `DocumentBuilder`-objektets `newDocument`-metod för att instansiera ett `org.w3c.dom.Document`-objekt.
    * Skapa DX-dokumentets rotelement genom att anropa `org.w3c.dom.Document`-objektets `createElement`-metod. Den här metoden skapar ett `Element`-objekt som representerar rotelementet. Skicka ett strängvärde som representerar elementets namn till metoden `createElement`. Skicka returvärdet till `Element`. Ange sedan ett värde för det underordnade elementet genom att anropa dess `setAttribute`-metod. Lägg slutligen till elementet i rubrikelementet genom att anropa rubrikelementets `appendChild`-metod och skicka det underordnade elementobjektet som ett argument. Följande kodrader visar den här programlogiken:
-
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Skapa elementet `PDFsFromBookmarks` genom att anropa metoden `createElement` för objektet `Document`. Skicka ett strängvärde som representerar elementets namn till metoden `createElement`. Skicka returvärdet till `Element`. Ange ett värde för elementet `PDFsFromBookmarks` genom att anropa dess `setAttribute`-metod. Lägg till elementet `PDFsFromBookmarks` i elementet `DDX` genom att anropa DDX-elementets `appendChild`-metod. Skicka elementobjektet `PDFsFromBookmarks` som ett argument. Följande kodrader visar den här programlogiken:

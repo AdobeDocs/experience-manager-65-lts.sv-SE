@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: fee34d9e-6606-40c1-bbbe-e7975ad90a22
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1434'
 ht-degree: 0%
 
 ---
@@ -64,10 +64,10 @@ Kontrollera att kompatibilitetsnivån är konsekvent med PDF-kompatibilitetsniv�
 **Kryptera allt dokumentinnehåll:** Krypterar dokumentet och dokumentets metadata. När det här alternativet är markerat kan sökmotorer inte komma åt dokumentets metadata.
 
 **Kryptera allt innehåll i dokumentet utom metadata (Acrobat
-6 (och senare kompatibelt):** Krypterar innehållet i ett dokument men tillåter ändå sökmotorer att komma åt dokumentets metadata. Det här alternativet är endast tillgängligt när alternativet Kompatibilitet är inställt på Acrobat 6.0 eller senare, Acrobat 7.0 eller senare eller Acrobat 9.0 eller senare.
+6 (och senare kompatibelt):** Krypterar innehållet i ett dokument men tillåter fortfarande sökmotorer att komma åt dokumentets metadata. Det här alternativet är endast tillgängligt när alternativet Kompatibilitet är inställt på Acrobat 6.0 eller senare, Acrobat 7.0 eller senare eller Acrobat 9.0 eller senare.
 
 **Kryptera endast bifogade filer (Acrobat 7 och senare)
-Kompatibel):** Användare kan öppna dokumentet utan lösenord men måste ange ett lösenord för att kunna öppna bifogade filer. Det här alternativet är bara tillgängligt när du har valt Acrobat 7.0 eller senare eller Acrobat 9.0 eller senare.
+Kompatibel):** Användare kan öppna dokumentet utan lösenord men måste ange ett lösenord för att öppna bifogade filer. Det här alternativet är bara tillgängligt när du har valt Acrobat 7.0 eller senare eller Acrobat 9.0 eller senare.
 
 De här inställningarna konfigurerar lösenordsskyddet:
 
@@ -124,7 +124,7 @@ Befintliga signaturfält:** Användare kan infoga, rotera eller ta bort sidor oc
 **Aktivera kopiering av text, bilder och annat innehåll:** Användare kan markera och kopiera innehållet i PDF-dokumentet. Man kan också ge program som behöver åtkomst till innehållet i en PDF-fil, t.ex. Acrobat Catalog, tillgång till innehållet. Det här alternativet är bara tillgängligt om du har valt en hög krypteringsnivå.
 
 **Aktivera textåtkomst för skärmläsarenheter från Reader för
-Visuellt försämrad:** Gör att användare med synnedsättning kan läsa dokumentet med skärmläsare. Användarna kan dock inte kopiera eller extrahera dokumentinnehållet. Det här alternativet är bara tillgängligt om du har valt en hög krypteringsnivå.
+Visuellt försämrad:** Används för att låta användare med synnedsättning läsa dokumentet med skärmläsare. Användarna kan dock inte kopiera eller extrahera dokumentinnehållet. Det här alternativet är bara tillgängligt om du har valt en hög krypteringsnivå.
 
 ## Ta bort en säkerhetsinställning {#delete-a-security-setting}
 

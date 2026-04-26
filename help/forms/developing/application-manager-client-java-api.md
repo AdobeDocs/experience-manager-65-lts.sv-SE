@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 1ac45713-4eca-4def-a030-c7bc3fcdf4c7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -22,21 +22,21 @@ ht-degree: 0%
 
 Följande Java™ API Quick Start (SOAP) är tillgängligt för Application Manager-klienten.
 
-[Snabbstart (SOAP-läge): Skapa programversion med Java](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[Snabbstart (SOAP-läge): Skapa programversion med Java™ API](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[Snabbstart (SOAP-läge): exportera program med Java](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[Snabbstart (SOAP-läge): Exportera program med Java™ API](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Importera program med Java](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[Snabbstart (SOAP-läge): Importera program med Java™ API](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Hämta ett AEM Forms-program med Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[Snabbstart (SOAP-läge): Hämta ett AEM Forms-program med Java™ API](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Hämta program med Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[Snabbstart (SOAP-läge): Hämta program med Java™ API](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Hämta status för program med Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[Snabbstart (SOAP-läge): Hämta status för program med Java™ API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Snabbstart (SOAP-läge):Förhandsgranska AEM Forms-programarkivet och senare med Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Snabbstart (SOAP-läge):Previewing, AEM Forms och senare programarkiv med Java™ API](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Snabbstart (SOAP-läge):ta bort AEM Forms-programarkivet med Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Snabbstart (SOAP-läge):Deleting AEM Forms-programarkivet med Java™ API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 AEM Forms-åtgärder kan utföras med AEM Forms starkt typbestämda API och anslutningsläget bör anges till SOAP.
 
@@ -644,7 +644,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Snabbstart (SOAP-läge):Förhandsgranska LiveCycle ES2-programarkivet och senare med Java™ API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Snabbstart (SOAP-läge):Previewing, LiveCycle ES2 och senare programarkiv med Java™ API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 Följande Java™-kodexempel används för att förhandsgranska AEM Forms-programarkiv och senare med Java™ API.
 
@@ -723,7 +723,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## Snabbstart (SOAP-läge):Ta bort programarkivet med Java™ API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## Snabbstart (SOAP-läge):Deleting för programarkivet med Java™ API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
 I följande Java™-kodexempel tas ett programarkiv bort.
 

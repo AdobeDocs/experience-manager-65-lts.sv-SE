@@ -1,5 +1,5 @@
 ---
-title: Java&amp för autentiseringsuppgifter;handel; API QuickStart(SOAP)
+title: Java&hering av autentiseringsuppgifter; API QuickStart(SOAP)
 description: Lär dig hur du importerar och tar bort autentiseringsuppgifter i AEM Forms med Java&trade; API Quick Start (SOAP).
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 7314fbae-05af-423d-92c8-f8c608048956
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Java™ API Quick Start (SOAP) finns för tjänsten Credential.
 
-[Snabbstart (SOAP-läge): Importera inloggningsuppgifter med Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Snabbstart (SOAP-läge): Importera inloggningsuppgifter med Java™ API](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Ta bort inloggningsuppgifter med Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Snabbstart (SOAP-läge): Ta bort inloggningsuppgifter med Java™ API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 AEM Forms-åtgärder kan utföras med AEM Forms starkt typbestämda API och anslutningsläget bör anges till SOAP.
 

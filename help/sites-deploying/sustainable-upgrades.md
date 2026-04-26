@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: 180fd02df50f84e0d4f9bc01efe56e28d25555e2
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -42,17 +42,17 @@ I tidigare versioner av Adobe Experience Manager (AEM) exponerades många API:er
 
 #### Innehållsklassificeringar {#content-classifications}
 
-AEM har sedan länge använt principen om övertäckningar och Sling Resource Merger för att ge kunderna möjlighet att utöka och anpassa AEM funktioner. Fördefinierade funktioner som driver AEM-konsoler och användargränssnitt lagras i **/libs**. Kunder får aldrig ändra något under **/libs** men kan lägga till ytterligare innehåll under **/apps** för att täcka över och utöka de funktioner som definieras i **/libs** (Mer information finns i Utveckla med övertäckningar). Detta orsakade fortfarande många problem vid uppgradering av AEM eftersom innehållet i **/libs** kan ändras och göra att övertäckningsfunktionen bryts på oväntade sätt. Kunder kan också utöka AEM-komponenter genom arv med hjälp av `sling:resourceSuperType`, eller helt enkelt referera en komponent i **/libs** direkt med hjälp av sling:resourceType. Liknande uppgraderingsproblem kan uppstå med referens- och åsidosättningsanvändningsfall.
+AEM har sedan länge använt principen om övertäckningar och Sling Resource Merger för att ge kunderna möjlighet att utöka och anpassa AEM funktioner. Fördefinierade funktioner som driver AEM-konsoler och användargränssnitt lagras i **/libs**. Kunder får aldrig ändra något under **/libs** men kan lägga till ytterligare innehåll under **/apps** för att täcka över och utöka de funktioner som definieras i **/libs** (Mer information finns i Utveckla med övertäckningar). Detta orsakade fortfarande många problem vid uppgradering av AEM eftersom innehållet i **/libs** kan ändras och göra att övertäckningsfunktionen bryts på oväntade sätt. Kunder kan också utöka AEM-komponenter genom arv med hjälp av `sling:resourceSuperType`, eller helt enkelt referera till en komponent i **/libs** direkt med hjälp av snedning:resourceType. Liknande uppgraderingsproblem kan uppstå med referens- och åsidosättningsanvändningsfall.
 
 För att göra det säkrare och enklare för kunderna att förstå vilka områden i **/libs** som är säkra att använda och täcka över innehållet i **/libs** har klassificerats med följande blandningar:
 
-* **Public (granite:PublicArea)** - Definierar en nod som public så att den kan överlappas, ärvas ( `sling:resourceSuperType`) eller användas direkt ( `sling:resourceType`). Noder under /libs markerade som Public (Offentliga) är säkra att uppgradera med ett kompatibilitetspaket. I allmänhet bör kunderna bara använda noder som är markerade som Public (Offentliga).
+* **Offentlig (granit:PublicArea)** - Definierar en nod som offentlig så att den kan överlappas, ärvas ( `sling:resourceSuperType`) eller användas direkt ( `sling:resourceType`). Noder under /libs markerade som Public (Offentliga) är säkra att uppgradera med ett kompatibilitetspaket. I allmänhet bör kunderna bara använda noder som är markerade som Public (Offentliga).
 
-* **Abstrakt (granite:AbstractArea)** - Definierar en nod som abstrakt. Noder kan överlappas eller ärvas ( `sling:resourceSupertype`) men inte användas direkt ( `sling:resourceType`).
+* **Abstrakt (granit:AbstractArea)** - Definierar en nod som abstrakt. Noder kan överlappas eller ärvas ( `sling:resourceSupertype`) men inte användas direkt ( `sling:resourceType`).
 
 * **Final (granite:FinalArea)** - Definierar en nod som final. Noder som klassificerats som slutliga bör inte överlappas eller ärvas. Slutliga noder kan användas direkt via `sling:resourceType`. Undernoder under den sista noden betraktas som interna som standard.
 
-* ***Internal (granite:InternalArea)*** *- *Definierar en nod som intern. Noder som klassificeras som interna och idealiska får inte överlappas, ärvas eller användas direkt. De här noderna är avsedda endast för AEM interna funktioner
+* ***Intern (granit:InternalArea)*** *- *Definierar en nod som intern. Noder som klassificeras som interna och idealiska får inte överlappas, ärvas eller användas direkt. De här noderna är avsedda endast för AEM interna funktioner
 
 * **Ingen anteckning** - Noderna ärver klassificering baserat på trädhierarkin. Roten / är som standard Public (Offentlig). **Noder med en överordnad som klassificerats som Internal eller Final ska också behandlas som Internal.**
 
@@ -86,7 +86,7 @@ Blandningar som används i CRXDE Lite visar innehållsnoder och träd som är ma
 
 AEM 6.5 levereras med en hälsokontroll som varnar kunderna om överlagrat eller refererat innehåll används på ett sätt som inte stämmer överens med innehållsklassificeringen.
 
-**&#x200B; Kontroll av åtkomsten till innehåll som delas/beviljas** är en ny hälsokontroll som övervakar databasen för att se om kundkoden inte har åtkomst till skyddade noder i AEM.
+** Kontroll av åtkomsten till innehåll som delas/beviljas** är en ny hälsokontroll som övervakar databasen för att se om kundkoden inte har åtkomst till skyddade noder i AEM.
 
 Detta skannar **/appar** och tar vanligtvis flera sekunder att slutföra.
 

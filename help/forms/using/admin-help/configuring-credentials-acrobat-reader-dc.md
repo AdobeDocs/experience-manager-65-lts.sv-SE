@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 040a4db1-45e1-4501-8117-d2d41d4a73ea
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Trust Store kan innehålla mer än en autentiseringsuppgift för Acrobat Reader 
 
 >[!NOTE]
 >
->Du kan också importera och ta bort autentiseringsuppgifter via programmering. (Se [Programmering med AEM-formulär](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=sv-SE).)
+>Du kan också importera och ta bort autentiseringsuppgifter via programmering. (Se [Programmering med AEM-formulär](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).)
 
 ## Importera autentiseringsuppgifter för Acrobat Reader DC Extensions {#import-a-acrobat-reader-dc-extensions-credential}
 

@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1620'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 En användare med administratörsåtkomst i [!DNL Adobe Experience Manager] konfigurerar den utökade anslutningen efter installation. Instruktioner om hur du installerar finns i [Installera anslutningsprogrammet](/help/assets/workfront-integrations.md).
@@ -151,7 +151,7 @@ Redigera egenskaperna för **[!UICONTROL Workfront - Set Status]** på fliken **
 
 ## Synkronisering av kommentarer {#comments-sync}
 
-1. Gå till [!DNL Experience Manager] > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** i **[!UICONTROL Workfront Tools Configuration]**, markera konfigurationen och välj **[!UICONTROL Properties]**.
+1. Gå till **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]** i [!DNL Experience Manager], markera konfigurationen och välj **[!UICONTROL Properties]**.
 
    ![kommentarsynkronisering](/help/assets/assets/comments-sync1.png)
 

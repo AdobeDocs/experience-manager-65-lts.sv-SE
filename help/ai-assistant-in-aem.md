@@ -1,14 +1,14 @@
 ---
 title: AI Assistant i AEM 6.5 LTS
-description: Använd AI-assistenten för att hitta svar och felsöka de lösningar som finns tillgängliga i Adobe Experience Manager.
+description: Använd AI Assistant för att hitta svar och felsöka de lösningar som finns i Adobe Experience Manager.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 2%
+source-wordcount: '1380'
+ht-degree: 0%
 
 ---
 
@@ -24,8 +24,8 @@ AI Assistant stöder AEM as a Cloud Service, inklusive följande lösningar:
 
 * Experience Hub - översikt
 * Edge Delivery Services
-* Sites
-* Assets
+* Webbplatser
+* Resurser
 * Forms
 * Dynamiska medier
 * Cloud Manager
@@ -35,7 +35,7 @@ Det är direkt inbäddat i AEM och tillgängligt från AEM Experience Hub, Cloud
 
 Följande 25-sekundersvideo innehåller stegvisa guider för AI Assistant i AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475362/?captions=swe&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Få tillgång till AI Assistant i AEM{#get-access}
 
@@ -88,7 +88,7 @@ Produktkunskap omfattar begrepp och ämnen som härletts ur Adobe Experience Lea
 | Undervisning | <ul><li>Vad är den universella redigeraren?</li><li>Hur skapar jag ett program i Cloud Manager?</li></ul> |
 | Öppna identifiering | <ul><li>Hur använder jag Universal Editor?</li><li>Finns det något sätt att kopiera innehåll från en miljö till en annan?</li></ul> |
 | Felsökning | <ul><li>Varför har jag inte åtkomst till Universal Editor?</li><li>Varför misslyckas min pipeline?</li></ul> |
-| **Skapa supportbiljett** | **Endast tillgängligt för supportadministratörer &#x200B;**<br>**Exempel** |
+| **Skapa supportbiljett** | **Endast tillgängligt för supportadministratörer **<br>**Exempel** |
 | Automatiserad framtagning av supportbiljetter som fångar AI Assistant-chatthistorik och kontext | <ul><li>Skapa en supportbiljett åt mig.</li></ul> |
 | Hämta status för supportanmälan | <ul><li>Visa alla supportärenden som jag har öppnat.</li><li>Visa status för biljetten E—</li></ul> |
 
@@ -115,7 +115,8 @@ I uppmaningen får du hjälp att namnge den AEM-lösning du arbetar i - Sites, A
 
 ## Använd AI-assistenten i AEM {#ai-use}
 
-<!-- UNHIDE AFTER BETA or at GA
+<!--
+UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
 To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
@@ -128,9 +129,10 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
+-->
 
 
 ### Starta en AI-assistent i AEM-konversationer
@@ -179,7 +181,7 @@ Dela med dig av dina synpunkter på din upplevelse med AI Assistant i AEM genom 
 
 ![Tummen uppåt, tummen nedåt och flaggikoner](/help/assets/assets-ai/ai-assistant-feedback-icons.png)
 
-| Klicka på | Beskrivning |
+| Klicka | Beskrivning |
 | --- | --- |
 | ![Miniatyrbilderna är en ikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Ange vad som gick bra och dela positiv feedback. |
 | ![Miniatyrbilder nedåt, ikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | Ge förslag på förbättringar. Lägg till specifika kommentarer om din upplevelse, som granskas dagligen. |
@@ -198,7 +200,8 @@ Här är svar på några vanliga frågor om AI Assistant:
 * **Använder AI-assistenten i AEM personlig information för utbildningsdata?**\
   Nej. AI Assistant i AEM använder inte personuppgifter i utbildningssyfte. Undvik att dela personuppgifter om dig själv eller andra, inklusive namn eller kontaktuppgifter, med AI-assistenten i AEM.
 
-<!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
+<!--
+IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
 
 ## AEM Forms AI Assistant (Forms Experience Builder) {#ai-forms-builder}
 

@@ -7,10 +7,10 @@ role: User
 feature: Workflow,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: f96a2642-f923-481e-9735-14a62a80e6f1
-source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2046'
-ht-degree: 1%
+source-wordcount: '2089'
+ht-degree: 0%
 
 ---
 
@@ -30,13 +30,14 @@ Mediehanterare är tjänster i [!DNL Assets] som utför specifika åtgärder fö
 
 Följande mediehanterare är tillgängliga i [!DNL Assets] och hanterar de vanligaste MIME-typerna:
 
-<!-- TBD: Java versions should not be set to 1.5. Must be updated.
+<!--
+TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Hanterarnamn | Tjänstnamn (i systemkonsolen) | MIME-typer som stöds |
 |--------------|--------------------------------------|----------------------|
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/normal |
-| [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>program/illustrator</li></ul> |
+| [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PDFHandler | <ul><li>application/pdf</li><li>program/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
 | [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Viktigt</b> - En överförd MP3-fil [bearbetas med ett tredjepartsbibliotek](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). Biblioteket beräknar en icke korrekt ungefärlig längd om MP3 har variabel bithastighet (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
@@ -71,7 +72,7 @@ Mediehanterare är tjänster som används med arbetsflöden.
 
 Befintliga arbetsflöden kan utökas och nya kan skapas för att bearbeta resurser enligt specifika krav.
 
-I följande exempel visas hur du förbättrar arbetsflödet **[!UICONTROL AEM Assets Synchronization]** så att delresurser genereras för alla resurser utom PDF-dokument.
+I följande exempel visas hur du förbättrar arbetsflödet för **[!UICONTROL AEM Assets Synchronization]** så att delresurser genereras för alla resurser utom PDF-dokument.
 
 ### Inaktivera eller aktivera en mediehanterare {#disabling-enabling-a-media-handler}
 
@@ -123,7 +124,7 @@ Följande metoder måste implementeras:
 
 Här är en exempelmall:
 
-paketera my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler utökar com.day.cq.dam.core.AbstractAssetHandler { // implementera relevanta delar }
+paketera my.own.stuff; /&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler utökar com.day.cq.dam.core.AbstractAssetHandler { // implementera relevanta delar }
 
 Gränssnittet och klasserna omfattar:
 
@@ -488,7 +489,7 @@ Installera [!DNL ImageMagick] på disken som är värd för servern [!DNL Experi
 
 1. Om du vill se om verktyget fungerar som det ska lägger du till en JPG-bild i arbetskatalogen och kör kommandot convert `<image-name>.jpg -flip <image-name>-flipped.jpg` på kommandoraden. En speglad bild läggs till i katalogen. Lägg sedan till kommandoradssteget i arbetsflödet för **[!UICONTROL DAM Update Asset]**.
 1. Gå till konsolen **[!UICONTROL Workflow]**.
-1. Redigera modellen **[!UICONTROL Models]** på fliken **[!UICONTROL DAM Update Asset]**.
+1. Redigera modellen **[!UICONTROL DAM Update Asset]** på fliken **[!UICONTROL Models]**.
 1. Ändra [!UICONTROL Arguments] för **[!UICONTROL Web enabled rendition]**-steget till: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.
 1. Spara arbetsflödet.
 

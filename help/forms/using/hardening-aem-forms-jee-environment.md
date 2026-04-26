@@ -10,9 +10,9 @@ hidefromtoc: true
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 3de38e4d-6a12-470e-aded-7eb75a9cdcd8
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7605'
+source-wordcount: '7800'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ I följande tabell beskrivs några möjliga strategier för att minimera säkerh
  </tbody> 
 </table>
 
-Mer säkerhetsinformation för ditt operativsystem finns i [&quot;Säkerhetsinformation för operativsystem&quot;](https://helpx.adobe.com/se/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+Mer säkerhetsinformation för ditt operativsystem finns i [&quot;Säkerhetsinformation för operativsystem&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Installation {#installation}
 
@@ -264,17 +264,17 @@ Configuration Manager använde en serverlet som distribuerats på programservern
 1. Starta AEM Forms-servern.
 1. Skriv URL:en nedan i en webbläsare för att testa ändringen och se till att den inte längre fungerar.
 
-   https://&lt;localhost>:/adobe-bootstrapper/bootstrap
+   https://<localhost>:/adobe-bootstrapper/bootstrap
 
 **Låsa fjärråtkomst till Trust Store**
 
 Med Configuration Manager kan du överföra autentiseringsuppgifter för Acrobat Reader DC-tillägg till AEM Forms på JEE-förtroendearkivet. Detta innebär att åtkomst till pålitlighetslagerautentiseringstjänsten via fjärrprotokoll (SOAP och EJB) har aktiverats som standard. Den här åtkomsten behövs inte längre när du har överfört rättighetsinformationen med Configuration Manager eller om du bestämmer dig för att använda administrationskonsolen senare för att hantera autentiseringsuppgifter.
 
-Du kan inaktivera fjärråtkomst till alla Trust Store-tjänster genom att följa stegen i avsnittet [Inaktiverar icke nödvändig fjärråtkomst till tjänster](https://helpx.adobe.com/se/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+Du kan inaktivera fjärråtkomst till alla Trust Store-tjänster genom att följa stegen i avsnittet [Inaktiverar icke nödvändig fjärråtkomst till tjänster](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Inaktivera all icke nödvändig anonym åtkomst**
 
-Vissa Forms Server-tjänster har åtgärder som kan anropas av en anonym anropare. Om anonym åtkomst till de här tjänsterna inte krävs inaktiverar du den genom att följa stegen i [Inaktiverar onödvändig anonym åtkomst till tjänster](https://helpx.adobe.com/se/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Vissa Forms Server-tjänster har åtgärder som kan anropas av en anonym anropare. Om anonym åtkomst till de här tjänsterna inte krävs inaktiverar du den genom att följa stegen i [Inaktiverar onödvändig anonym åtkomst till tjänster](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Ändra standardadministratörslösenordet {#change-the-default-administrator-password}
 
@@ -357,7 +357,7 @@ I Oracle behöver det databaskonto du använder bara behörigheterna CONNECT, RE
 
 #### Konfigurera integrerad säkerhet för SQL Server i Windows för JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
-1. Ändra [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} för att lägga till `integratedSecurity=true` i anslutnings-URL:en, vilket visas i det här exemplet:
+1. Ändra [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} för att lägga till `integratedSecurity=true` i anslutnings-URL:en, som i det här exemplet:
 
    ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
@@ -395,7 +395,7 @@ På WebSphere kan du bara konfigurera integrerad säkerhet när du använder en 
 1. Klicka på **Anpassade egenskaper** under Ytterligare egenskaper i den högra rutan och klicka sedan på **Nytt**.
 1. I rutan **Namn** skriver du `integratedSecurity` och `true` i rutan **Värde**.
 1. På den dator där WebSphere är installerat lägger du till filen sqljdbc_auth.dll i Windows systemsökväg (C:\Windows). Filen sqljdbc_auth.dll finns på samma plats som drivrutinsinstallationen för Microsoft SQL JDBC 1.2 (standard är *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
-1. Välj **Start** > **Kontrollpanelen** > **Tjänster**, högerklicka på Windows-tjänsten för WebSphere (IBM WebSphere Application Server &lt;version> - &lt;nod>) och välj **Egenskaper**.
+1. Välj **Start** > **Kontrollpanelen** > **Tjänster**, högerklicka på Windows-tjänsten för WebSphere (IBM WebSphere Application Server &lt;version> - &lt;node>) och välj **Egenskaper**.
 1. Klicka på fliken **Logga in** i dialogrutan Egenskaper.
 1. Välj **Det här kontot** och ange den information som krävs för att ange det inloggningskonto som du vill använda.
 1. Ange säkerhet på SQL Server från **Blandat** läge till **Endast Windows-autentisering**.
@@ -410,7 +410,7 @@ Som en extra försiktighetsåtgärd bör du överväga att använda databaslever
 * HSM-PIN-krypteringsnyckel för Trust Store
 * Hash för lokalt användarlösenord
 
-Mer information om leverantörsspecifika verktyg finns i [&quot;Databassäkerhetsinformation&quot;](https://helpx.adobe.com/se/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Mer information om leverantörsspecifika verktyg finns i [&quot;Databassäkerhetsinformation&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### LDAP-säkerhet {#ldap-security}
 
@@ -715,7 +715,7 @@ När du först installerar Document Services uppdateras listan över tillåtna r
 
 **Hantera listan över tillåtna referenter**
 
-Du kan hantera listan Tillåten referent från användarhanteringsgränssnittet i administrationskonsolen. Med användarhanteringsgränssnittet kan du skapa, redigera och ta bort listan. Se avsnittet * [Förhindra CSRF-attacker](/help/forms/using/admin-help/preventing-csrf-attacks.md)* i *administrationshjälpen* för mer information om hur du arbetar med listan över tillåtna referenter.
+Du kan hantera listan Tillåten referent från användarhanteringsgränssnittet i administrationskonsolen. Med användarhanteringsgränssnittet kan du skapa, redigera och ta bort listan. Se avsnittet *[Förhindra CSRF-attacker](/help/forms/using/admin-help/preventing-csrf-attacks.md)* i *administrationshjälpen* för mer information om hur du arbetar med listan över tillåtna referenter.
 
 **Hantera listor över tillåtna referensundantag och tillåtna URI:er**
 
@@ -976,7 +976,7 @@ Information om hur du konfigurerar SSL-omdirigering för WebSphere eller WebLogi
 
 1. Öppna JBOSS_HOME/standalone/configuration/standalone.xml för redigering.
 
-   Lägg till följande information efter &lt;subsystem xmlns=&quot;urn:jboss:domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;>-elementet:
+   Efter &lt;subsystem xmlns=&quot;urn:jboss:domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;>-elementet lägger du till följande information:
 
    &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot;/>
 

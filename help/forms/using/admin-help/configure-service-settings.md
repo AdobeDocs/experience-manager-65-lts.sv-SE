@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a2586a1e-0e7f-4ea4-87ec-fbd82df3ec4c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '10836'
+source-wordcount: '10923'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Du kan använda sidan Tjänsthantering för att konfigurera inställningar för 
 
 ## Granska inställningar för arbetsflödestjänst {#audit-workflow-service-settings}
 
-Workbench ger möjlighet att spela in processinstanser när de körs under körning och sedan spela upp dem för att observera processens beteende. (Se [Workbench-hjälpen](https://www.adobe.com/go/learn_aemforms_workbench_63).) Om du vill spara utrymme i filsystemet på Forms Server kan du begränsa mängden lagrade processinspelningsdata. Du kan konfigurera följande egenskaper för tjänsten Granskningsarbetsflöde ( `AuditWorkflowService`):
+Workbench ger möjlighet att spela in processinstanser när de körs under körning och sedan spela upp dem för att observera processens beteende. (Se [Workbench-hjälp](https://www.adobe.com/go/learn_aemforms_workbench_63).) För att spara utrymme i filsystemet i Forms Server kan du begränsa mängden lagrade processinspelningsdata. Du kan konfigurera följande egenskaper för tjänsten Granskningsarbetsflöde ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** Det maximala antalet inspelningar som lagras. När det högsta antalet lagras tas den äldsta inspelningen bort från filsystemet när en ny inspelning skapas. Den här egenskapen är användbar om du tenderar att skapa många inspelningar och vill ta bort gamla inspelningar automatiskt. Standardvärdet är 50.
 
@@ -76,11 +76,11 @@ Följande inställningar är tillgängliga för den streckkodade formulärtjäns
 
 Bridge-tjänsten för central migrering ( `CentralMigrationBridge`) anropar en delmängd av funktionerna i Adobe Central Pro Output Server (Central), som innehåller kommandona JFMERGE, JFTRANS och XMLIMPORT. Med Bridge-tjänståtgärder för central migrering kan du återanvända följande centrala resurser i AEM-formulär:
 
-* malldesign (&ast;.ifd)
-* utdatamallar (&ast;.mdf)
-* datafiler (&ast;.dat-filer)
-* inledningsfiler (&ast;.pre-filer)
-* datadefinitionsfiler (&ast;.tdf)
+* malldesign (&amp;ast;.ifd)
+* utdatamallar (&amp;ast;.mdf)
+* datafiler (&amp;ast;.dat-filer)
+* inledningsfiler (&amp;ast;.pre-filer)
+* datadefinitionsfiler (&amp;ast;.tdf)
 
 Följande inställning är tillgänglig för Bridge-tjänsten för central migrering.
 
@@ -569,14 +569,14 @@ Följande inställningar är tillgängliga för signaturtjänsten.
 **Bädda in återkallningsinformation vid certifiering:** Anger om återkallningsinformationen bäddas in när PDF-dokumentet certifieras. Standardvärdet är false.
 
 **Tvinga inbäddning av spärrinformation för alla certifikat
-Under signering/certifiering:** Anger om en signerings- eller certifieringsåtgärd misslyckas om giltig återkallningsinformation för alla certifikat inte bäddas in. Observera att om ett certifikat inte innehåller någon CRL- eller OCSP-information, anses det vara giltigt, även om ingen återkallningsinformation hämtas. Standardvärdet är false.
+Under signering/certifiering:** Anger om en signerings- eller certifieringsåtgärd misslyckas om giltig återkallningsinformation för alla certifikat inte är inbäddad. Observera att om ett certifikat inte innehåller någon CRL- eller OCSP-information, anses det vara giltigt, även om ingen återkallningsinformation hämtas. Standardvärdet är false.
 
 **Återkallningskontrollordning:** Anger ordningen för spärrkontroll när det är möjligt att kontrollera detta med hjälp av både certifikatåterkallningslistan (CRL) och OCSP-mekanismer (Online Certificate Status Protocol). Standardvärdet är OCSPFfirst.
 
 **Maximal storlek på information om återkallningsarkivering:** Den maximala storleken på information om återkallningsarkivering i kilobyte. AEM-formulär försöker lagra så mycket spärrinformation som möjligt utan att överskrida gränsen. Standardvärdet är 10 kB.
 
 **Stödsignaturer har skapats från PreRelease-versioner av
-Adobe-produkter:** När det här alternativet är markerat valideras signaturer som skapats med en förhandsversion av Adobe-produkter korrekt. Standardvärdet är false.
+Adobe-produkter:** När det här alternativet har valts valideras signaturer som skapats med en förhandsversion av Adobe-produkter korrekt. Standardvärdet är false.
 
 **Alternativ för verifieringstid:** Anger tidpunkten för verifiering av en signerares certifikat. Standardvärdet är Säker tid för annan aktuell tid.
 
@@ -584,7 +584,7 @@ Adobe-produkter:** När det här alternativet är markerat valideras signaturer 
 Validering:** Anger om den spärrinformation som arkiveras med signaturen används för spärrkontroll. Standardvärdet är true.
 
 **Använd verifieringsinformation som finns lagrad i dokumentet för
-Validering av signaturer:** När det här alternativet är markerat används den valideringsinformation (inklusive information om återkallning och tidsstämpling) som är inbäddad i dokumentet för att validera signaturer. Standardvärdet är true.
+Validering av signaturer:** När det här alternativet är markerat används valideringsinformation (inklusive information om återkallning och tidsstämpel) som är inbäddad i dokumentet för att validera signaturer. Standardvärdet är true.
 
 **Högsta tillåtna antal kapslade verifieringssessioner:** Det högsta tillåtna antalet kapslade verifieringssessioner. AEM-formulär använder det här värdet för att förhindra en oändlig slinga när OCSP- eller CRL-signerarcertifikaten verifieras när OCSP- eller CRL-certifikatet inte är korrekt konfigurerat. Standardvärdet är 10.
 

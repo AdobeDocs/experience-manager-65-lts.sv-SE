@@ -10,9 +10,9 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: aa257d33-302c-4a01-be48-e4ff56700bfa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Se [Justera gruppstorleken för arbetsflödet för ombearbetning](#adjusting-loa
 1. Välj **[!UICONTROL Dynamic Media Reprocess]** i listrutan **[!UICONTROL Start Workflow]**.
 1. (Valfritt) Ange ett namn för arbetsflödet i textfältet **Ange arbetsflödets namn**. Du kan använda namnet för att referera till arbetsflödesinstansen, om det behövs.
 
-   ![Bearbeta resurser igen &#x200B;](/help/assets/assets/reprocess-assets2.png)
+   ![Bearbeta resurser igen ](/help/assets/assets/reprocess-assets2.png)
 
 1. Välj **[!UICONTROL Start]** och sedan **[!UICONTROL Confirm]**.
 
@@ -106,7 +106,7 @@ Se [Justera gruppstorleken för arbetsflödet för ombearbetning](#adjusting-loa
 1. På sidan Dynamic Media Reprocess workflow, i det övre högra hörnet, väljer du **[!UICONTROL Edit]** för att låsa upp arbetsflödet.
 1. I arbetsflödet väljer du komponenten Scene7 Batch Upload för att öppna verktygsfältet och väljer sedan **[!UICONTROL Configure]** i verktygsfältet.
 
-   ![Komponenten för gruppöverföring i Scene7 &#x200B;](/help/assets/assets-dm/reprocess-assets8.png)
+   ![Komponenten för gruppöverföring i Scene7 ](/help/assets/assets-dm/reprocess-assets8.png)
 
 1. Ange följande i dialogrutan **[!UICONTROL Batch Upload to Scene7 – Step Properties]**:
    * I textfälten **[!UICONTROL Title]** och **[!UICONTROL Description]** anger du en ny titel och beskrivning för jobbet, om så önskas.
@@ -126,7 +126,8 @@ Se [Justera gruppstorleken för arbetsflödet för ombearbetning](#adjusting-loa
 
 1. Stäng webbläsarfliken som visar arbetsflödesmodellen för dynamisk medieombearbetning.
 
-<!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
+<!--
+1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
@@ -144,4 +145,5 @@ Se [Justera gruppstorleken för arbetsflödet för ombearbetning](#adjusting-loa
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
+-->

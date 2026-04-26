@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Du kan använda flera metoder för att kontrollera mönsteravkännarens utdata:
    ![screenshot-2018-2-5pattern-Dettor](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via ett reaktivt textbaserat eller vanligt JSON-gränssnitt**
-* **Via ett reaktivt gränssnitt för JSON-rader, &#x200B;** som genererar ett separat JSON-dokument på varje rad.
+* **Via ett reaktivt gränssnitt för JSON-rader, **som genererar ett separat JSON-dokument på varje rad.
 
 Båda dessa metoder beskrivs nedan:
 
@@ -215,7 +215,7 @@ För närvarande kan du kontrollera följande med Mönsteravkännare:
 * Dela resurstyper och supertyper (med innehållsövertäckningar för sökvägar)
 * definitioner av Oak-index (kompatibilitet)
 * VLT-paket (överanvändning)
-* rep:kompatibilitet med användarnoder (i samband med OAuth-konfiguration)
+* Rep:User-nodkompatibilitet (i kontext för OAuth-konfiguration)
 
 >[!NOTE]
 >

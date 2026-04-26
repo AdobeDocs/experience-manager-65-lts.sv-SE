@@ -8,10 +8,10 @@ feature: Collections,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5b91d368-aa22-4f13-9c2c-6be831470609
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2027'
-ht-degree: 10%
+source-wordcount: '2043'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 En samling är en uppsättning resurser i [!DNL Adobe Experience Manager Assets]. Använd samlingar för att dela resurser mellan användare. Uppsättningen kan vara en statisk samling eller en dynamisk samling som baseras på sökresultat.
@@ -56,7 +56,7 @@ Du kan skapa en samling med statiska referenser, t.ex. en samling med referenser
    >Om du vill att medlemmarna ska kunna dela samlingar med andra användare anger du `dam-users`-gruppens läsbehörighet på sökvägen `home/users`. Ge användarna på `/content/dam/collections` plats behörighet att tillåta användarna att visa samlingar i popup-listor. Du kan också göra användaren till en del av gruppen `dam-users`.
 
 1. (Valfritt) Lägg till en miniatyrbild för samlingen.
-1. Klicka på **[!UICONTROL Create]** och sedan på **[!UICONTROL OK]** för att stänga dialogrutan. En samling med den angivna titeln och de angivna egenskaperna öppnas i konsolen Samlingar.
+1. Klicka på **[!UICONTROL Create]** och sedan på **[!UICONTROL OK]** för att stänga dialogrutan. En samling med den angivna titeln och egenskaperna öppnas i konsolen Samlingar.
 
    >[!NOTE]
    >
@@ -75,7 +75,7 @@ Du kan dra resurser från användargränssnittet [!DNL Assets] till en samling. 
 
 1. Klicka på **[!UICONTROL Create Collection]** i verktygsfältet på sidan **[!UICONTROL Add To Collection]**.
 
-   Om du vill lägga till resurserna i en befintlig samling markerar du den på sidan och klickar på **[!UICONTROL Add]**. Som standard väljs den senast uppdaterade samlingen.
+   Om du vill lägga till resurserna i en befintlig samling markerar du den på sidan och klickar på **[!UICONTROL Add]**. Som standard är den senast uppdaterade samlingen markerad.
 
 1. Ange ett namn för samlingen i dialogrutan **[!UICONTROL Create New Collection]**. Om du vill att samlingen ska vara tillgänglig för alla användare väljer du **[!UICONTROL Public Collection]**.
 1. Klicka på **[!UICONTROL Continue]** för att skapa samlingen.
@@ -130,7 +130,7 @@ Smarta samlingar skapas genom att en sökning sparas så att du kan ändra deras
 1. Klicka på sökalternativet ![sökalternativ](assets/do-not-localize/search_icon.png) i verktygsfältet i användargränssnittet för [!DNL Assets].
 1. Markera `Return` med markören i sökrutan.
 1. Öppna panelen Filter i gränssnittet [!DNL Experience Manager].
-1. Välj den smarta samling du vill ändra i listan **[!UICONTROL Saved Searches]**. På sökpanelen visas de filter som har konfigurerats för den sparade sökningen.
+1. Välj den smarta samling som du vill ändra i listan **[!UICONTROL Saved Searches]**. På sökpanelen visas de filter som har konfigurerats för den sparade sökningen.
 
    ![select_smart_collection](assets/select_smart_collection.png)
 
@@ -159,7 +159,7 @@ Du kan redigera metadata för flera samlingar samtidigt. Med den här funktionen
 
 1. Välj två eller flera samlingar i konsolen Samlingar.
 1. Klicka på **[!UICONTROL Properties]** i verktygsfältet.
-1. På sidan **[!UICONTROL Collection Metadata]** redigerar du metadata på flikarna **[!UICONTROL Basic]** och **[!UICONTROL Advanced]** efter behov.
+1. Redigera metadata under flikarna **[!UICONTROL Basic]** och **[!UICONTROL Advanced]** på sidan **[!UICONTROL Collection Metadata]** efter behov.
 1. Om du vill visa metadataegenskaperna för en viss samling avbryter du valet av de återstående samlingarna i samlingslistan. Metadataredigeringsfälten fylls i med metadata för den aktuella samlingen.
 
    >[!NOTE]
@@ -168,7 +168,7 @@ Du kan redigera metadata för flera samlingar samtidigt. Med den här funktionen
    >* Högst upp i listan markerar du kryssrutan nära **[!UICONTROL Title]** för att växla mellan att markera samlingarna och rensa listan.
 
 1. Klicka på **[!UICONTROL Save & Close]** i verktygsfältet och stäng sedan bekräftelsedialogrutan.
-1. Om du vill lägga till nya metadata till de befintliga metadata väljer du **[!UICONTROL Append mode]**. Om du inte markerar det här alternativet ersätter de nya metadata de data som finns i fälten. Klicka på **[!UICONTROL Submit]**.
+1. Om du vill lägga till nya metadata med befintliga metadata väljer du **[!UICONTROL Append mode]**. Om du inte markerar det här alternativet ersätter de nya metadata som finns i fälten. Klicka på **[!UICONTROL Submit]**.
 
    >[!NOTE]
    >
@@ -197,7 +197,7 @@ I en samling är [!DNL Experience Manager]-sökningen begränsad till resurser (
 Du kan redigera samlingsinställningar, till exempel rubrik och beskrivning, eller lägga till medlemmar i en samling.
 
 1. Markera en samling och klicka på **[!UICONTROL Settings]** i verktygsfältet. Du kan också använda snabbåtgärden **[!UICONTROL Settings]** från samlingsminiatyrbilden.
-1. Ändra inställningarna för samlingen på sidan **[!UICONTROL Collection Settings]**. Du kan till exempel ändra samlingens rubrik, beskrivningar, medlemmar och behörigheter enligt beskrivningen i [Lägga till samlingar](#creating-a-collection).
+1. Ändra samlingsinställningarna på sidan **[!UICONTROL Collection Settings]**. Du kan till exempel ändra samlingens rubrik, beskrivningar, medlemmar och behörigheter enligt beskrivningen i [Lägga till samlingar](#creating-a-collection).
 
 1. Klicka på **[!UICONTROL Save]** om du vill spara ändringarna.
 
@@ -241,7 +241,7 @@ Du kan lägga till en samling i en annan samling så att du kan skapa en kapslad
 
 ## Sparade sökningar {#saved-searches}
 
-I användargränssnittet för [!DNL Assets] kan du söka efter eller filtrera resurser baserat på vissa regler, sökvillkor eller anpassade sökfaktorer. Om du sparar dem som **[!UICONTROL Saved Searches]** kan du komma åt dem senare från listan **[!UICONTROL Saved Searches]** på panelen Filter. När du skapar en sparad sökning skapas även en smart samling.
+I användargränssnittet för [!DNL Assets] kan du söka efter eller filtrera resurser baserat på vissa regler, sökvillkor eller anpassade sökfaktorer. Om du sparar dessa som **[!UICONTROL Saved Searches]** kan du komma åt dem senare från listan **[!UICONTROL Saved Searches]** på panelen Filter. När du skapar en sparad sökning skapas även en smart samling.
 
 ![saved_searches_list](assets/saved_searches_list.png)
 

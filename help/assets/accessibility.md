@@ -5,9 +5,9 @@ feature: Asset Management
 role: User,Developer,Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1919'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,8 @@ Kärnfunktionerna i [!DNL Assets] är mer tillgängliga än tidigare och uppdate
 
 Många element i användargränssnittet som är klickbara eller kan användas med en pekare kan också aktiveras med ett tangentbord. Med ett tangentbord kan användarna fokusera på gränssnittselement och vidta lämpliga åtgärder. Användare kan använda kortkommandon direkt för att utlösa ett kommando eller en åtgärd utan att behöva fokusera på gränssnittselement och utlösa det med hjälp av tangentbordet. Användare kan till exempel öppna tidslinjen för en resurs på vänstra sidan av användargränssnittet. Bläddra till användargränssnittskontrollen med ett tangentbord och välj `Return` och sedan `Alt + 2` kortkommando.
 
-<!-- TBD items:
+<!--
+TBD items:
 
 * The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -85,7 +86,7 @@ Följande åtgärder i [!DNL Assets] fungerar med de kortkommandon som visas. De
 | Kolumnvy i användargränssnittet [!DNL Assets] | Uppåtpil och nedåtpil | Navigera till filer och mappar i samma hierarki. |
 | Kolumnvy i användargränssnittet [!DNL Assets] | Vänster- och högerpilstangenter | Navigera till filer och mappar ovanför eller nedanför den aktuella mappen. |
 | Bläddrar bland mappar i [!DNL Assets] | `/` | Anropa en sökning genom att öppna sökrutan. |
-| [!DNL Assets]-konsol | &grave; | Växla sidoskenor |
+| [!DNL Assets]-konsol | &amp;grav; | Växla sidoskenor |
 | [!DNL Assets]-konsol | `Alt + 1` | Öppna innehållsträdet. |
 | [!DNL Assets]-konsol | `Alt + 2` | Öppna den vänstra listen [!UICONTROL Navigation]. |
 | [!DNL Assets]-konsol | `Alt + 3` | Visa [!UICONTROL Timeline] av en markerad resurs. |
@@ -111,7 +112,8 @@ Efter inloggning kan DAM-användare navigera i användargränssnittet för [!DNL
 
 Om en användare utökar alternativen för hjälpen eller användarprofilen på menyn visas rätt alternativ eller status i skärmläsaren. Om en användare utökar alternativet för användarprofil kan de tillgängliga alternativen väljas med hjälp av ett tangentbord. En administratör kan till exempel personifiera en annan användare. Om en användare söker efter en sträng från alternativet [!UICONTROL Help], meddelar en berättare om &quot;Hjälp för sökning&quot; för att ange att en sökning pågår.
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -122,7 +124,8 @@ Om en användare utökar alternativen för hjälpen eller användarprofilen på 
 
 I användargränssnittet [!DNL Assets] kan användare använda tangentbordet för att bläddra bland digitala resurser i DAM-databasen och förhandsvisa eller hämta en resurs. Användarna kan också visa genererade återgivningar, växla vyer och granska tidslinjen, versionshistorik, kommentarer och referenser. Dessutom kan användare visa och hantera metadata.
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -148,7 +151,8 @@ Följande funktioner förbättrar tillgängligheten när du bläddrar i resurska
 * Kommentarer om en resurs är tillgängliga på resursens tidslinje. Det är tillgängligt om du kommer åt den vänstra listen via ett tangentbord eller ett kortkommando.
 * [!UICONTROL View Settings] i [!DNL Experience Manager] är tillgängliga via ett tangentbord. Användare kan navigera bland de tillgängliga kortstorlekarna med piltangenterna och välja och bläddra igenom för att ange andra element i den befintliga vyn Visa inställningar.
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -191,7 +195,8 @@ Vid filtrering av sökresultat:
 
 ## Dela resurser {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 Följande funktioner förbättrar tillgängligheten när du delar resurser:

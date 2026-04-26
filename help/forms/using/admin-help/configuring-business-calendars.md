@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1938'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ En påminnelse om en aktivitet är till exempel konfigurerad att inträffa tre a
 
 >[!NOTE]
 >
->När du beräknar datum och tid med hjälp av affärskalendrar använder AEM-formulär datum och tid för den server där den körs och justerar inte skillnaden mellan tidszoner. Om en påminnelse om en uppgift till exempel är schemalagd till klockan 10.00 på en server som körs i London, men användaren som tar emot påminnelsen är i New York, får användaren påminnelsen kl. 17.00 lokal tid.
+>När du beräknar datum och tid med hjälp av affärskalendrar använder AEM-formulär datum och tid för den server där den körs och justerar inte skillnaden mellan tidszoner. Om till exempel en påminnelse om aktivitet schemalagts till 10:00 finns på en server som körs i London, men användaren som tar emot påminnelsen är i New York City, får användaren påminnelsen 05:00 lokal tid.:00
 
 ## Använda standardaffärskalendern {#using-the-default-business-calendar}
 
@@ -79,7 +79,7 @@ Om din organisation innehåller olika uppsättningar användare som har olika ic
 
    Om du väljer det här alternativet flyttas en händelse som inträffar före det angivna tidsintervallet till början av tidsintervallet och en händelse som inträffar efter att tidsintervallet har flyttats till starttiden för nästa arbetsdag.
 
-   Tänk dig till exempel en situation där en användare tilldelas en uppgift kl. 2:00 på en tisdag, och påminnelsen för den uppgiften är inställd på två arbetsdagar. Utan arbetstider skulle påminnelsen hållas kl. 2.00 på torsdag. Om arbetstiderna är inställda på 08.00 till 17.00, flyttas påminnelsen till 08.00 på torsdag. Om en påminnelsehändelse skapades kl. 18.00 på tisdagen skulle påminnelsen inträffa efter kontorstid på torsdag. Med öppettider inställda på mellan 08.00 och 17.00, skulle påminnelsen ske kl. 08.00 på fredag.
+   Tänk dig till exempel en situation där en användare tilldelas en uppgift kl. 2:00 på en tisdag, och påminnelsen för den uppgiften är inställd på två arbetsdagar. Utan arbetstider skulle påminnelsen hållas kl. 2:00 på torsdag. Om arbetstiderna är inställda på 8:00 till 17:00, flyttas påminnelsen till 8:00 på torsdag. :00Om en påminnelsehändelse skapades kl. 20 på tisdagen utan kontorstid skulle påminnelsen inträffa efter kontorstid på torsdag. :00Med öppettider inställda på 8:00 till 17:00, skulle påminnelsen ske 08:20 på fredag.:00:00
 
 1. Dubbelklicka i kalendern till vänster på andra icke-vardagar, till exempel helger. Du kan inte välja tidigare dagar. De icke-arbetsdagar som du väljer visas i en lista till höger med datumet två gånger på en rad. Välj datumet till vänster för att ange namn eller beskrivning för icke-affärsdagen.
 

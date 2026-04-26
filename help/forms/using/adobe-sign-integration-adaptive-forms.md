@@ -5,22 +5,22 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
 
 # Integrera [!DNL Adobe Sign] med AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}
 
-<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
+<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
 
 ## Gäller för {#applies-to}
 
 Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
 
-Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=sv-SE#adobe-acrobat-sign-for-government).
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government).
 
 [!DNL Adobe Sign] aktiverar e-signaturarbetsflöden för anpassningsbara formulär. E-signaturer förbättrar arbetsflödena för att bearbeta dokument inom juridik, försäljning, löneadministration, personaladministration och många andra områden.
 
@@ -49,7 +49,7 @@ Du behöver följande för att integrera [!DNL Adobe Sign] med AEM [!DNL Forms]:
 När förutsättningarna är uppfyllda utför du följande steg för att konfigurera [!DNL Adobe Sign] med AEM [!DNL Forms] på författarinstansen:
 
 1. I AEM [!DNL Forms]-författarinstansen går du till **Verktyg** ![hammer](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
-1. Välj **[!UICONTROL Configuration Browser]** på sidan **[!UICONTROL Create]**.
+1. Välj **[!UICONTROL Create]** på sidan **[!UICONTROL Configuration Browser]**.
    * Mer information finns i dokumentationen för [Configuration Browser](/help/sites-administering/configurations.md).
 1. I dialogrutan **[!UICONTROL Create Configuration]** anger du **[!UICONTROL Title]** för konfigurationen, aktiverar **[!UICONTROL Cloud Configurations]** och väljer **[!UICONTROL Create]**. En konfigurationsbehållare skapas.
 1. Navigera till **Verktyg** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** och markera den konfigurationsbehållare som du skapade i steget ovan.
@@ -88,7 +88,7 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
 
    där:
 
-   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL &#x200B; Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/se/sign/using/identify-account-shard.html).
+   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL  Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -109,7 +109,7 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
    * widget_write
    * workflow_read
 
-   Stegvis information om hur du konfigurerar OAuth-inställningar för ett [!DNL Adobe Sign]-program och hämtar nycklarna finns i [Konfigurera autentiseringsinställningar för programmets &#x200B;](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) utvecklardokumentation.
+   Stegvis information om hur du konfigurerar OAuth-inställningar för ett [!DNL Adobe Sign]-program och hämtar nycklarna finns i [Konfigurera autentiseringsinställningar för programmets ](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) utvecklardokumentation.
 
    ![OAuth-konfiguration](assets/oauthconfig_new.png)
 
@@ -129,7 +129,8 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
 
    >[!NOTE]
    >
-   >Ensure that your author and publish instance configurations point to the same shard. If you create multiple Adobe Sign configurations for an organization, ensure all the configurations utilize the same shard. -->
+   >Ensure that your author and publish instance configurations point to the same shard. If you create multiple Adobe Sign configurations for an organization, ensure all the configurations utilize the same shard.
+-->
 
 1. Gå tillbaka till sidan **[!UICONTROL Create Adobe Sign Configuration]**. På fliken **[!UICONTROL Settings]** anger du **Klient-ID** (kallas även program-ID) och **Klienthemlighet**. Använd [klient-ID och klienthemlighet för Adobe Sign-program](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) som skapats för AEM Forms.
 
@@ -142,7 +143,7 @@ När förutsättningarna är uppfyllda utför du följande steg för att konfigu
 1. Tryck på **[!UICONTROL Create]** för att skapa [!DNL Adobe Sign]-konfigurationen.
 1. Öppna AEM Web Console. URL:en är `https://'[server]:[port]'/system/console/configMgr`
 1. Öppna **[!UICONTROL Forms Common Configuration Service].**
-1. I fältet **[!UICONTROL Allow]** **select** Alla användare - Alla användare, anonyma eller inloggade, kan förhandsgranska bilagor, verifiera och signera formulär och klicka på **[!UICONTROL Save].** Författarinstansen är konfigurerad att använda [!DNL Adobe Sign].
+1. I fältet **[!UICONTROL Allow]** kan **select** Alla användare - Alla användare, anonyma eller inloggade, förhandsgranska bilagor, verifiera och signera formulär och klicka på **[!UICONTROL Save].** Författarinstansen är konfigurerad att använda [!DNL Adobe Sign].
 1. Publicera konfigurationen.
 1. Använd [replikering](/help/sites-deploying/replication.md) om du vill skapa en identisk konfiguration för motsvarande publiceringsinstanser.
 
@@ -176,7 +177,7 @@ Innan du börjar ansluta AEM Forms med Adobe Acrobat Sign Solution,
 #### Skapa en omdirigerings-URL för din AEM-instans
 
 1. På din AEM Forms-instans går du till **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
-1. Välj **[!UICONTROL Configuration Browser]** på sidan **[!UICONTROL Create]**.
+1. Välj **[!UICONTROL Create]** på sidan **[!UICONTROL Configuration Browser]**.
 1. I dialogrutan **[!UICONTROL Create Configuration]** anger du **[!UICONTROL Title]** för konfigurationen, aktiverar **[!UICONTROL Cloud Configurations]** och väljer **[!UICONTROL Create]**. En konfigurationsbehållare skapas. Kontrollera att behållar-/mappnamnet inte innehåller något utrymme.
 
 1. Navigera till **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Acrobat Sign]** och öppna konfigurationsbehållaren som du skapade i föregående steg. När du skapar ett adaptivt formulär anger du behållarnamnet i fältet **[!UICONTROL Configuration Container]**.
@@ -214,7 +215,7 @@ Representanten genererar och delar uppgifter med dig. I nästa avsnitt använder
 
 1. På fliken **[!UICONTROL General]** på sidan **[!UICONTROL Create Adobe Sign Configuration]** anger du **[!UICONTROL Name]** för konfigurationen och väljer **[!UICONTROL Next]**. Du kan också ange en **[!UICONTROL Title]** och bläddra för att välja en **[!UICONTROL Thumbnail]** för konfigurationen. Klicka på **[!UICONTROL Next]**.
 
-1. Välj **[!UICONTROL Settings]** för alternativet **[!UICONTROL Create Adobe Sign Configuration]** på fliken **[!UICONTROL Select solution]** på sidan [!DNL Adobe Acrobat Sign Solutions for Government].
+1. Välj [!DNL Adobe Acrobat Sign Solutions for Government] för alternativet **[!UICONTROL Select solution]** på fliken **[!UICONTROL Settings]** på sidan **[!UICONTROL Create Adobe Sign Configuration]**.
 
    ![Adobe Acrobat Sign Solutions för offentlig sektor](/help/forms/using/assets/adobe-sign-for-govt.png)
 
@@ -237,7 +238,7 @@ Representanten genererar och delar uppgifter med dig. I nästa avsnitt använder
 
    där:
 
-   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL &#x200B; Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/se/sign/using/identify-account-shard.html).
+   **na1** refererar till standarddatabasdelningen. Du kan ändra värdet för databasdelningen. Kontrollera att [!DNL  Adobe Acrobat Sign]-molnkonfigurationerna pekar på [rätt kort](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -256,7 +257,7 @@ Representanten genererar och delar uppgifter med dig. I nästa avsnitt använder
 1. Välj **[!UICONTROL Create]** för att skapa konfigurationen.
 1. Öppna AEM Web Console. URL:en är `https://'[server]:[port]'/system/console/configMgr`
 1. Öppna **[!UICONTROL Forms Common Configuration Service].**
-1. I fältet **[!UICONTROL Allow]** **select** Alla användare - Alla användare, anonyma eller inloggade, kan förhandsgranska bilagor, verifiera och signera formulär och klicka på **[!UICONTROL Save].** Författarinstansen är konfigurerad att använda [!DNL Adobe Sign].
+1. I fältet **[!UICONTROL Allow]** kan **select** Alla användare - Alla användare, anonyma eller inloggade, förhandsgranska bilagor, verifiera och signera formulär och klicka på **[!UICONTROL Save].** Författarinstansen är konfigurerad att använda [!DNL Adobe Sign].
 
 1. Publicera konfigurationen.
 1. Använd [replikering](/help/sites-deploying/replication.md) om du vill skapa en identisk konfiguration för motsvarande publiceringsinstanser.
@@ -273,7 +274,7 @@ Ett anpassat formulär som har aktiverats av [!DNL Adobe Sign] skickas endast n�
    Du kan även öppna följande URL-adress i ett webbläsarfönster:
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. Leta reda på och öppna alternativet **[!UICONTROL Adobe Sign Configuration Service]**. Ange ett [cron-uttryck](https://en.wikipedia.org/wiki/Cron#CRON_expression) i fältet **[!UICONTROL Status Update Scheduler Expression]** och klicka på **[!UICONTROL Save]**. Om du till exempel vill köra konfigurationstjänsten varje dag klockan 00:00 anger du :00 i fältet `0 0 0 1/1 * ? *`.**[!UICONTROL Status Update Scheduler Expression]**
+1. Leta reda på och öppna alternativet **[!UICONTROL Adobe Sign Configuration Service]**. Ange ett [cron-uttryck](https://en.wikipedia.org/wiki/Cron#CRON_expression) i fältet **[!UICONTROL Status Update Scheduler Expression]** och klicka på **[!UICONTROL Save]**. Om du till exempel vill köra konfigurationstjänsten varje dag klockan 00:00 anger du `0 0 0 1/1 * ? *` i fältet **[!UICONTROL Status Update Scheduler Expression]**.:00
 
 Standardintervallet för synkroniseringsstatus för [!DNL Adobe Sign] har ändrats.
 

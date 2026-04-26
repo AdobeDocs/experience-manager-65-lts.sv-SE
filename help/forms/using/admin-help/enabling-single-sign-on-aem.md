@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,7 @@ Om servern används med datornamnet, till exempel https://lcserver:8080, krävs 
 
 1. Skriv `about:config` i rutan Webbläsarens URL
 
-   Dialogrutan about:config - Mozilla Firefox visas.
+   Dialogrutan ca :config - Mozilla Firefox visas.
 
 1. Skriv `negotiate` i rutan Filter
 1. I listan som visas klickar du på network.gotiate-auth.trusted-uri och anger något av följande kommandon som passar din miljö:

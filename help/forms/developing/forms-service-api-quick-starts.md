@@ -1,6 +1,6 @@
 ---
 title: Snabbstart för Forms Service API
-description: Lär dig hur du återger interaktiva PDF, HTML Forms, Fragment med Java&trade; API.
+description: Lär dig hur du återger interaktiva PDF, HTML Forms, fragment med Java&trade; API.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: f66d001b-d782-49d8-9a4a-aaeb663039dc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
@@ -24,35 +24,35 @@ ht-degree: 0%
 
 Följande snabbstarter är tillgängliga för tjänsten Forms:
 
-[Snabbstart (SOAP-läge): Återge ett interaktivt PDF-formulär med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
+[Snabbstart (SOAP-läge): Återge ett interaktivt PDF-formulär med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Återge ett formulär på klienten med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[Snabbstart (SOAP-läge): Återge ett formulär på klienten med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Återge ett formulär baserat på fragment med hjälp av Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[Snabbstart (SOAP-läge): Återge ett formulär baserat på fragment med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Återge ett rättighetsaktiverat formulär med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[Snabbstart (SOAP-läge): Återge ett rättighetsaktiverat formulär med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Återge ett HTML-formulär med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[Snabbstart (SOAP-läge): Återge ett HTML-formulär med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Återge ett HTML-formulär med ett anpassat verktygsfält med hjälp av Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Snabbstart (SOAP-läge): Återge ett HTML-formulär med ett anpassat verktygsfält med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Hantera PDF forms som skickats som XML med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Snabbstart (SOAP-läge): Hantera PDF forms som skickats som XML med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Hantera PDF forms som skickats som PDF med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Snabbstart (SOAP-läge): Hantera PDF forms som skickats som PDF med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Hantera HTML-formulär som skickats som XML med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[Snabbstart (SOAP-läge): Hantera HTML-formulär som skickats som XML med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Skapa PDF-dokument med inskickade XML-data med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
+[Snabbstart (SOAP-läge): Skapa PDF-dokument med inskickade XML-data med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Förifyll Forms med flödeslayouter med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Snabbstart (SOAP-läge): Förifyll Forms med flödeslayouter med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Hantera ett formulär som innehåller ett beräkningsskript med hjälp av Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
+[Snabbstart (SOAP-läge): Hantera ett formulär som innehåller ett beräkningsskript med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Optimera prestanda med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[Snabbstart (SOAP-läge): Optimera prestanda med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Återge efter värde med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[Snabbstart (SOAP-läge): Återge efter värde med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
-[Snabbstart (SOAP-läge): skicka dokument till Forms-tjänsten med Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Snabbstart (SOAP-läge): skicka dokument till Forms-tjänsten med Java™ API](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 Programlogik som använder Forms tjänst-API implementeras som Java™-servrar. AEM Forms-åtgärder kan utföras med AEM Forms starkt typbestämda API och anslutningsläget bör anges till SOAP.
 

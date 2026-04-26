@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: e449c6f6-7b75-47ab-9abd-8031b7b151e5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '6201'
+source-wordcount: '6236'
 ht-degree: 0%
 
 ---
@@ -543,7 +543,7 @@ Utför följande uppgifter för att programmässigt hantera användare, grupper 
 
 1. Skapa en DirectoryManagerService-klient.
 
-   Skapa ett `DirectoryManagerServiceClient`-objekt med hjälp av dess konstruktor och skicka ett `ServiceClientFactory`-objekt som innehåller anslutningsegenskaper. Mer information finns i [Ange anslutningsegenskaper &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Skapa ett `DirectoryManagerServiceClient`-objekt med hjälp av dess konstruktor och skicka ett `ServiceClientFactory`-objekt som innehåller anslutningsegenskaper. Mer information finns i [Ange anslutningsegenskaper ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Anropa lämpliga användar- eller gruppåtgärder.
 
@@ -691,7 +691,7 @@ Hantera roller och behörigheter med hjälp av API:t för tjänsten Authorizatio
 1. Skapa en AuthorizationManagerService-klient.
 
    * Skapa ett `AuthorizationManagerServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `AuthorizationManagerServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`.) Du behöver inte använda attributet `lc_version`. Det här attributet används när du skapar en tjänstreferens.
+   * Skapa ett `AuthorizationManagerServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`). Du behöver inte använda attributet `lc_version`. Det här attributet används när du skapar en tjänstreferens.
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `AuthorizationManagerServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:

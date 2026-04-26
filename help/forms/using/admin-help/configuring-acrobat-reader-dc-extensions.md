@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,Reader Extensions
 hide: true
 hidefromtoc: true
 exl-id: f9b01de7-1de5-43aa-bcc3-b15719bfa5c0
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Om användare av dina AEM-formulär använder datainhämtningsfunktionen i Content Services (Borttagen) rekommenderar vi att du skapar en roll med skrivskyddad åtkomst för dessa användare.
 
-***Obs!**&#x200B;Adobe® LiveCycle® Content Services ES (utgått) är ett innehållshanteringssystem som installeras med LiveCycle. Det gör det möjligt för användarna att utforma, hantera, övervaka och optimera humancentrerade processer. Supporten för innehållstjänster (borttaget) upphör 2014-12-31. Se [Adobe livscykeldokument](https://helpx.adobe.com/se/support/programs/eol-matrix.html).*
+***Obs!**Adobe® LiveCycle® Content Services ES (utgått) är ett innehållshanteringssystem som installeras med LiveCycle. Det gör det möjligt för användarna att utforma, hantera, övervaka och optimera humancentrerade processer. Supporten för innehållstjänster (borttaget) upphör 2014-12-31. Se [Adobe livscykeldokument](https://helpx.adobe.com/support/programs/eol-matrix.html).*
 
 För datainhämtning krävs att du tilldelar en användarroll för att få åtkomst till SampleReaderExtensionsCredential. Du kan tilldela den förvalda rollen Pålitlighetsadministratör. Tänk dock på att den här rollen ger allmänna, icke-administrativa administratörsbehörigheter som styr PKI Trust-inställningarna och hanterar PKI-autentiseringsuppgifter, vilket kan äventyra säkerheten i dina AEM-formulär i en produktionsmiljö. Vi rekommenderar att systemadministratören för AEM-formulär skapar en roll som endast ger skrivskyddad åtkomst till Trust Store och tilldelar den nya rollen till icke-administratörsanvändare som använder datainhämtning.
 

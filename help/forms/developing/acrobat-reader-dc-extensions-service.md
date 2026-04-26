@@ -10,9 +10,9 @@ feature: Adaptive Forms,Reader Extensions,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: a8ec523c-b304-41ba-9980-8ba84e076c7d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Följande snabbstarter är tillgängliga för tjänsten Acrobat Reader DC Extensions.
 
-[Snabbstart (SOAP-läge):Tillämpa användningsrättigheter med Java API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Snabbstart (SOAP-läge):Applying användningsbehörighet med Java API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Ta bort användningsrättigheter från PDF-dokument](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
@@ -33,7 +33,7 @@ AEM Forms-åtgärder kan utföras med AEM Forms starkt typbestämda API och ansl
 >
 >Snabbstart i programmering med AEM Forms baseras på Forms serveroperativsystem. Om du använder ett annat operativsystem, till exempel UNIX, ska du ersätta Windows-specifika sökvägar med sökvägar som stöds av det aktuella operativsystemet. På samma sätt måste du ange giltiga anslutningsegenskaper om du använder en annan J2EE-programserver. Se [Ange anslutningsegenskaper](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snabbstart (SOAP-läge):Tillämpa användningsrättigheter med Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+## Snabbstart (SOAP-läge):Applying användningsbehörighet med Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
 I följande Java-kodexempel tillämpas användarrättigheter på ett PDF-dokument med namnet *Loan.pdf*. Det rättighetsaktiverade PDF-dokumentet sparas som en PDF-fil med namnet *LoanUsageRights.pdf*. Följande användningsrättigheter gäller för det här PDF-dokumentet: `enabledComments`, `enabledFormFillIn` och `enabledDigitalSignatures`. (Se [Använda användningsrättigheter i PDF-dokument](/help/forms/developing/assigning-usage-rights.md).)
 

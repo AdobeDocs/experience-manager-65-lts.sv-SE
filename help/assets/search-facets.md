@@ -7,10 +7,10 @@ feature: Search
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2645d78b-e678-4ade-b707-5301cc2b3e75
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2259'
-ht-degree: 11%
+source-wordcount: '2285'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 11%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 En företagsövergripande distribution av [!DNL Adobe Experience Manager Assets] har kapacitet att lagra många resurser. Ibland kan det vara besvärligt och tidskrävande att hitta rätt resurs om du bara använder de generiska sökfunktionerna i [!DNL Experience Manager].
@@ -55,7 +55,7 @@ Lägg till predikatet **[!UICONTROL Fulltext]** i formuläret för fulltextsökn
 
 1. Ange en fältetikett, platshållartext och beskrivning för predikatet på fliken [!UICONTROL Settings]. Ange ett giltigt namn för metadataegenskapen som du vill associera med predikatet. Rubriketiketten på fliken [!UICONTROL Settings] identifierar det valda predikatets typ.
 
-1. I fältet [!UICONTROL Property Name] anger du ett giltigt namn för den metadataegenskap som du vill associera med predikatet. Det är det namn som sökningen baseras på. Skriv till exempel `jcr:content/metadata/dc:description` eller `./jcr:content/metadata/dc:description`.
+1. I fältet [!UICONTROL Property Name] anger du ett giltigt namn för metadataegenskapen som du vill associera med predikatet. Det är det namn som sökningen baseras på. Ange till exempel `jcr:content/metadata/dc:description` eller `./jcr:content/metadata/dc:description`.
 
    Du kan också välja en befintlig nod i urvalsdialogrutan.
 
@@ -85,13 +85,13 @@ Egenskapen `jcr:title` är ett användarvänligt namn för alternativet som visa
 
 När du väljer ett alternativ utförs sökningen baserat på egenskapen `value` för alternativnoden och dess underordnade noder, om sådana finns. Hela trädet under alternativnoden gås igenom och egenskapen `value` för varje underordnad nod kombineras med en OR-åtgärd för att skapa sökfrågan.
 
-Om du till exempel väljer ”Bilder” för filtyper skapas sökfrågan för resurserna genom att egenskapen `value` kombineras med en OR-åtgärd. Sökfrågan efter bilder skapas till exempel genom att kombinera resultaten som matchar *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* och *image/tiff* för egenskapen `jcr:content/metadata/dc:format` med en OR-åtgärd.
+Om du till exempel väljer Bilder för filtyper skapas sökfrågan för resurserna genom att kombinera egenskapen `value` med en OR-åtgärd. Sökfrågan efter bilder skapas till exempel genom att kombinera resultaten som matchar *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* och *image/tiff* för egenskapen `jcr:content/metadata/dc:format` med en OR-åtgärd.
 
 ![Värdeegenskapen för en filtyp, som den visas i CRXDE, används för sökfrågor som ska fungera](assets/filetype-value-property.png)
 
 Egenskapen value för en filtyp, som visas i CRXDE, används för att söka i frågor som ska fungera
 
-I stället för att manuellt skapa en nodstruktur för alternativen i CRXDE-databasen, kan du definiera alternativen i en JSON-fil genom att ange motsvarande nyckelvärdepar. Ange sökvägen till JSON-filen i fältet **[!UICONTROL Property Name]**. Du kan till exempel definiera nyckelvärdesparen `image/bmp`, `image/gif`, `image/jpeg` och `image/png` och ange deras värden så som de visas i följande JSON-exempelfil. I fältet **[!UICONTROL Property Name]** kan du ange CRXDE-sökvägen för filen.
+I stället för att manuellt skapa en nodstruktur för alternativen i CRXDE-databasen, kan du definiera alternativen i en JSON-fil genom att ange motsvarande nyckelvärdepar. Ange sökvägen till JSON-filen i fältet **[!UICONTROL Property Name]**. Du kan till exempel definiera nyckelvärdepar, `image/bmp`, `image/gif`, `image/jpeg` och `image/png` och ange deras värden så som de visas i följande JSON-exempelfil. I fältet **[!UICONTROL Property Name]** kan du ange CRXDE-sökvägen för filen.
 
 ```json
 {
@@ -113,14 +113,14 @@ Om du vill använda en befintlig nod anger du den i valdialogrutan.
 
 1. Klicka på logotypen [!DNL Experience Manager] och gå sedan till **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Välj **[!UICONTROL Assets Admin Search Rail]** på sidan **[!UICONTROL Search Forms]** och klicka sedan på **[!UICONTROL Edit]**.
-1. På sidan **[!UICONTROL Edit Search Form]** drar du **[!UICONTROL Options Predicate]** från fliken **[!UICONTROL Select Predicate]** till huvudrutan.
+1. Dra **[!UICONTROL Options Predicate]** från fliken **[!UICONTROL Select Predicate]** på sidan **[!UICONTROL Edit Search Form]** till huvudrutan.
 1. Ange en etikett och ett namn för egenskapen på fliken **[!UICONTROL Settings]**. Om du till exempel vill söka efter resurser baserat på deras format anger du ett användarvänligt namn för etiketten, till exempel **[!UICONTROL File Type]**. Ange den egenskap som ska användas för sökningen i egenskapsfältet, till exempel `jcr:content/metadata/dc:format.`
 1. Gör något av följande:
 
    * I fältet **[!UICONTROL Property Name]** anger du sökvägen till JSON-filen där du definierar noderna för alternativen och anger motsvarande nyckelvärdepar.
    * Klicka på symbolen `+` bredvid fältet Alternativ för att ange visningstext och värde för de alternativ som du vill ange på panelen Filter. Om du vill lägga till ytterligare ett alternativ klickar du på symbolen `+` och upprepar steget.
 
-1. Kontrollera att **[!UICONTROL Single Select]** är avmarkerat så att användaren kan välja flera alternativ för filtyper samtidigt (till exempel bilder, dokument, multimedia och arkiv). Om du väljer **[!UICONTROL Single Select]** kan användaren bara välja ett alternativ åt gången för olika filtyper.
+1. Kontrollera att **[!UICONTROL Single Select]** är avmarkerat så att användaren kan välja flera alternativ för filtyper samtidigt (till exempel Bilder, Dokument, Multimedia och Arkiv). Om du väljer **[!UICONTROL Single Select]** kan användaren bara välja ett alternativ åt gången för filtyper.
 
    ![Tillgängliga fält i Alternativpredikatet](assets/options_predicate.png)
 
@@ -135,11 +135,11 @@ Med Multi Value Property-predikatet kan du söka efter resurser efter flera vär
 
 1. Klicka på logotypen [!DNL Experience Manager] och gå sedan till **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. På sidan Sök i Forms väljer du **[!UICONTROL Assets Admin Search Rail]** och klickar på ikonen **[!UICONTROL Edit]** ![redigera](assets/do-not-localize/aemassets_edit.png).
-1. På sidan Redigera sökformulär drar du **[!UICONTROL Multi Value Property Predicate]** från fliken **[!UICONTROL Select Predicate]** till huvudrutan.
+1. På sidan Redigera sökformulär drar du en **[!UICONTROL Multi Value Property Predicate]** från fliken **[!UICONTROL Select Predicate]** till huvudrutan.
 1. Ange en etikett och platshållartext för predikatet på fliken **[!UICONTROL Settings]**. Ange egenskapsnamnet som ska användas för sökningen i egenskapsfältet, till exempel `jcr:content/metadata/dc:value`. Du kan också använda valdialogrutan för att välja en nod.
 1. Kontrollera att **[!UICONTROL Delimiter Support]** är markerat. I fältet **[!UICONTROL Input Delimiters]** anger du avgränsare för att separera enskilda värden. Som standard anges kommatecken som avgränsare. Du kan ange en annan avgränsare.
 1. Ange en valfri beskrivning i fältet **Beskrivning** och klicka sedan på **[!UICONTROL Done]**.
-1. Navigera till panelen Filter i användargränssnittet för [!DNL Assets]. Predikatet **[!UICONTROL Multi Value Property]** läggs till på panelen.
+1. Navigera till panelen Filter i användargränssnittet för [!DNL Assets]. **[!UICONTROL Multi Value Property]**-predikatet läggs till på panelen.
 1. Ange flera värden i fältet Flervärde avgränsat med avgränsarna och utför sökningen. Predikatet hämtar en exakt textmatchning för de värden du anger.
 
 ## Lägg till ett taggpredikat {#adding-a-tags-predicate}
@@ -151,7 +151,7 @@ Med taggpredikatet kan du utföra taggbaserade sökningar efter resurser. Som st
 1. På sidan Redigera sökformulär drar du **[!UICONTROL Tags Predicate]** från fliken Välj predikat till huvudrutan.
 1. Ange en platshållartext för predikatet på fliken Inställningar. Ange egenskapsnamnet som ska användas för sökningen i egenskapsfältet, till exempel *jcr:content/metadata/cq:tags*. Du kan också välja en nod i CRXDE i urvalsdialogrutan.
 1. Konfigurera sökvägsegenskapen för rottaggar för det här predikatet för att fylla i olika taggar i listan Taggar.
-1. Välj **[!UICONTROL Show match all tags option]** om du vill söka efter resurser som innehåller alla taggar du anger.
+1. Välj **[!UICONTROL Show match all tags option]** om du vill söka efter resurser som innehåller alla taggar som du anger.
 
 1. Ange en valfri beskrivning i fältet **[!UICONTROL Description]** och klicka sedan på **[!UICONTROL Done]**.
 1. Navigera till sökpanelen. Predikatet **[!UICONTROL Tags]** läggs till på sökpanelen.
@@ -165,15 +165,15 @@ På samma sätt som du lägger till ett egenskapsprediat eller ett alternativpre
 
 | Predikatnamn | Beskrivning | Egenskaper |
 |---|---|---|
-| [!UICONTROL Fulltext] | Sök på predikatet för att utföra fullständig textsökning på en hel objektnod. Den mappas med operatorn jcr:contains. Du kan ange en relativ sökväg om du vill utföra en fullständig textsökning på en viss del av resursnoden. | <ul><li>Etikett</li><li>Platshållare</li><li>Egenskapsnamn</li><li>Beskrivning</li></ul> |
+| [!UICONTROL Fulltext] | Sök på predikatet för att utföra fullständig textsökning på en hel objektnod. Den mappas med jcr:contains-operatorn. Du kan ange en relativ sökväg om du vill utföra en fullständig textsökning på en viss del av resursnoden. | <ul><li>Etikett</li><li>Platshållare</li><li>Egenskapsnamn</li><li>Beskrivning</li></ul> |
 | [!UICONTROL Path Browser] | Sökpredikat för att söka efter resurser i mappar och undermappar på en förkonfigurerad rotsökväg | <ul><li>Platshållare</li><li>Rotsökväg</li><li>Beskrivning</li></ul> |
-| [!UICONTROL Path] | Använd den för att filtrera resultaten på plats. Du kan ange olika banor som alternativ. | <ul><li>Etikett</li><li>Bana</li><li>Beskrivning</li></ul> |
+| [!UICONTROL Path] | Använd den för att filtrera resultaten på plats. Du kan ange olika banor som alternativ. | <ul><li>Etikett</li><li>Sökväg</li><li>Beskrivning</li></ul> |
 | [!UICONTROL Publish Status] | Sök efter predikat för att söka efter resurser baserat på deras publiceringsstatus | <ul><li>Etikett</li><li>Egenskapsnamn</li><li>Beskrivning</li></ul> |
 | [!UICONTROL Relative Date] | Sökpredikatet för att söka efter resurser baserat på det relativa datumet då de skapades. Du kan till exempel konfigurera alternativ som för 2 månader sedan, för 3 veckor sedan och så vidare. | <ul><li>Etikett</li><li>Egenskapsnamn</li><li>Relativt datum</li></ul> |
 | [!UICONTROL Range] | Sök på predikatet för att söka efter resurser som ligger inom ett angivet intervall. På sökpanelen kan du ange lägsta och högsta värden för intervallet. | <ul><li>Etikett</li><li>Egenskapsnamn</li><li>Beskrivning</li></ul> |
 | [!UICONTROL Date Range] | Sökpredikatet för att söka efter resurser som skapats inom ett angivet intervall efter en datumegenskap. På sökpanelen kan du ange start- och slutdatum med datumväljare. | <ul><li>Etikett</li><li>Platshållare</li><li>Egenskapsnamn</li><li>Intervalltext (från)</li><li>Intervalltext (till)</li><li>Beskrivning</li></ul> |
 | [!UICONTROL Date] | Sökpredikatet för en skjutreglagebaserad sökning efter resurser baserat på en date-egenskap. | <ul><li>Etikett</li><li>Egenskapsnamn</li><li>Beskrivning</li></ul> |
-| [!UICONTROL File Size] | Sök efter predikatorn för att söka efter resurser baserat på deras storlek. Det är ett sifferbaserat predikat där du väljer skjutreglagealternativ från en konfigurerbar nod. Standardalternativen finns i /libs/dam/options/preates/filesize i CRXDE-databasen. Filstorleken anges i byte. | <ul><li>Etikett</li><li>Egenskapsnamn</li><li>Bana</li><li>Beskrivning</li></ul> |
+| [!UICONTROL File Size] | Sök efter predikatorn för att söka efter resurser baserat på deras storlek. Det är ett sifferbaserat predikat där du väljer skjutreglagealternativ från en konfigurerbar nod. Standardalternativen finns i /libs/dam/options/preates/filesize i CRXDE-databasen. Filstorleken anges i byte. | <ul><li>Etikett</li><li>Egenskapsnamn</li><li>Sökväg</li><li>Beskrivning</li></ul> |
 | [!UICONTROL Asset Last Modified] | Sök efter predikat för att söka efter nyligen ändrade resurser | <ul><li>Egenskapsnamn</li><li>Egenskapsvärde</li><li>Beskrivning</li></ul> |
 | [!UICONTROL Publish Status] | Sök efter predikat för att söka efter resurser baserat på deras publiceringsstatus | <ul><li>Etikett</li><li>Egenskapsnamn</li><li>Beskrivning</li></ul> |
 | [!UICONTROL Rating] | Sökprediktion för att söka efter resurser baserat på deras genomsnittliga klassificering | <ul><li>Etikett</li><li>Egenskapsnamn</li><li>Alternativ bana</li><li>Beskrivning</li></ul> |
@@ -182,7 +182,7 @@ På samma sätt som du lägger till ett egenskapsprediat eller ett alternativpre
 
 ## Återställ standardsökfaktorer {#restoring-default-search-facets}
 
-Som standard visas en låsikon ![låsikon](assets/do-not-localize/lock_closed_icon.svg) före **[!UICONTROL Assets Admin Search Rail]** på sidan **[!UICONTROL Search Forms]**. Låsikonen mot ett alternativ på söksidan i Forms anger att standardinställningarna är intakta och inte anpassade. Ikonen ![lås stängd &#x200B;](assets/do-not-localize/lock_closed_icon.svg) försvinner om du lägger till sökfaktorer i formuläret, vilket anger att standardformuläret har ändrats.
+Som standard visas en låsikon ![låsikon](assets/do-not-localize/lock_closed_icon.svg) före **[!UICONTROL Assets Admin Search Rail]** på sidan **[!UICONTROL Search Forms]**. Låsikonen mot ett alternativ på söksidan i Forms anger att standardinställningarna är intakta och inte anpassade. Ikonen ![lås stängd ](assets/do-not-localize/lock_closed_icon.svg) försvinner om du lägger till sökfaktorer i formuläret, vilket anger att standardformuläret har ändrats.
 
 ![Lås ikon](assets/locked_admin_rail.png)
 
@@ -207,4 +207,4 @@ Om du inte har tilldelats en administratörsroll finns det en lista med behörig
 >[!MORELIKETHIS]
 >
 >* [Utöka sökfunktionen för resurser](searchx.md)
->* [Söka efter resurser](search-assets.md)
+>* [Sök efter resurser](search-assets.md)

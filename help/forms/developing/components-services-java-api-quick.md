@@ -1,6 +1,6 @@
 ---
-title: Java&amp för komponenter och tjänster;handel; APIQuick Start (SOAP)
-description: Lär dig att programmässigt hantera AEM Forms-komponenter och -tjänster med Java&handel; API Quick Start (SOAP).
+title: Java&handel med komponenter och tjänster; APIQuick Start (SOAP)
+description: Lär dig att programmässigt hantera AEM Forms-komponenter och -tjänster med Java&trade; API Quick Start (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 5a69b9e7-10f1-4637-9a29-228e12863333
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ ht-degree: 0%
 Java™ API Quick Start (SOAP) finns för komponenter och tjänster.
 
 
-[Snabbstart (SOAP-läge): Distribuera en komponent med Java](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
+[Snabbstart (SOAP-läge): Distribuera en komponent med Java™ API](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Ange körningskontext för en tjänst med hjälp av Java](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
+[Snabbstart (SOAP-läge): Ange körningskontext för en tjänst med Java™ API](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Inaktivera tjänstsäkerhet med Java](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
+[Snabbstart (SOAP-läge): Inaktivera tjänstsäkerhet med Java™ API](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Starta en tjänst med Java](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
+[Snabbstart (SOAP-läge): Starta en tjänst med Java™ API](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Ändra tjänstkonfigurationsvärden med Java](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
+[Snabbstart (SOAP-läge): Ändra tjänstkonfigurationsvärden med Java™ API](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Ta bort komponenter med Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
+[Snabbstart (SOAP-läge): Ta bort komponenter med Java™ API](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
 AEM Forms-åtgärder kan utföras med AEM Forms starkt typbestämda API och anslutningsläget bör anges till SOAP.

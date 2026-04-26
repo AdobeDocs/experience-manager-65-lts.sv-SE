@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2938a1c6-c8fc-420a-8fad-bb39e5a7936b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2131'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ Mer information finns i [Säkerhetskopiera och återställ](https://msdn.microso
 
 ### MySQL {#mysql}
 
-Använd MySQLAdmin eller ändra INI-filerna i Windows för att konfigurera MySQL-databasen så att den körs i binärt loggläge. (Se [Binär MySQL-loggning](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Ett verktyg för säkerhetskopiering under drift för MySQL finns också tillgängligt från programmet InnoBase. (Se [Innobase Hot Backup](https://www.innodb.com/hot-backup/features.md).)
+Använd MySQLAdmin eller ändra INI-filerna i Windows för att konfigurera MySQL-databasen så att den körs i binärt loggläge. (Se [Binär MySQL-loggning](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Ett verktyg för säkerhetskopiering av MySQL är också tillgängligt från InnoBase. (Se [Innobase Hot Backup](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >

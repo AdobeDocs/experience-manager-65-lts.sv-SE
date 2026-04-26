@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 228185f0-deef-4d49-a5b9-0c19411e30c2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ När den här kortvariga processen anropas utför den följande åtgärder:
    *Programmering med AEM-formulär* beskriver följande sätt på vilka du programmässigt kan anropa den här korta processen:
 
    * [Anropar en kort process genom att skicka ett osäkert dokument med AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Använda ett Flex-program)
-   * [Anropar en kort process med anrops-API:t &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java™ Anvocation API)
+   * [Anropar en kort process med anrops-API:t ](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java™ Anvocation API)
    * [Anropar AEM Forms med Base64-kodning](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (webbtjänstexempel)
    * [Anropar AEM Forms med MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (webbtjänstexempel)
    * [Anropar AEM Forms med SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (webbtjänstexempel)

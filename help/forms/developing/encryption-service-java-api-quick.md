@@ -1,5 +1,5 @@
 ---
-title: Krypteringstjänstens Java&handel; API QuickStart (SOAP)
+title: Krypteringstjänstens java&handel; API QuickStart (SOAP)
 description: Lär dig hur du krypterar, tar bort lösenord-/certifikatbaserad kryptering, låser upp och fastställer krypteringstyp för PDF-dokument med Java&trade; API i SOAP-läge.
 contentOwner: admin
 content-type: reference
@@ -11,26 +11,26 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 4ad47959-fe48-4cff-9a54-9a9749cf3d6f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
 # Snabbstart för Java™ API för krypteringstjänsten (SOAP) {#encryption-service-java-api-quickstart-soap}
 
-[Snabbstart (SOAP-läge): Kryptera ett PDF-dokument med Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[Snabbstart (SOAP-läge): Kryptera ett PDF-dokument med Java™ API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Ta bort lösenordsbaserad kryptering med Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Snabbstart (SOAP-läge): Lösenordsbaserad kryptering tas bort med Java™ API](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Kryptera ett PDF-dokument med ett certifikat med hjälp av Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Snabbstart (SOAP-läge): Kryptera ett PDF-dokument med ett certifikat med Java™ API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Tar bort certifikatbaserad kryptering med Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[Snabbstart (SOAP-läge): Tar bort certifikatbaserad kryptering med Java™ API](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Låsa upp ett krypterat PDF-dokument med Java](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
+[Snabbstart (SOAP-läge): Låsa upp ett krypterat PDF-dokument med Java™ API](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
-[Snabbstart (SOAP-läge): Bestämma krypteringstyp med Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[Snabbstart (SOAP-läge): Bestämma krypteringstyp med Java™ API](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
 AEM Forms-åtgärder kan utföras med AEM Forms starkt typbestämda API och anslutningsläget bör anges till SOAP.
 

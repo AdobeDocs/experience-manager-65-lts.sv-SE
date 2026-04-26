@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1730'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Process Reporting Services publicerar schemalagda data från AEM Forms-databasen
 
 Den här åtgärden kan vara resurskrävande och kan påverka prestandan för AEM Forms-servrarna. Vi rekommenderar att du schemalägger detta utanför AEM Forms Server med upptagna tidsrymder.
 
-Som standard kommer publiceringen av data att köras varje dag kl. 02:00.
+Som standard kommer publiceringen av data att köras varje dag kl. 2:00.
 
 Så här ändrar du publiceringsschemat:
 

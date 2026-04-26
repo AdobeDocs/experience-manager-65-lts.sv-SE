@@ -7,10 +7,10 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
-source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1823'
-ht-degree: 3%
+source-wordcount: '1849'
+ht-degree: 0%
 
 ---
 
@@ -18,10 +18,11 @@ ht-degree: 3%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
 | AEM 6.5 LTS | Den här artikeln |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -83,7 +84,7 @@ Med en metadataprofil kan du använda standardmetadata för resurser i en mapp. 
    >
    >Om du lägger till ett standardvärde till en ny metadataegenskap (som inte finns på noden `/jcr:content/metadata`) visas inte egenskapen och dess värde på objektets [!UICONTROL Properties] -sida som standard. Om du vill visa den nya egenskapen på resursens [!UICONTROL Properties]-sida ändrar du motsvarande schemaformulär.
 
-1. (Valfritt) Lägg till fler komponenter i **[!UICONTROL Build Form]** på fliken [!UICONTROL Edit Form] och konfigurera deras egenskaper på fliken **[!UICONTROL Settings]**. Följande egenskaper är tillgängliga på fliken **[!UICONTROL Build Form]**:
+1. (Valfritt) Lägg till fler komponenter i [!UICONTROL Edit Form] på fliken **[!UICONTROL Build Form]** och konfigurera deras egenskaper på fliken **[!UICONTROL Settings]**. Följande egenskaper är tillgängliga på fliken **[!UICONTROL Build Form]**:
 
 | Komponent | Egenskaper |
 | ----------------------------- | ----------------------------------------------------------------------- |
@@ -117,8 +118,9 @@ Med en metadataprofil kan du använda standardmetadata för resurser i en mapp. 
 1. Klicka på **[!UICONTROL Delete Metadata Profiles]** i verktygsfältet.
 1. Klicka på **[!UICONTROL Delete]** i dialogrutan för att bekräfta borttagningsåtgärden. Metadataprofilen tas bort från listan.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/se/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+<!--
+TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -146,7 +148,7 @@ Med [!DNL Adobe Experience Manager Assets] kan du skapa metadatascheman för res
 Använd schemaredigeraren för mappmetadata i Forms för att skapa och redigera metadatascheman för mappar.
 
 1. I gränssnittet [!DNL Experience Manager] går du till **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
-1. Klicka på [!UICONTROL Folder Metadata Schema Forms] på sidan **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL Create]** på sidan [!UICONTROL Folder Metadata Schema Forms].
 1. Ange ett namn för formuläret och klicka på **[!UICONTROL Create]**. Det nya schemaformuläret visas på sidan [!UICONTROL Schema Forms].
 
 ### Redigera schemaformulär för mappmetadata {#edit-folder-metadata-schema-forms}
@@ -200,7 +202,7 @@ Om du vill redigera egenskaperna för formulärobjekt klickar du på komponenten
 
 **[!UICONTROL Field Label]**: Namnet på metadataegenskapen som visas på egenskapssidan för mappen.
 
-**[!UICONTROL Map to Property]**: Den här egenskapen anger den relativa sökvägen för mappnoden i CRX-databasen där den sparas. Det börjar med **./**&quot;, vilket anger att sökvägen finns under mappens nod.
+**[!UICONTROL Map to Property]**: Den här egenskapen anger den relativa sökvägen för mappnoden i CRX-databasen där den sparas. Den börjar med **./**, vilket anger att sökvägen finns under mappens nod.
 
 Följande är giltiga värden för den här egenskapen:
 
@@ -251,7 +253,7 @@ Om du konfigurerar ett metadataram för en mapp lagras sökvägen till schemafor
 
 Du kan tilldela ett mappmetadatchema när du skapar en mapp. Om det finns minst ett mappmetadatchema i systemet visas en extra lista i dialogrutan **[!UICONTROL Create Folder]**. Du kan välja önskat schema. Som standard är inget schema valt.
 
-1. Klicka på [!DNL Experience Manager Assets] i verktygsfältet i användargränssnittet för **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL Create]** i verktygsfältet i användargränssnittet för [!DNL Experience Manager Assets].
 1. Ange en rubrik och ett namn för mappen.
 1. Välj önskat schema i listan Mappmetadatamatchema. Klicka sedan på **[!UICONTROL Create]**.
 
@@ -262,7 +264,7 @@ Du kan tilldela ett mappmetadatchema när du skapar en mapp. Om det finns minst 
 
 ### Använd mappens metadatamatchema {#use-the-folder-metadata-schema}
 
-Öppna egenskaperna för en mapp som har konfigurerats med ett schema för mappmetadata. En **[!UICONTROL Folder Metadata]**-flik visas på mappsidan [!UICONTROL Properties]. Om du vill visa formuläret för schemat med mappmetadata väljer du den här fliken.
+Öppna egenskaperna för en mapp som har konfigurerats med ett mappmetadatchema. En **[!UICONTROL Folder Metadata]**-flik visas på mappsidan [!UICONTROL Properties]. Om du vill visa schemaformuläret för mappmetadata väljer du den här fliken.
 
 Ange metadatavärden i de olika fälten och klicka på **[!UICONTROL Save]** för att lagra värdena. De värden du anger lagras i mappnoden i CRX-databasen.
 
@@ -278,7 +280,7 @@ Ange metadatavärden i de olika fälten och klicka på **[!UICONTROL Save]** fö
 >
 >* [Metadatabegrepp och -förståelse](metadata-concepts.md).
 >* [Redigera metadataegenskaper för flera samlingar](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Import och export av metadata i Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=sv-SE).
+>* [Import och export av metadata i Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Profiler för att bearbeta metadata, bilder och videor](processing-profiles.md).
 >* [Bästa tillvägagångssätt för att ordna dina digitala resurser så att de använder bearbetningsprofiler](/help/assets/organize-assets.md).
 >* [XMP tillbakaskrivning](/help/assets/xmp-writeback.md).

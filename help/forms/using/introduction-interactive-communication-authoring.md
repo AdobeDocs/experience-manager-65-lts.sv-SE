@@ -9,9 +9,9 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 595f8d31-f297-48be-8ead-f171a60891b8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,11 @@ När du [skapar eller redigerar en befintlig interaktiv kommunikation](../../for
 
 **A.** Kanalwebbläsare **B.** Innehållsläsaren **C.** Egenskapsläsaren **D.** Resursläsaren **E.** Komponentwebbläsaren **F.** Datakällor - Datamodell **G.** Datakällwebbläsaren - Huvudinnehåll
 
-<!-- Click to enlarge
+<!--
+Click to enlarge
 
-![sidebar-comps-3](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)
+-->
 
 Sidlisten innehåller följande:
 
@@ -50,7 +52,7 @@ Sidlisten innehåller följande:
 
 Med hjälp av webbläsaren Kanal kan du växla mellan tryck- och webbkanalerna i den interaktiva kommunikationen. Beroende på vilken kanal du har valt i webbläsaren visas alternativen i webbläsarna, till exempel Innehåll och Komponenter.
 
-* **Innehållsläsaren**
+* **Innehållsläsare**
 I innehållsläsaren kan du se dokumentets objekthierarki för den valda kanalen. Författaren kan navigera till en viss komponent genom att trycka på det elementet i dokumentobjektträdet. Författaren kan söka efter objekt i webbkanalen och ordna om dem från det här trädet.
 
 * **Egenskapsläsaren**
@@ -61,7 +63,7 @@ Markera en komponent, välj ![fältnivå](assets/field-level.png) > **Dokumentbe
 * **Assets webbläsare**
 Segmenterar olika typer av innehåll, t.ex. layoutfragment, bilder, dokument, sidor, videor. Författaren kan dra och släppa material i den interaktiva kommunikationen.
 
-* **Komponentwebbläsaren**
+* **Komponentwebbläsare**
 Innehåller komponenter som du kan använda för att skapa utskrifts- och webbkanaler för ett dokument. Du kan dra komponenter till den interaktiva kommunikationen för att lägga till element och konfigurera tillagda element enligt kraven. I följande tabell beskrivs komponenterna i komponentwebbläsaren för utskrifts- och webbkanaler:
 
 | **Komponent** | **Utskriftskanal** | **Webbkanal** | **Funktionalitet** |
@@ -124,7 +126,7 @@ K: **Gruppera objekt på panelen:** Gör att du kan gruppera komponenterna på e
 
 L. **Lägg till underordnad panel** (endast för paneler): Gör att du kan lägga till en underordnad panel på panelen.
 
-M: **Verktygsfältet Lägg till panel** (endast för paneler):Gör att du kan lägga till verktygsfältet för panelkomponenten. Sedan kan du utföra ytterligare åtgärder i verktygsfältet.
+M: **Verktygsfältet Lägg till panel** (endast för paneler):Lets lägger du till verktygsfältet för panelkomponenten. Sedan kan du utföra ytterligare åtgärder i verktygsfältet.
 
 Med alternativet **Ersätt** i verktygsfältet kan du dessutom ersätta den befintliga komponenten med en alternativ komponent. Alternativet är inte tillgängligt för panelkomponenten.
 

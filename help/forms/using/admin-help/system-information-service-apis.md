@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 93124f35-0323-4f51-9167-9bfcadc819e2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Systeminformationstjänsten tillhandahåller en uppsättning REST API:er för at
    <td><p>Hämtar status- och konfigurationsparametrar för AEM formulärtjänster.</p></td>
   </tr>
   <tr>
-   <td><p>SystemInfo.vitalDetails</p></td>
+   <td><p>SystemInfo.essentialDetails</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.essentialDetails</p></td>
    <td><p>Hämtar serverns drifttid, JVM-argument, systemminne, stackstorlek, operativsystemets namn, antal aktiva trådar och trådantal. </p></td>
   </tr>

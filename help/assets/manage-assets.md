@@ -8,10 +8,10 @@ mini-toc-levels: 4
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7398b95b-e82d-4241-8f32-13b8d20caad9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '9797'
-ht-degree: 2%
+source-wordcount: '9993'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 I [!DNL Adobe Experience Manager Assets] kan du göra mer än att lagra och styra dina resurser. [!DNL Experience Manager] erbjuder tillgångshanteringsfunktioner i enterpriseklass. Du kan redigera och dela resurser, köra avancerade sökningar och skapa flera renderingar av dussintals filformat som stöds. Du kan också hantera versioner och digitala rättigheter, automatisera bearbetningen av resurser, hantera och styra metadata, samarbeta med anteckningar och mycket annat.
@@ -48,7 +48,8 @@ Inkludera inte specialtecken i filnamnstilläggen för resurser.
 
 ## Överför resurser {#uploading-assets}
 
-<!-- TBD the following:
+<!--
+TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
@@ -57,7 +58,7 @@ Du kan överföra olika typer av resurser (inklusive bilder, PDF-filer, RAW-file
 
 >[!NOTE]
 >
->I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av resurser 2 GB eller mindre. Information om hur du konfigurerar överföring av resurser som är större än 2 GB upp till 15 GB finns i [&#x200B; (Valfritt) Konfigurera dynamiska media - Scene7-läge för överföring av resurser som är större än 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+>I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av resurser 2 GB eller mindre. Information om hur du konfigurerar överföring av resurser som är större än 2 GB upp till 15 GB finns i [ (Valfritt) Konfigurera dynamiska media - Scene7-läge för överföring av resurser som är större än 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!IMPORTANT]
 >
@@ -103,7 +104,7 @@ Om du vill konfigurera rensningsaktiviteten för de oavslutade segmentöverföri
 
 >[!CAUTION]
 >
->Segmentöverföring utlöses när standardvärdet är 500 MB och segmentstorleken är 50 MB. Om du redigerar [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=sv-SE) och anger `timeout configuration` till mindre än den tid det tar för en resurs att överföra, kommer du att få en timeout för sessionen när överföringen av resursen pågår. Ändra därför `chunkUploadMinFileSize` och `chunksize` så att varje segmentbegäran uppdaterar sessionen.
+>Segmentöverföring utlöses när standardvärdet är 500 MB och segmentstorleken är 50 MB. Om du redigerar [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) och anger `timeout configuration` till mindre än den tid det tar för en resurs att överföra, kommer du att få en timeout för sessionen när överföringen av resursen pågår. Ändra därför `chunkUploadMinFileSize` och `chunksize` så att varje segmentbegäran uppdaterar sessionen.
 >
 >Med tanke på tidsgräns, fördröjning, bandbredd och förväntade samtidiga överföringar för autentiseringsuppgifter, är det högsta värdet som gör att du kan säkerställa att följande väljs:
 >
@@ -166,11 +167,11 @@ Med Dynamic Media kan du batchöverföra resurser via FTP-servern. Om du tänker
 
 >[!NOTE]
 >
->I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av resurser 2 GB eller mindre. Information om hur du konfigurerar överföring av resurser som är större än 2 GB upp till 15 GB finns i [&#x200B; (Valfritt) Konfigurera dynamiska media - Scene7-läge för överföring av resurser som är större än 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+>I Dynamic Media - Scene7-läge är standardfilstorleken för överföring av resurser 2 GB eller mindre. Information om hur du konfigurerar överföring av resurser som är större än 2 GB upp till 15 GB finns i [ (Valfritt) Konfigurera dynamiska media - Scene7-läge för överföring av resurser som är större än 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!NOTE]
 >
->Installera Feature Pack 18912 på [!DNL Experience Manager]-författarinstanserna om du vill överföra resurser via FTP i läget Dynamic Media - Scene7. Kontakta [Adobe kundsupport](https://experienceleague.adobe.com/sv?support-solution=General#support) för att få tillgång till FP-18912 och slutföra konfigurationen av ditt FTP-konto. Mer information finns i [Installera funktionspaket 18912 för migrering av gruppresurser](/help/assets/bulk-ingest-migrate.md).
+>Installera Feature Pack 18912 på [!DNL Experience Manager]-författarinstanserna om du vill överföra resurser via FTP i läget Dynamic Media - Scene7. Kontakta [Adobe kundsupport](https://experienceleague.adobe.com/?support-solution=General#support) för att få tillgång till FP-18912 och slutföra konfigurationen av ditt FTP-konto. Mer information finns i [Installera funktionspaket 18912 för migrering av gruppresurser](/help/assets/bulk-ingest-migrate.md).
 >
 >Om du använder FTP för att överföra resurser ignoreras de överföringsinställningar som anges i [!DNL Experience Manager]. I stället används filbearbetningsregler, som de definieras i Dynamic Media Classic.
 
@@ -178,7 +179,7 @@ Med Dynamic Media kan du batchöverföra resurser via FTP-servern. Om du tänker
 
 1. Logga in på FTP-servern med det FTP-användarnamn och lösenord som du fick från e-postmeddelandet om etablering. Överför filer eller mappar till FTP-servern i FTP-klienten.
 
-1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=sv-SE#system-requirements-dmc-app) och logga sedan in på ditt konto.
+1. Öppna [Dynamic Media Classic-datorprogrammet](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) och logga sedan in på ditt konto.
 
    Dina autentiseringsuppgifter och din inloggning tillhandahölls av Adobe vid tidpunkten för etableringen. Om du inte har den här informationen kan du kontakta Adobe kundsupport.
 
@@ -214,11 +215,11 @@ Om du vill avbryta ett pågående överföringsjobb klickar du på **[!UICONTROL
 | | Alternativ för färgprofil | Välj en färgkonvertering när du skapar optimerade filer som används för leverans:<ul><li>Standardfärgbevaring: Bevarar källbildens färger när bilderna innehåller färgrymdsinformation. Det finns ingen färgkonvertering. Nästan alla bilder idag har rätt färgprofil inbäddad. Om en CMYK-källbild inte innehåller någon inbäddad färgprofil konverteras färgerna till sRGB-färgrymden (standard röd grön). sRGB är den rekommenderade färgrymden för visning av bilder på webbsidor.</li><li>Behåll ursprunglig färgmodell: Behåller originalfärgerna utan någon färgkonvertering vid punkten. För bilder utan inbäddad färgprofil görs färgkonverteringen med de standardfärgprofiler som konfigurerats i publiceringsinställningarna. Färgprofilerna kanske inte justeras mot färgen i de filer som skapas med det här alternativet. Därför bör du använda alternativet Standardfärgbevaring.</li><li>Anpassad från > Till <br> Öppnar menyer så att du kan välja färgmodellen Konvertera från och Konvertera till. Det här avancerade alternativet åsidosätter eventuell färginformation som är inbäddad i källfilen. Välj det här alternativet när alla bilder som du skickar in innehåller felaktiga eller saknade färgprofildata.</li></ul> |
 | | Bildredigeringsalternativ | Du kan bevara urklippsmaskerna i bilder och välja en färgprofil.<br> Se [Ange alternativ för bildredigering vid överföring](#setting-image-editing-options-at-upload). |
 | | PostScript-alternativ | Du kan rastrera PostScript®-filer, beskära filer, behålla genomskinliga bakgrunder, välja en upplösning och välja en färgrymd.<br> Se [Ange överföringsalternativ för PostScript och Illustrator](#setting-postscript-and-illustrator-upload-options). |
-| | Photoshop-alternativ | Du kan skapa mallar från Adobe® Photoshop®-filer, underhålla lager, ange hur lager ska namnges, extrahera text och ange hur bilder ska förankras i mallar.<br>-mallar stöds inte i [!DNL Experience Manager].<br> Se [Ange överföringsalternativ för Photoshop](#setting-photoshop-upload-options). |
-| | PDF-alternativ | Du kan rastrera filerna, extrahera sökord och länkar, automatiskt generera en e-katalog, ange upplösningen och välja en färgrymd.<br>eCatalogs stöds inte i [!DNL Experience Manager]. <br> Se [Ange överföringsalternativ för PDF](#setting-pdf-upload-options).<br>**Obs!**: Det maximala antalet sidor för en PDF som ska användas för extrahering är 5 000 för nya överföringar. Begränsningen ändras till 100 sidor (för alla PDF-filer) den 31 december 2022. Se även [Dynamiska mediebegränsningar](/help/assets/limitations.md). |
+| | Photoshop-alternativ | Du kan skapa mallar från Adobe® Photoshop®-filer, underhålla lager, ange hur lager ska namnges, extrahera text och ange hur bilder ska förankras i mallar.<br> Mallar stöds inte i [!DNL Experience Manager].<br> Se [Ange överföringsalternativ för Photoshop](#setting-photoshop-upload-options). |
+| | PDF-alternativ | Du kan rastrera filerna, extrahera sökord och länkar, automatiskt generera en e-katalog, ange upplösningen och välja en färgrymd.<br>e-kataloger stöds inte i [!DNL Experience Manager]. <br> Se [Ange uppladdningsalternativ för PDF](#setting-pdf-upload-options).<br>**Obs!**: Det högsta antalet sidor för en PDF som ska övervägas för extrahering är 5 000 för nya överföringar. Begränsningen ändras till 100 sidor (för alla PDF-filer) den 31 december 2022. Se även [Dynamiska mediebegränsningar](/help/assets/limitations.md). |
 | | Illustrator-alternativ | Du kan rastrera Adobe Illustrator®-filer, behålla genomskinliga bakgrunder, välja en upplösning och välja en färgrymd.<br> Se [Ange överföringsalternativ för PostScript och Illustrator](#setting-postscript-and-illustrator-upload-options). |
 | | EVideoalternativ | Du kan omkoda en videofil genom att välja en videoförinställning.<br> Se [Ange överföringsalternativ för e-video](#setting-evideo-upload-options). |
-| | Förinställningar för gruppuppsättning | Om du vill skapa en bilduppsättning, eller en snurra uppsättning, från de överförda filerna klickar du på kolumnen Aktiv för den förinställning som du vill använda. Du kan markera flera förinställningar. Du skapar förinställningarna på sidan Programinställningar/Gruppinställningar i Dynamic Media Classic.<br> Mer information om hur du skapar förinställningar för gruppuppsättningar finns i [Konfigurera förinställningar för gruppuppsättningar för att automatiskt generera bilduppsättningar och snurruppsättningar](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Se [Ange förinställningar för gruppuppsättning vid överföring](#setting-batch-set-presets-at-upload). |
+| | Förinställningar för gruppuppsättning | Om du vill skapa en bilduppsättning, eller en snurra uppsättning, från de överförda filerna klickar du på kolumnen Aktiv för den förinställning som du vill använda. Du kan markera flera förinställningar. Du skapar förinställningarna på sidan Programinställningar/Gruppuppsättningsförinställningar i Dynamic Media Classic.<br> Mer information om hur du skapar förinställningar för gruppuppsättningar finns i [Konfigurera förinställningar för gruppuppsättningar för automatisk generering av bilduppsättningar och snurruppsättningar](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) .<br> Se [Ange förinställningar för gruppuppsättning vid överföring](#setting-batch-set-presets-at-upload). |
 
 #### Ange alternativ för bildredigering vid överföring {#setting-image-editing-options-at-upload}
 
@@ -401,7 +402,7 @@ Så här förhandsgranskar du en resurs med tangentbordet:
    >
    >Layouten för sidan [!UICONTROL Properties] och de metadataegenskaper som är tillgängliga beror på det underliggande metadataschemat. Mer information om hur du ändrar layouten för sidan [!UICONTROL Properties] finns i [Metadatascheman](/help/assets/metadata-schemas.md).
 
-1. Om du vill schemalägga ett visst datum/tid för att aktivera resursen använder du datumväljaren bredvid fältet **[!UICONTROL On Time]**.
+1. Om du vill schemalägga ett visst datum/tid för aktiveringen av resursen använder du datumväljaren bredvid fältet **[!UICONTROL On Time]**.
 
    ![Datumtidsväljaren eller använd tangentbordstangenter i fältet I tid för att lägga till datum och tid för resursaktivering](assets/datepicker.png)
 
@@ -430,7 +431,7 @@ Så här förhandsgranskar du en resurs med tangentbordet:
 
    * Antal gånger som resursen visats eller hämtats
    * Kanaler/enheter som resursen användes via
-   * Kreativa lösningar där resursen nyligen användes
+   * Creative-lösningar där resursen nyligen användes
 
    Mer information finns i [Assets Insights](/help/assets/asset-insights.md).
 
@@ -545,11 +546,11 @@ Om du flyttar resurser genom att dra dem öppnas inte guiden [!UICONTROL Move As
 
    >[!NOTE]
    >
-   >Om du väljer en återgivning på panelen **[!UICONTROL Renditions]** ändras sammanhanget för verktygsfältet och endast de åtgärder som är relevanta visas. Alternativ, t.ex. alternativet [!UICONTROL Upload Rendition], visas inte. Om du vill visa de här alternativen i verktygsfältet går du till informationssidan för resursen.
+   >Om du väljer en återgivning på panelen **[!UICONTROL Renditions]** ändras kontexten i verktygsfältet och endast de åtgärder som är relevanta för återgivningen visas. Alternativ, t.ex. alternativet [!UICONTROL Upload Rendition], visas inte. Om du vill visa de här alternativen i verktygsfältet går du till informationssidan för resursen.
 
    Du kan konfigurera dimensionerna för den återgivning som du vill ska visas på informationssidan för en bild- eller videoresurs. Baserat på de dimensioner du anger visar [!DNL Assets] återgivningen med de exakta eller närmaste dimensionerna.
 
-   Om du vill konfigurera återgivningsdimensionerna för en bild på resursdetaljnivån överlagrar du noden `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) och konfigurera värdet för breddegenskapen (width). Konfigurera egenskapen **[!UICONTROL size (Long) in KB]** i stället för bredden så att du kan anpassa återgivningen på resursdetaljsidan baserat på bildstorleken. För storleksbaserad anpassning prioriterar egenskapen `preferOriginal` originalet om storleken på den matchade återgivningen är större än originalet.
+   Om du vill konfigurera återgivningsdimensioner för en bild på resursdetaljnivån ska du täcka över noden `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) och konfigurera värdet för egenskapen width. Konfigurera egenskapen **[!UICONTROL size (Long) in KB]** i stället för bredden så att du kan anpassa återgivningen på resursdetaljsidan baserat på bildstorleken. För storleksbaserad anpassning tilldelar egenskapen `preferOriginal` inställningar till originalet om storleken på den matchade återgivningen är större än originalet.
 
    På samma sätt kan du anpassa anteckningssidans bild genom att täcka över `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -687,11 +688,11 @@ Med redigeringsverktygen i gränssnittet [!DNL Assets] kan du utföra små redig
 
 1. Beskär bilden genom att klicka på **[!UICONTROL Crop]** ![Alternativ för att beskära en bild](assets/do-not-localize/crop.png).
 
-1. Välj önskat alternativ i listan. Beskärningsområdet visas på bilden baserat på det alternativ du väljer. Med alternativet **Frihand** kan du beskära bilden utan proportionsbegränsningar.
+1. Välj önskat alternativ i listan. Beskärningsområdet visas på bilden baserat på det alternativ du väljer. Med alternativet **Free Hand** kan du beskära bilden utan begränsningar för proportioner.
 
 1. Markera området som ska beskäras och ändra storlek på det eller flytta det på bilden.
 
-1. Använd alternativen i verktygsfältet **[!UICONTROL Undo]** ![Ångra &#x200B;](assets/do-not-localize/undo.png) och **[!UICONTROL Redo]** ![Gör om &#x200B;](assets/do-not-localize/redo.png) för att återgå till den obeskurna bilden eller behålla den beskurna bilden.
+1. Använd alternativen i verktygsfältet **[!UICONTROL Undo]** ![Ångra ](assets/do-not-localize/undo.png) och **[!UICONTROL Redo]** ![Gör om ](assets/do-not-localize/redo.png) för att återgå till den obeskurna bilden eller behålla den beskurna bilden.
 1. Klicka på lämpligt **[!UICONTROL Rotate]**-alternativ för att rotera bilden medsols eller motsols.
 
    ![Roteringsalternativ medsols och motsols](assets/do-not-localize/rotate-options.png)
@@ -771,7 +772,7 @@ Videoanteckningar stöds bara i webbläsare med HTML5-kompatibla videoformat. Vi
 
    Ange önskad färg i rutan **[!UICONTROL Annotation Color]** och klicka sedan på **[!UICONTROL Accept]**.
 
-   ![Välj anteckningsfärg i Användarinställningar för att ange färg för användarens persona &#x200B;](assets/Annotation-color.png)
+   ![Välj anteckningsfärg i Användarinställningar för att ange färg för användarens persona ](assets/Annotation-color.png)
 
 >[!NOTE]
 >
@@ -792,7 +793,7 @@ Du kan bara visa en anteckning åt gången.
 1. Gå till resursens plats och öppna resurssidan.
 
 1. I Experience Manager-gränssnittet väljer du **[!UICONTROL Timeline]**.
-1. I listan **[!UICONTROL Show All]** på tidslinjen väljer du **[!UICONTROL Comments]** för att filtrera resultatet baserat på kommentarer.
+1. Välj **[!UICONTROL Comments]** i listan **[!UICONTROL Show All]** på tidslinjen om du vill filtrera resultaten baserat på anteckningar.
 
    Klicka på en kommentar på panelen **[!UICONTROL Timeline]** om du vill visa motsvarande anteckning på bilden.
 
@@ -830,7 +831,7 @@ Om du vill skriva ut anteckningarna och granskningsstatusen klickar du på **[!U
 
    Du kan välja andra inställningar beroende på var du vill att anteckningarna/statusen ska visas i den utskrivna PDF-filen. Om du vill att anteckningarna/statusen ska visas på en sida som är skild från den utskrivna resursen väljer du **[!UICONTROL Next Page]**.
 
-1. Klicka på **[!UICONTROL Print]**. Beroende på vilket alternativ du väljer i steg 2 visar den genererade PDF-filen anteckningarna/statusen vid den angivna positionen. Om du till exempel väljer att skriva ut både anteckningar och granskningsstatus med inställningen **Överst till vänster** liknar genererade utdata den PDF-fil som återges här.
+1. Klicka på **[!UICONTROL Print]**. Beroende på vilket alternativ du väljer i steg 2 visas anteckningarna/statusen på den angivna positionen i den genererade PDF-filen. Om du t.ex. väljer att skriva ut både anteckningar och granskningsstatus med inställningen **Överst till vänster** liknar den genererade utdatafilen den PDF-fil som visas här.
 
    ![Antecknings- och granskningsstatus för genererade PDF](assets/annotation-status-pdf.png)
 
@@ -883,7 +884,7 @@ Du kan skapa versioner i [!DNL Experience Manager] i följande scenarier:
 * Överför en resurs med samma filnamn som finns på samma plats. Det kan vara en ny tillgång eller en modifierad version av samma resurs.
 * Redigera en bild i [!DNL Experience Manager] och spara ändringarna.
 * Redigera metadata för en resurs.
-* Använd datorprogrammet [!DNL Experience Manager] för att checka ut en befintlig resurs, redigera den och [överföra dina ändringar](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=sv-SE#edit-assets-upload-updated-assets).
+* Använd datorprogrammet [!DNL Experience Manager] för att checka ut en befintlig resurs, redigera den och [överföra dina ändringar](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 Du kan även aktivera automatisk versionshantering via ett arbetsflöde. När du skapar en version för en resurs sparas metadata och återgivningar tillsammans med versionen. Återgivningar är renderingsalternativ för samma bilder, till exempel en PNG-återgivning av en överförd JPEG-fil.
 
@@ -958,4 +959,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Om du vill ha mer information kan du läsa om hur du [bläddrar bland DAM-resurser med skrivbordsappen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=sv-SE#browse-search-preview-assets) och [hur du använder Adobe Asset Link](https://helpx.adobe.com/se/enterprise/using/manage-assets-using-adobe-asset-link.html).
+Om du vill ha mer information kan du läsa om hur du [bläddrar bland DAM-resurser med skrivbordsappen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) och [hur du använder Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html).

@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 8de9682f-8332-4f6e-ac4b-295fca82a424
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3478'
+source-wordcount: '3513'
 ht-degree: 0%
 
 ---
@@ -264,7 +264,7 @@ Så här fyller du i ett formulär med flödeslayout med Forms API (Java) i för
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Lägg till alla återstående element i rubrikelementet genom att upprepa det sista delsteget för varje fält som visas i den statiska delen av formuläret (i XML-datakällsdiagrammet visas dessa fält i avsnitt A. (Se [Förstå undergrupper för data](#understanding-data-subgroups)).
+   * Lägg till alla återstående element i rubrikelementet genom att upprepa det sista delsteget för varje fält som visas i den statiska delen av formuläret (i XML-datakälldiagrammet visas dessa fält i avsnitt A). (Se [Förstå undergrupper av data](#understanding-data-subgroups).)
    * Skapa XML-datakällans detail-element genom att anropa `Document`-objektets `createElement`-metod. Skicka ett strängvärde som representerar elementets namn till metoden `createElement`. Skicka returvärdet till `Element`. Lägg sedan till detail-elementet i rotelementet genom att anropa `root`-objektets `appendChild` -metod och skicka detail-elementobjektet som ett argument. XML-elementen som läggs till i detail-elementet motsvarar den dynamiska delen av formuläret. Följande kodrader visar den här programlogiken:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -340,7 +340,7 @@ Så här fyller du i ett formulär med flödeslayout med Forms API (webbtjänste
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Lägg till alla återstående element i rubrikelementet genom att upprepa det sista delsteget för varje fält som visas i den statiska delen av formuläret (i XML-datakällsdiagrammet visas dessa fält i avsnitt A. (Se [Förstå undergrupper för data](#understanding-data-subgroups)).
+   * Lägg till alla återstående element i rubrikelementet genom att upprepa det sista delsteget för varje fält som visas i den statiska delen av formuläret (i XML-datakälldiagrammet visas dessa fält i avsnitt A). (Se [Förstå undergrupper av data](#understanding-data-subgroups).)
    * Skapa XML-datakällans detail-element genom att anropa `Document`-objektets `createElement`-metod. Skicka ett strängvärde som representerar elementets namn till metoden `createElement`. Skicka returvärdet till `Element`. Lägg sedan till detail-elementet i rotelementet genom att anropa `root`-objektets `appendChild` -metod och skicka detail-elementobjektet som ett argument. XML-elementen som läggs till i detail-elementet motsvarar den dynamiska delen av formuläret. Följande kodrader visar den här programlogiken:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`

@@ -7,9 +7,9 @@ role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2704'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,8 @@ När den tillfälliga volymen med höga prestanda är klar anger du JVM-paramete
 
 Adobe rekommenderar att [!DNL Experience Manager Assets] distribueras på Java 8 för optimala prestanda.
 
-<!-- TBD: Link to the latest official word around Java.
+<!--
+TBD: Link to the latest official word around Java.
 -->
 
 ### JVM-parametrar {#jvm-parameters}
@@ -156,7 +157,7 @@ Om du till exempel har kört flera icke-tillfälliga arbetsflöden (som skapar a
 
 Som standard kör [!DNL Experience Manager] ett maximalt antal parallella jobb som är lika med antalet processorer på servern. Problemet med den här inställningen är att under perioder med hög belastning används alla processorer av [!UICONTROL DAM Update Asset] arbetsflöden, vilket gör att gränssnittets svarstid minskar och hindrar [!DNL Experience Manager] från att köra andra processer som skyddar serverns prestanda och stabilitet. Det är en god vana att ange det här värdet till hälften av de processorer som är tillgängliga på servern genom att utföra följande steg:
 
-1. Åtkomst till [!DNL Experience Manager] för `https://[aem_server]:[port]/system/console/slingevent` Author.
+1. Åtkomst till `https://[aem_server]:[port]/system/console/slingevent` för [!DNL Experience Manager] Author.
 
 1. Klicka på **[!UICONTROL Edit]** i varje arbetsflödeskö som är relevant för implementeringen, till exempel **[!UICONTROL Granite Transient Workflow Queue]**.
 
@@ -258,7 +259,7 @@ Vissa optimeringar kan göras för Oak indexkonfigurationer som kan förbättra 
 
 Om dina användare inte behöver göra fulltextsökning av resurser, till exempel söka igenom text i PDF-dokument, kan du inaktivera det. Du kan förbättra indexets prestanda genom att inaktivera fulltextindexering. Så här inaktiverar du textrahering av [!DNL Apache Lucene]:
 
-1. Öppna [!DNL Experience Manager] i gränssnittet [!UICONTROL Package Manager].
+1. Öppna [!UICONTROL Package Manager] i gränssnittet [!DNL Experience Manager].
 1. Överför och installera det paket som finns på [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Gissa totalt {#guess-total}

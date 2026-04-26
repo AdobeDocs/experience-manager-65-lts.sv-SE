@@ -8,10 +8,10 @@ breadcrumb-title: Användarhandbok
 user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
-source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 3%
+source-wordcount: '262'
+ht-degree: 1%
 
 ---
 
@@ -53,12 +53,12 @@ ht-degree: 3%
    + [Delta i arbetsflöden](/help/sites-classic-ui-authoring/classic-workflows-participating.md)
    + [Arbeta med arbetsflöden](/help/sites-classic-ui-authoring/classic-workflows.md)
    + [Använda arbetsflöden på sidor](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
-+ Launches {#launches}
-   + [Launches](/help/sites-classic-ui-authoring/classic-launches.md)
++ Startar {#launches}
+   + [Startar](/help/sites-classic-ui-authoring/classic-launches.md)
    + [Skapa startprogram](/help/sites-classic-ui-authoring/classic-launches-creating.md)
    + [Redigeringsövningar](/help/sites-classic-ui-authoring/classic-launches-editing.md)
    + [Befordra lanseringar](/help/sites-classic-ui-authoring/classic-launches-promoting.md)
-+ Personanpassning {#personalization}
++ Personalisering {#personalization}
    + [Förstå segmentering](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
    + [Kampanjhantering](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)
    + [Landningssidor](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
@@ -77,7 +77,7 @@ ht-degree: 3%
    + [Adobe Campaign Components](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
    + [Rikta in er på Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
    + [Skapa Adobe Campaign Forms i AEM](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-+ Assets-redigering i Classic-gränssnittet {#assets}
++ Assets Authoring in Classic UI {#assets}
    + [Arbeta med Assets](/help/sites-classic-ui-authoring/classicui-assets.md)
    + [Leverera Dynamic Media Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
    + [Lägga till Dynamic Media Assets på sidor](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)

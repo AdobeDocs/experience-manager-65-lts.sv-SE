@@ -7,16 +7,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
 
 # Integrera AEM Forms med e-postserverprotokoll från Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-AEM Forms erbjuder OAuth 2.0-stöd för integrering med Microsoft® Office 365-protokoll för e-postservrar, så att organisationer kan uppfylla kraven för e-post. Du kan använda Azure Active Directory (Azure AD) OAuth 2.0-autentiseringstjänsten för att ansluta till olika protokoll som IMAP, POP eller SMTP och få åtkomst till e-postdata för Office 365-användare. Nedan finns stegvisa instruktioner för hur du konfigurerar e-postserverprotokoll för Microsoft® Office 365 för autentisering med hjälp av tjänsten OAuth 2.0:
+AEM Forms erbjuder OAuth 2.0-stöd för integrering med Microsoft® Office 365-protokoll för e-postservrar, så att organisationer kan uppfylla kraven för e-post. Du kan använda autentiseringstjänsten Azure Active Directory (Azure AD) OAuth 2.0 för att ansluta till olika protokoll som IMAP, POP eller SMTP och få åtkomst till e-postdata för Office 365-användare. Nedan finns stegvisa instruktioner för hur du konfigurerar e-postserverprotokoll för Microsoft® Office 365 för autentisering med hjälp av tjänsten OAuth 2.0:
 
 1. Logga in på [https://portal.azure.com/](https://portal.azure.com/) och sök efter **Azure Active Directory** i sökfältet och klicka på resultatet.
 Du kan även bläddra direkt till [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
@@ -26,11 +26,11 @@ Du kan även bläddra direkt till [https://portal.azure.com/#blade/Microsoft_AAD
 
 1. Fyll i informationen enligt dina krav och klicka sedan på **Registrera**.
    ![Konto som stöds](/help/forms/using/assets/azure_suuportedaccountype.png)
-I ovanstående fall är alternativet **Konton i valfri organisationskatalog (valfri Azure AD-katalog - Multitenant) och personliga Microsoft®-konton (till exempel Skype, Xbox)** valt.
+I ovanstående fall är alternativet **Konton i alla företagskataloger (valfri Azure AD-katalog - Multitenant) och personliga Microsoft®-konton (till exempel Skype, Xbox)** valt.
 
    >[!NOTE]
    >
-   > * För **konton i alla organisationskataloger (alla Azure AD-kataloger - Multitenant)**-program rekommenderar Adobe att du använder ett arbetskonto i stället för ett personligt e-postkonto.
+   > * För **konton i alla organisationskataloger (alla Azure AD-kataloger - Multitenant)** rekommenderar Adobe att du använder ett arbetskonto i stället för ett personligt e-postkonto.
    > * **Endast personliga Microsoft®-konton** stöds inte.
    > * Adobe rekommenderar att du använder programmet **Multi-tenant och Personal Microsoft® Account** .
 
@@ -153,7 +153,7 @@ Konfigurera nu e-posttjänsten på den senaste JEE-servern genom att logga in p�
 
    >[!NOTE]
    >
-   > [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=sv-SE#create-an-email-endpoint-for-the-complete-task-service) om du vill veta mer om aktivitetsmeddelanden.
+   > [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service) om du vill veta mer om aktivitetsmeddelanden.
 
 ## Konfigurera e-postslutpunkt {#configure_email_endpoint}
 
@@ -167,7 +167,7 @@ Konfigurera nu e-posttjänsten på den senaste JEE-servern genom att logga in p�
 
    >[!NOTE]
    >
-   > Om du vill ha mer information om hur du konfigurerar e-postslutpunkter klickar du på [Konfigurera en e-postslutpunkt](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=sv-SE).
+   > Om du vill ha mer information om hur du konfigurerar e-postslutpunkter klickar du på [Konfigurera en e-postslutpunkt](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Felsökning {#troubleshooting}
 

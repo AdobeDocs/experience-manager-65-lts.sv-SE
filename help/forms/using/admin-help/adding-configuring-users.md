@@ -7,9 +7,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1636'
 ht-degree: 0%
 
 ---
@@ -119,12 +119,12 @@ Undvik att skapa användarnamn som börjar med ett nummertecken (#). Vid uppgift
 1. Gör följande för att hitta användaren att redigera:
 
    * Ange dina sökvillkor i rutan **[!UICONTROL Find]**.
-   * Välj **[!UICONTROL Using]**, **[!UICONTROL Name]** eller **[!UICONTROL Email]** i listan **[!UICONTROL User ID]**.
+   * Välj **[!UICONTROL Name]**, **[!UICONTROL Email]** eller **[!UICONTROL User ID]** i listan **[!UICONTROL Using]**.
    * I **[!UICONTROL In list]** väljer du **[!UICONTROL Users]**.
    * Markera domänen, markera antalet objekt som ska visas och klicka sedan på **[!UICONTROL Find]**.
 
 1. Klicka på den användare som du vill redigera.
-1. För en användare som är en del av en lokal domän eller hybriddomän redigerar du **[!UICONTROL Detail]** och **[!UICONTROL General Settings]** på fliken **[!UICONTROL Login Settings]** och klickar på **[!UICONTROL Save]**. Mer information om inställningarna finns i [Användarinställningar](adding-configuring-users.md#user-settings). Du kan inte redigera de allmänna inställningarna och inloggningsinställningarna för en användare som tillhör en företagsdomän.
+1. För en användare som är en del av en lokal domän eller hybriddomän redigerar du **[!UICONTROL General Settings]** och **[!UICONTROL Login Settings]** på fliken **[!UICONTROL Detail]** och klickar på **[!UICONTROL Save]**. Mer information om inställningarna finns i [Användarinställningar](adding-configuring-users.md#user-settings). Du kan inte redigera de allmänna inställningarna och inloggningsinställningarna för en användare som tillhör en företagsdomän.
 1. Om du vill redigera gruppinställningarna för användaren klickar du på fliken **[!UICONTROL Group Membership]** och gör följande:
 
    * Klicka på **[!UICONTROL Find Group]** och fyll i sökinformationen.
@@ -148,7 +148,7 @@ Undvik att skapa användarnamn som börjar med ett nummertecken (#). Vid uppgift
 1. Gör följande för att hitta användaren som ska tas bort:
 
    * Ange dina sökvillkor i rutan **[!UICONTROL Find]**.
-   * Välj **[!UICONTROL Using]**, **[!UICONTROL Name]** eller **[!UICONTROL Email]** i listan **[!UICONTROL User ID]**.
+   * Välj **[!UICONTROL Name]**, **[!UICONTROL Email]** eller **[!UICONTROL User ID]** i listan **[!UICONTROL Using]**.
    * I **[!UICONTROL In list]** väljer du **[!UICONTROL Users]**.
    * Markera domänen, markera antalet objekt som ska visas och klicka sedan på **[!UICONTROL Find]**.
 
@@ -165,7 +165,7 @@ Om en användare saknar de nödvändiga AEM-formulären och CQ-behörigheterna o
 * Correspondence Management-lösning
 * AEM blanketter Workspace
 
-  ***Obs!**&#x200B;Flex Workspace är föråldrat för AEM formulärrelease.*
+  ***Obs!**Flex Workspace är föråldrat för AEM formulärrelease.*
 
 * formulärhanterare
 * Processrapportering

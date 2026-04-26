@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e9e0371-018a-496f-aad4-04ff21391d51
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -109,4 +109,4 @@ AEM-formulär använder en webbtjänstbaserad IPC/RPC-mekanism. På så sätt ka
 Den här mekanismen stöder inte onlineskapande av HSM-profiler eller statuskontroller. Det finns dock två sätt att skapa HSM-profiler och utföra statuskontroller:
 
 * Skapa en AEM-formulärklientautentiseringsuppgift genom att skicka den till signerarens certifikat. Följ stegen i [Konfigurera HSM-stöd för AEM-formulär ES med Sun JDK på 64-bitarsplattformen för Windows](https://kb2.adobe.com/cps/808/cpsid_80835.html). Webbtjänstplatsen skickas som en autentiseringsuppgiftsegenskap. Det finns även stöd för HSM-profiler som skapats offline med antingen certifikatutfärdare eller SHA-1-hex. Om du har uppgraderat till AEM-formulär från en tidigare version av AEM-formulär gör du klientändringar eftersom inloggningsuppgifterna medförde certifikat och webbtjänstinformation.
-* Webbtjänstens plats anges i administrationskonsolen för signeringstjänsten. (Se [Inställningar för signaturtjänsten](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Här medförde klienten bara aliaset för HSM-profilen i förtroendearkivet. Du kan använda det här alternativet utan att några klientändringar behöver göras, även om du har uppgraderat till AEM-formulär från en tidigare version av AEM-formulär. Det här alternativet stöder inte HSM-profiler som använder certifikat SHA-1.
+* Webbtjänstens plats anges i administrationskonsolen för signeringstjänsten. (Se [Inställningar för signaturtjänst](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Här innehöll klienten bara alias för HSM-profilen i förtroendearkivet. Du kan använda det här alternativet utan att några klientändringar behöver göras, även om du har uppgraderat till AEM-formulär från en tidigare version av AEM-formulär. Det här alternativet stöder inte HSM-profiler som använder certifikat SHA-1.

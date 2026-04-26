@@ -7,10 +7,10 @@ feature: DRM,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5870209f-9e0c-4e60-a083-e46edb707ae7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 7%
+source-wordcount: '1361'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 Digitala resurser är ofta kopplade till en licens som anger användningsvillkoren och hur länge de ska användas. Eftersom [!DNL Adobe Experience Manager Assets] är helt integrerat med [!DNL Experience Manager]-plattformen kan du effektivt hantera förfalloinformation och resurstillstånd. Du kan även associera licensinformation med resurser.
@@ -76,12 +76,12 @@ Om du vill att konsolen [!DNL Assets] ska kunna visa de sammansatta resurserna t
 1. Öppna [!DNL Experience Manager] Configuration Manager.
 1. Välj **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Som standard är **[!UICONTROL Time based Scheduler]** markerat, vilket schemalägger ett jobb att vid en viss tidpunkt kontrollera om en resurs har upphört att gälla för delresurser. När jobbet har slutförts visas resurser som har upphört att gälla och refererade resurser som utgångna i sökresultaten.
 
-1. Om du vill köra jobbet regelbundet avmarkerar du fältet **[!UICONTROL Time Based Scheduler Rule]** och ändrar tiden i sekunder i fältet **[!UICONTROL Periodic Scheduler]**. Exempeluttrycket `0 0 0 * * ?` utlöser till exempel jobbet vid 00 timmar.
+1. Om du vill köra jobbet periodiskt rensar du fältet **[!UICONTROL Time Based Scheduler Rule]** och ändrar tiden i sekunder i fältet **[!UICONTROL Periodic Scheduler]**. Exempeluttrycket `0 0 0 * * ?` utlöser till exempel jobbet vid 00 timmar.
 1. Välj **[!UICONTROL send email]** om du vill ta emot e-postmeddelanden när en resurs upphör att gälla.
 
    >[!NOTE]
    >
-   >Det är bara den som har skapat resursen (den person som överför en viss resurs till [!DNL Assets]) som får ett e-postmeddelande när resursen förfaller. Mer information om hur du konfigurerar e-postmeddelanden [&#128279;](/help/sites-administering/notification.md) finns i Konfigurera e-postmeddelanden på den övergripande [!DNL Experience Manager]-nivån.
+   >Det är bara den som har skapat resursen (den person som överför en viss resurs till [!DNL Assets]) som får ett e-postmeddelande när resursen förfaller. Mer information om hur du konfigurerar e-postmeddelanden ](/help/sites-administering/notification.md) finns i [Konfigurera e-postmeddelanden på den övergripande [!DNL Experience Manager]-nivån.
 
 1. I fältet **[!UICONTROL Prior notification in seconds]** anger du tiden i sekunder innan en resurs förfaller när du vill få ett meddelande om förfallotiden. Tillgångsskaparna får ett meddelande innan resursen upphör att gälla om att resursen håller på att gå ut efter den angivna tiden. När resursen har gått ut får du ett meddelande som bekräftar att den har gått ut. Dessutom inaktiveras utgångna resurser.
 
@@ -127,7 +127,7 @@ Konsolen [!DNL Assets] kan visa olika lägen för resurser. Beroende på det akt
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. Om du vill söka efter resurser baserat på deras förfallostatus markerar du **[!UICONTROL Expiry Status]** på sökpanelen och väljer lämpligt alternativ.
+1. Om du vill söka efter resurser baserat på deras förfallostatus väljer du **[!UICONTROL Expiry Status]** på sökpanelen och väljer lämpligt alternativ.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 

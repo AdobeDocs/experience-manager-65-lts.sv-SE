@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Om hela klustret inte fungerar på grund av fel som t.ex. databaskrascher utför
    1. Ta bort filen clusterNode/revision.log på noden.
    1. Ta bort .lock-koden på noden, om sådan finns.
    1. Ta bort repository/system.id på noden, om det finns någon.
-   1. Ta bort filerna &ast;&ast;/listener.properties på noden, om sådan finns.
+   1. Ta bort filerna &amp;ast;&amp;ast;/listener.properties på noden, om det finns.
    1. Återställ repository/cluster_node.id för enskilda klusternoder.
 
 >[!NOTE]
@@ -161,7 +161,7 @@ Om hela klustret inte fungerar på grund av fel som t.ex. databaskrascher utför
    1. Ta bort filen clusterNode/revision.log på alla klusternoder.
    1. Ta bort .lock på alla klusternoder, om det finns.
    1. Ta bort repository/system.id alla klusternoder, om sådana finns.
-   1. Ta bort filerna &ast;&ast;/listener.properties på alla klusternoder, om sådana finns.
+   1. Ta bort filerna &amp;ast;&amp;ast;/listener.properties på alla klusternoder, om sådana finns.
    1. Återställ repository/cluster_node.id för enskilda klusternoder.
 
 >[!NOTE]

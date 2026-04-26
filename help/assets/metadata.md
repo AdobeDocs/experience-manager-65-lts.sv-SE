@@ -8,10 +8,10 @@ role: Developer,Leader
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: dc231e6b-d656-4626-a800-ee66533b1c86
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2231'
-ht-degree: 10%
+source-wordcount: '2299'
+ht-degree: 0%
 
 ---
 
@@ -19,10 +19,11 @@ ht-degree: 10%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -36,9 +37,9 @@ Metadata är ytterligare information om resursen som kan sökas igenom. Den läg
 
 Följande metoder kan användas för att lägga till metadata i digitala resurser:
 
-* Till att börja med lägger de program som skapar resurser till metadata i det. [Acrobat lägger till exempel till metadata](https://helpx.adobe.com/se/acrobat/using/pdf-properties-metadata.html) i PDF-filer eller så lägger en kamera till några grundläggande metadata i fotona. När du genererar resurser kan du lägga till metadata i de ursprungliga programmen. Du kan till exempel [lägga till IPTC-metadata i Adobe Lightroom](https://helpx.adobe.com/se/lightroom-classic/help/metadata-basics-actions.html).
+* Till att börja med lägger de program som skapar resurser till metadata i det. [Acrobat lägger till exempel till metadata](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) i PDF-filer eller så lägger en kamera till några grundläggande metadata i fotona. När du genererar resurser kan du lägga till metadata i de ursprungliga programmen. Du kan till exempel [lägga till IPTC-metadata i Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Innan du överför en resurs till [!DNL Experience Manager] kan du redigera och ändra metadata med hjälp av det ursprungliga programmet som användes för att skapa en resurs eller med något annat metadataredigeringsprogram. När du överför en resurs till Experience Manager bearbetas metadata. Se till exempel hur du [arbetar med metadata i [!DNL Adobe Bridge]](https://helpx.adobe.com/se/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) och se [taggpanelen för  [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) i [!DNL Adobe Exchange].
+* Innan du överför en resurs till [!DNL Experience Manager] kan du redigera och ändra metadata med hjälp av det ursprungliga programmet som användes för att skapa en resurs eller med något annat metadataredigeringsprogram. När du överför en resurs till Experience Manager bearbetas metadata. Se till exempel hur du [arbetar med metadata i [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) och se [taggpanelen för  [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) i [!DNL Adobe Exchange].
 
 * I [!DNL Experience Manager Assets] kan du lägga till eller redigera metadata för resurser manuellt på sidan [!UICONTROL Properties].
 
@@ -89,13 +90,13 @@ Använd [schemaredigeraren](metadata-config.md#folder-metadata-schema) om du vil
 1. Ändra metadataegenskaperna för markerade resurser på de olika flikarna.
 1. Om du vill visa metadata för en viss resurs avbryter du valet av återstående resurser i listan. Om du avbryter markeringen av ett fåtal resurser på sidan [!UICONTROL Properties] uppdateras inte metadata för sådana resurser.
 1. Klicka på **[!UICONTROL Settings]** i verktygsfältet och välj ett schema om du vill välja ett annat metadataram för resurserna. Klicka på **[!UICONTROL Save & Close]**.
-1. Om du vill lägga till nya metadata till befintliga metadata i fält som innehåller flera värden väljer du **[!UICONTROL Append mode]**. Om du inte markerar det här alternativet ersätter de nya metadata de data som finns i fälten. Klicka på **[!UICONTROL Submit]**.
+1. Om du vill lägga till nya metadata med befintliga metadata i fält som innehåller flera värden väljer du **[!UICONTROL Append mode]**. Om du inte markerar det här alternativet ersätter de nya metadata som finns i fälten. Klicka på **[!UICONTROL Submit]**.
 
 ![Massor av metadatamatcheman gäller för flera resurser](assets/metadata-schema-bulk-edit.gif)
 
 >[!CAUTION]
 >
->För fält med ett enda värde läggs de nya metadata inte till det befintliga värdet i fältet, även om du väljer **[!UICONTROL Append mode]**.
+>För fält med ett värde läggs de nya metadata inte till det befintliga värdet i fältet, även om du väljer **[!UICONTROL Append mode]**.
 
 ## Importera metadata {#import-metadata}
 
@@ -108,8 +109,8 @@ Import av metadata är asynkron och påverkar inte systemets prestanda. Samtidig
 >Om du vill importera metadata för anpassade namnutrymmen måste du först registrera namnutrymmena.
 
 1. Navigera till användargränssnittet för [!DNL Assets] och klicka på **[!UICONTROL Create]** i verktygsfältet.
-1. Välj **[!UICONTROL Metadata]** i menyn.
-1. Klicka på **[!UICONTROL Metadata Import]** på sidan **[!UICONTROL Select File]**. Markera CSV-filen med metadata.
+1. Välj **[!UICONTROL Metadata]** på menyn.
+1. Klicka på **[!UICONTROL Select File]** på sidan **[!UICONTROL Metadata Import]**. Markera CSV-filen med metadata.
 1. Ange följande parametrar. Se ett exempel på en CSV-fil på [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
 
    | Parametrar för metadataimport | Beskrivning |
@@ -165,7 +166,8 @@ Mer information finns i [visa och redigera samlingsmetadata](/help/assets/manage
 
 ## Använda en metadataprofil för mappar {#applying-a-metadata-profile-to-folders}
 
-<!-- TBD: Review this overview.
+<!--
+TBD: Review this overview.
 -->
 
 När du tilldelar en metadataprofil till en mapp ärver alla undermappar automatiskt profilen från den överordnade mappen. Det innebär att du bara kan tilldela en metadataprofil till en mapp. Fundera därför noga över mappstrukturen för var du överför, lagrar, använder och arkiverar resurser.
@@ -180,9 +182,9 @@ Du kan tillämpa metadataprofiler på specifika mappar eller globalt på alla re
 
 Du kan bearbeta resurser i en mapp som redan har en befintlig metadataprofil som du senare ändrade. Se [Återbearbeta resurser i en mapp när du har redigerat dess bearbetningsprofil](processing-profiles.md#reprocessing-assets).
 
-Du kan använda en metadataprofil på en mapp från menyn **[!UICONTROL Tools]** eller, om du är i mappen, från **[!UICONTROL Properties]**. I det här avsnittet beskrivs hur du använder metadataprofiler på mappar på båda sätten.
+Du kan tillämpa en metadataprofil på en mapp från menyn **[!UICONTROL Tools]** eller från **[!UICONTROL Properties]** om du är i mappen. I det här avsnittet beskrivs hur du använder metadataprofiler på mappar på båda sätten.
 
-För mappar som redan har tilldelats en profil visas profilens namn direkt under mappnamnet.
+Mappar som redan har tilldelats en profil visas genom att profilens namn visas direkt under mappnamnet.
 
 Du kan bearbeta resurser i en mapp som redan har en befintlig videoprofil som du senare ändrade. Se [Återbearbeta resurser i en mapp när du har redigerat dess bearbetningsprofil](processing-profiles.md#reprocessing-assets).
 
@@ -192,7 +194,7 @@ Så här använder du metadataprofilen:
 
 1. Klicka på logotypen [!DNL Experience Manager] och navigera till **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Välj den metadataprofil som du vill använda för en eller flera mappar.
-1. Klicka på **[!UICONTROL Apply Metadata Profile to Folder(s)]** och markera den eller de mappar som du vill använda för att ta emot de nyligen överförda resurserna. Klicka sedan på **[!UICONTROL Done]**. För mappar som redan har tilldelats en profil visas profilens namn direkt under mappnamnet.
+1. Klicka på **[!UICONTROL Apply Metadata Profile to Folder(s)]** och markera den eller de mappar som du vill använda för att ta emot de nyligen överförda resurserna. Klicka sedan på **[!UICONTROL Done]**. Mappar som redan har tilldelats en profil visas genom att profilens namn visas direkt under mappnamnet.
 
 ### Använd metadataprofiler på mappar från [!UICONTROL Properties] {#applying-metadata-profiles-to-folders-from-properties}
 
@@ -201,13 +203,15 @@ Så här använder du metadataprofilen:
 
 1. Välj fliken **[!UICONTROL Metadata Profiles]**, välj profilen på popup-menyn och klicka på **[!UICONTROL Save]**.
 
-För mappar som redan har tilldelats en profil visas profilens namn direkt under mappnamnet.
+Mappar som redan har tilldelats en profil visas genom att profilens namn visas direkt under mappnamnet.
 
-<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
+<!--
+TBD: Commenting as the topic in metadata-config.md is incomplete.
 
 ### Apply metadata profile globally {#metadata-profile-global}
 
-For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+-->
 
 ### Ta bort en metadataprofil från mappar {#removing-a-metadata-profile-from-folders}
 
@@ -227,7 +231,7 @@ Du kan ta bort en metadataprofil från en mapp på menyn **[!UICONTROL Tools]** 
 
 1. Klicka på logotypen [!DNL Experience Manager], navigera till **[!UICONTROL Assets]** och sedan till mappen som du vill ta bort en metadataprofil från.
 1. Markera mappen genom att klicka på bockmarkeringen och sedan på **[!UICONTROL Properties]**.
-1. Välj fliken **[!UICONTROL Metadata Profiles]**, välj **[!UICONTROL None]** i listrutan och klicka på **[!UICONTROL Save]**. För mappar som redan har tilldelats en profil visas profilens namn direkt under mappnamnet.
+1. Välj fliken **[!UICONTROL Metadata Profiles]**, välj **[!UICONTROL None]** i listrutan och klicka på **[!UICONTROL Save]**. Mappar som redan har tilldelats en profil visas genom att profilens namn visas direkt under mappnamnet.
 
 ## Tips och begränsningar {#best-practices-limitations}
 
@@ -241,9 +245,10 @@ Du kan ta bort en metadataprofil från en mapp på menyn **[!UICONTROL Tools]** 
 >
 >* [Metadatabegrepp och -förståelse](metadata-concepts.md).
 >* [Redigera metadataegenskaper för flera samlingar](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Import och export av metadata i Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=sv-SE)
+>* [Import och export av metadata i Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
-<!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
+<!--
+TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
 ## Where to find metadata of an asset or folder {#find-metadata}
 

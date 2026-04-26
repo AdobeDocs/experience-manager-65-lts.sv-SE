@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2f34b48a-0b95-4994-ac4f-616620a5b211
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1523'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ När du har identifierat hur AEM-formulär ska användas, bestämmer du vilka fi
 >
 >Precis som med andra aspekter av implementeringen av AEM-formulär måste strategin för säkerhetskopiering och återställning utvecklas och testas i en utvecklings- eller staging-miljö innan den används i produktionen för att säkerställa att hela lösningen fungerar som förväntat utan dataförlust.
 
-Adobe Experience Manager (AEM) är en integrerad del av AEM formulär. Därför måste du även synkronisera med AEM säkerhetskopiering av formulär med AEM som Correspondence Management Solution och tjänster, t.ex. formulärhanterare, baserat på data som lagras i AEM som en del av AEM-formulären. För att förhindra dataförlust måste AEM-formulärspecifika data säkerhetskopieras på ett sätt som säkerställer att GDS och AEM (databasen) korrelerar med databasreferenser. Katalogerna database, GDS, AEM och Content Storage Root måste återställas till en dator med samma DNS namnet som original.
+Adobe Experience Manager (AEM) är en integrerad del av AEM formulär. Därför måste du säkerhetskopiera AEM, liksom synkronisera med AEM säkerhetskopiering av formulär, som Correspondence Management Solution och tjänster, t.ex. formulärhanterare, som är baserade på data som lagras i AEM del av AEM-formulär.För att förhindra dataförluster måste AEM-formulärspecifika data säkerhetskopieras på ett sätt som säkerställer att GDS och AEM (databas) korrelerar med databasreferenser.Katalogerna database, GDS, AEM och Content Storage Root måste återställas till en dator med samma DNS-namn som originalet.
 
 ## Olika typer av säkerhetskopiering {#types-of-backups}
 
@@ -83,7 +83,7 @@ Innan du startar om Forms Server efter en återställning gör du följande:
 1. Starta systemet i underhållsläge.
 1. Gör följande för att se till att Form Manager synkroniseras med AEM-formulär i underhållsläge:
 
-   1. Gå till https://&lt;*server*>:&lt;*port*>/lc/fm och logga in med autentiseringsuppgifter för adminstrator/lösenord.
+   1. Gå till https://&lt;*server*>:&lt;*port*>/lc/fm och logga in med autentiseringsuppgifter för administratörer/lösenord.
    1. Klicka på namnet på användaren (superadministratör i det här fallet) längst upp till höger.
    1. Klicka på **Administratörsalternativ**.
    1. Klicka på **Start** om du vill synkronisera resurser från databasen.

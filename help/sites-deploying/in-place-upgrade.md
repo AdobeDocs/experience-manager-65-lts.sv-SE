@@ -6,9 +6,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,8 @@ Innan du utför uppgraderingen måste du utföra flera steg. Mer information fin
 
 1. Om du behöver använda anpassade sling.properties skapar du en ny lokal AEM-instans och hämtar filen sling.properties från katalogen crx-quickstart/conf. Använd de anpassade ändringarna i den här filen och kopiera den sedan till katalogen crx-quickstart/conf för den AEM-instans som uppgraderas. Om det inte finns några anpassade egenskaper kan det här steget hoppas över.
 
-<!-- Alexandru: drafting temporarily
+<!--
+Alexandru: drafting temporarily
 
 ## Content Repository Migration {#content-repository-migration}
 

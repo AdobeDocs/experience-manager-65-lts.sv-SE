@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 14f006f8-8751-4713-ba5a-590ce479fbb4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Om du konfigurerar autentisering för en företagsdomän eller hybriddomän och 
 Om du konfigurerar autentisering för en företagsdomän eller hybriddomän och väljer SAML-autentisering är följande inställningar tillgängliga. Mer information om ytterligare SAML-inställningar finns i [Konfigurera inställningar för SAML-tjänstleverantör](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
 
 **Välj metadata för SAML-identitetsleverantör
-fil som ska importeras:** Klicka på Bläddra för att välja en SAML-metadatafil för identitetsleverantör som genererats från din IDP och klicka sedan på Importera. Information från IDP visas.
+fil som ska importeras:** Klicka på Bläddra för att välja en metadatafil för SAML-identitetsleverantör som genererats från din IDP och klicka sedan på Importera. Information från IDP visas.
 
 **Titel:** Alias för URL:en som anges av EntityID. Titeln visas också på inloggningssidan för Enterprise-användare och lokala användare.
 
@@ -161,7 +161,7 @@ Autentiseringen misslyckas om en användare autentiseras utan att etablera just-
 1. Om du vill skapa en domän klickar du på Ny företagsdomän eller Ny hybrid-domän. Om du vill redigera en befintlig domän klickar du på domänens namn.
 1. Markera Aktivera etablering i realtid.
 
-   ***Obs!**&#x200B;Om kryssrutan Aktivera tidsprovisionering för just in-tid saknas klickar du på Hem > Inställningar > Användarhantering > Konfiguration > Avancerade systemattribut och sedan på Läs in igen.*
+   ***Obs!**Om kryssrutan Aktivera tidsprovisionering för just in-tid saknas klickar du på Hem > Inställningar > Användarhantering > Konfiguration > Avancerade systemattribut och sedan på Läs in igen.*
 
 1. Lägg till autentiseringsproviders. När du lägger till autentiseringsproviders väljer du en registrerad identitetsskapare och tilldelningsprovider på skärmen Ny autentisering. (Se [Konfigurera autentiseringsproviders](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Spara domänen.

@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: 1d0fe9ee81a2e38f7887b6f884a13d1ba1462304
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,17 @@ I det här avsnittet beskrivs hur du installerar Adobe Experience Manager (AEM) 
 
 Installationsstegen för följande programservrar beskrivs:
 
-* [WebSphere](#websphere)
+* [WebSphere® 24.0.0.7](#websphere)
 * [Tomcat 10.0.x/10.1.x](#tomcat)
 * [JBoss EAP 8](/help/forms/using/upgrade-forms-osgi.md)
 
 Mer information om hur du installerar webbprogram, serverkonfigurationer och hur du startar och stoppar servern finns i dokumentationen för respektive programserver.
 
-<!-- >[!NOTE]
+<!--
+>[!NOTE]
 >
->If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media). -->
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media).
+-->
 
 ## Allmän beskrivning {#general-description}
 
@@ -89,7 +91,7 @@ I demonstrationssyfte kan det vara lämpligt att installera både författare oc
 1. Använd högre minnesinställningar. AEM-standardinstanser använder till exempel `-Xmx3072m`
 1. Distribuera de två webbprogrammen
 1. Stoppa de två webbprogrammen efter distributionen
-1. Kontrollera att egenskapen `sling.properties` är inställd på `felix.service.urlhandlers` i filen `false` i både författare- och publiceringsinstanser. (Standardinställningen är att den är inställd på `true`).
+1. Kontrollera att egenskapen `felix.service.urlhandlers` är inställd på `false` i filen `sling.properties` i både författare- och publiceringsinstanser. (Standardinställningen är att den är inställd på `true`).
 1. Starta de två webbprogrammen igen.
 
 ## Installationsprocedurer för programservrar {#application-servers-installation-procedures}

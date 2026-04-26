@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 9f694358-e502-4fc0-8352-4c5119573756
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '8133'
+source-wordcount: '8295'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,7 @@ Kryptera ett PDF-dokument med ett lösenord med hjälp av krypterings-API (Java)
    * Skapa ett `PasswordEncryptionOptionSpec`-objekt genom att anropa dess konstruktor.
    * Ange de PDF-dokumentresurser som ska krypteras genom att anropa `PasswordEncryptionOptionSpec`-objektets `setEncryptOption`-metod och skicka ett `PasswordEncryptionOption`-uppräkningsvärde som anger vilka dokumentresurser som ska krypteras. Om du till exempel vill kryptera hela PDF-dokumentet, inklusive dess metadata och bilagor, anger du `PasswordEncryptionOption.ALL`.
    * Skapa ett `java.util.List`-objekt som lagrar krypteringsbehörigheterna med konstruktorn `ArrayList`.
-   * Ange en behörighet genom att anropa metoden `java.util.List` för objektet `add` och skicka ett uppräkningsvärde som motsvarar den behörighet som du vill ange. Om du till exempel vill ange den behörighet som tillåter en användare att kopiera data i PDF-dokumentet anger du `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Upprepa det här steget för varje behörighet att ange).
+   * Ange en behörighet genom att anropa metoden `add` för objektet `java.util.List` och skicka ett uppräkningsvärde som motsvarar den behörighet som du vill ange. Om du till exempel vill ange den behörighet som tillåter en användare att kopiera data i PDF-dokumentet anger du `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Upprepa det här steget för varje behörighet att ange).
    * Ange kompatibilitetsalternativet för Acrobat genom att anropa `PasswordEncryptionOptionSpec`-objektets `setCompatability`-metod och skicka ett uppräkningsvärde som anger Acrobat-kompatibilitetsnivå. Du kan till exempel ange `PasswordEncryptionCompatability.ACRO_7`.
    * Ange det lösenordsvärde som gör att en användare kan öppna det krypterade PDF-dokumentet genom att anropa `PasswordEncryptionOptionSpec`-objektets `setDocumentOpenPassword`-metod och skicka ett strängvärde som representerar det öppna lösenordet.
    * Ange det huvudlösenordsvärde som gör att en användare kan ta bort kryptering från PDF-dokumentet genom att anropa `PasswordEncryptionOptionSpec`-objektets `setPermissionPassword`-metod och skicka ett strängvärde som representerar huvudlösenordet.
@@ -187,7 +187,7 @@ Kryptera ett PDF-dokument med ett lösenord med hjälp av krypterings-API:t (web
 1. Skapa ett API-objekt för krypteringsklient.
 
    * Skapa ett `EncryptionServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
+   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`). Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `EncryptionServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:
@@ -210,8 +210,8 @@ Kryptera ett PDF-dokument med ett lösenord med hjälp av krypterings-API:t (web
    * Skapa ett `PasswordEncryptionOptionSpec`-objekt med hjälp av dess konstruktor.
    * Ange de PDF-dokumentresurser som ska krypteras genom att tilldela ett `PasswordEncryptionOption`-uppräkningsvärde till `PasswordEncryptionOptionSpec`-objektets `encryptOption`-datamedlem. Om du vill kryptera hela PDF, inklusive dess metadata och bilagor, tilldelar du `PasswordEncryptionOption.ALL` till den här datamedlemmen.
    * Ange kompatibilitetsalternativet för Acrobat genom att tilldela ett `PasswordEncryptionCompatibility`-uppräkningsvärde till `PasswordEncryptionOptionSpec`-objektets `compatibility`-datamedlem. Tilldela till exempel `PasswordEncryptionCompatibility.ACRO_7` till den här datamedlemmen.
-   * Ange det lösenordsvärde som gör att en användare kan öppna det krypterade PDF-dokumentet genom att tilldela ett strängvärde som representerar det öppna lösenordet till `PasswordEncryptionOptionSpec`-objektets `documentOpenPassword`-datamedlem.
-   * Ange det lösenordsvärde som gör att en användare kan ta bort kryptering från PDF-dokumentet genom att tilldela ett strängvärde som representerar huvudlösenordet till `PasswordEncryptionOptionSpec`-objektets `permissionPassword`-datamedlem.
+   * Ange det lösenordsvärde som gör att en användare kan öppna det krypterade PDF-dokumentet genom att tilldela ett strängvärde som representerar det öppna lösenordet till `documentOpenPassword`-objektets `PasswordEncryptionOptionSpec`-datamedlem.
+   * Ange det lösenordsvärde som gör att en användare kan ta bort kryptering från PDF-dokumentet genom att tilldela ett strängvärde som representerar huvudlösenordet till `permissionPassword`-objektets `PasswordEncryptionOptionSpec`-datamedlem.
 
 1. Lägg till lösenordet.
 
@@ -402,7 +402,7 @@ Kryptera ett PDF-dokument med ett certifikat med hjälp av krypterings-API:t (we
 1. Skapa ett API-objekt för krypteringsklient.
 
    * Skapa ett `EncryptionServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
+   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`). Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `EncryptionServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:
@@ -583,7 +583,7 @@ Ta bort certifikatbaserad kryptering med hjälp av krypterings-API:t (webbtjäns
 1. Skapa en krypteringstjänstklient.
 
    * Skapa ett `EncryptionServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
+   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`). Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `EncryptionServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:
@@ -732,7 +732,7 @@ Ta bort lösenordsbaserad kryptering med hjälp av krypterings-API:t (webbtjäns
 1. Skapa en krypteringstjänstklient.
 
    * Skapa ett `EncryptionServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
+   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`). Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `EncryptionServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:
@@ -852,7 +852,7 @@ Lås upp ett krypterat PDF-dokument med krypterings-API (Java):
 
 1. Lås upp dokumentet.
 
-   Lås upp ett krypterat PDF-dokument genom att anropa metoden `EncryptionServiceClient` eller `unlockPDFUsingPassword` för `unlockPDFUsingCredential`-objektet.
+   Lås upp ett krypterat PDF-dokument genom att anropa metoden `unlockPDFUsingPassword` eller `unlockPDFUsingCredential` för `EncryptionServiceClient`-objektet.
 
    Om du vill låsa upp ett PDF-dokument som är krypterat med ett lösenord anropar du metoden `unlockPDFUsingPassword` och skickar följande värden:
 
@@ -874,7 +874,7 @@ Lås upp ett krypterat PDF-dokument med krypterings-API (Java):
 
 [Sammanfattning av steg](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Snabbstart (SOAP-läge): Låsa upp ett krypterat PDF-dokument med Java API &#x200B;](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) (SOAP-läge)
+[Snabbstart (SOAP-läge): Låsa upp ett krypterat PDF-dokument med Java API ](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) (SOAP-läge)
 
 [Använda användningsbehörighet för PDF-dokument](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
@@ -897,7 +897,7 @@ Lås upp ett krypterat PDF-dokument med hjälp av krypterings-API:t (webbtjänst
 1. Skapa en krypteringstjänstklient.
 
    * Skapa ett `EncryptionServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
+   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`). Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `EncryptionServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:
@@ -917,7 +917,7 @@ Lås upp ett krypterat PDF-dokument med hjälp av krypterings-API:t (webbtjänst
 
 1. Lås upp dokumentet.
 
-   Lås upp ett krypterat PDF-dokument genom att anropa metoden `EncryptionServiceClient` eller `unlockPDFUsingPassword` för `unlockPDFUsingCredential`-objektet.
+   Lås upp ett krypterat PDF-dokument genom att anropa metoden `unlockPDFUsingPassword` eller `unlockPDFUsingCredential` för `EncryptionServiceClient`-objektet.
 
    Om du vill låsa upp ett PDF-dokument som är krypterat med ett lösenord anropar du metoden `unlockPDFUsingPassword` och skickar följande värden:
 
@@ -1026,7 +1026,7 @@ Bestäm vilken typ av kryptering som skyddar ett PDF-dokument med hjälp av kryp
 1. Bestäm krypteringstypen.
 
    * Bestäm krypteringstypen genom att anropa `EncryptionServiceClient`-objektets `getPDFEncryption`-metod och skicka `com.adobe.idp.Document`-objektet som innehåller PDF-dokumentet. Den här metoden returnerar ett `EncryptionTypeResult`-objekt.
-   * Anropa metoden `EncryptionTypeResult` för objektet `getEncryptionType`. Den här metoden returnerar ett enum-värde på `EncryptionType` som anger krypteringstypen. Om till exempel PDF-dokumentet skyddas med lösenordsbaserad kryptering returnerar den här metoden `EncryptionType.PASSWORD`.
+   * Anropa metoden `getEncryptionType` för objektet `EncryptionTypeResult`. Den här metoden returnerar ett enum-värde på `EncryptionType` som anger krypteringstypen. Om till exempel PDF-dokumentet skyddas med lösenordsbaserad kryptering returnerar den här metoden `EncryptionType.PASSWORD`.
 
 **Se även**
 
@@ -1053,7 +1053,7 @@ Bestäm vilken typ av kryptering som skyddar ett PDF-dokument med hjälp av kryp
 1. Skapa en tjänstklient.
 
    * Skapa ett `EncryptionServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`.) Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
+   * Skapa ett `EncryptionServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/EncryptionService?WSDL`). Du behöver inte använda attributet `lc_version`. Detta attribut används när du skapar en tjänstreferens.)
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `EncryptionServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:

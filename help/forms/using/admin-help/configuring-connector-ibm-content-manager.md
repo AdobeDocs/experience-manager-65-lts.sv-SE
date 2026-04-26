@@ -1,6 +1,6 @@
 ---
-title: Konfigurera koppling för IBM&reg; Content Manager
-description: Konfigurera anslutningsprogrammet för IBM&reg; Content Manager för att aktivera kommunikation mellan AEM-formulär och IBM&reg; Content Manager.
+title: Konfigurerar koppling för IBM&reg; Content Manager
+description: Konfigurera anslutningsprogrammet för IBM&reg; Content Manager för att möjliggöra kommunikation mellan AEM-formulär och IBM&reg; Content Manager.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 106f01a2-39fb-474b-8c58-5ab08666b918
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---

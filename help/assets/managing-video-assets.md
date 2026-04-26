@@ -7,10 +7,10 @@ feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e2b9b13b-c00c-4bfc-8512-84188e90c0ed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4998'
-ht-degree: 7%
+source-wordcount: '5128'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 Videoformatet är en viktig del av ett företags digitala resurser. [!DNL Adobe Experience Manager] erbjuder mogna erbjudanden och funktioner för att hantera hela livscykeln för dina videoresurser efter att de har skapats.
@@ -44,7 +44,7 @@ Som standard kan du inte överföra resurser som är större än 2 GB i [!DNL As
 Förutom konfigurationen för [!DNL Assets] kan du ändra följande konfigurationer för att överföra stora resurser:
 
 * Öka tokens förfallotid. Se [!UICONTROL Adobe Granite CSRF Servlet] i webbkonsolen på `https://[aem_server]:[port]/system/console/configMgr`. Mer information finns i [CSRF-skydd](/help/sites-developing/csrf-protection.md).
-* Öka `receiveTimeout` i Dispatcher-konfigurationen. Mer information finns i [Experience Manager Dispatcher-konfiguration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#renders-options).
+* Öka `receiveTimeout` i Dispatcher-konfigurationen. Mer information finns i [Experience Manager Dispatcher-konfiguration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Utför följande steg i katalogen `/apps` om du vill konfigurera en större fils
 1. I [!DNL Experience Manager] klickar du på **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigera till `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` i CRXDE Lite. Om du vill visa katalogfönstret klickar du på `>>`.
 1. Klicka på **[!UICONTROL Overlay Node]** i verktygsfältet. Du kan också välja **[!UICONTROL Overlay Node]** på snabbmenyn.
-1. I dialogrutan **[!UICONTROL Overlay Node]** klickar du på **[!UICONTROL OK]**.
+1. Klicka på **[!UICONTROL OK]** i dialogrutan **[!UICONTROL Overlay Node]**.
 
    ![Överläggsnod](assets/overlay-node-path.png)
 
@@ -69,7 +69,7 @@ Utför följande steg i katalogen `/apps` om du vill konfigurera en större fils
 1. I [!DNL Experience Manager] klickar du på **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Välj **[!UICONTROL Dynamic Media Encode Video]** på sidan Arbetsflödesmodeller och klicka sedan på **[!UICONTROL Edit]**.
 1. Dubbelklicka på **[!UICONTROL Dynamic Media Video Service Process]**-komponenten på arbetsflödessidan.
-1. I dialogrutan [!UICONTROL Step Properties], på fliken **[!UICONTROL Common]**, expanderar du **Avancerade inställningar**.
+1. Expandera **Avancerade inställningar** under fliken **[!UICONTROL Common]** i dialogrutan [!UICONTROL Step Properties].
 1. I fältet **[!UICONTROL Timeout]** anger du värdet `18000` och klickar sedan på **[!UICONTROL OK]** för att återgå till arbetsflödessidan **[!UICONTROL Dynamic Media Encode Video]**.
 1. Klicka på **[!UICONTROL Save]** i närheten av sidans överkant, nedanför sidrubriken [!UICONTROL Dynamic Media Encode Video].
 
@@ -120,7 +120,7 @@ Så här konfigurerar du inställningarna för Google Cloud:
    Om du redan har ett Google-konto går du vidare till nästa steg.
 
 1. Gå till [https://cloud.google.com/](https://cloud.google.com/).
-1. På Google Cloud-sidan uppe till höger klickar du på **[!UICONTROL Console]**.
+1. Klicka på **[!UICONTROL Console]** uppe till höger på Google Cloud-sidan.
 
    Om det behövs använder **[!UICONTROL Sign in]** dina Google-kontouppgifter för att se alternativet **[!UICONTROL Console]**.
 
@@ -154,16 +154,16 @@ Så här konfigurerar du inställningarna för Google Cloud:
 
 1. Gör följande på sidan **[!UICONTROL Add credentials to your project]**, steg 1:
 
-   * I listrutan **[!UICONTROL Which API are you using?]** väljer du **[!UICONTROL YouTube Data API v3]**.
+   * Välj **[!UICONTROL YouTube Data API v3]** i listrutan **[!UICONTROL Which API are you using?]**.
 
    * Välj **[!UICONTROL Web Server (for example, node.js, Tomcat)]** i listrutan **[!UICONTROL Where are you calling the API from?]**
 
-   * I listrutan **[!UICONTROL What data are you accessing?]** väljer du **[!UICONTROL User data]**.
+   * Välj **[!UICONTROL User data]** i listrutan **[!UICONTROL What data are you accessing?]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Välj **[!UICONTROL What credentials do I need?]**
-1. I steg 2 på sidan **[!UICONTROL Add credentials to your project]** anger du ett unikt namn i fältet Namn under rubriken **[!UICONTROL Create an OAuth 2.0 client ID]**. Du kan också använda standardnamnet som anges av Google.
+1. På sidan **[!UICONTROL Add credentials to your project]**, steg 2, under rubriken **[!UICONTROL Create an OAuth 2.0 client ID]**, i fältet Namn, anger du ett unikt namn om så önskas. Du kan också använda standardnamnet som anges av Google.
 1. Under rubriken **[!UICONTROL Authorized JavaScript origins]** anger du följande sökväg i textfältet, ersätter din egen domän och portnummer i sökvägen och trycker sedan på **[!UICONTROL Enter]** för att lägga till sökvägen i listan:
 
    `https://<servername.domain>:<port_number>`
@@ -183,7 +183,7 @@ Så här konfigurerar du inställningarna för Google Cloud:
    **Obs!**: Sökvägsexemplet ovan är endast avsett som exempel.
 
 1. Klicka på **[!UICONTROL Create OAuth client ID]**.
-1. På sidan **[!UICONTROL Add credentials to your project]**, steg 3, under rubriken **[!UICONTROL Set up the OAuth 2.0 consent screen]**, väljer du den Gmail-e-postadress som du för närvarande använder.
+1. På sidan **[!UICONTROL Add credentials to your project]**, steg 3, under rubriken **[!UICONTROL Set up the OAuth 2.0 consent screen]** väljer du den Gmail-e-postadress som du använder för närvarande.
 
    ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
 
@@ -258,7 +258,7 @@ Från och med Experience Manager 6.4 introducerades en ny pekgränssnittsmetod f
 1. Välj **[!UICONTROL global]** (markera inte det).
 
 1. Välj **[!UICONTROL Create]** i det övre högra hörnet på den globala sidan.
-1. På sidan Skapa YouTube-konfiguration anger du Googles projekt-ID under Inställningar för Google Cloud-plattform i fältet **[!UICONTROL Application Name]**.
+1. På sidan Skapa YouTube-konfiguration anger du Google projekt-ID under Inställningar för Google Cloud-plattform i fältet **[!UICONTROL Application Name]**.
 
    Du angav projekt-ID:t när du konfigurerade Google Cloud-inställningarna tidigare.
 Lämna sidan Skapa YouTube-konfiguration öppen. Om en stund kommer du tillbaka till den.
@@ -267,7 +267,7 @@ Lämna sidan Skapa YouTube-konfiguration öppen. Om en stund kommer du tillbaka 
 
 1. Öppna JSON-filen som du hämtade och sparade tidigare i aktiviteten [Konfigurera Google Cloud-inställningar](/help/assets/video.md#configuring-google-cloud-settings) med en vanlig textredigerare.
 1. Markera och kopiera hela JSON-texten.
-1. Återgå till dialogrutan YouTube-kontoinställningar Klistra in JSON-texten i fältet **[!UICONTROL JSON Config]**.
+1. Återgå till dialogrutan YouTube-kontoinställningar. Klistra in JSON-texten i fältet **[!UICONTROL JSON Config]**.
 1. Välj **[!UICONTROL Save]** i sidans övre högra hörn.
 
    Konfigurera nu YouTube-kanaler i Experience Manager.
@@ -306,20 +306,20 @@ Lämna sidan Skapa YouTube-konfiguration öppen. Om en stund kommer du tillbaka 
 1. Välj **[!UICONTROL Configure now]** under Tredjepartstjänster, under YouTube.
 1. I dialogrutan Skapa konfiguration anger du en rubrik (obligatoriskt) och ett namn (valfritt) i respektive fält.
 1. Välj **[!UICONTROL Create]**.
-1. I dialogrutan YouTube-kontoinställningar anger du Googles projekt-ID i fältet **[!UICONTROL Application Name]**.
+1. I dialogrutan YouTube-kontoinställningar anger du Google projekt-ID i fältet **[!UICONTROL Application Name]**.
 
    Du angav projekt-ID:t när du [konfigurerade Google Cloud-inställningarna](/help/assets/video.md#configuring-google-cloud-settings) tidigare.
 Lämna dialogrutan YouTube Kontoinställning öppen. Du kommer att gå tillbaka till den om en stund.
 
 1. Använd en vanlig textredigerare för att öppna JSON-filen som du hämtade och sparade tidigare i uppgiften Konfigurera inställningar för Google Cloud.
 1. Markera och kopiera hela JSON-texten.
-1. Återgå till dialogrutan YouTube-kontoinställningar Klistra in JSON-texten i fältet **[!UICONTROL JSON Config]**.
+1. Återgå till dialogrutan YouTube-kontoinställningar. Klistra in JSON-texten i fältet **[!UICONTROL JSON Config]**.
 1. Välj **[!UICONTROL OK]**.
 
    Konfigurera nu YouTube-kanaler i Experience Manager.
 
 1. Till höger om **[!UICONTROL Available Channels]** väljer du **+** (plusteckenikon).
-1. I dialogrutan YouTube-kanalinställningar, i fältet Titel, anger du namnet på kanalen som du skapade i uppgiften **[!UICONTROL Adding one or more channels to YouTube]** tidigare.
+1. I dialogrutan Kanalinställningar för YouTube anger du namnet på kanalen som du skapade i aktiviteten **[!UICONTROL Adding one or more channels to YouTube]** tidigare i fältet Titel.
 
    Om du vill kan du lägga till en beskrivning.
 
@@ -348,7 +348,7 @@ Lämna dialogrutan YouTube Kontoinställning öppen. Du kommer att gå tillbaka 
 
 Du kan också automatisera inställningen av YouTube-egenskaper vid överföring av videofilmer genom att skapa en metadatabearbetningsprofil i Experience Manager.
 
-Om du vill skapa en profil för metadatabearbetning kopierar du först värden från fälten **[!UICONTROL Field Label]**, **[!UICONTROL Map to property]** och **[!UICONTROL Choices]**, som alla finns i metadatascheman för video. Sedan skapar du en YouTube-metadatabearbetningsprofil för video genom att lägga till dessa värden.
+Om du vill skapa metadatabearbetningsprofilen kopierar du först värden från fälten **[!UICONTROL Field Label]**, **[!UICONTROL Map to property]** och **[!UICONTROL Choices]**, som alla finns i metadatascheman för video. Sedan skapar du en YouTube-metadatabearbetningsprofil för video genom att lägga till dessa värden.
 
 Så här automatiserar du inställningen av YouTube standardegenskaper för överförda videofilmer:
 
@@ -356,7 +356,7 @@ Så här automatiserar du inställningen av YouTube standardegenskaper för öve
 1. Klicka på **[!UICONTROL default]**. (Lägg inte till en bockmarkering i markeringsrutan till vänster om &quot;standard&quot;.)
 1. Markera rutan till vänster om **[!UICONTROL video]** på sidan **[!UICONTROL default]** och välj sedan **[!UICONTROL Edit]**.
 1. Välj fliken **[!UICONTROL Advanced]** på sidan Redigerare för metadatamodeller.
-1. Under rubriken YouTube-publicering klickar du på **[!UICONTROL YouTube Category]**.
+1. Klicka på **[!UICONTROL YouTube Category]** under rubriken YouTube Publishing.
 1. Till höger på sidan, under fliken **[!UICONTROL Settings]**, gör du följande:
 
    * Markera och kopiera värdet i textfältet **[!UICONTROL Map to property]**.
@@ -378,7 +378,7 @@ Klistra in det kopierade värdet i textredigeraren. Du kommer att behöva det h�
 1. I det övre vänstra hörnet av Experience Manager väljer du Experience Manager logotyp och klickar sedan på **[!UICONTROL Tools]** (hammikon) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** till vänster.
 
 1. Klicka på **[!UICONTROL Create]** i det övre högra hörnet på sidan Metadataprofiler.
-1. I dialogrutan Lägg till metadataprofil i textfältet **[!UICONTROL Profile title]** anger du namnet `YouTube Video` och sedan klickar du på **[!UICONTROL Create]**.
+1. I dialogrutan Lägg till metadataprofil anger du namnet `YouTube Video` i textfältet **[!UICONTROL Profile title]** och klickar sedan på **[!UICONTROL Create]**.
 1. Klicka på fliken **[!UICONTROL Advance]** på sidan Redigerare för metadataprofil.
 1. Lägg till de kopierade YouTube Publishing-värdena i profilen genom att göra följande:
 
@@ -402,7 +402,7 @@ Klistra in det kopierade värdet i textredigeraren. Du kommer att behöva det h�
    * Klicka på **[!UICONTROL Field Label]** så att komponenten är markerad.
    * Till höger på sidan, under fliken Inställningar, klistrar du in de YouTube Publishing-värden (Field Label-värde och Map to property-värde) som du kopierade tidigare i deras respektive fält i formuläret. Klistra in alternativvärdet i fältet Standardvärde.
 
-1. Klicka på **[!UICONTROL Save]** i det övre högra hörnet på sidan.
+1. Klicka på **[!UICONTROL Save]** i sidans övre högra hörn.
 1. Använd metadataprofilen för YouTube Publishing på de mappar där du ska överföra videoklipp. Du måste ha angett både Metadataprofil och Videoprofil.
 
    Se [Metadataprofiler](/help/assets/metadata-config.md#metadata-profiles) och [Videoprofiler](/help/assets/video-profiles.md).
@@ -439,7 +439,7 @@ Nu kopplar du taggarna som du lade till tidigare till videoresurser. På så sä
 1. Klicka på **[!UICONTROL Save and Close]** i det övre högra hörnet på egenskapssidan för videon.
 1. Klicka på **[!UICONTROL Quick Publish]** i verktygsfältet.
 
-   Se även [Använda Publiceringshantering med Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=sv-SE).
+   Se även [Använda Publiceringshantering med Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    Du kan även verifiera den publicerade videon på din YouTube-kanal.
 
@@ -489,7 +489,7 @@ När du avpublicerar en videoresurs i Experience Manager tas videon bort från Y
 
 1. Navigera till de videoresurser som du vill avpublicera från din YouTube-kanal.
 1. Välj en eller flera publicerade videoresurser i ett resursurvalsläge.
-1. Klicka på **[!UICONTROL Manage Publication]** i verktygsfältet. Välj ikonen med tre punkter (. .) i verktygsfältet så att **[!UICONTROL Manage Publication]** öppnas.
+1. Klicka på **[!UICONTROL Manage Publication]** i verktygsfältet. Välj ikonen med tre punkter (. . .) i verktygsfältet så att **[!UICONTROL Manage Publication]** öppnas.
 1. Välj **[!UICONTROL Unpublish]** på sidan Hantera publikation.
 1. Välj **[!UICONTROL Next]** i det övre högra hörnet på sidan.
 1. Välj **[!UICONTROL Unpublish]** i det övre högra hörnet på sidan.
@@ -522,7 +522,7 @@ När du överför en ny video till en mapp där videokodning används, eller pub
 
    >[!NOTE]
    >
-   >Det kan ta lång tid innan fel-/felmeddelanden slutligen spelas in på grund av flera arbetsflödeskonfigurationer på **[!UICONTROL retries]**, **[!UICONTROL retry delay]** och **[!UICONTROL timeout]** från [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), till exempel:
+   >Det kan ta lång tid innan fel-/felmeddelanden slutligen registreras på grund av flera arbetsflödeskonfigurationer på **[!UICONTROL retries]**, **[!UICONTROL retry delay]** och **[!UICONTROL timeout]** från [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), till exempel:
    >
    >* Konfiguration av Apache Sling-jobbkö
    >* Extern processhanterare för Adobe Granite-arbetsflöde
@@ -530,7 +530,7 @@ När du överför en ny video till en mapp där videokodning används, eller pub
    >
    >Du kan justera egenskaperna **[!UICONTROL retries]**, **[!UICONTROL retry delay]** och **[!UICONTROL timeout]** i dessa konfigurationer.
 
-1. Information om pågående arbetsflöden finns i Arbetsflödesinstanser som är tillgängliga i **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances]**.
+1. Information om pågående arbetsflöden finns i Arbetsflödesinstanser som är tillgängliga från **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances]**.
 
    >[!NOTE]
    >
@@ -544,7 +544,7 @@ När du överför en ny video till en mapp där videokodning används, eller pub
 
    I området Arbetsflödesinstanser kan du även göra uppehåll i, avsluta eller byta namn på arbetsflöden. Mer information finns i [Administrera arbetsflöden](/help/sites-administering/workflows-administering.md).
 
-1. Information om misslyckade jobb finns i Arbetsflödesfel i **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Failures]**. I listan **[!UICONTROL Workflow Failure]** visas alla misslyckade arbetsflödesaktiviteter.
+1. Information om misslyckade jobb finns i Arbetsflödesfel som är tillgängliga från **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Failures]**. **[!UICONTROL Workflow Failure]** visar alla misslyckade arbetsflödesaktiviteter.
 
    >[!NOTE]
    >
@@ -622,7 +622,7 @@ Hur du konfigurerar meddelanden beror på om du vill ha meddelanden för kodning
 
    ![Rita och kommentera i en videobildruta](assets/annotate-video.png)
 
-1. Gå till en viss punkt i videon, ange tiden i sekunder i **textfältet** och klicka på **Hoppa**. Om du till exempel vill hoppa över de första 20 sekunderna av videon anger du 20 i textfältet.
+1. Gå till en viss punkt i videon, ange tiden i sekunder i fältet **text** och klicka på **Hoppa**. Om du till exempel vill hoppa över de första 20 sekunderna av video anger du 20 i textfältet.
 
    ![Söka efter en tid i en video att hoppa över efter angivna sekunder](assets/seek-in-video.png)
 

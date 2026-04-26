@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: ca620313-8c2c-44e6-9f29-0d91dc9f6e03
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '9814'
+source-wordcount: '9975'
 ht-degree: 0%
 
 ---
@@ -431,7 +431,7 @@ Du kan använda JAX-WS för att konvertera en Forms-tjänst-WSDL till Java-proxy
     ant -buildfile "build.xml" wsdl
    ```
 
-   Placera ANT-byggskriptet i katalogen C:\Program Files\Java\jaxws-ri\bin. Skriptet skriver JAVA-filerna till ./classes mapp. Skriptet genererar JAVA-filer som kan anropa tjänsten.
+   Placera ANT-byggskriptet i katalogen C:\Program Files\Java\jaxws-ri\bin. Skriptet skriver JAVA-filerna till mappen ./classes. Skriptet genererar JAVA-filer som kan anropa tjänsten.
 
 1. Paketera JAVA-filerna i en JAR-fil. Om du arbetar med Eclipse gör du så här:
 
@@ -540,8 +540,8 @@ Du kan generera Axis Java-biblioteksfiler genom att utföra följande steg:
    * axis.jar
    * comons-codec-1.3.jar
    * commons-collections-3.1.jar
-   * commons-discovery.jar
-   * commons-logging.jar
+   * comons-discovery.jar
+   * commons-log.jar
    * dom3-xml-apis-2.5.0.jar
    * jai_imageio.jar
    * jaxen-1.1-beta-9.jar
@@ -759,7 +759,7 @@ När du har skapat en servicereferens är datatyper som är kopplade till AEM Fo
 
 1. Skapa ett .NET-projekt med Microsoft Visual Studio 2008.
 1. Välj **Lägg till tjänstreferens** på menyn **Projekt**.
-1. I dialogrutan **Adress** anger du WSDL för AEM Forms-tjänsten. Exempel:
+1. I dialogrutan **Adress** anger du WSDL för AEM Forms-tjänsten. Till exempel:
 
    ```java
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1

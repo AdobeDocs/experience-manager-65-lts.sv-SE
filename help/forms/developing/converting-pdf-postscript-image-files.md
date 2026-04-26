@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 509b9e53-9af4-4916-afba-2db358ec0764
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2820'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,7 @@ Konvertera ett PDF-dokument till PostScript med hjälp av API:t för konverterin
 1. Skapa en Convert PDF-klient.
 
    * Skapa ett `ConvertPdfServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `ConvertPdfServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) Du behöver inte använda attributet `lc_version`. Ange dock `?blob=mtom`.
+   * Skapa ett `ConvertPdfServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Du behöver inte använda attributet `lc_version`. Ange dock `?blob=mtom`.
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `ConvertPdfServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:
@@ -323,7 +323,7 @@ Konvertera ett PDF-dokument till ett bildformat med hjälp av API:t för konvert
 1. Skapa en konverteringsklient för PDF.
 
    * Skapa ett `ConvertPdfServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `ConvertPdfServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) Du behöver inte använda attributet `lc_version`. Ange dock `?blob=mtom`.
+   * Skapa ett `ConvertPdfServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Du behöver inte använda attributet `lc_version`. Ange dock `?blob=mtom`.
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `ConvertPdfServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:

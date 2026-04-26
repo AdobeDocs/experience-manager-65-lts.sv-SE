@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 72c31f40-d1b0-47ae-bdeb-e9b92c3d27e1
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '10278'
+source-wordcount: '10334'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Om du väljer det här alternativet kan klientprogram använda utökad autentise
 
 **Önskad kontrollhöjd för utökad autentisering för HTML** Ange höjden på den utökade autentiseringsdialogrutan som öppnas i Acrobat för att ange användarautentiseringsuppgifter.
 
-***Obs!**: Gränserna för bredd och höjd för den här dialogrutan är följande:*
+***Obs!**Begränsningarna för bredd och höjd för den här dialogrutan är följande:*
 Bredd: Minsta = 400, högsta = 900
 
 Höjd: Minst = 450; Högst = 800
@@ -90,7 +90,7 @@ Listan med synliga användare och grupper är synlig för principuppsättningens
 
 1. När du har installerat och konfigurerat din AEM-formulärmiljö med dokumentsäkerhet konfigurerar du alla lämpliga domäner i Användarhantering. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***Obs!**&#x200B;Du måste skapa domäner innan du kan skapa profiler.*
+   ***Obs!**Du måste skapa domäner innan du kan skapa profiler.*
 
 1. I administrationskonsolen klickar du på Tjänster > Dokumenthantering > Profiler och sedan på fliken Principuppsättningar.
 1. Välj Global principuppsättning och klicka sedan på fliken Synliga användare och grupper.
@@ -366,7 +366,7 @@ Principuppsättning:** En administratör eller principuppsättningskoordinator s
 **Systemhändelser**
 
 **katalog
-Synkroniseringen är klar:** Den här informationen är inte tillgänglig från sidan Händelser. Den aktuella katalogsynkroniseringsinformationen, inklusive det aktuella synkroniseringstillståndet och tidpunkten för den senaste synkroniseringen, visas på sidan Domänhantering. Om du vill få åtkomst till sidan Domänhantering i administrationskonsolen klickar du på Inställningar > Användarhantering > Domänhantering.
+Synkroniseringen har slutförts:** Den här informationen är inte tillgänglig från sidan Händelser. Den aktuella katalogsynkroniseringsinformationen, inklusive det aktuella synkroniseringstillståndet och tidpunkten för den senaste synkroniseringen, visas på sidan Domänhantering. Om du vill få åtkomst till sidan Domänhantering i administrationskonsolen klickar du på Inställningar > Användarhantering > Domänhantering.
 
 **Klient som aktiverar offlineåtkomst:** En användare har aktiverat offlineåtkomst till dokument som är skyddade mot servern på användarens dator.
 
@@ -500,11 +500,11 @@ Du kan skapa dynamiska vattenstämpelmallar. Mallarna är fortfarande tillgängl
    * Välj de vattenstämpeltyper som ska inkluderas. Om du väljer Egen text skriver du den text som ska visas för vattenstämpeln i den intilliggande rutan. Tänk på den textlängd som kommer att visas som vattenstämpel.
    * Ange textformateringsegenskaper som teckensnittsnamn, teckenstorlek, förgrundsfärg och bakgrundsfärg för textinnehållet i vattenstämpeltexten. Ange förgrunds- och bakgrundsfärgen som hexadecimala värden.
 
-     ***Obs!**&#x200B;Om du väljer skalförändringsalternativet Anpassa till sidan är egenskapen för teckensnittsstorlek inte tillgänglig för redigering.*
+     ***Obs!**Om du väljer skalförändringsalternativet Anpassa till sidan är egenskapen för teckensnittsstorlek inte tillgänglig för redigering.*
 
 1. Om du har valt PDF som alternativ för vattenstämpel klickar du på **Bläddra** bredvid Välj PDF för vattenstämpel för att välja det PDF-dokument som du vill använda som vattenstämpel.
 
-   ***Obs!**&#x200B;Använd inte ett lösenordsskyddat PDF-dokument. Om du anger en lösenordsskyddad PDF som vattenstämpelelement används inte vattenstämpeln.*
+   ***Obs!**Använd inte ett lösenordsskyddat PDF-dokument. Om du anger en lösenordsskyddad PDF som vattenstämpelelement används inte vattenstämpeln.*
 
 1. Välj antingen Ja eller Nej under Använd som bakgrund.
 
@@ -561,7 +561,7 @@ Dokumentsäkerhet genererar automatiskt en registreringsinbjudan via e-post när
 
 E-postmeddelandet innehåller en länk till en registreringssida och information om hur du registrerar dig. När den inbjudna användaren har registrerat sig utfärdar dokumentsäkerheten ett aktiveringsmejl med en länk till en aktiveringssida. När det är aktiverat fortsätter kontot att gälla tills du inaktiverar eller tar bort det.
 
-Om du aktiverar den inbyggda registreringen anger du SMTP-servern, e-postinformation för registrering, åtkomstfunktioner och återställer e-postinformation för lösenord endast en gång. Innan du aktiverar den inbyggda registreringen bör du kontrollera att du har skapat en lokal domän i Användarhantering som har tilldelat rollen&quot;Bjud in användare för dokumentsäkerhet&quot; till lämpliga användare och grupper i organisationen. (Se [Lägg till en lokal domän](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) och [Skapa och konfigurera roller](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Om du inte använder inbyggd registrering måste du ha ett eget användarregistreringssystem som skapats med AEM-formulären SDK. Mer information finns i hjälpen om utveckling av SPI för AEM-formulär i [Programmering med AEM-formulär](/help/forms/developing/introducing-java-api-soap-quick.md). Om du inte använder alternativet Inbyggd registrering rekommenderar vi att du konfigurerar ett meddelande i aktiveringsmeddelandet och på klientinloggningsskärmen för att informera användarna om hur de kontaktar administratören för ett nytt lösenord eller för annan information.
+Om du aktiverar den inbyggda registreringen anger du SMTP-servern, e-postinformation för registrering, åtkomstfunktioner och återställer e-postinformation för lösenord endast en gång. Innan du aktiverar den inbyggda registreringen bör du kontrollera att du har skapat en lokal domän i Användarhantering som har tilldelat rollen&quot;Bjud in användare för dokumentsäkerhet&quot; till lämpliga användare och grupper i organisationen. (Se [Lägg till en lokal domän](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) och [Skapa och konfigurera roller](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Om du inte använder den inbyggda registreringen måste du ha ett eget registreringssystem som skapats med AEM-formulären SDK. Mer information finns i hjälpen om utveckling av SPI för AEM-formulär i [Programmering med AEM-formulär](/help/forms/developing/introducing-java-api-soap-quick.md). Om du inte använder alternativet Inbyggd registrering rekommenderar vi att du konfigurerar ett meddelande i aktiveringsmeddelandet och på klientinloggningsskärmen för att informera användarna om hur de kontaktar administratören för ett nytt lösenord eller för annan information.
 
 **Aktivera och konfigurera registrering av inbjudna användare**
 
@@ -586,9 +586,9 @@ Du kan begränsa registreringen med dokumentsäkerhet för vissa externa använd
 
 Följande inställningar finns under Filter för e-postbegränsning på sidan Inbjuden användarregistrering.
 
-**Undantag:** Ange e-postadressen till en användare eller grupp som ska uteslutas. Om du vill exkludera flera användare eller grupper skriver du varje e-postadress på en ny rad. Om du vill utesluta alla användare som tillhör en viss domän anger du ett jokertecken och domännamnet. Om du till exempel vill utesluta alla användare i domänen example.com anger du &ast;.example.com.
+**Undantag:** Ange e-postadressen till en användare eller grupp som ska uteslutas. Om du vill exkludera flera användare eller grupper skriver du varje e-postadress på en ny rad. Om du vill utesluta alla användare som tillhör en viss domän anger du ett jokertecken och domännamnet. Om du till exempel vill utesluta alla användare i domänen example.com anger du &amp;ast;.example.com.
 
-**Inkludering:** Ange e-postadressen till en användare eller grupp som ska inkluderas. Om du vill inkludera flera användare eller grupper skriver du varje e-postadress på en ny rad. Om du vill inkludera alla användare som tillhör en viss domän anger du ett jokertecken och domännamnet. Om du till exempel vill ta med alla användare i domänen example.com anger du &ast;.example.com.
+**Inkludering:** Ange e-postadressen till en användare eller grupp som ska inkluderas. Om du vill inkludera flera användare eller grupper skriver du varje e-postadress på en ny rad. Om du vill inkludera alla användare som tillhör en viss domän anger du ett jokertecken och domännamnet. Om du till exempel vill ta med alla användare i domänen example.com anger du &amp;ast;.example.com.
 
 ### Parametrar för server- och registreringskonton {#server-and-registration-account-parameters}
 
@@ -953,7 +953,7 @@ I det här exemplet nekas alla begäranden från en Microsoft PowerPoint 2007- e
 
 Som standard kan du ange högst fem element i en vattenstämpel. Dessutom är den maximala filstorleken för PDF-dokumentet som du vill använda som vattenstämpel begränsad till 100 kB. Du kan ändra de här parametrarna i filen config.xml.
 
-***Obs!**&#x200B;Du bör ändra de här parametrarna med försiktighet.*
+***Obs!**Du bör ändra de här parametrarna med försiktighet.*
 
 1. Exportera konfigurationsfilen för dokumentsäkerhet. (Se [Redigera konfigurationsfilen för dokumentsäkerhet manuellt](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Öppna konfigurationsfilen i en redigerare och leta upp noden `ServerSettings`.

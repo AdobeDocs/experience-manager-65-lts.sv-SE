@@ -5,25 +5,25 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: e91f40d1af626b3aa42c9ddb8381d73ef9a69273
 workflow-type: tm+mt
-source-wordcount: '4139'
+source-wordcount: '4200'
 ht-degree: 0%
 
 ---
 
 # Generera arkivdokument för adaptiva formulär eller adaptiva formulärfragment {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
+<span class="preview"> Adobe rekommenderar att du använder den moderna och utbyggbara datainhämtningen [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) för [att skapa en ny adaptiv Forms](/help/forms/using/create-an-adaptive-form-core-components.md) eller [att lägga till Adaptiv Forms på AEM Sites-sidor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). De här komponenterna utgör ett betydande framsteg när det gäller att skapa adaptiva Forms-filer, vilket ger imponerande användarupplevelser. I den här artikeln beskrivs det äldre sättet att skapa Adaptiv Forms med baskomponenter. </span>
 
 ## Gäller för {#applies-to}
 
 Den här dokumentationen gäller **AEM 6.5 LTS Forms**.
 
-Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=sv-SE).
+Mer information om AEM as a Cloud Service finns i [AEM Forms på Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
 
 
-## Översikt {#overview}
+## Ökning {#overview}
 
 Efter att ha skickat in ett formulär vill era kunder vanligtvis registrera, i utskrift eller i dokumentformat, den information de har fyllt i formuläret för framtida referens. Detta kallas för ett urkunder.
 
@@ -392,7 +392,7 @@ Dokumentet med postinställningar för en komponent är tillgängligt under dess
    * **[!UICONTROL Place]** > **[!UICONTROL On Page]** > Namn på mallsida: Placerar panelen på den angivna sidan. Om en sidbrytning inte infogas automatiskt lägger [!DNL AEM Forms] till en sidbrytning.
    * **[!UICONTROL Place]** > **[!UICONTROL Top of Next Page]**: Placerar panelen överst på nästa sida. Om en sidbrytning inte infogas automatiskt lägger [!DNL AEM Forms] till en sidbrytning.
    * **[!UICONTROL Place]** > **[!UICONTROL Top of Page]** > Namn på mallsida: Placerar panelen överst på sidan när den angivna sidan återges. Om en sidbrytning inte infogas automatiskt lägger [!DNL AEM Forms] till en sidbrytning.
-* **[!UICONTROL Pagination]** > **[!UICONTROL After]**: Avgör vilket område som ska fyllas efter att en panel har placerats.Följande fält är tillgängliga i avsnittet **[!UICONTROL After]**:
+* **[!UICONTROL Pagination]** > **[!UICONTROL After]**: Avgör vilket område som ska fyllas när en panel har placerats.Följande fält är tillgängliga i avsnittet **[!UICONTROL After]**:
    * **[!UICONTROL After]** > **[!UICONTROL Continue Filling Parent]**: Fortsätter att sammanfoga data för alla återstående objekt så att de fylls i på den överordnade panelen.
    * **[!UICONTROL After]** > **[!UICONTROL Go to Next Content Area]**: Börjar fylla nästa innehållsområde efter att panelen har placerats.
    * **[!UICONTROL After]** > **[!UICONTROL Go To Content Area]** > Innehållsområdets namn: Börjar fylla det angivna innehållsområdet efter att panelen har monterats.
@@ -519,12 +519,14 @@ En XCI-fil hjälper dig att ange olika egenskaper för ett dokument. <!-- Forms 
   1. Add the custom XCI file to your development project.
   1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
   1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
-  
 -->
 
 ### Använd en anpassad XCI-fil i den lokala Forms-utvecklingsmiljön
 
 1. Överför XCI-filen till den lokala utvecklingsmiljön.
-1. Öppna konfigurationshanteraren för <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Öppna konfigurationshanteraren för <!--Cloud Service SDK-->.
+
+   <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+
 1. Leta reda på och öppna **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]**-konfigurationen.
 1. Ange sökvägen till XCI-filen och klicka på **[!UICONTROL Save]**.

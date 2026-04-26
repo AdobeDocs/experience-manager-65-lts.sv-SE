@@ -8,9 +8,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3345'
+source-wordcount: '3508'
 ht-degree: 0%
 
 ---
@@ -246,7 +246,7 @@ Du kan använda konfigurationsfilen med alternativen nedan.
 | uploadThreads | Antalet överföringstrådar som används för asynkrona överföringar. | 10 | Nej. |
 | writeThreads | Antalet samtidiga trådar som används för att skriva via S3 Transfer Manager. | 10 | Nej. |
 
-<!---
+<!--
 ### Bucket region options {#bucket-region-options}
 
 <table>
@@ -400,9 +400,9 @@ Följande steg krävs för att konfigurera en binär replikering med S3:
 
 ## Azure Data Store {#azure-data-store}
 
-AEM kan konfigureras för att lagra data i Microsoft® Azure-lagringstjänst. Det använder `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config`-PID:t för konfiguration.
+AEM kan konfigureras för att lagra data i Microsoft® Azure lagringstjänst. Det använder `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config`-PID:t för konfiguration.
 
-Om du vill aktivera Azure-datalagrets funktioner måste ett funktionspaket som innehåller Azure Connector hämtas och installeras. Gå till [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) och hämta den senaste versionen från 1.9.x-versionerna av funktionspaketet (till exempel com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
+Om du vill aktivera Azure datalagringsfunktioner måste du hämta och installera ett funktionspaket som innehåller Azure Connector. Gå till [Programvarudistribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) och hämta den senaste versionen från 1.9.x-versionerna av funktionspaketet (till exempel com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
 
 >[!NOTE]
 >
@@ -412,7 +412,7 @@ Om du vill aktivera Azure-datalagrets funktioner måste ett funktionspaket som i
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
 ```
 
-När du har hämtat den kan du installera och konfigurera Azure-anslutningen på följande sätt:
+När du har laddat ned den kan du installera och konfigurera Azure Connector på följande sätt:
 
 1. Extrahera innehållet i ZIP-filen för funktionspaketet till en tillfällig mapp.
 
@@ -439,7 +439,7 @@ Du kan använda konfigurationsfilen med följande alternativ:
 * accessKey=&quot;&quot;: Lagringskontots namn. Mer information om autentiseringsuppgifter för Microsoft® Azure finns i den [officiella dokumentationen](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretsKey=&quot;&quot;: Lagringsåtkomstnyckeln. Se till att tecknet &#39;=&#39; escape-konverteras som &#39;\=&#39;.
-* container=&quot;&quot;: Microsoft® Azure-blobbens lagringsbehållarnamn. Behållaren är en gruppering av en uppsättning blober. Mer information finns i den [officiella dokumentationen](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
+* container=&quot;&quot;: Microsoft® Azure-lagringsbehållarens namn. Behållaren är en gruppering av en uppsättning blober. Mer information finns i den [officiella dokumentationen](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers—Blobs—and-Metadata?redirectedfrom=MSDN).
 * maxConnections=&quot;&quot;: Det samtidiga antalet samtidiga begäranden per åtgärd. Standardvärdet är 1.
 * maxErrorRetry=&quot;&quot;: Antal försök per begäran. Standardvärdet är 3.
 * socketTimeout=&quot;&quot;&quot;: Tidsgränsen i millisekunder som används för begäran. Standardvärdet är 5 minuter.
@@ -472,7 +472,7 @@ Datalagrets skräpinsamlingsprocess används för att ta bort oanvända filer i 
 Du kan köra skräpinsamling för datalager genom att:
 
 1. Gå till JMX-konsolen på *https://&lt;serveradress:port>/system/console/jmx*
-1. Söker efter **RepositoryManagement.** När du har hittat Databashanterarens MBean klickar du på det för att visa tillgängliga alternativ.
+1. Söker efter **RepositoryManagement.** När du har hittat Repository Manager MBean klickar du på det för att visa tillgängliga alternativ.
 1. Bläddra till slutet av sidan och klicka på länken **startDataStoreGC(boolesk markOnly)** .
 1. I följande dialogruta anger du `false` för parametern `markOnly` och klickar sedan på **Anropa**:
 

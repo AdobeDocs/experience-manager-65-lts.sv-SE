@@ -1,6 +1,6 @@
 ---
-title: 'DB2&reg; databas: Kör en process varje vecka'
-description: Lär dig hur du kan förbättra prestandan i din AEM Forms DB2&reg;-databas.
+title: 'DB2&reg; databas: Köra en process varje vecka'
+description: Lär dig hur du kan förbättra prestandan för din AEM Forms DB2&reg;-databas.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e8cf9e73-345c-4dea-8361-b678c1a3cd1b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---

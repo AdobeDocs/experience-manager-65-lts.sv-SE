@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 80a4e5c0-d68f-4591-a43d-ab75b5f0764c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,10 @@ När en kund genererar ett stort antal PDF-filer via tjänster som implementerat
 
 `ALC-OUT-002-013: XMLFormFactory, PAexecute failure: "0: Out of Memory"`
 
-<!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
-Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
+<!--
+Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
+Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.
+-->
 
 Detta beror på att det maximala antalet sidor i en utskriftsbegäran är begränsat till ungefär 1 000 sidor i Windows. När en utskrift genereras måste mallen och data läsas in i minnet och den resulterande layouten byggs upp i minnet. Det innebär att det finns gränser för storleken på den slutliga utdatafilen. Processen som genererar utskriften är en 32-bitarsåtgärd, vilket innebär att den är begränsad till 2 GB RAM i Windows <!--and 4 GB on UNIX-->.
 

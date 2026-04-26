@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 01fa9744-775e-4185-aba5-e132011b1b89
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5387'
+source-wordcount: '5533'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Den här artikeln innehåller de senaste funktionerna i regelredigeraren i adapt
 
 Regelredigeraren gör det lättare för formuläranvändare och utvecklare att skriva regler på adaptiva formulärobjekt. Dessa regler definierar åtgärder som ska utlösas av formulärobjekt baserat på förinställda villkor, användarindata och användaråtgärder i formuläret. Det effektiviserar formulärifyllningen ytterligare och ger större precision och snabbhet.
 
-Regelredigeraren har ett intuitivt och förenklat användargränssnitt för att skriva regler. Regelredigeraren erbjuder en visuell redigerare för alla användare.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Några av de nyckelåtgärder du utför på adaptiva formulärobjekt med hjälp av regler är:
+Regelredigeraren har ett intuitivt och förenklat användargränssnitt för att skriva regler. Regelredigeraren erbjuder en visuell redigerare för alla användare.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Några av de viktigaste åtgärderna som du utför på adaptiva formulärobjekt med hjälp av regler är:
 
 * Visa eller dölja ett objekt
 * Aktivera eller inaktivera ett objekt
@@ -45,9 +45,9 @@ En regel följer vanligtvis någon av följande konstruktioner:
 
 **Condition-Action** I den här konstruktionen definierar en regel först ett villkor följt av en åtgärd som ska utlösas. Konstruktionen är jämförbar med `if-then statement` i programmeringsspråken.
 
-I regelredigeraren **framtvingar regeltypen When** condition-action konstruktionen.
+Regeltypen **När** används i regelredigeraren för att framtvinga konstruktorn för villkorsåtgärd.
 
-**Action-Condition** I den här konstruktionen definierar en regel först en åtgärd som ska utlösas följt av villkor för utvärdering. En annan variant av den här konstruktionen är action-condition-alternate action, som också definierar en alternativ åtgärd som ska utlösas om villkoret returnerar False.
+**Åtgärdsvillkor** I den här konstruktionen definierar en regel först en åtgärd som ska utlösas följt av villkor för utvärdering. En annan variant av den här konstruktionen är action-condition-alternate action, som också definierar en alternativ åtgärd som ska utlösas om villkoret returnerar False.
 
 Regeltyperna Visa, Dölj, Aktivera, Inaktivera, Ange värde för och Validera i regelredigeraren framtvingar regelkonstruktionen `action-condition`. Som standard är den alternativa åtgärden för Visa Dölj och Aktivera Inaktivera, och tvärtom. Du kan inte ändra den alternativa standardåtgärden.
 
@@ -95,7 +95,8 @@ Regelredigeraren innehåller följande logiska operatorer och händelser som du 
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
 * **Step Completion(event):** Returns true when a step of a rule completes.
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
-* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model.
+-->
 
 ## Tillgängliga regeltyper i regelredigeraren {#available-rule-types-in-rule-editor}
 
@@ -132,7 +133,7 @@ En lista har till exempel fyra alternativ: Röd, Blå, Grön och Gul. När regel
 
 När du skriver en When-regel kan du utlösa åtgärden Clear Value Of. `Clear Value Of`-åtgärden rensar värdet för det angivna objektet. Om du har `Clear Value of` som ett alternativ i When-satsen kan du skapa komplexa villkor med flera fält. Du kan lägga till Else-satsen för att lägga till ytterligare villkor.
 
-![Rensa värdet för &#x200B;](assets/clearvalueof.png)
+![Rensa värdet för ](assets/clearvalueof.png)
 
 >[!NOTE]
 >
@@ -165,8 +166,8 @@ _
 
 ##### Att tänka på när du använder Tillåtna flera fält i villkorsfunktionen
 
-* Se till att kärnkomponenten och specifikationsversionen är inställd på [den senaste versionen](https://github.com/adobe/aem-core-forms-components/tree/release/650) för att använda den här funktionen i regelredigeraren.
-* Om regler tillämpas på olika fält i When-villkoret utlöses regeln även om bara ett av dessa fält ändras.
+* Kontrollera att kärnkomponenten och specifikationsversionen för [är inställd på den senaste versionen ](https://github.com/adobe/aem-core-forms-components/tree/release/650) för att använda den här funktionen i regelredigeraren.
+* Om regler tillämpas på olika fält i villkoret När utlöses regeln även om endast ett av dessa fält ändras.
 
 
 <!--
@@ -184,7 +185,8 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 1. Add the **key** and **value** pair as follows:
    * key: fd:changeEventBehaviour
    * value: deps
-1. Click **[!UICONTROL Done]**. -->
+1. Click **[!UICONTROL Done]**.
+-->
 
 Om det uppstår problem i de tillåtna fälten i villkorsfunktionen följer du felsökningsstegen enligt följande:
 
@@ -256,7 +258,8 @@ I följande bild visas ett exempel på hur du aktiverar kryssrutan dynamiskt bas
 
 **[!UICONTROL Function Output]** definierar en regel baserat på fördefinierade funktioner eller anpassade funktioner.
 
-**[!UICONTROL Navigate to]** Navigerar till annan <!--Interactive Communications,--> Adaptiv Forms, andra resurser som bilder eller dokumentfragment eller en extern URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navigate to]** Navigerar till annan <!--Interactive Communications,--> Adaptiv Forms, andra resurser som bilder eller dokumentfragment eller en extern URL.
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 **[!UICONTROL Dispatch Event]** utlöser specifika åtgärder eller beteenden baserat på fördefinierade villkor eller händelser.
 
@@ -277,19 +280,19 @@ Ange värdet för objekt A till:
 
 När (valfritt):
 
-(Villkor 1 OCH Villkor 2 OCH Villkor 3) är SANT;
+(Villkor 1 OCH villkor 2 OCH villkor 3) är SANT.
 
-I följande exempel väljs värdet `Question2` för as `True` och värdet för as `Result` `correct`.
+I följande exempel väljs värdet för `Question2` som `True` och värdet för `Result` anges som `correct`.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-Exempel på regel för att ange värde med hjälp av tjänsten Form Data Model.
+Exempel på Set Value-regel med tjänsten Form Data Model.
 
 ### [!UICONTROL Show] {#show}
 
-Med hjälp av **[!UICONTROL Show]** regeltypen kan du skriva en regel för att visa eller dölja ett formulärobjekt baserat på om ett villkor är uppfyllt eller inte. Regeltypen Visa utlöser också åtgärden Dölj om villkoret inte uppfylls eller returneras `False`.
+Med regeltypen **[!UICONTROL Show]** kan du skriva en regel som visar eller döljer ett formulärobjekt baserat på om ett villkor är uppfyllt eller inte. Regeltypen Visa utlöser även åtgärden Dölj om villkoret inte uppfylls eller returnerar `False`.
 
-En typisk Show-regel är strukturerad på följande sätt:
+En vanlig Visa-regel är strukturerad på följande sätt:
 
 `Show Object A;`
 
@@ -385,7 +388,8 @@ To define a rule based on a form data model:
 1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
 1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM set options](assets/fdm_set_options_new.png) -->
+![FDM set options](assets/fdm_set_options_new.png)
+-->
 
 ## Förstå användargränssnittet för regelredigeraren {#understanding-the-rule-editor-user-interface}
 
@@ -471,9 +475,9 @@ Låt oss förstå hur du skapar en regel i den visuella redigeraren med hjälp a
 
 ![Create-rule-example](assets/create-rule-example.png)
 
-Avsnittet Lånekrav i exempelformuläret för låneansökan kräver att sökande anger sitt civilstånd, lön och, om de är gifta, sin makes lön. Baserat på användarindata beräknar regeln låneberättigandebeloppet och visas i fältet Låneberättigande. Använd följande regler för att implementera scenariot:
+I avsnittet Krav för lån i exempelformuläret för låneansökan måste de sökande ange sin äktenskapsstatus, lön och, om de är gifta, sin makas lön. Baserat på användarens indata beräknar regeln beloppet för rätt till lån och visas i fältet Låneberättigande. Använd följande regler för att implementera scenariot:
 
-* Fältet Makes/makas lön visas endast när civilståndet är Gift.
+* Fältet för makens lön visas endast när äktenskapsstatus är gift.
 * Låneberättigandebeloppet är 50 % av den totala lönen.
 
 Så här skriver du regler:
@@ -492,9 +496,11 @@ Så här skriver du regler:
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-<!--  In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+<!--
+In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
-   ![Radio button values from rule editor](assets/radio-button-values.png)-->
+   ![Radio button values from rule editor](assets/radio-button-values.png)
+-->
 
 1. I fältet **[!UICONTROL Enter a String]** i regeln väljer du **Gift** i listrutan.
 
@@ -532,7 +538,8 @@ Så här skriver du regler:
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+-->
 
 >[!NOTE]
 >
@@ -586,11 +593,11 @@ Så här skriver du regler:
 
    * Välj **[!UICONTROL is equal to]** i fältet **[!UICONTROL Select Operator]**.
 
-   * Välj Sträng i det andra **[!UICONTROL Drop object or select here]** fältet och ange **[!UICONTROL Married]** i fältet **[!UICONTROL Enter a String]** .
+   * Välj String i det andra **[!UICONTROL Drop object or select here]**-fältet och ange **[!UICONTROL Married]** i **[!UICONTROL Enter a String]**-fältet.
 
-   Regeln visas slutligen på följande sätt i regelredigeraren.  ![skriva- regler- visuell- redigerare-16](assets/write-rules-visual-editor-16-cc.png)
+   Regeln visas slutligen så här i regelredigeraren.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
-1. Välj **[!UICONTROL Done]**. Det sparar regeln.
+1. Välj **[!UICONTROL Done]**. Den sparar regeln.
 
 1. Upprepa steg 7 till 14 för att definiera en annan regel som beräknar låneberättigandet om civilstånd är enkel. Regeln visas så här i regelredigeraren.
 
@@ -605,11 +612,12 @@ Du kan skriva en kombinerad regel för att kontrollera synligheten för fältet 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
 
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/se/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -711,7 +719,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=sv-SE#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -878,19 +886,21 @@ När det ifyllda datumet infaller tidigare än det aktuella datumet visas textme
 
 Med regelredigeraren kan du skapa villkor som jämför två tal.
 
-Följande är ett exempelvillkor som visar ett statiskt textobjekt om antalet månader som en sökande stannar på den aktuella adressen är mindre än 36.
+Följande är ett exempelvillkor som visar ett statiskt textobjekt om antalet månader en sökande stannar på den aktuella adressen är mindre än 36.
 
-![Villkor för jämförelse av tal](assets/numbercomparisoncondition.png)
+![Villkor för nummerjämförelse](assets/numbercomparisoncondition.png)
 
-När användaren anger att han eller hon har bott på den nuvarande bostadsadressen i mindre än 36 månader visas ett meddelande i formuläret om att fler bevis på hemvist kan begäras.
+När användaren anger att han/hon bor på den aktuella bostadsadressen i mindre än 36 månader visas ett meddelande i formuläret om att det går att begära fler bosättningsbevis.
 
 ![Fler bevis har begärts](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ## Exempelregler {#example}
 
@@ -922,11 +932,13 @@ Regel i den visuella redigeraren
 
 I exempelregeln är programsatsen i avsnittet När villkoret, som när returnerar True, utför de åtgärder som anges i avsnittet Sedan.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Använda ett funktionsutdata i en regel {#using-a-function-output-in-a-rule}
 
@@ -946,21 +958,25 @@ Nu vill du lägga till angivna kvantiteter i kolumnen Produktkvantitet för alla
 
 Regel i den visuella redigeraren
 
-<!-- he rule appears as follows in the code editor.
+<!--
+he rule appears as follows in the code editor.
 
 ![example-function-output-code](assets/example-function-output-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Validera ett fältvärde med uttryck {#validating-a-field-value-using-expression}
 
 I inköpsorderformuläret som förklaras i föregående exempel vill du hindra användare från att beställa mer än en kvantitet av en produkt till ett pris som överstiger 10000. Du kan skriva en valideringsregel enligt nedan.
 
-![Exempel-validate](assets/example-validate.png)
+![Exempelvalidera](assets/example-validate.png)
 Regel i den visuella redigeraren
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->

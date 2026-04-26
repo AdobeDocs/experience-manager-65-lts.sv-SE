@@ -1,5 +1,5 @@
 ---
-title: Assembler Service Java&trade; API QuickStart(SOAP)
+title: Assembler Service Java&trade; API QuickStart (SOAP)
 description: Lär dig hur du sammanställer, demonterar och dynamiskt skapar ett PDF-dokument med Assembler Service Java&trade; API QuickStart (SOAP).
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: e56b22b9-3f4f-46d1-9885-a7e58b47f42d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ I följande Java-kodexempel sammanfogas två PDF-källdokument med namnen *map.p
 
 ## Snabbstart (SOAP-läge): Dela upp ett PDF-dokument med Java API {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-I följande Java-kodexempel demonteras ett PDF-dokument med namnet *AssemblerResultPDF.pdf*. Observera att namnet på DDX-dokumentet är *shell_disassemble.xml*. Varje upplöst PDF-dokument har namnet `ResultPDF[Number].pdf`. Det vill säga, det första upplösta PDF-dokumentet heter *ResultPDF1.pdf.* Mer information om DDX-dokumentet *shell_disassemble.xml* som används i det här kodexemplet finns i [Programmatisk disassembling PDF-dokument](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
+I följande Java-kodexempel demonteras ett PDF-dokument med namnet *AssemblerResultPDF.pdf*. Observera att namnet på DDX-dokumentet är *shell_disassemble.xml*. Varje upplöst PDF-dokument har namnet `ResultPDF[Number].pdf`. Det vill säga, det första omonterade PDF-dokumentet heter *ResultPDF1.pdf.* Mer information om DDX-dokumentet *shell_disassemble.xml* som används i det här kodexemplet finns i [Dela upp PDF-dokument programmatiskt](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 ```java
  /*

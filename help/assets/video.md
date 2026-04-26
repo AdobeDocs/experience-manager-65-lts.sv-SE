@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10332'
-ht-degree: 1%
+source-wordcount: '10652'
+ht-degree: 0%
 
 ---
 
@@ -140,7 +140,7 @@ Följande stöds för hantering av enstaka video och adaptiva videouppsättninga
 * Ordna, bläddra bland och sök videoklipp med fullt stöd för metadata för effektiv hantering av videomaterial.
 * Leverera adaptiva videouppsättningar till webben, datorer och mobila enheter som iPhone, iPad, Android™, BlackBerry® och Windows Phone.
 
-Adaptiv videoströmning stöds på olika iOS-plattformar. Se [Referenshandbok för dynamiska mediavisare](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
+Adaptiv videoströmning stöds på olika iOS-plattformar. Se [Referenshandbok för dynamiska mediavisare](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 Dynamic Media har stöd för videouppspelning i mobiler för MP4 H.264-video. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -156,7 +156,7 @@ Du kan hitta Windows-enheter som stöder det här videoformatet på följande pl
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Se även [Visningsprogram för Experience Manager Assets och Dynamic Media Classic](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) och [Visningsprogram endast för Experience Manager-resurser](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Se även [Visningsprogram för Experience Manager Assets och Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) och [Visningsprogram endast för Experience Manager-resurser](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Bästa praxis: Använda videovisningsprogrammet för HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -174,7 +174,7 @@ Genom att kombinera följande i en enda spelare:
 
 Ni kan nå ut med ert multimediematerial till både dator- och mobilanvändare och få en smidig videoupplevelse.
 
-Se även [Om HTML5-visningsprogram](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Se även [Om HTML5-visningsprogram](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Uppspelning av video på stationära datorer och mobila enheter med videovisningsprogrammet för HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -277,11 +277,13 @@ I följande bild visas det övergripande arbetsflödet för redigering av videok
 
 Arbetsflödet **Dynamic Media Encode Video** kodar video om du har aktiverat Dynamic Media och konfigurerat videolmolntjänster. Det här arbetsflödet innehåller information om arbetsflödets processhistorik och fel. Om du har aktiverat Dynamic Media och konfigurerat videomolntjänster börjar arbetsflödet **[!UICONTROL Dynamic Media Encode Video]** automatiskt att gälla när du överför en video. (Om du inte använder Dynamic Media börjar arbetsflödet **[!UICONTROL DAM Update Asset]** gälla.)
 
-<!-- DEAD The following are best-practice tips for encoding source video files.
+<!--
+DEAD The following are best-practice tips for encoding source video files.
 
 For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
-* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
+-->
 
 ### Source videofiler {#source-video-files}
 
@@ -318,10 +320,10 @@ I följande tabell beskrivs hur formelresultaten översätts till vanliga altern
 
 | Formelresultat | Proportioner |
 |--- |--- |
-| 1,33 | 4:3 |
-| 0,75 | 3:4 |
-| 1,78 | 16:9 |
-| 0,56 | 9:16 |
+| 1.33 | 4:3 |
+| 0.75 | 3:4 |
+| 1.78 | 16:9 |
+| 0.56 | 9:16 |
 
 En video som till exempel är 1440 bredd × 1080 höjd har proportionerna 1440/1080 eller 1,33. I det här fallet väljer du en förinställning för videokodning med proportionerna 4:3 för att koda videofilen.
 
@@ -363,8 +365,8 @@ Upplösning och datahastighet är två sammankopplade faktorer som avgör videok
 
 | Upplösning | Pixlar per bildruta |
 |--- |--- |
-| 320 × 240 | 76 800 |
-| 640 × 480 | 307 200 |
+| 320 × 240 | 76,800 |
+| 640 × 480 | 307,200 |
 
 Filen 640 × 480 har fyra gånger fler pixlar per bildruta. För att uppnå samma datahastighet för dessa två exempelupplösningar använder du fyra gånger så hög komprimering på 640 × 480-filen, vilket kan minska videons kvalitet. En videodatahastighet på 250 kbit/s ger därför en högkvalitativ bild med upplösningen 320 × 240, men inte med upplösningen 640 × 480.
 
@@ -464,12 +466,12 @@ Ange start- och slutdatumintervallet som du vill ha videodata för och välj sed
 
 Om du använder ett visningsprogram som inte är installerat från Dynamic Media, eller om du har skapat en anpassad visningsförinställning baserad på ett videoredigeringsprogram som är klart att användas, krävs inga ytterligare steg för att visa videorapporter. Om du har skapat ett eget videovisningsprogram baserat på SDK-API:t för HTML5 Viewer ska du följa de här stegen för att se till att videovisningsprogrammet skickar spårningshändelser till videorapporter för dynamiska media.
 
-Använd [referenshandboken för Adobe Dynamic Media Viewer](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources) och [HTML5 Viewer SDK &#x200B;](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) för att skapa egna videovisningsprogram.
+Använd [referenshandboken för Adobe Dynamic Media Viewer](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) och [HTML5 Viewer SDK ](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) för att skapa egna videovisningsprogram.
 
 **Så här visar du videorapporter baserade på ett videovisningsprogram som du har skapat med Dynamic Media HTML5 Viewer SDK:**
 
 1. Navigera till alla publicerade videoresurser.
-1. I listrutan i det övre vänstra hörnet på resursens sida väljer du **[!UICONTROL Viewers]**.
+1. I den nedrullningsbara listan i det övre vänstra hörnet på resursens sida väljer du **[!UICONTROL Viewers]**.
 1. Välj en förinställning för visningsprogrammet och kopiera inbäddningskoden.
 1. I inbäddningskoden söker du efter raden med följande:
 
@@ -477,7 +479,7 @@ Använd [referenshandboken för Adobe Dynamic Media Viewer](https://experiencele
 
    Parametern `config2` aktiverar spårning i HTML5-visningsprogram. Det är också en företagsspecifik förinställning som innehåller konfigurationsinformationen för Videorapportering och för kundspecifika Adobe Analytics-konfigurationer.
 
-   Rätt värde för parametern config2 finns både i funktionen **[!UICONTROL Embed Code]** och i funktionen copy **[!UICONTROL URL]**. I URL:en från kommandot copy **[!UICONTROL URL]** är parametern som ska sökas efter `&config2=<value>`. Värdet är nästan alltid `companypreset`, men i vissa fall kan det också vara `companypreset-1`, `companypreset-2` osv.
+   Rätt värde för parametern config2 finns både i funktionen **[!UICONTROL Embed Code]** och i funktionen copy **[!UICONTROL URL]**. I URL:en från kommandot copy **[!UICONTROL URL]** är parametern som ska sökas efter `&config2=<value>`. Värdet är nästan alltid `companypreset`, men i vissa fall kan det också vara `companypreset-1`, `companypreset-2` o.s.v.
 
 1. Lägg till AppMeasurementBridge .jsp på visningsprogramsidan i din anpassade videovisningsprogramkod genom att göra följande:
 
@@ -585,7 +587,7 @@ Tillagda bildtexter och bildtexter stöds med formaten WebVTT och Adobe `.vtt`. 
 
      | Bildtextmetadata | Beskrivning |
      |--- |--- |
-     | Filnamn | Standardfilnamnet härleds från det ursprungliga filnamnet. Filnamnet kan bara ändras under överföring och kan inte ändras senare. Teckenkraven för filnamn är desamma som för AEM Assets.<br>Samma filnamn kan inte användas för ytterligare bildtextfiler och ljudspårsfiler. |
+     | Filnamn | Standardfilnamnet härleds från det ursprungliga filnamnet. Filnamnet kan bara ändras under överföring och kan inte ändras senare. Filnamnsteckenkraven är desamma som för AEM Assets.<br>Samma filnamn kan inte användas för ytterligare bildtextfiler och ljudspårsfiler. |
      | Språk | Välj språk för bildtexten. |
      | Typ | Välj den typ av bildtext som du använder.<br>**Underrubrik** - Bildtexten som visas med videon som översätter eller transkriberar dialogrutan.<br>**Bildtext** - Bildtexten innehåller bakgrundsljud, talardifferentiering och annan relevant information. Den innehåller även översättning eller transkription av dialogrutan. Alla dessa aspekter gör innehållet mer tillgängligt för personer som är döva eller hörda. |
      | Etikett | Den text som visas för bildtextens namn i popup-listan **[!UICONTROL Select audio or subtitle]** i mediespelaren. Etiketten är det som kunden ser och som motsvarar ett underrubrik- eller bildtextspår. Exempel: `English (CC)`. |
@@ -599,14 +601,14 @@ Tillagda bildtexter och bildtexter stöds med formaten WebVTT och Adobe `.vtt`. 
 
      | Metadata för ljudspår | Beskrivning |
      |--- |--- |
-     | Filnamn | Standardfilnamnet härleds från det ursprungliga filnamnet. Filnamnet kan bara ändras under överföring och kan inte ändras senare. Teckenkraven för filnamn är desamma som för AEM Assets.<br>Samma filnamn kan inte användas för ytterligare ljudspårfiler eller bildtextfiler. |
+     | Filnamn | Standardfilnamnet härleds från det ursprungliga filnamnet. Filnamnet kan bara ändras under överföring och kan inte ändras senare. Filnamnsteckenkraven är desamma som för AEM Assets.<br>Samma filnamn kan inte användas för ytterligare ljudspårsfiler eller bildtextfiler. |
      | Språk | Välj språk för ljudspåret. |
      | Typ | Välj vilken typ av ljudspår du använder.<br>**Original** - Ljudspåret som ursprungligen var kopplat till videon och representerades som `[Original]` i etiketten med språket `English` markerat som standard. **[!UICONTROL Label]** och **[!UICONTROL Language]** kan ändras i dialogrutan **[!UICONTROL Edit Audio Track]**, men standardvärdet är de ursprungliga värdena om den primära videon bearbetas om.<br>**Standard** - Ett tilläggsljudspår för ett annat språk än det ursprungliga språket.<br>**Ljudbeskrivning** - Ett ljudspår som även innehåller en beskrivande berättarröst för icke-verbala åtgärder och gester i videon, vilket gör innehållet mer tillgängligt för personer med nedsatt syn. |
      | Etikett | Den text som visas som ljudspårets namn i popup-listan **[!UICONTROL Select audio or subtitle]** i mediespelaren. Etiketten är det kunden ser och motsvarar ett ljudspår. Exempel: `English [Original]`. Etiketten för ljud som är kopplat till en video är som standard `[Original]`. |
 
      Om det behövs kan du ändra eller redigera metadata för ljudspåret senare. När videon publiceras återspeglas dessa uppgifter på offentliga URL:er i publicerade videor.
 
-1. Välj **[!UICONTROL Save & Close]** i den nedrullningsbara listan **[!UICONTROL Save]** i det övre högra hörnet på sidan. Filerna överförs och metadatabearbetningen börjar, vilket visas i kolumnen **Status** i gränssnittet.
+1. Välj **[!UICONTROL Save]** i den nedrullningsbara listan **[!UICONTROL Save & Close]** i det övre högra hörnet på sidan. Filerna överförs och metadatabearbetningen börjar, vilket visas i kolumnen **Status** i gränssnittet.
 
    >[!NOTE]
    >
@@ -687,7 +689,7 @@ Alla överförda ljudspårsfiler kan dock anges som standardljud som spelas upp 
 1. Välj fliken **[!UICONTROL Captions & Audio Tracks]** på sidan Egenskaper.
 1. Under rubriken **Ljudspår** väljer du den ljudspårsfil som du vill ange som videons standard.
 1. Välj **[!UICONTROL Set as default]**.
-Välj **i dialogrutan** Ange som standard **[!UICONTROL Replace]**.
+Välj **[!UICONTROL Replace]** i dialogrutan **Ange som standard**.
 
    ![Rubriken Ljudspår med namnet på den valda ljudspårsfilen och markerad&quot;Ange som standard&quot;-knapp.](assets-dm/msma-defaultaudiotrack2.png)*Anger standardljudspåret för en video.*
 
@@ -772,7 +774,7 @@ Det går inte att hämta det ursprungliga ljudspåret som har extraherats från 
    | Spara som | Använd standardfilnamnet som anges i textfältet Spara som eller ange ett eget namn. |
    | Skapa en separat mapp för varje resurs | Skapa en mapp för varje bildtextfil eller ljudspårsfil som du valde för hämtning. |
    | E-post | Använd ditt standardprogram för e-post för att skicka ZIP-filen till en angiven e-postadress. |
-   | Assets | Anger antalet filer som du hämtar och den sammanlagda storleken för alla markerade filer. Om du avmarkerar det här alternativet tonas knappen **[!UICONTROL Download]** ned (inaktiveras), vilket förhindrar att du hämtar någon fil. |
+   | Resurser | Anger antalet filer som du hämtar och den sammanlagda storleken för alla markerade filer. Om du avmarkerar det här alternativet tonas knappen **[!UICONTROL Download]** ned (inaktiveras), vilket förhindrar att du hämtar någon fil. |
 
 1. Välj **[!UICONTROL Download]**.
 1. Publicera videon. Se [Publicera resurser](publishing-dynamicmedia-assets.md).
@@ -796,7 +798,7 @@ Se även [Hjälpmedel i dynamiska media](/help/assets/accessibility-dm.md).
 
 Dynamic Media konverterar bildtextfiler till JSON-format (JavaScript Object Notation). Den här konverteringen innebär att du kan bädda in JSON-texten på en webbsida som en dold men fullständig utskrift av videon. Sökmotorerna kan sedan crawla och indexera innehållet så att videoklippen blir lättare att hitta och ge kunderna ytterligare information om videoinnehållet.
 
-Mer information om hur du använder JSON-funktionen i en URL finns i [Servera statiskt innehåll (inte bildinnehåll)](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
+Mer information om hur du använder JSON-funktionen i en URL finns i [Servera statiskt innehåll (inte bildinnehåll)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
 
 **Så här lägger du till undertexter i en video:**
 
@@ -804,28 +806,30 @@ Mer information om hur du använder JSON-funktionen i en URL finns i [Servera st
 
    Kontrollera att filen du skapar följer standarden WebVTT (Web Video Text Tracks). Bildtextens filnamnstillägg är `.vtt`. Du kan läsa mer om bildtextstandarden WebVTT.
 
-   Se [WebVTT: Textspår för webbvideo &#x200B;](https://w3c.github.io/webvtt/).
+   Se [WebVTT: Textspår för webbvideo ](https://w3c.github.io/webvtt/).
 
    Det finns många webbplatser som innehåller både kostnadsfria och premiumverktyg och tjänster som du kan använda för att skapa WebVTT-bildtexter/bildtextfiler utanför Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
-   <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   <!--
+[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
+Du får bäst resultat om du använder verktyget i Internet Explorer 9 eller senare, Google Chrome eller Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
+Klistra in den kopierade URL-adressen för videofilen i fältet **[!UICONTROL Enter URL of video file]** i verktyget och klicka sedan på **[!UICONTROL Load]**. Se [Hämta en URL för en resurs](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) för att hämta URL:en till själva videofilen som du sedan kan klistra in i **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome eller Safari kan sedan spela upp videon direkt.
+-->
 
-   Följ instruktionerna på skärmen för att skapa och spara WebVTT-filen. När du är klar kopierar du bildtextfilens innehåll och klistrar in det i en vanlig textredigerare och sparar det med filnamnstillägget `.vtt`.
+Följ instruktionerna på skärmen för att skapa och spara WebVTT-filen. När du är klar kopierar du bildtextfilens innehåll och klistrar in det i en vanlig textredigerare och sparar det med filnamnstillägget `.vtt`.
 
-   >[!NOTE]
-   >
-   >Om du vill ha globalt stöd för videobeskrivningar på flera språk kräver WebVTT-standarden att du skapar separata `.vtt`-filer och anropar varje språk som du vill ha stöd för.
+>[!NOTE]
+>
+>Om du vill ha globalt stöd för videobeskrivningar på flera språk kräver WebVTT-standarden att du skapar separata `.vtt`-filer och anropar varje språk som du vill ha stöd för.
 
-   Vanligtvis vill du ge bildtexten `.vtt` samma namn som videofilen och lägga till den med språkinställningen -EN, -FR eller -DE. Genom att göra det kan det hjälpa dig att automatisera genereringen av video-URL:er med ditt befintliga system för hantering av webbinnehåll.
+Vanligtvis vill du ge bildtexten `.vtt` samma namn som videofilen och lägga till den med språkinställningen -EN, -FR eller -DE. Genom att göra det kan det hjälpa dig att automatisera genereringen av video-URL:er med ditt befintliga system för hantering av webbinnehåll.
 
 1. Överför WebVTT-bildtextfilen till DAM i Experience Manager.
 1. Navigera till den *publicerade*-videoresurs som du vill associera med bildtextfilen som du överförde.
 
-   Kom ihåg att URL:er endast går att kopiera *efter* att du har *publicerat* resurserna.
+   Kom ihåg att URL-adresser endast är tillgängliga för kopiering av *efter* att du först *har publicerat* resurserna.
 
    Se [Publicera resurser](/help/assets/publishing-dynamicmedia-assets.md).
 
@@ -881,7 +885,7 @@ I exemplet ovan är `Chapter 1` referensidentifieraren och valfri. Referenstiden
 
 Eftersom du använder ett videovisningsprogram för HTML5 bör du kontrollera att den kapitelfil du skapar följer standarden WebVTT (Web Video Text Tracks). Kapitelfiltillägget är `.vtt`. Du kan läsa mer om bildtextstandarden WebVTT.
 
-Se [WebVTT: Textspår för webbvideo &#x200B;](https://w3c.github.io/webvtt/)
+Se [WebVTT: Textspår för webbvideo ](https://w3c.github.io/webvtt/)
 
 **Så här lägger du till kapitelnavigering:**
 
@@ -900,7 +904,7 @@ Se [WebVTT: Textspår för webbvideo &#x200B;](https://w3c.github.io/webvtt/)
        <td>För en popup-video som visar</td>
        <td>
        <ol>
-       <li>Navigera till den <i>publicerade </i>videoresurs som du vill associera med den överförda kapitelfilen. Kom ihåg att URL:er endast går att kopiera <i>efter</i> att du har <i>publicerat</i> resurserna. Se <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicera Assets.</a></li>
+       <li>Navigera till den <i>publicerade </i>videoresurs som du vill associera med den överförda kapitelfilen. Kom ihåg att URL-adresser endast är tillgängliga för kopiering av <i>efter</i> att du först <i>har publicerat</i> resurserna. Se <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicera Assets.</a></li>
        <li>Klicka på <strong>Visare</strong> i listrutan.</li>
        <li>Klicka på förinställningsnamnet för videovisningsprogrammet i den vänstra listen. En förhandsgranskning av videon öppnas på en separat sida.</li>
        <li>Klicka på <strong>URL</strong> längst ned i den vänstra listen.</li>
@@ -912,7 +916,7 @@ Se [WebVTT: Textspår för webbvideo &#x200B;](https://w3c.github.io/webvtt/)
        <td>Om du vill visa en inbäddad video kan du <br /> </td>
        <td>
        <ol>
-       <li>Navigera till den <i>publicerade </i>videoresurs som du vill associera med den överförda kapitelfilen. Kom ihåg att URL:er endast går att kopiera <i>efter</i> att du har <i>publicerat</i> resurserna. Se <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicera Assets.</a></li>
+       <li>Navigera till den <i>publicerade </i>videoresurs som du vill associera med den överförda kapitelfilen. Kom ihåg att URL-adresser endast är tillgängliga för kopiering av <i>efter</i> att du först <i>har publicerat</i> resurserna. Se <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicera Assets.</a></li>
        <li>Klicka på <strong>Visare</strong> i listrutan.</li>
        <li>Klicka på förinställningsnamnet för videovisningsprogrammet i den vänstra listen. En förhandsgranskning av videon öppnas på en separat sida.</li>
        <li>Klicka på <strong>Bädda in</strong> längst ned i den vänstra listen.</li>
@@ -977,16 +981,16 @@ Du kan välja mellan en av tio miniatyrbilder som har genererats automatiskt av 
 
 Baserat på den totala tiden för videon hämtar Dynamic Media tio (standard) miniatyrbilder. Systemet hämtar bilder med följande videointervall:
 
-* 1 %
-* 11 %
-* 21 %
-* 31 %
-* 41 %
-* 51 %
-* 61 %
-* 71 %
-* 81 %
-* 91 %
+* 1%
+* 11%
+* 21%
+* 31%
+* 41%
+* 51%
+* 61%
+* 71%
+* 81%
+* 91%
 
 De tio miniatyrbilderna finns kvar, vilket innebär att om du väljer en annan miniatyrbild senare behöver du inte återskapa serien. Du förhandsgranskar de tio miniatyrbilderna och väljer sedan den som du vill använda med videon. Om du vill ändra till standardinställningen kan du använda CRXDE Lite för att konfigurera det tidsintervall som miniatyrbilder genereras. Om du till exempel bara vill generera en serie med fyra miniatyrbilder med jämna mellanrum från videon kan du konfigurera intervalltiden till 24 %, 49 %, 74 % och 99 %.
 

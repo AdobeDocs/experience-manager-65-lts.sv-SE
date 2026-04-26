@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '5888'
+source-wordcount: '5951'
 ht-degree: 0%
 
 ---
@@ -54,35 +54,35 @@ Skapa eller redigera en filtypsinställning för att ange hur konverteringen av 
 
 1. Fyll i nödvändig information i dessa avsnitt:
 
-[Importera och exportera PDF Generator konfigurationsfiler](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+   [Importera och exportera PDF Generator konfigurationsfiler](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-[Exportinställningar för Adobe PDF (endast Windows)](#adobe-pdf-export-settings-windows-only)
+   [Exportinställningar för Adobe PDF (endast Windows)](#adobe-pdf-export-settings-windows-only)
 
-[Inställningar för HTML-till-PDF](#html-to-pdf-settings)
+   [Inställningar för HTML-till-PDF](#html-to-pdf-settings)
 
-[Inställningar för Flash-videor till PDF](#flash-videos-to-pdf-settings)
+   [Inställningar för Flash-videor till PDF](#flash-videos-to-pdf-settings)
 
-[Inställningar för XPS till PDF](#xps-to-pdf-settings)
+   [Inställningar för XPS till PDF](#xps-to-pdf-settings)
 
-[PDF optimeringsinställningar](/help/forms/using/admin-help/configuring-file-type-settings.md)
+   [PDF optimeringsinställningar](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
-[Microsoft Excel-inställningar (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
+   [Microsoft Excel-inställningar (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
 
-[Microsoft PowerPoint-inställningar (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
+   [Microsoft PowerPoint-inställningar (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
 
-[Microsoft Project-inställningar (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
+   [Microsoft Project-inställningar (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
 
-[Inställningar för Microsoft Word (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
+   [Inställningar för Microsoft Word (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-[Inställningar för Microsoft Visio (endast Windows)](#visio)
+   [Inställningar för Microsoft Visio (endast Windows)](#visio)
 
-[Inställningar för Microsoft Publisher (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
+   [Inställningar för Microsoft Publisher (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
-[AutoCAD-inställningar (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
+   [AutoCAD-inställningar (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
 
-[OpenOffice-inställningar](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
+   [OpenOffice-inställningar](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[Inställningar för andra program (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [Inställningar för andra program (endast Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    Om du vill gå till ett annat avsnitt klickar du på länken på webbsidan eller använder knapparna **[!UICONTROL Next]** eller **[!UICONTROL Previous]**.
 
@@ -267,7 +267,7 @@ Instruktioner om hur du använder den här inställningen finns i [Skapa eller r
 
    >[!NOTE]
    >
-   >*Om du använder det här alternativet i kombination med **Ångra inbäddning av vissa teckensnitt**&#x200B;frigörs fortfarande inbäddade teckensnitt i listan **Lägg till teckensnitt för att ångra inbäddning**.*
+   >*Om du använder det här alternativet i kombination med **Ångra inbäddning av vissa teckensnitt**frigörs fortfarande inbäddade teckensnitt i listan **Lägg till teckensnitt för att ångra inbäddning**.*
 
    >[!NOTE]
    >
@@ -319,7 +319,7 @@ Bevara övertryck: Blandar färgen i den genomskinliga teckningen med bakgrundsf
 
 I följande tabell visas vanliga typer av skrivare och deras upplösning mätt i dpi, deras standardrastertäthet mätt i linjer per tum (lpi) och en omsamplingsupplösning för bilder mätt i pixlar per tum (ppi). Om du till exempel skriver ut på en laserskrivare med 600 dpi anger du 170 som upplösning för omsampling av bilder.
 
-**Bilder** Välj Bilder om du vill ange komprimerings- och omsamplingsalternativ för färgbilder, gråskalebilder och monokroma bilder. Du kan experimentera med dessa alternativ för att hitta en lämplig balans mellan filstorlek och bildkvalitet. Upplösningen för färg- och gråskalebilder bör vara 1,5 till 2 gånger rastertätheten som filen skrivs ut med. Upplösningen för monokroma bilder bör vara densamma som för utdataenheten, men om du sparar en monokrom bild med en upplösning på över 1 500 dpi ökar filstorleken utan att bildkvaliteten förbättras nämnvärt. Bilder som ska förstoras, t.ex. kartor, kan kräva högre upplösningar.
+**Bilder** Välj Bilder om du vill ange komprimerings- och omsamplingsalternativ för färgbilder, gråskalebilder och monokroma bilder. Du kan experimentera med dessa alternativ för att hitta en lämplig balans mellan filstorlek och bildkvalitet.Upplösningsinställningen för färgbilder och gråskalebilder bör vara 1,5 till 2 gånger rastertätheten som filen ska skrivas ut på. Upplösningen för monokroma bilder bör vara densamma som för utdataenheten, men om du sparar en monokrom bild med en upplösning på över 1 500 dpi ökar filstorleken utan att bildkvaliteten förbättras nämnvärt. Bilder som ska förstoras, t.ex. kartor, kan kräva högre upplösningar.
 
 >[!NOTE]
 >
@@ -418,7 +418,7 @@ Dessa alternativ avgör hur Microsoft Excel-filer konverteras. Instruktioner om 
 
 **Filnamnstillägg**: Anger filnamnstilläggen för filtyper, avgränsade med kommatecken, som accepteras för det här programmet. Standardvärdet är `xls,xlsx`. Ta inte med en punkt före eller ett blanksteg mellan tilläggen.
 
-**Skapa PDF/A-1a-kompatibel fil**: Tvingar användning av inställningen PDF/A-1b:2005 RGB Adobe PDF.
+**Skapa PDF/A-1a-kompatibel fil**: Tvingar användning av RGB Adobe PDF-inställningen PDF/A-1b:2005.
 
 **Lägg till bokmärken i Adobe PDF**: Konverterar Excel-kalkylbladsnamn till bokmärken. Det här alternativet är markerat som standard.
 
@@ -472,7 +472,7 @@ Dessa alternativ avgör hur Microsoft PowerPoint-filer konverteras. Instruktione
 
 **[!UICONTROL Convert Hidden Slides To PDF Pages]**: Konverterar dolda bilder.
 
-**[!UICONTROL Create PDF/A-1a Compliant File]**: Tvingar användning av inställningen PDF/A-1b:2005 RGB Adobe PDF. Vissa PowerPoint-funktioner konverteras inte när du skapar en PDF-fil. Om en PowerPoint-övergång inte har en motsvarande övergång i Acrobat ersätts en liknande övergång. Om det finns flera animeringseffekter i samma bildruta används en effekt. Sidövergångar och insticksprogram för punkter konverteras.
+**[!UICONTROL Create PDF/A-1a Compliant File]**: Tvingar användning av inställningen PDF/A-1b:2005 i RGB Adobe PDF. Vissa PowerPoint-funktioner konverteras inte när du skapar en PDF-fil. Om en PowerPoint-övergång inte har en motsvarande övergång i Acrobat ersätts en liknande övergång. Om det finns flera animeringseffekter i samma bildruta används en effekt. Sidövergångar och insticksprogram för punkter konverteras.
 
 ## Microsoft Project-inställningar (endast Windows) {#microsoft-project-settings-windows-only}
 
@@ -482,7 +482,7 @@ De här alternativen avgör hur Microsoft Project-filer konverteras. Instruktion
 
 1. **[!UICONTROL Convert Document Information]**: Lägger till dokumentinformation från egenskapsdialogrutan för källfilen, inklusive rubrik, ämne, författare, nyckelord, hanterare, företag, kategori och kommentarer. Det här alternativet är markerat som standard.
 1. **[!UICONTROL Attach Source File To Adobe PDF]**: Lägger till källfilen i PDF-filen som en bifogad fil.
-1. **[!UICONTROL Create PDF/A-1a Compliant File]**: Tvingar användning av inställningen PDF/A-1b:2005 RGB Adobe PDF.
+1. **[!UICONTROL Create PDF/A-1a Compliant File]**: Tvingar användning av inställningen PDF/A-1b:2005 i RGB Adobe PDF.
 1. **[!UICONTROL Run Macros Automatically]**: Kör eventuella makron i Microsoft Project-dokumentet (t.ex. ett makro som infogar den aktuella tiden) innan du konverterar dokumentet.
 
 ## Inställningar för Microsoft Word (endast Windows) {#microsoft-word-settings-windows-only}
@@ -503,7 +503,7 @@ De här alternativen avgör hur Microsoft Word-filer konverteras. Instruktioner 
 
 **[!UICONTROL Enable Accessibility And Reflow With Tagged Adobe PDF]**: Bäddar in taggar i PDF-filen. Det här alternativet är markerat som standard.
 
-**[!UICONTROL Create PDF/A-1a Compliant File]**: Om du väljer det här alternativet används inställningen PDF/A-1b:2005 RGB Adobe PDF.
+**[!UICONTROL Create PDF/A-1a Compliant File]**: Om du väljer det här alternativet används RGB Adobe PDF-inställningen PDF/A-1b:2005.
 
 **[!UICONTROL Run Macros Automatically]**: Kör eventuella makron i Word-dokumentet (t.ex. ett makro som infogar den aktuella tiden) innan du konverterar dokumentet.
 

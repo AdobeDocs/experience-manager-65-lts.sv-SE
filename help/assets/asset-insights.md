@@ -7,10 +7,10 @@ feature: Asset Insights,Asset Reports
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6f6cb4fb-d9c7-4f44-b4ba-adcad74f3a59
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 3%
+source-wordcount: '760'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 Med funktionen Assets Insights kan du spåra användarbetyg och användningsstatistik för bilder som används på tredjepartswebbplatser, marknadsföringskampanjer och Adobe kreativa lösningar. Det hjälper till att få insikter om deras prestanda och popularitet.
@@ -27,7 +27,7 @@ Med funktionen Assets Insights kan du spåra användarbetyg och användningsstat
 
 För att [!DNL Assets] insikter ska kunna samla in användningsstatistik för bilder från en webbplats måste du inkludera inbäddningskoden för bilden i webbplatskoden.
 
-Om du vill att Assets Insights ska visa användningsstatistik för mediefiler måste du först konfigurera funktionen för att hämta rapportdata från Adobe Analytics. Mer information finns i [Konfigurera Assets Insights](/help/assets/configure-asset-insights.md). Om du vill använda den här funktionen i en lokal installation måste du köpa [!DNL Adobe Analytics] separat. Kunder på [!DNL Managed Services] får [!DNL Analytics] licens som paketerats med [!DNL Experience Manager]. Se [Managed Services produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Om du vill att Assets Insights ska visa användningsstatistik för mediefiler måste du först konfigurera funktionen för att hämta rapportdata från Adobe Analytics. Mer information finns i [Konfigurera Assets Insights](/help/assets/configure-asset-insights.md). Om du vill använda den här funktionen i en lokal installation måste du köpa [!DNL Adobe Analytics] separat. Kunder på [!DNL Managed Services] får [!DNL Analytics] licens som paketerats med [!DNL Experience Manager]. Se [Managed Services produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Du kan visa Assets Insights-poängen från metadatasidan.
    >
    >Eftersom Assets Insights-funktionen vanligtvis hämtar data från Adobe Analytics i lösningar med regelbundna intervall, kanske inte avsnittet Lösningar visar de senaste data. Den tidsperiod som data visas för beror på schemat för hämtningsåtgärden som Assets Insights kör för att hämta Analytics-data.
 
-1. Om du vill visa prestandastatistik för resursen grafiskt över en tidsperiod väljer du period i avsnittet **[!UICONTROL Performance Statistics]**. Detaljer, inklusive klick och visningar, visas som trendlinjer i ett diagram.
+1. Om du vill visa prestandastatistik för resursen grafiskt över en tidsperiod väljer du period i avsnittet **[!UICONTROL Performance Statistics]**. Detaljer, inklusive klickningar och intryckningar, visas som trendlinjer i ett diagram.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 

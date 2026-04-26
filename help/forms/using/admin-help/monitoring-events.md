@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cee9cce0-becd-4822-ac37-094d564f2289
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -61,14 +61,14 @@ Du kan söka efter händelser på sidan Händelser genom att använda en kombina
 **Användare:** Kan visa granskade händelser för sina policyskyddade dokument och för alla skyddade dokument som de tar emot och använder. Dessa sökalternativ är tillgängliga:
 
 **Händelser relaterade till
-Till mig:** Användare kan hitta händelser för alla principskyddade dokument som de har skapat eller tagit emot. Om en användare till exempel öppnar, visar eller skriver ut ett dokument som en annan person har skyddat, ser användaren bara dessa händelser för det dokumentet.
+till mig:** Användare kan hitta händelser för alla principskyddade dokument som de har skapat eller tagit emot. Om en användare till exempel öppnar, visar eller skriver ut ett dokument som en annan person har skyddat, ser användaren bara dessa händelser för det dokumentet.
 
 **Händelser som rör mina dokument:** Användare kan hitta alla händelser som är relaterade till deras egna policyskyddade dokument. Användarna ser händelser som genereras av alla som hanterar deras dokument.
 
 **Principuppsättningskoordinatorer:** Kan visa granskade händelser, inklusive dokument- och principhändelser, för dokument som skyddas av principer från sina principuppsättningar. Dessa alternativ är tillgängliga:
 
 **dokumenthändelser där
-Jag är koordinator för principuppsättningen:** Koordinatorer för principuppsättningar som har behörighet att visa händelser kan hitta händelser som är relaterade till dokument som skyddas av principer i deras principuppsättningar.
+Jag är koordinator för principuppsättningen:** Principuppsättningskoordinatorer som har behörighet att visa händelser kan hitta händelser som är relaterade till dokument som skyddas av principer från deras principuppsättningar.
 
 **Principhändelser där jag är koordinator för principuppsättning:** Koordinatorer för principuppsättningar som har behörighet att visa händelser kan hitta händelser som är relaterade till principer från sina principuppsättningar.
 

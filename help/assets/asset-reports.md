@@ -7,10 +7,10 @@ feature: Asset Reports,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 434a081a-f9e4-4a0d-8468-55b4ab5a6287
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 7%
+source-wordcount: '1105'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 Med resursrapportering kan du utvärdera verktyget för din [!DNL Adobe Experience Manager Assets]-distribution. Med [!DNL Assets] kan du generera olika rapporter för dina digitala resurser. Rapporterna innehåller användbar information om hur ditt system används, hur användarna interagerar med resurser och vilka resurser som hämtas och delas.
@@ -44,8 +44,8 @@ Så här skapar du rapporter:
 
 [!DNL Experience Manager Assets] genererar följande standardrapporter åt dig:
 
-* Överför
-* Ladda ned
+* Överföra
+* Ladda ner
 * Förfallotid
 * Ändring
 * Publicera
@@ -89,7 +89,7 @@ Så här skapar du rapporter:
 
    >[!NOTE]
    >
-   >Rapporten **[!UICONTROL Disk Usage]** innehåller inga fält för datumintervall eftersom den endast visar hur mycket diskutrymme som används.
+   >Rapporten **[!UICONTROL Disk Usage]** innehåller inte datumintervallfält eftersom den endast anger aktuell diskutrymmesanvändning.
 
    ![Sidan Information i rapporten Diskanvändning](assets/disk_usage_configuration.png)
 
@@ -97,7 +97,7 @@ Så här skapar du rapporter:
 
    ![Informationssidan i rapporten Filer](assets/files_report.png)
 
-   Rapporten **[!UICONTROL Link Share]** visar URL:er till resurser som delas med externa användare från [!DNL Assets]. Den innehåller e-post-ID:n för den användare som delat resurserna, e-post-ID:n för de användare som resurserna delas med, delningsdatum och utgångsdatum för länken. Det går inte att anpassa kolumnerna.
+   Rapporten **[!UICONTROL Link Share]** visar URL:er till resurser som delas med externa användare från [!DNL Assets]. Det innehåller e-post-ID för den användare som delade resurserna, e-post-ID för de användare som resurserna delas med, delningsdatum och förfallodatum för länken. Det går inte att anpassa kolumnerna.
 
    Rapporten **[!UICONTROL Link Share]** innehåller inga alternativ för undermappar och återgivningar eftersom den bara publicerar de delade URL:er som visas under `/var/dam/share`.
 
@@ -125,8 +125,8 @@ Så här skapar du rapporter:
 
 Du kan lägga till anpassade kolumner i följande rapporter om du vill visa mer data för dina anpassade krav:
 
-* Överför
-* Ladda ned
+* Överföra
+* Ladda ner
 * Förfallotid
 * Ändring
 * Publicera

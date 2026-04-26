@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 56603735-959e-4460-b642-bba63fa20c02
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ När du testar ett certifikat överför Hantering av användare certifikaten fö
 1. Klicka på Ny certifikatsmappning och välj det certifikatalias som konfigurerats i Pålitlighetslagerhantering i listan För utfärdare.
 1. Koppla ett av certifikatets attribut till en användares attribut. Du kan till exempel mappa certifikatets vanliga namn till användarens inloggnings-ID.
 
-   Om innehållet i attributet i certifikatet skiljer sig från innehållet i användarens attribut i databasen för användarhantering, kan du använda ett reguljärt Java-uttryck (regex) för att matcha de två attributen. Om de vanliga namnen på certifikaten till exempel är namn som *Alex Pink (autentisering)* och *Alex Pink (signering)* och det vanliga namnet i användarhanteringsdatabasen är *Alex Pink* använder du en regex för att extrahera den nödvändiga delen av certifikatattributet (i det här exemplet *Alex Pink* .) Det reguljära uttrycket som du anger måste överensstämma med Java ava regex-specifikation.
+   Om innehållet i attributet i certifikatet skiljer sig från innehållet i användarens attribut i databasen för användarhantering, kan du använda ett reguljärt Java-uttryck (regex) för att matcha de två attributen. Om de vanliga namnen på certifikaten till exempel är namn som *Alex Pink (Authentication)* och *Alex Pink (Signing)* och det vanliga namnet i användarhanteringsdatabasen är *Alex Pink* använder du en regex för att extrahera den nödvändiga delen av certifikatattributet (i det här exemplet *Alex Pink*). Det reguljära uttryck du anger måste följa Java regex-specifikationen.
 
    Du kan omforma uttrycket genom att ange gruppernas ordning i rutan Egen ordning. Den anpassade ordningen används med metoden `java.util.regex.Matcher.replaceAll()`. Beteendet som visas motsvarar metodens beteende, och indatasträngen (den anpassade ordningen) måste anges därefter.
 
@@ -62,7 +62,7 @@ När du testar ett certifikat överför Hantering av användare certifikaten fö
    Du kan använda följande tecken i regex:
 
    * . (valfritt tecken)
-   * &ast; (0 eller fler förekomster)
+   * &amp;ast; (0 eller fler förekomster)
    * () (ange gruppen inom parentes)
    * \ (används för att kringgå ett regex-tecken till ett vanligt tecken)
    * $n (används för att referera till den n:te gruppen)
@@ -71,21 +71,21 @@ När du testar ett certifikat överför Hantering av användare certifikaten fö
 
    * Extrahera &quot;Alex Pink&quot; från &quot;Alex Pink (Authentication)&quot;
 
-     **Regex:** (.&ast;) \(Authentication\)
+     **Regex:** (.&amp;ast;) \(Autentisering\)
 
    * Extrahera &quot;Alex Pink&quot; från &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Autentisering\) (.&amp;ast;)
 
    * Extrahera &quot;Rosa Alex&quot; från &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Autentisering\) (.&amp;ast;)
 
      Anpassad ordning: $2 $1 (returnera den andra gruppen, sammanfogad till den första gruppen, fångad med blankstegstecken)
 
    * Extrahera &quot;apink@sampleorg.com&quot; från &quot;smtp:apink@sampleorg.com&quot;
 
-     **Regex:** smtp:(.&ast;)
+     **Regex:** smtp:(.&amp;ast;)
 
    Mer information om hur du använder reguljära uttryck finns i [Java-självstudiekursen om reguljära uttryck](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

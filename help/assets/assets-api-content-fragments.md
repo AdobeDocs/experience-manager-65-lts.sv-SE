@@ -6,9 +6,9 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 ## Ökning {#overview}
@@ -49,7 +49,7 @@ Med API:t kan du använda Adobe Experience Manager som ett headless CMS (Content
 
 Exempelvis kräver Single Page Applications (SPA), ramverksbaserade eller anpassade, innehåll som tillhandahålls via HTTP API, ofta i JSON-format.
 
-[AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) innehåller ett mycket omfattande, flexibelt och anpassningsbart API som kan hantera nödvändiga läsåtgärder i detta syfte, och vars JSON-utdata kan anpassas, men de kräver AEM WCM-kunskaper (Web Content Management) för implementering eftersom de måste finnas på sidor som är baserade på dedikerade AEM-mallar. Alla SPA-utvecklingsorganisationer har inte direkt tillgång till sådan kunskap.
+[AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) innehåller ett mycket omfattande, flexibelt och anpassningsbart API som kan hantera nödvändiga läsåtgärder i detta syfte, och vars JSON-utdata kan anpassas, men de kräver AEM WCM-kunskaper (Web Content Management) för implementering eftersom de måste finnas på sidor som är baserade på dedikerade AEM-mallar. Alla SPA-utvecklingsorganisationer har inte direkt tillgång till sådan kunskap.
 
 Detta är när Assets REST API kan användas. Med det kan utvecklare komma åt resurser (till exempel bilder och innehållsfragment) direkt, utan att först behöva bädda in dem på en sida, och leverera innehållet i serialiserat JSON-format.
 
@@ -137,7 +137,7 @@ Detta innebär att efterföljande (`write`) begäranden inte kan kombineras till
    </td>
   </tr>
   <tr>
-   <td>Dokumentskydd</td>
+   <td>Säkerhet</td>
    <td><p>Flera alternativ är möjliga.</p> <p>OAuth föreslås; kan konfigureras separat från standardinställningen.</p> </td>
    <td>Använder AEM standardinställningar.</td>
   </tr>
@@ -154,7 +154,7 @@ Detta innebär att efterföljande (`write`) begäranden inte kan kombineras till
  </tbody>
 </table>
 
-### Dokumentskydd {#security}
+### Säkerhet {#security}
 
 Om Assets REST API används i en miljö utan särskilda autentiseringskrav måste AEM CORS-filter konfigureras korrekt.
 
@@ -162,8 +162,8 @@ Om Assets REST API används i en miljö utan särskilda autentiseringskrav måst
 >
 >Mer information finns i:
 >
->* [CORS/AEM förklarar](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=sv-SE)
->* [Video - Utveckla för CORS med AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=sv-SE)
+>* [CORS/AEM förklarar](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Video - Utveckla för CORS med AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 I miljöer med specifika autentiseringskrav rekommenderas OAuth.
@@ -220,7 +220,7 @@ Assets REST API ger åtkomst till egenskaperna för en mapp, till exempel dess n
 >
 >Beroende på resurstypen för de underordnade resurserna och mapparna kan listan med underordnade enheter redan innehålla den fullständiga uppsättningen egenskaper som definierar respektive underordnade enhet. Alternativt kan bara en reducerad uppsättning egenskaper visas för en enhet i den här listan över underordnade enheter.
 
-### Assets {#assets}
+### Resurser {#assets}
 
 Om en resurs begärs returnerar svaret dess metadata, till exempel titel, namn och annan information som definieras i respektive resursschema.
 
@@ -404,4 +404,4 @@ Här finns detaljerade API-referenser:
 Mer information finns i:
 
 * [Assets HTTP API-dokumentation](/help/assets/mac-api-assets.md)
-* [AEM Gem-session: OAuth](https://helpx.adobe.com/se/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem-session: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

@@ -1,6 +1,6 @@
 ---
-title: Forms-centrerade arbetsflöden på OSGi | Hantera användardata
-description: Forms-centrerade arbetsflöden på OSGi | Hantera användardata
+title: Forms-centrerade arbetsflöden i OSGi | Hantera användardata
+description: Forms-centrerade arbetsflöden i OSGi | Hantera användardata
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
@@ -9,14 +9,14 @@ feature: Adaptive Forms,AEM Forms on OSGi
 hide: true
 hidefromtoc: true
 exl-id: a817fa19-ae22-4c77-8a8e-6c4deed10d67
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
 
-# Forms-centrerade arbetsflöden på OSGi | Hantera användardata {#forms-centric-workflows-on-osgi-handling-user-data}
+# Forms-centrerade arbetsflöden i OSGi | Hantera användardata {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Med Forms-centrerade AEM-arbetsflöden kan ni automatisera Forms-centrerade affärsprocesser. Arbetsflöden består av en serie steg som körs i en ordning som anges i den associerade arbetsflödesmodellen. Varje steg utför en specifik åtgärd, till exempel att tilldela en uppgift till en användare eller skicka ett e-postmeddelande. Arbetsflöden kan samverka med resurser i databasen, användarkonton och tjänster. Därför kan arbetsflöden samordna komplicerade aktiviteter som berör någon aspekt av Experience Manager.
 
@@ -160,4 +160,4 @@ Du kan också använda API:er för att komma åt och ta bort noder och egenskape
 
 * [Så här programmässigt kommer du åt AEM JCR](/help/sites-developing/access-jcr.md)
 * [Tar bort noder och egenskaper](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [API-referens](https://helpx.adobe.com/se/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [API-referens](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: bda74b30-28c4-490f-86c3-9c6fce14d79d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2118'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ Kontrollera om ett PDF-dokument är PDF/A-kompatibelt med Java (Assembler Servic
 
 **Se även**
 
-[Snabbstart (SOAP-läge): Avgör om ett dokument är PDF/A-kompatibelt med Java API &#x200B;](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (SOAP-läge)
+[Snabbstart (SOAP-läge): Avgör om ett dokument är PDF/A-kompatibelt med Java API ](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (SOAP-läge)
 
 [Inkludera AEM Forms Java-biblioteksfiler](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

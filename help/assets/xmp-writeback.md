@@ -6,10 +6,10 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 5%
+source-wordcount: '730'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
 | AEM 6.5 LTS | Den här artikeln |
 
 Den här XMP-återskrivningsfunktionen i [!DNL Adobe Experience Manager Assets] replikerar metadataändringarna till återgivningarna av den ursprungliga resursen. När du ändrar metadata för en resurs i Assets eller när du överför resursen, lagras ändringarna först i metadatanoden i resurshierarkin.
@@ -52,16 +52,16 @@ Utför dessa steg för XMP Writeback-funktionen för att sprida metadata till å
 
 1. Navigera till **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** i Experience Manager-gränssnittet.
 1. Öppna arbetsflödesmodellen **[!UICONTROL DAM Metadata Writeback]** på sidan Modeller.
-1. På egenskapssidan för **[!UICONTROL DAM Metadata Writeback]** öppnar du steget **[!UICONTROL XMP Writeback Process]**.
-1. Klicka på fliken [!UICONTROL Step Properties] i dialogrutan **[!UICONTROL Process]**.
-1. Lägg till **i rutan** Argument`rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` och klicka på **[!UICONTROL OK]**.
+1. Öppna steget **[!UICONTROL XMP Writeback Process]** på egenskapssidan för **[!UICONTROL DAM Metadata Writeback]**.
+1. Klicka på fliken **[!UICONTROL Process]** i dialogrutan [!UICONTROL Step Properties].
+1. Lägg till `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` i rutan **Argument** och klicka på **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
 1. Spara ändringarna.
 1. Om du vill återskapa pyramidbaserade TIFF-återgivningar för [!DNL Dynamic Media]-bilder med de nya attributen lägger du till **[!UICONTROL Dynamic Media Process Image Assets]**-steget i arbetsflödet för [!UICONTROL DAM Metadata Writeback].
 
-   PTIFF-återgivningar skapas och lagras bara lokalt i en Dynamic Media-hybridimplementering.
+   PTIFF-renderingar skapas och lagras bara lokalt i en Dynamic Media Hybrid-implementering.
 
 1. Spara arbetsflödet.
 

@@ -1,6 +1,6 @@
 ---
 title: Hur anropar jag AEM Forms med API:er?
-description: Lär dig hur du anropar AEM Forms-tjänster med en Java&handel; API, webbtjänster, Remoting och REST.
+description: Lär dig hur du anropar AEM Forms-tjänster med en Java&trade; API, webbtjänster, Remoting och REST.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 8cf0c8ca-12ea-4094-97a6-1cf34042bc8a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---

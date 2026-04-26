@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 62d31b00-be95-4502-9e97-3ce563192de2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,17 @@ Insamling av systemstatistik som fyller i Health Monitor har viss inverkan på p
  </thead>
  <tbody>
   <tr>
-   <td><p>adobe.healthmonitor.enabled</p></td>
+   <td><p>adobe.hälsothmonitor.enabled</p></td>
    <td><p>Aktivera eller inaktivera hälsoövervakartråden</p></td>
    <td><p>true</p></td>
   </tr>
   <tr>
-   <td><p>adobe.cache.statistics-enabled</p></td>
+   <td><p>adobe.cache.Statistics-enabled</p></td>
    <td><p>Aktivera eller inaktivera Gemfire-cachelagring</p></td>
    <td><p>true</p></td>
   </tr>
   <tr>
-   <td><p>adobe.healthmonitor.refresh-interval</p></td>
+   <td><p>adobe.hälsothmonitor.refresh-interval</p></td>
    <td><p>Intervallet i millisekunder efter vilket hälsoövervakartråden samlar in statistiken</p></td>
    <td><p>10 minuter (600 000 millisekunder)</p></td>
   </tr>
@@ -57,7 +57,7 @@ Insamling av systemstatistik som fyller i Health Monitor har viss inverkan på p
    <td><p>600000</p></td>
   </tr>
   <tr>
-   <td><p>adobe.workmanager.healthmonitor.enabled</p></td>
+   <td><p>adobe.workmanager.healthMonitor.enabled</p></td>
    <td><p>Den här egenskapen aktiverar eller inaktiverar insamling av statistik för Work Manager, till exempel antalet jobb eller arbetsobjekt.</p></td>
    <td><p>true</p></td>
   </tr>

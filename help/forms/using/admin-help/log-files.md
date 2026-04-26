@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ff4dce07-725e-4750-9e95-4261b50580bd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Händelser som körnings- eller startfel registreras i programserverns loggfiler
 (JBoss) Följande loggfiler finns i katalogen `[appserver root]/server/'server'/log`:
 
 * boot.log
-* server.log.*[åååå-mm-dd]*
+* server.log.*[yyy-mm-dd]*
 * server.log
 
 (WebLogic) Domänloggfilerna finns i katalogen `[appserverdomain]` och serverloggfilerna finns i katalogen `[appserverdomain]/servers/[appserver name]/logs`:
@@ -36,6 +36,6 @@ Händelser som körnings- eller startfel registreras i programserverns loggfiler
 
 (WebSphere) Följande loggfiler finns i katalogen `[appserver root]/profiles/default/logs/[appserver name]`:
 
-* SystemErr.log
+* SystemError.log
 * SystemOut.log
 * StartServer.log

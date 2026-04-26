@@ -5,9 +5,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Mer information om användarhantering i AEM (inklusive tilldelning av åtkomstr�
 
 Dispatcher är Adobe Experience Manager verktyg för cachning, belastningsutjämning eller både och. Den kan användas med en webbserver i företagsklass.
 
-Mer information finns i [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=sv-SE), särskilt [Konfigurera Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE) för mer konfigurationsinformation.
+Mer information finns i [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html), särskilt [Konfigurera Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) för mer konfigurationsinformation.
 
 ### Konfigurera AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
@@ -202,9 +202,11 @@ Du kan konfigurera synliga länkar i [Konfigurera välkomstkonsolen](/help/sites
 
 Mer information finns i [Konfigurera för prestanda](/help/sites-deploying/configuring-performance.md#configuring-for-performance).
 
-<!--delete ### Scaling {#scaling}
+<!--
+delete ### Scaling {#scaling}
 
-Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).-->
+Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).
+-->
 
 ### Delat datalager {#shared-data-store}
 

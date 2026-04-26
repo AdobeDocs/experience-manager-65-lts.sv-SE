@@ -7,10 +7,10 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3425'
-ht-degree: 5%
+source-wordcount: '3469'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 Organisationer har en metadatamodell som förbättrar tillgångsidentifiering, användning, interoperabilitet och så vidare. Korrigera metadataprogram är akrossbart för att underhålla metadatadrivna arbetsflöden och processer. Om du vill följa en metadatastrategi och standarder för hela organisationen kan du använda metadatamodeller som hjälper DAM-användare att anpassa sig. Med [!DNL Adobe Experience Manager] kan du enkelt och flexibelt skapa, underhålla och använda metadatamodeller.
@@ -41,7 +41,7 @@ Så här visar och redigerar du egenskapssidan för en resurs:
 
 ## Metadata Schema-formulär {#default-metadata-schema-forms}
 
-Om du vill visa en lista med formulär eller mallar går du till [!DNL Experience Manager] > **[!UICONTROL Tools]** > **[!UICONTROL Assets]** i **[!UICONTROL Metadata Schemas]**-gränssnittet.
+Om du vill visa en lista med formulär eller mallar går du till **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** i [!DNL Experience Manager]-gränssnittet.
 
 [!DNL Experience Manager] innehåller följande formulärmallar för metadataschema.
 
@@ -115,9 +115,9 @@ Om du vill redigera egenskaperna för en metadatakomponent i formuläret klickar
 
 Nedan följer exempel på giltiga värden för en egenskap:
 
-* `./jcr:content/metadata/dc:title`: Lagrar värdet vid resursens metadatanod som egenskapen `dc:title`.
+* `./jcr:content/metadata/dc:title`: Lagrar värdet på resursens metadatanod som egenskapen `dc:title`.
 
-* `./jcr:created`: Lagrar datum och tid för när en resurs skapades. Det är en skyddad egenskap. Om du konfigurerar de här egenskaperna bör du markera dem som Inaktivera redigering. Annars inträffar felet ”Det gick inte att ändra resurserna” när du sparar resursens egenskaper.
+* `./jcr:created`: Lagrar datum och tid för när en resurs skapades. Det är en skyddad egenskap. Om du konfigurerar de här egenskaperna bör du markera dem som Inaktivera redigering. Annars inträffar felet&quot;Resurser kunde inte ändras&quot; när du sparar resursens egenskaper.
 
 För att komponenten ska visas korrekt i metadataschemaformuläret bör egenskapssökvägen inte innehålla några blanksteg.
 
@@ -135,13 +135,13 @@ För att komponenten ska visas korrekt i metadataschemaformuläret bör egenskap
 >
 >Komponenten [!UICONTROL Hidden Field] innehåller inte dessa attribut. I stället innehåller den egenskaper som till exempel attributnamn, värde, fältetikett och Beskrivning. Värdena för komponenten Dolt fält skickas som en POST-parameter när resursen sparas. Den sparas inte som metadata för resursen.
 
-Om du väljer alternativet **[!UICONTROL Required]** kan du söka efter resurser som saknar obligatoriska metadata. På panelen **[!UICONTROL Filters]** expanderar du predikatet **[!UICONTROL Metadata Validation]** och väljer alternativet **[!UICONTROL Invalid]**. Sökresultatet visar resurser som saknar obligatoriska metadata som du har konfigurerat via schemaformuläret.
+Om du väljer alternativet **[!UICONTROL Required]** kan du söka efter resurser som saknar obligatoriska metadata. Expandera predikatet **[!UICONTROL Metadata Validation]** på panelen **[!UICONTROL Filters]** och välj alternativet **[!UICONTROL Invalid]**. Sökresultaten visar resurser som saknar obligatoriska metadata som du har konfigurerat via schemaformuläret.
 
 ![Alternativ valt i metadataverifieringspredikatet på panelen Filter](assets/invalid-metadata-predicate.png)
 
 Om du lägger till komponenten Sammanhangsbaserade metadata på en flik i ett schemaformulär, visas komponenten som en lista på egenskapssidan med resurser som det aktuella schemat används på. Listan innehåller alla andra flikar förutom den flik som du tillämpade på komponenten Sammanhangsberoende metadata på. För närvarande innehåller den här funktionen grundläggande funktioner för att styra visningen av metadata baserat på sammanhanget.
 
-![Sammanhangsberoende metadatakomponentflikar för resursegenskaper &#x200B;](assets/metadata-contextual-component-list.png)
+![Sammanhangsberoende metadatakomponentflikar för resursegenskaper ](assets/metadata-contextual-component-list.png)
 
 Om du vill visa en flik på egenskapssidan förutom fliken där komponenten Sammanhangsberoende metadata används, väljer du fliken i listan. Fliken läggs till på egenskapssidan.
 
@@ -151,7 +151,7 @@ Om du vill visa en flik på egenskapssidan förutom fliken där komponenten Samm
 
 ### Ange egenskaper i JSON-filen {#specify-properties-in-json-file}
 
-I stället för att ange egenskaper för alternativen på fliken **[!UICONTROL Settings]** kan du definiera alternativen i en JSON-fil genom att ange motsvarande nyckelvärdespar. Ange sökvägen till JSON-filen i fältet **[!UICONTROL JSON Path]**.
+I stället för att ange egenskaper för alternativen på fliken **[!UICONTROL Settings]** kan du definiera alternativen i en JSON-fil genom att ange motsvarande nyckelvärdepar. Ange sökvägen till JSON-filen i fältet **[!UICONTROL JSON Path]**.
 
 #### Lägga till eller ta bort en flik i schemaformuläret {#adding-deleting-a-tab-in-the-schema-form}
 
@@ -232,8 +232,8 @@ Oavsett vilken resurstyp du väljer visas copyrightinformationen som ett obligat
 
    ![select_independentfield](assets/select_dependentfield.png)
 
-1. Under **[!UICONTROL Requirement]** väljer du alternativet **[!UICONTROL Required, based on new rule]**.
-1. Klicka på **[!UICONTROL Add Rule]** och välj fältet **[!UICONTROL Asset Type]** för att skapa ett beroende. Välj också det fältvärde som beroendet ska skapas utifrån. I det här fallet väljer du **[!UICONTROL Video]**. Klicka på **[!UICONTROL Done]** om du vill spara ändringarna.
+1. Välj alternativet **[!UICONTROL Required, based on new rule]** under **[!UICONTROL Requirement]**.
+1. Klicka på **[!UICONTROL Add Rule]** och välj fältet **[!UICONTROL Asset Type]** för att skapa ett beroende. Välj också det fältvärde som beroendet ska skapas utifrån. I så fall väljer du **[!UICONTROL Video]**. Klicka på **[!UICONTROL Done]** om du vill spara ändringarna.
 
    ![define_rule](assets/define_rule.png)
 
@@ -241,9 +241,9 @@ Oavsett vilken resurstyp du väljer visas copyrightinformationen som ett obligat
    >
    >Listruta med manuellt fördefinierade värden kan användas med regler. Listrutor med konfigurerad JSON-sökväg kan inte användas med regler som använder fördefinierade värden för att tillämpa villkor. Om värdena läses in från JSON vid körning går det inte att använda en fördefinierad regel.
 
-1. Under **[!UICONTROL Visibility]** väljer du alternativet **[!UICONTROL Visible, based on new rule]**.
+1. Välj alternativet **[!UICONTROL Visible, based on new rule]** under **[!UICONTROL Visibility]**.
 
-1. Klicka på **[!UICONTROL Add Rule]** och välj fältet **[!UICONTROL Asset Type]** för att skapa ett beroende. Välj också det fältvärde som beroendet ska skapas utifrån. I det här fallet väljer du **[!UICONTROL Video]**. Klicka på **[!UICONTROL Done]** om du vill spara ändringarna.
+1. Klicka på **[!UICONTROL Add Rule]** och välj fältet **[!UICONTROL Asset Type]** för att skapa ett beroende. Välj också det fältvärde som beroendet ska skapas utifrån. I så fall väljer du **[!UICONTROL Video]**. Klicka på **[!UICONTROL Done]** om du vill spara ändringarna.
 
    ![define_visibilityRule](assets/define_visibilityrule.png)
 
@@ -253,7 +253,7 @@ Oavsett vilken resurstyp du väljer visas copyrightinformationen som ett obligat
 
    >[!NOTE]
    >
-   >Du kan använda villkoren **[!UICONTROL Requirement]** och **[!UICONTROL Visibility]** oberoende av varandra.
+   >Du kan använda villkoret **[!UICONTROL Requirement]** och villkoret **[!UICONTROL Visibility]** oberoende av varandra.
 
 1. Du kan också skapa ett beroende mellan värdet Video i fältet Resurstyp och andra fält, till exempel Kodek och Varaktighet.
 1. Upprepa stegen för att skapa beroende mellan dokumentresurser (PDF och Word) i fältet [!UICONTROL Asset Type] och fält som [!UICONTROL Page Count] och [!UICONTROL Author].
@@ -286,7 +286,7 @@ Om du vill ta bort ett formulär markerar du det och klickar på Ta bort.
 
 ### Lägg till nya formulär för MIME-typer {#add-new-forms-for-mime-types}
 
-Skapa ett formulär under lämplig formulärtyp. Om du till exempel vill lägga till en mall för undertypen `image/png` skapar du formuläret under bildformulären. Schemaformulärets titel är undertypsnamnet. I det här fallet är titeln `png`.
+Skapa ett formulär under lämplig formulärtyp. Om du till exempel vill lägga till en mall för undertypen `image/png` skapar du formuläret under bildformulären. Schemaformulärets rubrik är undertypsnamnet. I det här fallet är titeln `png`.
 
 #### Använd en befintlig schemamall för olika MIME-typer {#use-an-existing-schema-template-for-various-mime-types}
 
@@ -329,10 +329,10 @@ Endast resurser som har överförts till den mapp som det här schemat används 
 
 Metadatarv av resurser baseras på det schema som tillämpas på den översta mappen i hierarkin. Samma schema tillämpas på eller ärvs av undermapparna. Om ett annat schema används på undermappsnivå avbryts arvet.
 
-1. Navigera till [!DNL Experience Manager] > **[!UICONTROL Tools]** > **[!UICONTROL Assets]** i gränssnittet **[!UICONTROL Metadata Schemas]**. Sidan **[!UICONTROL Metadata Schema Forms]** visas.
+1. Navigera till **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** i gränssnittet [!DNL Experience Manager]. Sidan **[!UICONTROL Metadata Schema Forms]** visas.
 1. Markera kryssrutan före ett formulär, till exempel standardformuläret för metadata, och klicka på **[!UICONTROL Copy]** och spara det som ett anpassat formulär. Ange ett anpassat namn för formuläret, till exempel `my_default`. Du kan också skapa ett eget formulär.
 
-1. Markera formuläret **[!UICONTROL Metadata Schema Forms]** på sidan `my_default` och klicka sedan på **[!UICONTROL Edit]**.
+1. Markera formuläret `my_default` på sidan **[!UICONTROL Metadata Schema Forms]** och klicka sedan på **[!UICONTROL Edit]**.
 
 1. Lägg till ett textfält i schemaformuläret på sidan **[!UICONTROL Metadata Schema Editor]**. Lägg till exempel till ett fält med etiketten **[!UICONTROL Category]**.
 
@@ -359,7 +359,7 @@ Du kan definiera obligatoriska fält på mappnivå, vilket tillämpas på resurs
 >
 >Ett metadatafält kan definieras som obligatoriskt baserat på värdet i ett annat fält. I kortvyn visar [!DNL Experience Manager] inte varningsmeddelandet om saknade metadata för sådana obligatoriska metadatafält.
 
-1. Navigera till [!DNL Experience Manager] > **[!UICONTROL Tools]** > **[!UICONTROL Assets]** i gränssnittet **[!UICONTROL Metadata Schemas]**. Sidan **[!UICONTROL Metadata Schema Forms]** visas.
+1. Navigera till **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** i gränssnittet [!DNL Experience Manager]. Sidan **[!UICONTROL Metadata Schema Forms]** visas.
 1. Spara standardformuläret för metadata som ett anpassat formulär. Spara det som `my_default`.
 
 1. Redigera det anpassade formuläret. Lägg till ett obligatoriskt fält. Lägg till exempel till ett **[!UICONTROL Category]**-fält och gör fältet obligatoriskt.
@@ -380,5 +380,6 @@ Du kan definiera obligatoriska fält på mappnivå, vilket tillämpas på resurs
    >
    >Valideringskontrollerna av metadata är resurskrävande och kan påverka systemets prestanda. Schemalägg kontrollerna därefter. Om servern inte kan hantera inläsningen provar du med att inaktivera det här jobbet.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

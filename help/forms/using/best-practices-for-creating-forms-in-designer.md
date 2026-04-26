@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0f9d0b66-d6e4-475a-8727-c1de1a1e1bb0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '11687'
+source-wordcount: '11719'
 ht-degree: 0%
 
 ---
@@ -511,8 +511,8 @@ Rekommendationer för färganvändning:
    * 2.2 Se till att kombinationer av förgrunds- och bakgrundsfärger ger tillräcklig kontrast när de visas av någon som har färgbrist eller när de visas på en svart och vit skärm. [Prioritet 2 för bilder, Prioritet 3 för text ] (P2).
 * WCAG 2.0
    * 1.4.1 Användning av Färg: Färg används inte som det enda visuella sättet att förmedla information, indikera en åtgärd, fråga ett svar eller särskilja ett visuellt element. (nivå A)
-   * 1.4.3 Kontrast (minimal): Den visuella presentationen av text och bilder av text har ett kontrastförhållande på minst 4,5:1, utom följande: (Nivå AA)
-   * 1.4.6 Kontrast (Förbättrat): Den visuella presentationen av text och bilder av text har ett kontrastförhållande på minst 7:1, utom följande: (Nivå AAA)
+   * 1.4.3 Kontrast (minimal): Den visuella presentationen av text och bilder av text har ett kontrastförhållande på minst 4,5:1, förutom följande: (nivå AA)
+   * 1.4.6 Kontrast (Förbättrat): Den visuella presentationen av text och bilder av text har ett kontrastförhållande på minst 7:1, förutom följande: (Nivå AAA)
 
 
 ## Ange rubrikceller för tabeller{#provide-heading-cells}

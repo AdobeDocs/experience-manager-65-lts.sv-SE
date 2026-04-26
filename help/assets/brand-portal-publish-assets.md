@@ -11,10 +11,10 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9eba1e3f-9251-445e-b791-2be0a92aebd1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 39%
+source-wordcount: '390'
+ht-degree: 0%
 
 ---
 
@@ -22,16 +22,16 @@ ht-degree: 39%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
-Som administratör för Adobe Experience Manager (AEM) Assets kan du publicera resurser och mappar i AEM Assets Brand Portal-instansen (eller schemalägga publiceringsarbetsflödet till ett senare datum/tid) för din organisation. Du måste dock först konfigurera AEM Assets med varumärkesportalen. Mer information finns i [Konfigurera AEM Assets med varumärkesportalen](/help/assets/configure-aem-assets-with-brand-portal.md).
+Som administratör för Adobe Experience Manager (AEM) Assets kan du publicera resurser och mappar i AEM Assets Brand Portal-instansen (eller schemalägga publiceringsarbetsflödet till ett senare datum/tid) för din organisation. Du måste dock först konfigurera AEM Assets med Brand Portal. Mer information finns i [Konfigurera AEM Assets med Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 När replikeringen är klar kan du publicera resurser, mappar och samlingar till Brand Portal. Så här publicerar du resurser på Brand Portal:
 
 >[!NOTE]
 >
->Adobe rekommenderar stegvis publicering, helst vid tidpunkter med låg belastning, för att AEM-författaren inte ska uppta för mycket resurser.
+>Adobe rekommenderar att publiceringen staggats, helst under icke-topp-timmar, så att AEM-författaren inte tar upp för mycket resurser.
 
 1. På Assets-konsolen väljer du de resurser/den mapp som du vill publicera och klickar på alternativet **[!UICONTROL Quick Publish]** i verktygsfältet.
 
@@ -45,7 +45,7 @@ När replikeringen är klar kan du publicera resurser, mappar och samlingar till
 
 ## Publicera resurser nu {#publish-to-bp-now}
 
-Gör något av följande för att publicera de markerade resurserna på varumärkesportalen:
+Om du vill publicera de markerade resurserna på Brand Portal gör du något av följande:
 
 * Välj **[!UICONTROL Quick Publish]** i verktygsfältet. Välj sedan **[!UICONTROL Publish to Brand Portal]** på menyn.
 
@@ -55,11 +55,11 @@ Gör något av följande för att publicera de markerade resurserna på varumär
 
    2. Bekräfta ditt val i **[!UICONTROL Scope]** och klicka på **[!UICONTROL Publish to Brand Portal]**.
 
-Ett meddelande visas som anger att resurserna har placerats i kö för publicering på varumärkesportalen. Logga in på gränssnittet för varumärkesportalen för att visa de publicerade resurserna.
+Ett meddelande visas som anger att resurserna har placerats i kö för publicering till Brand Portal. Logga in på Brand Portal gränssnitt för att se de publicerade resurserna.
 
 ## Publicera resurser senare {#publish-to-bp-later}
 
-Gör så här för att schemalägga publicering av resurser på varumärkesportalen till ett senare datum eller en senare tid:
+Så här schemalägger du publicering av materialet till Brand Portal till ett senare datum eller en senare tidpunkt:
 
 1. När du har valt resurser/mappar att publicera väljer du **[!UICONTROL Manage Publication]** i verktygsfältet högst upp.
 
@@ -67,13 +67,13 @@ Gör så här för att schemalägga publicering av resurser på varumärkesporta
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-1. Markera en **[!UICONTROL Activation date]** och ange en tid. Klicka på **[!UICONTROL Next]**.
+1. Välj en **[!UICONTROL Activation date]** och ange tid. Klicka på **[!UICONTROL Next]**.
 
-1. Välj ett **aktiveringsdatum** och ange en tid. Klicka på **Nästa**.
+1. Välj ett **aktiveringsdatum** och ange tid. Klicka på **Nästa**.
 
 1. Ange en **[!UICONTROL Workflow title]** i **[!UICONTROL Workflows]**. Klicka på **[!UICONTROL Publish Later]**.
 
-   ![publishworkflow](assets/publishworkflow.png)
+   ![publiceringsarbetsflöde](assets/publishworkflow.png)
 
 Logga sedan in på Brand Portal för att se om de publicerade resurserna finns tillgängliga i Brand Portal gränssnitt.
 
@@ -81,12 +81,12 @@ Logga sedan in på Brand Portal för att se om de publicerade resurserna finns t
 
 ## Visa publicerad fil eller mapp i Brand Portal {#view-published-file-folder}
 
-1. Logga in på gränssnittet för varumärkesportalen för att visa de publicerade resurserna (beroende på schemalagt datum eller tid).
+1. Logga in på Brand Portal-gränssnittet för att se de publicerade resurserna (beroende på schemalagt datum eller tid).
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
 1. Växla till listvyn ![listvyn](assets/list-view.svg) om du vill visa resursens aktuella publiceringsstatus.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![genererad rapportstatus](assets/report-status.JPG)

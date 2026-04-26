@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 7c1023ac-9d52-49f8-8e92-20e2d9d7079b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
 
 # Visa statistik för Work Manager {#view-statistics-related-to-work-manager}
 
-Fliken Arbetshanterare visar statistik som relaterar till Work Manager-objekt. De här arbetsobjekten är i olika lägen beroende på var de befinner sig i processen. (Se [Status (endast för kategorierna Standard, Arbetsflöde och Händelser)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Du kan filtrera informationen så att endast en delmängd av objekten visas med de olika alternativ som är tillgängliga (till exempel Status eller Kategori). Du kan sortera resulterande arbete eller jobbobjekt (i stigande eller fallande ordning) genom att klicka på en av kolumnrubrikerna. Du kan också hantera arbetsobjekten med de åtgärdsverktyg som visas ovanför listan med arbetsobjekt.
+Fliken Arbetshanterare visar statistik som relaterar till Work Manager-objekt. De här arbetsobjekten är i olika lägen beroende på var de befinner sig i processen. (Se [Status (endast för kategorierna Standard, Arbetsflöde och Händelser)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Du kan filtrera informationen så att endast en delmängd av objekten visas genom att använda de olika alternativ som är tillgängliga (till exempel Status eller Kategori). Du kan sortera resulterande arbete eller jobbobjekt (i stigande eller fallande ordning) genom att klicka på en av kolumnrubrikerna. Du kan också hantera arbetsobjekten med de åtgärdsverktyg som visas ovanför listan med arbetsobjekt.
 
 ## Filtrera arbetsobjekten {#filter-the-work-items}
 
@@ -49,7 +49,7 @@ Fliken Arbetshanterare visar statistik som relaterar till Work Manager-objekt. D
 
 **Slutförd:** Visar alla arbetsobjekt som har körts. Beständiga arbetsobjekt behålls i det här läget och icke-beständiga objekt tas bort när återanrop till återanropshanterarna slutförs. Du kan ta bort dessa objekt genom att använda åtgärden Ta bort objekt. (Se Hantera arbetsobjekt eller jobb.)
 
-**Misslyckades:** Visar alla arbetsobjekt som inte slutfördes korrekt på grund av ett feltillstånd. Du kan göra om de här arbetsobjekten några gånger genom att använda åtgärden Försök igen. (Se Hantera arbetsobjekten eller jobben.) En fellänk i statuskolumnen ger dig åtkomst till information om felet.
+**Misslyckades:** Visar alla arbetsobjekt som inte slutfördes korrekt på grund av ett feltillstånd. Du kan göra om de här arbetsobjekten några gånger genom att använda åtgärden Försök igen. (Se Hantera arbetsobjekt eller jobb.) En fellänk i statuskolumnen ger dig åtkomst till information om felet.
 
 **Okänd:** Visar alla arbetsobjekt vars status är okänd.
 

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Säkerhetskopiera AEM Forms-databasen, inklusive eventuella transaktionsloggar. 
 Mer information finns i lämplig kunskapsbasartikel för din databas:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
 * [Oracle Säkerhetskopiering och återställning för AEM Forms](https://www.adobe.com/go/kb403624)
-* [MySQL-säkerhetskopiering och återställning för AEM Forms](https://www.adobe.com/go/kb403625)
+* [MySQL Backup and Recovery for AEM Forms](https://www.adobe.com/go/kb403625)
 * [Microsoft® SQL Server Backup and Recovery for AEM Forms](https://www.adobe.com/go/kb403623)
 * [DB2® Säkerhetskopiering och återställning för AEM Forms](https://www.adobe.com/go/kb403626)
 

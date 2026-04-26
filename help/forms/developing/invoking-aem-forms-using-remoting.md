@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,Workbench
 hide: true
 hidefromtoc: true
 exl-id: 37f5efaa-db0b-4035-987d-4140fc5a97be
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4604'
+source-wordcount: '4651'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 >Om AEM Forms är konfigurerat att tillåta osäkra dokument att överföras kan du använda en användare som inte har användarrollen Dokumentöverföring för att överföra ett dokument. En användare kan också ha behörigheten Dokumentöverföring. Om AEM Forms är konfigurerat för att endast tillåta säkra dokument måste du se till att användaren har användarrollen Dokumentöverföring eller behörigheten Dokumentöverföring. (Se [Konfigurera AEM Forms för att godkänna säkra och osäkra dokument](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
 Du använder Flash-standardöverföringsfunktioner för den angivna överförings-URL:en: `https://SERVER:PORT/remoting/lcfileupload`. Du kan sedan använda objektet `DocumentReference` när en indataparameter av typen `Document` förväntas
-` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }` Snabbstart vid fjärrhantering använder serverleten Remoting för att skicka en PDF-fil till `MyApplication/EncryptDocument` -processen. (Se [Anropa en kort process genom att skicka ett osäkert dokument med (borttaget för AEM-formulär) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
+` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`Snabbstart för fjärrkommunikation använder serverleten för fjärröverföring för att skicka en PDF-fil till `MyApplication/EncryptDocument`processen. (Se [Anropa en kort process genom att skicka ett osäkert dokument med (borttaget för AEM-formulär) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
 
 ```java
  
@@ -201,7 +201,7 @@ Så här anropar du en AEM Forms-process från ett program som skapats med Flex:
 >
 >I det här avsnittet beskrivs hur du anropar en AEM Forms-process och överför ett dokument när AEM Forms är konfigurerat att överföra osäkra dokument. Mer information om hur du anropar AEM Forms-processer och överför säkra dokument och hur du konfigurerar AEM Forms att acceptera säkra och osäkra dokument finns i [Skicka säkra dokument för att anropa processer med Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
-**Skapar en mx:RemoteObject-instans**
+**Skapa en mx:RemoteObject-instans**
 
 Du skapar en `mx:RemoteObject`-instans för att anropa en AEM Forms-process som har skapats i Workbench. Om du vill skapa en `mx:RemoteObject`-instans anger du följande värden:
 
@@ -624,7 +624,7 @@ Du kan använda administrationskonsolen för att ange om dokument är säkra nä
 >[!NOTE]
 >
 >* Om du vill konfigurera AEM Forms att acceptera osäkra dokument väljer du alternativet Tillåt osäker dokumentöverföring från Flex-program. Starta sedan om ett program eller en tjänst för att se till att inställningen börjar gälla.
->* Du bör använda kommandot Ctrl + C för att starta om SDK. Om du startar om AEM SDK med alternativa metoder, till exempel att stoppa Java-processer, kan det leda till inkonsekvenser i AEM utvecklingsmiljö.
+> * Du bör använda kommandot Ctrl + C för att starta om SDK. Om du startar om AEM SDK med alternativa metoder, till exempel att stoppa Java-processer, kan det leda till inkonsekvenser i AEM utvecklingsmiljö.
 
 
 ### Snabbstart: Anropa en kort process genom att skicka ett säkert dokument med Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}

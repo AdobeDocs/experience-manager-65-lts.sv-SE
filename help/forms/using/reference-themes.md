@@ -8,16 +8,16 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: 2a80a7f6-3907-45f3-8945-c3bfba018580
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
 # Referensteman{#reference-themes}
 
-Med [Teman](../../forms/using/themes.md) kan du formatera formulär utan djupa kunskaper om CSS. Förutom standardtemat kan du hämta följande teman genom att installera [AEM Forms-tilläggspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE):
+Med [Teman](../../forms/using/themes.md) kan du formatera formulär utan djupa kunskaper om CSS. Förutom standardtemat kan du hämta följande teman genom att installera [AEM Forms-tilläggspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
 * Beryl
 * Exec
@@ -42,9 +42,11 @@ Beryltemat används av den anpassade formen We.Gov och betonar användningen av 
 
 ![Berytema](assets/beryl.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/beryl-1.png)-->
+](assets/beryl-1.png)
+-->
 
 ## Exec {#exec}
 
@@ -52,9 +54,11 @@ Exec-temat undviker heltäckande bakgrundsfyllningar för att framhäva formulä
 
 ![Kör tema](assets/exec.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-1.png)-->
+](assets/exec-1.png)
+-->
 
 ## Exec Light {#exec-light}
 
@@ -62,9 +66,11 @@ Exec Light-temat använder tomrum för att skapa en sömlös upplevelse. Knappar
 
 ![Kör ljustema](assets/exec-light.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-light-1.png)-->
+](assets/exec-light-1.png)
+-->
 
 ## Frihet {#liberty}
 
@@ -72,9 +78,11 @@ Frihetstemat använder en minimalistisk strategi för att lyfta fram det viktiga
 
 ![Frihetstema](assets/liberty.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/liberty-1.png)-->
+](assets/liberty-1.png)
+-->
 
 ## Tranquil {#tranquil}
 
@@ -82,9 +90,11 @@ Med det tillfälliga temat får du ljusa och mörka nyanser av det Tranquil-fär
 
 ![Transiärt tema](assets/tranquil.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tranquil-1.png)-->
+](assets/tranquil-1.png)
+-->
 
 ## Ultramarin {#ultramarine}
 
@@ -100,16 +110,20 @@ Urbane-temat betonar ett minimalistiskt och funktionellt utseende på ditt formu
 
 ![Urban-tema](assets/urbane.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/urbane-1.png)-->
+](assets/urbane-1.png)
+-->
 
 ## U.S. Web Design Standards {#u-s-web-design-standards}
 
 I temat U.S. Web Design Standards, som namnet antyder, används teckensnitt och format som beskrivs på webbplatsen Draft U.S. Web Design Standards. Webbstandarden används av federala organisationer för att skapa enhetliga webbupplevelser på statliga webbplatser.
 
-![USA Standardtema för webbdesign &#x200B;](assets/us-web-standards.png)
+![USA Standardtema för webbdesign ](assets/us-web-standards.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/usgov.png)-->
+](assets/usgov.png)
+-->

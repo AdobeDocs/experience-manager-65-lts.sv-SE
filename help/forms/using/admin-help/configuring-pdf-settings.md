@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 41a8a4b0-cb39-40a6-82b6-085f2c635e0c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7415'
+source-wordcount: '7478'
 ht-degree: 0%
 
 ---
@@ -95,19 +95,19 @@ PDF-inställningarna avgör exakt hur filer konverteras och vilka PDF-strukturer
 1. Klicka antingen på Ny eller på namnet på en befintlig inställning.
 1. Fyll i den obligatoriska informationen i följande avsnitt på sidan Ny/Redigera Adobe PDF-inställning:
 
-[Allmänna alternativ](configuring-pdf-settings.md#general-options)
+   [Allmänna alternativ](configuring-pdf-settings.md#general-options)
 
-[Bildalternativ](configuring-pdf-settings.md#images-options)
+   [Bildalternativ](configuring-pdf-settings.md#images-options)
 
-[Alternativ för teckensnitt](configuring-pdf-settings.md#fonts-options)
+   [Alternativ för teckensnitt](configuring-pdf-settings.md#fonts-options)
 
-[Färgalternativ](configuring-pdf-settings.md#color-options)
+   [Färgalternativ](configuring-pdf-settings.md#color-options)
 
-[Avancerade alternativ](configuring-pdf-settings.md#advanced-options)
+   [Avancerade alternativ](configuring-pdf-settings.md#advanced-options)
 
-[Standardrapportering och regelefterlevnadsalternativ](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
+   [Standardrapportering och regelefterlevnadsalternativ](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
 
-[Alternativ för inledande vy](configuring-pdf-settings.md#initial-view-options)
+   [Alternativ för inledande vy](configuring-pdf-settings.md#initial-view-options)
 
    Om du vill gå till ett annat avsnitt klickar du på länken på webbsidan eller använder knapparna Nästa och Föregående.
 
@@ -343,7 +343,7 @@ Om du valde Ingen för inställningsfilen anger området Färghanteringsprofiler
 **Tagga endast bilder för färghantering:** Bäddar endast in ICC-profiler i bilder, inte i text eller bilder, när du bearbetar filer om du har valt kompatibilitet med Acrobat 4 (PDF 1.3). Det här alternativet förhindrar att svart text genomgår några färgförändringar. Enhetsberoende färgrymder i bilder (RGB, Gråskala och CMYK) konverteras dock till enhetsoberoende färgrymder (CalRGB, CalGray och LAB). Text och bilder konverteras inte.
 
 **Konvertera alla färger till sRGB eller Konvertera alla färger till
-CMYK:** Kalibrerar färgen i filen, vilket gör färghanteringen oberoende av varandra, som Tagga allt för färghantering. Om du har valt kompatibilitet med Acrobat 4 (PDF 1.3) eller senare och konverterar till sRGB konverteras CMYK- och RGB-bilderna till sRGB.
+CMYK:** Kalibrerar färgen i filen, vilket gör färghanteringen helt oberoende, som Tagga allt för färghantering. Om du har valt kompatibilitet med Acrobat 4 (PDF 1.3) eller senare och konverterar till sRGB konverteras CMYK- och RGB-bilderna till sRGB.
 
 Oavsett vilket kompatibilitetsalternativ du väljer ändras inte gråskalebilder. Detta minskar vanligtvis storleken och ökar visningshastigheten för PDF-filer eftersom mindre information behövs för att beskriva RGB-bilder än för att beskriva CMYK-bilder. Eftersom RGB är den inbyggda färgrymden som används på bildskärmar behövs ingen färgkonvertering vid visning, vilket gör att du snabbt kan visa bilden på webben. Det här alternativet rekommenderas om PDF-filen ska användas online eller med skrivare med låg upplösning.
 

@@ -8,10 +8,10 @@ hidefromtoc: true
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 17%
+source-wordcount: '959'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Du kan använda AEM Inbox för att köra och övervaka Forms-centrerade AEM-arbe
 <table>
  <tbody>
   <tr>
-   <td>Åtgärder</td>
+   <td>Instruktioner</td>
    <td>AEM Inbox</td>
    <td>HTML Workspace</td>
   </tr>
@@ -66,17 +66,17 @@ Du kan använda AEM Inbox för att köra och övervaka Forms-centrerade AEM-arbe
   <tr>
    <td>Bifogade filer på fältnivå för anpassade formulär</td>
    <td>Stöds</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
   </tr>
   <tr>
    <td>Kalendervy</td>
    <td>Stöds</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
   </tr>
   <tr>
    <td>Kommentarer på aktivitetsnivå</td>
    <td>Stöds</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
   </tr>
   <tr>
    <td>Köer (delad personlig kö, göra anspråk på uppgifter från kö)</td>
@@ -95,7 +95,7 @@ Du kan använda AEM Inbox för att köra och övervaka Forms-centrerade AEM-arbe
   </tr>
   <tr>
    <td>Tilldela en uppgift till flera användare</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds</td>
   </tr>
  </tbody>
@@ -220,27 +220,27 @@ Formulärbaserade AEM-arbetsflöden för OSGi- och AEM Forms JEE-arbetsflöden (
   <tr>
    <td>Knappen Återställ</td>
    <td>Stöds</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
   </tr>
   <tr>
    <td>Arbetsflödesfaser</td>
    <td>Stöds</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
   </tr>
   <tr>
    <td>Skrivskyddade anpassningsbara formulär</td>
    <td>Stöds</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
   </tr>
   <tr>
    <td>Dölja standardknappen för att spara</td>
    <td>Stöds</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
   </tr>
   <tr>
    <td>Detaljerad kontroll över avsnittet med arbetsflödesinformation</td>
    <td>Stöds</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
   </tr>
   <tr>
    <td>Avsökning/schemaläggning</td>
@@ -289,12 +289,12 @@ Formulärbaserade AEM-arbetsflöden för OSGi- och AEM Forms JEE-arbetsflöden (
   </tr>  
   <tr>
    <td>HTML5 Forms, Interactive PDF forms, Form Set</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds</td>
   </tr>
   <tr>
    <td>Processrapportering</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds</td>
   </tr>
   <tr>
@@ -304,37 +304,37 @@ Formulärbaserade AEM-arbetsflöden för OSGi- och AEM Forms JEE-arbetsflöden (
   </tr>
   <tr>
    <td>Startpunktskategorier</td>
-   <td>Stöds ej </td>
+   <td>Stöds inte </td>
    <td>Stöds </td>
   </tr>
   <tr>
    <td>Godkännande av gruppuppgift </td>
-   <td>Stöds ej </td>
+   <td>Stöds inte </td>
    <td>Stöds </td>
   </tr>
   <tr>
    <td>Spara utkast med ett anpassat namn</td>
-   <td>Stöds ej </td>
+   <td>Stöds inte </td>
    <td>Stöds </td>
   </tr>
   <tr>
    <td>Initiera en process med befintliga processdata <br /> </td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds </td>
   </tr>
   <tr>
    <td>Spara en startpunkt som ett utkast</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds</td>
   </tr>
   <tr>
    <td>Hanterarvy</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td><br /> stöds </td>
   </tr>
   <tr>
    <td>Sökmallar</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td><br /> stöds </td>
   </tr>
   <tr>
@@ -344,48 +344,48 @@ Formulärbaserade AEM-arbetsflöden för OSGi- och AEM Forms JEE-arbetsflöden (
   </tr>
   <tr>
    <td>Bifogade filer på aktivitetsnivå för arbetsflödesprogram eller startpunkt</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds</td>
   </tr>
   <tr>
    <td>Påminnelse - e-post</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds</td>
   </tr>
   <tr>
    <td>Ändra titel på timeout för uppgift</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds</td>
   </tr>
   <tr>
    <td>E-post om uppgiftsdelegering och aktivitetskrav</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds</td>
   </tr>
   <tr>
    <td>Delegera mellan osammanhängande grupper</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds</td>
   </tr>
   <tr>
    <td>XSLT-omvandling</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
    <td>Stöds</td>
   </tr>
   <tr>
    <td>Prioritet för dynamisk aktivitet</td>
-   <td>Stöds ej</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
+   <td>Stöds inte</td>
   </tr>
   <tr>
    <td>Dynamisk titel</td>
-   <td>Stöds ej</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
+   <td>Stöds inte</td>
   </tr>
     <tr>
    <td>Dynamisk beskrivning</td>
-   <td>Stöds ej</td>
-   <td>Stöds ej</td>
+   <td>Stöds inte</td>
+   <td>Stöds inte</td>
   </tr>
  </tbody>
 </table>
@@ -408,7 +408,7 @@ I följande tabell visas funktionerna i AEM Inbox och AEM Forms app:
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Åtgärder</strong></p> </td>
+   <td><p><strong>Instruktioner</strong></p> </td>
    <td><p><strong>AEM Inbox</strong></p> </td>
    <td><p><strong>AEM Forms App</strong></p> </td>
   </tr>
@@ -425,12 +425,12 @@ I följande tabell visas funktionerna i AEM Inbox och AEM Forms app:
   <tr>
    <td><p>Delegera uppgifter</p> </td>
    <td><p>Stöds</p> </td>
-   <td><p>Stöds ej</p> </td>
+   <td><p>Stöds inte</p> </td>
   </tr>
   <tr>
    <td><p>Spåra aktivitetshistorik och uppgiftssammanfattning</p> </td>
    <td><p>Stöds</p> </td>
-   <td><p>Stöds ej</p> </td>
+   <td><p>Stöds inte</p> </td>
   </tr>
   <tr>
    <td><p>Lägga till bilagor på aktivitetsnivå</p> </td>
@@ -450,7 +450,7 @@ I följande tabell visas funktionerna i AEM Inbox och AEM Forms app:
   <tr>
    <td><p>Visa kalendervyn</p> </td>
    <td><p>Stöds</p> </td>
-   <td><p>Stöds ej</p> </td>
+   <td><p>Stöds inte</p> </td>
   </tr>
   <tr>
    <td><p>Lägga till kommentarer</p> </td>

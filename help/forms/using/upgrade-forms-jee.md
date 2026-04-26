@@ -11,9 +11,9 @@ feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 643bc966-b2d8-4626-8c25-b63c8909287e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 AEM 6.5.18.0 Forms på JEE innehåller två typer av installationsprogram: Fullständigt installationsprogram och Patch-installationsprogram.
 
-**Fullständigt installationsprogram**: Du kan använda [&#x200B; AEM 6.5.18.0 i JEE Fullständigt installationsprogram](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) för att konfigurera nya AEM Forms-instanser eller utföra uppgraderingar från AEM 6.5.x.x Forms i JEE till AEM 6.5.18.0 Forms i JEE.
+**Fullständigt installationsprogram**: Du kan använda [ AEM 6.5.18.0 i JEE Fullständigt installationsprogram](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) för att konfigurera nya AEM Forms-instanser eller utföra uppgraderingar från AEM 6.5.x.x Forms i JEE till AEM 6.5.18.0 Forms i JEE.
 
-**Patch installer**: [AEM 6.5.18.0 på JEE patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE) är till för kunder som redan använder AEM 6.5.x.x-versioner. Du kan använda installationsprogrammet för korrigeringsfilen för att uppgradera till den senaste versionen av AEM Forms.
+**Patch installer**: [AEM 6.5.18.0 på JEE patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) är till för kunder som redan använder AEM 6.5.x.x-versioner. Du kan använda installationsprogrammet för korrigeringsfilen för att uppgradera till den senaste versionen av AEM Forms.
 
 I följande tabell visas avsändare som använder fullständig installation och korrigeringsinstallation.
 

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0f1b39e7-5de5-4b54-b622-61774ce839db
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ SAML (Security Assertion Markup Language) är ett av de alternativ som du kan v�
 En förklaring av SAML finns i [Security Assertion Markup Language (SAML) V2.0 Technical Overview](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. I administrationskonsolen klickar du på Inställningar > Användarhantering > Konfiguration > Inställningar för SAML-tjänstleverantör.
-1. Ange ett unikt ID som ska användas som identifierare för implementeringen av AEM-formulärtjänstleverantören i rutan Tjänstleverantörens enhets-ID. Du kan också ange detta unika ID när du konfigurerar din IDP (till exempel `um.lc.com`.) Du kan också använda den URL som används för att komma åt AEM-formulär (till exempel `https://AEMformsserver`).
+1. Ange ett unikt ID som ska användas som identifierare för implementeringen av AEM-formulärtjänstleverantören i rutan Tjänstleverantörens enhets-ID. Du anger också detta unika ID när du konfigurerar din IDP (till exempel `um.lc.com`). Du kan också använda den URL som används för att komma åt AEM-formulär (till exempel `https://AEMformsserver`).
 1. Ange bas-URL:en för din Forms-server (till exempel `https://AEMformsserver:8080`) i rutan Tjänstleverantörens bas-URL.
 1. (Valfritt) Gör så här för att aktivera AEM-formulär för att skicka signerade autentiseringsbegäranden till IDP:
 

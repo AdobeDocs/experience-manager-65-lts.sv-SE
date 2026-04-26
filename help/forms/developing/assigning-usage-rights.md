@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services, Reader Extensions
 hide: true
 hidefromtoc: true
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3897'
+source-wordcount: '3973'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ Använd användarrättigheter i ett PDF-dokument med Acrobat Reader DC Extension
 
 [Använda användningsbehörighet för PDF-dokument](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Snabbstart (SOAP-läge):Tillämpa användningsrättigheter med Java API](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Snabbstart (SOAP-läge):Applying användningsbehörighet med Java API](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Inkludera AEM Forms Java-biblioteksfiler](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

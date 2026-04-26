@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: a85333ac-427f-4730-b6d6-04c4b9419883
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ I följande Java-kodexempel skapas ett PDF-dokument med namnet *Loan.pdf*. Det h
 
 >[!NOTE]
 >
->Innan du kör den här snabbstarten måste du skapa ett AEM Forms-program med namnet Applications/FormsApplication. Skapa en mapp i programmet som heter FormsFolder och placera XDP-filen i mappen. Mer information finns i [Skapa ett PDF-dokument &#x200B;](/help/forms/developing/creating-document-output-streams.md)*.*
+>Innan du kör den här snabbstarten måste du skapa ett AEM Forms-program med namnet Applications/FormsApplication. Skapa en mapp i programmet som heter FormsFolder och placera XDP-filen i mappen. Mer information finns i [Skapa ett PDF-dokument ](/help/forms/developing/creating-document-output-streams.md)*.*
 
 ```java
  /*

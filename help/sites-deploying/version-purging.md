@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ När den här siffran överskrids tas den äldsta versionen bort.
    * Högsta ålder för alla versioner som lagras i databasen.
 När en versions ålder överskrider det här värdet rensas den från databasen.
 
-* underhållsaktiviteten [Version Rensa &#x200B;](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Du kan schemalägga underhållsaktiviteten Rensa version så att tidigare versioner tas bort automatiskt. Därför minimeras behovet av att manuellt använda verktygen för versionsrensning.
+* underhållsaktiviteten [Version Rensa ](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Du kan schemalägga underhållsaktiviteten Rensa version så att tidigare versioner tas bort automatiskt. Därför minimeras behovet av att manuellt använda verktygen för versionsrensning.
 
 >[!CAUTION]
 >
@@ -68,7 +68,7 @@ En version skapas såvida inte replikeringsagenten har konfigurerats för att f�
 En version skapas bara om aktiveringen sker på en sökväg som finns i `versionmanager.ivPaths` (se nedan).
 
 * `versionmanager.ivPaths`(String[], default: `{"/"}`)
-Anger sökvägarna som versionerna implicit skapas på vid aktivering om `versionmanager.createVersionOnActivation` är true.
+Anger sökvägarna som versionerna implicit skapas på vid aktivering om `versionmanager.createVersionOnActivation` har värdet true.
 
 * `versionmanager.purgingEnabled` (Boolean, standard: false)
 Definierar om rensning ska aktiveras när nya versioner skapas.

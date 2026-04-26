@@ -1,15 +1,15 @@
 ---
 title: Introduktion till  [!DNL Adobe Experience Manager Assets]
-description: Skapa, hantera, bearbeta och distribuera digitala resurser i Experience Manager. I dessa handledningar beskrivs de effektivaste strategierna, tillgänglighetsfunktioner och hur du använder AEM 6.5 LTS-resurser.
+description: Skapa, hantera, bearbeta och distribuera digitalt material i Experience Manager. I dessa handledningar beskrivs de effektivaste strategierna, tillgänglighetsfunktionerna och hur du använder AEM 6.5 LTS-resurser.
 hide: true
 feature: Asset Management
 role: Leader,Developer,User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 3%
+source-wordcount: '922'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/overview) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview) |
 | AEM 6.5 LTS | Den här artikeln |
 
 AEM [!DNL Assets] är ett DAM-verktyg (Digital Asset Management) som är en del av [!DNL Experience Manager] -plattformen och gör att ditt företag kan hantera och distribuera digitala resurser. Användare i en hel organisation kan hantera, lagra och få tillgång till många typer av digitalt material som bilder, videor, dokument, ljudklipp, 3D-filer och multimedia för användning på webben, i tryck och för digital distribution.

@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services
 hide: true
 hidefromtoc: true
 exl-id: c6e007e9-6050-4d86-a32e-0bd942d48f27
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7848'
+source-wordcount: '7942'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,7 @@ Konvertera ett Microsoft Word-dokument till ett PDF-dokument med hjälp av Gener
 1. Skapa en Generate PDF-klient.
 
    * Skapa ett `GeneratePDFServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `GeneratePDFServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) Du behöver inte använda attributet `lc_version`. Ange dock `?blob=mtom`.
+   * Skapa ett `GeneratePDFServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Du behöver inte använda attributet `lc_version`. Ange dock `?blob=mtom`.
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `GeneratePDFServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:
@@ -368,7 +368,7 @@ Konvertera HTML-innehåll till ett PDF-dokument med Generate PDF API (webbtjäns
 1. Skapa en Generate PDF-klient.
 
    * Skapa ett `GeneratePDFServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `GeneratePDFServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) Du behöver inte använda attributet `lc_version`. Ange dock `?blob=mtom`.
+   * Skapa ett `GeneratePDFServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Du behöver inte använda attributet `lc_version`. Ange dock `?blob=mtom`.
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `GeneratePDFServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:
@@ -519,7 +519,7 @@ Konvertera ett PDF-dokument till en RTF-fil med hjälp av Generate PDF API (webb
 1. Skapa en Generate PDf-klient.
 
    * Skapa ett `GeneratePDFServiceClient`-objekt med hjälp av dess standardkonstruktor.
-   * Skapa ett `GeneratePDFServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) Du behöver inte använda attributet `lc_version`. Ange dock `?blob=mtom`.
+   * Skapa ett `GeneratePDFServiceClient.Endpoint.Address`-objekt med konstruktorn `System.ServiceModel.EndpointAddress`. Skicka ett strängvärde som anger WSDL till AEM Forms-tjänsten (till exempel `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Du behöver inte använda attributet `lc_version`. Ange dock `?blob=mtom`.
    * Skapa ett `System.ServiceModel.BasicHttpBinding`-objekt genom att hämta värdet för fältet `GeneratePDFServiceClient.Endpoint.Binding`. Skicka returvärdet till `BasicHttpBinding`.
    * Ställ in `System.ServiceModel.BasicHttpBinding`-objektets `MessageEncoding`-fält till `WSMessageEncoding.Mtom`. Detta värde garanterar att MTOM används.
    * Aktivera grundläggande HTTP-autentisering genom att utföra följande åtgärder:
@@ -628,12 +628,12 @@ I den här tabellen visas vilken typ av information som används vid utskrift av
   </tr>
   <tr>
    <td><p>Programspecifika dialogruteinstruktioner</p></td>
-   <td><p>Anger hur programspecifika dialogrutor ska besvaras. </p><p>Filen som innehåller den här informationen är giltig.<i>`[programnamn]`</i>.dialog.<i>`[locale]`</i>.xml (till exempel appmon.word.en_US.xml).</p></td>
+   <td><p>Anger hur programspecifika dialogrutor ska besvaras. </p><p>Filen som innehåller den här informationen är appmon.<i>`[appname]`</i>.dialog.<i>`[locale]`</i>.xml (till exempel appmon.word.en_US.xml).</p></td>
    <td><p>Ändra inte filen. </p><p>Mer information om hur du lägger till dialogruteinstruktioner för ett nytt inbyggt program finns i <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Skapa eller ändra ytterligare en dialogrute-XML-fil för ett inbyggt program</a>.</p></td>
   </tr>
   <tr>
    <td><p>Ytterligare programspecifika dialogruteinstruktioner </p></td>
-   <td><p>Anger åsidosättningar och tillägg till programspecifika dialogruteinstruktioner. I avsnittet visas ett exempel på sådan information. </p><p>Filen som innehåller den här informationen är giltig.<i>`[programnamn]`</i>.addition.<i>`[locale]`</i>.xml. Ett exempel är appmon.addition.en_US.xml.</p></td>
+   <td><p>Anger åsidosättningar och tillägg till programspecifika dialogruteinstruktioner. I avsnittet visas ett exempel på sådan information. </p><p>Filen som innehåller den här informationen är appmon.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. Ett exempel är appmon.addition.en_US.xml.</p></td>
    <td><p>Filer av den här typen kan skapas och ändras med ett XML-redigeringsprogram. (Se <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Skapa eller ändra ytterligare en dialogrute-XML-fil för ett internt program</a>.) </p><p><strong>Viktigt</strong>: Skapa ytterligare programspecifika dialogruteinstruktioner för varje systemspecifikt program som servern stöder. </p></td>
   </tr>
  </tbody>
@@ -733,7 +733,7 @@ När du har lagt till dessa XML-filer i filen adobe-appmondata.jar måste du dis
 1. Använd ett verktyg som WinZip eller WinRAR och öppna filen adobe-livecycle-native-jboss-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > filen obe-appmondata.jar.
 1. Lägg till dialogruta- och skript-XML-filer i filen appmondata.jar eller ändra befintliga XML-filer i filen. (Se [Skapa eller ändra en skript-XML-fil för ett internt program](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)och [Skapa eller ändra ytterligare en dialogrute-XML-fil för ett internt program](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
 1. Öppna adobe-generatepdf-dsc.jar > adobe-appmondata.jar med ett verktyg som WinZip eller WinRAR.
-1. Lägg till dialogruta- och skript-XML-filer i filen appmondata.jar eller ändra befintliga XML-filer i filen. (Se [Skapa eller ändra en skript-XML-fil för ett internt program](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) och [Skapa eller ändra ytterligare en dialogrute-XML-fil för ett ursprungligt program](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) När du har lagt till XML-filerna i filen adobe-appmondata.jar placerar du den nya adobe-appmondata.jar-filen i filen adobe-generatepdf-dsc.jar.
+1. Lägg till dialogruta- och skript-XML-filer i filen appmondata.jar eller ändra befintliga XML-filer i filen. (Se [Skapa eller ändra en skript-XML-fil för ett internt program](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)och [Skapa eller ändra ytterligare en dialogrute-XML-fil för ett internt program](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) När du har lagt till XML-filerna i filen adobe-appmondata.jar lägger du in den nya filen adobe-appmondata.jar i filen adobe-generatepdf-dsc.jar.
 1. Om du har lagt till stöd för ytterligare ett inbyggt filformat skapar du en systemmiljövariabel som anger programmets sökväg (se [Skapa en systemvariabel för att hitta det inbyggda programmet](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application)).
 
 **Så här distribuerar du om komponenten GeneratePDF**

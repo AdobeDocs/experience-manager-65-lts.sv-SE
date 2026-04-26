@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10090'
+source-wordcount: '10521'
 ht-degree: 0%
 
 ---
@@ -199,7 +199,7 @@ Om du ska använda PDF Generator-tjänsten för att konvertera filformat som Mic
 >* Adobe Acrobat, Microsoft® Word, Excel och PowerPoint finns endast för Microsoft® Windows. Om du använder det UNIX-baserade operativsystemet måste du installera OpenOffice för att konvertera RTF-filer och Microsoft® Office-filer som stöds till PDF-dokument.
 >* Stäng alla dialogrutor som visas när du har installerat Adobe Acrobat och tredjepartsprogram för alla användare som har konfigurerats att använda tjänsten PDF Generator.
 >* Starta alla installerade program minst en gång. Stäng alla dialogrutor för alla användare som har konfigurerats att använda PDF Generator-tjänsten.
->* [Kontrollera förfallodatumet för dina Adobe Acrobat-serienummer](https://helpx.adobe.com/se/enterprise/kb/volume-license-expiration-check.html) och ange ett datum för att uppdatera licensen eller [migrera ditt serienummer](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) baserat på förfallodatumet.
+>* [Kontrollera förfallodatumet för dina Adobe Acrobat-serienummer](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) och ange ett datum för att uppdatera licensen eller [migrera ditt serienummer](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) baserat på förfallodatumet.
 
 När du har installerat Acrobat öppnar du Microsoft® Word. På fliken **Acrobat** klickar du på **Skapa PDF** och konverterar en .doc- eller .docx-fil som finns på datorn till ett PDF-dokument. Om konverteringen lyckas är AEM Forms redo att använda Acrobat med PDF Generator-tjänsten.
 
@@ -217,8 +217,10 @@ Granska dessa grundläggande krav innan du installerar Acrobat. Du borde ha:
 * Lokala administratörsbehörigheter på datorn som kör AEM Forms
 * Windows 64-bitars operativsystem
 * Stabil internetanslutning för licensaktivering
-<!-- Backup solution for existing Acrobat settings
- Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details) -->
+<!--
+Backup solution for existing Acrobat settings
+ Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details)
+-->
 
 
 #### Arbetsflöde och tidslinje för implementering
@@ -232,7 +234,7 @@ Hela processen tar normalt 1-2 timmar, beroende på din miljö:
 | &#x200B;3. Avinstallera tidigare Acrobat | 10-15 minuter | Serveradministratörsåtkomst |
 | &#x200B;4. Hämta och installera Adobe Acrobat Pro | 10-15 minuter | Serveradministratörsåtkomst |
 | &#x200B;5. Hämta och distribuera FRL-paket | 20-30 minuter | Serveradministratörsåtkomst |
-| &#x200B;6. Verifiera installationen | 5-10 minuter | Serveråtkomst |
+| &#x200B;6. Verifiera installation | 5-10 minuter | Serveråtkomst |
 
 <!-- ![Workflow diagram showing the FRL implementation process](/help/forms/using/assets/frl.svg) -->
 
@@ -962,8 +964,8 @@ Utför följande steg för att konfigurera IBM® SSL-socketprovidern:
 1. Öppna ett Microsoft® Office-program. Exempel: Microsoft® Word. Navigera till **[!UICONTROL File]**> **[!UICONTROL Options]**. Dialogrutan Alternativ visas.
 
 1. Klicka på **[!UICONTROL Trust Center]** och sedan på **[!UICONTROL Trust Center Settings]**.
-1. Klicka på **[!UICONTROL Trust Center settings]** i **[!UICONTROL File Block Settings]**.
-1. Avmarkera **[!UICONTROL File Type]** i listan **[!UICONTROL Open]** för den filtyp som PDF Generator-tjänsten ska ha behörighet att konvertera till PDF-dokument.
+1. Klicka på **[!UICONTROL File Block Settings]** i **[!UICONTROL Trust Center settings]**.
+1. Avmarkera **[!UICONTROL Open]** i listan **[!UICONTROL File Type]** för den filtyp som PDF Generator-tjänsten ska ha behörighet att konvertera till PDF-dokument.
 
 ### (Endast Windows) Bevilja privilegiet Ersätt en token på processnivå {#grant-the-replace-a-process-level-token-privilege}
 
@@ -1056,9 +1058,9 @@ AEM Forms tilläggspaket är ett program som distribueras till AEM. Paketet inne
 1. Öppna [Pakethanteraren](/help/sites-administering/package-manager.md) och klicka på **[!UICONTROL Upload Package]** för att överföra paketet.
 1. Markera paketet och klicka på **[!UICONTROL Install]**.
 
-   Du kan även hämta paketet via den direktlänk som visas i artikeln [AEM Forms-utgåvor](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE).
+   Du kan även hämta paketet via den direktlänk som visas i artikeln [AEM Forms-utgåvor](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-1. När paketet har installerats uppmanas du att starta om AEM-instansen. **Stoppa inte servern omedelbart.** Innan du stoppar AEM Forms Server väntar du tills ServiceEvent REGISTERED- och ServiceEvent UNREGISTERED-meddelandena inte längre visas i filen `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log och loggen är stabil.
+1. När paketet har installerats uppmanas du att starta om AEM-instansen. **Stoppa inte servern omedelbart.** Innan du stoppar AEM Forms Server väntar du tills meddelandena ServiceEvent REGISTERED och ServiceEvent UNREGISTERED inte visas i filen `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log och loggen är stabil.
 
 ## Konfiguration efter installation {#post-installation-configurations}
 
@@ -1103,7 +1105,7 @@ Det krävs ett lokalt användarkonto för att köra PDF Generator-tjänsten. Anv
 
 ### Konfigurera timeout-inställningar {#configure-the-time-out-settings}
 
-1. Leta reda på och öppna tjänsten [&#x200B; i &#x200B;](http://localhost:4502/system/console/configMgr)AEM konfigurationshanterare **[!UICONTROL Jacorb ORB Provider]**.
+1. Leta reda på och öppna tjänsten **[!UICONTROL Jacorb ORB Provider]** i [AEM konfigurationshanterare](http://localhost:4502/system/console/configMgr).
 
    Lägg till följande i fältet **[!UICONTROL Custom Properties.name]** och klicka på **[!UICONTROL Save]**. Tidsgränsen för väntande svar (kallas även CORBA-klienttimeout) anges till 600 sekunder.
 
@@ -1156,7 +1158,7 @@ I Microsoft® Windows använder PDF Generator-tjänsten Adobe Acrobat för att k
 
       Acrobat är konfigurerat att köras med PDF Generator-tjänsten.
 
-1. Kör [Systemberedskapsverktyget &#x200B;](#SRT) för att validera Acrobat-installationen.
+1. Kör [Systemberedskapsverktyget ](#SRT) för att validera Acrobat-installationen.
 
 ### (Endast Windows) Konfigurera primär väg för konvertering från HTML till PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
@@ -1166,7 +1168,7 @@ Den primära standardvägen för konvertering från HTML till PDF är Webkit. S�
 
 1. I AEM-författarinstans går du till **[!UICONTROL Tools]**> **[!UICONTROL Forms]**> **[!UICONTROL Configure PDF Generator]**.
 
-1. Välj önskad konverteringsväg i listrutan **[!UICONTROL General Configuration]** på fliken **[!UICONTROL Primary Route for HTML to PDF conversions]**.
+1. Välj önskad konverteringsväg i listrutan **[!UICONTROL Primary Route for HTML to PDF conversions]** på fliken **[!UICONTROL General Configuration]**.
 
 ### Initiera Global Trust Store {#intialize-global-trust-store}
 
@@ -1195,7 +1197,7 @@ Utför följande steg för att konfigurera certifikaten:
 
 1. Logga in på AEM Author-instansen som administratör. Gå till **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 1. Klicka på fältet **[!UICONTROL name]** för användarkontot. Sidan **[!UICONTROL Edit User Settings]** öppnas. I AEM Author-instansen finns certifikat i KeyStore. Om du inte har skapat en KeyStore tidigare klickar du på **[!UICONTROL Create KeyStore]** och anger ett nytt lösenord för KeyStore. Om servern redan innehåller en KeyStore hoppar du över det här steget.  Om du använder Adobe Reader Extensions-certifikat är lösenordet för nyckelfilen alltid detsamma som lösenordet för den privata nyckeln.
-1. Välj fliken **[!UICONTROL Edit User Settings]** på sidan **[!UICONTROL KeyStore]**. Expandera alternativet **[!UICONTROL Add Private Key from Key Store file]** och ange ett alias. Aliaset används för att utföra Reader Extensions-åtgärden.
+1. Välj fliken **[!UICONTROL KeyStore]** på sidan **[!UICONTROL Edit User Settings]**. Expandera alternativet **[!UICONTROL Add Private Key from Key Store file]** och ange ett alias. Aliaset används för att utföra Reader Extensions-åtgärden.
 1. Om du vill överföra certifikatfilen klickar du på **[!UICONTROL Select Key Store File]** och överför en &lt;filnamn>.pfx-fil.
 
    Lägg till **[!UICONTROL Key Store Password]**, **[!UICONTROL Private Key Password]** och **[!UICONTROL Private Key Alias]** som är associerad med certifikatet till respektive fält. Klicka på **[!UICONTROL Submit]**.
@@ -1231,11 +1233,11 @@ Assembler-tjänsten är beroende av Reader Extensions-tjänsten, Signature-tjän
   </tr>
   <tr>
    <td>Forms Service</td>
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td>
+   <td>com.adobe.livecycle.adobe-lc-forms-grund-connector<br /> </td>
   </tr>
   <tr>
    <td>Output Service</td>
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td>
+   <td>com.adobe.livecycle.adobe-lc-forms-grund-connector</td>
   </tr>
  </tbody>
 </table>
@@ -1343,7 +1345,7 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
 * Kontrollera att 32-bitars [version](/help/sites-deploying/technical-requirements.md) av Microsoft Office som stöds är installerad och att dialogrutorna för att öppna är avbrutna för alla program.
 * Se till att en PDF Generator-användare läggs till i PDF konfigurationsgränssnitt.
-* Kontrollera att PDF Generator-användaren är medlem i en administratörsgrupp och att privilegiet [Ersätt en token &#x200B;](#grant-the-replace-a-process-level-token-privilege) för processnivå har angetts för användaren.
+* Kontrollera att PDF Generator-användaren är medlem i en administratörsgrupp och att privilegiet [Ersätt en token ](#grant-the-replace-a-process-level-token-privilege) för processnivå har angetts för användaren.
 * Se till att användaren är konfigurerad i PDF Generator UI och utför följande åtgärder:
    1. Logga in på Microsoft® Windows med PDF Generator-användare.
    1. Öppna Microsoft® Office- eller OpenOffice-program och avbryt alla dialogrutor.
@@ -1357,12 +1359,12 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
 * Installera den version av OpenOffice som stöds. AEM Forms stöder både 32- och 64-bitarsversioner. När du har installerat öppnar du alla OpenOffice-program, avbryter alla dialogrutor och stänger programmen. Öppna programmen igen och se till att ingen dialogruta visas när du öppnar ett OpenOffice-program.
 
-* Skapa en miljövariabel `OpenOffice_PATH` och ställ in den så att den pekar på OpenOffice-installationen anges i [&#x200B; console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) - eller dt-profilen (enhetsträd).
+* Skapa en miljövariabel `OpenOffice_PATH` och ställ in den så att den pekar på OpenOffice-installationen anges i [ console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) - eller dt-profilen (enhetsträd).
 * Om det uppstår problem när du installerar OpenOffice kontrollerar du att [32-bitars bibliotek](#extrarequirements) som krävs för OpenOffice-installation är tillgängliga.
 
 +++
 
-+++HTML till PDF konverteringsproblem
++++Konverteringsproblem mellan HTML och PDF
 
 * Se till att teckensnittskataloger läggs till i PDF Generator config UI.
 
@@ -1423,7 +1425,7 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
 +++
 
-+++Fel vid automatiseringstest
++++Fel vid automatiseringstestning
 
 * För Microsoft® Office och OpenOffice utför du minst en konvertering manuellt (som varje användare) för att säkerställa att ingen dialogruta öppnas under konverteringen. Om någon dialogruta visas, stänger du den. Ingen sådan dialogruta ska visas vid automatisk konvertering.
 
@@ -1433,7 +1435,7 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
 +++Flera användarkonverteringsfel
 
-* Kontrollera serverloggarna för att kontrollera om konverteringen misslyckas för en viss användare.(Process Explorer kan hjälpa dig att kontrollera processen för olika användare)
+* Kontrollera serverloggarna för att kontrollera om konverteringen misslyckas för en viss användare.(Med Process Explorer kan du kontrollera processen som körs för olika användare)
 
 * Kontrollera att den användare som konfigurerats för PDF Generator har lokala administratörsrättigheter.
 
@@ -1453,10 +1455,10 @@ Kontrollera att [Systemberedskapsverktyget](#SRT) inte rapporterar något fel in
 
          &quot;
          
-         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;Absolute path to prov.xml>]&lbrace;2&quot; 
-         
-         
+         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;Absolute path to prov.xml>] 225&#39;/>&quot;
      
+         
+         
    * Volymserialisera paketet (serialisera om den befintliga installationen med prov.xml-filen och den nya serienumret): Kör följande kommando från PRTK-installationsmappen som administratör för att serialisera och aktivera distribuerade paket på klientdatorer:
 
          &quot;

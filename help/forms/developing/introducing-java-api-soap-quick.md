@@ -1,6 +1,6 @@
 ---
-title: Introduktion till Java&handel; API QuickStart
-description: Lär dig hur AEM Forms-åtgärder kan utföras med AEM Forms Java&trade; strongly typed API enabled with SOAP connection.
+title: Introduktion till Java&trade; API QuickStart
+description: Lär dig hur AEM Forms-åtgärder kan utföras med AEM Forms JavaTrade; mycket typat API aktiverat med SOAP-anslutning.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: a5ae164d-d0c0-40d0-baeb-0e646fc71f55
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -69,19 +69,19 @@ JAR-fillistan finns i ett kommentarsavsnitt i början av snabbstarten. Följande
 
 De flesta snabbstarter i *Programmering med AEM Forms på JEE* anropar en specifik tjänst för att utföra en åtgärd. Vissa snabbstarter anropar dock flera AEM Forms-tjänster för ett visst arbetsflöde. Följande lista innehåller Java™-snabbstarter som anropar fler än en AEM Forms-tjänst:
 
-[Snabbstart (SOAP-läge): Skickar ett dokument i AEM Forms-databasen till utdatatjänsten med Java™-API:t &#x200B;](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (anropar tjänsten Databas och Utdata)
+[Snabbstart (SOAP-läge): Skickar ett dokument i AEM Forms-databasen till utdatatjänsten med Java™-API:t ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (anropar tjänsten Databas och Utdata)
 
 [Snabbstart (SOAP-läge): Skapa ett PDF-dokument baserat på fragment med Java™ API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) (anropar Assembler- och Output-tjänsten)
 
-[Snabbstart (SOAP-läge): Skapa PDF-dokument med skickade XML-data med Java™-API:t &#x200B;](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (anropar Forms-, Output- och Document Management-tjänsten)
+[Snabbstart (SOAP-läge): Skapa PDF-dokument med skickade XML-data med Java™-API:t ](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (anropar Forms-, Output- och Document Management-tjänsten)
 
-[Snabbstart (SOAP-läge): Skickar dokument till Forms-tjänsten med Java™-API:t &#x200B;](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (anropar Forms- och Document Management-tjänsten)
+[Snabbstart (SOAP-läge): Skickar dokument till Forms-tjänsten med Java™-API:t ](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (anropar Forms- och Document Management-tjänsten)
 
 [Snabbstart (SOAP-läge): Signera ett XFA-baserat formulär digitalt med Java™ API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (anropar Forms- och Signature-tjänsten)
 
 [Snabbstart (SOAP-läge): Hantera roller och behörigheter med Java™ API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) (anropar DirectoryManager och tjänsten AuthorizationManager)
 
-[Snabbstart (SOAP-läge): Skickar dokument till utdatatjänsten med Java™-API:t &#x200B;](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) (anropar utdata- och dokumenthanteringstjänsten)
+[Snabbstart (SOAP-läge): Skickar dokument till utdatatjänsten med Java™-API:t ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) (anropar utdata- och dokumenthanteringstjänsten)
 
 >[!NOTE]
 >

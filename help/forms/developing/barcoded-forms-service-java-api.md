@@ -1,5 +1,5 @@
 ---
-title: Streckkodad Forms Service Java&handel; API Quick Start (SOAP)
+title: Streckkodad Forms Service Java&trade; API Quick Start (SOAP)
 description: Läs om hur Barcoded Forms Service Java&trade; API Quick Start (SOAP) i AEM Forms möjliggör smidig bearbetning av streckkoder.
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: d1350be7-2204-4dc2-814b-4d9e3438a854
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Java™ API Quick Start (SOAP) finns för tjänsten Barcoded Forms:
 
-[Snabbstart (SOAP-läge): Avkoda streckkodade formulärdata med Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Snabbstart (SOAP-läge): Avkoda streckkodade formulärdata med Java™ API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 AEM Forms-åtgärder kan utföras med AEM Forms starkt typbestämda API och anslutningsläget bör anges till SOAP.
 

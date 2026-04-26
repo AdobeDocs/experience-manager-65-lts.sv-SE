@@ -7,9 +7,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 30ed51ad-4f69-41eb-9fca-d29d644aa4ba
-source-git-commit: 9a11887b6bb8446772e5a41246da1023f40ce507
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '16909'
+source-wordcount: '17116'
 ht-degree: 0%
 
 ---
@@ -595,7 +595,7 @@ Du kan lägga till följande konfigurationsvärde i filen cknfastrc, som finns p
 
 När du har lagt till det här konfigurationsvärdet i cknfastrc-filen kan de nya autentiseringsuppgifterna användas utan att J2EE-programservern startas om.
 
-    >[ !OBS!]
+    >[!OBS!]
     >
     > Du bör använda kommandot Ctrl + C för att starta om SDK. Om du startar om AEM SDK med alternativa metoder, till exempel genom att stoppa Java-processer, kan det leda till inkonsekvenser i AEM utvecklingsmiljö.
 
@@ -1486,7 +1486,7 @@ Verifiera en digital signatur med hjälp av Signature Service API (webbtjänst):
 
    * Skapa ett `PKIOptions`-objekt med hjälp av dess konstruktor.
    * Ange verifieringstiden genom att tilldela `PKIOptions`-objektets `verificationTime`-datamedlem ett `VerificationTime`-uppräkningsvärde som anger verifieringstiden.
-   * Ange alternativet för spärrkontroll genom att tilldela `PKIOptions`-objektets `revocationCheckStyle`-datamedlem ett `RevocationCheckStyle`-uppräkningsvärde som anger om spärrkontroll ska utföras.
+   * Ange alternativet för spärrkontroll genom att tilldela `revocationCheckStyle`-objektets `PKIOptions`-datamedlem ett `RevocationCheckStyle`-uppräkningsvärde som anger om spärrkontroll ska utföras.
 
 1. Verifiera den digitala signaturen
 
@@ -1650,7 +1650,7 @@ Verifiera flera digitala signaturer med Signature Service API (Java):
 1. Upprepa med alla signaturer
 
    * Upprepa genom alla signaturer genom att anropa `PDFDocumentVerificationInfo`-objektets `getVerificationInfos`-metod. Den här metoden returnerar ett `java.util.List`-objekt där varje element är ett `PDFSignatureVerificationInfo`-objekt. Använd ett `java.util.Iterator`-objekt för att iterera igenom signaturlistan.
-   * Med objektet `PDFSignatureVerificationInfo` kan du utföra åtgärder som att fastställa signaturens status genom att anropa metoden `PDFSignatureVerificationInfo` för objektet `getStatus` . Den här metoden returnerar ett `SignatureStatus`-objekt vars statiska datamedlem informerar dig om signaturens status. Om signaturen till exempel är okänd returnerar metoden `SignatureStatus.DocumentSignatureUnknown`.
+   * Med objektet `PDFSignatureVerificationInfo` kan du utföra åtgärder som att fastställa signaturens status genom att anropa metoden `getStatus` för objektet `PDFSignatureVerificationInfo` . Den här metoden returnerar ett `SignatureStatus`-objekt vars statiska datamedlem informerar dig om signaturens status. Om signaturen till exempel är okänd returnerar metoden `SignatureStatus.DocumentSignatureUnknown`.
 
 **Se även**
 
@@ -1816,7 +1816,7 @@ Ta bort en digital signatur med signatur-API (Java):
 1. Spara PDF-dokumentet som en PDF-fil
 
    * Skapa ett `java.io.File`-objekt och kontrollera att filtillägget är .pdf.
-   * Anropa metoden `com.adobe.idp.Document` för objektet `copyToFile`. Skicka objektet `java.io.File` för att kopiera innehållet i objektet `com.adobe.idp.Document` till filen. Kontrollera att du använder objektet `Document` som returnerades av metoden `clearSignatureField`.
+   * Anropa metoden `copyToFile` för objektet `com.adobe.idp.Document`. Skicka objektet `java.io.File` för att kopiera innehållet i objektet `com.adobe.idp.Document` till filen. Kontrollera att du använder objektet `Document` som returnerades av metoden `clearSignatureField`.
 
 **Se även**
 

@@ -9,9 +9,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5139'
+source-wordcount: '5313'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Varje uppdatering av databasen skapar en innehållsändring. Det innebär att da
 
 Med AEM 6.3 och senare introducerades en onlineversion av den här funktionen som kallas Online Revision Cleanup. Jämfört med offlineredigering där AEM-instansen måste stängas av, kan onlineredigering köras när AEM-instansen är online. Rensa onlineändringar är aktiverat som standard och det är det rekommenderade sättet att rensa en revision.
 
-**Obs!**: [I videon &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=sv-SE) finns en introduktion och information om hur du använder rensning av onlineversioner.
+**Obs!**: [I videon ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) finns en introduktion och information om hur du använder rensning av onlineversioner.
 
 Revideringsrensningsprocessen består av tre faser: **uppskattning**, **komprimering** och **rensning**. Beräkningen avgör om nästa fas (komprimering) ska köras eller inte baserat på hur mycket skräp som kan samlas in. Under komprimeringsfasen skrivs segment och tjärfiler om, utan att något innehåll som inte används tas bort. Rensa upp-fasen tar sedan bort de gamla segmenten, inklusive eventuellt skräp som de innehåller. Offlineläget kan vanligtvis frigöra mer utrymme eftersom onlineläget måste ta hänsyn till AEM arbetsgrupper som inte samlar in fler segment.
 
@@ -38,7 +38,7 @@ Du kan även läsa den [officiella Oak-dokumentationen](https://jackrabbit.apach
 
 ### När ska onlinerevision rensas i stället för Offline Revision Cleanup? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
 
-**Rensning av onlineändringar rekommenderas för att utföra rensning av revisioner.Rensning av** offlineredigering bör endast användas i undantagsfall, till exempel innan du migrerar till det nya lagringsformatet eller om du har ombetts att göra det av Adobe kundtjänst.
+**Rensning av onlineändringar rekommenderas för att utföra revisionsrensning.** Rensning av offlineredigering bör endast användas i undantagsfall, t.ex. innan du migrerar till det nya lagringsformatet eller om du ombeds att göra det av Adobe kundtjänst.
 
 ## Så här kör du rensning av onlineändringar {#how-to-run-online-revision-cleanup}
 
@@ -313,7 +313,7 @@ Ibland kan rensningsprocessen fördröjas om du växlar mellan svansen och det f
       </ul> </li>
      <li>Det diskutrymme som frigjorts vid rensning av revision
       <ul>
-       <li>Utrymmet återvinns endast när rensningsfasen är slutförd. Slutförandet av rensningsfasen markeras av loggmeddelandet "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". Storleken efter rensning är {} ({} byte) och utrymmet återanvänds {} ({} byte). Vikt/djup för komprimeringsmappning är {}/{} ({} byte/{})."</li>
+       <li>Utrymmet återvinns endast när rensningsfasen är slutförd. Slutförandet av rensningsfasen markeras av loggmeddelandet "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". Storleken efter rensning är {} ({} byte) och utrymmet återtogs {} ({} byte). Vikt/djup för komprimeringsmappning är {}/{} ({} bytes/{})."</li>
       </ul> </li>
      <li>Ett fel uppstod under rensningen av revisionen
       <ul>
@@ -380,7 +380,7 @@ Ibland kan rensningsprocessen fördröjas om du växlar mellan svansen och det f
   </tr>
   <tr>
    <td><strong>Enligt hälsokontrollen och loggposterna har rensning av onlineändringar inte slutförts tre gånger i rad. Vad krävs för att onlineversionen ska kunna rensas korrekt?</strong></td>
-   <td>Du kan utföra flera steg för att hitta och åtgärda problemet:<br />
+   <td>Du kan söka efter och åtgärda problemet i flera steg:<br />
     <ul>
      <li>Kontrollera först loggposterna <br /> </li>
      <li>Beroende på informationen i loggarna ska du vidta lämpliga åtgärder:
@@ -409,7 +409,7 @@ Ibland kan rensningsprocessen fördröjas om du växlar mellan svansen och det f
     <ol>
      <li>Ett program som kringgår de rekommenderade åtkomstmekanismerna (som Sling och JCR API) och använder ett API/SPI på lägre nivå för att komma åt databasen och sedan överskrider kvarhållningstiden för ett segment. Det innebär att den behåller en referens till en enhet som är längre än den kvarhållningstid som tillåts av onlinerevideringsrensningen (24 timmar som standard). Det här fallet är övergående och leder inte till att data skadas. För att återställa systemet bör ekkörningsverktyget användas för att bekräfta undantagets transienta karaktär (ekskörningskontrollen bör inte rapportera några fel). För att göra detta måste instansen tas offline och sedan startas om.</li>
      <li>En extern händelse orsakade att data på disken skadades. Det kan vara ett diskfel, slut på diskutrymme eller en oavsiktlig ändring av de datafiler som krävs. I det här fallet måste instansen tas offline och repareras med körkontrollen. Mer information om hur du utför körningskontrollen finns i följande <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache-dokumentation</a>.</li>
-     <li>Åtgärda alla andra händelser via <a href="https://experienceleague.adobe.com/sv?support-solution=General&support-tab=home#support" target="_blank">Adobe kundtjänst</a>.</li>
+     <li>Åtgärda alla andra händelser via <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">Adobe kundtjänst</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -420,7 +420,8 @@ Ibland kan rensningsprocessen fördröjas om du växlar mellan svansen och det f
 
 error.log är utförlig om det finns incidenter under rensningen av onlineversioner. Följande matris syftar till att förklara de vanligaste budskapen och ge möjliga lösningar:
 
-<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
+<!--
+| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
 |   |  |  |  |
 | Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
@@ -428,7 +429,8 @@ error.log är utförlig om det finns incidenter under rensningen av onlineversio
 | Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
 |   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
 |   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message does not mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
-| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |
+-->
 
 <table style="table-layout:auto">
  <tbody>
@@ -461,7 +463,7 @@ error.log är utförlig om det finns incidenter under rensningen av onlineversio
   </tr>
    <tr>
     <td>Ej tillämpligt</td>
-    <td>TjäraMK GC #2: komprimeringen avbröts: ${REASON}.</td>
+    <td>TjärMK GC #2: komprimeringen avbröts: ${REASON}.</td>
     <td>Komprimeringsfasen avslutades för tidigt. Några exempel på händelser som kan avbryta komprimeringsfasen: det finns inte tillräckligt med minne eller diskutrymme på värdsystemet. Komprimeringen kan också avbrytas genom att systemet stängs av eller genom att det uttryckligen avbryts via administrativa gränssnitt som underhållspanelen i Operations Dashboard.</td>
     <td>Beroende på den angivna orsaken.</td>
   </td>
@@ -537,7 +539,7 @@ Listan innehåller flera kommandoradsparametrar, enligt beskrivningen nedan:
 
 * **-Dcompaction-progress-log**. Antalet komprimerade noder som loggas. Standardvärdet är 150000, vilket innebär att de första 150000 komprimerade noderna loggas under åtgärden. Använd den här med nästa parameter som beskrivs nedan.
 
-* **-Dtar.PersistCompactionMap.** Ställ in den här parametern på true om du vill använda diskutrymme i stället för heap-minne för att bevara komprimeringskartan. Kräver ekkörningsverktyget **version 1.4** och senare. Mer information finns i fråga 3 i avsnittet [Vanliga frågor och svar &#x200B;](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions) om offlineredigering. **Den här parametern har tagits bort i Oak version 1.6 och har ingen effekt.**
+* **-Dtar.PersistCompactionMap.** Ställ in den här parametern på true om du vill använda diskutrymme i stället för heap-minne för att bevara komprimeringskartan. Kräver ekkörningsverktyget **version 1.4** och senare. Mer information finns i fråga 3 i avsnittet [Vanliga frågor och svar ](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions) om offlineredigering. **Den här parametern har tagits bort i Oak version 1.6 och har ingen effekt.**
 
 * **—force.** Tvinga komprimering och ignorera en version som inte matchar segmentlagret.
 

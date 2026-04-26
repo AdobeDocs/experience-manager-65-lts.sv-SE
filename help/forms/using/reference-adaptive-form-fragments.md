@@ -8,10 +8,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: 98ca5aa6-f801-4940-a458-a8e698ff2842
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [Anpassat formulärfragment](../../forms/using/adaptive-form-fragments.md) är en grupp fält eller en panel som innehåller en grupp fält som du kan använda när du skapar ett formulär. Du kan skapa ett formulär snabbt och enkelt. Du kan dra och släppa ett anpassat formulärfragment i ett formulär med hjälp av resursläsaren i sidofältet, och du kan redigera det i formulärredigeraren.
 
-För formulärförfattare med adaptiv formatering finns referensfragment i [AEM Forms-tilläggspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=sv-SE). Den innehåller följande fragment:
+För formulärförfattare med adaptiv formatering finns referensfragment i [AEM Forms-tilläggspaketet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Den innehåller följande fragment:
 
 * Adress
 * Kontaktinformation
@@ -42,9 +42,11 @@ Inkluderar fält som anger postadress. De tillgängliga fälten är gatuadress, 
 
 ![Adressfragment](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## Kontaktinformation {#contact-information}
 
@@ -52,9 +54,11 @@ Inkluderar fält för att hämta telefonnummer och e-postadress.
 
 ![Kontaktinformationsfragment](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## Kreditkortsinformation {#credit-card-information}
 
@@ -67,9 +71,11 @@ Innehåller fält för att samla in aktuella anställningsdetaljer som anställn
 
 ![Aktuellt anställningsfragment](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## Information om beroende {#dependents-information}
 
@@ -77,9 +83,11 @@ Inkluderar fält som anger information om ett eller flera beroenden, t.ex. namn,
 
 ![Beroende informationsfragment](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## Anställningshistorik {#employment-history}
 
@@ -87,9 +95,11 @@ Inkluderar fält som fångar anställningshistorik. Det gör det möjligt att l�
 
 ![Anställningshistorikfragment](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## Inkomster och utgifter {#income-expenditure}
 
@@ -97,9 +107,11 @@ Inkluderar fält för att samla in månatligt kassaflöde och utgifter. Forms so
 
 ![Inkomst- och utgiftsfragment](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## Namn {#name}
 
@@ -107,9 +119,11 @@ Inkluderar fält för att ange rubrik, förnamn, mellannamn och efternamn.
 
 ![Namnfragment](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## Villkor {#terms-conditions}
 
@@ -117,9 +131,11 @@ Anger villkor som användare ska godkänna innan de skickar in ett formulär.
 
 ![Villkor för fragment](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## Villkor med Klottra {#terms-conditions-with-scribble}
 
@@ -127,6 +143,8 @@ Anger villkor som användare ska godkänna och signera innan de skickar in ett f
 
 ![Villkor med Klottra](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

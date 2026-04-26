@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 7380be9a-7f5c-46df-97f8-6309daa2a566
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1646'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Använd alternativen på panelen **Mina filter** för att **lägga till** ![lc_p
    ![task_search_result](assets/task_search_result.png)
 
 1. Klicka på knappen ![lc_pr_rail_button](assets/lc_pr_rail_button.png) i det övre vänstra hörnet för att komprimera rutan **Mina filter** och utöka det tillgängliga utrymmet för panelen **Rapport**.
-1. Använd alternativen i det övre högra hörnet av panelen **Rapport &#x200B;** för att utföra åtgärder på frågeresultatet.
+1. Använd alternativen i det övre högra hörnet av panelen **Rapport **för att utföra åtgärder på frågeresultatet.
 
    * **Uppdatera**: Uppdaterar rapporten med de senaste data som finns i lagringen
 

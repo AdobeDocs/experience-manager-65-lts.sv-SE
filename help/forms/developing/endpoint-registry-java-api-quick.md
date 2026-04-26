@@ -1,5 +1,5 @@
 ---
-title: Endpoint Registry Java&handel; API QuickStart(SOAP)
+title: Endpoint Registry Java&trade; API QuickStart(SOAP)
 description: Lär dig hur du lägger till slutpunkter som EJB, SOAP, bevakad mapp, e-postslutpunkt och fjärrslutpunkt och redigerar, tar bort och hämtar slutpunkter med Java&trade; API.
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: ac33db6b-9896-4593-9365-62dd924b6bcb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ ht-degree: 0%
 
 Java™ API Quick Start (SOAP) finns för Endpoint Registry.
 
-[QuickStart: Lägga till en EJB-slutpunkt med Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[QuickStart: Lägga till en EJB-slutpunkt med Java™ API](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[QuickStart: Lägga till en SOAP-slutpunkt med Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: Lägga till en SOAP-slutpunkt med Java™ API](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[QuickStart: Lägga till en bevakad mappslutpunkt med Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[QuickStart: Lägga till en bevakad mappslutpunkt med Java™ API](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[QuickStart: Lägga till en e-postslutpunkt med Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[QuickStart: Lägga till en e-postslutpunkt med Java™ API](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
-[QuickStart: Lägga till en fjärrslutpunkt med Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
+[QuickStart: Lägga till en fjärrslutpunkt med Java™ API](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[QuickStart: Lägga till en TaskManager-slutpunkt med Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[QuickStart: Lägga till en TaskManager-slutpunkt med Java™ API](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[QuickStart: Ändra en slutpunkt med Java](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
+[QuickStart: Ändra en slutpunkt med Java™ API](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[QuickStart: Ta bort en slutpunkt med Java](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
+[QuickStart: Ta bort en slutpunkt med Java™ API](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[QuickStart: Hämta slutpunktsanslutningsinformation med Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
+[QuickStart: Hämta slutpunktsanslutningsinformation med Java™ API](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
 AEM Forms-åtgärder kan utföras med AEM Forms starkt typbestämda API och anslutningsläget bör anges till SOAP.
 
@@ -386,7 +386,7 @@ I följande Java™-kodexempel läggs en bevakad mappslutpunkt till i en tjänst
 
 ## QuickStart: Lägga till en e-postslutpunkt med Java™ API {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-I följande Java™-kodexempel läggs en e-postslutpunkt till i en tjänst med namnet *MyApplication/EncryptDocument* t. (Se [Lägga till e-postslutpunkter &#x200B;](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints) .)
+I följande Java™-kodexempel läggs en e-postslutpunkt till i en tjänst med namnet *MyApplication/EncryptDocument* t. (Se [Lägga till e-postslutpunkter](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >

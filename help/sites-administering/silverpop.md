@@ -10,19 +10,21 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 1782ad8c-b514-4d41-86c9-59c60af46cde
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 1%
+source-wordcount: '605'
+ht-degree: 0%
 
 ---
 
 # Integrera med Silverpop Engage{#integrating-with-silverpop-engage}
 
-<!-- THIS ENTIRE TOPIC APPEARS OBSOLETE BECAUSE SILVERPOP NO LONGER EXISTS AND THERE ARE NO REDIRECTS FOR THE DOWNLOAD URL BELOW THAT IS 404.
+<!--
+THIS ENTIRE TOPIC APPEARS OBSOLETE BECAUSE SILVERPOP NO LONGER EXISTS AND THERE ARE NO REDIRECTS FOR THE DOWNLOAD URL BELOW THAT IS 404.
 >[!NOTE]
 >
->Silverpop integration is **not** available out of the box. Download the Silverpop integration package `https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content` from Package Share and install it on your instance. After you have installed the package, you can configure it as described in this document. -->
+>Silverpop integration is **not** available out of the box. Download the Silverpop integration package `https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content` from Package Share and install it on your instance. After you have installed the package, you can configure it as described in this document.
+-->
 
 Genom att integrera AEM med Silverpop Engage kan du hantera och skicka e-postmeddelanden som skapats i AEM via Silverpop. Du kan också använda leadhanteringsfunktionerna i Silverpop via AEM-formulär på AEM-sidor.
 
@@ -48,7 +50,7 @@ Så här skapar du en Silverpop-konfiguration i molntjänster:
    >
    >Silverpop Engage är inte tillgängligt som alternativ under tredjepartstjänster om du inte hämtar paketet från paketresursen.
 
-1. Ange en titel och eventuellt ett namn och klicka på **Skapa**. Konfigurationsfönstret **&#x200B; Silverpop Settings** öppnas.
+1. Ange en titel och eventuellt ett namn och klicka på **Skapa**. Konfigurationsfönstret** Silverpop Settings** öppnas.
 1. Ange användarnamn, lösenord och välj en API-slutpunkt i listrutan.
 1. Klicka på **Anslut till Silverpop.** När du har anslutit visas en dialogruta om att anslutningen lyckades. Klicka på **OK** så att du stänger fönstret. Du kan gå till Silverpop genom att klicka på **Gå till Silverpop Engage**.
 1. Silverpop har konfigurerats. Du kan redigera konfigurationen genom att klicka på **Redigera**.

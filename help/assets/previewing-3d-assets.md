@@ -8,10 +8,10 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 88dc81aa-f8b2-403e-bd87-ea224ac2d0c2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 1%
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 Experience Manager stöder överföring, leverans och interaktiv förhandsgranskning av 3D-resurser som en del av utvecklingsprocessen.
@@ -68,12 +68,12 @@ Se [Format som stöds för 3D-förhandsgranskning](#supported-3d-previewing-asse
 
 1. I den nedrullningsbara listan Visa i det övre högra hörnet av sidan väljer du **[!UICONTROL Card View]** och navigerar sedan till en 3D-resurs som du vill förhandsgranska.
 
-   ![Välj 3D-kort](/help/assets/assets-dm/3d-card-select.png)
+   Välj ![ 3D-kort](/help/assets/assets-dm/3d-card-select.png)
    _I kortvyn väljer du kortet för den 3D-resurs som du vill förhandsgranska._
 
 1. Välj kortet för 3D-resursen.
 
-   ![Interaktiv 3D-förhandsvisning](/help/assets/assets-dm/3d-preview.png)
+   ![Interaktiv 3D-förhandsgranskning](/help/assets/assets-dm/3d-preview.png)
    _Interaktiv förhandsgranskning av en 3D-resurs på sidan med resursinfo._
 1. Gör något av följande på sidan med resursinformationsvyn för 3D-resursen:
 

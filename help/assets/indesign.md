@@ -5,9 +5,9 @@ role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: 8489976fbcee595ee8230c530597523e7cd0f6b7
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1550'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 0%
 * En proxyarbetare som definierar och hanterar en viss uppgift.
 Dessa kan omfatta en mängd olika uppgifter, till exempel att använda en [!DNL InDesign Server] för att bearbeta filer.
 
-Om du vill överföra filer till [!DNL Experience Manager Assets] som du har skapat med [!DNL Adobe InDesign] används en proxy. Detta använder en proxyarbetare för att kommunicera med [!DNL Adobe InDesign Server], där [&#x200B; skript](https://helpx.adobe.com/se/indesign/using/scripting.html) körs för att extrahera metadata och generera olika återgivningar för [!DNL Experience Manager Assets]. Proxyarbetaren aktiverar tvåvägskommunikation mellan [!DNL InDesign Server] och [!DNL Experience Manager]-instanserna i en molnkonfiguration.
+Om du vill överföra filer till [!DNL Experience Manager Assets] som du har skapat med [!DNL Adobe InDesign] används en proxy. Detta använder en proxyarbetare för att kommunicera med [!DNL Adobe InDesign Server], där [ skript](https://helpx.adobe.com/indesign/using/scripting.html) körs för att extrahera metadata och generera olika återgivningar för [!DNL Experience Manager Assets]. Proxyarbetaren aktiverar tvåvägskommunikation mellan [!DNL InDesign Server] och [!DNL Experience Manager]-instanserna i en molnkonfiguration.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] erbjuds som två separata erbjudanden. [Adobe InDesign](https://www.adobe.com/se/products/indesign.html) som används för att utforma sidlayouter för tryck och digital distribution. Med [Adobe InDesign Server](https://www.adobe.com/se/products/indesignserver.html) kan du skapa automatiserade dokument med programkod baserat på vad du har skapat med [!DNL InDesign]. Det fungerar som en tjänst som erbjuder ett gränssnitt till dess [ExtendScript](https://helpx.adobe.com/se/indesign/using/scripting.html)-motor. Skripten skrivs i [!DNL ExtendScript], som liknar [!DNL JavaScript].
+>[!DNL Adobe InDesign] erbjuds som två separata erbjudanden. [Adobe InDesign](https://www.adobe.com/products/indesign.html) som används för att utforma sidlayouter för tryck och digital distribution. Med [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) kan du skapa automatiserade dokument med programkod baserat på vad du har skapat med [!DNL InDesign]. Den fungerar som en tjänst som erbjuder ett gränssnitt till dess [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html)-motor.Skripten skrivs i [!DNL ExtendScript], vilket liknar [!DNL JavaScript].
 
 ## Hur extraheringen fungerar {#how-the-extraction-works}
 
@@ -114,7 +114,8 @@ Medieextraheringsargument och skriptsökvägar
 
 * **Utöka skript**: Du kan ange olika skriptkombinationer här. Om du vill att dina egna skript ska köras på [!DNL InDesign Server] sparar du skripten på `/apps/settings/dam/indesign/scripts`.
 
-<!-- TBD: Hiding this link since ADC is not available anymore. 
+<!--
+TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 -->
 
@@ -238,4 +239,4 @@ Du kan ändra administratörens standardautentiseringsuppgifter (användarnamn o
 
 >[!MORELIKETHIS]
 >
->* [Om Adobe InDesign Server](https://www.adobe.com/se/products/indesignserver/faq.html)
+>* [Om Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

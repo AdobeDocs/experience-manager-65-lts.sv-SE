@@ -7,10 +7,10 @@ feature: Link Sharing,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: ac7ff784-d331-4437-940f-9ea3ce122f8b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 3%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 | Version | Artikellänk |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=sv-SE) |
+| AEM as a Cloud Service | [Klicka här](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
 | AEM 6.5 | Den här artikeln |
 
 Med [!DNL Adobe Experience Manager Assets] kan du dela resurser, mappar och samlingar som en URL med medlemmar i din organisation och externa entiteter, inklusive partners och leverantörer. Att dela resurser via en länk är ett bekvämt sätt att göra resurser tillgängliga för externa parter utan att de först behöver logga in på [!DNL Assets].
@@ -43,7 +43,7 @@ Använd dialogrutan [!UICONTROL Link Sharing] för att generera URL:en för resu
 
    *Figur: Dialogrutan där resurser delas som en länk.*
 
-1. Skriv e-post-ID:t för den användare som du vill dela länken med i rutan för e-postadress i dialogrutan **[!UICONTROL Link Sharing]**. Du kan lägga till en eller flera användare.
+1. Skriv e-post-ID:t för den användare som du vill dela länken med i e-postadressrutan i dialogrutan **[!UICONTROL Link Sharing]**. Du kan lägga till en eller flera användare.
 
    >[!NOTE]
    >

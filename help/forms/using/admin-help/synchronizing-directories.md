@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Du kan konfigurera användarhantering så att det regelbundet görs en sökning 
 1. I administrationskonsolen klickar du på Inställningar > Användarhantering > Konfiguration > Konfigurera avancerade systemattribut.
 1. Under Synch Finisher Cron Expression anger du ett cron-uttryck som representerar intervallet där användarhanteringsförsök misslyckades med synkroniseringar. Användningen av cron-uttryck baseras på Quartz-systemet för jobbplanering med öppen källkod, version 1.4.0.
 
-   Standardvärdet är 0/13 &ast; ? &ast; , vilket innebär att kontrollen utförs var 13:e minut.
+   Standardvärdet är 0/13 &amp;ast; ? &amp;ast; , vilket innebär att kontrollen utförs var 13:e minut.
 
 ## Synkronisera kataloger manuellt {#manually-synchronize-directories}
 
@@ -93,7 +93,7 @@ Du kan konfigurera användarhantering så att det regelbundet görs en sökning 
 1. Schemalägg synkronisering:
 
    * Om du vill aktivera automatisk synkronisering dagligen väljer du Inträffar under Schemaläggaren. Välj Dagligen i listan och skriv in tiden i 24-timmarsformat i motsvarande ruta. När du sparar inställningarna konverteras det här värdet till ett cron-uttryck, som visas i rutan Kron-uttryck.
-   * Om du vill schemalägga synkronisering på en viss dag i veckan eller månaden, eller under en viss månad, väljer du Cron Expression och skriver ett lämpligt uttryck i rutan. Synkronisera till exempel kl. 1.30 den sista fredagen i månaden.
+   * Om du vill schemalägga synkronisering på en viss dag i veckan eller månaden, eller under en viss månad, väljer du Cron Expression och skriver ett lämpligt uttryck i rutan. Synkronisera till exempel vid 1:30 den sista fredagen i månaden.
 
 Användningen av cron-uttryck baseras på Quartz-systemet för jobbplanering med öppen källkod, version 1.4.0.
 
