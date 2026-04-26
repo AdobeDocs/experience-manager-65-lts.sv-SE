@@ -86,7 +86,7 @@ Följande åtgärder i [!DNL Assets] fungerar med de kortkommandon som visas. De
 | Kolumnvy i användargränssnittet [!DNL Assets] | Uppåtpil och nedåtpil | Navigera till filer och mappar i samma hierarki. |
 | Kolumnvy i användargränssnittet [!DNL Assets] | Vänster- och högerpilstangenter | Navigera till filer och mappar ovanför eller nedanför den aktuella mappen. |
 | Bläddrar bland mappar i [!DNL Assets] | `/` | Anropa en sökning genom att öppna sökrutan. |
-| [!DNL Assets]-konsol | &amp;grav; | Växla sidoskenor |
+| [!DNL Assets]-konsol | &grav; | Växla sidoskenor |
 | [!DNL Assets]-konsol | `Alt + 1` | Öppna innehållsträdet. |
 | [!DNL Assets]-konsol | `Alt + 2` | Öppna den vänstra listen [!UICONTROL Navigation]. |
 | [!DNL Assets]-konsol | `Alt + 3` | Visa [!UICONTROL Timeline] av en markerad resurs. |

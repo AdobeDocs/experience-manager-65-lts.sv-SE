@@ -151,7 +151,7 @@ Använd alternativen på panelen **Mina filter** för att **lägga till** ![lc_p
    ![task_search_result](assets/task_search_result.png)
 
 1. Klicka på knappen ![lc_pr_rail_button](assets/lc_pr_rail_button.png) i det övre vänstra hörnet för att komprimera rutan **Mina filter** och utöka det tillgängliga utrymmet för panelen **Rapport**.
-1. Använd alternativen i det övre högra hörnet av panelen **Rapport **för att utföra åtgärder på frågeresultatet.
+1. Använd alternativen i det övre högra hörnet av panelen **Rapport &#x200B;** för att utföra åtgärder på frågeresultatet.
 
    * **Uppdatera**: Uppdaterar rapporten med de senaste data som finns i lagringen
 

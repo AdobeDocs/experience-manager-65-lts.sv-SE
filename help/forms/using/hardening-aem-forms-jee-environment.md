@@ -264,7 +264,7 @@ Configuration Manager använde en serverlet som distribuerats på programservern
 1. Starta AEM Forms-servern.
 1. Skriv URL:en nedan i en webbläsare för att testa ändringen och se till att den inte längre fungerar.
 
-   https://<localhost>:/adobe-bootstrapper/bootstrap
+   https://&lt;localhost>:/adobe-bootstrapper/bootstrap
 
 **Låsa fjärråtkomst till Trust Store**
 

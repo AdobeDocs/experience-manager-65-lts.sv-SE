@@ -148,7 +148,7 @@ När filer släpps i den bevakade mappen visas filerna i indata, vilket kan för
 
 **Väntetid:** Den tid i millisekunder som du vill vänta innan du skannar en mapp eller fil efter att den har skapats. Om väntetiden till exempel är 3 600 000 millisekunder (en timme) och filen skapades för en minut sedan, kommer filen att hämtas efter 59 eller fler minuter. Standardvärdet är 0.
 
-Den här inställningen är användbar för att säkerställa att en fil eller mapp kopieras helt till indatamappen. Om du till exempel har en stor fil att bearbeta och det tar tio minuter att hämta filen, ställer du in väntetiden på 10&amp;ast;60 &amp;ast;1 000 millisekunder. Detta förhindrar att den bevakade mappen skannar filen om den inte är tio minuter gammal.
+Den här inställningen är användbar för att säkerställa att en fil eller mapp kopieras helt till indatamappen. Om du till exempel har en stor fil att bearbeta och det tar tio minuter att hämta filen, ställer du in väntetiden på 10&ast;60 &ast;1 000 millisekunder. Detta förhindrar att den bevakade mappen skannar filen om den inte är tio minuter gammal.
 
 **Uteslut filmönster:** Ett semikolon **;** avgränsad lista över mönster som används i en bevakad mapp för att avgöra vilka filer och mappar som ska sökas igenom och plockas upp. Filer och mappar med det här mönstret skannas inte för bearbetning.
 
@@ -156,29 +156,29 @@ Den här inställningen är användbar när indata är en mapp med flera filer. 
 
 Du kan använda filmönster för att exkludera:
 
-* Filer med specifika filnamnstillägg, till exempel &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Filer med specifika namn, till exempel data.&amp;ast; skulle exkludera filer och mappar med namnen *data1*, *data2* och så vidare.
+* Filer med specifika filnamnstillägg, till exempel &ast;.dat, &ast;.xml, &ast;.pdf.
+* Filer med specifika namn, till exempel data.&ast; skulle exkludera filer och mappar med namnen *data1*, *data2* och så vidare.
 * Filer med sammansatta uttryck i namnet och tillägget, som i följande exempel:
 
    * Data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][Aa]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][Aa]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 Mer information om filmönster finns i [Om filmönster](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Inkludera filmönster:** (obligatoriskt) Ett semikolon **;** avgränsad lista över mönster som den bevakade mappen använder för att avgöra vilka mappar och filer som ska sökas igenom och plockas upp. Om till exempel Inkludera filmönster är indata&amp;ast, hämtas alla filer och mappar som matchar indata&amp;ast;. Detta inkluderar filer och mappar med namnen input1, input2 och så vidare.
+**Inkludera filmönster:** (obligatoriskt) Ett semikolon **;** avgränsad lista över mönster som den bevakade mappen använder för att avgöra vilka mappar och filer som ska sökas igenom och plockas upp. Om till exempel Inkludera filmönster är indata&amp;ast, hämtas alla filer och mappar som matchar indata&ast;. Detta inkluderar filer och mappar med namnen input1, input2 och så vidare.
 
-Standardvärdet är &amp;ast; och anger alla filer och mappar.
+Standardvärdet är &ast; och anger alla filer och mappar.
 
 Du kan använda filmönster för att inkludera:
 
-* Filer med specifika filnamnstillägg, till exempel &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Filer med specifika namn, t.ex. data.&amp;ast; innehåller filer och mappar med namnen *data1*, *data2* och så vidare.
+* Filer med specifika filnamnstillägg, till exempel &ast;.dat, &ast;.xml, &ast;.pdf.
+* Filer med specifika namn, t.ex. data.&ast; innehåller filer och mappar med namnen *data1*, *data2* och så vidare.
 * Filer med sammansatta uttryck i namnet och tillägget, som i följande exempel:
 
    * Data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][Aa]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][Aa]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 Mer information om filmönster finns i [Om filmönster](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -230,7 +230,7 @@ Värdet -1 dagar anger att resultatmappen aldrig ska tas bort. Standardvärdet �
 
 **Litteral:** Den bevakade mappen använder det värde som anges i fältet när det visas. Alla grundläggande Java-typer stöds. Om ett API till exempel använder indata som String, long, int och Boolean, konverteras strängen till rätt typ och tjänsten anropas.
 
-**Variabel:** Det angivna värdet är ett filmönster som den bevakade mappen använder för att välja indata. Om det till exempel finns en krypteringslösenordstjänst där indatadokumentet måste vara en PDF-fil, kan användaren använda &amp;ast;.pdf som filmönster. Den bevakade mappen hämtar alla filer i den bevakade mappen som matchar mönstret och anropar tjänsten för varje fil. När en variabel används konverteras alla indatafiler till dokument. Endast API:er som använder Document som indatatyp stöds.
+**Variabel:** Det angivna värdet är ett filmönster som den bevakade mappen använder för att välja indata. Om det till exempel finns en krypteringslösenordstjänst där indatadokumentet måste vara en PDF-fil, kan användaren använda &ast;.pdf som filmönster. Den bevakade mappen hämtar alla filer i den bevakade mappen som matchar mönstret och anropar tjänsten för varje fil. När en variabel används konverteras alla indatafiler till dokument. Endast API:er som använder Document som indatatyp stöds.
 
 **Mappningar av utdataparameter:** Används för att konfigurera utdata för tjänsten och åtgärden. Vilka inställningar som är tillgängliga beror på vilken tjänst som använder den bevakade mappens slutpunkt.
 
@@ -244,13 +244,13 @@ Bevakade mapputdata kan vara ett enstaka dokument, en lista med dokument eller e
 
 Administratörer kan ange vilken typ av fil som kan anropa en tjänst. Du kan skapa flera filmönster för varje bevakad mapp. Ett filmönster kan vara någon av följande filegenskaper:
 
-* Filer med specifika filnamnstillägg. Till exempel &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
-* Filer med specifika namn. Data.&amp;ast;
+* Filer med specifika filnamnstillägg. Till exempel &ast;.dat, &ast;.xml, &ast;.pdf
+* Filer med specifika namn. Data.&ast;
 * Filer med sammansatta uttryck i namnet och tillägget, som i följande exempel:
 
    * Data`[0-9][0-9][0-9].[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][Aa]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][Aa]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 Administratören kan definiera filmönstret för utdatamappen där resultaten ska lagras. För utdatamappar (resultat, bevarande och fel) kan administratören ange något av följande filmönster:
 
@@ -376,11 +376,11 @@ Här följer några tips och råd när du konfigurerar slutpunkten för bevakad 
 * Om du har en bevakad mapp i Windows som bearbetar bildfiler anger du värden för alternativet Inkludera filmönster eller Uteslut filmönster för att förhindra att den automatiskt genererade Windows-filen Thumbs.db avsöks av den bevakade mappen.
 * Om ett cron-uttryck anges ignoreras det upprepade intervallet. Användningen av cron-uttryck baseras på Quartz-systemet för jobbplanering med öppen källkod, version 1.4.0.
 * Batchstorleken är antalet filer eller mappar som hämtas vid varje sökning i den bevakade mappen. Om gruppstorleken är inställd på två och tio filer eller mappar släpps i den bevakade mappens indatamapp, hämtas endast två vid varje sökning. I nästa sökning, som sker efter den tidpunkt som anges i upprepningsintervallet, hämtas de två följande filerna.
-* För filmönster kan administratörer ange reguljära uttryck med stöd för jokerteckenmönster för att ange filmönster. Bevakad mapp ändrar det reguljära uttrycket så att det stöder mönster med jokertecken som t&amp;ast;.&amp;ast; eller &amp;ast;.pdf. Dessa mönster med jokertecken stöds inte av reguljära uttryck.
+* För filmönster kan administratörer ange reguljära uttryck med stöd för jokerteckenmönster för att ange filmönster. Bevakad mapp ändrar det reguljära uttrycket så att det stöder mönster med jokertecken som t&ast;.&ast; eller &ast;.pdf. Dessa mönster med jokertecken stöds inte av reguljära uttryck.
 * Bevakad mapp söker igenom indatamappen efter indatamappen och vet inte om källfilen eller -mappen kopieras fullständigt till indatamappen innan den börjar bearbeta filen eller mappen. Så här ser du till att källfilen eller källmappen kopieras till indatamappen i den bevakade mappen innan filen eller mappen hämtas:
 
-   * Använd väntetid, vilket är den tid i millisekunder som den bevakade mappen väntar från den senaste ändringstiden. Använd den här funktionen om du har stora filer att bearbeta. Om det t.ex. tar 10 minuter att hämta en fil anger du väntetiden som 10&amp;ast;60 &amp;ast;1 000 millisekunder. Detta förhindrar att övervakad mapp kan hämta filen om den inte är lika gammal som tio minuter.
-   * Använd exkludera filmönster och inkludera filmönster. Om det uteslutna filmönstret till exempel är `ex*` och inkluderingsfilmönstret är `in*`, kommer Bevakad mapp att hämta de filer som börjar med &quot;in&quot; och inte hämta de filer som börjar med &quot;ex&quot;. Om du vill kopiera stora filer eller mappar måste du först byta namn på filen eller mappen så att namnet börjar med &quot;ex&quot;. När filen eller mappen med namnet &quot;ex&quot; har kopierats helt till den bevakade mappen byter du namn på den till &quot;in&amp;ast;&quot;.
+   * Använd väntetid, vilket är den tid i millisekunder som den bevakade mappen väntar från den senaste ändringstiden. Använd den här funktionen om du har stora filer att bearbeta. Om det t.ex. tar 10 minuter att hämta en fil anger du väntetiden som 10&ast;60 &ast;1 000 millisekunder. Detta förhindrar att övervakad mapp kan hämta filen om den inte är lika gammal som tio minuter.
+   * Använd exkludera filmönster och inkludera filmönster. Om det uteslutna filmönstret till exempel är `ex*` och inkluderingsfilmönstret är `in*`, kommer Bevakad mapp att hämta de filer som börjar med &quot;in&quot; och inte hämta de filer som börjar med &quot;ex&quot;. Om du vill kopiera stora filer eller mappar måste du först byta namn på filen eller mappen så att namnet börjar med &quot;ex&quot;. När filen eller mappen med namnet &quot;ex&quot; har kopierats helt till den bevakade mappen byter du namn på den till &quot;in&ast;&quot;.
 
 * Använd Töm varaktighet om du vill att resultatmappen ska vara ren. Bevakad mapp rensar alla filer som är äldre än den varaktighet som anges i rensningstiden. Längden är i dagar.
 * När du lägger till en bevakad mappslutpunkt fylls indataparametermappningen i när du har valt åtgärdsnamnet. För varje indata i åtgärden genereras ett mappningsfält för indataparametrar. Här är exempel på indataparametermappningar:

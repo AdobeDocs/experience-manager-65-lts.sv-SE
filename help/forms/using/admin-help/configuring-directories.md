@@ -284,7 +284,7 @@ Här följer ett exempel på LDIF för VLV-post för användare:
 
    >[!NOTE]
    >
-   >Som en konvention är vlvIndex-postens namn också inställt på `lcuser`, men du kan ge det ett annat namn. Använd samma namn i vlvindex-verktyget. (Se [Skapa katalogserverindex för VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Som en konvention är vlvIndex-postens namn också inställt på `lcuser`, men du kan ge det ett annat namn. Använd samma namn i vlvindex-verktyget. (Se [Skapa katalogserverindex för VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Använd verktyget `ldapmodify` som ingår i Sun ONE Server för att skapa en liknande post för grupper med hjälp av gruppens basnamn, sökfilter respektive sorteringsfält:
 

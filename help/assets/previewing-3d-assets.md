@@ -68,7 +68,7 @@ Se [Format som stöds för 3D-förhandsgranskning](#supported-3d-previewing-asse
 
 1. I den nedrullningsbara listan Visa i det övre högra hörnet av sidan väljer du **[!UICONTROL Card View]** och navigerar sedan till en 3D-resurs som du vill förhandsgranska.
 
-   Välj ![ 3D-kort](/help/assets/assets-dm/3d-card-select.png)
+   Välj ![&#x200B; 3D-kort](/help/assets/assets-dm/3d-card-select.png)
    _I kortvyn väljer du kortet för den 3D-resurs som du vill förhandsgranska._
 
 1. Välj kortet för 3D-resursen.

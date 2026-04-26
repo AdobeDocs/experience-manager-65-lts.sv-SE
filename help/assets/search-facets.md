@@ -182,7 +182,7 @@ På samma sätt som du lägger till ett egenskapsprediat eller ett alternativpre
 
 ## Återställ standardsökfaktorer {#restoring-default-search-facets}
 
-Som standard visas en låsikon ![låsikon](assets/do-not-localize/lock_closed_icon.svg) före **[!UICONTROL Assets Admin Search Rail]** på sidan **[!UICONTROL Search Forms]**. Låsikonen mot ett alternativ på söksidan i Forms anger att standardinställningarna är intakta och inte anpassade. Ikonen ![lås stängd ](assets/do-not-localize/lock_closed_icon.svg) försvinner om du lägger till sökfaktorer i formuläret, vilket anger att standardformuläret har ändrats.
+Som standard visas en låsikon ![låsikon](assets/do-not-localize/lock_closed_icon.svg) före **[!UICONTROL Assets Admin Search Rail]** på sidan **[!UICONTROL Search Forms]**. Låsikonen mot ett alternativ på söksidan i Forms anger att standardinställningarna är intakta och inte anpassade. Ikonen ![lås stängd &#x200B;](assets/do-not-localize/lock_closed_icon.svg) försvinner om du lägger till sökfaktorer i formuläret, vilket anger att standardformuläret har ändrats.
 
 ![Lås ikon](assets/locked_admin_rail.png)
 

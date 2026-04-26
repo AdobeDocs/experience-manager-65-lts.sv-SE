@@ -36,7 +36,7 @@ Efter [!UICONTROL Off Time] är en resurs och dess återgivningar inte tillgäng
 
 >[!CAUTION]
 >
->[HTTP API uppdaterar metadataegenskaperna ](#update-asset-metadata) i namnområdet `jcr`. Experience Manager användargränssnitt uppdaterar emellertid metadataegenskaperna i namnområdet `dc`.
+>[HTTP API uppdaterar metadataegenskaperna &#x200B;](#update-asset-metadata) i namnområdet `jcr`. Experience Manager användargränssnitt uppdaterar emellertid metadataegenskaperna i namnområdet `dc`.
 
 ## Innehållsfragment {#content-fragments}
 
@@ -318,6 +318,6 @@ Tar bort en resurs (-tree) vid den angivna sökvägen.
 
 ## Tips och begränsningar {#tips-best-practices-limitations}
 
-* [HTTP API uppdaterar metadataegenskaperna ](#update-asset-metadata) i namnområdet `jcr`. Experience Manager användargränssnitt uppdaterar emellertid metadataegenskaperna i namnområdet `dc`.
+* [HTTP API uppdaterar metadataegenskaperna &#x200B;](#update-asset-metadata) i namnområdet `jcr`. Experience Manager användargränssnitt uppdaterar emellertid metadataegenskaperna i namnområdet `dc`.
 
 * Assets HTTP API returnerar inte alla metadata. Namnutrymmena är hårdkodade och endast dessa namnutrymmen returneras. Fullständiga metadata finns i resurssökvägen `/jcr_content/metadata.json`.

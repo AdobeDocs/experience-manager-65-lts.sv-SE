@@ -85,7 +85,7 @@ Se [Justera gruppstorleken för arbetsflödet för ombearbetning](#adjusting-loa
 1. Välj **[!UICONTROL Dynamic Media Reprocess]** i listrutan **[!UICONTROL Start Workflow]**.
 1. (Valfritt) Ange ett namn för arbetsflödet i textfältet **Ange arbetsflödets namn**. Du kan använda namnet för att referera till arbetsflödesinstansen, om det behövs.
 
-   ![Bearbeta resurser igen ](/help/assets/assets/reprocess-assets2.png)
+   ![Bearbeta resurser igen &#x200B;](/help/assets/assets/reprocess-assets2.png)
 
 1. Välj **[!UICONTROL Start]** och sedan **[!UICONTROL Confirm]**.
 
@@ -106,7 +106,7 @@ Se [Justera gruppstorleken för arbetsflödet för ombearbetning](#adjusting-loa
 1. På sidan Dynamic Media Reprocess workflow, i det övre högra hörnet, väljer du **[!UICONTROL Edit]** för att låsa upp arbetsflödet.
 1. I arbetsflödet väljer du komponenten Scene7 Batch Upload för att öppna verktygsfältet och väljer sedan **[!UICONTROL Configure]** i verktygsfältet.
 
-   ![Komponenten för gruppöverföring i Scene7 ](/help/assets/assets-dm/reprocess-assets8.png)
+   ![Komponenten för gruppöverföring i Scene7 &#x200B;](/help/assets/assets-dm/reprocess-assets8.png)
 
 1. Ange följande i dialogrutan **[!UICONTROL Batch Upload to Scene7 – Step Properties]**:
    * I textfälten **[!UICONTROL Title]** och **[!UICONTROL Description]** anger du en ny titel och beskrivning för jobbet, om så önskas.

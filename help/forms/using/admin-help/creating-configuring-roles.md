@@ -80,7 +80,7 @@ Följande extra standardroller kan inkluderas, beroende på vilka AEM-formulärk
 
 **AEM-formulär Workspace Administrator:** Kan visa och ändra inställningar från Workspace-sidan i administrationskonsolen
 
-***Obs!**Flex Workspace är föråldrat för AEM formulärrelease.*
+***Obs!**&#x200B;Flex Workspace är föråldrat för AEM formulärrelease.*
 
 **Workspace-användare:** Kan logga in på Workspace slutanvändarprogram
 

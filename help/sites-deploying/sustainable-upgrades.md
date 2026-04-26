@@ -86,7 +86,7 @@ Blandningar som används i CRXDE Lite visar innehållsnoder och träd som är ma
 
 AEM 6.5 levereras med en hälsokontroll som varnar kunderna om överlagrat eller refererat innehåll används på ett sätt som inte stämmer överens med innehållsklassificeringen.
 
-** Kontroll av åtkomsten till innehåll som delas/beviljas** är en ny hälsokontroll som övervakar databasen för att se om kundkoden inte har åtkomst till skyddade noder i AEM.
+**&#x200B; Kontroll av åtkomsten till innehåll som delas/beviljas** är en ny hälsokontroll som övervakar databasen för att se om kundkoden inte har åtkomst till skyddade noder i AEM.
 
 Detta skannar **/appar** och tar vanligtvis flera sekunder att slutföra.
 

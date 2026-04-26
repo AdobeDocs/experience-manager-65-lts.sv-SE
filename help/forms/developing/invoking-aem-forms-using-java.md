@@ -701,7 +701,7 @@ Objektet `com.adobe.idp.Document` försöker identifiera innehållstypen med hj�
 
 Om det finns sidofiler i samma filsystem går det snabbare att skapa ett `com.adobe.idp.Document`-objekt. Om det finns filer som kan användas i fjärranslutna filsystem måste en kopieringsåtgärd utföras, vilket påverkar prestandan.
 
-Ett program kan innehålla datatyperna `com.adobe.idp.Document` och `org.w3c.dom.Document`. Se dock till att du kvalificerar datatypen `org.w3c.dom.Document` fullständigt. Information om hur du konverterar ett `org.w3c.dom.Document`-objekt till ett `com.adobe.idp.Document`-objekt finns i [Snabbstart (EJB-läge): Förifyll Forms med flödeslayouter med Java API ](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api) .
+Ett program kan innehålla datatyperna `com.adobe.idp.Document` och `org.w3c.dom.Document`. Se dock till att du kvalificerar datatypen `org.w3c.dom.Document` fullständigt. Information om hur du konverterar ett `org.w3c.dom.Document`-objekt till ett `com.adobe.idp.Document`-objekt finns i [Snabbstart (EJB-läge): Förifyll Forms med flödeslayouter med Java API &#x200B;](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api) .
 
 >[!NOTE]
 >

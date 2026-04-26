@@ -46,7 +46,7 @@ När den här siffran överskrids tas den äldsta versionen bort.
    * Högsta ålder för alla versioner som lagras i databasen.
 När en versions ålder överskrider det här värdet rensas den från databasen.
 
-* underhållsaktiviteten [Version Rensa ](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Du kan schemalägga underhållsaktiviteten Rensa version så att tidigare versioner tas bort automatiskt. Därför minimeras behovet av att manuellt använda verktygen för versionsrensning.
+* underhållsaktiviteten [Version Rensa &#x200B;](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Du kan schemalägga underhållsaktiviteten Rensa version så att tidigare versioner tas bort automatiskt. Därför minimeras behovet av att manuellt använda verktygen för versionsrensning.
 
 >[!CAUTION]
 >

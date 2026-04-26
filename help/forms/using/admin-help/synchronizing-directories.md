@@ -77,7 +77,7 @@ Du kan konfigurera användarhantering så att det regelbundet görs en sökning 
 1. I administrationskonsolen klickar du på Inställningar > Användarhantering > Konfiguration > Konfigurera avancerade systemattribut.
 1. Under Synch Finisher Cron Expression anger du ett cron-uttryck som representerar intervallet där användarhanteringsförsök misslyckades med synkroniseringar. Användningen av cron-uttryck baseras på Quartz-systemet för jobbplanering med öppen källkod, version 1.4.0.
 
-   Standardvärdet är 0/13 &amp;ast; ? &amp;ast; , vilket innebär att kontrollen utförs var 13:e minut.
+   Standardvärdet är 0/13 &ast; ? &ast; , vilket innebär att kontrollen utförs var 13:e minut.
 
 ## Synkronisera kataloger manuellt {#manually-synchronize-directories}
 

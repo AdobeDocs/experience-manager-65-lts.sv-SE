@@ -128,10 +128,10 @@ När du har verifierat att bearbetningstillståndet som är kopplat till ett ski
 [Inkludera AEM Forms Java-biblioteksfiler](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Beräkna formulärdata med Java API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Beräkna formulärdata med webbtjänstens API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
-[ Ange anslutningsegenskaper](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[&#x200B; Ange anslutningsegenskaper](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 [Snabbstart för Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 [Återgivning av interaktiv PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
-[ Skapa webbprogram som återger Forms ](/help/forms/developing/creating-web-applications-renders-forms.md)
+[&#x200B; Skapa webbprogram som återger Forms &#x200B;](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Beräkna formulärdata med Java API {#calculate-form-data-using-the-java-api}
 
@@ -172,7 +172,7 @@ Beräkna formulärdata med Forms API (Java):
 
 
 [Inkludera AEM Forms Java-biblioteksfiler](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[ Ange anslutningsegenskaper ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[&#x200B; Ange anslutningsegenskaper &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Beräkna formulärdata med webbtjänstens API {#calculate-form-data-using-the-web-service-api}
 
@@ -222,4 +222,4 @@ Beräkna formulärdata med Forms API (webbtjänst):
    * Anropa `javax.servlet.http.HttpServletResponse`-objektets `write`-metod för att skicka formulärdataströmmen till klientens webbläsare. Skicka bytearrayen till metoden `write`.
 
 **Se även**
-[ Anropa AEM Forms med Base64-kodning ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[&#x200B; Anropa AEM Forms med Base64-kodning &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
